@@ -13,4 +13,3 @@
 * 若在直播使用了本资源包，请注明**本包名称**及其**下载地址**。
 * 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
 * 本资源包以***placehloder*** 协议授权。
-* Licensed under ***placehloder*** Licence. 
