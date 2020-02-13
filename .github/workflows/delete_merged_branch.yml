@@ -1,0 +1,12 @@
+name: Delete merged branch
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Delete merged branch
+      uses: SvanBoxel/delete-merged-branch@v1.3.3
