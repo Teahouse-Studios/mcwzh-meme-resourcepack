@@ -1730,7 +1730,7 @@
     "book.generation.1": "原稿的副本",
     "book.generation.2": "副本的副本",
     "book.generation.3": "破烂不堪",
-    "book.invalid.tag": "* 无效的书本标签 *",
+    "book.invalid.tag": "* 你翻开这本书一看，这书没有署名，破破烂烂的每页都没有写文字。你横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着几个字“你这个憨批打错tag了”！ *",
     "book.pageIndicator": "页面：%1$s/%2$s",
     "book.signButton": "署名",
     "build.tooHigh": "叠高高一点都不好玩！",
