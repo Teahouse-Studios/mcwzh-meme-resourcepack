@@ -1,12 +1,12 @@
 {
     "pack": { 
         "pack_format": 5,
-        "description": "梗体中文亮瞎眼包！！！"
+        "description": "§e梗体中文亮瞎眼包！！！\n §3v0.3.0"
     },
     "language": {
         "zh_meme": {
-          "name": "梗体中文",
-          "region": "天朝",
+          "name": "§e梗体中文§r",
+          "region": "§c天朝§r",
           "bidirectional": "false"
         }
     }
