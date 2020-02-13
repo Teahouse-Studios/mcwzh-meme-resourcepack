@@ -8,25 +8,26 @@ assignees: ''
 ---
 
 **描述**
-A clear and concise description of what the bug is.
+请简明扼要地描述漏洞。
 
 **复现步骤**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+复现漏洞的步骤：
+1. 前往“...”
+2. 点击“...”
+3. 滑动至“...”
+4. 查看错误
 
-**预期行为**
-A clear and concise description of what you expected to happen.
+**正常行为**
+请简明扼要地描述应该发生的行为。
 
 **截图**
-If applicable, add screenshots to help explain your problem.
+可以的话，加上截图可以帮助解释你的问题。
 
 **版本**
- - OS: [e.g. Windows]
- - Version [e.g. 1.15.2]
- - Environment [e.g. Fabric/Forge, with CustomSkinLoader installed]
+ - 操作系统：[例：Windows]
+ - Minecraft 版本：[例：1.15.2]
+ - 资源包版本：[例：0.1.0]
+ - 环境 [例：加载了Fabric/Forge，安装了CustomSkinLoader]
 
 **其他内容**
-Add any other context about the problem here.
+添加更多关于漏洞的来龙去脉。
