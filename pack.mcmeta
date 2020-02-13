@@ -1,12 +1,12 @@
 {
     "pack": { 
         "pack_format": 5,
-        "description": "Lxazl5770's TRANSLATION PACK OH!!!"
+        "description": "梗体中文亮瞎眼包！！！"
     },
     "language": {
         "zh_meme": {
           "name": "梗体中文",
-          "region": "中文Minecraft Wiki",
+          "region": "天朝",
           "bidirectional": "false"
         }
     }
