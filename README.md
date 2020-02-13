@@ -3,7 +3,7 @@
 这个资源包将一部分译名或其他游戏内字符串替换成了一些知名/不知名的梗或笑话。
 ## 用法
 ### 常规
-首先**在[Releases](https://github.com/lakejason0/mcwzh-meme-resourcepack/releases)中下载**此资源包，请选择**不带任何后缀**的包。之后请把资源包像常规的其他资源包一样**拖动到你对应的`/resourcepack/`目录**中（[MCBBS上的教程](https://www.mcbbs.net/thread-880869-1-1.html)。资源包新建了一个语言，安装启用后在语言设置中**选择**“***梗体中文***”即可体验。
+首先**在[Releases](https://github.com/lakejason0/mcwzh-meme-resourcepack/releases)中下载**此资源包，请选择**不带任何后缀**的包。之后请把资源包像常规的其他资源包一样**拖动到你对应的`/resourcepack/`目录**中（[MCBBS上的教程](https://www.mcbbs.net/thread-880869-1-1.html)）。资源包新建了一个语言，安装启用后在语言设置中**选择**“***梗体中文***”即可体验。
 ### 加载Mod时
 普通版本的资源包**无法**覆盖Mod字符串，会导致Mod内容**全部变为英文**。请**下载`_compatibility`结尾的包**，以保证体验。安装流程几乎相同，只是选择的语言应该是**普通的“简体中文”**。
 ## 声明
