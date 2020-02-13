@@ -13,6 +13,6 @@
 此资源包的语言文件顺序与原版的英文顺序并不一致（本资源包是将key按照字母顺序排序）。如果原版的英文译名跟进了，请先将解包的英文语言文件按照前文所述排序，可以参考[这个网站](https://tool.funsmall.cn/jsonsort/)。推荐使用[Visual Studio Code](https://github.com/microsoft/vscode)的比较功能。
 ## 声明
 * 本资源包**仅供娱乐**，请勿当真。
-* 若在直播使用了本资源包，请注明**本包名称**及其**下载地址**。
+* 若在直播/视频中使用了本资源包，请注明**本包名称**及其**下载地址**。
 * 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
 * 本资源包以 ***placeholder*** 协议授权。
