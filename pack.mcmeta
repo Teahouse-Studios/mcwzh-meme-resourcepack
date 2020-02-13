@@ -1,0 +1,13 @@
+{
+    "pack": { 
+        "pack_format": 5,
+        "description": "Lxazl5770's TRANSLATION PACK OH!!!"
+    },
+    "language": {
+        "zh_meme": {
+          "name": "简体中文梗语",
+          "region": "中文Minecraft Wiki",
+          "bidirectional": "false"
+        }
+    }
+}
