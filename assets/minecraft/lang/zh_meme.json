@@ -3695,7 +3695,7 @@
     "selectWorld.backupQuestion.customized": "自定义世界已不受支持",
     "selectWorld.backupWarning": "这个世界上次是在%s版本中游玩的，你在游玩%s版本。请备份你的世界，以免世界崩溃！",
     "selectWorld.backupWarning.customized": "不巧，我们在这个版本的Minecraft中不支持自定义世界。我们可以继续加载这个世界并保持原状，但任何新生成的地形将不再被自定义。抱歉给您带来不便。",
-    "selectWorld.bonusItems": "给新手的",
+    "selectWorld.bonusItems": "给新手的礼物：",
     "selectWorld.cheats": "作弊",
     "selectWorld.conversion": "必须进行转换！",
     "selectWorld.create": "创建新的世界",
