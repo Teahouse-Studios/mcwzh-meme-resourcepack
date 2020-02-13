@@ -5,6 +5,7 @@
 * Lakejason0
 * AlPha5130
 * Huerdada
+* dianliang233
 ## 用法
 此资源包新建了一个语言。在语言设置中选择“简体中文梗语”即可体验。
 
