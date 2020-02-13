@@ -1,6 +1,6 @@
-# 中文Minecraft Wiki 简体中文梗语资源包 · Unofficial
+# 中文Minecraft Wiki 梗体中文资源包 · Unofficial
 ## 作用
-这个资源包将一部分译名替换成了一些知名/不知名的梗或笑话。
+这个资源包将一部分译名或其他游戏内字符串替换成了一些知名/不知名的梗或笑话。
 ## 用法
 ### 常规
 首先**在[Releases](https://github.com/lakejason0/mcwzh-meme-resourcepack/releases)中下载**此资源包，请选择**不带任何后缀**的包。之后请把资源包像常规的其他资源包一样**拖动到你对应的`/resourcepack/`目录**中（[MCBBS上的教程](https://www.mcbbs.net/thread-880869-1-1.html)。资源包新建了一个语言，安装启用后在语言设置中**选择**“***梗体中文***”即可体验。
