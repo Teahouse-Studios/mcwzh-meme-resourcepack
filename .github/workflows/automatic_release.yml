@@ -1,4 +1,4 @@
-name: "tagged-release"
+name: "GitHub build & release"
 
 on:
   push:
