@@ -15,6 +15,8 @@ jobs:
         with:
           python-version: '3.x'
           architecture: 'x64'
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: "Build"
         run: |
           python build.py all
@@ -24,5 +26,5 @@ jobs:
           prerelease: true
           draft: true
           files: |
-            mcwzh-meme.mcpack
-            mcwzh-meme_copmat.mcpack
+            mcwzh-meme.zip
+            mcwzh-meme_compatible.zip
