@@ -27,4 +27,4 @@ jobs:
           draft: true
           files: |
             mcwzh-meme.zip
-            mcwzh-meme_copmat.zip
+            mcwzh-meme_copmatible.zip
