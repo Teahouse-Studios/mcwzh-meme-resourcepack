@@ -7,12 +7,12 @@ def build_pack(type='normal'):
         lang_data = json.load(f)
     if type == 'normal':
         # Normal build
-        zipped_pack = zipfile.ZipFile("mcwzh-meme.mcpack", 'w')
+        zipped_pack = zipfile.ZipFile("mcwzh-meme.zip", 'w')
         zipped_pack.writestr("assets/minecraft/lang/zh_meme.json", json.dumps(lang_data, indent=4, ensure_ascii=True))
         zipped_pack.write("pack.mcmeta")
     elif type == 'compat':
         # Compatible build
-        zipped_pack = zipfile.ZipFile("mcwzh-meme_compat.mcpack", 'w')
+        zipped_pack = zipfile.ZipFile("mcwzh-meme_compat.zip", 'w')
         zipped_pack.writestr("assets/minecraft/lang/zh_cn.json", json.dumps(lang_data, indent=4, ensure_ascii=True))
         # Processing mcmeta
         with open("pack.mcmeta", 'r', encoding='utf8') as meta:
