@@ -32,10 +32,6 @@ python build.py all
 
 如果只需要常规的资源包，运行：
 ``` bash
-python build.py
-```
-或
-``` bash
 python build.py normal
 ```
 如果只需要加载Mod版的资源包，运行：
