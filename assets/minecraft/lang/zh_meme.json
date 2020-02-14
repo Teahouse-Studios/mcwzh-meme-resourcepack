@@ -1826,7 +1826,7 @@
     "commands.bossbar.list.bars.some": "有%s项运行中的自定义老板栏：%s",
     "commands.bossbar.remove.success": "已移除自定义老板栏%s",
     "commands.bossbar.set.color.success": "已更改自定义老板栏%s的颜色",
-    "commands.bossbar.set.color.unchanged": 老板栏的颜色本身就是这样了！",
+    "commands.bossbar.set.color.unchanged": "老板栏的颜色本身就是这样了！",
     "commands.bossbar.set.max.success": "自定老板栏%s的最大值已改为%s",
     "commands.bossbar.set.max.unchanged": "你还想把老板栏弄得更大？",
     "commands.bossbar.set.name.success": "已重命名自定义老板栏%s",
