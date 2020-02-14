@@ -1,4 +1,7 @@
 # 中文Minecraft Wiki 梗体中文资源包 · Unofficial
+
+[![Tencent QQ](https://img.shields.io/static/v1?label=QQ&message=657876815&color=eb1923&style=for-the-badge&logo=tencent%20qq)](https://jq.qq.com/?_wv=1027&k=5tqdTeR)[![GitHub repo size](https://img.shields.io/github/repo-size/lakejason0/mcwzh-meme-resourcepack?logo=github&style=for-the-badge)](https://github.com/lakejason0/mcwzh-meme-resourcepack)[![GitHub issues](https://img.shields.io/github/issues/lakejason0/mcwzh-meme-resourcepack?logo=github&style=for-the-badge)](https://github.com/lakejason0/mcwzh-meme-resourcepack/issues)[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/lakejason0/mcwzh-meme-resourcepack?logo=github&style=for-the-badge)](https://github.com/lakejason0/mcwzh-meme-resourcepack/issues?q=is%3Aissue+is%3Aclosed)[![GitHub pull requests](https://img.shields.io/github/issues-pr/lakejason0/mcwzh-meme-resourcepack?logo=github&style=for-the-badge)](https://github.com/lakejason0/mcwzh-meme-resourcepack/pulls)[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/lakejason0/mcwzh-meme-resourcepack?logo=github&style=for-the-badge)](https://github.com/lakejason0/mcwzh-meme-resourcepack/issues?q=is%3Apr+is%3Aclosed)![GitHub Licence](https://img.shields.io/github/license/lakejason0/mcwzh-meme-resourcepack?style=for-the-badge)[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/lakejason0/mcwzh-meme-resourcepack?label=latest%20version&style=for-the-badge)![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/lakejason0/mcwzh-meme-resourcepack?style=for-the-badge)](https://github.com/lakejason0/mcwzh-meme-resourcepack/releases)[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/lakejason0/mcwzh-meme-resourcepack?github&style=for-the-badge)![GitHub last commit](https://img.shields.io/github/last-commit/lakejason0/mcwzh-meme-resourcepack?logo=github&style=for-the-badge)](https://github.com/lakejason0/mcwzh-meme-resourcepack/commits)[![GitHub contributors](https://img.shields.io/github/contributors/lakejason0/mcwzh-meme-resourcepack?github&style=for-the-badge)](https://github.com/lakejason0/mcwzh-meme-resourcepack/graphs/contributors)
+
 ## 作用
 这个资源包将一部分译名或其他游戏内字符串替换成了一些知名/不知名的梗或笑话，或将其用诙谐的语言重写了一遍。
 ## 用法
@@ -17,3 +20,5 @@
 * 若在直播/视频中使用了本资源包，请注明**本包名称**及其**下载地址**。
 * 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
 * 本资源包以 ***placeholder*** 协议授权。
+
+![GitHub forks](https://img.shields.io/github/forks/lakejason0/mcwzh-meme-resourcepack?style=social)![GitHub stars](https://img.shields.io/github/stars/lakejason0/mcwzh-meme-resourcepack?style=social)![GitHub watchers](https://img.shields.io/github/watchers/lakejason0/mcwzh-meme-resourcepack?style=social)
