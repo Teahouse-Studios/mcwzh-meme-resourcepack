@@ -3423,7 +3423,7 @@
     "multiplayer.disconnect.generic": "连接中止",
     "multiplayer.disconnect.idling": "别想挂机！",
     "multiplayer.disconnect.illegal_characters": "你在干啥？",
-    "multiplayer.disconnect.invalid_entity_attacked": "试图攻击无效实体",
+    "multiplayer.disconnect.invalid_entity_attacked": "你把自己打晕了",
     "multiplayer.disconnect.invalid_player_movement": "收到了包含非法玩家移动的数据包",
     "multiplayer.disconnect.invalid_vehicle_movement": "收到了包含非法载具移动的数据包",
     "multiplayer.disconnect.ip_banned": "你的IP地址已被此服务器的管理员滥权",
