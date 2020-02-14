@@ -26,5 +26,5 @@ jobs:
           prerelease: true
           draft: true
           files: |
-            mcwzh-meme.mcpack
-            mcwzh-meme_copmat.mcpack
+            mcwzh-meme.zip
+            mcwzh-meme_copmat.zip
