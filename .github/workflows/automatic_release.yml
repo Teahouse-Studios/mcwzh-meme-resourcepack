@@ -1,4 +1,4 @@
-name: "tagged-release"
+name: "GitHub build & release"
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: true
-          draft: true
+          draft: false
           files: |
             mcwzh-meme.zip
             mcwzh-meme_compatible.zip
