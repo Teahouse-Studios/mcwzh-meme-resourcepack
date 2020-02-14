@@ -21,4 +21,4 @@
 * 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
 * 本资源包以 ***placeholder*** 协议授权。
 
-![GitHub forks](https://img.shields.io/github/forks/lakejason0/mcwzh-meme-resourcepack?style=social)![GitHub stars](https://img.shields.io/github/stars/lakejason0/mcwzh-meme-resourcepack?style=social)![GitHub watchers](https://img.shields.io/github/watchers/lakejason0/mcwzh-meme-resourcepack?style=social)
+![GitHub forks](https://img.shields.io/github/forks/lakejason0/mcwzh-meme-resourcepack?style=social)    ![GitHub stars](https://img.shields.io/github/stars/lakejason0/mcwzh-meme-resourcepack?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/lakejason0/mcwzh-meme-resourcepack?style=social)
