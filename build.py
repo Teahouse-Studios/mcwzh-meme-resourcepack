@@ -19,6 +19,7 @@ def build_pack(type='normal'):
             metadata = json.load(meta)
         del metadata['language']
         zipped_pack.writestr("pack.mcmeta", json.dumps(metadata, indent=4, ensure_ascii=False))
+    zipped_pack.write("LICENSE")
     zipped_pack.write("pack.png")
     zipped_pack.close()
 
