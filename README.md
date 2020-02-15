@@ -46,7 +46,7 @@ python build.py compat
 * 本资源包**仅供娱乐**，请勿当真。
 * 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
 * 本资源包以 ***CC BY-SA 4.0*** 协议授权。
-** 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
-** 这不是法律建议。
+  * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
+  * 这不是法律建议。
 
 ![GitHub forks](https://img.shields.io/github/forks/lakejason0/mcwzh-meme-resourcepack?style=social)    ![GitHub stars](https://img.shields.io/github/stars/lakejason0/mcwzh-meme-resourcepack?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/lakejason0/mcwzh-meme-resourcepack?style=social)
