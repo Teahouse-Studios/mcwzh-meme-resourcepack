@@ -5,9 +5,9 @@
     },
     "language": {
         "zh_meme": {
-          "name": "§e梗体中文§r",
-          "region": "§c天朝§r",
-          "bidirectional": "false"
+            "name": "§e梗体中文§r",
+            "region": "§c天朝§r",
+            "bidirectional": "false"
         }
     }
 }
