@@ -1,6 +1,6 @@
 # 中文Minecraft Wiki 梗体中文资源包 · Unofficial
 
-[![Tencent QQ](https://img.shields.io/static/v1?label=QQ&message=657876815&color=eb1923&style=flat-square&logo=tencent%20qq)](https://jq.qq.com/?_wv=1027&k=5tqdTeR)    [![GitHub issues](https://img.shields.io/github/issues/lakejason0/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/lakejason0/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/pulls)    ![GitHub Licence](https://img.shields.io/github/license/lakejason0/mcwzh-meme-resourcepack?style=flat-square)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/lakejason0/mcwzh-meme-resourcepack?label=latest%20version&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.12.2-20w07a&color=db2331&style=flat-square&logo=)](https://minecraft.net)
+[![Tencent QQ](https://img.shields.io/static/v1?label=QQ&message=657876815&color=eb1923&style=flat-square&logo=tencent%20qq)](https://jq.qq.com/?_wv=1027&k=5tqdTeR)    [![GitHub issues](https://img.shields.io/github/issues/lakejason0/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/lakejason0/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/pulls)    ![GitHub Licence](https://img.shields.io/github/license/lakejason0/mcwzh-meme-resourcepack?style=flat-square&logo=creative%20commons)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/lakejason0/mcwzh-meme-resourcepack?label=latest%20version&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.12.2-20w07a&color=db2331&style=flat-square&logo=)](https://minecraft.net)
 
 ## 作用
 这个资源包将一部分译名或其他游戏内字符串替换成了一些知名/不知名的梗或笑话，或将其用诙谐的语言重写了一遍。
@@ -44,8 +44,9 @@ python build.py compat
 我们欢迎你为这个资源包贡献自己的想法。请参阅`CONTRIBUTING.md`以获取一些建议。
 ## 声明
 * 本资源包**仅供娱乐**，请勿当真。
-* 若在直播/视频中使用了本资源包，请注明**本包名称**及其**下载地址**。
 * 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
-* 本资源包以**CC BY-SA 4.0**协议授权。
+* 本资源包以 ***CC BY-SA 4.0*** 协议授权。
+** 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
+** 这不是法律建议。
 
 ![GitHub forks](https://img.shields.io/github/forks/lakejason0/mcwzh-meme-resourcepack?style=social)    ![GitHub stars](https://img.shields.io/github/stars/lakejason0/mcwzh-meme-resourcepack?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/lakejason0/mcwzh-meme-resourcepack?style=social)
