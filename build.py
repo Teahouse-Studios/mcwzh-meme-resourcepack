@@ -21,6 +21,8 @@ def build_pack(type='normal'):
         zipped_pack.writestr("pack.mcmeta", json.dumps(metadata, indent=4, ensure_ascii=False))
     zipped_pack.write("LICENSE")
     zipped_pack.write("pack.png")
+    zipped_pack.write("assets/minecraft/models/item/totem_of_undying.json")
+    zipped_pack.write("assets/minecraft/textures/entity/player.png")
     zipped_pack.close()
 
 if len(sys.argv) > 1:
