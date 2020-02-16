@@ -12,6 +12,8 @@
 普通版本的资源包**无法**覆盖Mod字符串，会导致Mod内容**全部变为英文**。请下载`mcwzh-meme_compatible.zip`，以保证体验。安装流程几乎相同，只是选择的语言应该是**普通的“简体中文”**。
 ### 唱片替换
 该资源包将唱片信息修改成了非Minecraft歌曲。由于版权原因，您需要自行制作一个唱片替换资源包（可以参考[这篇文章](https://www.planetminecraft.com/blog/how-to-change-music-discs-to-any-song---easy/)）。一份不受支持的预制版唱片替换包（不允许二次分发）可以在[这里](https://files.lakejason0.ml/images/3/34/%E5%94%B1%E7%89%87%E6%9B%BF%E6%8D%A2.zip)获得。
+### 不死图腾替换
+该资源包将不死图腾替换成了自定义模型。如果这不适用于你（例如模型出错，游玩自定义地图或装载了其他3D材质包），你可以尝试调整载入顺序，或直接删除`assets/textures`和`assets/models`。
 ## 鹦鹉通道
 ### 体验最新内容
 想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作：
