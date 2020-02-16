@@ -1,4 +1,4 @@
-# 中文Minecraft Wiki 梗体中文资源包 · Unofficial
+# 中文Minecraft Wiki梗体中文资源包 · Unofficial
 
 [![Tencent QQ](https://img.shields.io/static/v1?label=QQ&message=657876815&color=eb1923&style=flat-square&logo=tencent%20qq)](https://jq.qq.com/?_wv=1027&k=5tqdTeR)    [![GitHub issues](https://img.shields.io/github/issues/lakejason0/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/lakejason0/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/pulls)    ![GitHub Licence](https://img.shields.io/github/license/lakejason0/mcwzh-meme-resourcepack?style=flat-square&logo=creative%20commons)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/lakejason0/mcwzh-meme-resourcepack?label=latest%20version&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.12.2-20w07a&color=db2331&style=flat-square&logo=)](https://minecraft.net)
 
