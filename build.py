@@ -11,7 +11,14 @@ def build_pack(type='normal'):
         zipped_pack.writestr("assets/minecraft/lang/zh_meme.json", json.dumps(lang_data, indent=4, ensure_ascii=True))
         zipped_pack.write("pack.mcmeta")
         zipped_pack.write("assets/minecraft/models/item/totem_of_undying.json")
-        zipped_pack.write("assets/minecraft/textures/entity/player.png")
+        zipped_pack.write("assets/minecraft/models/item/dianliang.json")
+        zipped_pack.write("assets/minecraft/models/item/lxazl5770.json")
+        zipped_pack.write("assets/minecraft/models/item/lakejason.json")
+        zipped_pack.write("assets/minecraft/models/item/mysticnebula70.json")
+        zipped_pack.write("assets/minecraft/textures/entity/lxazl5770.png")
+        zipped_pack.write("assets/minecraft/textures/entity/dianliang.png")
+        zipped_pack.write("assets/minecraft/textures/entity/lakejason.png")
+        zipped_pack.write("assets/minecraft/textures/entity/mysticnebula70.png")
     elif type == 'compat':
         # Compatible build
         zipped_pack = zipfile.ZipFile("mcwzh-meme_compatible.zip", 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
@@ -22,7 +29,14 @@ def build_pack(type='normal'):
         del metadata['language']
         zipped_pack.writestr("pack.mcmeta", json.dumps(metadata, indent=4, ensure_ascii=False))
         zipped_pack.write("assets/minecraft/models/item/totem_of_undying.json")
-        zipped_pack.write("assets/minecraft/textures/entity/player.png")
+        zipped_pack.write("assets/minecraft/models/item/dianliang.json")
+        zipped_pack.write("assets/minecraft/models/item/lxazl5770.json")
+        zipped_pack.write("assets/minecraft/models/item/lakejason.json")
+        zipped_pack.write("assets/minecraft/models/item/mysticnebula70.json")
+        zipped_pack.write("assets/minecraft/textures/entity/lxazl5770.png")
+        zipped_pack.write("assets/minecraft/textures/entity/dianliang.png")
+        zipped_pack.write("assets/minecraft/textures/entity/lakejason.png")
+        zipped_pack.write("assets/minecraft/textures/entity/mysticnebula70.png")
     elif type == 'no_figure':
         # Normal build, without figure
         zipped_pack = zipfile.ZipFile("mcwzh-meme_no_figure.zip", 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)

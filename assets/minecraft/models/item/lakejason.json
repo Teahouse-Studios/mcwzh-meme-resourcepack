@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "block/smooth_stone",
-		"1": "entity/lxazl5770",
+		"1": "entity/lakejason",
 		"particle": "block/smooth_stone"
 	},
 	"gui_light": "side",
@@ -239,11 +239,5 @@
 				}
 			]
 		}
-    ],
-    "overrides":[
-        { "predicate": {"custom_model_data":10800000}, "model": "item/lxazl5770" },
-        { "predicate": {"custom_model_data":10800001}, "model": "item/lakejason" },
-        { "predicate": {"custom_model_data":10800002}, "model": "item/dianliang" },
-        { "predicate": {"custom_model_data":10800003}, "model": "item/mysticnebula70" }
-    ]
+	]
 }
