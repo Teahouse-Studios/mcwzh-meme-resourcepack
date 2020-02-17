@@ -28,3 +28,5 @@ jobs:
           files: |
             mcwzh-meme.zip
             mcwzh-meme_compatible.zip
+            mcwzh-meme_no_figure.zip
+            mcwzh-meme_compatible_no_figure.zip
