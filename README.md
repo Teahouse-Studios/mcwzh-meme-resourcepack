@@ -34,7 +34,7 @@ cd mcwzh-meme-resourcepack
 ``` bash
 python build.py all
 ```
-在文件夹中会出现`mcwzh-meme.zip`、`mcwzh-meme_compatible.zip`、`mcwzh-meme_no_figure.zip`和`mcwzh-meme_compatible_no_figure.zip`四个资源包，名称和作用如上所述。
+在文件夹中会出现`mcwzh-meme.zip`、`mcwzh-meme_compatible.zip`、`mcwzh-meme_nofigure.zip`和`mcwzh-meme_compatible_nofigure.zip`四个资源包，名称和作用如上所述。
 
 如果只需要常规的资源包，运行：
 ``` bash
@@ -43,6 +43,12 @@ python build.py normal
 如果只需要加载Mod版的资源包，运行：
 ``` bash
 python build.py compat
+```
+如果不需要自定义模型，添加`-n`选项。
+
+更详细的用法请运行以下命令来获取：
+``` bash
+python build.py -h
 ```
 ### 自助跟进游戏版本
 此资源包的语言文件顺序与原版的英文顺序并不一致（本资源包是将key按照字母顺序排序）。如果原版的英文译名跟进了，请先将解包的英文语言文件按照前文所述排序，可以参考[这个网站](https://tool.funsmall.cn/jsonsort/)。推荐使用[Visual Studio Code](https://github.com/microsoft/vscode)的比较功能。
