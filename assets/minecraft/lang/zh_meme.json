@@ -3385,7 +3385,7 @@
     "menu.generatingTerrain": "地形正在生成！",
     "menu.loadingForcedChunks": "加载%s维度中的强制加载区块中",
     "menu.loadingLevel": "加载世界中",
-    "menu.modded": "（已加Mod）",
+    "menu.modded": "（检测到您安装了一些插件（如Mod），如果您使用正常的包文件可能导致您的插件全部变为英文。建议在下载出选择以compatible结尾的包。）",
     "menu.multiplayer": "一起来，更精彩",
     "menu.online": "一扇对着墙的门",
     "menu.options": "控制面板",
