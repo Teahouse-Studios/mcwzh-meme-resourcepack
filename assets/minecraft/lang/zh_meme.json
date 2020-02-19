@@ -2693,7 +2693,7 @@
     "filled_map.id": "编号#%s",
     "filled_map.level": "（等级 %s/%s）",
     "filled_map.locked": "已锁定",
-    "filled_map.mansion": "林地探险家地图",
+    "filled_map.mansion": "SkyEye_FAST",
     "filled_map.monument": "海洋探险家地图",
     "filled_map.scale": "比例:%s",
     "filled_map.unknown": "未知地图",
