@@ -2690,6 +2690,8 @@
     "event.minecraft.raid.raiders_remaining": "剩余%s名鬼子",
     "event.minecraft.raid.victory": "胜利",
     "filled_map.buried_treasure": "藏宝图",
+    "filled_map.desert_pyramid": "沙漠神殿探险家地图",
+    "filled_map.endcity": "末地城探险家地图",
     "filled_map.fortress": "下界要塞探险家地图",
     "filled_map.id": "编号#%s",
     "filled_map.igloo": "雪屋探险家地图",
