@@ -60,7 +60,7 @@ python build.py -h
 - 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
 - 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
   - 关于正确的译名，请参见[中文Minecraft Wiki的译名标准化](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。
-- 本资源包以 ***CC BY-SA 4.0*** 协议授权。
+- 本资源包以 ***CC BY-NC-SA 4.0*** 协议授权。
   - 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   - 这不是法律建议。
 
