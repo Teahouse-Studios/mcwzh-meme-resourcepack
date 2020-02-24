@@ -2151,7 +2151,7 @@
     "commands.worldborder.center.failed": "无变化，世界边界中心点已经在该处",
     "commands.worldborder.center.success": "已将世界边界的中心设为%s, %s",
     "commands.worldborder.damage.amount.failed": "无变化，世界边界伤害已经是此值",
-    "commands.worldborder.damage.amount.success": "已将世界边界伤害时间设置为%s秒",
+    "commands.worldborder.damage.amount.success": "已将世界边界伤害时间设置为%s每秒每个方块",
     "commands.worldborder.damage.buffer.failed": "无变化，世界边界伤害缓冲区已经是此距离",
     "commands.worldborder.damage.buffer.success": "已将世界边界伤害缓冲区设置为%s个方块",
     "commands.worldborder.get": "当前的世界边界宽度为%s个方块",
