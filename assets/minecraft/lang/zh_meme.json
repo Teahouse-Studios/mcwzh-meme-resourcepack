@@ -2337,6 +2337,7 @@
     "death.attack.lightningBolt": "%1$s被雷劈",
     "death.attack.lightningBolt.player": "%1$s在与%2$s战斗时被闪电击中",
     "death.attack.magic": "%1$s被魔法杀死了",
+    "death.attack.magic.player": "%1$s在试图逃离%2$s时被魔法杀死了",
     "death.attack.message_too_long": "因为Minecraft十分失败，所以没有办法完全显示。部分信息：%s",
     "death.attack.mob": "%1$s被%2$s杀死了",
     "death.attack.mob.item": "%1$s被%2$s用%3$s杀死了",
