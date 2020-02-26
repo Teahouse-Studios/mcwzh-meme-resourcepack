@@ -58,6 +58,8 @@ python build.py -h
 此资源包的语言文件顺序与原版的英文顺序并不一致（本资源包是将key按照字母顺序排序）。如果原版的英文译名跟进了，请先将解包的英文语言文件按照前文所述排序，可以参考[这个网站](https://tool.funsmall.cn/jsonsort/)。推荐使用[Visual Studio Code](https://github.com/microsoft/vscode)的比较功能。
 ## 贡献
 我们欢迎你为这个资源包贡献自己的想法。请参阅`CONTRIBUTING.md`以获取一些建议。
+
+积累一定贡献后我们会邀请你成为Collaborator。优先考虑中文Minecraft Wiki的编辑者。
 ## 声明
 - 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
 - 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
