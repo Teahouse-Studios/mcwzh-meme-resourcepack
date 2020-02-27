@@ -3885,7 +3885,7 @@
     "stat.minecraft.sprint_one_cm": "疾跑距离",
     "stat.minecraft.swim_one_cm": "游泳距离",
     "stat.minecraft.talked_to_villager": "村民交互次数",
-    "stat.minecraft.target_hit": "击中标靶次数",
+    "stat.minecraft.target_hit": "击中TARGET®次数",
     "stat.minecraft.time_since_death": "自上次死亡",
     "stat.minecraft.time_since_rest": "距上次休息",
     "stat.minecraft.traded_with_villager": "村民交易次数",
