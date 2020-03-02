@@ -4,6 +4,8 @@
 
 注：此资源包适用于Java版。有关到基岩版的移植，参见[SkyEye_FAST的基岩版移植Repository](https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock)。
 
+**注：若发现自身可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。**
+
 ## 作用
 这个资源包将一部分译名或其他游戏内字符串替换成了一些知名/不知名的梗或笑话，或将其用诙谐的语言重写了一遍。
 ## 用法
