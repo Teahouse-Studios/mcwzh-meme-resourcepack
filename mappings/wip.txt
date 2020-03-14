@@ -2,6 +2,9 @@
     "todo": [
         "entity",
         "item",
-        "stat"    # not to be confused with stats
+        "stat"        # not to be confused with stats
+    ],
+    "wontdo": [
+        "commands"    # diff is too large
     ]
 }
