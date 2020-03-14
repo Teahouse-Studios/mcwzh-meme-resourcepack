@@ -2484,7 +2484,7 @@
     "disconnect.kicked": "您已被踢出游戏",
     "disconnect.loginFailed": "登入失败",
     "disconnect.loginFailedInfo": "登入失败：%s",
-    "disconnect.loginFailedInfo.invalidSession": "网络大概出了点问题…或者服务器那边出了点问题",
+    "disconnect.loginFailedInfo.invalidSession": "登录失效了！给老子退出游戏！（要是坚信你家窄带没问题，找腐竹，“He will fix it.”）",
     "disconnect.loginFailedInfo.serversUnavailable": "你还没有实名制，不能进入游戏。",
     "disconnect.lost": "你把连接丢掉了！",
     "disconnect.overflow": "缓冲区溢出",
