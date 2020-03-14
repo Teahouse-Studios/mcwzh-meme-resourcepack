@@ -1,0 +1,11 @@
+{
+    "deathScreen.deleteWorld": "deathScreen.deleteWorld",
+    "deathScreen.leaveServer": "deathScreen.leaveServer",
+    "deathScreen.quit.confirm": "deathScreen.quit.confirm",
+    "deathScreen.respawn": "deathScreen.respawn",
+    "deathScreen.score": "deathScreen.score",
+    "deathScreen.spectate": "deathScreen.spectate",
+    "deathScreen.title": "deathScreen.title",
+    "deathScreen.title.hardcore": "deathScreen.title.hardcore",
+    "deathScreen.titleScreen": "deathScreen.titleScreen"
+}

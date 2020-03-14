@@ -1,0 +1,5 @@
+{
+    "connect.authorizing": "connect.authorizing",
+    "connect.connecting": "connect.connecting",
+    "connect.failed": "connect.failed"
+}

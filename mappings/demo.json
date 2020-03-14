@@ -1,0 +1,21 @@
+{
+    "demo.day.1": "demo.day.1",
+    "demo.day.2": "demo.day.2",
+    "demo.day.3": "demo.day.3",
+    "demo.day.4": "demo.day.4",
+    "demo.day.5": "demo.day.5",
+    "demo.day.6": "demo.day.6",
+    "demo.day.warning": "demo.day.warning",
+    "demo.demoExpired": "demo.demoExpired",
+    "demo.help.buy": "demo.help.buy",
+    "demo.help.fullWrapped": "demo.help.fullWrapped",
+    "demo.help.inventory": "demo.help.inventory",
+    "demo.help.jump": "demo.help.jump",
+    "demo.help.later": "demo.help.later",
+    "demo.help.movement": "demo.help.movement",
+    "demo.help.movementMouse": "demo.help.movementMouse",
+    "demo.help.movementShort": "demo.help.movementShort",
+    "demo.help.title": "demo.help.title",
+    "demo.remainingTime": "demo.remainingTime",
+    "demo.reminder": "demo.reminder"
+}
