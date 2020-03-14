@@ -1,0 +1,22 @@
+{
+    "attribute.modifier.equals.0": "attribute.modifier.equals.0",
+    "attribute.modifier.equals.1": "attribute.modifier.equals.1",
+    "attribute.modifier.equals.2": "attribute.modifier.equals.2",
+    "attribute.modifier.plus.0": "attribute.modifier.plus.0",
+    "attribute.modifier.plus.1": "attribute.modifier.plus.1",
+    "attribute.modifier.plus.2": "attribute.modifier.plus.2",
+    "attribute.modifier.take.0": "attribute.modifier.take.0",
+    "attribute.modifier.take.1": "attribute.modifier.take.1",
+    "attribute.modifier.take.2": "attribute.modifier.take.2",
+    "attribute.name.generic.armor": "attribute.name.generic.armor",
+    "attribute.name.generic.armorToughness": "attribute.name.generic.armorToughness",
+    "attribute.name.generic.attackDamage": "attribute.name.generic.attackDamage",
+    "attribute.name.generic.attackSpeed": "attribute.name.generic.attackSpeed",
+    "attribute.name.generic.followRange": "attribute.name.generic.followRange",
+    "attribute.name.generic.knockbackResistance": "attribute.name.generic.knockbackResistance",
+    "attribute.name.generic.luck": "attribute.name.generic.luck",
+    "attribute.name.generic.maxHealth": "attribute.name.generic.maxHealth",
+    "attribute.name.generic.movementSpeed": "attribute.name.generic.movementSpeed",
+    "attribute.name.horse.jumpStrength": "attribute.name.horse.jumpStrength",
+    "attribute.name.zombie.spawnReinforcements": "attribute.name.zombie.spawnReinforcements"
+}

@@ -1,0 +1,15 @@
+{
+    "book.byAuthor": "book.byAuthor",
+    "book.editTitle": "book.editTitle",
+    "book.finalizeButton": "book.finalizeButton",
+    "book.finalizeWarning": "book.finalizeWarning",
+    "book.generation.0": "book.generation.0",
+    "book.generation.1": "book.generation.1",
+    "book.generation.2": "book.generation.2",
+    "book.generation.3": "book.generation.3",
+    "book.pageIndicator": "book.pageIndicator",
+    "book.signButton": "book.signButton",
+    "gui.recipebook.moreRecipes": "gui.recipebook.moreRecipes",
+    "gui.recipebook.toggleRecipes.all": "gui.recipebook.toggleRecipes.all",
+    "gui.recipebook.toggleRecipes.craftable": "gui.recipebook.toggleRecipes.craftable"
+}

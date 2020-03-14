@@ -1,0 +1,16 @@
+{
+    "chat.cannotSend": "chat.cannotSend",
+    "chat.copy": "chat.copy",
+    "chat.link.confirm": "chat.link.confirm",
+    "chat.link.confirmTrusted": "chat.link.confirmTrusted",
+    "chat.link.open": "chat.link.open",
+    "chat.link.warning": "chat.link.warning",
+    "chat.type.admin": "chat.type.admin",
+    "chat.type.advancement.challenge": "chat.type.advancement.challenge",
+    "chat.type.advancement.goal": "chat.type.advancement.goal",
+    "chat.type.advancement.task": "chat.type.advancement.task",
+    "chat.type.announcement": "chat.type.announcement",
+    "chat.type.emote": "chat.type.emote",
+    "chat.type.text": "chat.type.text",
+    "chat.type.text.narrate": "chat.type.text.narrate"
+}
