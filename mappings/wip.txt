@@ -1,12 +1,7 @@
 {
     "todo": [
-        "effect",
         "entity",
-        "enchantment",
-        "item"，
-        "lingering_potion",
-        "potion",
-        "splash_potion",
+        "item",
         "stat"    # not to be confused with stats
     ]
 }

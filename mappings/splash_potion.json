@@ -1,0 +1,22 @@
+{
+    "splash_potion.effect.awkward": "item.minecraft.splash_potion.effect.awkward",
+    "splash_potion.effect.empty": "item.minecraft.splash_potion.effect.empty",
+    "splash_potion.effect.fire_resistance": "item.minecraft.splash_potion.effect.fire_resistance",
+    "splash_potion.effect.harming": "item.minecraft.splash_potion.effect.harming",
+    "splash_potion.effect.healing": "item.minecraft.splash_potion.effect.healing",
+    "splash_potion.effect.invisibility": "item.minecraft.splash_potion.effect.invisibility",
+    "splash_potion.effect.leaping": "item.minecraft.splash_potion.effect.leaping",
+    "splash_potion.effect.levitation": "item.minecraft.splash_potion.effect.levitation",
+    "splash_potion.effect.luck": "item.minecraft.splash_potion.effect.luck",
+    "splash_potion.effect.mundane": "item.minecraft.splash_potion.effect.mundane",
+    "splash_potion.effect.night_vision": "item.minecraft.splash_potion.effect.night_vision",
+    "splash_potion.effect.poison": "item.minecraft.splash_potion.effect.poison",
+    "splash_potion.effect.regeneration": "item.minecraft.splash_potion.effect.regeneration",
+    "splash_potion.effect.slowness": "item.minecraft.splash_potion.effect.slowness",
+    "splash_potion.effect.strength": "item.minecraft.splash_potion.effect.strength",
+    "splash_potion.effect.swiftness": "item.minecraft.splash_potion.effect.swiftness",
+    "splash_potion.effect.thick": "item.minecraft.splash_potion.effect.thick",
+    "splash_potion.effect.water": "item.minecraft.splash_potion.effect.water",
+    "splash_potion.effect.water_breathing": "item.minecraft.splash_potion.effect.water_breathing",
+    "splash_potion.effect.weakness": "item.minecraft.splash_potion.effect.weakness"
+}

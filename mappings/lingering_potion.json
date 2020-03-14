@@ -1,0 +1,22 @@
+{
+    "lingering_potion.effect.awkward": "item.minecraft.lingering_potion.effect.awkward",
+    "lingering_potion.effect.empty": "item.minecraft.lingering_potion.effect.empty",
+    "lingering_potion.effect.fire_resistance": "item.minecraft.lingering_potion.effect.fire_resistance",
+    "lingering_potion.effect.harming": "item.minecraft.lingering_potion.effect.harming",
+    "lingering_potion.effect.healing": "item.minecraft.lingering_potion.effect.healing",
+    "lingering_potion.effect.invisibility": "item.minecraft.lingering_potion.effect.invisibility",
+    "lingering_potion.effect.leaping": "item.minecraft.lingering_potion.effect.leaping",
+    "lingering_potion.effect.levitation": "item.minecraft.lingering_potion.effect.levitation",
+    "lingering_potion.effect.luck": "item.minecraft.lingering_potion.effect.luck",
+    "lingering_potion.effect.mundane": "item.minecraft.lingering_potion.effect.mundane",
+    "lingering_potion.effect.night_vision": "item.minecraft.lingering_potion.effect.night_vision",
+    "lingering_potion.effect.poison": "item.minecraft.lingering_potion.effect.poison",
+    "lingering_potion.effect.regeneration": "item.minecraft.lingering_potion.effect.regeneration",
+    "lingering_potion.effect.slowness": "item.minecraft.lingering_potion.effect.slowness",
+    "lingering_potion.effect.strength": "item.minecraft.lingering_potion.effect.strength",
+    "lingering_potion.effect.swiftness": "item.minecraft.lingering_potion.effect.swiftness",
+    "lingering_potion.effect.thick": "item.minecraft.lingering_potion.effect.thick",
+    "lingering_potion.effect.water": "item.minecraft.lingering_potion.effect.water",
+    "lingering_potion.effect.water_breathing": "item.minecraft.lingering_potion.effect.water_breathing",
+    "lingering_potion.effect.weakness": "item.minecraft.lingering_potion.effect.weakness"
+}
