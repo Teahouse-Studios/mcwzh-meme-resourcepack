@@ -1,0 +1,9 @@
+{
+    "generator.amplified": "generator.amplified",
+    "generator.amplified.info": "generator.amplified.info",
+    "generator.customized": "generator.customized",
+    "generator.debug_all_block_states": "generator.debug_all_block_states",
+    "generator.default": "generator.default",
+    "generator.flat": "generator.flat",
+    "generator.largeBiomes": "generator.largeBiomes"
+}

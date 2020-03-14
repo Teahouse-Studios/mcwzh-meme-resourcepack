@@ -1,0 +1,16 @@
+{
+    "disconnect.closed": "disconnect.closed",
+    "disconnect.disconnected": "disconnect.disconnected",
+    "disconnect.endOfStream": "disconnect.endOfStream",
+    "disconnect.genericReason": "disconnect.genericReason",
+    "disconnect.kicked": "disconnect.kicked",
+    "disconnect.loginFailed": "disconnect.loginFailed",
+    "disconnect.loginFailedInfo": "disconnect.loginFailedInfo",
+    "disconnect.loginFailedInfo.invalidSession": "disconnect.loginFailedInfo.invalidSession",
+    "disconnect.loginFailedInfo.serversUnavailable": "disconnect.loginFailedInfo.serversUnavailable",
+    "disconnect.lost": "disconnect.lost",
+    "disconnect.overflow": "disconnect.overflow",
+    "disconnect.quitting": "disconnect.quitting",
+    "disconnect.spam": "disconnect.spam",
+    "disconnect.timeout": "disconnect.timeout"
+}

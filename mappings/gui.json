@@ -1,0 +1,18 @@
+{
+    "gui.advancements": "gui.advancements",
+    "gui.all": "gui.all",
+    "gui.back": "gui.back",
+    "gui.cancel": "gui.cancel",
+    "gui.done": "gui.done",
+    "gui.down": "gui.down",
+    "gui.no": "gui.no",
+    "gui.none": "gui.none",
+    "gui.recipebook.moreRecipes": "gui.recipebook.moreRecipes",
+    "gui.recipebook.toggleRecipes.all": "gui.recipebook.toggleRecipes.all",
+    "gui.recipebook.toggleRecipes.craftable": "gui.recipebook.toggleRecipes.craftable",
+    "gui.stats": "gui.stats",
+    "gui.toMenu": "gui.toMenu",
+    "gui.toTitle": "gui.toTitle",
+    "gui.up": "gui.up",
+    "gui.yes": "gui.yes"
+}

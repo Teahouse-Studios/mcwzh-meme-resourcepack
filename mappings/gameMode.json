@@ -1,0 +1,8 @@
+{
+    "gameMode.adventure": "gameMode.adventure",
+    "gameMode.changed": "gameMode.changed",
+    "gameMode.creative": "gameMode.creative",
+    "gameMode.hardcore": "gameMode.hardcore",
+    "gameMode.spectator": "gameMode.spectator",
+    "gameMode.survival": "gameMode.survival"
+}
