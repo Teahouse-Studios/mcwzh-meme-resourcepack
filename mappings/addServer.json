@@ -1,0 +1,11 @@
+{
+    "addServer.add": "addServer.add",
+    "addServer.enterIp": "addServer.enterIp",
+    "addServer.enterName": "addServer.enterName",
+    "addServer.hideAddress": "addServer.hideAddress",
+    "addServer.resourcePack": "addServer.resourcePack",
+    "addServer.resourcePack.disabled": "addServer.resourcePack.disabled",
+    "addServer.resourcePack.enabled": "addServer.resourcePack.enabled",
+    "addServer.resourcePack.prompt": "addServer.resourcePack.prompt",
+    "addServer.title": "addServer.title"
+}

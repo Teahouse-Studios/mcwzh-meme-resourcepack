@@ -1,0 +1,20 @@
+{
+    "advMode.allEntities": "advMode.allEntities",
+    "advMode.allPlayers": "advMode.allPlayers",
+    "advMode.command": "advMode.command",
+    "advMode.mode.auto": "advMode.mode.auto",
+    "advMode.mode.autoexec.bat": "advMode.mode.autoexec.bat",
+    "advMode.mode.conditional": "advMode.mode.conditional",
+    "advMode.mode.redstone": "advMode.mode.redstone",
+    "advMode.mode.redstoneTriggered": "advMode.mode.redstoneTriggered",
+    "advMode.mode.sequence": "advMode.mode.sequence",
+    "advMode.mode.unconditional": "advMode.mode.unconditional",
+    "advMode.nearestPlayer": "advMode.nearestPlayer",
+    "advMode.notAllowed": "advMode.notAllowed",
+    "advMode.notEnabled": "advMode.notEnabled",
+    "advMode.previousOutput": "advMode.previousOutput",
+    "advMode.randomPlayer": "advMode.randomPlayer",
+    "advMode.self": "advMode.self",
+    "advMode.setCommand": "advMode.setCommand",
+    "advMode.setCommand.success": "advMode.setCommand.success"
+}
