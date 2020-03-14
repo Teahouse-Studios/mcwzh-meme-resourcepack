@@ -1,8 +1,8 @@
 {
     "todo": [
-        "entity",
-        "item",
-        "stat"        # not to be confused with stats
+        "entity",     # maybe not a lot 
+        "item",       # need a massive amount of remapping
+        "stat"        # not to be confused with stats, maybe not a lot
     ],
     "wontdo": [
         "commands"    # diff is too large
