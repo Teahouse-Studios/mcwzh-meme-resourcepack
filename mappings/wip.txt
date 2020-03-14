@@ -2,7 +2,6 @@
     "todo": [
         "entity",     # maybe not a lot 
         "item",       # need a massive amount of remapping
-        "stat"        # not to be confused with stats, maybe not a lot
         "build.py"    # implement a log system; support reading mappings
     ],
     "wontdo": [
