@@ -6,6 +6,7 @@
         "item"，
         "lingering_potion",
         "potion",
+        "splash_potion",
         "stat"    # not to be confused with stats
     ]
 }
