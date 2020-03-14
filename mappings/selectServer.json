@@ -1,0 +1,15 @@
+{
+    "selectServer.add": "selectServer.add",
+    "selectServer.defaultName": "selectServer.defaultName",
+    "selectServer.delete": "selectServer.delete",
+    "selectServer.deleteButton": "selectServer.deleteButton",
+    "selectServer.deleteQuestion": "selectServer.deleteQuestion",
+    "selectServer.deleteWarning": "selectServer.deleteWarning",
+    "selectServer.direct": "selectServer.direct",
+    "selectServer.edit": "selectServer.edit",
+    "selectServer.empty": "selectServer.empty",
+    "selectServer.hiddenAddress": "selectServer.hiddenAddress",
+    "selectServer.refresh": "selectServer.refresh",
+    "selectServer.select": "selectServer.select",
+    "selectServer.title": "selectServer.title"
+}

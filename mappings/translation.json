@@ -1,0 +1,9 @@
+{
+    "translation.test.args": "translation.test.args",
+    "translation.test.complex": "translation.test.complex",
+    "translation.test.escape": "translation.test.escape",
+    "translation.test.invalid": "translation.test.invalid",
+    "translation.test.invalid2": "translation.test.invalid2",
+    "translation.test.none": "translation.test.none",
+    "translation.test.world": "translation.test.world"
+}

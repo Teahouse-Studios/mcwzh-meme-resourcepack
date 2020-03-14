@@ -1,0 +1,12 @@
+{
+    "soundCategory.ambient": "soundCategory.ambient",
+    "soundCategory.block": "soundCategory.block",
+    "soundCategory.hostile": "soundCategory.hostile",
+    "soundCategory.master": "soundCategory.master",
+    "soundCategory.music": "soundCategory.music",
+    "soundCategory.neutral": "soundCategory.neutral",
+    "soundCategory.player": "soundCategory.player",
+    "soundCategory.record": "soundCategory.record",
+    "soundCategory.voice": "soundCategory.voice",
+    "soundCategory.weather": "soundCategory.weather"
+}

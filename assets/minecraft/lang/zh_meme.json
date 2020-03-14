@@ -3465,6 +3465,7 @@
     "menu.working": "处理中…",
     "merchant.current_level": "奸商的当前等级",
     "merchant.deprecated": "村民每天最多补货两次。",
+    "merchant.deprecated.deprecated": "交易一些其他东西来解锁！",
     "merchant.level.1": "菜鸟",
     "merchant.level.2": "萌新",
     "merchant.level.3": "大佬",

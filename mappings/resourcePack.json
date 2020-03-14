@@ -1,0 +1,13 @@
+{
+    "resourcePack.available.title": "resourcePack.available.title",
+    "resourcePack.folderInfo": "resourcePack.folderInfo",
+    "resourcePack.incompatible": "resourcePack.incompatible",
+    "resourcePack.incompatible.confirm.new": "resourcePack.incompatible.confirm.new",
+    "resourcePack.incompatible.confirm.old": "resourcePack.incompatible.confirm.old",
+    "resourcePack.incompatible.confirm.title": "resourcePack.incompatible.confirm.title",
+    "resourcePack.incompatible.new": "resourcePack.incompatible.new",
+    "resourcePack.incompatible.old": "resourcePack.incompatible.old",
+    "resourcePack.openFolder": "resourcePack.openFolder",
+    "resourcePack.selected.title": "resourcePack.selected.title",
+    "resourcePack.title": "resourcePack.title"
+}

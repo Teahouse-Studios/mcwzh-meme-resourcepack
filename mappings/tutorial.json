@@ -1,0 +1,14 @@
+{
+    "tutorial.craft_planks.description": "tutorial.craft_planks.description",
+    "tutorial.craft_planks.title": "tutorial.craft_planks.title",
+    "tutorial.find_tree.description": "tutorial.find_tree.description",
+    "tutorial.find_tree.title": "tutorial.find_tree.title",
+    "tutorial.look.description": "tutorial.look.description",
+    "tutorial.look.title": "tutorial.look.title",
+    "tutorial.move.description": "tutorial.move.description",
+    "tutorial.move.title": "tutorial.move.title",
+    "tutorial.open_inventory.description": "tutorial.open_inventory.description",
+    "tutorial.open_inventory.title": "tutorial.open_inventory.title",
+    "tutorial.punch_tree.description": "tutorial.punch_tree.description",
+    "tutorial.punch_tree.title": "tutorial.punch_tree.title"
+}

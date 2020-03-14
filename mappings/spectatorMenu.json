@@ -1,0 +1,10 @@
+{
+    "spectatorMenu.close": "spectatorMenu.close",
+    "spectatorMenu.next_page": "spectatorMenu.next_page",
+    "spectatorMenu.previous_page": "spectatorMenu.previous_page",
+    "spectatorMenu.root.prompt": "spectatorMenu.root.prompt",
+    "spectatorMenu.team_teleport": "spectatorMenu.team_teleport",
+    "spectatorMenu.team_teleport.prompt": "spectatorMenu.team_teleport.prompt",
+    "spectatorMenu.teleport": "spectatorMenu.teleport",
+    "spectatorMenu.teleport.prompt": "spectatorMenu.teleport.prompt"
+}

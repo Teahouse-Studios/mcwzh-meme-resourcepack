@@ -1,0 +1,19 @@
+{
+    "menu.convertingLevel": "menu.convertingLevel",
+    "menu.disconnect": "menu.disconnect",
+    "menu.game": "menu.game",
+    "menu.generatingLevel": "menu.generatingLevel",
+    "menu.generatingTerrain": "menu.generatingTerrain",
+    "menu.loadingLevel": "menu.loadingLevel",
+    "menu.multiplayer": "menu.multiplayer",
+    "menu.online": "menu.online",
+    "menu.options": "menu.options",
+    "menu.playdemo": "menu.playdemo",
+    "menu.quit": "menu.quit",
+    "menu.resetdemo": "menu.resetdemo",
+    "menu.respawning": "menu.respawning",
+    "menu.returnToGame": "menu.returnToGame",
+    "menu.returnToMenu": "menu.returnToMenu",
+    "menu.shareToLan": "menu.shareToLan",
+    "menu.singleplayer": "menu.singleplayer"
+}

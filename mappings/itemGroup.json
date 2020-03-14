@@ -1,0 +1,15 @@
+{
+    "itemGroup.brewing": "itemGroup.brewing",
+    "itemGroup.buildingBlocks": "itemGroup.buildingBlocks",
+    "itemGroup.combat": "itemGroup.combat",
+    "itemGroup.decorations": "itemGroup.decorations",
+    "itemGroup.food": "itemGroup.food",
+    "itemGroup.hotbar": "itemGroup.hotbar",
+    "itemGroup.inventory": "itemGroup.inventory",
+    "itemGroup.materials": "itemGroup.materials",
+    "itemGroup.misc": "itemGroup.misc",
+    "itemGroup.redstone": "itemGroup.redstone",
+    "itemGroup.search": "itemGroup.search",
+    "itemGroup.tools": "itemGroup.tools",
+    "itemGroup.transportation": "itemGroup.transportation"
+}
