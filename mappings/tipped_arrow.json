@@ -1,0 +1,22 @@
+{
+  "tipped_arrow.effect.awkward": "item.minecraft.tipped_arrow.effect.awkward",
+  "tipped_arrow.effect.empty": "item.minecraft.tipped_arrow.effect.empty",
+  "tipped_arrow.effect.fire_resistance": "item.minecraft.tipped_arrow.effect.fire_resistance",
+  "tipped_arrow.effect.harming": "item.minecraft.tipped_arrow.effect.harming",
+  "tipped_arrow.effect.healing": "item.minecraft.tipped_arrow.effect.healing",
+  "tipped_arrow.effect.invisibility": "item.minecraft.tipped_arrow.effect.invisibility",
+  "tipped_arrow.effect.leaping": "item.minecraft.tipped_arrow.effect.leaping",
+  "tipped_arrow.effect.levitation": "item.minecraft.tipped_arrow.effect.levitation",
+  "tipped_arrow.effect.luck": "item.minecraft.tipped_arrow.effect.luck",
+  "tipped_arrow.effect.mundane": "item.minecraft.tipped_arrow.effect.mundane",
+  "tipped_arrow.effect.night_vision": "item.minecraft.tipped_arrow.effect.night_vision",
+  "tipped_arrow.effect.poison": "item.minecraft.tipped_arrow.effect.poison",
+  "tipped_arrow.effect.regeneration": "item.minecraft.tipped_arrow.effect.regeneration",
+  "tipped_arrow.effect.slowness": "item.minecraft.tipped_arrow.effect.slowness",
+  "tipped_arrow.effect.strength": "item.minecraft.tipped_arrow.effect.strength",
+  "tipped_arrow.effect.swiftness": "item.minecraft.tipped_arrow.effect.swiftness",
+  "tipped_arrow.effect.thick": "item.minecraft.tipped_arrow.effect.thick",
+  "tipped_arrow.effect.water": "item.minecraft.tipped_arrow.effect.water",
+  "tipped_arrow.effect.water_breathing": "item.minecraft.tipped_arrow.effect.water_breathing",
+  "tipped_arrow.effect.weakness": "item.minecraft.tipped_arrow.effect.weakness"
+}
