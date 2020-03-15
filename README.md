@@ -1,6 +1,6 @@
 # 中文Minecraft Wiki梗体中文资源包 · Unofficial
 
-[![Tencent QQ](https://img.shields.io/static/v1?label=QQ&message=657876815&color=eb1923&style=flat-square&logo=tencent%20qq)](https://jq.qq.com/?_wv=1027&k=5tqdTeR)    [![GitHub issues](https://img.shields.io/github/issues/lakejason0/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/lakejason0/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/pulls)    [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY-NC-SA%204.0&color=db2331&style=flat-square&logo=creative%20commons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/lakejason0/mcwzh-meme-resourcepack?label=latest%20version&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.13-20w07a&color=db2331&style=flat-square&logo=)](https://minecraft.net)
+[![Tencent QQ](https://img.shields.io/static/v1?label=QQ&message=657876815&color=eb1923&style=flat-square&logo=tencent%20qq)](https://jq.qq.com/?_wv=1027&k=5tqdTeR)    [![GitHub issues](https://img.shields.io/github/issues/lakejason0/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/lakejason0/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/pulls)    [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY-NC-SA%204.0&color=db2331&style=flat-square&logo=creative%20commons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/lakejason0/mcwzh-meme-resourcepack?label=latest%20version&style=flat-square)](https://github.com/lakejason0/mcwzh-meme-resourcepack/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.13-20w11a&color=db2331&style=flat-square&logo=)](https://minecraft.net)
 
 注：此资源包适用于Java版。有关到基岩版的移植，参见[SkyEye_FAST的基岩版移植Repository](https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock)。
 
@@ -15,7 +15,7 @@
 ### 加载Mod时
 普通版本的资源包**无法**覆盖Mod字符串，会导致Mod内容**全部变为英文**。请下载`mcwzh-meme_compatible.zip`，以保证体验。安装流程几乎相同，只是选择的语言应该是**普通的“简体中文”**。
 ### 1.12.2及以下版本支持
-1.13对可翻译字符串进行了一次破坏性更改，这意味着1.12.2及以下无法正常使用本资源包。同时，1.12.2及以下版本似乎使用了另一种未知的文件编码，这也是支持1.12.2及以下的版本的阻碍。我们仍在研究解决此问题（Issue [#34](https://github.com/lakejason0/mcwzh-meme-resourcepack/issues/34)）。
+1.13对可翻译字符串进行了一次破坏性更改，这意味着1.12.2及以下无法直接正常使用本资源包。同时，1.12.2及以下版本并不支持读取ASCII格式的Unicode码。通过建立映射表，我们初步实现了1.12.2及以下版本对部分字符串的支持，详见Issue [#34](https://github.com/lakejason0/mcwzh-meme-resourcepack/issues/34)。
 ### 唱片替换
 该资源包将唱片信息修改成了非Minecraft歌曲。由于版权原因，您需要自行制作一个唱片替换资源包（可以参考[这篇文章](https://www.planetminecraft.com/blog/how-to-change-music-discs-to-any-song---easy/)）。一份不受支持的预制版唱片替换包（不允许二次分发）可以在[这里](https://files.lakejason0.ml/images/3/34/%E5%94%B1%E7%89%87%E6%9B%BF%E6%8D%A2.zip)获得。
 ### 不死图腾替换
