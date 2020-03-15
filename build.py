@@ -14,7 +14,12 @@ mappings = ['addServer', 'advancements', 'advMode', 'attribute', 'book', 'build'
             'stat', 'stats', 'structure_block', 'subtitles', 'tile', 'tipped_arrow',
             'title', 'translation', 'tutorial']
 
+successful_pack_counter = 0
+warning_pack_counter = 0
+pack_counter = 0
+
 def main():
+
     parser = argparse.ArgumentParser(description="Automatically build resourcepacks")
     parser.add_argument('type', default='normal',help="Build type. This should be 'all', 'normal' or 'compat'.", choices=['all', 'normal', 'compat'])
     parser.add_argument('-n', '--without-figure', action='store_true', help="Do not add figures when building resource packs. If build type is 'all', this argument will be ignored.")
@@ -24,9 +29,12 @@ def main():
         build_all()
     else:
         build(args)
-    print("Build succeeded!")
+    print("[INFO] Built " + str(pack_counter) + " pack(s), with " + str(successful_pack_counter) + " pack(s) no warning")
 
 def build(args):
+    global pack_counter
+    global successful_pack_counter
+    global warning_pack_counter
     with open("assets/minecraft/lang/zh_meme.json", 'r', encoding='utf8') as f:
         lang_data = json.load(f)
     pack_name = get_packname(args)
@@ -101,6 +109,11 @@ def build(args):
         pack.writestr("pack.mcmeta", json.dumps(metadata, indent=4, ensure_ascii=False))
     pack.close()
     print("[INFO] Built pack " + pack_name + " with " + str(warning_counter) + " warning(s)")
+    if warning_counter == 0:
+        successful_pack_counter += 1
+    else:
+        warning_pack_counter += 1
+    pack_counter += 1
 
 def build_all():
     build({'type': 'normal', 'without_figure': False, 'legacy': False})
