@@ -122,7 +122,7 @@ def build_all():
     build({'type': 'compat', 'without_figure': True, 'legacy': False})
 #    build({'type': 'normal', 'without_figure': False, 'legacy': True})
 #    build({'type': 'normal', 'without_figure': True, 'legacy': True})
-    build({'type': 'compat', 'without_figure': False, 'legacy': True})
+#    build({'type': 'compat', 'without_figure': False, 'legacy': True})
     build({'type': 'compat', 'without_figure': True, 'legacy': True})
 
 def get_packname(args):
