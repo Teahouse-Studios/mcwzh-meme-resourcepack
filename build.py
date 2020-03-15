@@ -6,7 +6,7 @@ import os
 mappings = ['addServer', 'advancements', 'advMode', 'attribute', 'book', 'build', 'chat',
             'commands', 'connect', 'container', 'controls', 'createWorld', 'death',
             'deathScreen', 'debug', 'demo', 'difficulty', 'disconnect', 'effect',
-            'enchantment', 'filled_map', 'gameMode', 'generator', 'gui', 'inventory',
+            'enchantment', 'entity', 'filled_map', 'gameMode', 'generator', 'gui', 'inventory',
             'item', 'itemGroup', 'key', 'language', 'lanServer', 'lingering_potion',
             'mcoServer', 'menu', 'merchant', 'mount', 'multiplayer', 'narrator', 'options',
             'potion', 'recipe', 'record', 'resourcePack', 'screenshot', 'selectServer',
