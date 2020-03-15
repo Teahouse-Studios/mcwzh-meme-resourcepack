@@ -26,7 +26,7 @@
     "stat.drop": "stat.minecraft.drop",
     "stat.dropped": "stat_type.minecraft.dropped",
     "stat.dropperInspected": "stat.minecraft.inspect_dropper",
-    "stat.enderchestOpened": "stat.minecraft.open_ender_chest",
+    "stat.enderchestOpened": "stat.minecraft.open_enderchest",
     "stat.entityKilledBy": "stat_type.minecraft.killed_by",
     "stat.entityKilledBy.none": "stat_type.minecraft.killed_by.none",
     "stat.entityKills": "stat_type.minecraft.killed",
