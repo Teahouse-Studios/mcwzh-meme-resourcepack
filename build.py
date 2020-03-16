@@ -19,7 +19,6 @@ warning_pack_counter = 0
 pack_counter = 0
 
 def main():
-
     parser = argparse.ArgumentParser(description="Automatically build resourcepacks")
     parser.add_argument('type', default='normal',help="Build type. This should be 'all', 'normal' or 'compat'.", choices=['all', 'normal', 'compat'])
     parser.add_argument('-n', '--without-figure', action='store_true', help="Do not add figures when building resource packs. If build type is 'all', this argument will be ignored.")
@@ -56,7 +55,7 @@ def build(args):
             pack.writestr("assets/minecraft/lang/zh_meme.json", json.dumps(lang_data, indent=4, ensure_ascii=True))
         else:
             # legacy build
-            legacy_lang_data = lang_data
+            legacy_lang_data = {}
             for file in mappings:
                 file_name = file + ".json"
                 if file_name not in os.listdir("mappings"):
@@ -68,7 +67,12 @@ def build(args):
                     with open(location, encoding='utf8') as f:
                         mapping = json.load(f)
                     for k,v in mapping.items():
-                        legacy_lang_data.update({k:legacy_lang_data.pop(v)})
+                        if (k not in mapping.keys()) or (v not in lang_data.keys()):
+                            print("[WARN] " + "Corrupted key-value pair in file " + file_name + ": " + "{\"" + k + "\": \"" + v + "\"}" )
+                            warning_counter += 1
+                            pass
+                        else:
+                            legacy_lang_data.update({k:legacy_lang_data.pop(v)})
             legacy_lang_file = ""
             for k, v in legacy_lang_data.items():
                 legacy_lang_file += "%s=%s\n" %(k,v)
