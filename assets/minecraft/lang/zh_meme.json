@@ -4060,6 +4060,7 @@
     "subtitles.block.portal.ambient": "传送门：呼啸",
     "subtitles.block.pressure_plate.click": "压力板：被触发",
     "subtitles.block.redstone_torch.burnout": "红石火把：熄灭",
+    "subtitles.block.respawn_anchor.ambient": "传送门：呼啸",
     "subtitles.block.respawn_anchor.set_spawn": "重生锚：设置出生点",
     "subtitles.block.respawn_anchor.deplete": "重生锚：耗能",
     "subtitles.block.respawn_anchor.charge": "重生锚：被充能",
