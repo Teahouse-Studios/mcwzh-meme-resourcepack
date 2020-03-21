@@ -54,16 +54,17 @@ def build(args):
         metadata = json.load(meta)
     # decide build type
     if args['type'] == 'normal':
-        lang_name = "zh_meme.json"
+        lang_name = "zh_meme"
     elif args['type'] == 'compat':
         del metadata['language']
-        lang_name = "zh_cn.json"
+        lang_name = "zh_cn"
     if not args['legacy']:
+        lang_extension = ".json"
         # normal/compatible build
-        pack.writestr("assets/minecraft/lang/" + lang_name, json.dumps(lang_data, indent=4, ensure_ascii=True))
+        pack.writestr("assets/minecraft/lang/" + lang_name + lang_extension, json.dumps(lang_data, indent=4, ensure_ascii=True))
     else:
         # legacy build
-        lang_name = "zh_cn.lang"
+        lang_extension = ".lang"
         legacy_lang_data = {}
         for file in mappings:
             file_name = file + ".json"
@@ -85,7 +86,7 @@ def build(args):
         legacy_lang_file = ""
         for k, v in legacy_lang_data.items():
             legacy_lang_file += "%s=%s\n" %(k,v)
-        pack.writestr("assets/minecraft/lang/" + lang_name, legacy_lang_file)
+        pack.writestr("assets/minecraft/lang/" + lang_name + lang_extension, legacy_lang_file)
         # change pack format
         metadata['pack'].update({"pack_format": 3})
     pack.writestr("pack.mcmeta", json.dumps(metadata, indent=4, ensure_ascii=False))
