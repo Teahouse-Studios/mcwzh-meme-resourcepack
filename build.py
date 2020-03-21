@@ -28,7 +28,7 @@ def main():
         build_all()
     else:
         build(args)
-    print("[INFO] Built " + str(pack_counter) + " pack(s), with " + str(successful_pack_counter) + " pack(s) no warning")
+    print("\n[INFO] Built " + str(pack_counter) + " pack(s), with " + str(successful_pack_counter) + " pack(s) no warning")
 
 def build(args):
     global pack_counter
@@ -49,68 +49,46 @@ def build(args):
             pack.write("assets/minecraft/models/item/" + file)
         for file in os.listdir("assets/minecraft/textures/entity"):
             pack.write("assets/minecraft/textures/entity/" + file)
+    # Processing mcmeta
+    with open("pack.mcmeta", 'r', encoding='utf8') as meta:
+        metadata = json.load(meta)
+    # decide build type
     if args['type'] == 'normal':
-        if not args['legacy']:
-            # normal build
-            pack.writestr("assets/minecraft/lang/zh_meme.json", json.dumps(lang_data, indent=4, ensure_ascii=True))
-        else:
-            # legacy build
-            legacy_lang_data = {}
-            for file in mappings:
-                file_name = file + ".json"
-                if file_name not in os.listdir("mappings"):
-                    print("[WARN] Missing mapping: " + file_name + ", Skipping")
-                    warning_counter += 1
-                    pass
-                else:
-                    location = "mappings/" + file_name
-                    with open(location, encoding='utf8') as f:
-                        mapping = json.load(f)
-                    for k,v in mapping.items():
-                        if (k not in mapping.keys()) or (v not in lang_data.keys()):
-                            print("[WARN] " + "Corrupted key-value pair in file " + file_name + ": " + "{\"" + k + "\": \"" + v + "\"}" )
-                            warning_counter += 1
-                            pass
-                        else:
-                            legacy_lang_data.update({k:legacy_lang_data.pop(v)})
-            legacy_lang_file = ""
-            for k, v in legacy_lang_data.items():
-                legacy_lang_file += "%s=%s\n" %(k,v)
-            pack.writestr("assets/minecraft/lang/zh_meme.json", legacy_lang_file)
-        pack.write("pack.mcmeta")
+        lang_name = "zh_meme.json"
     elif args['type'] == 'compat':
-        if not args['legacy']:
-            # compatible build
-            pack.writestr("assets/minecraft/lang/zh_cn.json", json.dumps(lang_data, indent=4, ensure_ascii=True))
-        else:
-            # legacy build
-            legacy_lang_data = {}
-            for file in mappings:
-                file_name = file + ".json"
-                if file_name not in os.listdir("mappings"):
-                    print("[WARN] Missing mapping: " + file_name + ", Skipping")
-                    warning_counter += 1
-                    pass
-                else:
-                    location = "mappings/" + file_name
-                    with open(location, encoding='utf8') as f:
-                        mapping = json.load(f)
-                    for k,v in mapping.items():
-                        if (k not in mapping.keys()) or (v not in lang_data.keys()):
-                            print("[WARN] " + "Corrupted key-value pair in file " + file_name + ": " + "{\"" + k + "\": \"" + v + "\"}" )
-                            warning_counter += 1
-                            pass
-                        else:
-                            legacy_lang_data.update({k:lang_data[v]})
-            legacy_lang_file = ""
-            for k, v in legacy_lang_data.items():
-                legacy_lang_file += "%s=%s\n" %(k,v)
-            pack.writestr("assets/minecraft/lang/zh_cn.json", legacy_lang_file)
-        # Processing mcmeta
-        with open("pack.mcmeta", 'r', encoding='utf8') as meta:
-            metadata = json.load(meta)
         del metadata['language']
-        pack.writestr("pack.mcmeta", json.dumps(metadata, indent=4, ensure_ascii=False))
+        lang_name = "zh_cn.json"
+    if not args['legacy']:
+        # normal/compatible build
+        pack.writestr("assets/minecraft/lang/" + lang_name, json.dumps(lang_data, indent=4, ensure_ascii=True))
+    else:
+        # legacy build
+        lang_name = "zh_cn.lang"
+        legacy_lang_data = {}
+        for file in mappings:
+            file_name = file + ".json"
+            if file_name not in os.listdir("mappings"):
+                print("\033[33m[WARN] Missing mapping: " + file_name + ", Skipping\033[0m")
+                warning_counter += 1
+                pass
+            else:
+                location = "mappings/" + file_name
+                with open(location, encoding='utf8') as f:
+                    mapping = json.load(f)
+                for k, v in mapping.items():
+                    if v not in lang_data.keys():
+                        print("\033[33m[WARN] " + "Corrupted key-value pair in file " + file_name + ": " + "{\"" + k + "\": \"" + v + "\"}\033[0m" )
+                        warning_counter += 1
+                        pass
+                    else:
+                        legacy_lang_data.update({k:lang_data[v]})
+        legacy_lang_file = ""
+        for k, v in legacy_lang_data.items():
+            legacy_lang_file += "%s=%s\n" %(k,v)
+        pack.writestr("assets/minecraft/lang/" + lang_name, legacy_lang_file)
+        # change pack format
+        metadata['pack'].update({"pack_format": 3})
+    pack.writestr("pack.mcmeta", json.dumps(metadata, indent=4, ensure_ascii=False))
     pack.close()
     print("[INFO] Built pack " + pack_name + " with " + str(warning_counter) + " warning(s)")
     if warning_counter == 0:
