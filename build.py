@@ -28,7 +28,7 @@ def main():
         build_all()
     else:
         build(args)
-    print("\n[INFO] Built %d pack(s), with %d pack(s) no warning" % (pack_counter, successful_pack_counter))
+    print("\n[INFO] Built %d pack(s) with %d pack(s) no warning" % (pack_counter, successful_pack_counter))
 
 def build(args):
     global pack_counter
