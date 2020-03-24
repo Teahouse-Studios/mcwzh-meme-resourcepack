@@ -49,6 +49,8 @@ def build(args):
             pack.write("assets/minecraft/models/item/" + file)
         for file in os.listdir("assets/minecraft/textures/entity"):
             pack.write("assets/minecraft/textures/entity/" + file)
+        for file in os.listdir("assets/minecraft/textures/block"):
+            pack.write("assets/minecraft/textures/block/" + file)   
     # Processing mcmeta
     with open("pack.mcmeta", 'r', encoding='utf8') as meta:
         metadata = json.load(meta)
