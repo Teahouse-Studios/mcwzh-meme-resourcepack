@@ -50,7 +50,7 @@ def build(args):
         for file in os.listdir("assets/minecraft/textures/entity"):
             pack.write("assets/minecraft/textures/entity/" + file)
         for file in os.listdir("assets/minecraft/textures/block"):
-            pack.write("assets/minecraft/textures/block/" + file)   
+            pack.write("assets/minecraft/textures/block/" + file)
     # Processing mcmeta
     with open("pack.mcmeta", 'r', encoding='utf8') as meta:
         metadata = json.load(meta)
@@ -65,7 +65,7 @@ def build(args):
         # normal/compatible build
         pack.writestr("assets/minecraft/lang/" + lang_name + lang_extension, json.dumps(lang_data, indent=4, ensure_ascii=True))
     else:
-        # legacy build
+        # legacy(1.12.2) build
         lang_extension = ".lang"
         legacy_lang_data = {}
         for file in mappings:
@@ -84,7 +84,7 @@ def build(args):
                         warning_counter += 1
                         pass
                     else:
-                        legacy_lang_data.update({k:lang_data[v]})
+                        legacy_lang_data.update({k: lang_data[v]})
         legacy_lang_file = ""
         for k, v in legacy_lang_data.items():
             legacy_lang_file += "%s=%s\n" % (k, v)
