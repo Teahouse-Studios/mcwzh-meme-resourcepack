@@ -92,6 +92,12 @@ def build(args):
                         pass
                     else:
                         legacy_lang_data.update({k: lang_data[v]})
+        # build with mod content
+        if args["mod_content"]:
+            for file in os.listdir("mods"):
+                with open("mods/" + file, encoding='utf8') as f:
+                    moddata = json.load(f)
+                legacy_lang_data.update(moddata)
         legacy_lang_file = ""
         for k, v in legacy_lang_data.items():
             legacy_lang_file += "%s=%s\n" % (k, v)
