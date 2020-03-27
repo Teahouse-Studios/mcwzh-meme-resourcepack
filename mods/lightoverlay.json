@@ -14,5 +14,5 @@
     "config.lightoverlay.lineWidth": "线条宽度:",
     "config.lightoverlay.yellowColor": "黄色:",
     "config.lightoverlay.redColor": "红色:",
-    "config.lightoverlay.invalidColor": "无效颜色"
+    "config.lightoverlay.invalidColor": "这颜色我不认识啊！"
 }
