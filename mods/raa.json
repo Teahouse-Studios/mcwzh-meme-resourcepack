@@ -1,10 +1,10 @@
 {
     "itemGroup.raa.ores": "RAA：矿石",
     "itemGroup.raa.resources": "RAA: 资源",
-    "itemGroup.raa.tools": "RAA：工具",
+    "itemGroup.raa.tools": "RAA：工 具 人",
     "itemGroup.raa.armor": "RAA：盔甲",
     "itemGroup.raa.weapons": "RAA：武器",
-    "itemGroup.raa.food": "RAA：食物",
+    "itemGroup.raa.food": "RAA：恰饭",
     "itemGroup.raa.dimension_blocks": "RAA：维度",
     "itemGroup.raa.tr_dust": "RAA兼容：科技复兴Mod",
     "text.raa.block.ore": "%s矿石",
