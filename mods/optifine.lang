@@ -84,13 +84,13 @@ options.graphics.tooltip.3=  高品质 - 高品质（较慢）
 options.graphics.tooltip.4=改变云、树叶、水、
 options.graphics.tooltip.5=阴影和草地的外观。
 
-of.options.renderDistance.tiny=最近
+of.options.renderDistance.tiny=gachi恋距离
 of.options.renderDistance.short=近
 of.options.renderDistance.normal=中等
 of.options.renderDistance.far=远
-of.options.renderDistance.extreme=极远
-of.options.renderDistance.insane=疯狂
-of.options.renderDistance.ludicrous=mdzz
+of.options.renderDistance.extreme=电脑：喘息
+of.options.renderDistance.insane=你有病吧？
+of.options.renderDistance.ludicrous=mdzzzzzz
 
 options.renderDistance.tooltip.1=能见度
 options.renderDistance.tooltip.2=  2 最近 - 32m（最快）
@@ -157,7 +157,7 @@ options.attackIndicator.tooltip.6=当前所持物品的攻击力
 of.options.ALTERNATE_BLOCKS=替选方块
 of.options.ALTERNATE_BLOCKS.tooltip.1=替选方块
 of.options.ALTERNATE_BLOCKS.tooltip.2=为一些方块使用备选的方块模型。
-of.options.ALTERNATE_BLOCKS.tooltip.3=取决于所选的资源包。
+of.options.ALTERNATE_BLOCKS.tooltip.3=取决于所选的资源包，得有才行。
 
 of.options.FOG_FANCY=迷雾
 of.options.FOG_FANCY.tooltip.1=迷雾类型
@@ -169,7 +169,7 @@ of.options.FOG_FANCY.tooltip.6=显卡支持下可用。
 
 of.options.FOG_START=迷雾起始位置
 of.options.FOG_START.tooltip.1=迷雾起始位置
-of.options.FOG_START.tooltip.2=  0.2 - 迷雾起始于玩家周围
+of.options.FOG_START.tooltip.2=  0.2 - 迷雾起始于玩家周围（雾霾天气）
 of.options.FOG_START.tooltip.3=  0.8 - 迷雾起始于离玩家较远的地方
 of.options.FOG_START.tooltip.4=此选项通常不会影响性能。
 
@@ -754,7 +754,7 @@ of.options.SHOW_GL_ERRORS=显示 GL 错误
 of.options.SHOW_GL_ERRORS.tooltip.1=显示 OpenGL 错误
 of.options.SHOW_GL_ERRORS.tooltip.2=当启用此选项时，OpenGL 错误会在聊天框中显示出来。
 of.options.SHOW_GL_ERRORS.tooltip.3=请仅当所有冲突都已知并且
-of.options.SHOW_GL_ERRORS.tooltip.4=明确知道错误无法修复时禁用此选项。
+of.options.SHOW_GL_ERRORS.tooltip.4=明确知道错误无法修复，希望眼不见心不烦时禁用此选项。
 of.options.SHOW_GL_ERRORS.tooltip.5=即使禁用了此选项，错误仍会被记录在错误日志中，
 of.options.SHOW_GL_ERRORS.tooltip.6=并且这些错误仍可能会导致明显的 FPS 下降。
 
