@@ -1,12 +1,12 @@
 {
 
-    "itemscroller.gui.button.config_gui.generic": "Generic",
-    "itemscroller.gui.button.config_gui.hotkeys": "Hotkeys",
-    "itemscroller.gui.button.config_gui.toggles": "Toggles",
+    "itemscroller.gui.button.config_gui.generic": "通用设置",
+    "itemscroller.gui.button.config_gui.hotkeys": "快捷键",
+    "itemscroller.gui.button.config_gui.toggles": "切换",
 
-    "itemscroller.gui.label.recipe_page": "Page %d / %d",
-    "itemscroller.gui.label.trades": "Trades",
-    "itemscroller.gui.label.trade_uses": "Trade uses: %d / %d",
+    "itemscroller.gui.label.recipe_page": "页码 %d / %d",
+    "itemscroller.gui.label.trades": "功能",
+    "itemscroller.gui.label.trade_uses": "功能用途: %d / %d",
 
-    "itemscroller.gui.title.configs": "Item Scroller Configs"
+    "itemscroller.gui.title.configs": "快捷滑鼠设置"
 }
