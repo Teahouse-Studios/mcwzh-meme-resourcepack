@@ -1,0 +1,18 @@
+{
+    "key.lightoverlay.category": "光照显示",
+    "key.lightoverlay.enable_overlay": "开关光照显示",
+    "key.lightoverlay.decrease_reach": "减少光照显示范围",
+    "key.lightoverlay.increase_reach": "扩大光照显示范围",
+    "key.lightoverlay.increase_line_width": "增加光照显示线条宽度",
+    "key.lightoverlay.decrease_line_width": "减少光照显示线条宽度",
+    "text.lightoverlay.current_reach": "目前的范围是%d!",
+    "text.lightoverlay.current_line_width": "目前的线条宽度是%s!",
+    "config.lightoverlay.general": "总则",
+    "config.lightoverlay.reach": "达到:",
+    "config.lightoverlay.crossLevel": "光照等级:",
+    "config.lightoverlay.showNumber": "改为显示数字:",
+    "config.lightoverlay.lineWidth": "线条宽度:",
+    "config.lightoverlay.yellowColor": "黄色:",
+    "config.lightoverlay.redColor": "红色:",
+    "config.lightoverlay.invalidColor": "无效颜色"
+}
