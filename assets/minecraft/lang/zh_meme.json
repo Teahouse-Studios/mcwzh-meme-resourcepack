@@ -2388,6 +2388,8 @@
     "death.attack.mob.item": "%1$s被%2$s用%3$s杀死了",
     "death.attack.netherBed.link": "MC经典特性",
     "death.attack.netherBed.message": "%1$s被%2$s杀死了",
+    "death.attack.badRespawnPoint.link": "MC经典特性",
+    "death.attack.badRespawnPoint.message": "%1$s被%2$s杀死了",
     "death.attack.onFire": "%1$s外焦里嫩",
     "death.attack.onFire.player": "%1$s在试图与%2$s战斗时被烤得酥脆，好吃(╹ڡ╹ )！",
     "death.attack.outOfWorld": "%1$s步入了虚空之地（虽然不知道是不是因为虚空而死）",
