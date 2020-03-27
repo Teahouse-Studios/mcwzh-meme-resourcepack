@@ -48,7 +48,7 @@ of.message.shaders.an1=光影与3D效果不兼容。
 of.message.shaders.an2=请将 其他 -> 3D效果 选项设置为 关闭。
 
 of.message.shaders.nv1=此光影需要更新的OptiFine版本：%s
-of.message.shaders.nv2=确认要继续吗？
+of.message.shaders.nv2=真的真的真的要继续吗？
 
 of.message.newVersion=新的§eOptiFine§f版本现已可用：§e%s§f
 of.message.java64Bit=您可以安装§e64位Java§f来提升性能。
@@ -90,7 +90,7 @@ of.options.renderDistance.normal=中等
 of.options.renderDistance.far=远
 of.options.renderDistance.extreme=极远
 of.options.renderDistance.insane=疯狂
-of.options.renderDistance.ludicrous=荒唐
+of.options.renderDistance.ludicrous=mdzz
 
 options.renderDistance.tooltip.1=能见度
 options.renderDistance.tooltip.2=  2 最近 - 32m（最快）
