@@ -97,8 +97,8 @@ options.renderDistance.tooltip.2=  2 最近 - 32m（最快）
 options.renderDistance.tooltip.3=  8 中等 - 128m（正常）
 options.renderDistance.tooltip.4=  16 远 - 256m（较慢）
 options.renderDistance.tooltip.5=  32 极远 - 512m（最慢！）非常消耗资源！
-options.renderDistance.tooltip.6=  48 疯狂 - 768m，需要2G的内存分配
-options.renderDistance.tooltip.7=  64 荒唐 - 1024m，需要3G的内存分配
+options.renderDistance.tooltip.6=  48 疯狂 - 768m，需要2G的内存分配，但是你得有
+options.renderDistance.tooltip.7=  64 荒唐 - 1024m，需要3G的内存分配，但是你得有
 options.renderDistance.tooltip.8=超过 16 的能见度值只在本地世界有效。
 
 options.ao.tooltip.1=平滑光照
@@ -145,7 +145,7 @@ options.gamma.tooltip.6=完全黑色的物体的亮度。
 options.anaglyph.tooltip.1=3D效果
 options.anaglyph.tooltip.2=通过为双眼分配不同颜色
 options.anaglyph.tooltip.3=以实现 3D 立体效果。
-options.anaglyph.tooltip.4=需要使用红蓝眼镜正常观看。
+options.anaglyph.tooltip.4=需要使用红蓝眼镜正常观看，但是你得有。
 
 options.attackIndicator.tooltip.1=配置攻击指示器的位置
 options.attackIndicator.tooltip.2=  十字准线 - 在十字准线下
@@ -353,7 +353,7 @@ of.options.RANDOM_ENTITIES.tooltip.1=随机实体材质
 of.options.RANDOM_ENTITIES.tooltip.2=  关闭 - 关闭随机实体材质（较快）
 of.options.RANDOM_ENTITIES.tooltip.3=  开启 - 随机实体材质（较慢）
 of.options.RANDOM_ENTITIES.tooltip.4=游戏中的实体使用随机的相应贴图。
-of.options.RANDOM_ENTITIES.tooltip.5=需要资源包内有多个实体贴图。
+of.options.RANDOM_ENTITIES.tooltip.5=需要资源包内有多个实体贴图，得有才行。
 
 of.options.BETTER_GRASS=更好的草地
 of.options.BETTER_GRASS.tooltip.1=更好的草地
