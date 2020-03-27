@@ -55,9 +55,19 @@ def build(args):
     # build with mod content
     if args["mod_content"]:
         for file in os.listdir("mods"):
-            with open("mods/" + file, encoding='utf8') as f:
-                moddata = json.load(f)
-            lang_data.update(moddata)
+            if file.endswith(".json"):
+                with open("mods/" + file, encoding='utf8') as f:
+                    moddata = json.load(f)
+                lang_data.update(moddata)
+            elif file.endswith(".lang"):
+                with open("mods/" + file, 'rU', encoding='utf8') as f:
+                    moddata_item = f.read().split('\n')
+                    moddata_item.remove("\n")
+                    moddata_item = [i for i in moddata_item if (not str(i).startswith("#"))]
+                    moddata = dict(i.split("=") for i in moddata_item)
+                lang_data.update(moddata)
+            else:
+                print("\033[33m[WARN] Corrupted file: %s, skipping\033[0m" % (file))
     # Processing mcmeta
     with open("pack.mcmeta", 'r', encoding='utf8') as meta:
         metadata = json.load(meta)
