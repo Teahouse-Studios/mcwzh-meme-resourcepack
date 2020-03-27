@@ -1,0 +1,5 @@
+{
+    "key.orderly.toggle": "开关血量显示",
+    "config.orderly.title": "血条",
+    "config.orderly.error.invalid_identifier": "%s不是有效的标识符！"
+}
