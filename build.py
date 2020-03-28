@@ -68,21 +68,27 @@ def build(args):
     if args['mod_content']:
         if 'all' in args['mod_content']:
             modlist = os.listdir("mods")
+            modlist = ['mods/' + i for i in modlist]
         else:
             modlist = args['mod_content']
         for file in modlist:
-            if file.endswith(".json"):
-                with open("mods/" + file, encoding='utf8') as f:
-                    moddata.update(json.load(f))
-            elif file.endswith(".lang"):
-                with open("mods/" + file, 'r', encoding='utf8') as f:
-                    moddata_item = f.read().splitlines()
-                moddata_item = [i for i in moddata_item if (
-                    i != '' and not i.startswith("#"))]
-                moddata.update(dict(i.split("=", 1) for i in moddata_item))
+            if os.path.isfile(file):
+                if file.endswith(".json"):
+                    with open(file, encoding='utf8') as f:
+                        moddata.update(json.load(f))
+                elif file.endswith(".lang"):
+                    with open(file, 'r', encoding='utf8') as f:
+                        moddata_item = f.read().splitlines()
+                    moddata_item = [i for i in moddata_item if (
+                        i != '' and not i.startswith("#"))]
+                    moddata.update(dict(i.split("=", 1) for i in moddata_item))
+                else:
+                    print(
+                        "\033[33m[WARN] Wrong file extension: %s, skipping\033[0m" % file)
+                    warning_counter += 1
             else:
                 print(
-                    "\033[33m[WARN] Wrong file extension: %s, skipping\033[0m" % file)
+                    "\033[33m[WARN] File not exist: %s, skipping\033[0m" % (file))
                 warning_counter += 1
         lang_data.update(moddata)
     # Processing mcmeta
