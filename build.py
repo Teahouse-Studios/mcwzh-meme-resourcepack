@@ -21,7 +21,7 @@ pack_counter = 0
 def main():
     parser = argparse.ArgumentParser(description="Automatically build resourcepacks")
     parser.add_argument('type', default='normal',help="Build type. This should be 'all', 'normal' or 'compat'.", choices=['all', 'normal', 'compat'])
-    parser.add_argument('-n', '--without-figure', action='store_true', help="Do not add figures when building resource packs. If build type is 'all', this argument will be ignored.")
+    parser.add_argument('-n', '--without-figure', action='store_true', help="Do not use figure textures when building resource packs. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-l', '--legacy', action='store_true', help="(Not fully implemented) Use legacy format (.lang) when building resource packs. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-m', '--mod-content', action='store_true', help="(Not fully implemented) Include mod strings. If build type is 'all', this argument will be ignored.")
     args = vars(parser.parse_args())
