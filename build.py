@@ -24,7 +24,7 @@ def main():
     parser.add_argument('-n', '--without-figure', action='store_true', help="Do not use figure textures or models when building resource packs. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-l', '--legacy', action='store_true', help="(Not fully implemented) Use legacy format (.lang) when building resource packs. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-m', '--mod-content', type=str, nargs='*', help="(Not fully implemented) Include mod strings. Should be path(s) to a file or 'all'. If build type is 'all', this argument will be ignored.")
-    parser.add_argument('-d', '--debug', action='store_true', help="Output a individual language file. If build type is 'all', this argument will be ignored.")
+    parser.add_argument('-d', '--debug', action='store_true', help="Output an individual language file. If build type is 'all', this argument will be ignored.")
     args = vars(parser.parse_args())
     if args['type'] == 'all':
         build_all()
