@@ -24,6 +24,7 @@ def main():
     parser.add_argument('-n', '--without-figure', action='store_true', help="Do not use figure textures or models when building resource packs. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-l', '--legacy', action='store_true', help="(Not fully implemented) Use legacy format (.lang) when building resource packs. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-m', '--mod-content', type=str, nargs='*', help="(Not fully implemented) Include mod strings. Should be path(s) to a file or 'all'. If build type is 'all', this argument will be ignored.")
+    parser.add_argument('-d', '--debug', action='store_true', help="Output a individual language file. If build type is 'all', this argument will be ignored.")
     args = vars(parser.parse_args())
     if args['type'] == 'all':
         build_all()
@@ -85,6 +86,9 @@ def build(args):
         lang_extension = ".json"
         # normal/compatible build
         pack.writestr("assets/minecraft/lang/" + lang_name + lang_extension, json.dumps(lang_data, indent=4, ensure_ascii=True))
+        if args['debug']:
+            with open(lang_name + lang_extension,'w') as debug_file:
+                debug_file.write(json.dumps(lang_data, indent=4, ensure_ascii=True))
     else:
         # legacy(1.12.2) build
         lang_extension = ".lang"
@@ -130,6 +134,9 @@ def build(args):
         for k, v in legacy_lang_data.items():
             legacy_lang_file += "%s=%s\n" % (k, v)
         pack.writestr("assets/minecraft/lang/" + lang_name + lang_extension, legacy_lang_file)
+        if args['debug']:
+            with open(lang_name + lang_extension,'w') as debug_file:
+                debug_file.write(legacy_lang_file)
         # change pack format
         metadata['pack'].update({"pack_format": 3})
     pack.writestr("pack.mcmeta", json.dumps(metadata, indent=4, ensure_ascii=False))
@@ -142,14 +149,14 @@ def build(args):
     pack_counter += 1
 
 def build_all():
-    build({'type': 'normal', 'without_figure': False, 'legacy': False, 'mod_content': ['all']})
-    build({'type': 'normal', 'without_figure': True, 'legacy': False, 'mod_content': ['all']})
-    build({'type': 'compat', 'without_figure': False, 'legacy': False, 'mod_content': []})
-    build({'type': 'compat', 'without_figure': True, 'legacy': False, 'mod_content': []})
-#    build({'type': 'normal', 'without_figure': False, 'legacy': True})
-#    build({'type': 'normal', 'without_figure': True, 'legacy': True})
-#    build({'type': 'compat', 'without_figure': False, 'legacy': True})
-    build({'type': 'compat', 'without_figure': True, 'legacy': True, 'mod_content': []})
+    build({'type': 'normal', 'without_figure': False, 'legacy': False, 'mod_content': ['all'], 'debug': False})
+    build({'type': 'normal', 'without_figure': True, 'legacy': False, 'mod_content': ['all'], 'debug': False})
+    build({'type': 'compat', 'without_figure': False, 'legacy': False, 'mod_content': [], 'debug': False})
+    build({'type': 'compat', 'without_figure': True, 'legacy': False, 'mod_content': [], 'debug': False})
+#    build({'type': 'normal', 'without_figure': False, 'legacy': True, 'debug': False})
+#    build({'type': 'normal', 'without_figure': True, 'legacy': True, 'debug': False})
+#    build({'type': 'compat', 'without_figure': False, 'legacy': True, 'debug': False})
+    build({'type': 'compat', 'without_figure': True, 'legacy': True, 'mod_content': [], 'debug': False})
 
 def get_packname(args):
     base_name = "mcwzh-meme"
