@@ -3044,7 +3044,7 @@
     "item.minecraft.lingering_potion.effect.water_breathing": "滞留型水肺药水",
     "item.minecraft.lingering_potion.effect.weakness": "滞留型虚弱药水",
     "item.minecraft.llama_spawn_egg": "草泥马刷怪蛋",
-    "item.minecraft.lodestone_compass": "不是罗德（岛）石做的罗德（岛）石指南针",
+    "item.minecraft.lodestone_compass": "罗德（岛）石NullPointerException",
     "item.minecraft.magenta_dye": "品红色染料",
     "item.minecraft.magma_cream": "岩浆膏",
     "item.minecraft.magma_cube_spawn_egg": "生成一只岩浆萌王",
