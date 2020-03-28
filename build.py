@@ -84,11 +84,11 @@ def build(args):
                     moddata.update(dict(i.split("=", 1) for i in moddata_item))
                 else:
                     print(
-                        "\033[33m[WARN] Wrong file extension: %s, skipping\033[0m" % file)
+                        '\033[33m[WARN] File extension "%s" is not supported, skipping\033[0m' % file[file.rfind('.') + 1:])
                     warning_counter += 1
             else:
                 print(
-                    "\033[33m[WARN] File not exist: %s, skipping\033[0m" % (file))
+                    '\033[33m[WARN] File "%s" does not exist, skipping\033[0m' % file)
                 warning_counter += 1
         lang_data.update(moddata)
     # Processing mcmeta
