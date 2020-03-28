@@ -23,7 +23,7 @@ def main():
     parser.add_argument('type', default='normal',help="Build type. This should be 'all', 'normal' or 'compat'.", choices=['all', 'normal', 'compat'])
     parser.add_argument('-n', '--without-figure', action='store_true', help="Do not use figure textures or models when building resource packs. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-l', '--legacy', action='store_true', help="(Not fully implemented) Use legacy format (.lang) when building resource packs. If build type is 'all', this argument will be ignored.")
-    parser.add_argument('-m', '--mod-content', action='store_true', help="(Not fully implemented) Include mod strings. If build type is 'all', this argument will be ignored.")
+    parser.add_argument('-m', '--mod-content', type=str, nargs='*', help="(Not fully implemented) Include mod strings. If build type is 'all', this argument will be ignored.")
     args = vars(parser.parse_args())
     if args['type'] == 'all':
         build_all()
@@ -54,24 +54,48 @@ def build(args):
             pack.write("assets/minecraft/textures/block/" + file)
     # build with mod content
     if args["mod_content"]:
-        for file in os.listdir("mods"):
-            if file.endswith(".json"):
-                with open("mods/" + file, encoding='utf8') as f:
-                    moddata = json.load(f)
-                lang_data.update(moddata)
-            elif file.endswith(".lang"):
-                with open("mods/" + file, 'r', encoding='utf8') as f:
-                    moddata_item = f.read().split('\n')
-                    moddata_item = [i for i in moddata_item if (not str(i).startswith("#"))]
-                    while '' in moddata_item:
-                        moddata_item.remove('')
-                    while '\n' in moddata_item:
-                        moddata_item.remove('\n')
-                    moddata = dict (i.split("=",1) for i in moddata_item)
-                lang_data.update(moddata)
-            else:
-                print("\033[33m[WARN] Corrupted file: %s, skipping\033[0m" % (file))
-                warning_counter += 1
+        if 'all' in args["mod_content"]:
+            for file in os.listdir("mods"):
+                if file.endswith(".json"):
+                    with open("mods/" + file, encoding='utf8') as f:
+                        moddata = json.load(f)
+                    lang_data.update(moddata)
+                elif file.endswith(".lang"):
+                    with open("mods/" + file, 'r', encoding='utf8') as f:
+                        moddata_item = f.read().split('\n')
+                        moddata_item = [i for i in moddata_item if (not str(i).startswith("#"))]
+                        while '' in moddata_item:
+                            moddata_item.remove('')
+                        while '\n' in moddata_item:
+                            moddata_item.remove('\n')
+                        moddata = dict (i.split("=",1) for i in moddata_item)
+                    lang_data.update(moddata)
+                else:
+                    print("\033[33m[WARN] Wrong file extension: %s, skipping\033[0m" % (file))
+                    warning_counter += 1
+        else:
+            for file in args["mod_content"]:
+                if os.path.exists(file):
+                    if file.endswith(".json"):
+                        with open(file, encoding='utf8') as f:
+                            moddata = json.load(f)
+                        lang_data.update(moddata)
+                    elif file.endswith(".lang"):
+                        with open(file, 'r', encoding='utf8') as f:
+                            moddata_item = f.read().split('\n')
+                            moddata_item = [i for i in moddata_item if (not str(i).startswith("#"))]
+                            while '' in moddata_item:
+                                moddata_item.remove('')
+                            while '\n' in moddata_item:
+                                moddata_item.remove('\n')
+                            moddata = dict (i.split("=",1) for i in moddata_item)
+                        lang_data.update(moddata)
+                    else:
+                        print("\033[33m[WARN] Wrong file extension: %s, skipping\033[0m" % (file))
+                        warning_counter += 1
+                else:
+                    print("\033[33m[WARN] File not exist: %s, skipping\033[0m" % (file))
+                    warning_counter += 1
     # Processing mcmeta
     with open("pack.mcmeta", 'r', encoding='utf8') as meta:
         metadata = json.load(meta)
@@ -142,14 +166,14 @@ def build(args):
     pack_counter += 1
 
 def build_all():
-    build({'type': 'normal', 'without_figure': False, 'legacy': False, 'mod_content': True})
-    build({'type': 'normal', 'without_figure': True, 'legacy': False, 'mod_content': True})
-    build({'type': 'compat', 'without_figure': False, 'legacy': False, 'mod_content': False})
-    build({'type': 'compat', 'without_figure': True, 'legacy': False, 'mod_content': False})
+    build({'type': 'normal', 'without_figure': False, 'legacy': False, 'mod_content': ['all']})
+    build({'type': 'normal', 'without_figure': True, 'legacy': False, 'mod_content': ['all']})
+    build({'type': 'compat', 'without_figure': False, 'legacy': False, 'mod_content': []})
+    build({'type': 'compat', 'without_figure': True, 'legacy': False, 'mod_content': []})
 #    build({'type': 'normal', 'without_figure': False, 'legacy': True})
 #    build({'type': 'normal', 'without_figure': True, 'legacy': True})
 #    build({'type': 'compat', 'without_figure': False, 'legacy': True})
-    build({'type': 'compat', 'without_figure': True, 'legacy': True, 'mod_content': False})
+    build({'type': 'compat', 'without_figure': True, 'legacy': True, 'mod_content': []})
 
 def get_packname(args):
     base_name = "mcwzh-meme"
