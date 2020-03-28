@@ -86,7 +86,7 @@
 
     "minihud.message.toggled_using_center_position": "切换%s %s，使用中心位置%s",
     "minihud.message.toggled_using_position": "切换%s %s，使用当前位置%s",
-    "minihud.message.toggled_using_world_spawn": "切换%s %s，使用世界出生点%s",
+    "minihud.message.toggled_using_world_spawn": "切换%s %s，使用世界产卵室%s",
 
     "minihud.message.error.invalid_dropped_chunks_hash_size": "无法分析聊天中丢失的数据包哈希值大小",
     "minihud.message.error.invalid_seed": "无法从聊天中分析世界种子",
@@ -94,5 +94,5 @@
 
     "minihud.message.distance_reference_point_set": "将距离参考点设置为%s",
     "minihud.message.seed_set": "MiniHUD:设置种子为'%s'",
-    "minihud.message.spawn_set": "MiniHUD:设置世界出生点为%s"
+    "minihud.message.spawn_set": "MiniHUD:设置世界产卵室为%s"
 }
