@@ -53,49 +53,25 @@ def build(args):
         for file in os.listdir("assets/minecraft/textures/block"):
             pack.write("assets/minecraft/textures/block/" + file)
     # build with mod content
-    if args["mod_content"]:
-        if 'all' in args["mod_content"]:
-            for file in os.listdir("mods"):
-                if file.endswith(".json"):
-                    with open("mods/" + file, encoding='utf8') as f:
-                        moddata = json.load(f)
-                    lang_data.update(moddata)
-                elif file.endswith(".lang"):
-                    with open("mods/" + file, 'r', encoding='utf8') as f:
-                        moddata_item = f.read().split('\n')
-                        moddata_item = [i for i in moddata_item if (not str(i).startswith("#"))]
-                        while '' in moddata_item:
-                            moddata_item.remove('')
-                        while '\n' in moddata_item:
-                            moddata_item.remove('\n')
-                        moddata = dict (i.split("=",1) for i in moddata_item)
-                    lang_data.update(moddata)
-                else:
-                    print("\033[33m[WARN] Wrong file extension: %s, skipping\033[0m" % (file))
-                    warning_counter += 1
+    if args['mod_content']:
+        if 'all' in args['mod_content']:
+            modlist = os.listdir("mods")
         else:
-            for file in args["mod_content"]:
-                if os.path.exists(file):
-                    if file.endswith(".json"):
-                        with open(file, encoding='utf8') as f:
-                            moddata = json.load(f)
-                        lang_data.update(moddata)
-                    elif file.endswith(".lang"):
-                        with open(file, 'r', encoding='utf8') as f:
-                            moddata_item = f.read().split('\n')
-                            moddata_item = [i for i in moddata_item if (not str(i).startswith("#"))]
-                            while '' in moddata_item:
-                                moddata_item.remove('')
-                            while '\n' in moddata_item:
-                                moddata_item.remove('\n')
-                            moddata = dict (i.split("=",1) for i in moddata_item)
-                        lang_data.update(moddata)
-                    else:
-                        print("\033[33m[WARN] Wrong file extension: %s, skipping\033[0m" % (file))
-                        warning_counter += 1
-                else:
-                    print("\033[33m[WARN] File not exist: %s, skipping\033[0m" % (file))
-                    warning_counter += 1
+            modlist = args['mod_content']
+        for file in modlist:
+            if file.endswith(".json"):
+                with open("mods/" + file, encoding='utf8') as f:
+                    moddata = json.load(f)
+                lang_data.update(moddata)
+            elif file.endswith(".lang"):
+                with open("mods/" + file, 'r', encoding='utf8') as f:
+                    moddata_item = f.read().splitlines()
+                    moddata_item = [i for i in moddata_item if (i != '' and not i.startswith("#"))]
+                    moddata = dict(i.split("=", 1) for i in moddata_item)
+                lang_data.update(moddata)
+            else:
+                print("\033[33m[WARN] Wrong file extension: %s, skipping\033[0m" % file)
+                warning_counter += 1
     # Processing mcmeta
     with open("pack.mcmeta", 'r', encoding='utf8') as meta:
         metadata = json.load(meta)
@@ -116,7 +92,7 @@ def build(args):
         for file in mappings:
             file_name = file + ".json"
             if file_name not in os.listdir("mappings"):
-                print("\033[33m[WARN] Missing mapping: %s, skipping\033[0m" % (file_name))
+                print("\033[33m[WARN] Missing mapping: %s, skipping\033[0m" % file_name)
                 warning_counter += 1
                 pass
             else:
@@ -148,7 +124,7 @@ def build(args):
                         moddata = dict (i.split("=",1) for i in moddata_item)
                     legacy_lang_data.update(moddata)
                 else:
-                    print("\033[33m[WARN] Corrupted file: %s, skipping\033[0m" % (file))
+                    print("\033[33m[WARN] Corrupted file: %s, skipping\033[0m" % file)
                     warning_counter += 1
         legacy_lang_file = ""
         for k, v in legacy_lang_data.items():
