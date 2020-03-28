@@ -1,0 +1,6 @@
+{   
+    "key.categories.durabilityviewer":"耐久指示器",
+    "key.durabilityviewer.showhide":"显示/隐藏 耐久显示",
+    "tooltip.durability":"耐久度 %s",
+    "durabilityviewer.subtitle.toolBreaking":"物品即将损坏"
+}
