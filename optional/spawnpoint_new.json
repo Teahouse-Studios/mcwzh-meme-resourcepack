@@ -1,0 +1,4 @@
+{
+    "commands.spawnpoint.success.multiple": "已将%5$s名玩家在%4$s的出生点设为%1$s, %2$s, %3$s",
+    "commands.spawnpoint.success.single": "已将%5$s在%4$s的出生点设为%1$s, %2$s, %3$s"
+}
