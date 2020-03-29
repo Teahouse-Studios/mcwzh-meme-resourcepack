@@ -22,10 +22,11 @@
 该资源包将唱片信息修改成了非Minecraft歌曲。由于版权原因，您需要自行制作一个唱片替换资源包（可以参考[这篇文章](https://www.planetminecraft.com/blog/how-to-change-music-discs-to-any-song---easy/)）。一份不受支持的预制版唱片替换包（不允许二次分发）可以在[这里](https://files.lakejason0.ml/images/3/34/%E5%94%B1%E7%89%87%E6%9B%BF%E6%8D%A2.zip)获得。
 ### 不死图腾替换
 该资源包将不死图腾替换成了自定义模型。自定义模型范围为`10800000~10800003`。如果这不适用于你（例如模型出错，游玩自定义地图或装载其他3D资源包），你可以尝试调整载入顺序，或者下载不带自定义模型的自动构建（以`_nofigure`结尾）。如果不想重新下载，你也可以直接删除有自定义模型版本的`assets/minecraft/textures`和`assets/minecraft/models`。
-### 可选的文件替换
-由于Mojang在20w12a加入了重生锚，`/spawnpoint`现在支持设置重生点到指定维度，这导致翻译字符串出现了一次破坏性更改。你可以在自己构建时在命令结尾加入参数`-m optional/spawnpoint_new.json`或者`-m optional/spawnpoint_old.json`以获取更好的命令使用体验。
+
 
 关于可以直接获取自定义模型的数据包，可以在[这里](https://files.lakejason0.ml/images/e/e5/Figure.zip)找到。
+### 可选的文件替换
+由于Mojang在20w12a加入了重生锚，`/spawnpoint`现在支持设置重生点到指定维度，这导致翻译字符串出现了一次破坏性更改。你可以在自己构建时在命令结尾加入参数`-m optional/spawnpoint_new.json`或者`-m optional/spawnpoint_old.json`以获取更好的命令使用体验。
 ## 鹦鹉通道
 ### 体验最新内容
 想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作：
