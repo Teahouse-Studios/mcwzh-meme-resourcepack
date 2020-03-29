@@ -1,0 +1,55 @@
+{
+	"effect.extraalchemy.magnetism": "Magnetism",
+	"item.minecraft.potion.effect.magnetism": "Potion of Magnetism",
+	"item.minecraft.splash_potion.effect.magnetism": "Splash Potion of Magnetism",
+	"item.minecraft.lingering_potion.effect.magnetism": "Lingering Potion of Magnetism",
+	"item.minecraft.tipped_arrow.effect.magnetism": "Arrow of Magnetism",
+	
+	"effect.extraalchemy.photosynthesis": "Photosynthesis",
+	"item.minecraft.potion.effect.photosynthesis": "Potion of Photosynthesis",
+	"item.minecraft.splash_potion.effect.photosynthesis": "Splash Potion of Photosynthesis",
+	"item.minecraft.lingering_potion.effect.photosynthesis": "Lingering Potion of Photosynthesis",
+	"item.minecraft.tipped_arrow.effect.photosynthesis": "Arrow of Photosynthesis",
+	
+	"effect.extraalchemy.crumbling": "Crumbling",
+	"item.minecraft.potion.effect.crumbling": "Potion of Crumbling",
+	"item.minecraft.splash_potion.effect.crumbling": "Splash Potion of Crumbling",
+	"item.minecraft.lingering_potion.effect.crumbling": "Lingering Potion of Crumbling",
+	"item.minecraft.tipped_arrow.effect.crumbling": "Arrow of Crumbling",
+	
+	"effect.extraalchemy.sails": "Sails",
+	"item.minecraft.potion.effect.sails": "Potion of Sailing",
+	"item.minecraft.splash_potion.effect.sails": "Splash Potion of Sailing",
+	"item.minecraft.lingering_potion.effect.sails": "Lingering Potion of Sailing",
+	"item.minecraft.tipped_arrow.effect.sails": "Arrow of Sailing",
+	
+	"effect.extraalchemy.fuse": "Detonation",
+	"item.minecraft.potion.effect.fuse": "Potion of Fuse",
+	"item.minecraft.splash_potion.effect.fuse": "Splash Potion of Fuse",
+	"item.minecraft.lingering_potion.effect.fuse": "Lingering Potion of Fuse",
+	"item.minecraft.tipped_arrow.effect.fuse": "Arrow of Fuse",
+	
+	"effect.extraalchemy.recall": "Recall",
+	"item.minecraft.potion.effect.recall": "Potion of Rewinding",
+	"item.minecraft.splash_potion.effect.recall": "Splash Potion of Rewinding",
+	"item.minecraft.lingering_potion.effect.recall": "Lingering Potion of Rewinding",
+	"item.minecraft.tipped_arrow.effect.recall": "Arrow of Rewinding",
+	
+	"effect.extraalchemy.returning": "Returning",
+	"item.minecraft.potion.effect.returning": "Potion of Returning",
+	"item.minecraft.splash_potion.effect.returning": "Splash Potion of Returning",
+	"item.minecraft.lingering_potion.effect.returning": "Lingering Potion of Returning",
+	"item.minecraft.tipped_arrow.effect.returning": "Arrow of Returning",
+	
+	"effect.extraalchemy.learning": "Learning",
+	"item.minecraft.potion.effect.learning": "Potion of Learning",
+	"item.minecraft.splash_potion.effect.learning": "Splash Potion of Learning",
+	"item.minecraft.lingering_potion.effect.learning": "Lingering Potion of Learning",
+	"item.minecraft.tipped_arrow.effect.learning": "Arrow of Learning",
+	
+	"effect.extraalchemy.concentration": "Focus",
+	"item.minecraft.potion.effect.concentration": "Potion of Concentration",
+	"item.minecraft.splash_potion.effect.concentration": "Splash Potion of Concentration",
+	"item.minecraft.lingering_potion.effect.concentration": "Lingering Potion of Concentration",
+	"item.minecraft.tipped_arrow.effect.concentration": "Arrow of Concentration"
+}

@@ -1,0 +1,18 @@
+{
+  "block.torcherino.torcherino": "加速火把",
+  "block.torcherino.compressed_torcherino": "压缩加速火把",
+  "block.torcherino.double_compressed_torcherino": "二重压缩加速火把",
+  "block.torcherino.lanterino": "加速南瓜灯",
+  "block.torcherino.compressed_lanterino": "压缩加速南瓜灯",
+  "block.torcherino.double_compressed_lanterino": "二重压缩加速南瓜灯",
+  "screen.torcherino.area.stopped": "停止",
+  "screen.torcherino.area.n": "区域: %1$dx3x%1$d",
+  "screen.torcherino.speed": "速度: %d%%",
+  "screen.torcherino.redstoneinteraction.normal": "标准",
+  "screen.torcherino.redstoneinteraction.inverted": "反转",
+  "screen.torcherino.redstoneinteraction.ignore": "忽略",
+  "screen.torcherino.narrate.redstoneinteraction": "%s 红石互动按钮",
+  "screen.torcherino.narrate.area.stopped": "停止",
+  "screen.torcherino.narrate.area.n": "区域: %1$dx3x%1$d"
+}
+

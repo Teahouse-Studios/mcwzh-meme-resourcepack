@@ -1,0 +1,12 @@
+{
+  "itemGroup.corail_woodcutter.main": "Corail Woodcutter",
+  "block.corail_woodcutter.oak_woodcutter": "橡木锯木机",
+  "block.corail_woodcutter.spruce_woodcutter": "云杉木锯木机",
+  "block.corail_woodcutter.birch_woodcutter": "白桦木锯木机",
+  "block.corail_woodcutter.jungle_woodcutter": "丛林木锯木机",
+  "block.corail_woodcutter.acacia_woodcutter": "金合欢木锯木机",
+  "block.corail_woodcutter.dark_oak_woodcutter": "深色橡木锯木机",
+  "block.corail_woodcutter.crimson_woodcutter": "Crimson Sawmill",
+  "block.corail_woodcutter.warped_woodcutter": "Warped Sawmill",
+  "container.corail_woodcutter.woodcutter": "锯木机"
+}

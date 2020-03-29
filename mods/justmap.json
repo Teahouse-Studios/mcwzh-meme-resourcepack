@@ -70,7 +70,7 @@
   "justmap.configuration.tooltip_color_config": "仅在启用备用颜色渲染后才有效.",
 
   "justmap.dim.overworld": "其他世界",
-  "justmap.dim.nether": "地狱",
+  "justmap.dim.nether": "下界",
   "justmap.dim.the_end": "末地",
 
   "justmap.gui.save": "保存",

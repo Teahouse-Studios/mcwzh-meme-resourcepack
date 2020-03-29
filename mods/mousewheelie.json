@@ -1,0 +1,33 @@
+{
+	"key.categories.mousewheelie": "Mouse Wheelie",
+	"key.mousewheelie.sort_inventory": "物品栏排序",
+	"key.mousewheelie.pick_tool": "自动选择正确的工具",
+
+	"tweed.cloth.mousewheelie": "Mouse Wheelie配置",
+
+	"tweed.cloth.mousewheelie.general": "通常",
+	"tweed.cloth.mousewheelie.general.enable-item-scrolling": "Enable item scrolling",
+	"tweed.cloth.mousewheelie.general.scroll-factor": "滚动因数",
+    "tweed.cloth.mousewheelie.general.hold-tool-pick": "点击鼠标中键时自动拿起正确的工具",
+	"tweed.cloth.mousewheelie.general.enable-quick-craft": "Enable quick crafting",
+
+	"tweed.cloth.mousewheelie.sort": "排序",
+	"tweed.cloth.mousewheelie.sort.primary-sort": "点击鼠标中键",
+	"tweed.cloth.mousewheelie.sort.shift-sort": "Shift + 点击鼠标中键",
+	"tweed.cloth.mousewheelie.sort.control-sort": "ctrl + 点击鼠标中键",
+
+	"tweed.cloth.mousewheelie.refill": "重新填充",
+	"tweed.cloth.mousewheelie.refill.eat": "吃食物时重新填充",
+	"tweed.cloth.mousewheelie.refill.drop": "丢弃物品时重新填充",
+	"tweed.cloth.mousewheelie.refill.use": "使用物品时重新填充",
+	"tweed.cloth.mousewheelie.refill.other": "在其他场合时重新填充",
+
+	"tweed.cloth.mousewheelie.refill.rules": "填充规则",
+	"tweed.cloth.mousewheelie.refill.rules.any-block": "使用任意块重新填充",
+	"tweed.cloth.mousewheelie.refill.rules.itemgroup": "根据项目组(item groups)重新填充",
+	"tweed.cloth.mousewheelie.refill.rules.item-hierarchy": "使用具有类似功能的物品重新填充",
+	"tweed.cloth.mousewheelie.refill.rules.block-hierarchy": "使用具有类似功能的块重新填充",
+	"tweed.cloth.mousewheelie.refill.rules.food": "重新填充食物",
+	"tweed.cloth.mousewheelie.refill.rules.equal-stacks": "使用相同的物品重新填充"
+
+}

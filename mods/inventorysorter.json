@@ -1,0 +1,10 @@
+{
+  "key.categories.inventorysorter": "Inventory Sorting",
+  "key.inventorysorter.sort": "整理物品栏",
+  "key.inventorysorter.config.category.main": "目录",
+  "key.inventorysorter.config.display_sort": "启用 “整理” 按钮",
+  "key.inventorysorter.config.left_display": "点击鼠标中键对物品进行整理",
+  "key.inventorysorter.config.middle_click": "在左侧显示 “整理” 按钮",
+  "key.inventorysorter.config.seperate_btn": "在玩家背包里启用第二个 “整理” 按钮",
+  "key.inventorysorter.config.sort_player": "整理物品同时也会整理玩家物品栏"
+}
