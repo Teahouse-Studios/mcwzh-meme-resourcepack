@@ -67,8 +67,7 @@ def build(args):
     moddata = {}
     if args['mod_content']:
         if 'all' in args['mod_content']:
-            modlist = os.listdir("mods")
-            modlist = ['mods/' + i for i in modlist]
+            modlist = ['mods/' + i for i in os.listdir("mods")]
         else:
             modlist = args['mod_content']
         for file in modlist:
@@ -78,9 +77,8 @@ def build(args):
                         moddata.update(json.load(f))
                 elif file.endswith(".lang"):
                     with open(file, 'r', encoding='utf8') as f:
-                        moddata_item = f.read().splitlines()
-                    moddata_item = [i for i in moddata_item if (
-                        i != '' and not i.startswith("#"))]
+                        moddata_item = [i for i in f.read().splitlines() if (
+                            i != '' and not i.startswith("#"))]
                     moddata.update(dict(i.split("=", 1) for i in moddata_item))
                 else:
                     print(
@@ -117,7 +115,7 @@ def build(args):
             file_name = file + ".json"
             if file_name not in os.listdir("mappings"):
                 print(
-                    "\033[33m[WARN] Missing mapping: %s, skipping\033[0m" % file_name)
+                    "\033[33m[WARN] Missing mapping %s, skipping\033[0m" % file_name)
                 warning_counter += 1
                 pass
             else:
