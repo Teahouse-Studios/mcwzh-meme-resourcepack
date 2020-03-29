@@ -177,15 +177,15 @@ def get_packname(args):
     base_name = "mcwzh-meme"
     if args['type'] == 'normal':
         if not args['mod_content']:
-            base_name = base_name + "_nomod"
+            base_name += "_nomod"
     elif args['type'] == 'compat':
-        base_name = base_name + "_compatible"
+        base_name += "_compatible"
         if args['mod_content']:
-            base_name = base_name + "_mod"
+            base_name += "_mod"
     if args['without_figure']:
-        base_name = base_name + "_nofigure"
+        base_name += "_nofigure"
     if args['legacy']:
-        base_name = base_name + '_legacy'
+        base_name += '_legacy'
     return base_name + ".zip"
 
 
