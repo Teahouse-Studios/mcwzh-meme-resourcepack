@@ -57,12 +57,14 @@ def build(args):
     pack.write("LICENSE")
     # build with figures
     if not args['without_figure']:
-        for file in os.listdir("assets/minecraft/models/item"):
-            pack.write("assets/minecraft/models/item/" + file)
-        for file in os.listdir("assets/minecraft/textures/entity"):
-            pack.write("assets/minecraft/textures/entity/" + file)
+        for file in os.listdir("assets/mcwzhmeme/models/author"):
+            pack.write("assets/mcwzhmeme/models/author/" + file)
+        for file in os.listdir("assets/mcwzhmeme/textures/entity"):
+            pack.write("assets/mcwzhmeme/textures/entity/" + file)
         for file in os.listdir("assets/minecraft/textures/block"):
             pack.write("assets/minecraft/textures/block/" + file)
+        for file in os.listdir("assets/minecraft/blockstates"):
+            pack.write("assets/minecraft/blockstates/" + file)
     # build with mod content
     moddata = {}
     if args['mod_content']:
