@@ -20,13 +20,14 @@ successful_pack_counter = 0
 warning_pack_counter = 0
 pack_counter = 0
 
+
 def main():
     parser = argparse.ArgumentParser(
         description="Automatically build resourcepacks")
     parser.add_argument('type', default='normal', help="Build type. This should be 'all', 'normal' or 'compat'.", choices=[
                         'all', 'normal', 'compat'])
-    parser.add_argument('-n', '--without-figure', action='store_true',
-                        help="Do not use figure textures or models when building resource packs. If build type is 'all', this argument will be ignored.")
+    parser.add_argument('-t', '--figure', default='all', choices=['all', 'none'],
+                        help="Use or do not use figure textures or models when building resource packs. This should be 'all' or 'none'. For higher customizability, see '--mod-content'. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-s', '--sfw', action='store_true',
                         help="Use 'suitable for work' strings. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-l', '--legacy', action='store_true',
@@ -61,12 +62,19 @@ def build(args):
     pack.write("pack.png")
     pack.write("LICENSE")
     # build without figures
-    if args['without_figure']:
+    if args['figure'] == 'none':
         exclude_list = ['optional/brewing_stand_model',
                         'optional/totem_model', 'optional/observer_think']
         for i in exclude_list:
             for i in args['include']:
                 args['include'].remove(i)
+    # build with figures
+    if args['figure'] == 'all':
+        include_list = ['optional/brewing_stand_model',
+                        'optional/totem_model', 'optional/observer_think']
+        for i in include_list:
+            if i not in args['include']:
+                args['include'].append(i)
     # build with sfw
     if args['sfw']:
         args['include'].append('optional/sfw.json')
@@ -95,7 +103,8 @@ def build(args):
                     warning_counter += 1
             elif Path(file).is_dir():
                 for item in Path(file).rglob('*'):
-                    pack.write(item,str(item.relative_to('.').as_posix()).split(file,1)[-1])
+                    pack.write(item, str(item.relative_to(
+                        '.').as_posix()).split(file, 1)[-1])
             else:
                 print(
                     '\033[33m[WARN] File or folder "%s" does not exist, skipping\033[0m' % file)
@@ -168,20 +177,15 @@ def build(args):
 
 
 def build_all():
-    build({'type': 'normal', 'without_figure': False,
-           'legacy': False, 'include': ['all', 'optional/brewing_stand_model',
-                                        'optional/totem_model', 'optional/observer_think'], 'debug': False})
-    build({'type': 'normal', 'without_figure': True,
+    build({'type': 'normal', 'figure': 'all',
            'legacy': False, 'include': ['all'], 'debug': False})
-    build({'type': 'compat', 'without_figure': False,
-           'legacy': False, 'include': ['optional/brewing_stand_model',
-                                        'optional/totem_model', 'optional/observer_think'], 'debug': False})
-    build({'type': 'compat', 'without_figure': True,
+    build({'type': 'normal', 'figure': 'none',
+           'legacy': False, 'include': ['all'], 'debug': False})
+    build({'type': 'compat', 'figure': 'all',
            'legacy': False, 'include': [], 'debug': False})
-#    build({'type': 'normal', 'without_figure': False, 'legacy': True, 'debug': False})
-#    build({'type': 'normal', 'without_figure': True, 'legacy': True, 'debug': False})
-#    build({'type': 'compat', 'without_figure': False, 'legacy': True, 'debug': False})
-    build({'type': 'compat', 'without_figure': True,
+    build({'type': 'compat', 'figure': 'none',
+           'legacy': False, 'include': [], 'debug': False})
+    build({'type': 'compat', 'figure': 'none',
            'legacy': True, 'include': [], 'debug': False})
 
 
