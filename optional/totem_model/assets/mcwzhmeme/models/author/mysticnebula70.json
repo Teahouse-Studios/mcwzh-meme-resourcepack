@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench, MysticNebula70 is a black cat",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "entity/mysticnebula70",
+		"0": "mcwzhmeme:entity/mysticnebula70",
 		"1": "block/smooth_stone",
 		"particle": "block/smooth_stone"
 	},

@@ -1,24 +1,21 @@
 {
-	"credit": "Made with Blockbench, player_id:Lxazl5770",
+	"credit": "Made with Blockbench, player_id:dianliang",
 	"textures": {
 		"0": "block/smooth_stone",
-		"1": "entity/lxazl5770",
+		"1": "mcwzhmeme:entity/dianliang",
 		"particle": "block/smooth_stone"
 	},
 	"gui_light": "side",
     "display": {
         "gui": {
             "rotation": [ 30, 225, 0 ],
-            "translation": [ 0, 0, 0],
             "scale":[ 0.8, 0.8, 0.8 ]
         },
         "ground": {
-            "rotation": [ 0, 0, 0 ],
             "translation": [ 0, 3, 0],
             "scale":[ 0.25, 0.25, 0.25 ]
         },
         "fixed": {
-            "rotation": [ 0, 0, 0 ],
             "translation": [ 0, -7, -14],
             "scale":[ 1.0, 1.0, 1.0 ]
         },
@@ -28,13 +25,9 @@
             "scale": [ 0.5, 0.5, 0.5 ]
         },
         "firstperson_righthand": {
-            "rotation": [ 0, 0, 0 ],
-            "translation": [ 0, 0, 0 ],
             "scale": [ 0.5, 0.5, 0.5 ]
         },
         "firstperson_lefthand": {
-            "rotation": [ 0, 0, 0 ],
-            "translation": [ 0, 0, 0 ],
             "scale": [ 0.5, 0.5, 0.5 ]
         },
         "thirdperson_lefthand": {

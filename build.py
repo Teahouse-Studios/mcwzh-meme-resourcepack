@@ -2,6 +2,7 @@ import zipfile
 import json
 import argparse
 import os
+import warnings
 from pathlib import Path
 
 mappings = ['addServer', 'advancements', 'advMode', 'attribute', 'book', 'build', 'chat',
@@ -18,7 +19,6 @@ mappings = ['addServer', 'advancements', 'advMode', 'attribute', 'book', 'build'
 successful_pack_counter = 0
 warning_pack_counter = 0
 pack_counter = 0
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -46,6 +46,8 @@ def build(args):
     global pack_counter
     global successful_pack_counter
     global warning_pack_counter
+    if not args['debug']:
+        warnings.filterwarnings("ignore")
     with open("assets/minecraft/lang/zh_meme.json", 'r', encoding='utf8') as f:
         lang_data = json.load(f)
     pack_name = get_packname(args)
@@ -66,9 +68,10 @@ def build(args):
     # build with mod content
     moddata = {}
     if args['include']:
-        print(args['include'])
         if 'all' in args['include']:
             modlist = ['mods/' + i for i in os.listdir("mods")]
+            modlist.extend(args['include'])
+            modlist.remove('all')
         else:
             modlist = args['include']
         for file in modlist:
@@ -87,7 +90,7 @@ def build(args):
                     warning_counter += 1
             elif Path(file).is_dir():
                 for item in Path(file).rglob('*'):
-                    pack.write(item)
+                    pack.write(item,str(item.relative_to('.').as_posix()).split(file,1)[-1])
             else:
                 print(
                     '\033[33m[WARN] File or folder "%s" does not exist, skipping\033[0m' % file)
@@ -184,8 +187,6 @@ def get_packname(args):
             base_name += "_nomod"
     elif args['type'] == 'compat':
         base_name += "_compatible"
-        if args['include']:
-            base_name += "_mod"
     if args['without_figure']:
         base_name += "_nofigure"
     if args['legacy']:
