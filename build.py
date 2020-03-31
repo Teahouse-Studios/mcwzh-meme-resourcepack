@@ -2,6 +2,7 @@ import zipfile
 import json
 import argparse
 import os
+from pathlib import Path
 
 mappings = ['addServer', 'advancements', 'advMode', 'attribute', 'book', 'build', 'chat',
             'commands', 'connect', 'container', 'controls', 'createWorld', 'death',
@@ -28,8 +29,8 @@ def main():
                         help="Do not use figure textures or models when building resource packs. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-l', '--legacy', action='store_true',
                         help="(Not fully implemented) Use legacy format (.lang) when building resource packs. If build type is 'all', this argument will be ignored.")
-    parser.add_argument('-m', '--mod-content', type=str, nargs='*',
-                        help="(Not fully implemented) Include modification strings. Should be path(s) to a file or 'all'. If build type is 'all', this argument will be ignored.")
+    parser.add_argument('-i', '-m', '--include', type=str, nargs='*',
+                        help="(Not fully implemented) Include modification strings or folders. Should be path(s) to a file, folder or 'all'. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-d', '--debug', action='store_true',
                         help="Output an individual language file. If build type is 'all', this argument will be ignored.")
     args = vars(parser.parse_args())
@@ -56,22 +57,19 @@ def build(args):
     pack.write("pack.png")
     pack.write("LICENSE")
     # build with figures
-    if not args['without_figure']:
-        for file in os.listdir("assets/mcwzhmeme/models/author"):
-            pack.write("assets/mcwzhmeme/models/author/" + file)
-        for file in os.listdir("assets/mcwzhmeme/textures/entity"):
-            pack.write("assets/mcwzhmeme/textures/entity/" + file)
-        for file in os.listdir("assets/minecraft/textures/block"):
-            pack.write("assets/minecraft/textures/block/" + file)
-        for file in os.listdir("assets/minecraft/blockstates"):
-            pack.write("assets/minecraft/blockstates/" + file)
+    if args['without_figure']:
+        exclude_list = ['optional/brewing_stand_model']
+        for i in exclude_list:
+            for i in args['include']:
+                args['include'].remove(i)
     # build with mod content
     moddata = {}
-    if args['mod_content']:
-        if 'all' in args['mod_content']:
+    if args['include']:
+        print(args['include'])
+        if 'all' in args['include']:
             modlist = ['mods/' + i for i in os.listdir("mods")]
         else:
-            modlist = args['mod_content']
+            modlist = args['include']
         for file in modlist:
             if os.path.isfile(file):
                 if file.endswith(".json"):
@@ -86,9 +84,12 @@ def build(args):
                     print(
                         '\033[33m[WARN] File extension "%s" is not supported, skipping\033[0m' % file[file.rfind('.') + 1:])
                     warning_counter += 1
+            elif Path(file).is_dir():
+                for item in Path(file).rglob('*'):
+                    pack.write(item)
             else:
                 print(
-                    '\033[33m[WARN] File "%s" does not exist, skipping\033[0m' % file)
+                    '\033[33m[WARN] File or folder "%s" does not exist, skipping\033[0m' % file)
                 warning_counter += 1
         lang_data.update(moddata)
     # Processing mcmeta
@@ -133,7 +134,7 @@ def build(args):
                     else:
                         legacy_lang_data.update({k: lang_data[v]})
         # build with mod content
-        if args["mod_content"]:
+        if args["include"]:
             legacy_lang_data.update(moddata)
         legacy_lang_file = ""
         for k, v in legacy_lang_data.items():
@@ -159,28 +160,28 @@ def build(args):
 
 def build_all():
     build({'type': 'normal', 'without_figure': False,
-           'legacy': False, 'mod_content': ['all'], 'debug': False})
+           'legacy': False, 'include': ['all'], 'debug': False})
     build({'type': 'normal', 'without_figure': True,
-           'legacy': False, 'mod_content': ['all'], 'debug': False})
+           'legacy': False, 'include': ['all'], 'debug': False})
     build({'type': 'compat', 'without_figure': False,
-           'legacy': False, 'mod_content': [], 'debug': False})
+           'legacy': False, 'include': [], 'debug': False})
     build({'type': 'compat', 'without_figure': True,
-           'legacy': False, 'mod_content': [], 'debug': False})
+           'legacy': False, 'include': [], 'debug': False})
 #    build({'type': 'normal', 'without_figure': False, 'legacy': True, 'debug': False})
 #    build({'type': 'normal', 'without_figure': True, 'legacy': True, 'debug': False})
 #    build({'type': 'compat', 'without_figure': False, 'legacy': True, 'debug': False})
     build({'type': 'compat', 'without_figure': True,
-           'legacy': True, 'mod_content': [], 'debug': False})
+           'legacy': True, 'include': [], 'debug': False})
 
 
 def get_packname(args):
     base_name = "mcwzh-meme"
     if args['type'] == 'normal':
-        if not args['mod_content']:
+        if not args['include']:
             base_name += "_nomod"
     elif args['type'] == 'compat':
         base_name += "_compatible"
-        if args['mod_content']:
+        if args['include']:
             base_name += "_mod"
     if args['without_figure']:
         base_name += "_nofigure"
