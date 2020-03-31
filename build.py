@@ -191,6 +191,8 @@ def get_packname(args):
         base_name += "_nofigure"
     if args['legacy']:
         base_name += '_legacy'
+    if 'optional/sfw.json' in args['include']:
+        base_name += '_sfw'
     return base_name + ".zip"
 
 
