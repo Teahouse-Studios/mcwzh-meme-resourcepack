@@ -196,7 +196,7 @@ def get_packname(args):
             base_name += "_nomod"
     elif args['type'] == 'compat':
         base_name += "_compatible"
-    if args['without_figure']:
+    if args['figure'] == 'none':
         base_name += "_nofigure"
     if args['legacy']:
         base_name += '_legacy'
