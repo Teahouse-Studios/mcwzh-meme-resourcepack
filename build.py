@@ -58,7 +58,8 @@ def build(args):
     pack.write("LICENSE")
     # build with figures
     if args['without_figure']:
-        exclude_list = ['optional/brewing_stand_model']
+        exclude_list = ['optional/brewing_stand_model',
+                        'optional/totem_model', 'optional/observer_think']
         for i in exclude_list:
             for i in args['include']:
                 args['include'].remove(i)
@@ -160,11 +161,13 @@ def build(args):
 
 def build_all():
     build({'type': 'normal', 'without_figure': False,
-           'legacy': False, 'include': ['all'], 'debug': False})
+           'legacy': False, 'include': ['all', 'optional/brewing_stand_model',
+                                        'optional/totem_model', 'optional/observer_think'], 'debug': False})
     build({'type': 'normal', 'without_figure': True,
            'legacy': False, 'include': ['all'], 'debug': False})
     build({'type': 'compat', 'without_figure': False,
-           'legacy': False, 'include': [], 'debug': False})
+           'legacy': False, 'include': ['optional/brewing_stand_model',
+                                        'optional/totem_model', 'optional/observer_think'], 'debug': False})
     build({'type': 'compat', 'without_figure': True,
            'legacy': False, 'include': [], 'debug': False})
 #    build({'type': 'normal', 'without_figure': False, 'legacy': True, 'debug': False})
