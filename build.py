@@ -178,15 +178,15 @@ def build(args):
 
 def build_all():
     build({'type': 'normal', 'figure': 'all',
-           'legacy': False, 'include': ['all'], 'debug': False})
+           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': False})
     build({'type': 'normal', 'figure': 'none',
-           'legacy': False, 'include': ['all'], 'debug': False})
+           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': False})
     build({'type': 'compat', 'figure': 'all',
-           'legacy': False, 'include': [], 'debug': False})
+           'legacy': False, 'include': [], 'debug': False, 'sfw': False})
     build({'type': 'compat', 'figure': 'none',
-           'legacy': False, 'include': [], 'debug': False})
+           'legacy': False, 'include': [], 'debug': False, 'sfw': False})
     build({'type': 'compat', 'figure': 'none',
-           'legacy': True, 'include': [], 'debug': False})
+           'legacy': True, 'include': [], 'debug': False, 'sfw': False})
 
 
 def get_packname(args):
