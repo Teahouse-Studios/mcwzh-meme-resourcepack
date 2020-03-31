@@ -27,6 +27,8 @@ def main():
                         'all', 'normal', 'compat'])
     parser.add_argument('-n', '--without-figure', action='store_true',
                         help="Do not use figure textures or models when building resource packs. If build type is 'all', this argument will be ignored.")
+    parser.add_argument('-s', '--sfw', action='store_true',
+                        help="Use 'suitable for work' strings. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-l', '--legacy', action='store_true',
                         help="(Not fully implemented) Use legacy format (.lang) when building resource packs. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-i', '-m', '--include', type=str, nargs='*',
@@ -58,13 +60,16 @@ def build(args):
         pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
     pack.write("pack.png")
     pack.write("LICENSE")
-    # build with figures
+    # build without figures
     if args['without_figure']:
         exclude_list = ['optional/brewing_stand_model',
                         'optional/totem_model', 'optional/observer_think']
         for i in exclude_list:
             for i in args['include']:
                 args['include'].remove(i)
+    # build with sfw
+    if args['sfw']:
+        args['include'].append('optional/sfw.json')
     # build with mod content
     moddata = {}
     if args['include']:
