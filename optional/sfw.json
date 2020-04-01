@@ -1,4 +1,5 @@
 {
     "block.minecraft.ladder": "七根法棍",
-    "death.fell.accident.ladder": "%1$s摔下了七根法棍"
+    "death.fell.accident.ladder": "%1$s摔下了七根法棍",
+    "subtitles.entity.bat.death": "野味：AWSL"
 }
