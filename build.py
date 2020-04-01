@@ -66,10 +66,10 @@ def build(args):
         exclude_list = ['optional/brewing_stand_model',
                         'optional/totem_model', 'optional/observer_think']
         for i in exclude_list:
-            for i in args['include']:
+            if i in args['include']:
                 args['include'].remove(i)
     # build with figures
-    if args['figure'] == 'all':
+    elif args['figure'] == 'all':
         include_list = ['optional/brewing_stand_model',
                         'optional/totem_model', 'optional/observer_think']
         for i in include_list:
