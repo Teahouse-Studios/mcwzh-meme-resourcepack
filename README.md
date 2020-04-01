@@ -78,5 +78,7 @@ python build.py -h
 - 本资源包的资源包部分（即除去自动构建脚本和Mod内容字符串未经过梗体中文更改的部分）以 ***CC BY-NC-SA 4.0*** 协议授权。
   - 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   - 这不是法律建议。
+- 本项目附带的Mod内容字符串，未经梗体中文修改过的部分，按照 ***原作品的协议*** 发布。
+- 本项目的自动构建脚本以GPL 3.0协议发布。
 
 ![GitHub forks](https://img.shields.io/github/forks/lakejason0/mcwzh-meme-resourcepack?style=social)    ![GitHub stars](https://img.shields.io/github/stars/lakejason0/mcwzh-meme-resourcepack?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/lakejason0/mcwzh-meme-resourcepack?style=social)
