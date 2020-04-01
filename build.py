@@ -5,6 +5,8 @@ import os
 import warnings
 from pathlib import Path
 
+# GPL 3.0
+
 mappings = ['addServer', 'advancements', 'advMode', 'attribute', 'book', 'build', 'chat',
             'commands', 'connect', 'container', 'controls', 'createWorld', 'death',
             'deathScreen', 'debug', 'demo', 'difficulty', 'disconnect', 'effect',
@@ -26,8 +28,8 @@ def main():
         description="Automatically build resourcepacks")
     parser.add_argument('type', default='normal', help="Build type. This should be 'all', 'normal' or 'compat'.", choices=[
                         'all', 'normal', 'compat'])
-    parser.add_argument('-t', '--figure', default='all', choices=['all', 'none'],
-                        help="Use or do not use figure textures or models when building resource packs. This should be 'all' or 'none'. For higher customizability, see '--mod-content'. If build type is 'all', this argument will be ignored.")
+    parser.add_argument('-t', '--figure', default='all', choices=['all', 'none', 'custom'],
+                        help="Use or do not use figure textures or models when building resource packs. This should be 'all', 'none' or 'custom'. For higher customizability, see '--mod-content'. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-s', '--sfw', action='store_true',
                         help="Use 'suitable for work' strings. If build type is 'all', this argument will be ignored.")
     parser.add_argument('-l', '--legacy', action='store_true',
@@ -75,6 +77,8 @@ def build(args):
         for i in include_list:
             if i not in args['include']:
                 args['include'].append(i)
+    elif args['figure'] == 'custom':
+        pass
     # build with sfw
     if args['sfw']:
         args['include'].append('optional/sfw.json')
