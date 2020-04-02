@@ -2439,7 +2439,7 @@
     "debug.chunk_boundaries.off": "区块边界：隐藏",
     "debug.chunk_boundaries.on": "区块边界：显示",
     "debug.clear_chat.help": "F3 + D = 清空聊天记录",
-    "debug.copy_location.help": "F3 + C = 用/tp命令的形式复制你的位置，按俳 + C使游戏崩溃",
+    "debug.copy_location.help": "F3 + C = 用/tp命令的形式复制你的位置，按住F3 + C使游戏崩溃",
     "debug.copy_location.message": "坐标已复制到剪贴板",
     "debug.crash.message": "F3 + C已被按下。除非释放按键否则这将让游戏原地爆炸。",
     "debug.crash.warning": "在%s秒后原地爆炸…",
