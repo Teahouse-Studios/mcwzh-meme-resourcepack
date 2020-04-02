@@ -195,10 +195,10 @@ def get_figure_list(figlist: list) -> (set, int):
             for path in figlist:
                 if os.path.exists(path):
                     if os.path.isfile(path):
-                        figure_list.append(path)
+                        figure_list.add(path)
                     elif os.path.isdir(path):
                         for root, dirs, files in os.walk(path):
-                            figure_list.extend(
+                            figure_list.update(
                                 [os.path.join(root, name) for name in files])
                 else:
                     print(
@@ -221,10 +221,10 @@ def get_mod_list(modlist: list) -> (set, int):
             for path in modlist:
                 if os.path.exists(path):
                     if os.path.isfile(path):
-                        mods.append(path)
+                        mods.add(path)
                     elif os.path.isdir(path):
                         for root, dirs, files in os.walk(path):
-                            mods.extend(
+                            mods.update(
                                 [os.path.join(root, name) for name in files])
                 else:
                     print(
