@@ -3,7 +3,6 @@ import json
 import argparse
 import os
 import warnings
-from pathlib import Path
 
 # GPL 3.0
 
@@ -24,20 +23,7 @@ pack_counter = 0
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Automatically build resourcepacks")
-    parser.add_argument('type', default='normal', help="Build type. This should be 'all', 'normal' or 'compat'.", choices=[
-                        'all', 'normal', 'compat'])
-    parser.add_argument('-t', '--figure', default='all', choices=['all', 'none', 'custom'],
-                        help="Use or do not use figure textures or models when building resource packs. This should be 'all', 'none' or 'custom'. For higher customizability, see '--mod-content'. If build type is 'all', this argument will be ignored.")
-    parser.add_argument('-s', '--sfw', action='store_true',
-                        help="Use 'suitable for work' strings. If build type is 'all', this argument will be ignored.")
-    parser.add_argument('-l', '--legacy', action='store_true',
-                        help="(Not fully implemented) Use legacy format (.lang) when building resource packs. If build type is 'all', this argument will be ignored.")
-    parser.add_argument('-i', '-m', '--include', type=str, nargs='*',
-                        help="(Not fully implemented) Include modification strings or folders. Should be path(s) to a file, folder or 'all'. If build type is 'all', this argument will be ignored.")
-    parser.add_argument('-d', '--debug', action='store_true',
-                        help="Output an individual language file. If build type is 'all', this argument will be ignored.")
+    parser = generate_parser()
     args = vars(parser.parse_args())
     if args['type'] == 'all':
         build_all()
@@ -47,127 +33,76 @@ def main():
           (pack_counter, successful_pack_counter))
 
 
-def build(args):
+def build(args: dict) -> None:
     global pack_counter
     global successful_pack_counter
     global warning_pack_counter
+    warning_counter = 0
+    counter = 0
+    # get figure list
+    (figlist, counter) = get_figure_list(args['figure'])
+    warning_counter += counter
+    counter = 0
+    # get mod list
+    (modlist, counter) = get_mod_list(args['include'])
+    warning_counter += counter
+    counter = 0
+    # suitable for work
+    if args['sfw']:
+        modlist.add('optional/sfw.json')
+    # debug mode
     if not args['debug']:
         warnings.filterwarnings("ignore")
+    # load basic strings
     with open("assets/minecraft/lang/zh_meme.json", 'r', encoding='utf8') as f:
         lang_data = json.load(f)
     pack_name = get_packname(args)
     print("[INFO] Building " + pack_name)
-    warning_counter = 0
     # all builds have these files
     pack = zipfile.ZipFile(
         pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
     pack.write("pack.png")
     pack.write("LICENSE")
-    # build without figures
-    if args['figure'] == 'none':
-        exclude_list = ['optional/brewing_stand_model',
-                        'optional/totem_model', 'optional/observer_think']
-        for i in exclude_list:
-            if i in args['include']:
-                args['include'].remove(i)
-    # build with figures
-    elif args['figure'] == 'all':
-        include_list = ['optional/brewing_stand_model',
-                        'optional/totem_model', 'optional/observer_think']
-        for i in include_list:
-            if i not in args['include']:
-                args['include'].append(i)
-    elif args['figure'] == 'custom':
-        pass
-    # build with sfw
-    if args['sfw']:
-        args['include'].append('optional/sfw.json')
-    # build with mod content
-    moddata = {}
-    if args['include']:
-        if 'all' in args['include']:
-            modlist = ['mods/' + i for i in os.listdir("mods")]
-            modlist.extend(args['include'])
-            modlist.remove('all')
-        else:
-            modlist = args['include']
-        for file in modlist:
-            if os.path.isfile(file):
-                if file.endswith(".json"):
-                    with open(file, encoding='utf8') as f:
-                        moddata.update(json.load(f))
-                elif file.endswith(".lang"):
-                    with open(file, 'r', encoding='utf8') as f:
-                        moddata_item = [i for i in f.read().splitlines() if (
-                            i != '' and not i.startswith("#"))]
-                    moddata.update(dict(i.split("=", 1) for i in moddata_item))
-                else:
-                    print(
-                        '\033[33m[WARN] File extension "%s" is not supported, skipping\033[0m' % file[file.rfind('.') + 1:])
-                    warning_counter += 1
-            elif Path(file).is_dir():
-                for item in Path(file).rglob('*'):
-                    pack.write(item, str(item.relative_to(
-                        '.').as_posix()).split(file, 1)[-1])
-            else:
-                print(
-                    '\033[33m[WARN] File or folder "%s" does not exist, skipping\033[0m' % file)
-                warning_counter += 1
-        lang_data.update(moddata)
-    # Processing mcmeta
+    # add figures
+    if figlist:
+        for file in figlist:
+            pack.write(file, arcname=file[file.find("assets"):])
+    # add mods
+    if modlist:
+        (mod_content, counter) = get_mod_content(modlist)
+        lang_data.update(mod_content)
+        warning_counter += counter
+        counter = 0
+    # processing mcmeta
     with open("pack.mcmeta", 'r', encoding='utf8') as meta:
         metadata = json.load(meta)
-    # decide build type
     if args['type'] == 'normal':
         lang_name = "zh_meme"
     elif args['type'] == 'compat':
         del metadata['language']
         lang_name = "zh_cn"
     if not args['legacy']:
-        lang_extension = ".json"
         # normal/compatible build
+        lang_extension = ".json"
         pack.writestr("assets/minecraft/lang/" + lang_name + lang_extension,
                       json.dumps(lang_data, indent=4, ensure_ascii=True))
         if args['debug']:
-            with open(lang_name + lang_extension, 'w') as debug_file:
+            with open(lang_name + lang_extension, 'w', encoding='utf8') as debug_file:
                 debug_file.write(json.dumps(
-                    lang_data, indent=4, ensure_ascii=True))
+                    lang_data, indent=4, ensure_ascii=False))
     else:
         # legacy(1.12.2) build
         lang_extension = ".lang"
-        legacy_lang_data = {}
-        for file in mappings:
-            file_name = file + ".json"
-            if file_name not in os.listdir("mappings"):
-                print(
-                    "\033[33m[WARN] Missing mapping %s, skipping\033[0m" % file_name)
-                warning_counter += 1
-                pass
-            else:
-                location = "mappings/" + file_name
-                with open(location, encoding='utf8') as f:
-                    mapping = json.load(f)
-                for k, v in mapping.items():
-                    if v not in lang_data.keys():
-                        print(
-                            '\033[33m[WARN] Corrupted key-value pair in file %s: {"%s": "%s"}\033[0m' % (file_name, k, v))
-                        warning_counter += 1
-                        pass
-                    else:
-                        legacy_lang_data.update({k: lang_data[v]})
-        # build with mod content
-        if args["include"]:
-            legacy_lang_data.update(moddata)
-        legacy_lang_file = ""
-        for k, v in legacy_lang_data.items():
-            legacy_lang_file += "%s=%s\n" % (k, v)
-        pack.writestr("assets/minecraft/lang/" + lang_name +
-                      lang_extension, legacy_lang_file)
-        if args['debug']:
-            with open(lang_name + lang_extension, 'w') as debug_file:
-                debug_file.write(legacy_lang_file)
         # change pack format
         metadata['pack'].update({"pack_format": 3})
+        (legacy_lang_content, counter) = generate_legacy_content(lang_data, mappings)
+        pack.writestr("assets/minecraft/lang/" + lang_name +
+                      lang_extension, legacy_lang_content)
+        warning_counter += counter
+        counter = 0
+        if args['debug']:
+            with open(lang_name + lang_extension, 'w', encoding='utf8') as debug_file:
+                debug_file.write(legacy_lang_content)
     pack.writestr("pack.mcmeta", json.dumps(
         metadata, indent=4, ensure_ascii=False))
     pack.close()
@@ -180,33 +115,163 @@ def build(args):
     pack_counter += 1
 
 
-def build_all():
-    build({'type': 'normal', 'figure': 'all',
+def build_all() -> None:
+    build({'type': 'normal', 'figure': ['all'],
            'legacy': False, 'include': ['all'], 'debug': False, 'sfw': False})
-    build({'type': 'normal', 'figure': 'none',
-           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': False})
-    build({'type': 'compat', 'figure': 'all',
-           'legacy': False, 'include': [], 'debug': False, 'sfw': False})
-    build({'type': 'compat', 'figure': 'none',
-           'legacy': False, 'include': [], 'debug': False, 'sfw': False})
-    build({'type': 'compat', 'figure': 'none',
-           'legacy': True, 'include': [], 'debug': False, 'sfw': False})
+    build({'type': 'normal', 'figure': ['all'],
+           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True})
+    build({'type': 'normal', 'figure': [], 'legacy': False,
+           'include': ['all'], 'debug': False, 'sfw': True})
+    build({'type': 'compat', 'figure': ['all'],
+           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True})
+    build({'type': 'compat', 'figure': [],
+           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True})
+    build({'type': 'compat', 'figure': [], 'legacy': False,
+           'include': [], 'debug': False, 'sfw': True})
+    build({'type': 'compat', 'figure': [],
+           'legacy': True, 'include': ['all'], 'debug': False, 'sfw': True})
 
 
-def get_packname(args):
+def get_packname(args: dict) -> str:
     base_name = "mcwzh-meme"
     if args['type'] == 'normal':
-        if not args['include']:
-            base_name += "_nomod"
+        pass
     elif args['type'] == 'compat':
         base_name += "_compatible"
-    if args['figure'] == 'none':
+    if not args['figure']:
         base_name += "_nofigure"
+    if not args['include']:
+        base_name += "_nomod"
     if args['legacy']:
         base_name += '_legacy'
-    if 'optional/sfw.json' in args['include']:
+    if args['sfw']:
         base_name += '_sfw'
     return base_name + ".zip"
+
+
+def generate_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        description="Automatically build resourcepacks")
+    parser.add_argument('type', default='normal', help="Build type. Should be 'all', 'normal' or 'compat'. If it's 'all', all other arguments will be ignored.", choices=[
+                        'all', 'normal', 'compat'])
+    parser.add_argument('-t', '--figure', nargs='*', default='all',
+                        help="Specify which figures should be added. Should be path(s) to a file, folder, 'all' or 'none'. Defaults to 'all'.")
+    parser.add_argument('-s', '--sfw', action='store_true',
+                        help="Use 'suitable for work' strings.")
+    parser.add_argument('-l', '--legacy', action='store_true',
+                        help="(Experimental) Use legacy format (.lang) when building resource packs.")
+    parser.add_argument('-i', '--include', nargs='*', default='all',
+                        help="(Experimental) Include modification strings or folders. Should be path(s) to a file, folder, 'all' or 'none'. Defaults to 'all'.")
+    parser.add_argument('-d', '--debug', action='store_true',
+                        help="Output an individual language file.")
+    return parser
+
+
+def get_figure_list(figlist: list) -> (set, int):
+    figure_list = set()
+    pack_pos = set()
+    warning = 0
+    if figlist:
+        if 'none' in figlist:
+            # no figures added
+            pass
+        elif 'all' in figlist:
+            # all figures added
+            for root, dirs, files in os.walk('optional'):
+                if root == 'optional':
+                    files.clear()
+                for name in files:
+                    # prevent duplicates
+                    file_pos = os.path.join(root, name)
+                    num = len(pack_pos)
+                    pack_pos.add(file_pos[file_pos.find("assets"):])
+                    if num != len(pack_pos):
+                        figure_list.add(file_pos)
+        else:
+            for path in figlist:
+                if os.path.exists(path):
+                    if os.path.isfile(path):
+                        figure_list.append(path)
+                    elif os.path.isdir(path):
+                        for root, dirs, files in os.walk(path):
+                            figure_list.extend(
+                                [os.path.join(root, name) for name in files])
+                else:
+                    print(
+                        '\033[33m[WARN] "%s" does not exist, skipping\033[0m' % path)
+                    warning += 1
+    return figure_list, warning
+
+
+def get_mod_list(modlist: list) -> (set, int):
+    mods = set()
+    warning = 0
+    if modlist:
+        if 'none' in modlist:
+            # no mods added
+            pass
+        elif 'all' in modlist:
+            # all mods added
+            mods.update(["mods/" + file for file in os.listdir('mods')])
+        else:
+            for path in modlist:
+                if os.path.exists(path):
+                    if os.path.isfile(path):
+                        mods.append(path)
+                    elif os.path.isdir(path):
+                        for root, dirs, files in os.walk(path):
+                            mods.extend(
+                                [os.path.join(root, name) for name in files])
+                else:
+                    print(
+                        '\033[33m[WARN] "%s" does not exist, skipping\033[0m' % path)
+                    warning += 1
+    return mods, warning
+
+
+def get_mod_content(modlist: list) -> (dict, int):
+    mods = {}
+    counter = 0
+    for file in modlist:
+        if file.endswith(".json"):
+            with open(file, 'r', encoding='utf8') as f:
+                mods.update(json.load(f))
+        elif file.endswith(".lang"):
+            with open(file, 'r', encoding='utf8') as f:
+                items = [i for i in f.read().splitlines() if (
+                    i != '' and not i.startswith('#'))]
+            mods.update(dict(i.split("=", 1) for i in items))
+        else:
+            print('\033[33m[WARN] File type "%s" is not supported, skipping\033[0m' %
+                  file[file.rfind('.') + 1:])
+            counter += 1
+    return mods, counter
+
+
+def generate_legacy_content(lang_data: dict, mapping_list: list) -> (str, int):
+    counter = 0
+    legacy_lang_data = {}
+    for item in mapping_list:
+        mapping_file = item + ".json"
+        if mapping_file not in os.listdir("mappings"):
+            print(
+                '\033[33m[WARN] Missing mapping "%s", skipping\033[0m' % mapping_file)
+            counter += 1
+        else:
+            path = "mappings/" + mapping_file
+            with open(path, 'r', encoding='utf8') as f:
+                mapping = json.load(f)
+            for k, v in mapping.items():
+                if v not in lang_data.keys():
+                    print(
+                        '\033[33m[WARN] Corrupted key-value pair in file %s: {"%s": "%s"}\033[0m' % (mapping_file, k, v))
+                    counter += 1
+                else:
+                    legacy_lang_data.update({k: lang_data[v]})
+    legacy_lang_content = ""
+    for k, v in legacy_lang_data.items():
+        legacy_lang_content += "%s=%s\n" % (k, v)
+    return legacy_lang_content, counter
 
 
 if __name__ == '__main__':
