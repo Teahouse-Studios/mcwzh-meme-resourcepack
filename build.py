@@ -140,7 +140,11 @@ def get_packname(args: dict) -> str:
         base_name += "_compatible"
     if not args['figure']:
         base_name += "_nofigure"
+    elif 'none' in args['figure']:
+        base_name += "_nofigure"
     if not args['include']:
+        base_name += "_nomod"
+    elif 'none' in args['include']:
         base_name += "_nomod"
     if args['legacy']:
         base_name += '_legacy'
