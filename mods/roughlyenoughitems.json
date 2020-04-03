@@ -113,7 +113,7 @@
   "config.roughlyenoughitems.clickableRecipeArrows": "可点击的配方箭头：",
   "config.roughlyenoughitems.clickableRecipeArrows.boolean.true": "启用",
   "config.roughlyenoughitems.clickableRecipeArrows.boolean.false": "禁用",
-  "config.roughlyenoughitems.renderEntryEnchantmentGlint": "渲染附魔光效：",
+  "config.roughlyenoughitems.renderEntryEnchantmentGlint": "渲染覆膜光效：",
   "config.roughlyenoughitems.lowerConfigButton": "设定按钮位置：",
   "config.roughlyenoughitems.lowerConfigButton.boolean.false": "顶部",
   "config.roughlyenoughitems.lowerConfigButton.boolean.true": "搜寻栏旁",
