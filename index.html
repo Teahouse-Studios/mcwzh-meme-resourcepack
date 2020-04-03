@@ -131,6 +131,10 @@
             $.each(formArray, function (i, item) {
                 formObject[item.name] = item.value;
             });
+            for (var p in formObject) {
+                formObject[p] = (formObject[p] === 'false' ? false : formObject[p]);
+                formObject[p] = (formObject[p] === 'true' ? true : formObject[p]);
+            }
             $.ajax({
                 url: "/ajax",
                 type: "POST",
@@ -140,9 +144,13 @@
                 success: function (data) {
                     document.getElementById("resultTitle").style.display = "block";
                     document.getElementById("message").style.display = "block";
-                    var jsondata = JSON.stringify(data)
-                    console.log(jsondata);
-                    document.getElementById("message").innerHTML += (HTMLEncode(jsondata) + "<hr>");
+                    var jsondata = data
+                    console.log(jsondata["argument"]);
+                    var status = jsondata["code"]
+                    var logs = jsondata["logs"]
+                    var fileUrl = "/files/" + jsondata["filename"]
+                    var argument = JSON.stringify(jsondata["argument"])
+                    document.getElementById("message").innerHTML += ("状态码：" + HTMLEncode(status) + "<br>参数：" + HTMLEncode(argument) + "<br>下载：<a href=\"" + encodeURI(HTMLEncode(fileUrl)) + "\">点击这里</a><br>日志：<br>" + HTMLEncode(logs) + "<hr>");
                 },
                 error: function (e) {
                     document.getElementById("resultTitle").style.display = "block";
