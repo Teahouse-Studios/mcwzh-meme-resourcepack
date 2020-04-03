@@ -48,6 +48,27 @@
                             <span>旧版（1.12.2以下）语言文件格式</span>
                         </label>
                     </div>
+                    <div class="input-field col s6">
+                        <select name="figure">
+                            <option value="all">所有材质</option>
+                            <option value="none">无材质</option>
+                            <option>自定义（见下）</option>
+                        </select>
+                        <label>材质选择</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select name="include" multiple>
+                            <optgroup label="Mod内容">
+                                <option value="all">所有Mod内容</option>
+                                <option value="none">无Mod内容</option>
+                                <option>自定义（见下）</option>
+                            </optgroup>
+                            <optgroup label="附加内容">
+                                
+                            </optgroup>
+                        </select>
+                        <label>Mod/附加内容选择</label>
+                    </div>
                 </div>
                 <div class="col s3">
                     <button type="submit" class="waves-effect waves-light btn"><i class="material-icons left">cloud_download</i>提交构建选项</button>
