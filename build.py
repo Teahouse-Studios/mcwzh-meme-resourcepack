@@ -33,19 +33,24 @@ def main():
           (pack_counter, successful_pack_counter))
 
 
-def build(args: dict) -> None:
+def build(args: dict) -> (str, str):
     global pack_counter
     global successful_pack_counter
     global warning_pack_counter
     warning_counter = 0
     counter = 0
+    logs = ""
+    info = ""
     # get figure list
-    (figlist, counter) = get_figure_list(args['figure'])
+    (figlist, counter, info) = get_figure_list(args['figure'])
     warning_counter += counter
+    logs += info
     counter = 0
+    info = ""
     # get mod list
-    (modlist, counter) = get_mod_list(args['include'])
+    (modlist, counter, info) = get_mod_list(args['include'])
     warning_counter += counter
+    logs += info
     counter = 0
     # suitable for work
     if args['sfw']:
@@ -57,7 +62,9 @@ def build(args: dict) -> None:
     with open("assets/minecraft/lang/zh_meme.json", 'r', encoding='utf8') as f:
         lang_data = json.load(f)
     pack_name = get_packname(args)
-    print("[INFO] Building " + pack_name)
+    info = "[INFO] Building %s" % pack_name
+    print("%s" % info)
+    logs += "%s\n" % info
     # all builds have these files
     pack = zipfile.ZipFile(
         pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
@@ -69,7 +76,9 @@ def build(args: dict) -> None:
             pack.write(file, arcname=file[file.find("assets"):])
     # add mods
     if modlist:
-        (mod_content, counter) = get_mod_content(modlist)
+        info = ""
+        (mod_content, counter, info) = get_mod_content(modlist)
+        logs += info
         lang_data.update(mod_content)
         warning_counter += counter
         counter = 0
@@ -95,7 +104,10 @@ def build(args: dict) -> None:
         lang_extension = ".lang"
         # change pack format
         metadata['pack'].update({"pack_format": 3})
-        (legacy_lang_content, counter) = generate_legacy_content(lang_data, mappings)
+        info = ""
+        (legacy_lang_content, counter, info) = generate_legacy_content(
+            lang_data, mappings)
+        logs += info
         pack.writestr("assets/minecraft/lang/" + lang_name +
                       lang_extension, legacy_lang_content)
         warning_counter += counter
@@ -106,13 +118,16 @@ def build(args: dict) -> None:
     pack.writestr("pack.mcmeta", json.dumps(
         metadata, indent=4, ensure_ascii=False))
     pack.close()
-    print("[INFO] Built pack %s with %d warning(s)" %
-          (pack_name, warning_counter))
+    info = "[INFO] Built pack %s with %d warning(s)" % (
+        pack_name, warning_counter)
+    print("%s" % info)
+    logs += "%s\n" % info
     if warning_counter == 0:
         successful_pack_counter += 1
     else:
         warning_pack_counter += 1
     pack_counter += 1
+    return pack_name, logs
 
 
 def build_all() -> None:
@@ -171,10 +186,11 @@ def generate_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def get_figure_list(figlist: list) -> (set, int):
+def get_figure_list(figlist: list) -> (set, int, str):
     figure_list = set()
     pack_pos = set()
     warning = 0
+    log = ""
     if figlist:
         if 'none' in figlist:
             # no figures added
@@ -201,15 +217,17 @@ def get_figure_list(figlist: list) -> (set, int):
                             figure_list.update(
                                 [os.path.join(root, name) for name in files])
                 else:
-                    print(
-                        '\033[33m[WARN] "%s" does not exist, skipping\033[0m' % path)
+                    warn = '[WARN] "%s" does not exist, skipping' % path
+                    print("\033[33m%s\033[0m" % warn)
+                    log += "%s\n" % warn
                     warning += 1
-    return figure_list, warning
+    return figure_list, warning, log
 
 
-def get_mod_list(modlist: list) -> (set, int):
+def get_mod_list(modlist: list) -> (set, int, str):
     mods = set()
     warning = 0
+    log = ""
     if modlist:
         if 'none' in modlist:
             # no mods added
@@ -227,15 +245,17 @@ def get_mod_list(modlist: list) -> (set, int):
                             mods.update(
                                 [os.path.join(root, name) for name in files])
                 else:
-                    print(
-                        '\033[33m[WARN] "%s" does not exist, skipping\033[0m' % path)
+                    warn = '[WARN] "%s" does not exist, skipping' % path
+                    print("\033[33m%s\033[0m" % warn)
+                    log += "%s\n" % warn
                     warning += 1
-    return mods, warning
+    return mods, warning, log
 
 
-def get_mod_content(modlist: list) -> (dict, int):
+def get_mod_content(modlist: list) -> (dict, int, str):
     mods = {}
     counter = 0
+    log = ""
     for file in modlist:
         if file.endswith(".json"):
             with open(file, 'r', encoding='utf8') as f:
@@ -246,20 +266,25 @@ def get_mod_content(modlist: list) -> (dict, int):
                     i != '' and not i.startswith('#'))]
             mods.update(dict(i.split("=", 1) for i in items))
         else:
-            print('\033[33m[WARN] File type "%s" is not supported, skipping\033[0m' %
-                  file[file.rfind('.') + 1:])
+            warn = '[WARN] File type "%s" is not supported, skipping' % file[file.rfind(
+                '.') + 1:]
+            print("\033[33m%s\033[0m" % warn)
             counter += 1
-    return mods, counter
+            log += "%s\n" % warn
+    return mods, counter, log
 
 
-def generate_legacy_content(lang_data: dict, mapping_list: list) -> (str, int):
+def generate_legacy_content(lang_data: dict, mapping_list: list) -> (str, int, str):
     counter = 0
     legacy_lang_data = {}
+    log = ""
     for item in mapping_list:
         mapping_file = item + ".json"
         if mapping_file not in os.listdir("mappings"):
+            warn = '[WARN] Missing mapping "%s", skipping' % mapping_file
             print(
-                '\033[33m[WARN] Missing mapping "%s", skipping\033[0m' % mapping_file)
+                '\033[33m%s\033[0m' % warn)
+            log += "%s\n" % warn
             counter += 1
         else:
             path = "mappings/" + mapping_file
@@ -267,15 +292,18 @@ def generate_legacy_content(lang_data: dict, mapping_list: list) -> (str, int):
                 mapping = json.load(f)
             for k, v in mapping.items():
                 if v not in lang_data.keys():
+                    warn = '[WARN] Corrupted key-value pair in file %s: {"%s": "%s"}' % (
+                        mapping_file, k, v)
                     print(
-                        '\033[33m[WARN] Corrupted key-value pair in file %s: {"%s": "%s"}\033[0m' % (mapping_file, k, v))
+                        '\033[33m%s\033[0m' % warn)
+                    log += "%s\n" % warn
                     counter += 1
                 else:
                     legacy_lang_data.update({k: lang_data[v]})
     legacy_lang_content = ""
     for k, v in legacy_lang_data.items():
         legacy_lang_content += "%s=%s\n" % (k, v)
-    return legacy_lang_content, counter
+    return legacy_lang_content, counter, log
 
 
 if __name__ == '__main__':
