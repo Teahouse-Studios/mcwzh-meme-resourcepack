@@ -1,6 +1,7 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify, send_file, send_from_directory, json, make_response
 import build
 import os
+import json
 
 app = Flask(__name__, template_folder='./', static_folder="", static_url_path="")
 
@@ -17,9 +18,19 @@ def generate_website():
 
 @app.route('/ajax',methods=['POST'])
 def ajax():
-    recv_data = request.get_data()
+    recv_data = json.loads(request.get_data('data'))
     print(recv_data)
-    return recv_data
+    build.build(recv_data)
+    return json.dumps(recv_data)
+
+@app.route('/files/<file_name>', methods=['GET'])
+def get_file(file_name):
+    directory = "./"
+    try:
+        response = make_response(send_from_directory(directory,file_name,as_attachment=True))
+        return response
+    except Exception as e:
+        return(jsonify({"code":"403", "message": "{}".format(e)}))
 
 if __name__ == '__main__':
     app.run(debug=True)
