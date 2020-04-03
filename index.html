@@ -58,11 +58,20 @@
                     </div>
                     <div class="input-field col s6">
                         <select name="include" multiple>
-                            <optgroup label="Mod内容">
-                                <option value="adorn.json">adorn.json</option>
+                            <optgroup label="Mod文件">
+                                {% for item in mods %}
+                                <option value="{{item}}">{{item}}</option>
+                                {% endfor %}
+                            </optgroup>
+                            <optgroup label="Mod文件（未汉化）">
+                                {% for item in enmods %}
+                                <option value="{{item}}">{{item}}</option>
+                                {% endfor %}
                             </optgroup>
                             <optgroup label="附加内容">
-                                <option value="20w14infinite.json">20w14infinite.json</option>
+                                {% for item in optionals %}
+                                <option value="{{item}}">{{item}}</option>
+                                {% endfor %}
                             </optgroup>
                         </select>
                         <label>Mod/附加内容选择</label>
