@@ -57,11 +57,17 @@
                         <label>材质选择</label>
                     </div>
                     <div class="input-field col s6">
+                        <select name="include">
+                            <option value="all">所有Mod内容</option>
+                            <option value="none">无Mod内容</option>
+                            <option>自定义（见下）</option>
+                        </select>
+                        <label>Mod内容选择</label>
+                    </div>
+                    <div class="input-field col s12">
                         <select name="include" multiple>
                             <optgroup label="Mod内容">
-                                <option value="all">所有Mod内容</option>
-                                <option value="none">无Mod内容</option>
-                                <option>自定义（见下）</option>
+                                
                             </optgroup>
                             <optgroup label="附加内容">
                                 
