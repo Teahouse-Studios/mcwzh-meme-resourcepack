@@ -19,9 +19,9 @@ def generate_website():
 @app.route('/ajax',methods=['POST'])
 def ajax():
     recv_data = json.loads(request.get_data('data'))
-    print(recv_data)
     result = build.build(recv_data)
     message = {"code": 200, "argument": recv_data, "logs": result[1], "filename": result[0]}
+    print(recv_data)
     return json.dumps(message)
 
 @app.route('/files/<file_name>', methods=['GET'])

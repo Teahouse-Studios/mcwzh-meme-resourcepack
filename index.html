@@ -135,6 +135,7 @@
                 formObject[p] = (formObject[p] === 'false' ? false : formObject[p]);
                 formObject[p] = (formObject[p] === 'true' ? true : formObject[p]);
             }
+            console.log(JSON.stringify(formObject))
             $.ajax({
                 url: "/ajax",
                 type: "POST",
