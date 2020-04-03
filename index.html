@@ -79,7 +79,7 @@
                     <label>Mod内容选择</label>
                 </div>
                 <div class="input-field col s6">
-                    <select name="include" multiple>
+                    <select name="include" multiple id="includeList">
                         <optgroup label="Mod文件">
                             {% for item in mods %}
                             <option value="{{item}}">{{item}}</option>
@@ -128,6 +128,12 @@
             document.getElementById("submitButton").classList.add("disabled")
             var formObject = {}
             var formArray = $("#argument").serializeArray();
+            var includeList = $("#includeList").serializeArray();
+            console.log(includeList);
+            var includeList2 = []
+            for (var p in includeList){
+                includeList2.push(includeList[p]['value']);
+            }
             $.each(formArray, function (i, item) {
                 formObject[item.name] = item.value;
             });
@@ -135,6 +141,7 @@
                 formObject[p] = (formObject[p] === 'false' ? false : formObject[p]);
                 formObject[p] = (formObject[p] === 'true' ? true : formObject[p]);
             }
+            formObject[includeList[0]['name']] = includeList2
             console.log(JSON.stringify(formObject))
             $.ajax({
                 url: "/ajax",

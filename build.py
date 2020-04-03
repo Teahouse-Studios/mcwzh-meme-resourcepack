@@ -305,6 +305,5 @@ def generate_legacy_content(lang_data: dict, mapping_list: list) -> (str, int, s
         legacy_lang_content += "%s=%s\n" % (k, v)
     return legacy_lang_content, counter, log
 
-
 if __name__ == '__main__':
     main()
