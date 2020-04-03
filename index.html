@@ -40,11 +40,13 @@
                     </div>
                     <div class="col s12">
                         <label>
-                            <input type="checkbox" class="filled-in" name="sfw"/>
+                            <input type="checkbox" class="filled-in" name="sfw" value="true">
+                            <input type="hidden" name="sfw" value="false">
                             <span>Suitable for work ("_sfw")</span>
                         </label>
                         <label>
-                            <input type="checkbox" class="filled-in" name="legacy"/>
+                            <input type="checkbox" class="filled-in" name="legacy" value="true">
+                            <input type="hidden" name="legacy" value="false">
                             <span>旧版（1.12.2以下）语言文件格式</span>
                         </label>
                     </div>
@@ -85,21 +87,7 @@
                 <div class="col s12">
                     <h1>返回结果</h1>
                 </div>
-                <code id="message" class="col s12">[INFO] Building mcwzh-meme.zip
-                    [INFO] Built pack mcwzh-meme.zip with 0 warning(s)
-                    [INFO] Building mcwzh-meme_sfw.zip
-                    [INFO] Built pack mcwzh-meme_sfw.zip with 0 warning(s)
-                    [INFO] Building mcwzh-meme_nofigure_sfw.zip
-                    [INFO] Built pack mcwzh-meme_nofigure_sfw.zip with 0 warning(s)
-                    [INFO] Building mcwzh-meme_compatible_sfw.zip
-                    [INFO] Built pack mcwzh-meme_compatible_sfw.zip with 0 warning(s)
-                    [INFO] Building mcwzh-meme_compatible_nofigure_sfw.zip
-                    [INFO] Built pack mcwzh-meme_compatible_nofigure_nomod_sfw.zip with 0 warning(s)
-                    [INFO] Building mcwzh-meme_compatible_nofigure_legacy_sfw.zip
-                    [WARN] Missing mapping "commands.json", skipping
-                    [INFO] Built pack mcwzh-meme_compatible_nofigure_legacy_sfw.zip with 1 warning(s)
-                    
-                    [INFO] Built 7 pack(s) with 6 pack(s) no warning</code>
+                <code id="message" class="col s12"></code>
             </div>
         </div>
         <!--Import jQuery before materialize.js-->
