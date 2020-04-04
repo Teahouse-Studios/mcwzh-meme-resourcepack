@@ -128,6 +128,7 @@
             document.getElementById("submitButton").classList.add("disabled")
             var formObject = {}
             var formArray = $("#argument").serializeArray();
+            console.log(formArray);
             var includeList = $("#includeList").serializeArray();
             console.log(includeList);
             var includeList2 = []
@@ -141,8 +142,24 @@
                 formObject[p] = (formObject[p] === 'false' ? false : formObject[p]);
                 formObject[p] = (formObject[p] === 'true' ? true : formObject[p]);
             }
-            formObject['include'] = includeList2
-            console.log(JSON.stringify(formObject))
+            console.log(formArray[1]);
+            if (formArray[1]['value'] == "all"){
+                formObject['figure'] = ['all'];
+            }
+            else if (formArray[1]['value'] == 'none'){
+                formObject['figure'] = ['none'];
+            }
+            else {
+                formObject['figure'] = [];
+            }
+            if (formArray[5]['value'] == "all"){
+                includeList2.push("all");
+            }
+            else if (formArray[5]['value'] == 'none'){
+                includeList2.push("none");
+            }
+            formObject['include'] = includeList2;
+            console.log(JSON.stringify(formObject));
             $.ajax({
                 url: "/ajax",
                 type: "POST",
