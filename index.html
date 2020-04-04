@@ -198,7 +198,7 @@
                     $("#message").css("display","block");
                     var jsondata = JSON.stringify(e)
                     console.log(jsondata);
-                    $("#message").html() += (HTMLEncode(jsondata) + "<hr>");
+                    $("#message")[0].innerHTML += (HTMLEncode(jsondata) + "<hr>");
                 }
             });
             $("#submitButton").removeClass("disabled")
