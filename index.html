@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js" as="script">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<meta property="og:title" content="梗体中文 · 在线打包">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="梗体中文资源包在线打包系统，帮助用户打包。">
+	<title>梗体中文 · 在线打包</title>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style type="text/css">
         .log {
@@ -17,16 +21,14 @@
             word-wrap: break-word;
             /* Internet Explorer 5.5+ */
             white-space: pre-wrap;
-            /* Firefox */
         }
     </style>
-    <title>梗体中文在线打包</title>
 </head>
 
 <body>
     <nav>
         <div class="nav-wrapper light-blue darken-1">
-            <a href="#" class="brand-logo center">梗体中文</a>
+            <a href="#" class="brand-logo center">梗体中文 · 在线打包</a>
         </div>
     </nav>
     <div class="container">
@@ -62,27 +64,21 @@
                     <label>Mod内容选择</label>
                 </div>
                 <div class="col s12">
-                    <p>
-                        <label>
-                            <input type="hidden" name="sfw" value="false">
-                            <input type="checkbox" class="filled-in" name="sfw" value="true">
-                            <span>Suitable for work ("_sfw")</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="hidden" name="legacy" value="false">
-                            <input type="checkbox" class="filled-in" name="legacy" value="true">
-                            <span>旧版（1.12.2以下）语言文件格式</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                           <input type="hidden" name="debug" value="false">
-                            <input type="checkbox" class="filled-in" name="debug" value="true">
-                            <span>查看调试信息</span>
-                        </label>
-                    </p>
+                    <label>
+                        <input type="hidden" name="sfw" value="false">
+                        <input type="checkbox" class="filled-in" name="sfw" value="true">
+                        <span>Suitable for work ("_sfw")</span>
+                    </label><br>
+                    <label>
+                        <input type="hidden" name="legacy" value="false">
+                        <input type="checkbox" class="filled-in" name="legacy" value="true">
+                        <span>旧版（1.12.2以下）语言文件格式</span>
+                    </label><br>
+                    <label>
+                        <input type="hidden" name="debug" value="false">
+                        <input type="checkbox" class="filled-in" name="debug" value="true">
+                        <span>查看调试信息</span>
+                    </label>
                 </div>
                 <div class="input-field col s6">
                     <select name="include" multiple id="includeList">
@@ -128,7 +124,7 @@
         </div>
     </div>
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript">$(document).ready(function () { $('select').formSelect(); });</script>
@@ -208,5 +204,4 @@
         });
     </script>
 </body>
-
 </html>
