@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify, send_file, send_from
 import build
 import os
 import json
+from pathlib import Path
 
 app = Flask(__name__, template_folder='./', static_folder="", static_url_path="")
 
@@ -11,10 +12,12 @@ def generate_website():
     mods = set()
     enmods = set()
     optionals = set()
+    figures = set()
     mods.update(["mods/" + file for file in os.listdir('mods')])
     enmods.update(["en-mods/" + file for file in os.listdir('en-mods')])
-    optionals.update(["optional/" + file for file in os.listdir('optional')])
-    return render_template("./index.html", mods = mods, enmods = enmods, optionals = optionals)
+    optionals.update(["optional/" + str(file.relative_to('optional/').as_posix()) for file in Path('optional').iterdir() if not file.is_dir()])
+    figures.update(["optional/" + str(file.relative_to('optional/').as_posix()) for file in Path('optional').iterdir() if file.is_dir()])
+    return render_template("./index.html", mods = mods, enmods = enmods, optionals = optionals, figures = figures)
 
 @app.route('/ajax',methods=['POST'])
 def ajax():

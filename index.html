@@ -38,20 +38,28 @@
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s4">
                     <select name="type">
                         <option value="normal">普通版本</option>
                         <option value="compat">兼容版本</option>
                     </select>
                     <label>语言版本</label>
                 </div>
-                <div class="input-field col s6">
+                <div class="input-field col s4">
                     <select name="figure" id="figureOption">
                         <option value="all">全部</option>
                         <option value="none">无</option>
                         <option value="custom">自定义（见下）</option>
                     </select>
                     <label>材质选择</label>
+                </div>
+                <div class="input-field col s4">
+                    <select name="include" id="modOption">
+                        <option value="all">所有Mod内容</option>
+                        <option value="none">无Mod内容</option>
+                        <option value="custom">自定义（见下）</option>
+                    </select>
+                    <label>Mod内容选择</label>
                 </div>
                 <div class="col s12">
                     <label>
@@ -65,18 +73,10 @@
                         <span>旧版（1.12.2以下）语言文件格式</span>
                     </label>
                     <label>
+                        <input type="hidden" name="debug" value="false">
                         <input type="checkbox" class="filled-in" name="debug" value="true">
                         <span>查看调试信息</span>
-                        <input type="hidden" name="debug" value="false">
                     </label>
-                </div>
-                <div class="input-field col s6">
-                    <select name="include" id="modOption">
-                        <option value="all">所有Mod内容</option>
-                        <option value="none">无Mod内容</option>
-                        <option value="custom">自定义（见下）</option>
-                    </select>
-                    <label>Mod内容选择</label>
                 </div>
                 <div class="input-field col s6">
                     <select name="include" multiple id="includeList">
@@ -97,6 +97,16 @@
                         </optgroup>
                     </select>
                     <label>Mod/附加内容选择</label>
+                </div>
+                <div class="input-field col s6">
+                    <select name="include" multiple id="figureList">
+                        <optgroup label="附加材质">
+                            {% for item in figures %}
+                            <option value="{{item}}">{{item}}</option>
+                            {% endfor %}
+                        </optgroup>
+                    </select>
+                    <label>附加包/材质选择</label>
                 </div>
             </div>
             <div class="col s3">
@@ -130,10 +140,15 @@
             var formArray = $("#argument").serializeArray();
             console.log(formArray);
             var includeList = $("#includeList").serializeArray();
+            var figureList = $("#figureList").serializeArray();
             console.log(includeList);
-            var includeList2 = []
+            var includeList2 = [];
+            var figureList2 = [];
             for (var p in includeList){
                 includeList2.push(includeList[p]['value']);
+            }
+            for (var p in figureList){
+                figureList2.push(figureList[p]['value']);
             }
             $.each(formArray, function (i, item) {
                 formObject[item.name] = item.value;
@@ -144,13 +159,10 @@
             }
             console.log(formArray[1]);
             if (formArray[1]['value'] == "all"){
-                formObject['figure'] = ['all'];
+                figureList2.push("all");
             }
             else if (formArray[1]['value'] == 'none'){
-                formObject['figure'] = ['none'];
-            }
-            else {
-                formObject['figure'] = [];
+                figureList2.push("none");
             }
             if (formArray[5]['value'] == "all"){
                 includeList2.push("all");
@@ -159,6 +171,7 @@
                 includeList2.push("none");
             }
             formObject['include'] = includeList2;
+            formObject['figure'] = figureList2;
             console.log(JSON.stringify(formObject));
             $.ajax({
                 url: "/ajax",
