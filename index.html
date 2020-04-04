@@ -191,7 +191,7 @@
                     var logs = jsondata["logs"]
                     var fileUrl = "/files/" + jsondata["filename"]
                     var argument = JSON.stringify(jsondata["argument"])
-                    $("#message").html() += ("状态码：" + HTMLEncode(status) + "<br>参数：" + HTMLEncode(argument) + "<br>下载：<a href=\"" + encodeURI(HTMLEncode(fileUrl)) + "\">点击这里</a><br>日志：<br>" + HTMLEncode(logs) + "<hr>");
+                    $("#message")[0].innerHTML += ("状态码：" + HTMLEncode(status) + "<br>参数：" + HTMLEncode(argument) + "<br>下载：<a href=\"" + encodeURI(HTMLEncode(fileUrl)) + "\">点击这里</a><br>日志：<br>" + HTMLEncode(logs) + "<hr>");
                 },
                 error: function (e) {
                     $("#resultTitle").css("display","block");
