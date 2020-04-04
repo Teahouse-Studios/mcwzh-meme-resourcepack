@@ -48,7 +48,7 @@ def get_file(file_name):
             directory, file_name, as_attachment=True))
         return response
     except Exception as e:
-        return(jsonify({"code": "403", "message": "{}".format(e)}))
+        return(jsonify({"code": "500", "message": "{}".format(e)}))
 
 
 if __name__ == '__main__':
