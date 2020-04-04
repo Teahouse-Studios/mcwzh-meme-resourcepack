@@ -138,7 +138,7 @@
             return output;
         }
         $('#submitButton').click(function () {
-            document.getElementById("submitButton").classList.add("disabled")
+            $("#submitButton").addClass("disabled")
             var formObject = {}
             var formArray = $("#argument").serializeArray();
             console.log(formArray);
@@ -183,25 +183,25 @@
                 data: JSON.stringify(formObject),
                 dataType: "json",
                 success: function (data) {
-                    document.getElementById("resultTitle").style.display = "block";
-                    document.getElementById("message").style.display = "block";
+                    $("#resultTitle").css("display","block");
+                    $("#message").css("display","block");
                     var jsondata = data
                     console.log(jsondata["argument"]);
                     var status = jsondata["code"]
                     var logs = jsondata["logs"]
                     var fileUrl = "/files/" + jsondata["filename"]
                     var argument = JSON.stringify(jsondata["argument"])
-                    document.getElementById("message").innerHTML += ("状态码：" + HTMLEncode(status) + "<br>参数：" + HTMLEncode(argument) + "<br>下载：<a href=\"" + encodeURI(HTMLEncode(fileUrl)) + "\">点击这里</a><br>日志：<br>" + HTMLEncode(logs) + "<hr>");
+                    $("#message").html() += ("状态码：" + HTMLEncode(status) + "<br>参数：" + HTMLEncode(argument) + "<br>下载：<a href=\"" + encodeURI(HTMLEncode(fileUrl)) + "\">点击这里</a><br>日志：<br>" + HTMLEncode(logs) + "<hr>");
                 },
                 error: function (e) {
-                    document.getElementById("resultTitle").style.display = "block";
-                    document.getElementById("message").style.display = "block";
+                    $("#resultTitle").css("display","block");
+                    $("#message").css("display","block");
                     var jsondata = JSON.stringify(e)
                     console.log(jsondata);
-                    document.getElementById("message").innerHTML += (HTMLEncode(jsondata) + "<hr>");
+                    $("#message").html() += (HTMLEncode(jsondata) + "<hr>");
                 }
             });
-            document.getElementById("submitButton").classList.remove("disabled")
+            $("#submitButton").removeClass("disabled")
         });
     </script>
 </body>
