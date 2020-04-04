@@ -3,6 +3,7 @@ import build
 import os
 import json
 from pathlib import Path
+import subprocess
 
 app = Flask(__name__, template_folder='./', static_folder="", static_url_path="")
 
@@ -22,9 +23,12 @@ def generate_website():
 @app.route('/ajax',methods=['POST'])
 def ajax():
     recv_data = json.loads(request.get_data('data'))
-    os.system("git pull origin master")
+    p = subprocess.Popen(["git","pull","origin","master"], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE)
+    p.wait()
+    logs = str(p.communicate()[0],'utf-8','ignore')
     result = build.build(recv_data)
-    message = {"code": 200, "argument": recv_data, "logs": result[1], "filename": result[0]}
+    logs += result[1]
+    message = {"code": 200, "argument": recv_data, "logs": logs, "filename": result[0]}
     print(recv_data)
     return json.dumps(message)
 
