@@ -22,7 +22,7 @@ def generate_website():
 @app.route('/ajax',methods=['POST'])
 def ajax():
     recv_data = json.loads(request.get_data('data'))
-#    os.system("git pull origin master")
+    os.system("git pull origin master")
     result = build.build(recv_data)
     message = {"code": 200, "argument": recv_data, "logs": result[1], "filename": result[0]}
     print(recv_data)
