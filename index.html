@@ -192,6 +192,7 @@
                     var fileUrl = "/files/" + jsondata["filename"]
                     var argument = JSON.stringify(jsondata["argument"])
                     $("#message")[0].innerHTML += ("状态码：" + HTMLEncode(status) + "<br>参数：" + HTMLEncode(argument) + "<br>下载：<a href=\"" + encodeURI(HTMLEncode(fileUrl)) + "\">点击这里</a><br>日志：<br>" + HTMLEncode(logs) + "<hr>");
+                    $("#submitButton").removeClass("disabled")
                 },
                 error: function (e) {
                     $("#resultTitle").css("display","block");
@@ -199,9 +200,9 @@
                     var jsondata = JSON.stringify(e)
                     console.log(jsondata);
                     $("#message")[0].innerHTML += (HTMLEncode(jsondata) + "<hr>");
+                    $("#submitButton").removeClass("disabled")
                 }
             });
-            $("#submitButton").removeClass("disabled")
         });
     </script>
 </body>
