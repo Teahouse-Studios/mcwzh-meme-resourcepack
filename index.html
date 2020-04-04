@@ -46,7 +46,7 @@
                     <label>语言版本</label>
                 </div>
                 <div class="input-field col s6">
-                    <select name="figure">
+                    <select name="figure" id="figureOption">
                         <option value="all">全部</option>
                         <option value="none">无</option>
                         <option value="custom">自定义（见下）</option>
@@ -71,7 +71,7 @@
                     </label>
                 </div>
                 <div class="input-field col s6">
-                    <select name="include">
+                    <select name="include" id="modOption">
                         <option value="all">所有Mod内容</option>
                         <option value="none">无Mod内容</option>
                         <option value="custom">自定义（见下）</option>
@@ -141,7 +141,7 @@
                 formObject[p] = (formObject[p] === 'false' ? false : formObject[p]);
                 formObject[p] = (formObject[p] === 'true' ? true : formObject[p]);
             }
-            formObject[includeList[0]['name']] = includeList2
+            formObject['include'] = includeList2
             console.log(JSON.stringify(formObject))
             $.ajax({
                 url: "/ajax",
