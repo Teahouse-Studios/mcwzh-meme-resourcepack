@@ -147,7 +147,6 @@
             $("#submitButton").addClass("disabled")
             var formObject = {}
             var formArray = $("#argument").serializeArray();
-            console.log(formArray);
             var includeList = [];
             var figureList = [];
             for (var p in formArray) {
@@ -177,7 +176,6 @@
                     $("#resultTitle").css("display","block");
                     $("#message").css("display","block");
                     var jsondata = data
-                    console.log(jsondata["argument"]);
                     var status = jsondata["code"]
                     var logs = jsondata["logs"]
                     var fileUrl = "/files/" + jsondata["filename"]
