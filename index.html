@@ -44,14 +44,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s4">
+                <div class="input-field col m4 s6">
                     <select name="type">
                         <option value="normal">普通版本</option>
                         <option value="compat">兼容版本</option>
                     </select>
                     <label>语言版本</label>
                 </div>
-                <div class="input-field col s4">
+                <div class="input-field col m4 s6">
                     <select name="figure" id="figureOption">
                         <option value="all">全部</option>
                         <option value="none">无</option>
@@ -59,7 +59,7 @@
                     </select>
                     <label>材质选择</label>
                 </div>
-                <div class="input-field col s12 l4">
+                <div class="input-field col s12 m4">
                     <select name="include" id="modOption">
                         <option value="all">所有Mod内容</option>
                         <option value="none">无Mod内容</option>
@@ -84,7 +84,7 @@
                         <span>查看调试信息</span>
                     </label>
                 </div>
-                <div class="input-field col l6 s12">
+                <div class="input-field col m6 s12">
                     <select name="include" multiple id="includeList">
                         <optgroup label="Mod文件">
                             {% for item in mods %}
@@ -104,7 +104,7 @@
                     </select>
                     <label>Mod/附加内容选择</label>
                 </div>
-                <div class="input-field col s6">
+                <div class="input-field col m6 s12">
                     <select name="include" multiple id="figureList">
                         <optgroup label="附加材质">
                             {% for item in figures %}
