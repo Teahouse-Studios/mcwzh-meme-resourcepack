@@ -55,7 +55,7 @@
                     <select name="figure" id="figureOption">
                         <option value="all">全部</option>
                         <option value="none">无</option>
-                        <option value="custom">自定义（见下）</option>
+                        <option value="">自定义（见下）</option>
                     </select>
                     <label>材质选择</label>
                 </div>
@@ -63,7 +63,7 @@
                     <select name="include" id="modOption">
                         <option value="all">所有Mod内容</option>
                         <option value="none">无Mod内容</option>
-                        <option value="custom">自定义（见下）</option>
+                        <option value="">自定义（见下）</option>
                     </select>
                     <label>Mod内容选择</label>
                 </div>
@@ -105,7 +105,7 @@
                     <label>Mod/附加内容选择</label>
                 </div>
                 <div class="input-field col m6 s12">
-                    <select name="include" multiple id="figureList">
+                    <select name="figure" multiple id="figureList">
                         <optgroup label="附加材质">
                             {% for item in figures %}
                             <option value="{{item}}">{{item}}</option>
@@ -148,16 +148,14 @@
             var formObject = {}
             var formArray = $("#argument").serializeArray();
             console.log(formArray);
-            var includeList = $("#includeList").serializeArray();
-            var figureList = $("#figureList").serializeArray();
-            console.log(includeList);
-            var includeList2 = [];
-            var figureList2 = [];
-            for (var p in includeList){
-                includeList2.push(includeList[p]['value']);
-            }
-            for (var p in figureList){
-                figureList2.push(figureList[p]['value']);
+            var includeList = [];
+            var figureList = [];
+            for (var p in formArray) {
+                if (formArray[p]['name'] == 'include' && formArray[p]['value'] != '') {
+                    includeList.push(formArray[p]['value']);
+                } else if (formArray[p]['name'] == 'figure' && formArray[p]['value'] != '') {
+                    figureList.push(formArray[p]['value']);
+                }
             }
             $.each(formArray, function (i, item) {
                 formObject[item.name] = item.value;
@@ -166,21 +164,8 @@
                 formObject[p] = (formObject[p] === 'false' ? false : formObject[p]);
                 formObject[p] = (formObject[p] === 'true' ? true : formObject[p]);
             }
-            console.log(formArray[1]);
-            if (formArray[1]['value'] == "all"){
-                figureList2.push("all");
-            }
-            else if (formArray[1]['value'] == 'none'){
-                figureList2.push("none");
-            }
-            if (formArray[5]['value'] == "all"){
-                includeList2.push("all");
-            }
-            else if (formArray[5]['value'] == 'none'){
-                includeList2.push("none");
-            }
-            formObject['include'] = includeList2;
-            formObject['figure'] = figureList2;
+            formObject['include'] = includeList;
+            formObject['figure'] = figureList;
             console.log(JSON.stringify(formObject));
             $.ajax({
                 url: "/ajax",
