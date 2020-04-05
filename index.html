@@ -8,7 +8,7 @@
     <meta property="og:title" content="梗体中文 · 在线打包">
     <meta property="og:type" content="website">
     <meta property="og:description" content="梗体中文资源包在线打包系统，帮助用户打包。">
-	<title>梗体中文 · 在线打包</title>
+    <title>梗体中文 · 在线打包</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    {{ % extends 'custom/header.html' % }}
+    {{ % include 'custom/header.html' % }}
     <nav>
         <div class="nav-wrapper light-blue darken-1">
             <a href="#" class="brand-logo center">梗体中文 · 在线打包</a>
@@ -125,7 +125,7 @@
             <pre><code id="message" class="col s12 log" style="display:none"></code></pre>
         </div>
     </div>
-    {{ % extends 'custom/footer.html' % }}
+    {{ % extends 'include/footer.html' % }}
     <!--Import jQuery before materialize.js-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
