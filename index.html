@@ -188,9 +188,18 @@
                 error: function (e) {
                     $("#resultTitle").css("display", "block");
                     $("#message").css("display", "block");
-                    var jsondata = JSON.stringify(e);
-                    console.log(jsondata);
-                    $("#message")[0].innerHTML += (HTMLEncode(jsondata) + "<hr>");
+                    var jsondata = e;
+                    console.log(JSON.stringify(e));
+                    console.log(e);
+                    var readyState;
+                    var status;
+                    var statusText;
+                    var responseText;
+                    if (jsondata.hasOwnProperty("readyState")){readyState = String(jsondata["readyState"]);}
+                    if (jsondata.hasOwnProperty("status")){status = String(jsondata["status"]);}
+                    if (jsondata.hasOwnProperty("statusText")){statusText = String(jsondata["statusText"]);}
+                    if (jsondata.hasOwnProperty("responseText")){responseText = String(jsondata["responseText"]);}
+                    $("#message")[0].innerHTML += ("<span class=\"red-text text-darken-1\">出错了！</span><br>初始化状态（readyState）：" + HTMLEncode(readyState) + "<br>状态：" + HTMLEncode(status) + " - " + HTMLEncode(statusText) + "<br>返回的文字：<br><iframe frameborder=\"0\" width=\"100%\" src=\"data:text/html;charset=utf-8;base64," + window.btoa(responseText) + "\"></iframe><hr>");
                     $("#submitButton").removeClass("disabled");
                 }
             });
