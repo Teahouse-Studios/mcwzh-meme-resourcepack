@@ -27,9 +27,9 @@
 </head>
 
 <body>
-    {{ % if header_existance % }}
+    { % if header_existance % }
     { % include 'custom/header.html' % }
-    {{ % endif % }}
+    { % endif % }
     <nav>
         <div class="nav-wrapper light-blue darken-1">
             <a href="#" class="brand-logo center">梗体中文 · 在线打包</a>
@@ -127,9 +127,9 @@
             <pre><code id="message" class="col s12 log" style="display:none"></code></pre>
         </div>
     </div>
-    {{ % if footer_existance % }}
+    { % if footer_existance % }
     { % include 'custom/footer.html' % }
-    {{ % endif % }}
+    { % endif % }
     <!--Import jQuery before materialize.js-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
