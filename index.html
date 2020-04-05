@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" as="script">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/js/materialize.min.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/js/materialize.min.js"
+        as="script">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes">
     <meta property="og:title" content="梗体中文 · 在线打包">
@@ -124,7 +126,7 @@
             <div class="col s12">
                 <h1 id="resultTitle" style="display:none;">返回结果</h1>
             </div>
-            <pre><code id="message" class="col s12 log" style="display:none"></code></pre>
+            <pre><code id="message" class="col s12 log" style="display:none;"></code></pre>
         </div>
     </div>
     {% if footer_existance %}
@@ -173,26 +175,27 @@
                 data: JSON.stringify(formObject),
                 dataType: "json",
                 success: function (data) {
-                    $("#resultTitle").css("display","block");
-                    $("#message").css("display","block");
-                    var jsondata = data
-                    var status = jsondata["code"]
-                    var logs = jsondata["logs"]
-                    var fileUrl = "/files/" + jsondata["filename"]
-                    var argument = JSON.stringify(jsondata["argument"])
+                    $("#resultTitle").css("display", "block");
+                    $("#message").css("display", "block");
+                    var jsondata = data;
+                    var status = jsondata["code"];
+                    var logs = jsondata["logs"];
+                    var fileUrl = "/files/" + jsondata["filename"];
+                    var argument = JSON.stringify(jsondata["argument"]);
                     $("#message")[0].innerHTML += ("状态码：" + HTMLEncode(status) + "<br>参数：" + HTMLEncode(argument) + "<br>下载：<a href=\"" + encodeURI(HTMLEncode(fileUrl)) + "\">点击这里</a><br>日志：<br>" + HTMLEncode(logs) + "<hr>");
-                    $("#submitButton").removeClass("disabled")
+                    $("#submitButton").removeClass("disabled");
                 },
                 error: function (e) {
-                    $("#resultTitle").css("display","block");
-                    $("#message").css("display","block");
-                    var jsondata = JSON.stringify(e)
+                    $("#resultTitle").css("display", "block");
+                    $("#message").css("display", "block");
+                    var jsondata = JSON.stringify(e);
                     console.log(jsondata);
                     $("#message")[0].innerHTML += (HTMLEncode(jsondata) + "<hr>");
-                    $("#submitButton").removeClass("disabled")
+                    $("#submitButton").removeClass("disabled");
                 }
             });
         });
     </script>
 </body>
+
 </html>
