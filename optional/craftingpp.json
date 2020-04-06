@@ -345,7 +345,7 @@
 	"item.cpp.sakura_mochi":"§r樱饼",
 	"item.cpp.sandwich":"§r三明治",
 	"item.cpp.stargazy_pie":"§r仰望星空派",
-	"lore.cpp.speed":"§9光速 (0:30)",
+	"lore.cpp.speed":"§9Plash speed (0:30)",
 	"lore.cpp.strength":"§9Powup333的祝福 (0:30)",
 	"lore.cpp.leap":"§9duang duang duang (0:30)",
 
@@ -489,7 +489,7 @@
 	"info.cpp.rituals.break":"§6[Crafting++]§r 仪式中断",
 	"item.cpp.sakura":"§r木之本樱",
 
-	"lore.cpp.stored_effects.speed":"§7附有 §6光速",
+	"lore.cpp.stored_effects.speed":"§7附有 §6Plash speed",
 	"lore.cpp.stored_effects.haste":"§7附有 §6冲冲冲",
 	"lore.cpp.stored_effects.strength":"§7附有 §6Powup333的祝福",
 	"lore.cpp.stored_effects.jump_boost":"§7附有 §6duang duang duang",
