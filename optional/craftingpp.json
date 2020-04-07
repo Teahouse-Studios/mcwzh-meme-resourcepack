@@ -377,7 +377,7 @@
 
 	"item.cpp.cold_drink":"§r冷饮",
 	"item.cpp.agentia_of_sky":"§r天空药剂",
-	"item.cpp.agentia_of_ocean":"§r海洋药剂",
+	"item.cpp.agentia_of_ocean":"§r贴吧药剂",
 	"item.cpp.agentia_of_ridge":"§r山脉药剂",
 	"item.cpp.agentia_of_dirt":"§r泥土药剂",
 	"item.cpp.agentia_of_earth":"§r大地药剂",
@@ -386,7 +386,7 @@
 	"item.cpp.agentia_of_lightness":"§r轻盈药剂",		
 	"item.cpp.agentia_of_eyesight":"§r明目药剂",
 	"item.cpp.agentia_of_fire_shield":"§r炎盾药剂",
-	"item.cpp.agentia_of_waterless":"§r避水药剂",
+	"item.cpp.agentia_of_waterless":"§r反贴吧药剂",
 	"item.cpp.agentia_of_transparentness":"§r透明药剂",
 	"item.cpp.agentia_of_bounce":"§r弹力药剂",
 	"item.cpp.agentia_of_agileness":"§r敏捷药剂",
