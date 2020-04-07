@@ -705,6 +705,18 @@
 	"item.cpp.block_breaker.finished":"§6[Crafting++]§r 方块破坏器已放置",
 	"item.cpp.fermenter.finished":"§6[Crafting++]§r 发酵桶已放置",
 
+	"filled_map.end_city":"末地城地图",
+	"filled_map.fortress":"下界要塞地图",
+	"filled_map.mineshaft":"废弃矿井地图",
+	"filled_map.ocean_ruins":"水下遗迹地图",
+	"filled_map.shipwreck":"沉船地图",
+	"filled_map.stronghold":"要塞地图",
+	"filled_map.desert_pyramid":"沙漠神殿地图",
+	"filled_map.igloo":"雪屋地图",
+	"filled_map.jungle_pyramid":"丛林神庙地图",
+	"filled_map.swamp_hut":"沼泽小屋地图",
+	"filled_map.village":"村庄地图",
+
 	"title.cpp.1":"§6【傲视群雄】§r",
 	"title.cpp.2":"§6【八面威风】§r",
 	"title.cpp.3":"§d【闭月羞花】§r",
