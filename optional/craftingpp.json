@@ -197,7 +197,7 @@
 	"item.cpp.fertilizer":"§r肥料",
 	
 	"item.cpp.acid":"§r柠檬水（迫真）",
-	"item.cpp.soda_water":"§r苏打水（迫真）",
+	"item.cpp.soda_water":"§r苏打水（棒读）",
 	"item.cpp.bionic_acid":"§r柠檬酸（确信）",
 	"item.cpp.alkaloid":"§r秋水仙素（大雾）",
 	"item.cpp.bottle_of_air":"§r装了个寂寞",
@@ -237,7 +237,7 @@
 	"info.cpp.time_checker.noon":"§6[Crafting++]§r 现在时间 12:00, 一天过去一半啦",
 	"info.cpp.time_checker.afternoon":"§6[Crafting++]§r 现在时间 18:00, 太阳下山了",
 	"info.cpp.time_checker.evening":"§6[Crafting++]§r 现在时间 00:00, 还不睡觉等着犭",
-	"item.cpp.origin_of_the_world":"§r世界之烂橘子（怨念）",
+	"item.cpp.origin_of_the_world":"§r回到最初的起点",
 	"item.cpp.origin_of_the_world.no_spawn":"§6[Crafting++]§r 你尚未设置重生点, 将会被传送至出生点附近",
 	"item.cpp.compressor":"§r压缩器",
 	"item.cpp.compressor.layer":"§6重",
