@@ -182,7 +182,7 @@
                     var logs = jsondata["logs"];
                     var fileUrl = "/files/" + jsondata["filename"];
                     var argument = JSON.stringify(jsondata["argument"]);
-                    $("#message").prop('innerHTML') += ("状态码：" + HTMLEncode(status) + "<br>参数：" + HTMLEncode(argument) + "<br>下载：<a href=\"" + encodeURI(HTMLEncode(fileUrl)) + "\">点击这里</a><br>日志：<br>" + HTMLEncode(logs) + "<hr>");
+                    $("#message")[0].innerHTML += ("状态码：" + HTMLEncode(status) + "<br>参数：" + HTMLEncode(argument) + "<br>下载：<a href=\"" + encodeURI(HTMLEncode(fileUrl)) + "\">点击这里</a><br>日志：<br>" + HTMLEncode(logs) + "<hr>");
                     $("#submitButton").removeClass("disabled");
                 },
                 error: function (e) {
@@ -199,7 +199,7 @@
                     if (jsondata.hasOwnProperty("status")){status = String(jsondata["status"]);}
                     if (jsondata.hasOwnProperty("statusText")){statusText = String(jsondata["statusText"]);}
                     if (jsondata.hasOwnProperty("responseText")){responseText = String(jsondata["responseText"]);}
-                    $("#message").prop('innerHTML') += ("<span class=\"red-text text-darken-1\">出错了！</span><br>初始化状态（readyState）：" + HTMLEncode(readyState) + "<br>状态：" + HTMLEncode(status) + " - " + HTMLEncode(statusText) + "<br><span>请</span><a href=\"https://github.com/lakejason0/mcwzh-meme-resourcepack/issues\">点击这里</a>来向我们报告问题的复现步骤！" + "<br>返回的文字：<br><iframe frameborder=\"0\" width=\"100%\" src=\"data:text/html;charset=utf-8;base64," + window.btoa(responseText) + "\"></iframe><hr>");
+                    $("#message")[0].innerHTML += ("<span class=\"red-text text-darken-1\">出错了！</span><br>初始化状态（readyState）：" + HTMLEncode(readyState) + "<br>状态：" + HTMLEncode(status) + " - " + HTMLEncode(statusText) + "<br><span>请</span><a href=\"https://github.com/lakejason0/mcwzh-meme-resourcepack/issues\">点击这里</a>来向我们报告问题的复现步骤！" + "<br>返回的文字：<br><iframe frameborder=\"0\" width=\"100%\" src=\"data:text/html;charset=utf-8;base64," + window.btoa(responseText) + "\"></iframe><hr>");
                     $("#submitButton").removeClass("disabled");
                 }
             });
