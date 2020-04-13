@@ -26,7 +26,7 @@
 
 关于可以直接获取自定义模型的数据包，可以在[这里](https://files.lakejason0.ml/images/e/e5/Figure.zip)找到。
 ### 可选的文件替换
-由于Mojang在20w12a加入了重生锚，`/spawnpoint`现在支持设置重生点到指定维度，这导致翻译字符串出现了一次破坏性更改。你可以在自己构建时在命令结尾加入参数`-m optional/spawnpoint_new.json`或者`-m optional/spawnpoint_old.json`以获取更好的命令使用体验。
+由于Mojang在20w12a加入了重生锚，`/spawnpoint`现在支持设置重生点到指定维度，这导致翻译字符串出现了一次破坏性更改。你可以在自己构建时在命令结尾加入参数`-i optional/spawnpoint_new.json`或者`-i optional/spawnpoint_old.json`以获取更好的命令使用体验。
 ## 鹦鹉通道
 ### 体验最新内容
 想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作，或者不会命令行可以前往[网页打包](https://download.powerdia.nl)：
