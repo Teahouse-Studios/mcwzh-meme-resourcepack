@@ -29,7 +29,7 @@
 由于Mojang在20w12a加入了重生锚，`/spawnpoint`现在支持设置重生点到指定维度，这导致翻译字符串出现了一次破坏性更改。你可以在自己构建时在命令结尾加入参数`-m optional/spawnpoint_new.json`或者`-m optional/spawnpoint_old.json`以获取更好的命令使用体验。
 ## 鹦鹉通道
 ### 体验最新内容
-想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作：
+想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作，或者不会命令行可以前往[网页打包](https://download.powerdia.nl)：
 #### 先决条件
 请确保已经安装了Python 3.x和Git。如果没有，请到[Python官网](https://www.python.org)和[Git官网](https://www.git-scm.com)下载。
 #### 步骤
@@ -45,7 +45,7 @@ cd mcwzh-meme-resourcepack
 ``` bash
 python build.py all
 ```
-在文件夹中会出现`mcwzh-meme.zip`、`mcwzh-meme_compatible.zip`、`mcwzh-meme_nofigure.zip`、`mcwzh-meme_compatible_nofigure.zip`和`mcwzh-meme_compatible_nofigure_legacy.zip`五个资源包，名称和作用如上所述。
+在文件夹中会出现`mcwzh-meme.zip`、`mcwzh-meme_compatible_sfw.zip`、`mcwzh-meme_compatible_nofigure_legacy_sfw.zip`等资源包，名称和作用如上所述。
 
 如果只需要常规的资源包，运行：
 ``` bash
