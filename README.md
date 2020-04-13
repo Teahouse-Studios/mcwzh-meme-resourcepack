@@ -28,6 +28,8 @@
 ### 可选的文件替换
 由于Mojang在20w12a加入了重生锚，`/spawnpoint`现在支持设置重生点到指定维度，这导致翻译字符串出现了一次破坏性更改。你可以在自己构建时在命令结尾加入参数`-i optional/spawnpoint_new.json`或者`-i optional/spawnpoint_old.json`以获取更好的命令使用体验。
 
+关于愚人节快照20w14infinite，请在自己构建时在命令结尾加上`-i optional/20w14infinite.json`来得到有限的梗体中文支持。
+
 由于Mojang在20w14a对字幕进行了一次修正和增补，铁活板门的字幕互换的问题已经被修复。如果你正在使用旧版本，请在自己构建时在命令结尾加入参数`-i optional/trapdoor_mismatch.json`以获取正确的字幕。
 
 ## 鹦鹉通道
