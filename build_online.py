@@ -26,10 +26,10 @@ def generate_website():
                       for file in Path('optional').iterdir() if not file.is_dir()])
     figures.update(["optional/" + str(file.relative_to('optional/').as_posix())
                     for file in Path('optional').iterdir() if file.is_dir()])
-    header_existance = os.path.exists("./views/custom/header.html")
-    footer_existance = os.path.exists("./views/custom/footer.html")
+    header_existence = os.path.exists("./views/custom/header.html")
+    footer_existence = os.path.exists("./views/custom/footer.html")
     return render_template("index.html", mods=list(mods), enmods=list(enmods), optionals=list(optionals),
-                           figures=list(figures), header_existance=header_existance, footer_existance=footer_existance)
+                           figures=list(figures), header_existence=header_existence, footer_existence=footer_existence)
 
 
 @app.route('/ajax', methods=['POST'])
