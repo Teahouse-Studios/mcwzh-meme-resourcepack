@@ -26,10 +26,10 @@ jobs:
           prerelease: true
           draft: false
           files: |
-            mcwzh-meme.zip
-            mcwzh-meme_sfw.zip
-            mcwzh-meme_nofigure_sfw.zip
-            mcwzh-meme_compatible_sfw.zip
-            mcwzh-meme_compatible_nofigure_sfw.zip
-            mcwzh-meme_compatible_nofigure_nomod_sfw.zip
-            mcwzh-meme_compatible_nofigure_legacy_sfw.zip
+            builds/mcwzh-meme.zip
+            builds/mcwzh-meme_sfw.zip
+            builds/mcwzh-meme_nofigure_sfw.zip
+            builds/mcwzh-meme_compatible_sfw.zip
+            builds/mcwzh-meme_compatible_nofigure_sfw.zip
+            builds/mcwzh-meme_compatible_nofigure_nomod_sfw.zip
+            builds/mcwzh-meme_compatible_nofigure_legacy_sfw.zip

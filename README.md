@@ -53,7 +53,7 @@ cd mcwzh-meme-resourcepack
 ``` bash
 python build.py all
 ```
-在文件夹中会出现`mcwzh-meme.zip`、`mcwzh-meme_compatible_sfw.zip`、`mcwzh-meme_compatible_nofigure_legacy_sfw.zip`等资源包，名称和作用如上所述。
+在`builds`文件夹中会出现`mcwzh-meme.zip`、`mcwzh-meme_compatible_sfw.zip`、`mcwzh-meme_compatible_nofigure_legacy_sfw.zip`等资源包，名称和作用如上所述。
 
 如果只需要常规的资源包，运行：
 ``` bash
