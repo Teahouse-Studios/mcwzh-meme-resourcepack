@@ -5,5 +5,5 @@ __pycache__
 /zh_cn.json
 /zh_meme.lang
 /zh_cn.lang
-custom/*.html
+views/custom/*.html
 builds*
