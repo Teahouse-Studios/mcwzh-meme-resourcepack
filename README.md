@@ -67,6 +67,13 @@ python build.py -h
 此资源包的语言文件顺序与原版的英文顺序并不一致（本资源包是将key按照字母顺序排序）。如果原版的英文译名跟进了，请先将解包的英文语言文件按照前文所述排序，可以参考[这个网站](https://tool.funsmall.cn/jsonsort/)。推荐使用[Visual Studio Code](https://github.com/microsoft/vscode)的比较功能。
 
 如果你是Crowdin上Minecraft项目的翻译者，你也可以随时查看通知来获取新字符串。
+
+### 网页部署
+如果你需要在网页Material标题栏下方或者网页脚部自定义内容, 请在`views/custom/`目录下创建`header.html`或`footer.html`
+
+`Vuetify`框架可用
+
+
 ## 贡献
 我们欢迎你为这个资源包贡献自己的想法。请参阅`CONTRIBUTING.md`以获取一些建议。
 
