@@ -61,10 +61,16 @@ def build(args: dict) -> (str, str):
     # load basic strings
     with open("assets/minecraft/lang/zh_meme.json", 'r', encoding='utf8') as f:
         lang_data = json.load(f)
-    pack_name = get_packname(args)
+    pack_name = "builds/" + get_packname(args)
     info = "[INFO] Building %s" % pack_name
     print("%s" % info)
     logs += "%s\n" % info
+    # check build path
+    if os.path.exists("builds"):
+        if os.path.isfile("builds"):
+            os.remove("builds")
+    else:
+        os.mkdir("builds")
     # all builds have these files
     pack = zipfile.ZipFile(
         pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)

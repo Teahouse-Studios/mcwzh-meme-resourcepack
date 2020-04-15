@@ -6,3 +6,4 @@ __pycache__
 /zh_meme.lang
 /zh_cn.lang
 custom/*.html
+builds*
