@@ -67,8 +67,9 @@ def build(args: dict) -> (str, str):
     logs += "%s\n" % info
     # check build path
     if os.path.exists("builds"):
-        if os.path.isfile("builds"):
+        if not os.path.isdir("builds"):
             os.remove("builds")
+            os.mkdir("builds")
     else:
         os.mkdir("builds")
     # all builds have these files
