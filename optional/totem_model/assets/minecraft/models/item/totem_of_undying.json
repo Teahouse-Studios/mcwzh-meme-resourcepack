@@ -255,6 +255,7 @@
         { "predicate": {"custom_model_data":10800002}, "model": "mcwzhmeme:author/dianliang" },
 		{ "predicate": {"custom_model_data":10800003}, "model": "mcwzhmeme:author/mysticnebula70" },
 		{ "predicate": {"custom_model_data":10800004}, "model": "mcwzhmeme:author/skyeyefast" },
-		{ "predicate": {"custom_model_data":10800005}, "model": "mcwzhmeme:author/gu_zt" }
+		{ "predicate": {"custom_model_data":10800005}, "model": "mcwzhmeme:author/gu_zt" },
+		{ "predicate": {"custom_model_data":10800006}, "model": "mcwzhmeme:author/littlec" }
 	]
 }
