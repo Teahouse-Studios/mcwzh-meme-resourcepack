@@ -1,16 +1,20 @@
 from flask import Flask, render_template, request, jsonify, send_file, send_from_directory, json, make_response
 import build
 import os
+import time
 import json
+from threading import Lock
 from pathlib import Path
 import subprocess
 
-app = Flask(__name__, template_folder='./',
-            static_folder="", static_url_path="")
+app = Flask(__name__, template_folder='./views/',
+            static_folder="static", static_url_path="/static")
+app.config['TEMPLATES_AUTO_RELOAD'] = True
+nt = 0
+lock = Lock()
 
 
 @app.route('/')
-@app.route('/index')
 def generate_website():
     mods = set()
     enmods = set()
@@ -22,23 +26,34 @@ def generate_website():
                       for file in Path('optional').iterdir() if not file.is_dir()])
     figures.update(["optional/" + str(file.relative_to('optional/').as_posix())
                     for file in Path('optional').iterdir() if file.is_dir()])
-    header_existance = os.path.exists("custom/header.html")
-    footer_existance = os.path.exists("custom/footer.html")
-    return render_template("./index.html", mods=mods, enmods=enmods, optionals=optionals, figures=figures, header_existance=header_existance, footer_existance=footer_existance)
+    header_existance = os.path.exists("./views/custom/header.html")
+    footer_existance = os.path.exists("./views/custom/footer.html")
+    return render_template("index.html", mods=list(mods), enmods=list(enmods), optionals=list(optionals),
+                           figures=list(figures), header_existance=header_existance, footer_existance=footer_existance)
 
 
 @app.route('/ajax', methods=['POST'])
 def ajax():
-    recv_data = json.loads(request.get_data('data'))
-    p = subprocess.Popen(["git", "pull", "origin", "master"],
-                         stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE)
-    p.wait()
-    logs = str(p.communicate()[0], 'utf-8', 'ignore')
-    result = build.build(recv_data)
-    logs += result[1]
-    message = {"code": 200, "argument": recv_data,
-               "logs": logs, "filename": result[0]}
-    print(recv_data)
+    global nt
+    lock.acquire(timeout=60)
+    try:
+        recv_data = json.loads(request.get_data('data'))
+        logs = ""
+        if nt + 60 <= time.time():
+            nt = time.time()
+            p = subprocess.Popen(["git", "pull", "origin", "master"],
+                                 stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE)
+            p.wait()
+            logs += str(p.communicate()[0], 'utf-8', 'ignore')
+        else:
+            logs += 'Skipping the repository update because there\'s an available cache within 60 seconds.\n'
+        result = build.build(recv_data)
+        logs += result[1]
+        message = {"code": 200, "argument": recv_data,
+                   "logs": logs, "filename": result[0]}
+        print(recv_data)
+    finally:
+        lock.release()
     return json.dumps(message)
 
 
@@ -50,7 +65,7 @@ def get_file(file_name):
             directory, file_name, as_attachment=True))
         return response
     except Exception as e:
-        return(jsonify({"code": "500", "message": "{}".format(e)}))
+        return jsonify({"code": "500", "message": "{}".format(e)})
 
 
 if __name__ == '__main__':

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>梗体中文 · 在线打包</title>
+    <meta content="梗体中文 · 在线打包" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="梗体中文资源包在线打包系统，帮助用户打包。" property="og:description">
+    <script src="https://cdn.jsdelivr.net/combine/npm/axios@0.19.2/dist/axios.min.js,npm/vue@2,npm/vuetify@2,npm/moment@2.24.0/min/moment.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+    <v-app>
+        <v-content>
+            {% if header_existance %}
+                {% include './custom/header.html' %}
+            {% endif %}
+            <v-app-bar
+                    color="indigo darken-2" dark>
+                <v-toolbar-title>梗体中文 · 在线打包</v-toolbar-title>
+            </v-app-bar>
+            <v-container>
+
+                <p class="display-2">在线打包选项</p>
+                <v-row>
+                    <v-col cols="6" sm="4">
+                        <v-select label="语言版本" :items="consts.type" v-model="inputBasic.type"></v-select>
+                    </v-col>
+                    <v-col cols="6" sm="4">
+                        <v-select label="材质选择" :items="consts.figureOption" v-model="input.figureOption"></v-select>
+                    </v-col>
+                    <v-col cols="12" sm="4">
+                        <v-select label="Mod内容选择" :items="consts.modOption" v-model="input.modOption"></v-select>
+                    </v-col>
+                </v-row>
+                <v-checkbox label='Suitable for work ("_sfw")' v-model="inputBasic.sfw"></v-checkbox>
+                <v-checkbox label='旧版（1.12.2以下）语言文件格式' v-model="inputBasic.legacy"></v-checkbox>
+                <v-checkbox label='调试' v-model="inputBasic.debug"></v-checkbox>
+                <v-row>
+                    <v-col cols="12" sm="6">
+                        <v-select
+                                label="Mod/附加内容选择" :disabled="input.modOption !== 'custom'" multiple
+                                :items="consts.modList" v-model="input.include"
+                        ></v-select>
+                    </v-col>
+                    <v-col cols="12" sm="6">
+                        <v-select label="附加包/材质选择" :disabled="input.figureOption !== 'custom'" multiple
+                                  :items="consts.figureList" v-model="input.figure"></v-select>
+                    </v-col>
+                </v-row>
+                <v-btn color="primary" tile @click="submit" :disabled="loading" :loading="loading">
+                    <v-icon left>cloud_download</v-icon>
+                    提交构建选项
+                </v-btn>
+                <v-divider style="margin:15px 0"></v-divider>
+                <p class="headline">构建日志</p>
+                <v-expansion-panels>
+                    <v-expansion-panel
+                            v-for="(item,i) in logs"
+                            :key="i"
+                            v-model="logsPanel"
+                    >
+                        <v-expansion-panel-header>
+                            {% raw %}{{moment(new Date(item.ts)).format('YYYY-MM-DD HH:mm:ss')}}{% endraw %}
+                        </v-expansion-panel-header>
+                        <v-expansion-panel-content>
+        <pre style="white-space: pre-wrap;font-family: 'Cascadia Code', 'Fira Code','Consolas', monospace;">
+            {% raw %}{{item.content}}{% endraw %}
+        </pre>
+                            <v-btn @click="download(item.filename)" outlined color="indigo">点击下载</v-btn>
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                </v-expansion-panels>
+            </v-container>
+            <v-footer class="font-weight-medium">
+                {% if footer_existance %}
+                    {% include './custom/footer.html' %}
+                {% endif %}
+            </v-footer>
+        </v-content>
+    </v-app>
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        methods: {
+            download(name) {
+                window.open('files/' + name)
+            },
+            submit() {
+                this.loading = true
+                let data = Object.assign({}, this.inputBasic, {
+                    figure: this.input.figureOption === 'all' ? ['all'] : this.input.figure,
+                    include: this.input.modOption === 'all' ? ['all'] : this.input.include
+                })
+                console.log(data)
+                axios({url: '/ajax', method: 'POST', data}).then(function (res) {
+                    console.log(res.data)
+                    this.logs.unshift({
+                        ts: new Date().valueOf(),
+                        content: res.data.logs,
+                        filename: res.data.filename
+                    })
+                    this.loading = false
+                }.bind(this))
+            }
+        },
+        data: () => ({
+            loading: false,
+            inputBasic: {
+                type: "normal",
+                sfw: false,
+                legacy: false,
+                debug: false
+            },
+            logs: [],
+            input: {
+                figureOption: "all",
+                modOption: "all",
+                figure: [],
+                include: []
+            }
+        }),
+        computed: {
+            logsPanel: [0],
+            consts: () => ({
+                type: [{text: "普通版本", value: "normal"}, {text: "兼容版本", value: "compat"}],
+                figureOption: [{text: "全部", value: "all"}, {text: "无", value: "none"}, {
+                    text: "自定义",
+                    value: "custom"
+                }],
+                modOption: [{text: "所有Mod内容", value: "all"}, {value: "none", text: "无Mod内容"}, {
+                    value: "custom",
+                    text: "自定义"
+                }],
+                modList: [{header: 'Mod文件'}].concat({{ mods|tojson }}).concat({header: 'Mod文件(未汉化)'})
+                    .concat({{ enmods|tojson }}).concat({header: '附加内容'}).concat({{ optionals|tojson }}),
+                figureList: {{ figures|tojson }}
+            })
+        },
+        vuetify: new Vuetify(),
+    })
+</script>
+</body>
+</html>
