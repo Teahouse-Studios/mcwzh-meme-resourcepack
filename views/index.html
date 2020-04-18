@@ -14,6 +14,9 @@
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
 <body>
 <div id="app">
@@ -74,7 +77,9 @@
                                 <v-btn v-if="item.filename" @click="download(item.filename)" outlined color="indigo">
                                     下载
                                 </v-btn>
-                                <v-btn v-else @click="download('https://github.com/lakejason0/mcwzh-meme-resourcepack/issues/new/choose')" dark color="black" tile>
+                                <v-btn v-else
+                                       @click="download('https://github.com/lakejason0/mcwzh-meme-resourcepack/issues/new/choose')"
+                                       dark color="black" tile>
                                     <v-icon left>bug_report</v-icon>
                                     反馈
                                 </v-btn>
@@ -119,6 +124,7 @@
                     this.$nextTick(function () {
                         this.$refs.logs.scrollIntoView()
                     }.bind(this))
+                    this.loading = false
                 }.bind(this)).catch(function (err) {
                     this.logs.unshift({
                         title: '构建失败',
@@ -130,8 +136,8 @@
                     this.$nextTick(function () {
                         this.$refs.logs.scrollIntoView()
                     }.bind(this))
+                    this.loading = false
                 }.bind(this))
-                this.loading = false
             }
         },
         data: () => ({
