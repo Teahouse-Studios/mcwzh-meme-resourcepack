@@ -132,6 +132,7 @@ def build(args: dict) -> (str, str):
         new_name = pack_name[:pack_name.find(
             ".zip")] + "." + sha256[0:7] + ".zip"
         os.rename(pack_name, new_name)
+        pack_name = new_name
     info = "[INFO] Built pack %s with %d warning(s)" % (
         pack_name, warning_counter)
     print("%s" % info)
