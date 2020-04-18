@@ -198,7 +198,7 @@ def generate_parser() -> argparse.ArgumentParser:
                         help="(Experimental) Include modification strings or folders. Should be path(s) to a file, folder, 'all' or 'none'. Defaults to 'all'.")
     parser.add_argument('-d', '--debug', action='store_true',
                         help="Output an individual language file.")
-    parser.add_argument('--hash', action='store_true')
+    parser.add_argument('--hash', action='store_true', help="Add a hash in  the name of the pack.")
     return parser
 
 
