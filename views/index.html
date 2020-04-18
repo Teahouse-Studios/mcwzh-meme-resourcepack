@@ -58,25 +58,30 @@
                     <v-icon left>cloud_download</v-icon>
                     提交构建选项
                 </v-btn>
-                <v-divider style="margin:15px 0"></v-divider>
-                <p class="headline">构建日志</p>
-                <v-expansion-panels>
-                    <v-expansion-panel
-                            v-for="(item,i) in logs"
-                            :key="i"
-                            v-model="logsPanel"
-                    >
-                        <v-expansion-panel-header>
-                            {% raw %}{{moment(new Date(item.ts)).format('YYYY-MM-DD HH:mm:ss')}}{% endraw %}
-                        </v-expansion-panel-header>
-                        <v-expansion-panel-content>
-        <pre style="white-space: pre-wrap;font-family: 'Cascadia Code', 'Fira Code','Consolas', monospace;">
-            {% raw %}{{item.content}}{% endraw %}
-        </pre>
-                            <v-btn @click="download(item.filename)" outlined color="indigo">下载</v-btn>
-                        </v-expansion-panel-content>
-                    </v-expansion-panel>
-                </v-expansion-panels>
+                <div v-if="logs.length >= 1">
+                    <v-divider style="margin:15px 0"></v-divider>
+                    <p class="headline" ref="logs">构建日志</p>
+                    <v-expansion-panels v-model="logsPanel" multiple>
+                        <v-expansion-panel
+                                v-for="(item,i) in logs"
+                                :key="i"
+                        >
+                            <v-expansion-panel-header>
+                                {% raw %}{{moment(new Date(item.ts)).format('YYYY-MM-DD HH:mm:ss')}} {{ item.title }}{% endraw %}
+                            </v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                                <pre style="padding-bottom:15px;white-space: pre-wrap;font-family: 'Cascadia Code', 'Fira Code','Consolas', monospace;">{% raw %}{{item.content}}{% endraw %}</pre>
+                                <v-btn v-if="item.filename" @click="download(item.filename)" outlined color="indigo">
+                                    下载
+                                </v-btn>
+                                <v-btn v-else @click="download('https://github.com/lakejason0/mcwzh-meme-resourcepack/issues/new/choose')" dark color="black" tile>
+                                    <v-icon left>bug_report</v-icon>
+                                    反馈
+                                </v-btn>
+                            </v-expansion-panel-content>
+                        </v-expansion-panel>
+                    </v-expansion-panels>
+                </div>
             </v-container>
             <v-footer class="font-weight-medium">
                 {% if footer_existence %}
@@ -91,27 +96,46 @@
         el: '#app',
         methods: {
             download(name) {
-                window.open('files/' + name)
+                window.open(name)
             },
             submit() {
                 this.loading = true
                 let data = Object.assign({}, this.inputBasic, {
                     figure: this.input.figureOption === 'all' ? ['all'] : this.input.figure,
-                    include: this.input.modOption === 'all' ? ['all'] : this.input.include
+                    include: this.input.modOption === 'all' ? ['all'] : this.input.include,
+                    hash: true
                 })
                 console.log(data)
                 axios({url: '/ajax', method: 'POST', data}).then(function (res) {
                     console.log(res.data)
                     this.logs.unshift({
+                        title: '构建成功',
                         ts: new Date().valueOf(),
                         content: res.data.logs,
                         filename: res.data.filename
                     })
-                    this.loading = false
+                    this.logsPanel = this.logsPanel.map(v => v + 1)
+                    this.logsPanel.unshift(0)
+                    this.$nextTick(function () {
+                        this.$refs.logs.scrollIntoView()
+                    }.bind(this))
+                }.bind(this)).catch(function (err) {
+                    this.logs.unshift({
+                        title: '构建失败',
+                        ts: new Date().valueOf(),
+                        content: err.toString()
+                    })
+                    this.logsPanel = this.logsPanel.map(v => v + 1)
+                    this.logsPanel.unshift(0)
+                    this.$nextTick(function () {
+                        this.$refs.logs.scrollIntoView()
+                    }.bind(this))
                 }.bind(this))
+                this.loading = false
             }
         },
         data: () => ({
+            logsPanel: [],
             loading: false,
             inputBasic: {
                 type: "normal",
@@ -128,7 +152,6 @@
             }
         }),
         computed: {
-            logsPanel: [0],
             consts: () => ({
                 type: [{text: "普通版本", value: "normal"}, {text: "兼容版本", value: "compat"}],
                 figureOption: [{text: "全部", value: "all"}, {text: "无", value: "none"}, {
