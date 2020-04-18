@@ -3,6 +3,7 @@ import json
 import argparse
 import os
 import warnings
+import hashlib
 
 # GPL 3.0
 
@@ -125,6 +126,12 @@ def build(args: dict) -> (str, str):
     pack.writestr("pack.mcmeta", json.dumps(
         metadata, indent=4, ensure_ascii=False))
     pack.close()
+    if args['hash']:
+        with open(pack_name, 'rb') as f:
+            sha256 = hashlib.sha256(f.read()).hexdigest()
+        new_name = pack_name[:pack_name.find(
+            ".zip")] + "." + sha256[0:7] + ".zip"
+        os.rename(pack_name, new_name)
     info = "[INFO] Built pack %s with %d warning(s)" % (
         pack_name, warning_counter)
     print("%s" % info)
@@ -139,19 +146,19 @@ def build(args: dict) -> (str, str):
 
 def build_all() -> None:
     build({'type': 'normal', 'figure': ['all'],
-           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': False})
+           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': False, 'hash': False})
     build({'type': 'normal', 'figure': ['all'],
-           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True})
+           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True, 'hash': False})
     build({'type': 'normal', 'figure': [], 'legacy': False,
-           'include': ['all'], 'debug': False, 'sfw': True})
+           'include': ['all'], 'debug': False, 'sfw': True, 'hash': False})
     build({'type': 'compat', 'figure': ['all'],
-           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True})
+           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True, 'hash': False})
     build({'type': 'compat', 'figure': [],
-           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True})
+           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True, 'hash': False})
     build({'type': 'compat', 'figure': [], 'legacy': False,
-           'include': [], 'debug': False, 'sfw': True})
+           'include': [], 'debug': False, 'sfw': True, 'hash': False})
     build({'type': 'compat', 'figure': [],
-           'legacy': True, 'include': ['all'], 'debug': False, 'sfw': True})
+           'legacy': True, 'include': ['all'], 'debug': False, 'sfw': True, 'hash': False})
 
 
 def get_packname(args: dict) -> str:
@@ -190,6 +197,7 @@ def generate_parser() -> argparse.ArgumentParser:
                         help="(Experimental) Include modification strings or folders. Should be path(s) to a file, folder, 'all' or 'none'. Defaults to 'all'.")
     parser.add_argument('-d', '--debug', action='store_true',
                         help="Output an individual language file.")
+    parser.add_argument('--hash', action='store_true')
     return parser
 
 
@@ -311,6 +319,7 @@ def generate_legacy_content(lang_data: dict, mapping_list: list) -> (str, int, s
     for k, v in legacy_lang_data.items():
         legacy_lang_content += "%s=%s\n" % (k, v)
     return legacy_lang_content, counter, log
+
 
 if __name__ == '__main__':
     main()
