@@ -127,8 +127,7 @@ def build(args: dict) -> (str, str):
         metadata, indent=4, ensure_ascii=False))
     pack.close()
     if args['hash']:
-        with open(pack_name, 'rb') as f:
-            sha256 = hashlib.sha256(f.read()).hexdigest()
+        sha256 = hashlib.sha256(json.dumps(args).encode('utf8')).hexdigest()
         new_name = pack_name[:pack_name.find(
             ".zip")] + "." + sha256[0:7] + ".zip"
         if os.path.exists(new_name):
