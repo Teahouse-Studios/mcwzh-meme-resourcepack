@@ -131,6 +131,8 @@ def build(args: dict) -> (str, str):
             sha256 = hashlib.sha256(f.read()).hexdigest()
         new_name = pack_name[:pack_name.find(
             ".zip")] + "." + sha256[0:7] + ".zip"
+        if os.path.exists(new_name):
+            os.remove(new_name)
         os.rename(pack_name, new_name)
         pack_name = new_name
     info = "[INFO] Built pack %s with %d warning(s)" % (
