@@ -1,0 +1,6 @@
+{
+    "parent": "block/observer",
+    "textures": {
+        "front": "block/observer_front2"
+    }
+}
