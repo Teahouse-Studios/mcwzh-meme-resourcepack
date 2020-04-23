@@ -126,10 +126,11 @@ def build(args: dict) -> (str, str):
     pack.writestr("pack.mcmeta", json.dumps(
         metadata, indent=4, ensure_ascii=False))
     pack.close()
+    # add hash to pack name
     if args['hash']:
         sha256 = hashlib.sha256(json.dumps(args).encode('utf8')).hexdigest()
         new_name = pack_name[:pack_name.find(
-            ".zip")] + "." + sha256[0:7] + ".zip"
+            ".zip")] + "." + sha256[:7] + ".zip"
         if os.path.exists(new_name):
             os.remove(new_name)
         os.rename(pack_name, new_name)
@@ -147,20 +148,20 @@ def build(args: dict) -> (str, str):
 
 
 def build_all() -> None:
-    build({'type': 'normal', 'figure': ['all'],
-           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': False, 'hash': False})
-    build({'type': 'normal', 'figure': ['all'],
-           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True, 'hash': False})
-    build({'type': 'normal', 'figure': [], 'legacy': False,
-           'include': ['all'], 'debug': False, 'sfw': True, 'hash': False})
-    build({'type': 'compat', 'figure': ['all'],
-           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True, 'hash': False})
-    build({'type': 'compat', 'figure': [],
-           'legacy': False, 'include': ['all'], 'debug': False, 'sfw': True, 'hash': False})
+    build({'type': 'normal', 'figure': ['all'], 'legacy': False, 'include': [
+          'all'], 'debug': False, 'sfw': False, 'hash': False})
+    build({'type': 'normal', 'figure': ['all'], 'legacy': False, 'include': [
+          'all'], 'debug': False, 'sfw': True, 'hash': False})
+    build({'type': 'normal', 'figure': [], 'legacy': False, 'include': [
+          'all'], 'debug': False, 'sfw': True, 'hash': False})
+    build({'type': 'compat', 'figure': ['all'], 'legacy': False, 'include': [
+          'all'], 'debug': False, 'sfw': True, 'hash': False})
+    build({'type': 'compat', 'figure': [], 'legacy': False, 'include': [
+          'all'], 'debug': False, 'sfw': True, 'hash': False})
     build({'type': 'compat', 'figure': [], 'legacy': False,
            'include': [], 'debug': False, 'sfw': True, 'hash': False})
-    build({'type': 'compat', 'figure': [],
-           'legacy': True, 'include': ['all'], 'debug': False, 'sfw': True, 'hash': False})
+    build({'type': 'compat', 'figure': [], 'legacy': True, 'include': [
+          'all'], 'debug': False, 'sfw': True, 'hash': False})
 
 
 def get_packname(args: dict) -> str:
@@ -200,7 +201,7 @@ def generate_parser() -> argparse.ArgumentParser:
     parser.add_argument('-d', '--debug', action='store_true',
                         help="Output an individual language file.")
     parser.add_argument('--hash', action='store_true',
-                        help="Add a hash in  the name of the pack.")
+                        help="Add a hash in the name of the pack.")
     return parser
 
 
@@ -233,7 +234,7 @@ def get_figure_list(figlist: list) -> (set, int, str):
                     elif os.path.isdir(path):
                         for root, dirs, files in os.walk(path):
                             figure_list.update(
-                                [os.path.join(root, name) for name in files])
+                                os.path.join(root, name) for name in files)
                 else:
                     warn = '[WARN] "%s" does not exist, skipping' % path
                     print("\033[33m%s\033[0m" % warn)
@@ -252,7 +253,7 @@ def get_mod_list(modlist: list) -> (set, int, str):
             pass
         elif 'all' in modlist:
             # all mods added
-            mods.update(["mods/" + file for file in os.listdir('mods')])
+            mods.update("mods/" + file for file in os.listdir('mods'))
         else:
             for path in modlist:
                 if os.path.exists(path):
@@ -261,7 +262,7 @@ def get_mod_list(modlist: list) -> (set, int, str):
                     elif os.path.isdir(path):
                         for root, dirs, files in os.walk(path):
                             mods.update(
-                                [os.path.join(root, name) for name in files])
+                                os.path.join(root, name) for name in files)
                 else:
                     warn = '[WARN] "%s" does not exist, skipping' % path
                     print("\033[33m%s\033[0m" % warn)
