@@ -26,12 +26,17 @@ pack_counter = 0
 def main():
     parser = generate_parser()
     args = vars(parser.parse_args())
-    if args['type'] == 'all':
-        build_all()
+    if args['type'] == 'clean':
+        for i in os.listdir('builds/'):
+            os.remove('builds/' + i)
+        print("\n[INFO] Deleted all packs built.")
     else:
-        build(args)
-    print("\n[INFO] Built %d pack(s) with %d pack(s) no warning" %
-          (pack_counter, successful_pack_counter))
+        if args['type'] == 'all':
+            build_all()
+        else:
+            build(args)
+        print("\n[INFO] Built %d pack(s) with %d pack(s) no warning" %
+              (pack_counter, successful_pack_counter))
 
 
 def build(args: dict) -> (str, str):
@@ -188,8 +193,8 @@ def get_packname(args: dict) -> str:
 def generate_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Automatically build resourcepacks")
-    parser.add_argument('type', default='normal', help="Build type. Should be 'all', 'normal' or 'compat'. If it's 'all', all other arguments will be ignored.", choices=[
-                        'all', 'normal', 'compat'])
+    parser.add_argument('type', default='normal', help="Build type. Should be 'all', 'normal', 'compat' or 'clean'. If it's 'all', all other arguments will be ignored. If it's 'clean', all packs in 'builds/' directory will be deleted.",
+                        choices=['all', 'normal', 'compat', 'clean'])
     parser.add_argument('-t', '--figure', nargs='*', default='all',
                         help="Specify which figures should be added. Should be path(s) to a file, folder, 'all' or 'none'. Defaults to 'all'.")
     parser.add_argument('-s', '--sfw', action='store_true',
