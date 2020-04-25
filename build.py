@@ -67,6 +67,8 @@ def build(args: dict) -> (str, str):
     # load basic strings
     with open("assets/minecraft/lang/zh_meme.json", 'r', encoding='utf8') as f:
         lang_data = json.load(f)
+    with open("assets/realms/lang/zh_meme.json", 'r', encoding='utf8') as r:
+        realms_data = json.load(r)
     pack_name = "builds/" + get_packname(args)
     info = "[INFO] Building %s" % pack_name
     print("%s" % info)
@@ -108,6 +110,8 @@ def build(args: dict) -> (str, str):
         lang_extension = ".json"
         pack.writestr("assets/minecraft/lang/" + lang_name + lang_extension,
                       json.dumps(lang_data, indent=4, ensure_ascii=True))
+        pack.writestr("assets/realms/lang" + lang_name + lang_extension,
+                      json.dumps(realms_data, indent=4, ensure_ascii=True))
         if args['debug']:
             with open(lang_name + lang_extension, 'w', encoding='utf8') as debug_file:
                 debug_file.write(json.dumps(
@@ -117,6 +121,7 @@ def build(args: dict) -> (str, str):
         lang_extension = ".lang"
         # change pack format
         metadata['pack'].update({"pack_format": 3})
+        lang_data.update(realms_data)
         info = ""
         (legacy_lang_content, counter, info) = generate_legacy_content(
             lang_data, mappings)
