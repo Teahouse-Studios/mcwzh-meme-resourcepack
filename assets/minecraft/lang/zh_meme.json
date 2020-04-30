@@ -3676,7 +3676,7 @@
     "multiplayer.texturePrompt.line2": "你想要自动下载和安装它吗？",
     "multiplayer.title": "多人游戏",
     "multiplayerWarning.check": "别管我！",
-    "multiplayerWarning.header": "温馨提示",
+    "multiplayerWarning.header": "警告：你可能正在接触在线放毒",
     "multiplayerWarning.message": "在线游戏由第三π对服务器提供，它们不由Bugjump或Macrohard拥有、运营和监督。在线游戏的过程中，你可能会接受到不受【哔——】的聊天信息或者其它类型的UGC，甚至会被 动 长 大（意味深）（但是你莫得选择）。It's up to you.",
     "narration.suggestion": "选中了%2$s项建议中的第%1$s项：%s",
     "narration.suggestion.tooltip": "选中了%2$s项建议中的第%1$s项：%s（%s）",
