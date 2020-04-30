@@ -73,7 +73,7 @@ of.message.capeOF.openEditor=OptiFine 披风编辑器会在网页浏览器中打
 of.message.capeOF.openEditorError=在网页浏览器中打开编辑器时出现错误。
 of.message.capeOF.reloadCape=披风将在 15 秒内重新加载。
 
-of.message.capeOF.error1=\\M J S B/ 身份验证失败。
+of.message.capeOF.error1=Bugjump 身份验证失败。
 of.message.capeOF.error2=错误：%s
 
 # Video settings
