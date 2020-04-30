@@ -3757,7 +3757,7 @@
     "options.difficulty.hardcore": "极限",
     "options.difficulty.normal": "普通",
     "options.difficulty.peaceful": "和平（怂）",
-    "options.discrete_mouse_scroll": "离散滚动",
+    "options.discrete_mouse_scroll": "忽略系统滚动幅度值",
     "options.entityDistanceScaling": "实体可视距离",
     "options.entityDistancePercent": "%s%%",
     "options.entityShadows": "实体阴影",
