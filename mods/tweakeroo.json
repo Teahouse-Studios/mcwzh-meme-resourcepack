@@ -48,7 +48,7 @@
     "tweakeroo.message.set_snap_aim_pitch_step_to": "已将朝向对齐工具的俯仰角度步长设置为%s",
     "tweakeroo.message.set_snap_aim_yaw_step_to": "已将朝向对齐工具的转向角度步长设置为%s",
     "tweakeroo.message.set_zoom_fov_to": "已将缩放时的FOV设置为%s",
-    "tweakeroo.message.sign_text_copied": "已复制告示牌文字",
+    "tweakeroo.message.sign_text_copied": "已复制搞事牌文字",
     "tweakeroo.message.snapped_to_pitch": "将转向朝向角度对齐为%s",
     "tweakeroo.message.snapped_to_yaw": "将俯仰朝向角度对齐为%s",
     "tweakeroo.message.swapped_low_durability_item_for_better_durability": "已将一个低耐久的物品换为了一个耐久更多的物品",
