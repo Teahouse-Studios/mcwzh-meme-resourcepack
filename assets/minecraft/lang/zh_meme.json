@@ -3790,7 +3790,7 @@
     "options.forceUnicodeFont": "我爱Unicode字体",
     "options.fov": "角视场",
     "options.fov.max": "鹰眼",
-    "options.fov.min": "深度近视",
+    "options.fov.min": "视力正常",
     "options.framerate": "%s fps",
     "options.framerateLimit": "最大帧率",
     "options.framerateLimit.max": "无限制",
