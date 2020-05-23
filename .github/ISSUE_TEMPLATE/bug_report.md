@@ -2,7 +2,7 @@
 name: 漏洞报告
 about: 报告资源包使用的问题。
 title: ''
-labels: ''
+labels: 漏洞
 assignees: ''
 
 ---
