@@ -46,7 +46,7 @@
     "minihud.gui.title.shape_editor": "形状编辑器",
     "minihud.gui.title.shape_manager": "形状管理",
 
-    "minihud.label.bee_info.count": "§7包含§b%s§7只蜜蜂",
+    "minihud.label.bee_info.count": "§7包含§b%s§7只蜂子",
     "minihud.label.bee_info.name": "§7- %s",
 
     "minihud.label.blockgridmode.all": "所有",
