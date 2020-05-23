@@ -2,7 +2,7 @@
 name: 特性建议
 about: 给这个资源包添加一个新点子
 title: ''
-labels: ''
+labels: 改进
 assignees: ''
 
 ---
