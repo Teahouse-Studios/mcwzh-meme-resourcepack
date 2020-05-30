@@ -2327,7 +2327,7 @@
     "container.grindstone_title": "修复和祛膜",
     "container.hopper": "H O P",
     "container.inventory": "物品栏",
-    "container.isLocked": "%s已被上锁！",
+    "container.isLocked": "%s：有种你拿钥匙来啊！",
     "container.lectern": "百 家 讲 坛",
     "container.loom": "织布机",
     "container.repair": "物品修复和命名",
