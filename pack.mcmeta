@@ -1,7 +1,7 @@
 {
     "pack": { 
         "pack_format": 5,
-        "description": "§e梗体中文亮瞎眼包！！！\n§3Pre-release v0.10.6"
+        "description": "§e梗体中文亮瞎眼包！！！\n§3Pre-release v0.10.7"
     },
     "language": {
         "zh_meme": {
@@ -26,5 +26,6 @@
         "Determancer",
         "Minecreeper86",
         "Other Minecraft Wiki(ZH) editors"
-    ]
+    ],
+    "home": "https://github.com/lakejason0/mcwzh-meme-resourcepack"
 }
