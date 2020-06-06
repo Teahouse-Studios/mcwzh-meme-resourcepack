@@ -114,7 +114,7 @@
 	"item.cpp.cobblestone_plugin":"§e圆石插件",
 	"item.cpp.stone_plugin":"§e石插件",
 	"item.cpp.obsidian_plugin":"§e黑曜石插件",
-	"item.cpp.netherrack_plugin":"§e下界岩插件",
+	"item.cpp.netherrack_plugin":"§e尼德兰岩插件",
 	"item.cpp.end_stone_plugin":"§e奶酪插件",
 	
 	"item.cpp.process_shower":"§r进度条",
@@ -706,7 +706,7 @@
 	"item.cpp.fermenter.finished":"§6[Crafting++]§r 发酵桶已放置",
 
 	"filled_map.end_city":"末地城地图",
-	"filled_map.fortress":"下界要塞地图",
+	"filled_map.fortress":"尼德兰要塞地图",
 	"filled_map.mineshaft":"废弃矿井地图",
 	"filled_map.ocean_ruins":"水下遗迹地图",
 	"filled_map.shipwreck":"沉船地图",

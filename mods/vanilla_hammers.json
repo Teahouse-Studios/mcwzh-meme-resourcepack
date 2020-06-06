@@ -16,7 +16,7 @@
 
   "item.vanilla-hammers.vibranium_hammer": "振金锤",
   "item.vanilla-hammers.glowstone_hammer": "萤石锤",
-  "item.vanilla-hammers.nether_hammer": "下界锤",
+  "item.vanilla-hammers.nether_hammer": "尼德兰锤",
   
   "text.autoconfig.vanilla-hammers.option.fullBlockHitbox": "完整方块碰撞箱",
   "text.autoconfig.vanilla-hammers.option.enableExtraMaterials": "额外的原版材质锤子",
