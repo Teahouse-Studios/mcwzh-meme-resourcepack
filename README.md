@@ -106,7 +106,9 @@ python build.py -h
 
 ### 自助跟进游戏版本
 
-此资源包的语言文件顺序与原版的英文顺序并不一致（本资源包是将key按照字母顺序排序）。如果原版的英文译名跟进了，请先将解包的英文语言文件按照前文所述排序，可以参考[这个网站](https://tool.funsmall.cn/jsonsort/)。推荐使用[Visual Studio Code](https://github.com/microsoft/vscode)的比较功能。
+此资源包的语言文件顺序与原版的英文顺序并不一致（本资源包是将key按照字母顺序排序）。如果原版的英文译名跟进了，请先将解包的英文语言文件按照前文所述排序，可以参考[这个网站](https://tool.funsmall.cn/jsonsort/)或本repo中的 `sort.py`。推荐使用[Visual Studio Code](https://github.com/microsoft/vscode)的比较功能以方便查看新字符串。
+
+梗体中文本体文件也可以使用 `sort.py` 进行排序。
 
 如果你是Crowdin上Minecraft项目的翻译者，你也可以随时查看通知来获取新字符串。
 
