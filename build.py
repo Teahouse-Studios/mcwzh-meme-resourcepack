@@ -110,7 +110,7 @@ def build(args: dict) -> (str, str):
         lang_extension = ".json"
         pack.writestr("assets/minecraft/lang/" + lang_name + lang_extension,
                       json.dumps(lang_data, indent=4, ensure_ascii=True))
-        pack.writestr("assets/realms/lang" + lang_name + lang_extension,
+        pack.writestr("assets/realms/lang/" + lang_name + lang_extension,
                       json.dumps(realms_data, indent=4, ensure_ascii=True))
         if args['debug']:
             with open(lang_name + lang_extension, 'w', encoding='utf8') as debug_file:
