@@ -3830,7 +3830,7 @@
     "options.graphics.fast": "吐司机",
     "options.graphics.fast.tooltip": "吐司机画质将尽量照顾吐司机可怜的机能，减少雨雪效果并移除如树叶等方块的透明效果。\n看不到雨雪就不会着凉啦√",
     "options.graphics.warning.title": "你的显卡弱爆了！",
-    "options.graphics.warning.message": "你的显卡太菜了，以至于被%s画质认定为不受支持。\n\n如果你够勇，你可以忽略并继续勇，但如果你依然选择使用%s画质，你的设备将不会受到支持。",
+    "options.graphics.warning.message": "你的显卡能力不够钞，以至于被%s认定为不受支持。\n\n如果你够勇，你可以忽略并继续勇，但如果你依然选择使用%s画质，你的设备将不会受到支持。",
     "options.graphics.warning.renderer": "检测到渲染器：[%s]",
     "options.graphics.warning.vendor": "检测到厂商：[%s]",
     "options.graphics.warning.version": "检测到OpenGL版本：[%s]",
