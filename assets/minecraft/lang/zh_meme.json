@@ -3815,7 +3815,7 @@
     "options.framerate": "%s fps",
     "options.framerateLimit": "最大帧率",
     "options.framerateLimit.max": "无所谓，你们随便搞",
-    "options.fullscreen": "全屏（Ctrl+F11）",
+    "options.fullscreen": "全屏（默认F11）",
     "options.fullscreen.current": "当前分辨率",
     "options.fullscreen.resolution": "全屏分辨率",
     "options.fullscreen.unavailable": "设置不可用",
