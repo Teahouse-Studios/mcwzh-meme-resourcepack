@@ -3835,7 +3835,7 @@
     "options.graphics.warning.vendor": "检测到厂商：[%s]",
     "options.graphics.warning.version": "检测到OpenGL版本：[%s]",
     "options.graphics.warning.accept": "开玩笑，我超勇的！",
-    "options.graphics.warning.cancel": "带我回家",
+    "options.graphics.warning.cancel": "逊啦！",
     "options.guiScale": "界面尺寸",
     "options.guiScale.auto": "自动",
     "options.guiScale.large": "大",
