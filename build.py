@@ -5,7 +5,7 @@ import os
 import warnings
 import hashlib
 
-# GPL 3.0
+# Apache 2.0
 
 mappings = ['addServer', 'advancements', 'advMode', 'attribute', 'book', 'build', 'chat',
             'commands', 'connect', 'container', 'controls', 'createWorld', 'death',
