@@ -2961,6 +2961,7 @@
     "gui.ok": "嗯！",
     "gui.proceed": "继续",
     "gui.recipebook.moreRecipes": "右击以获取更多信息",
+    "gui.recipebook.search_hint": "搜索...",
     "gui.recipebook.toggleRecipes.all": "显示全部",
     "gui.recipebook.toggleRecipes.blastable": "仅显示可冶炼",
     "gui.recipebook.toggleRecipes.craftable": "仅显示可合成",
