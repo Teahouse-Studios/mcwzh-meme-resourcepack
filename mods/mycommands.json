@@ -20,7 +20,7 @@
  "commands.sethome.done": "家 %s 已设置!",
  "commands.sethome.failure": "家 %s 已存在!",
  "commands.sethome.maximum": "你已经达到最多的家数量,请删除一个",
- "commands.setspawn.done": "出生点已设置!",
+ "commands.setspawn.done": "产卵室已设置!",
  "commands.setwarp.done": "传送点 %s 已设置!",
  "commands.setwarp.failure": "传送点 %s 已存在!",
  "commands.sun.done": "阳光普照!",
