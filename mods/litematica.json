@@ -731,6 +731,5 @@
     "toolItem": "toolItem工具",
     "The item to use as the \"tool\" for selections etc.": "作为用于选择的工具，虽然默认是木棍\n（§3但是其实你想拿末影龙头也是可以的hhh§r）",
     "toolItemEnabled": "toolItemEnabled启用工具项目",
-    "If true, then the \"tool\" item can be used to control selections etc.": "如果启用该选项，那么你可以使用工具进行操作\n如果你关了的话，那它就是一根朴素的木棍\n§6如果你没有改默认工具的话——ZMDF§r",
-
+    "If true, then the \"tool\" item can be used to control selections etc.": "如果启用该选项，那么你可以使用工具进行操作\n如果你关了的话，那它就是一根朴素的木棍\n§6如果你没有改默认工具的话——ZMDF§r"
 }
