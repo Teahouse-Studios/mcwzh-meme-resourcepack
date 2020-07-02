@@ -490,7 +490,6 @@
     "overlayStructureMainToggle": "overlayStructure结构渲染器",
     "Main toggle for all structure bounding boxes": "切换是否显示所有的结构的边框",
     "shapeRenderer": "shapeRenderer图形渲染器",
-    "The main toggle for the shape renderer": "切换是否显示图形渲染器渲染的图形",
+    "The main toggle for the shape renderer": "切换是否显示图形渲染器渲染的图形"
 
-    "minihud.gui.title.configs": "MiniHUD 配置汉化——醉梦巅峰（ZMDF）-2020.06.29"
 }
