@@ -22,13 +22,13 @@
 <div id="app">
     <v-app>
         <v-content>
-            {% if header_existence %}
-                {% include './custom/header.html' %}
-            {% endif %}
             <v-app-bar
                     color="indigo darken-2" dark>
                 <v-toolbar-title>梗体中文 · 在线打包</v-toolbar-title>
             </v-app-bar>
+            {% if header_existence %}
+                {% include './custom/header.html' %}
+            {% endif %}
             <v-container>
 
                 <v-row>
