@@ -17,14 +17,26 @@
     <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+    <style>
+        .v-main__wrap > container {
+            margin-top: 16px;
+        }
+        .v-alert {
+            margin-bottom: 0;
+        }
 </head>
 <body>
 <div id="app">
     <v-app>
         <v-content>
             <v-app-bar
-                    color="indigo darken-2" dark>
+                    outlined prominent
+                    color="indigo darken-2">
                 <v-toolbar-title>梗体中文 · 在线打包</v-toolbar-title>
+                <v-spacer></v-spacer>
+                <v-btn icon href="https://github.com/lakejason0/mcwzh-meme-resourcepack">
+                    <v-icon>mdi-github</v-icon>
+                </v-btn>
             </v-app-bar>
             {% if header_existence %}
                 {% include './custom/header.html' %}
@@ -44,7 +56,7 @@
                 </v-row>
                 <v-checkbox label='Suitable for work ("_sfw")' v-model="inputBasic.sfw"></v-checkbox>
                 <v-checkbox label='旧版（1.12.2以下）语言文件格式' v-model="inputBasic.legacy"></v-checkbox>
-                <v-checkbox label='调试' v-model="inputBasic.debug"></v-checkbox>
+                <v-checkbox label='调试模式' v-model="inputBasic.debug"></v-checkbox>
                 <v-row>
                     <v-col cols="12" sm="6">
                         <v-select
@@ -57,7 +69,7 @@
                                   :items="consts.figureList" v-model="input.figure"></v-select>
                     </v-col>
                 </v-row>
-                <v-btn color="primary" tile @click="submit" :disabled="loading" :loading="loading">
+                <v-btn color="primary" @click="submit" :disabled="loading" :loading="loading">
                     <v-icon left>cloud_download</v-icon>
                     提交构建选项
                 </v-btn>
@@ -79,7 +91,7 @@
                                 </v-btn>
                                 <v-btn v-else
                                        @click="download('https://github.com/lakejason0/mcwzh-meme-resourcepack/issues/new/choose')"
-                                       dark color="black" tile>
+                                       dark color="black">
                                     <v-icon left>bug_report</v-icon>
                                     反馈
                                 </v-btn>
