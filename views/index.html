@@ -5,10 +5,10 @@
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>梗体中文 · 在线打包</title>
-    <meta content="梗体中文 · 在线打包" property="og:title">
+    <title>梗体中文 · 在线构建</title>
+    <meta content="梗体中文 · 在线构建" property="og:title">
     <meta content="website" property="og:type">
-    <meta content="梗体中文资源包在线打包系统，帮助用户打包。" property="og:description">
+    <meta content="梗体中文资源包在线构建系统，帮助用户构建。" property="og:description">
     <script src="https://cdn.jsdelivr.net/combine/npm/axios@0.19.2/dist/axios.min.js,npm/vue@2,npm/vuetify@2,npm/moment@2.24.0/min/moment.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
@@ -33,13 +33,11 @@
             <v-app-bar
                     outlined prominent
                     color="white">
-                <v-toolbar-title>梗体中文 · 在线打包</v-toolbar-title>
+                <v-toolbar-title>梗体中文 · 在线构建</v-toolbar-title>
                 <v-spacer></v-spacer>
-                <v-btn text href="https://github.com/lakejason0/mcwzh-meme-resourcepack/releases"><v-icon>mdi-github-circle</v-icon> Release 下载</v-btn>
-                <v-btn text href="https://www.mcbbs.net/thread-1004643-1-1.html">MCBBS</v-btn>
-                <v-btn icon href="https://github.com/lakejason0/mcwzh-meme-resourcepack">
-                    <v-icon>mdi-github-circle</v-icon>
-                </v-btn>
+                <v-btn text href="https://github.com/lakejason0/mcwzh-meme-resourcepack/releases"><v-icon>mdi-github-circle</v-icon>&emsp;Release 下载</v-btn>
+                <v-btn text href="https://www.mcbbs.net/thread-1004643-1-1.html"><v-badge color="red" content="宣传中">MCBBS</v-badge></v-btn>
+                <v-btn text href="https://github.com/lakejason0/mcwzh-meme-resourcepack"><v-icon>mdi-github-circle</v-icon></v-btn>
             </v-app-bar>
             {% if header_existence %}
                 {% include './custom/header.html' %}
@@ -58,7 +56,7 @@
                     </v-col>
                 </v-row>
                 <v-checkbox label='Suitable for work ("_sfw")' v-model="inputBasic.sfw"></v-checkbox>
-                <v-checkbox label='旧版（1.12.2以下）语言文件格式' v-model="inputBasic.legacy"></v-checkbox>
+                <v-checkbox label='旧版（1.12.2及以下）语言文件格式' v-model="inputBasic.legacy"></v-checkbox>
                 <v-checkbox label='调试模式' v-model="inputBasic.debug"></v-checkbox>
                 <v-row>
                     <v-col cols="12" sm="6">
