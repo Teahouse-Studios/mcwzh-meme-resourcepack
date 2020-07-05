@@ -119,13 +119,17 @@
                           </v-list-item>
                       
                           <v-card-actions>
-                            <v-btn text href="https://www.mcbbs.net/?2444378">MCBBS 资料</v-btn>
+                            <v-btn text href="https://www.mcbbs.net/?2444378">MCBBS 资料页</v-btn>
                             <v-btn text href="https://www.mcbbs.net/thread-926724-1-1.html">《大憨批》插件介绍</v-btn>
                           </v-card-actions>
                         </v-card>
                     </v-col>
                     <v-col col="12" md="6">
-                        <v-skeleton-loader type="article"></v-skeleton-loader>
+                        <v-card outlined>
+                            <div class="overline mb-4">[广告招租]</div>
+                            <v-skeleton-loader type="article"></v-skeleton-loader>
+                            <v-skeleton-loader type="action"></v-skeleton-loader>
+                        </v-card>
                     </v-col>
                 </v-row>
             </v-container>
