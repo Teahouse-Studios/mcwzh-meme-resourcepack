@@ -38,7 +38,7 @@
 
 该资源包将不死图腾替换成了自定义模型。自定义模型范围为 `10800000~10800006` 。如果这不适用于你（例如模型出错，游玩自定义地图或装载其他3D资源包），你可以尝试调整载入顺序，或者下载不带自定义模型的自动构建（以 `_nofigure` 结尾）。如果不想重新下载，你也可以直接删除有自定义模型版本的对应的文件夹。
 
-关于可以直接获取自定义模型的数据包，可以在[这里](https://files.lakejason0.ml/images/e/e5/Figure.zip)找到。
+关于可以直接获取自定义模型的数据包，可以在[这里](https://files.lakejason0.ml/images/e/e5/Figure.zip)，或是在本repo中的`datapack`目录找到。
 
 ### 可选的文件替换
 
@@ -116,7 +116,7 @@ python build.py -h
 
 ### 网页部署
 
-如果你需要在网页Material标题栏下方或者网页脚部自定义内容, 请在 `views/custom/` 目录下创建 `header.html` 或 `footer.html` 。
+如果你需要在网页Material标题栏下方或者网页脚部自定义内容，请在 `views/custom/` 目录下创建 `header.html` 或 `footer.html` 。
 
 目前来说，有 `Vuetify` 框架可用。
 
