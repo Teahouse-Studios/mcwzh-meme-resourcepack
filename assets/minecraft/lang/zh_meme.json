@@ -1946,7 +1946,7 @@
     "commands.banip.success": "梗体中文提示您：已滥权IP%s：%s",
     "commands.banlist.entry": "梗体中文提示您：%s被%s滥权：%s",
     "commands.banlist.list": "梗体中文说：共有%s条滥权记录：",
-    "commands.banlist.none": "无内鬼，没有人滥权了",
+    "commands.banlist.none": "无内鬼，没有人滥权",
     "commands.bossbar.create.failed": "ID为'%s'老板栏已经存在",
     "commands.bossbar.create.success": "已创建自定义老板栏%s",
     "commands.bossbar.get.max": "自定义老板栏%s的最大值为%s",
