@@ -60,7 +60,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:10800005}",
+              "tag": "{CustomModelData:10800005}"
             }
           ]
         },
