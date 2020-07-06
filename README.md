@@ -24,7 +24,7 @@
 
 普通版本的资源包**无法**覆盖所有的Mod字符串，会导致大部分Mod的内容**全部变为英文**。请下载 `mcwzh-meme_compatible.zip` ，以保证体验。安装流程几乎相同，只是选择的语言应该是**普通的“简体中文”**。
 
-但是如果有遇到支持梗体中文的原版Mod，请下载 `mcwzh-meme.zip` 以保证体验（目前暂时没有）。
+但是如果有遇到支持梗体中文的原版Mod，请下载 `mcwzh-meme.zip` 以保证体验（目前有[更多的合成](https://github.com/ruhuasiyu/CraftingPlusPlus)）。
 
 ### 1.12.2及以下版本支持
 
