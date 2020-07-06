@@ -1864,7 +1864,7 @@
     "chat.editBox": "唠嗑",
     "chat.link.confirm": "打开啊，愣住干啥？",
     "chat.link.confirmTrusted": "打开啊，愣住干啥？",
-    "chat.link.open": "在兄弟丝氨酸中打开",
+    "chat.link.open": "在浏览器中打开",
     "chat.link.warning": "打开试试吧，也许是好东西呢？",
     "chat.queue": "[+%s行待发送]",
     "chat.type.admin": "[%s: %s]",
