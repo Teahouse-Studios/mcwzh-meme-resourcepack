@@ -1,0 +1,22 @@
+{
+    "language": [
+        "lang-20w14inf",
+        "lang-sfw",
+        "lang-spawnpoint",
+        "lang-trapdoor"
+    ],
+    "resource": [
+        "resource-a_letter",
+        "resource-annoying_sounds",
+        "resource-bagify",
+        "resource-brewing_stand_model",
+        "resource-BUGJUMP",
+        "resource-disco_ball",
+        "resource-Lie_nus_and_more_things",
+        "resource-map_override",
+        "resource-meme_splashes",
+        "resource-mopemope",
+        "resource-observer_think",
+        "resource-totem_model"
+    ]
+}
