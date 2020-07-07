@@ -1,5 +1,5 @@
 {
     "name": "map override",
     "type": "resource",
-    "description": ""
+    "description": "在地图上展示我们的Slogan。"
 }
