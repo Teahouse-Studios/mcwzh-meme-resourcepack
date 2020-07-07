@@ -2332,7 +2332,7 @@
     "container.isLocked": "%s：有种你拿钥匙来啊！",
     "container.lectern": "百 家 讲 坛",
     "container.loom": "织布机",
-    "container.repair": "噔 噔 咚",
+    "container.repair": "修复和命名",
     "container.repair.cost": "覆膜花费：%1$s",
     "container.repair.expensive": "你太穷了！",
     "container.shulkerBox": "傻瓜盒子",
