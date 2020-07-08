@@ -28,12 +28,19 @@ class builder(object):
         self.__warning = 0
         self.__error = 0
         self.__logs = ""
+        self.__filename = ""
 
     def set_args(self, new_args: dict):
         self.__args = new_args
 
     def get_warning_count(self):
         return self.__warning
+    
+    def get_filename(self):
+        if self.__filename == "":
+            return "Did not build any packs."
+        else:
+            return self.__filename
 
     def get_logs(self):
         if self.__logs == "":
@@ -45,6 +52,7 @@ class builder(object):
         self.__error = 0
         self.__warning = 0
         self.__logs = ""
+        self.__filename = ""
 
     def build(self):
         self.clean_status()
@@ -77,6 +85,7 @@ class builder(object):
                 pack_name = "mcwzh-meme." + sha256[:7] + ".zip"
             else:
                 pack_name = "mcwzh-meme.zip"
+            self.__filename = pack_name
             # process mcmeta
             mcmeta = self.__process_meta(args['type'])
             # decide language file name & ext

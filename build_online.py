@@ -47,10 +47,12 @@ def ajax():
             logs += str(p.communicate()[0], 'utf-8', 'ignore')
         else:
             logs += 'Skipping the repository update because there\'s an available cache within 60 seconds.\n'
-        result = build.build(recv_data)
-        logs += result[1]
+        builder = build.builder()
+        builder.set_args(recv_data)
+        builder.build()
+        logs += builder.get_logs()
         message = {"code": 200, "argument": recv_data,
-                   "logs": logs, "filename": result[0]}
+                   "logs": logs, "filename": builder.get_filename()}
         print(recv_data)
     finally:
         lock.release()
