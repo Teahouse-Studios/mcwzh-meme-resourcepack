@@ -9,3 +9,4 @@ views/custom/*.html
 builds*
 /en_us.json
 /conversion.json
+.idea

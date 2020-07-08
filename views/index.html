@@ -22,6 +22,7 @@
             margin-top: 16px;
             margin-bottom: 16px;
         }
+
         .v-alert {
             margin-bottom: 0;
         }
@@ -34,11 +35,55 @@
             <v-app-bar
                     outlined
                     color="white">
-                <v-toolbar-title>梗体中文 · 在线构建 <sub><small>Sponsored by SPGoding</small></sub></v-toolbar-title>
+                <v-toolbar-title>梗体中文 · 在线构建
+                    <sub v-if="$vuetify.breakpoint.name !== 'xs'"><small>Sponsored by SPGoding</small></sub>
+                </v-toolbar-title>
                 <v-spacer></v-spacer>
-                <v-btn text href="https://github.com/lakejason0/mcwzh-meme-resourcepack/releases"><v-icon>mdi-github-circle</v-icon>&emsp;Release 下载</v-btn>
-                <v-btn text href="https://www.mcbbs.net/thread-1004643-1-1.html"><v-badge color="red" content="宣传中" offset-x="15" offset-y="0.1">MCBBS</v-badge></v-btn>
-                <v-btn text href="https://github.com/lakejason0/mcwzh-meme-resourcepack"><v-icon>mdi-github-circle</v-icon></v-btn>
+                <div v-if="$vuetify.breakpoint.name !== 'xs'">
+                    <v-btn text href="https://github.com/lakejason0/mcwzh-meme-resourcepack/releases">
+                        <v-icon>mdi-github-circle</v-icon>&emsp;Release 下载
+                    </v-btn>
+                    <v-btn text href="https://www.mcbbs.net/thread-1004643-1-1.html">
+                        <v-badge color="red" content="宣传中" offset-x="15" offset-y="0.1">MCBBS</v-badge>
+                    </v-btn>
+                    <v-btn text href="https://github.com/lakejason0/mcwzh-meme-resourcepack">
+                        <v-icon>mdi-github-circle</v-icon>
+                    </v-btn>
+                </div>
+                <div v-else>
+                    <v-menu bottom left>
+                        <template v-slot:activator="{ on, attrs }">
+                            <v-btn
+                                    icon
+                                    v-bind="attrs"
+                                    v-on="on"
+                            >
+                                <v-icon>mdi-dots-vertical</v-icon>
+                            </v-btn>
+                        </template>
+
+                        <v-list>
+                            <v-list-item>
+                                <sub><small>Sponsored by SPGoding</small></sub>
+                            </v-list-item>
+                            <v-list-item>
+                                <v-btn text href="https://github.com/lakejason0/mcwzh-meme-resourcepack/releases">
+                                    <v-icon>mdi-github-circle</v-icon>&emsp;Release 下载
+                                </v-btn>
+                            </v-list-item>
+                            <v-list-item>
+                                <v-btn text href="https://www.mcbbs.net/thread-1004643-1-1.html">
+                                    <v-badge color="red" content="宣传中" offset-x="15" offset-y="0.1">MCBBS</v-badge>
+                                </v-btn>
+                            </v-list-item>
+                            <v-list-item>
+                                <v-btn text href="https://github.com/lakejason0/mcwzh-meme-resourcepack">
+                                    <v-icon>mdi-github-circle</v-icon>
+                                </v-btn>
+                            </v-list-item>
+                        </v-list>
+                    </v-menu>
+                </div>
             </v-app-bar>
             {% if header_existence %}
                 {% include './custom/header.html' %}
@@ -107,22 +152,24 @@
                         <v-card outlined>
                             <v-list-item three-line>
                                 <v-list-item-content>
-                                <div class="overline mb-4">SPONSER</div>
-                                <v-list-item-title class="headline mb-1">梗体中文 由 SPGoding 赞助</v-list-item-title>
-                                <v-list-item-subtitle>SPGoding 是一位 Mojira 助手、MCBBS 艺术家，代表作《大憨批》VSCode 插件。ta 热心的赠送了梗体中文 7 天的 MCBBS 广告位。</v-list-item-subtitle>
-                            </v-list-item-content>
-                      
-                            <v-list-item-avatar
-                                tile
-                                size="80"
-                                src="https://www.mcbbs.net/uc_server/data/avatar/002/44/43/78_avatar_big.jpg"
-                            ></v-list-item-avatar>
-                          </v-list-item>
-                      
-                          <v-card-actions>
-                            <v-btn text href="https://www.mcbbs.net/?2444378">MCBBS 资料页</v-btn>
-                            <v-btn text href="https://www.mcbbs.net/thread-926724-1-1.html">《大憨批》介绍</v-btn>
-                          </v-card-actions>
+                                    <div class="overline mb-4">SPONSER</div>
+                                    <v-list-item-title class="headline mb-1">梗体中文 由 SPGoding 赞助</v-list-item-title>
+                                    <v-list-item-subtitle>SPGoding 是一位 Mojira 助手、MCBBS 艺术家，代表作《大憨批》VSCode 插件。ta
+                                        热心的赠送了梗体中文 7 天的 MCBBS 广告位。
+                                    </v-list-item-subtitle>
+                                </v-list-item-content>
+
+                                <v-list-item-avatar
+                                        tile
+                                        size="80"
+                                        src="https://www.mcbbs.net/uc_server/data/avatar/002/44/43/78_avatar_big.jpg"
+                                ></v-list-item-avatar>
+                            </v-list-item>
+
+                            <v-card-actions>
+                                <v-btn text href="https://www.mcbbs.net/?2444378">MCBBS 资料页</v-btn>
+                                <v-btn text href="https://www.mcbbs.net/thread-926724-1-1.html">《大憨批》介绍</v-btn>
+                            </v-card-actions>
                         </v-card>
                     </v-col>
                     <v-col col="12" md="6">
