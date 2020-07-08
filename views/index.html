@@ -122,20 +122,17 @@
                     <v-divider style="margin:15px 0"></v-divider>
                     <p class="headline" ref="logs">构建日志</p>
                     <v-expansion-panels v-model="logsPanel" multiple>
-                        <v-expansion-panel
-                                v-for="(item,i) in logs"
-                                :key="i"
-                        >
+                        <v-expansion-panel v-for="(item,i) in logs" :key="i">
                             <v-expansion-panel-header>
                                 {% raw %}{{moment(new Date(item.ts)).format('YYYY-MM-DD HH:mm:ss')}} {{ item.title }}{% endraw %}
                             </v-expansion-panel-header>
                             <v-expansion-panel-content>
                                 <pre style="padding-bottom:15px;white-space: pre-wrap;font-family: 'Cascadia Code', 'Fira Code','Consolas', monospace;">{% raw %}{{item.content}}{% endraw %}</pre>
-                                <v-btn v-if="item.filename" @click="download(item.filename)" outlined color="indigo">
+                                <v-btn v-if="item.filename" @click="open(item.filename)" outlined color="indigo">
                                     下载
                                 </v-btn>
                                 <v-btn v-else
-                                       @click="download('https://github.com/lakejason0/mcwzh-meme-resourcepack/issues/new/choose')"
+                                       @click="open('https://github.com/lakejason0/mcwzh-meme-resourcepack/issues/new/choose')"
                                        dark color="black">
                                     <v-icon left>bug_report</v-icon>
                                     反馈
@@ -191,39 +188,32 @@
     new Vue({
         el: '#app',
         methods: {
-            download(name) {
+            open(name) {
                 window.open(name)
             },
             submit() {
                 this.loading = true
+
+                /**
+                 * 根据选择的资源获取资源名称
+                 * @param {string} opt - 选项 none | all | custom
+                 * @param {Array} res - 选择的自定义项
+                 * @param {string} prefix - 资源前缀
+                 */
+                function getNames(opt, res, prefix) {
+                    if (opt === 'all') {
+                        return ['all']
+                    } else if (opt === 'none') {
+                        return []
+                    } else {
+                        return res.map(v => v.split(prefix).join(''))
+                    }
+                }
+
                 let data = Object.assign({}, this.inputBasic, {
-                    language: ((opt, res) => {
-                        if (opt === 'all') {
-                            return ['all']
-                        } else if (opt === 'none') {
-                            return []
-                        } else {
-                            return res.map(v => v.split("modules/").join(''))
-                        }
-                    })(this.input.languageOption, this.input.language),
-                    resource: ((opt, res) => {
-                        if (opt === 'all') {
-                            return ['all']
-                        } else if (opt === 'none') {
-                            return []
-                        } else {
-                            return res.map(v => v.split("modules/").join(''))
-                        }
-                    })(this.input.resourceOption, this.input.resource),
-                    mod: ((opt, res) => {
-                        if (opt === 'all') {
-                            return ['all']
-                        } else if (opt === 'none') {
-                            return []
-                        } else {
-                            return res.map(v => v.split("mods/").join(''))
-                        }
-                    })(this.input.modOption, this.input.mod),
+                    language: getNames(this.input.languageOption, this.input.language, "modules/"),
+                    resource: getNames(this.input.resourceOption, this.input.resource, "modules"),
+                    mod: getNames(this.input.modOption, this.input.mod, "mods/"),
                     hash: true
                 })
                 console.log(data)
