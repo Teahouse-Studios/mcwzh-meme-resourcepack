@@ -35,7 +35,7 @@ class builder(object):
 
     def get_warning_count(self):
         return self.__warning
-    
+
     def get_filename(self):
         if self.__filename == "":
             return "Did not build any packs."
@@ -49,8 +49,8 @@ class builder(object):
             return self.__logs
 
     def clean_status(self):
-        self.__error = 0
         self.__warning = 0
+        self.__error = 0
         self.__logs = ""
         self.__filename = ""
 
@@ -58,18 +58,19 @@ class builder(object):
         self.clean_status()
         args = self.__args
         # checking module names first, prevent name conflict
-        lang_supp_list = self.__get_module_list("language")
-        res_supp_list = self.__get_module_list("resource")
-        if self.__error == 0:
+        checker = module_checker()
+        if checker.check_module():
             # process args
             # get language supplement
-            lang_supp = self.__parse_includes(args['language'], "language")
+            lang_supp = self.__parse_includes(
+                args['language'], checker.get_module_list('language'))
             # merge sfw into lang_supp
             if args['sfw']:
                 if not 'sfw' in lang_supp:
                     lang_supp.append('sfw')
             # get resource supplement
-            res_supp = self.__parse_includes(args['resource'], "resource")
+            res_supp = self.__parse_includes(
+                args['resource'], checker.get_module_list('resource'))
             # get mods strings
             mod_supp = self.__parse_mods(args['mod'])
             # merge language supplement
@@ -131,8 +132,11 @@ class builder(object):
             pack.close()
             print("Build successful.")
         else:
+            error = "Error: " + checker.get_info()
+            print(f"\033[1;31m{error}\033[0m")
+            self.__logs += f"{error}\n"
+            self.__error += 1
             print("Terminate building because an error occurred.")
-
 
     def __process_meta(self, type: str) -> dict:
         with open('pack.mcmeta', 'r', encoding='utf8') as f:
@@ -151,16 +155,15 @@ class builder(object):
         else:
             return 'zh_cn.lang'
 
-    def __parse_includes(self, includes: list, type: str) -> list:
+    def __parse_includes(self, includes: list, fulllist: list) -> list:
         if 'none' in includes:
             return []
         elif 'all' in includes:
-            return self.__get_module_list(type)
+            return fulllist
         else:
-            module_list = self.__get_module_list(type)
             include_list = []
             for item in includes:
-                if item in module_list:
+                if item in fulllist:
                     include_list.append(item)
                 else:
                     warning = f"Warning: {item} does not exist, skipping."
@@ -168,24 +171,6 @@ class builder(object):
                     self.__logs += f"{warning}\n"
                     self.__warning += 1
             return include_list
-
-    def __get_module_list(self, type: str) -> list:
-        base_folder = 'modules'
-        module_list = []
-        for module in os.listdir(base_folder):
-            with open(os.path.join(base_folder, module, "manifest.json"), 'r', encoding='utf8') as f:
-                data = json.load(f)
-            name = data['name']
-            module_type = data['type']
-            if name in module_list:
-                error = f"Error: Name '{name}' is conflict in modules."
-                print(f"\033[1;31m{error}\033[0m")
-                self.__logs += f"{error}\n"
-                self.__error += 1
-            else:
-                if module_type == type:
-                    module_list.append(name)
-        return module_list
 
     def __parse_mods(self, mods: list) -> list:
         existing_mods = os.listdir("mods")
@@ -263,6 +248,52 @@ class builder(object):
         for k, v in legacy_lang_data.items():
             out_content += f"{k}={v}\n"
         return out_content
+
+
+class module_checker(object):
+    def __init__(self):
+        self.__status = True
+        self.__lang_list = []
+        self.__res_list = []
+        self.__info = ''
+
+    def get_info(self):
+        return self.__info
+
+    def check_module(self):
+        base_folder = 'modules'
+        lang_list = []
+        res_list = []
+        for module in os.listdir(base_folder):
+            with open(os.path.join(base_folder, module, "manifest.json"), 'r', encoding='utf8') as f:
+                data = json.load(f)
+            name = data['name']
+            module_type = data['type']
+            if name in lang_list or name in res_list:
+                self.__status = False
+                self.__info = f"conflict name '{name}'"
+                return False
+            else:
+                if module_type == 'language':
+                    lang_list.append(name)
+                elif module_type == 'resource':
+                    res_list.append(name)
+        self.__status = True
+        self.__lang_list = lang_list
+        self.__res_list = res_list
+        return True
+
+    def get_module_list(self, type):
+        self.check_module()
+        if self.__status:
+            return []
+        else:
+            if type == 'language':
+                return self.__lang_list
+            elif type == 'resource':
+                return self.__res_list
+            else:
+                return []
 
 
 def generate_parser() -> argparse.ArgumentParser:
