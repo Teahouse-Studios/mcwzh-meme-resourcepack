@@ -255,6 +255,7 @@ class module_checker(object):
         self.__status = True
         self.__lang_list = []
         self.__res_list = []
+        self.__manifests = {}
         self.__info = ''
 
     def get_info(self):
@@ -269,6 +270,7 @@ class module_checker(object):
                 data = json.load(f)
             name = data['name']
             module_type = data['type']
+            self.__manifests[name] = data['description']
             if name in lang_list or name in res_list:
                 self.__status = False
                 self.__info = f"conflict name '{name}'"
@@ -294,6 +296,13 @@ class module_checker(object):
                 return self.__res_list
             else:
                 return []
+
+    def get_manifests(self):
+        self.check_module()
+        if not self.__status:
+            return {}
+        else:
+            return self.__manifests
 
 
 def generate_parser() -> argparse.ArgumentParser:
