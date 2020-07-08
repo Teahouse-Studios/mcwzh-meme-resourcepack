@@ -16,20 +16,16 @@ lock = Lock()
 
 @app.route('/')
 def generate_website():
-    mods = set()
-    enmods = set()
-    optionals = set()
-    figures = set()
-    mods.update(["mods/" + file for file in os.listdir('mods')])
-    enmods.update(["en-mods/" + file for file in os.listdir('en-mods')])
-    optionals.update(["optional/" + str(file.relative_to('optional/').as_posix())
-                      for file in Path('optional').iterdir() if not file.is_dir()])
-    figures.update(["optional/" + str(file.relative_to('optional/').as_posix())
-                    for file in Path('optional').iterdir() if file.is_dir()])
+    mods = ["mods/" + file for file in os.listdir('mods')]
+    enmods = ["en-mods/" + file for file in os.listdir('en-mods')]
+    language_modules = [
+        "modules/" + module for module in build.module_checker().get_module_list('language')]
+    resource_modules = [
+        "modules/" + module for module in build.module_checker().get_module_list('resource')]
     header_existence = os.path.exists("./views/custom/header.html")
     footer_existence = os.path.exists("./views/custom/footer.html")
-    return render_template("index.html", mods=list(mods), enmods=list(enmods), optionals=list(optionals),
-                           figures=list(figures), header_existence=header_existence, footer_existence=footer_existence)
+    return render_template("index.html", mods=mods, enmods=enmods, language=language_modules, resource=resource_modules,
+                           header_existence=header_existence, footer_existence=footer_existence)
 
 
 @app.route('/ajax', methods=['POST'])
