@@ -285,7 +285,7 @@ class module_checker(object):
 
     def get_module_list(self, type):
         self.check_module()
-        if self.__status:
+        if not self.__status:
             return []
         else:
             if type == 'language':
