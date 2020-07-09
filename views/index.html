@@ -240,7 +240,7 @@
             },
             getManifest(name) {
                 let pureName = name.split("modules/").join('')
-                return this.consts.manifests[pureName]
+                return this.consts.manifests[pureName] || ""
             }
         },
         data: () => ({
