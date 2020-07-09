@@ -55,7 +55,7 @@
 
                 <v-row>
                     <v-col cols="6" sm="3">
-                        <v-select label="语言版本" :items="consts.type" v-model="inputBasic.type"></v-select>
+                        <v-select label="游戏版本" :items="consts.type" v-model="inputBasic.type"></v-select>
                     </v-col>
                     <v-col cols="6" sm="3">
                         <v-select label="附加包/材质选择" :items="consts.resourceOption"
@@ -167,13 +167,6 @@
                             </v-card-actions>
                         </v-card>
                     </v-col>
-                    <v-col col="12" md="6">
-                        <v-card outlined>
-                            <div class="overline mb-4">[广告招租]</div>
-                            <v-skeleton-loader type="article"></v-skeleton-loader>
-                            <v-skeleton-loader type="action"></v-skeleton-loader>
-                        </v-card>
-                    </v-col>
                 </v-row>
             </v-container>
             <v-footer class="font-weight-light">
@@ -271,7 +264,7 @@
         }),
         computed: {
             consts: () => ({
-                type: [{text: "普通版本", value: "normal"}, {text: "兼容版本", value: "compat"}],
+                type: [{text: "1.13以上", value: "normal"}, {text: "1.12.2", value: "compat"}],
                 resourceOption: [{text: "所有", value: "all"}, {text: "无", value: "none"}, {
                     text: "自定义",
                     value: "custom"
