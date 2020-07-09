@@ -1,0 +1,13 @@
+{
+    "attribute.name.generic.armorToughness": "盔甲韧性",
+    "attribute.name.generic.attackDamage": "攻击伤害",
+    "attribute.name.generic.attackKnockback": "攻击鸡腿",
+    "attribute.name.generic.attackSpeed": "手速",
+    "attribute.name.generic.followRange": "生物跟随距离",
+    "attribute.name.generic.flyingSpeed": "飞行速度",
+    "attribute.name.generic.knockbackResistance": "鸡腿抗性",
+    "attribute.name.generic.maxHealth": "最大生命值",
+    "attribute.name.generic.movementSpeed": "速度",
+    "attribute.name.horse.jumpStrength": "马匹跳跃能力",
+    "attribute.name.zombie.spawnReinforcements": "僵尸增援"
+}

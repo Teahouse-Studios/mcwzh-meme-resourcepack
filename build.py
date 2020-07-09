@@ -195,8 +195,17 @@ class builder(object):
         with open("assets/minecraft/lang/zh_meme.json", 'r', encoding='utf8') as f:
             lang_data = json.load(f)
         for item in language_supp:
-            with open(os.path.join("modules", item, item + ".json"), 'r', encoding='utf8') as f:
-                supp_data = json.load(f)
+            add_file = os.path.join("modules", item, "add.json")
+            remove_file = os.path.join("modules", item, "remove.json")
+            if os.path.exists(add_file):
+                with open(add_file, 'r', encoding='utf8') as add:
+                    supp_data = json.load(add)
+            if os.path.exists(remove_file):
+                with open(remove_file, 'r', encoding='utf8') as remove:
+                    remove_list = json.load(remove)
+            for key in remove_list:
+                if key in lang_data.keys():
+                    lang_data.pop(key)
             lang_data.update(supp_data)
         lang_data.update(self.__get_mod_content(mod_supp))
         return lang_data
