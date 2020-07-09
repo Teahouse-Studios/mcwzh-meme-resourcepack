@@ -270,12 +270,12 @@ class module_checker(object):
                 data = json.load(f)
             name = data['name']
             module_type = data['type']
-            self.__manifests[name] = data['description']
             if name in lang_list or name in res_list:
                 self.__status = False
                 self.__info = f"conflict name '{name}'"
                 return False
             else:
+                self.__manifests[name] = data['description']
                 if module_type == 'language':
                     lang_list.append(name)
                 elif module_type == 'resource':
