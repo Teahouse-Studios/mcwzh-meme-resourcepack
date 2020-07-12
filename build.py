@@ -212,6 +212,11 @@ class builder(object):
                 for key in remove_list:
                     if key in lang_data.keys():
                         lang_data.pop(key)
+                    else:
+                        warning = f"Warning: Key '{key}' does not exist, skipping."
+                        print(f"\033[33m{warning}\033[0m")
+                        self.__logs += f"{warning}\n"
+                        self.__warning += 1
         lang_data.update(self.__get_mod_content(mod_supp))
         return lang_data
 
