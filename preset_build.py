@@ -16,7 +16,7 @@ def main():
             'all'], 'mod': [], 'sfw': True, 'hash': False},
         {'type': 'compat', 'language': [], 'resource': [
         ], 'mod': [], 'sfw': True, 'hash': False},
-        {'type': 'legacy', 'language': [], 'resource': [
+        {'type': 'legacy', 'language': ['attributes', 'old_strings', 'diamond_hoe'], 'resource': [
         ], 'mod': [], 'sfw': True, 'hash': False},
         {'type': 'normal', 'language': [], 'resource': [
             'all'], 'mod': ['all'], 'sfw': False, 'hash': False},

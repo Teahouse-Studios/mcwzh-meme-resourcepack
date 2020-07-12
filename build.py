@@ -130,7 +130,7 @@ class builder(object):
                                 pack.write(os.path.join(
                                     root, file), arcname=arcpath)
                             else:
-                                warning = f"Warning: pack already has a file named '{testpath}', skipped"
+                                warning = f"Warning: Pack already has a file named '{testpath}', skipping."
                                 print(f"\033[33m{warning}\033[0m")
                                 self.__logs += f"{warning}\n"
                                 self.__warning += 1
@@ -189,7 +189,7 @@ class builder(object):
                 if item in existing_mods:
                     mods_list.append(item)
                 else:
-                    warning = f"Warning: {item} does not exist, skipping."
+                    warning = f"Warning: '{item}' does not exist, skipping."
                     print(f"\033[33m{warning}\033[0m")
                     self.__logs += f"{warning}\n"
                     self.__warning += 1
@@ -205,16 +205,13 @@ class builder(object):
             if os.path.exists(add_file):
                 with open(add_file, 'r', encoding='utf8') as add:
                     supp_data = json.load(add)
-            #TODO: UnboundLocalError: local variable 'remove_list' referenced before assignment
+                lang_data.update(supp_data)
             if os.path.exists(remove_file):
                 with open(remove_file, 'r', encoding='utf8') as remove:
                     remove_list = json.load(remove)
-            else:
-                remove_list = []
-            for key in remove_list:
-                if key in lang_data.keys():
-                    lang_data.pop(key)
-            lang_data.update(supp_data)
+                for key in remove_list:
+                    if key in lang_data.keys():
+                        lang_data.pop(key)
         lang_data.update(self.__get_mod_content(mod_supp))
         return lang_data
 
@@ -254,7 +251,6 @@ class builder(object):
                     mapping = json.load(f)
                 for k, v in mapping.items():
                     if v not in content.keys():
-                        #TODO: Legacy compatible content has been moved to modules
                         warning = f"Warning: Corrupted key-value pair in file {mapping_file}: {{'{k}': '{v}'}}"
                         print(
                             f"\033[33m{warning}\033[0m")
@@ -284,21 +280,26 @@ class module_checker(object):
         lang_list = []
         res_list = []
         for module in os.listdir(base_folder):
-            # 如果没有读取到manifest.json呢？
-            with open(os.path.join(base_folder, module, "manifest.json"), 'r', encoding='utf8') as f:
-                data = json.load(f)
-            name = data['name']
-            module_type = data['type']
-            if name in lang_list or name in res_list:
-                self.__status = False
-                self.__info = f"conflict name '{name}'"
-                return False
+            manifest = os.path.join(base_folder, module, "manifest.json")
+            if os.path.exists(manifest) and os.path.isfile(manifest):
+                with open(os.path.join(base_folder, module, "manifest.json"), 'r', encoding='utf8') as f:
+                    data = json.load(f)
+                name = data['name']
+                module_type = data['type']
+                if name in lang_list or name in res_list:
+                    self.__status = False
+                    self.__info = f"conflict name '{name}'"
+                    return False
+                else:
+                    self.__manifests[name] = data['description']
+                    if module_type == 'language':
+                        lang_list.append(name)
+                    elif module_type == 'resource':
+                        res_list.append(name)
             else:
-                self.__manifests[name] = data['description']
-                if module_type == 'language':
-                    lang_list.append(name)
-                elif module_type == 'resource':
-                    res_list.append(name)
+                self.__status = False
+                self.__info = f"bad module '{module}', no manifest file"
+                return False
         self.__status = True
         self.__lang_list = lang_list
         self.__res_list = res_list
