@@ -227,7 +227,7 @@ class builder(object):
                         i != '' and not i.startswith('#'))]
                 mods.update(dict(i.split("=", 1) for i in items))
             else:
-                warning = f'Warning: File type "{file[file.rfind(".") + 1:]}" is not supported, skipping'
+                warning = f'Warning: File type "{file[file.rfind(".") + 1:]}" is not supported, skipping.'
                 print(
                     f'\033[33m{warning}\033[0m')
                 self.__warning += 1
@@ -242,7 +242,7 @@ class builder(object):
         for item in mappings:
             mapping_file = item + ".json"
             if mapping_file not in os.listdir("mappings"):
-                warning = f"Warning: Missing mapping '{mapping_file}', skipping"
+                warning = f"Warning: Missing mapping '{mapping_file}', skipping."
                 print(f"\033[33m{warning}\033[0m")
                 self.__logs += f"{warning}\n"
                 self.__warning += 1
@@ -251,7 +251,7 @@ class builder(object):
                     mapping = json.load(f)
                 for k, v in mapping.items():
                     if v not in content.keys():
-                        warning = f"Warning: Corrupted key-value pair in file {mapping_file}: {{'{k}': '{v}'}}"
+                        warning = f"Warning: Corrupted key-value pair in file {mapping_file}: {{'{k}': '{v}'}}, skipping."
                         print(
                             f"\033[33m{warning}\033[0m")
                         self.__logs += f"{warning}\n"
