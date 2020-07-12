@@ -4,7 +4,6 @@ import os
 import time
 import json
 from threading import Lock
-from pathlib import Path
 import subprocess
 
 app = Flask(__name__, template_folder='./views/',
