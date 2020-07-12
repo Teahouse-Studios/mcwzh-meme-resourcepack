@@ -209,6 +209,8 @@ class builder(object):
             if os.path.exists(remove_file):
                 with open(remove_file, 'r', encoding='utf8') as remove:
                     remove_list = json.load(remove)
+            else:
+                remove_list = []
             for key in remove_list:
                 if key in lang_data.keys():
                     lang_data.pop(key)
@@ -252,6 +254,7 @@ class builder(object):
                     mapping = json.load(f)
                 for k, v in mapping.items():
                     if v not in content.keys():
+                        #TODO: Legacy compatible content has been moved to modules
                         warning = f"Warning: Corrupted key-value pair in file {mapping_file}: {{'{k}': '{v}'}}"
                         print(
                             f"\033[33m{warning}\033[0m")
