@@ -57,7 +57,7 @@ class builder(object):
     def build(self):
         self.clean_status()
         args = self.__args
-        # checking module names first, prevent name conflict
+        # checking module names first, preventing name conflict
         checker = module_checker()
         if checker.check_module():
             # process args
@@ -205,6 +205,7 @@ class builder(object):
             if os.path.exists(add_file):
                 with open(add_file, 'r', encoding='utf8') as add:
                     supp_data = json.load(add)
+            #TODO: UnboundLocalError: local variable 'remove_list' referenced before assignment
             if os.path.exists(remove_file):
                 with open(remove_file, 'r', encoding='utf8') as remove:
                     remove_list = json.load(remove)
@@ -280,6 +281,7 @@ class module_checker(object):
         lang_list = []
         res_list = []
         for module in os.listdir(base_folder):
+            # 如果没有读取到manifest.json呢？
             with open(os.path.join(base_folder, module, "manifest.json"), 'r', encoding='utf8') as f:
                 data = json.load(f)
             name = data['name']
