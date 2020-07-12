@@ -129,6 +129,11 @@ class builder(object):
                             if testpath not in pack.namelist():
                                 pack.write(os.path.join(
                                     root, file), arcname=arcpath)
+                            else:
+                                warning = f"Warning: pack already has a file named '{testpath}', skipped"
+                                print(f"\033[33m{warning}\033[0m")
+                                self.__logs += f"{warning}\n"
+                                self.__warning += 1
             pack.close()
             print("Build successful.")
         else:
@@ -166,7 +171,7 @@ class builder(object):
                 if item in fulllist:
                     include_list.append(item)
                 else:
-                    warning = f"Warning: {item} does not exist, skipping."
+                    warning = f"Warning: '{item}' does not exist, skipping."
                     print(f"\033[33m{warning}\033[0m")
                     self.__logs += f"{warning}\n"
                     self.__warning += 1
