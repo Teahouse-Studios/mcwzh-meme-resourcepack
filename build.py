@@ -96,6 +96,11 @@ class builder(object):
             print(info)
             self.__logs += f"{info}\n"
             pack_name = os.path.join("builds", pack_name)
+            # mkdir
+            if os.path.exists("builds") and not os.path.isdir("builds"):
+                os.remove("builds")
+            if not os.path.exists("builds"):
+                os.mkdir("builds")
             pack = zipfile.ZipFile(
                 pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
             pack.write("pack.png")
