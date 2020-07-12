@@ -180,7 +180,7 @@ class builder(object):
             return existing_mods
         else:
             mods_list = []
-            for item in list(mods):
+            for item in mods:
                 if item in existing_mods:
                     mods_list.append(item)
                 else:
