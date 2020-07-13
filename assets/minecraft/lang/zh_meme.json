@@ -3781,7 +3781,7 @@
     "options.narrator.off": "复读机已关闭",
     "options.narrator.system": "复读系统消息",
     "options.off": "关",
-    "options.off.composed": "%: 关",
+    "options.off.composed": "%s: 关",
     "options.on": "开",
     "options.on.composed": "%s: 开",
     "options.particles": "颗粒效果",
