@@ -2,6 +2,7 @@ import zipfile
 import json
 import argparse
 import os
+import sys
 import hashlib
 
 # Lincese: Apache-2.0
@@ -136,14 +137,14 @@ class builder(object):
                                     root, file), arcname=arcpath)
                             else:
                                 warning = f"Warning: Duplicated '{testpath}', skipping."
-                                print(f"\033[33m{warning}\033[0m")
+                                print(f"\033[33m{warning}\033[0m", file=sys.stderr)
                                 self.__logs += f"{warning}\n"
                                 self.__warning += 1
             pack.close()
             print("Build successful.")
         else:
             error = "Error: " + checker.get_info()
-            print(f"\033[1;31m{error}\033[0m")
+            print(f"\033[1;31m{error}\033[0m", file=sys.stderr)
             self.__logs += f"{error}\n"
             self.__error += 1
             print("\033[1;31mTerminate building because an error occurred.\033[0m")
@@ -177,7 +178,7 @@ class builder(object):
                     include_list.append(item)
                 else:
                     warning = f"Warning: '{item}' does not exist, skipping."
-                    print(f"\033[33m{warning}\033[0m")
+                    print(f"\033[33m{warning}\033[0m", file=sys.stderr)
                     self.__logs += f"{warning}\n"
                     self.__warning += 1
             return include_list
@@ -195,7 +196,7 @@ class builder(object):
                     mods_list.append(item)
                 else:
                     warning = f"Warning: '{item}' does not exist, skipping."
-                    print(f"\033[33m{warning}\033[0m")
+                    print(f"\033[33m{warning}\033[0m", file=sys.stderr)
                     self.__logs += f"{warning}\n"
                     self.__warning += 1
             return mods_list
@@ -219,7 +220,7 @@ class builder(object):
                         lang_data.pop(key)
                     else:
                         warning = f"Warning: Key '{key}' does not exist, skipping."
-                        print(f"\033[33m{warning}\033[0m")
+                        print(f"\033[33m{warning}\033[0m", file=sys.stderr)
                         self.__logs += f"{warning}\n"
                         self.__warning += 1
         lang_data.update(self.__get_mod_content(mod_supp))
@@ -239,7 +240,7 @@ class builder(object):
             else:
                 warning = f'Warning: File type "{file[file.rfind(".") + 1:]}" is not supported, skipping.'
                 print(
-                    f'\033[33m{warning}\033[0m')
+                    f'\033[33m{warning}\033[0m', file=sys.stderr)
                 self.__warning += 1
                 self.__logs += f"{warning}\n"
         return mods
@@ -253,7 +254,7 @@ class builder(object):
             mapping_file = item + ".json"
             if mapping_file not in os.listdir("mappings"):
                 warning = f"Warning: Missing mapping '{mapping_file}', skipping."
-                print(f"\033[33m{warning}\033[0m")
+                print(f"\033[33m{warning}\033[0m", file=sys.stderr)
                 self.__logs += f"{warning}\n"
                 self.__warning += 1
             else:
@@ -263,7 +264,7 @@ class builder(object):
                     if v not in content.keys():
                         warning = f"Warning: Corrupted key-value pair in file {mapping_file}: {{'{k}': '{v}'}}, skipping."
                         print(
-                            f"\033[33m{warning}\033[0m")
+                            f"\033[33m{warning}\033[0m", file=sys.stderr)
                         self.__logs += f"{warning}\n"
                         self.__warning += 1
                     else:
