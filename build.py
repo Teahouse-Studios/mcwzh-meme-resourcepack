@@ -135,7 +135,7 @@ class builder(object):
                                 pack.write(os.path.join(
                                     root, file), arcname=arcpath)
                             else:
-                                warning = f"Warning: Pack already has a file named '{testpath}', skipping."
+                                warning = f"Warning: Duplicated '{testpath}', skipping."
                                 print(f"\033[33m{warning}\033[0m")
                                 self.__logs += f"{warning}\n"
                                 self.__warning += 1
@@ -146,7 +146,7 @@ class builder(object):
             print(f"\033[1;31m{error}\033[0m")
             self.__logs += f"{error}\n"
             self.__error += 1
-            print("Terminate building because an error occurred.")
+            print("\033[1;31mTerminate building because an error occurred.\033[0m")
 
     def __process_meta(self, type: str) -> dict:
         with open('pack.mcmeta', 'r', encoding='utf8') as f:
@@ -298,7 +298,7 @@ class module_checker(object):
                 module_type = data['type']
                 if name in lang_list or name in res_list:
                     self.__status = False
-                    self.__info = f"conflict name '{name}'"
+                    self.__info = f"Conflict name '{name}'."
                     return False
                 else:
                     self.__manifests[name] = data['description']
@@ -308,7 +308,7 @@ class module_checker(object):
                         res_list.append(name)
             else:
                 self.__status = False
-                self.__info = f"bad module '{module}', no manifest file"
+                self.__info = f"Bad module '{module}', no manifest file."
                 return False
         self.__status = True
         self.__lang_list = lang_list
