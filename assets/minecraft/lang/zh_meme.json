@@ -2822,7 +2822,7 @@
     "gamerule.category.player": "玩家",
     "gamerule.category.spawning": "生成",
     "gamerule.category.updates": "世界更新",
-    "gamerule.commandBlockOutput": "广播命令方块输出",
+    "gamerule.commandBlockOutput": "广播滥权方块输出",
     "gamerule.disableElytraMovementCheck": "禁用鞘翅滥权检测",
     "gamerule.disableRaids": "阻止鬼子进村",
     "gamerule.doDaylightCycle": "游戏内时间流逝",
