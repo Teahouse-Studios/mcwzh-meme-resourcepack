@@ -187,7 +187,7 @@
     "mco.selectServer.expires.days": "将在%s天后过期",
     "mco.selectServer.expires.soon": "即将过期",
     "mco.selectServer.info": "“Realms”是什么？",
-    "mco.selectServer.leave": "退出Realm",
+    "mco.selectServer.leave": "逊出Realm",
     "mco.selectServer.mapOnlySupportedForVersion": "此地图不受%s支持",
     "mco.selectServer.minigame": "小游戏：",
     "mco.selectServer.minigameNotSupportedInVersion": "无法在%s中进行这个小游戏",
