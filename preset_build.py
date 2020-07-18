@@ -34,17 +34,25 @@ def main():
     pack_builder = build.builder()
     pack_counter = 0
     perfect_pack_counter = 0
+    base_folder = "builds"
+    if os.path.exists(base_folder) and not os.path.isdir(base_folder):
+        os.remove(base_folder)
+    if not os.path.exists(base_folder):
+        os.mkdir(base_folder)
+    for file in os.listdir(base_folder):
+        os.remove(os.path.join(base_folder, file))
     for item, name in zip(preset_args, preset_name):
         pack_builder.set_args(item)
         pack_builder.build()
-        pack_counter += 1
-        if pack_builder.get_warning_count() == 0:
-            perfect_pack_counter += 1
-        if name != "mcwzh-meme.zip":
-            if os.path.exists("builds/" + name):
-                os.remove("builds/" + name)
-            os.rename("builds/mcwzh-meme.zip", "builds/" + name)
-        print(f"Renamed pack to {name}.")
+        if pack_builder.get_error_count() == 0:
+            pack_counter += 1
+            if pack_builder.get_warning_count() == 0:
+                perfect_pack_counter += 1
+            if name != "mcwzh-meme.zip":
+                os.rename("builds/mcwzh-meme.zip", os.path.join(base_folder, name))
+            print(f"Renamed pack to {name}.")
+        else:
+            print(f"Failed to build pack {name}.")
     print(
         f"Built {pack_counter} packs with {perfect_pack_counter} pack(s) no warning.")
 

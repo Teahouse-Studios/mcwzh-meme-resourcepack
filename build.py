@@ -36,6 +36,9 @@ class builder(object):
 
     def get_warning_count(self):
         return self.__warning
+    
+    def get_error_count(self):
+        return self.__error
 
     def get_filename(self):
         if self.__filename == "":
