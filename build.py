@@ -179,6 +179,8 @@ class builder(object):
             for item in includes:
                 if item in fulllist:
                     include_list.append(item)
+                elif os.path.basename(os.path.normpath(item)) in fulllist:
+                    include_list.append(os.path.basename(os.path.normpath(item)))
                 else:
                     warning = f"Warning: '{item}' does not exist, skipping."
                     print(f"\033[33m{warning}\033[0m", file=sys.stderr)
