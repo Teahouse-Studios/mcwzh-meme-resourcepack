@@ -347,9 +347,9 @@ def generate_parser() -> argparse.ArgumentParser:
     parser.add_argument('type', default='normal', choices=[
                         'normal', 'compat', 'legacy', 'clean'], help="Build type. Should be 'normal', 'compat', 'legacy' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted.")
     parser.add_argument('-r', '--resource', nargs='*', default='all',
-                        help="(Experimental) Include resource modules. Should be module names, 'all' or 'none'. Defaults to 'all'.")
+                        help="(Experimental) Include resource modules. Should be module names, 'all' or 'none'. Defaults to 'all'. Pseudoly accepts a path, but only module paths in 'modules\' work.")
     parser.add_argument('-l', '--language', nargs='*', default='none',
-                        help="(Experimental) Include language modules. Should be module names, 'all' or 'none'. Defaults to 'none'.")
+                        help="(Experimental) Include language modules. Should be module names, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only module paths in 'modules\' work.")
     parser.add_argument('-s', '--sfw', action='store_true',
                         help="Use 'suitable for work' strings, equals to '--language sfw'.")
     parser.add_argument('-m', '--mod', nargs='*', default='none',
