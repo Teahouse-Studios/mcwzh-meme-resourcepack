@@ -1851,7 +1851,7 @@
     "color.minecraft.white": "白色",
     "color.minecraft.yellow": "黄色",
     "command.context.here": "<--[这里，看见没有？]",
-    "command.context.parse_error": "%s出现在第%s个字符处：%s",
+    "command.context.parse_error": "%1$s，错误位置为第%2$s个字符：%3$s",
     "command.exception": "无法解析命令：%s",
     "command.expected.separator": "参数后应有空格分隔，但发现了紧邻的数据",
     "command.failed": "试图执行该命令时出现意外错误",
