@@ -199,6 +199,8 @@ class builder(object):
             for item in mods:
                 if item in existing_mods:
                     mods_list.append(item)
+                elif os.path.basename(os.path.normpath(item)) in existing_mods:
+                    mods_list.append(os.path.basename(os.path.normpath(item)))
                 else:
                     warning = f"Warning: '{item}' does not exist, skipping."
                     print(f"\033[33m{warning}\033[0m", file=sys.stderr)
@@ -235,10 +237,10 @@ class builder(object):
         mods = {}
         for file in mods:
             if file.endswith(".json"):
-                with open(file, 'r', encoding='utf8') as f:
+                with open(os.path.join("mods",file), 'r', encoding='utf8') as f:
                     mods.update(json.load(f))
             elif file.endswith(".lang"):
-                with open(file, 'r', encoding='utf8') as f:
+                with open(os.path.join("mods",file), 'r', encoding='utf8') as f:
                     items = [i for i in f.read().splitlines() if (
                         i != '' and not i.startswith('#'))]
                 mods.update(dict(i.split("=", 1) for i in items))
@@ -353,7 +355,7 @@ def generate_parser() -> argparse.ArgumentParser:
     parser.add_argument('-s', '--sfw', action='store_true',
                         help="Use 'suitable for work' strings, equals to '--language sfw'.")
     parser.add_argument('-m', '--mod', nargs='*', default='none',
-                        help="(Experimental) Include mod string files. Should be file names in 'mods/' folder, 'all' or 'none'. Defaults to 'none'.")
+                        help="(Experimental) Include mod string files. Should be file names in 'mods/' folder, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only files in 'mods\' work.")
     parser.add_argument('--hash', action='store_true',
                         help="Add a hash into file name.")
     return parser
