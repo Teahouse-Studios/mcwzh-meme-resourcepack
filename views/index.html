@@ -104,7 +104,8 @@
             <v-container>
                 <v-row>
                     <v-col cols="6" sm="3">
-                        <v-select label="游戏版本" :items="consts.type" v-model="inputBasic.type"></v-select>
+                        <v-select @change="typeChange" label="游戏版本" :items="consts.type"
+                                  v-model="inputBasic.type"></v-select>
                     </v-col>
                     <v-col cols="6" sm="3">
                         <v-select label="附加包/材质选择" :items="consts.resourceOption"
@@ -231,6 +232,11 @@
     new Vue({
         el: '#app',
         methods: {
+            typeChange(e) {
+                if (e === 'compat') {
+                    this.inputBasic.legacy = true
+                }
+            },
             open(name) {
                 window.open(name)
             },
@@ -255,7 +261,7 @@
 
                 let data = Object.assign({}, this.inputBasic, {
                     language: getNames(this.input.languageOption, this.input.language, "modules/"),
-                    resource: getNames(this.input.resourceOption, this.input.resource, "modules"),
+                    resource: getNames(this.input.resourceOption, this.input.resource, "modules/"),
                     mod: getNames(this.input.modOption, this.input.mod, "mods/"),
                     hash: true
                 })
