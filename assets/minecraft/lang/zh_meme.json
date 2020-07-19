@@ -1856,7 +1856,7 @@
     "command.expected.separator": "参数后应有空格分隔，但发现了紧邻的数据",
     "command.failed": "试图执行该命令时出现意外错误",
     "command.unknown.argument": "错误的命令参数",
-    "command.unknown.command": "未知或不完整的命令，错误描述见下",
+    "command.unknown.command": "未知或不完整的命令，错误见下",
     "commands.advancement.advancementNotFound": "没有找到名为'%s'的进步",
     "commands.advancement.criterionNotFound": "进步%1$s并不包含条件'%2$s'",
     "commands.advancement.grant.criterion.to.many.failure": "无法将进步%2$s的达成条件'%1$s'赋予%3$s名玩家，因为他们已达成此条件",
