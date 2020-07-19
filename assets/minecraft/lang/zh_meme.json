@@ -1938,7 +1938,7 @@
     "commands.clone.overlap": "源区域和目标区域不能重叠",
     "commands.clone.success": "已成功复制%s个方块",
     "commands.clone.toobig": "指定区域内的方块太多（最大值为%s，指定值为%s）",
-    "commands.context.parse_error": "在位置%2$s处出现了%1$s：%3$s",
+    "commands.context.parse_error": "在第%2$s个字符处出现了%1$s：%3$s",
     "commands.data.block.get": "%2$s, %3$s, %4$s的%1$s在乘以倍率%5$s后的值是%6$s",
     "commands.data.block.invalid": "目标方块不是方块实体",
     "commands.data.block.modified": "已修改%s, %s, %s处的方块数据",
