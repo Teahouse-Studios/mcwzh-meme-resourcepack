@@ -36,7 +36,7 @@ class builder(object):
 
     def get_warning_count(self):
         return self.__warning
-    
+
     def get_error_count(self):
         return self.__error
 
@@ -140,7 +140,8 @@ class builder(object):
                                     root, file), arcname=arcpath)
                             else:
                                 warning = f"Warning: Duplicated '{testpath}', skipping."
-                                print(f"\033[33m{warning}\033[0m", file=sys.stderr)
+                                print(
+                                    f"\033[33m{warning}\033[0m", file=sys.stderr)
                                 self.__logs += f"{warning}\n"
                                 self.__warning += 1
             pack.close()
@@ -150,7 +151,8 @@ class builder(object):
             print(f"\033[1;31m{error}\033[0m", file=sys.stderr)
             self.__logs += f"{error}\n"
             self.__error += 1
-            print("\033[1;31mTerminate building because an error occurred.\033[0m")
+            print(
+                "\033[1;31mTerminate building because an error occurred.\033[0m")
 
     def __process_meta(self, type: str) -> dict:
         with open('pack.mcmeta', 'r', encoding='utf8') as f:
@@ -179,14 +181,22 @@ class builder(object):
             for item in includes:
                 if item in fulllist:
                     include_list.append(item)
-                elif os.path.basename(os.path.normpath(item)) in fulllist:
-                    include_list.append(os.path.basename(os.path.normpath(item)))
+                elif self.__convert_path_to_module(
+                        os.path.normpath(item)) in fulllist:
+                    include_list.append(self.__convert_path_to_module(
+                        os.path.normpath(item)))
                 else:
                     warning = f"Warning: '{item}' does not exist, skipping."
                     print(f"\033[33m{warning}\033[0m", file=sys.stderr)
                     self.__logs += f"{warning}\n"
                     self.__warning += 1
             return include_list
+
+    def __convert_path_to_module(self, path: str) -> str:
+        with open(os.path.join(path, "manifest.json"), 'r', encoding='utf8') as f:
+            manifest = json.load(f)
+        name = manifest['name']
+        return name
 
     def __parse_mods(self, mods: list) -> list:
         existing_mods = os.listdir("mods")
@@ -233,17 +243,17 @@ class builder(object):
         lang_data.update(self.__get_mod_content(mod_supp))
         return lang_data
 
-    def __get_mod_content(self, mods: list) -> dict:
+    def __get_mod_content(self, mod_list: list) -> dict:
         mods = {}
-        for file in mods:
+        for file in mod_list:
             if file.endswith(".json"):
-                with open(os.path.join("mods",file), 'r', encoding='utf8') as f:
+                with open(os.path.join("mods", file), 'r', encoding='utf8') as f:
                     mods.update(json.load(f))
             elif file.endswith(".lang"):
-                with open(os.path.join("mods",file), 'r', encoding='utf8') as f:
+                with open(os.path.join("mods", file), 'r', encoding='utf8') as f:
                     items = [i for i in f.read().splitlines() if (
                         i != '' and not i.startswith('#'))]
-                mods.update(dict(i.split("=", 1) for i in items))
+                mods.update((i.split("=", 1) for i in items))
             else:
                 warning = f'Warning: File type "{file[file.rfind(".") + 1:]}" is not supported, skipping.'
                 print(
@@ -349,13 +359,13 @@ def generate_parser() -> argparse.ArgumentParser:
     parser.add_argument('type', default='normal', choices=[
                         'normal', 'compat', 'legacy', 'clean'], help="Build type. Should be 'normal', 'compat', 'legacy' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted.")
     parser.add_argument('-r', '--resource', nargs='*', default='all',
-                        help="(Experimental) Include resource modules. Should be module names, 'all' or 'none'. Defaults to 'all'. Pseudoly accepts a path, but only module paths in 'modules\' work.")
+                        help="(Experimental) Include resource modules. Should be module names, 'all' or 'none'. Defaults to 'all'. Pseudoly accepts a path, but only module paths in 'modules' work.")
     parser.add_argument('-l', '--language', nargs='*', default='none',
-                        help="(Experimental) Include language modules. Should be module names, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only module paths in 'modules\' work.")
+                        help="(Experimental) Include language modules. Should be module names, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only module paths in 'modules' work.")
     parser.add_argument('-s', '--sfw', action='store_true',
                         help="Use 'suitable for work' strings, equals to '--language sfw'.")
     parser.add_argument('-m', '--mod', nargs='*', default='none',
-                        help="(Experimental) Include mod string files. Should be file names in 'mods/' folder, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only files in 'mods\' work.")
+                        help="(Experimental) Include mod string files. Should be file names in 'mods/' folder, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only files in 'mods/' work.")
     parser.add_argument('--hash', action='store_true',
                         help="Add a hash into file name.")
     return parser
