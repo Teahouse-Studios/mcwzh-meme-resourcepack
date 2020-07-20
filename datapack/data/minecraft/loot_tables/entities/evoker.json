@@ -73,6 +73,16 @@
               "tag": "{CustomModelData:10800006}"
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:10800007}"
+            }
+          ]
         }
       ]
     },
