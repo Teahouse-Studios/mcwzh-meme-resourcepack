@@ -31,7 +31,13 @@
         "Drlee_lihr",
         "WTP016-CN",
         "Light Beacon",
+        "CR-019",
         "Other Minecraft Wiki(ZH) editors"
     ],
+    "special_thanks": {
+        "Addonscommandresource": [{"minecraft:trident":"The model in BE"}],
+        "Blockbench": [{"minecraft:totem_of_undying":"Model"},{"minecraft:brewing_stand":"Model"}],
+        "Golden_eggs": [{"minecraft:gui/title/mojangstudios":"Fonts"}],
+    },
     "home": "https://github.com/lakejason0/mcwzh-meme-resourcepack"
 }
