@@ -2225,7 +2225,7 @@
     "commands.trigger.set.success": "已触发%s（数值已设为%s）",
     "commands.trigger.simple.success": "已触发%s",
     "commands.weather.set.clear": "呐，现在开始就要放晴了哦",
-    "commands.weather.set.rain": "在充满雨的世界，一起勇敢地爱下去",
+    "commands.weather.set.rain": "在充满雨雪的世界，一起勇敢地爱下去",
     "commands.weather.set.thunder": "在充满雷雨的世界，一起勇敢地爱下去",
     "commands.whitelist.add.failed": "玩家已在白名单内",
     "commands.whitelist.add.success": "已将%s加入白名单",
