@@ -178,7 +178,7 @@
                             </v-expansion-panel-header>
                             <v-expansion-panel-content>
                                 <pre style="padding-bottom:15px;white-space: pre-wrap;font-family: 'Cascadia Code', 'Fira Code','Consolas', monospace;">{% raw %}{{item.content}}{% endraw %}</pre>
-                                <v-btn v-if="item.filename" @click="open(item.filename)" outlined color="indigo">
+                                <v-btn v-if="item.filename" @click="open('builds/' + item.filename)" outlined color="indigo">
                                     下载
                                 </v-btn>
                                 <v-btn v-else
