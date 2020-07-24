@@ -27,9 +27,9 @@ jobs:
           draft: false
           files: |
             builds/mcwzh-meme.zip
-            builds/mcwzh-meme_sfw.zip
-            builds/mcwzh-meme_nofigure_sfw.zip
+            builds/mcwzh-meme_nomod_sfw.zip
+            builds/mcwzh-meme_momod_noresource_sfw.zip
             builds/mcwzh-meme_compatible_sfw.zip
-            builds/mcwzh-meme_compatible_nofigure_sfw.zip
-            builds/mcwzh-meme_compatible_nofigure_nomod_sfw.zip
-            builds/mcwzh-meme_compatible_nofigure_legacy_sfw.zip
+            builds/mcwzh-meme_compatible_nomod_sfw.zip
+            builds/mcwzh-meme_compatible_nomod_noresource_sfw.zip
+            builds/mcwzh-meme_legacy_noresource_sfw.zip
