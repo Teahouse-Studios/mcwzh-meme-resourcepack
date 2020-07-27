@@ -44,15 +44,14 @@
                 </v-toolbar-title>
                 <v-spacer></v-spacer>
                 <div v-if="$vuetify.breakpoint.name !== 'xs'">
-                    <v-btn text rel="noopener noreferrer"
-                           href="https://github.com/lakejason0/mcwzh-meme-resourcepack/releases">
-                        <v-icon>mdi-github-circle</v-icon>&emsp;Release 下载
-                    </v-btn>
                     <v-btn text rel="noopener noreferrer" href="https://www.mcbbs.net/thread-1004643-1-1.html">
-                        MCBBS
+                        <v-icon left href="https://www.mcbbs.net/thread-1004643-1-1.html">mdi-post</v-icon> MCBBS
                     </v-btn>
-                    <v-btn text rel="noopener noreferrer" href="https://github.com/lakejason0/mcwzh-meme-resourcepack">
-                        <v-icon>mdi-github-circle</v-icon>
+                    <v-btn text rel="noopener noreferrer" href="https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack">
+                        <v-icon left>mdi-github-circle</v-icon> Github
+                    </v-btn>
+                    <v-btn text rel="noopener noreferrer" href="https://dianliang-oss-1301161188.file.myqcloud.com/zh-meme-respack/record-java.zip">
+                        <v-icon left>mdi-disc</v-icon> 唱片包
                     </v-btn>
                 </div>
                 <div v-else>
@@ -72,17 +71,9 @@
                                 <v-list-item-text>Sponsored by SPGoding</v-list-item-text>
                             </v-list-item>
                             <v-list-item rel="noopener noreferrer"
-                                         href="https://github.com/lakejason0/mcwzh-meme-resourcepack/releases">
+                                         href="https://www.mcbbs.net/thread-1004643-1-1.html">
                                 <v-list-item-icon>
-                                    <v-icon>mdi-github-circle</v-icon>
-                                </v-list-item-icon>
-                                <v-list-item-text>
-                                    Release 下载
-                                </v-list-item-text>
-                            </v-list-item>
-                            <v-list-item rel="noopener noreferrer" href="https://www.mcbbs.net/thread-1004643-1-1.html">
-                                <v-list-item-icon>
-                                    <v-icon>mdi-open-in-new</v-icon>
+                                    <v-icon>mdi-post</v-icon>
                                 </v-list-item-icon>
                                 <v-list-item-text>
                                     MCBBS
@@ -94,9 +85,19 @@
                                     <v-icon>mdi-github-circle</v-icon>
                                 </v-list-item-icon>
                                 <v-list-item-text>
-                                    查看 Github 仓库
+                                    Github
                                 </v-list-item-text>
                             </v-list-item>
+                        </v-list-item>
+                        <v-list-item rel="noopener noreferrer"
+                                     href="https://dianliang-oss-1301161188.file.myqcloud.com/zh-meme-respack/record-java.zip">
+                            <v-list-item-icon>
+                                <v-icon>mdi-disc</v-icon>
+                            </v-list-item-icon>
+                            <v-list-item-text>
+                                唱片包
+                            </v-list-item-text>
+                        </v-list-item>
                         </v-list>
                     </v-menu>
                 </div>
