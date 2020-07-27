@@ -223,11 +223,9 @@
                     </v-col>
                 </v-row>
             </v-container>
-            <v-footer class="font-weight-light">
-                {% if footer_existence %}
-                    {% include './custom/footer.html' %}
-                {% endif %}
-            </v-footer>
+            {% if footer_existence %}
+                {% include './custom/footer.html' %}
+            {% endif %}
         </v-main>
     </v-app>
 </div>
