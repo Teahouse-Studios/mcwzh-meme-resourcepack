@@ -38,7 +38,7 @@
     "sodium.options.use_chunk_face_culling.name": "启用剔除区块遮挡面",
     "sodium.options.use_chunk_face_culling.tooltip": "启用后，将增加一道使用CPU的剔除流程来判断区块表面是否可见。这可在早期渲染流程时大量减少需要渲染的方块面数，以节约GPU的显存带宽和渲染时间。",
     "sodium.options.use_compact_vertex_format.name": "启用顶点压缩格式",
-    "sodium.options.use_compact_vertex_format.tooltip": "启用后，将在区块渲染中使用压缩后的顶点格式，从而限制顶点属性的精度。这将减少约40%的显存占用和带宽需求。但在某些极端情况下可能导致深度冲突（贴图闪烁）的问题。",
+    "sodium.options.use_compact_vertex_format.tooltip": "启用后，将在区块渲染中使用压缩后的顶点格式，从而限制顶点属性的精度。这将减少约40%%的显存占用和带宽需求。但在某些极端情况下可能导致深度冲突（贴图闪烁）的问题。",
     "sodium.options.use_fog_occlusion.name": "启用迷雾遮挡",
     "sodium.options.use_fog_occlusion.tooltip": "启用后，将在渲染时跳过一些被迷雾完全隐藏的区块。这通常会适当降低每帧渲染的区块数量，尤其是当迷雾较浓的时候（即水下）。",
     "sodium.options.use_entity_culling.name": "启用实体剔除",
