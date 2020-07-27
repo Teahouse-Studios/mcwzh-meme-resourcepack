@@ -22,10 +22,11 @@ def generate_website():
     resource_modules = [
         "modules/" + module for module in build.module_checker().get_module_list('resource')]
     header_existence = os.path.exists("./views/custom/header.html")
+    notice_existence = os.path.exists("./views/custom/notice.html")
     footer_existence = os.path.exists("./views/custom/footer.html")
     manifests = build.module_checker().get_manifests()
     return render_template("index.html", mods=mods, enmods=enmods, language=language_modules, resource=resource_modules,
-                           header_existence=header_existence, footer_existence=footer_existence, manifests=manifests)
+                           header_existence=header_existence, notice_existence=notice_existence, footer_existence=footer_existence, manifests=manifests)
 
 
 @app.route('/ajax', methods=['POST'])

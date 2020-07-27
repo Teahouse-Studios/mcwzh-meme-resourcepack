@@ -33,6 +33,9 @@
 <div id="app">
     <v-app>
         <v-main>
+            {% if header_existence %}
+                {% include './custom/header.html' %}
+            {% endif %}
             <v-app-bar
                     outlined
                     color="white">
@@ -98,8 +101,8 @@
                     </v-menu>
                 </div>
             </v-app-bar>
-            {% if header_existence %}
-                {% include './custom/header.html' %}
+            {% if notice_existence %}
+                {% include './custom/notice.html' %}
             {% endif %}
             <v-container>
                 <v-row>
