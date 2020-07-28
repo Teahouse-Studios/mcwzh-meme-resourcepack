@@ -108,7 +108,7 @@
             <v-container>
                 <v-row>
                     <v-col cols="6" sm="3">
-                        <v-select @change="typeChange" label="游戏版本" :items="consts.type"
+                        <v-select label="游戏版本" :items="consts.type"
                                   v-model="inputBasic.type"></v-select>
                     </v-col>
                     <v-col cols="6" sm="3">
@@ -119,11 +119,9 @@
                         <v-select label="Mod内容选择" :items="consts.modOption" v-model="input.modOption"></v-select>
                     </v-col>
                     <v-col cols="12" sm="3">
-                        <v-select label="语言选择" :items="consts.languageOption" v-model="input.languageOption"></v-select>
+                        <v-select label="语言选项" :items="consts.languageOption" v-model="input.languageOption"></v-select>
                     </v-col>
                 </v-row>
-                <v-checkbox label='Suitable for work ("_sfw")' v-model="inputBasic.sfw"></v-checkbox>
-                <v-checkbox label='旧版（1.12.2及以下）语言文件格式' v-model="inputBasic.legacy"></v-checkbox>
                 <v-checkbox label='调试模式' v-model="inputBasic.debug"></v-checkbox>
                 <v-row>
                     <v-col cols="12" sm="4">
@@ -234,11 +232,6 @@
     new Vue({
         el: '#app',
         methods: {
-            typeChange(e) {
-                if (e === 'compat') {
-                    this.inputBasic.legacy = true
-                }
-            },
             open(name) {
                 window.open(name)
             },
@@ -306,8 +299,6 @@
             loading: false,
             inputBasic: {
                 type: "normal",
-                sfw: false,
-                legacy: false,
                 debug: false
             },
             logs: [],
