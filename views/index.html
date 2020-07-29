@@ -277,7 +277,8 @@
                     language: getNames(this.input.languageOption, this.input.language, "modules/"),
                     resource: this.input.resource.map(v => v.slice("modules/".length)),
                     mod: getNames(this.input.modOption, this.input.mod, "mods/"),
-                    hash: true
+                    hash: true,
+                    sfw: this.input.language.includes("modules/sfw")
                 })
                 console.log(data)
                 axios({url: '/ajax', method: 'POST', data}).then(function (res) {
