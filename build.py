@@ -68,6 +68,10 @@ class builder(object):
             # get language supplement
             lang_supp = self.__parse_includes(
                 args['language'], checker.get_module_list('language'))
+            # merge sfw into lang_supp
+            if args['sfw']:
+                if not 'sfw' in lang_supp:
+                    lang_supp.append('sfw')
             # get resource supplement
             res_supp = self.__parse_includes(
                 args['resource'], checker.get_module_list('resource'))
