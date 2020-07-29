@@ -69,9 +69,8 @@ class builder(object):
             lang_supp = self.__parse_includes(
                 args['language'], checker.get_module_list('language'))
             # merge sfw into lang_supp
-            if args['sfw']:
-                if not 'sfw' in lang_supp:
-                    lang_supp.append('sfw')
+            if args['sfw'] and 'sfw' not in lang_supp:
+                lang_supp.append('sfw')
             # get resource supplement
             res_supp = self.__parse_includes(
                 args['resource'], checker.get_module_list('resource'))
@@ -99,12 +98,18 @@ class builder(object):
             info = f"Building pack {pack_name}"
             print(info)
             self.__logs += f"{info}\n"
-            pack_name = os.path.join("builds", pack_name)
+            # set output dir
+            if 'output' in args and args['output']:
+                output_dir = args['output']
+            else:
+                output_dir = "builds"
+            pack_name = os.path.join(output_dir, pack_name)
             # mkdir
-            if os.path.exists("builds") and not os.path.isdir("builds"):
-                os.remove("builds")
-            if not os.path.exists("builds"):
-                os.mkdir("builds")
+            if os.path.exists(output_dir) and not os.path.isdir(output_dir):
+                os.remove(output_dir)
+            if not os.path.exists(output_dir):
+                os.mkdir(output_dir)
+            # create pack
             pack = zipfile.ZipFile(
                 pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
             pack.write("pack.png")
@@ -251,9 +256,9 @@ class builder(object):
                     mods.update(json.load(f))
             elif file.endswith(".lang"):
                 with open(os.path.join("mods", file), 'r', encoding='utf8') as f:
-                    items = [i for i in f.read().splitlines() if (
-                        i != '' and not i.startswith('#'))]
-                mods.update((i.split("=", 1) for i in items))
+                    items = (i for i in f.read().splitlines() if
+                             i != '' and not i.startswith('#'))
+                mods.update(i.split("=", 1) for i in items)
             else:
                 warning = f'Warning: File type "{file[file.rfind(".") + 1:]}" is not supported, skipping.'
                 print(
@@ -366,6 +371,8 @@ def generate_parser() -> argparse.ArgumentParser:
                         help="Use 'suitable for work' strings, equals to '--language sfw'.")
     parser.add_argument('-m', '--mod', nargs='*', default='none',
                         help="(Experimental) Include mod string files. Should be file names in 'mods/' folder, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only files in 'mods/' work.")
+    parser.add_argument(
+        '-o', '--output', help="Specify the location to output packs. Default location is 'builds/' folder.")
     parser.add_argument('--hash', action='store_true',
                         help="Add a hash into file name.")
     return parser

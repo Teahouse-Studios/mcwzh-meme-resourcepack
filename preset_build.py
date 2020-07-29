@@ -5,21 +5,21 @@ import os
 def main():
     preset_args = [
         {'type': 'normal', 'language': [], 'resource': [
-            'all'], 'mod': ['all'], 'sfw': True, 'hash': False},
+            'all'], 'mod': ['all'], 'sfw': True, 'hash': False, 'output': None},
         {'type': 'normal', 'language': [], 'resource': [
-            'all'], 'mod': [], 'sfw': True, 'hash': False},
+            'all'], 'mod': [], 'sfw': True, 'hash': False, 'output': None},
         {'type': 'normal', 'language': [], 'resource': [
-        ], 'mod': [], 'sfw': True, 'hash': False},
+        ], 'mod': [], 'sfw': True, 'hash': False, 'output': None},
         {'type': 'compat', 'language': [], 'resource': [
-            'all'], 'mod': ['all'], 'sfw': True, 'hash': False},
+            'all'], 'mod': ['all'], 'sfw': True, 'hash': False, 'output': None},
         {'type': 'compat', 'language': [], 'resource': [
-            'all'], 'mod': [], 'sfw': True, 'hash': False},
+            'all'], 'mod': [], 'sfw': True, 'hash': False, 'output': None},
         {'type': 'compat', 'language': [], 'resource': [
-        ], 'mod': [], 'sfw': True, 'hash': False},
+        ], 'mod': [], 'sfw': True, 'hash': False, 'output': None},
         {'type': 'legacy', 'language': ['attributes', 'old_strings', 'diamond_hoe'], 'resource': [
-        ], 'mod': [], 'sfw': True, 'hash': False},
+        ], 'mod': [], 'sfw': True, 'hash': False, 'output': None},
         {'type': 'normal', 'language': [], 'resource': [
-            'all'], 'mod': ['all'], 'sfw': False, 'hash': False},
+            'all'], 'mod': ['all'], 'sfw': False, 'hash': False, 'output': None},
     ]
     preset_name = [
         "mcwzh-meme_sfw.zip",
@@ -49,7 +49,8 @@ def main():
             if pack_builder.get_warning_count() == 0:
                 perfect_pack_counter += 1
             if name != "mcwzh-meme.zip":
-                os.rename("builds/mcwzh-meme.zip", os.path.join(base_folder, name))
+                os.rename("builds/mcwzh-meme.zip",
+                          os.path.join(base_folder, name))
             print(f"Renamed pack to {name}.")
         else:
             print(f"Failed to build pack {name}.")
