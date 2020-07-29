@@ -8,8 +8,7 @@
     "stat.boatOneCm": "stat.minecraft.boat_one_cm",
     "stat.breakItem": "stat.minecraft.break_item",
     "stat.brewingstandInteraction": "stat.minecraft.interact_with_brewingstand",
-    "stat.craftItem",
-    
+    "stat.craftItem": "stat.minecraft.craft_item",
     "stat.cakeSlicesEaten": "stat.minecraft.eat_cake_slice",
     "stat.cauldronFilled": "stat.minecraft.fill_cauldron",
     "stat.cauldronUsed": "stat.minecraft.use_cauldron",

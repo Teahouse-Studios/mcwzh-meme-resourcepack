@@ -1,15 +1,5 @@
 {
     "todo": [
-        "enchantment.binding_curse",
-        "entity.EvocationIllager.name",
-        "entity.IllusionIllager.name",
-        "entity.VindicationIllager.name",
-        "resourcepack.downloading",
-        "resourcepack.progress",
-        "resourcepack.requesting",
-        "stat.craftItem",
-        "stat.diveOneCm",
-        "stat.leaveGame",
         "subtitles.entity.evocation_fangs.attack",
         "subtitles.entity.evocation_illager.ambient",
         "subtitles.entity.evocation_illager.cast_spell",
