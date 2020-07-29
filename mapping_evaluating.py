@@ -1,5 +1,6 @@
 import os
 import json
+import sys
 
 legacy_lang_data = {}
 
@@ -21,9 +22,9 @@ for item in mappings:
     else:
         with open(os.path.join("mappings", mapping_file), 'r', encoding='utf8') as f:
             mapping = json.load(f)
-        for k, v in mapping:
+        for k, v in mapping.items():
             mapping_data.update({k: v})
 
-for k in mapping_data.keys():
-    if k not in legacy_lang_data.keys():
+for k in legacy_lang_data.keys():
+    if k not in mapping_data.keys():
         print(k) 
