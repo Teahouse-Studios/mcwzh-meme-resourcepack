@@ -110,6 +110,7 @@
     "stat.minecraft.break_item": "消耗了%1$s个工具",
     "stat.minecraft.craft_item": "合成了%1$s个物品",
     "stat.minecraft.create_world": "已创建的世界数",
+    "stat.minecraft.dive_one_cm": "水下移动距离",
     "stat.minecraft.join_multiplayer": "一起玩次数",
     "stat.minecraft.load_world": "退完真香次数",
     "stat.minecraft.mine_block": "挖掘了%1$s个方块",
