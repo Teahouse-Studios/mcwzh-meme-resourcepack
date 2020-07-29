@@ -1,11 +1,5 @@
 {
-    "todo": [
-        "tile.anvil.intact.name",
-        "tile.log.acacia.name",
-        "tile.quartzBlock.default.name",
-        "tile.sand.default.name",
-        "tile.stoneSlab.name"
-    ],
+    "todo": [],
     "wontdo": [
         "commands" // diff is too large
     ],
