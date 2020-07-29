@@ -23,7 +23,7 @@
     "stat.deaths": "stat.minecraft.deaths",
     "stat.depleted": "stat_type.minecraft.broken",
     "stat.dispenserInspected": "stat.minecraft.inspect_dispenser",
-    "stat.diveOneCm": "",
+    "stat.diveOneCm": "stat.minecraft.dive_one_cm",
     "stat.swimOneCm": "stat.minecraft.swim_one_cm",
     "stat.drop": "stat.minecraft.drop",
     "stat.dropped": "stat_type.minecraft.dropped",
