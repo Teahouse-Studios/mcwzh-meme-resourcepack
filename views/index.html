@@ -37,7 +37,7 @@
                 {% include './custom/header.html' %}
             {% endif %}
             <v-app-bar
-                    outlined
+                    outlined flat
                     color="white">
                 <v-toolbar-title>梗体中文 · 在线构建
                     <sub v-if="$vuetify.breakpoint.name !== 'xs'"><small>Sponsored by SPGoding</small></sub>
@@ -45,13 +45,18 @@
                 <v-spacer></v-spacer>
                 <div v-if="$vuetify.breakpoint.name !== 'xs'">
                     <v-btn text rel="noopener noreferrer" href="https://www.mcbbs.net/thread-1004643-1-1.html">
-                        <v-icon left href="https://www.mcbbs.net/thread-1004643-1-1.html">mdi-post</v-icon> MCBBS
+                        <v-icon left href="https://www.mcbbs.net/thread-1004643-1-1.html">mdi-post</v-icon>
+                        MCBBS
                     </v-btn>
-                    <v-btn text rel="noopener noreferrer" href="https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack">
-                        <v-icon left>mdi-github-circle</v-icon> Github
+                    <v-btn text rel="noopener noreferrer"
+                           href="https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack">
+                        <v-icon left>mdi-github-circle</v-icon>
+                        Github
                     </v-btn>
-                    <v-btn text rel="noopener noreferrer" href="https://dianliang-oss-1301161188.file.myqcloud.com/zh-meme-respack/record-java.zip">
-                        <v-icon left>mdi-disc</v-icon> 唱片包
+                    <v-btn text rel="noopener noreferrer"
+                           href="https://dianliang-oss-1301161188.file.myqcloud.com/zh-meme-respack/record-java.zip">
+                        <v-icon left>mdi-disc</v-icon>
+                        唱片包
                     </v-btn>
                 </div>
                 <div v-else>
@@ -88,16 +93,15 @@
                                     Github
                                 </v-list-item-text>
                             </v-list-item>
-                        </v-list-item>
-                        <v-list-item rel="noopener noreferrer"
-                                     href="https://dianliang-oss-1301161188.file.myqcloud.com/zh-meme-respack/record-java.zip">
-                            <v-list-item-icon>
-                                <v-icon>mdi-disc</v-icon>
-                            </v-list-item-icon>
-                            <v-list-item-text>
-                                唱片包
-                            </v-list-item-text>
-                        </v-list-item>
+                            <v-list-item rel="noopener noreferrer"
+                                         href="https://dianliang-oss-1301161188.file.myqcloud.com/zh-meme-respack/record-java.zip">
+                                <v-list-item-icon>
+                                    <v-icon>mdi-disc</v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-text>
+                                    唱片包
+                                </v-list-item-text>
+                            </v-list-item>
                         </v-list>
                     </v-menu>
                 </div>
@@ -107,28 +111,33 @@
             {% endif %}
             <v-container>
                 <v-row>
-                    <v-col cols="6" sm="3">
-                        <v-select @change="typeChange" label="游戏版本" :items="consts.type"
+                    <v-col cols="6" sm="4">
+                        <v-select label="游戏版本" :items="consts.type"
                                   v-model="inputBasic.type"></v-select>
                     </v-col>
-                    <v-col cols="6" sm="3">
-                        <v-select label="附加包/材质选择" :items="consts.resourceOption"
-                                  v-model="input.resourceOption"></v-select>
-                    </v-col>
-                    <v-col cols="12" sm="3">
+                    <v-col cols="12" sm="4">
                         <v-select label="Mod内容选择" :items="consts.modOption" v-model="input.modOption"></v-select>
                     </v-col>
-                    <v-col cols="12" sm="3">
-                        <v-select label="语言选择" :items="consts.languageOption" v-model="input.languageOption"></v-select>
+                    <v-col cols="12" sm="4">
+                        <v-select label="语言选项" :items="consts.languageOption" v-model="input.languageOption"></v-select>
                     </v-col>
                 </v-row>
-                <v-checkbox label='Suitable for work ("_sfw")' v-model="inputBasic.sfw"></v-checkbox>
-                <v-checkbox label='旧版（1.12.2及以下）语言文件格式' v-model="inputBasic.legacy"></v-checkbox>
                 <v-checkbox label='调试模式' v-model="inputBasic.debug"></v-checkbox>
                 <v-row>
                     <v-col cols="12" sm="4">
-                        <v-select label="附加包/材质选择" :disabled="input.resourceOption !== 'custom'" multiple
+                        <v-select label="附加包/材质选择" multiple
                                   :items="consts.resourceList" v-model="input.resource">
+                            <template v-slot:prepend-item>
+                                <v-list-item ripple @click="toggleResource">
+                                    <v-list-item-action>
+                                        <v-icon>{% raw %} {{ resourceIcon }}{% endraw %}</v-icon>
+                                    </v-list-item-action>
+                                    <v-list-item-content>
+                                        <v-list-item-title>全选</v-list-item-title>
+                                    </v-list-item-content>
+                                </v-list-item>
+                                <v-divider class="mt-2"></v-divider>
+                            </template>
                             <template v-slot:item="data">
                                 <v-list-item v-bind="data.attrs" v-on="data.on">
                                     <v-list-item-action>
@@ -182,7 +191,8 @@
                             </v-expansion-panel-header>
                             <v-expansion-panel-content>
                                 <pre style="padding-bottom:15px;white-space: pre-wrap;font-family: 'Cascadia Code', 'Fira Code','Consolas', monospace;">{% raw %}{{item.content}}{% endraw %}</pre>
-                                <v-btn v-if="item.filename" @click="open('builds/' + item.filename)" outlined color="indigo">
+                                <v-btn v-if="item.filename" @click="open('builds/' + item.filename)" outlined
+                                       color="indigo">
                                     下载
                                 </v-btn>
                                 <v-btn v-else
@@ -234,13 +244,15 @@
     new Vue({
         el: '#app',
         methods: {
-            typeChange(e) {
-                if (e === 'compat') {
-                    this.inputBasic.legacy = true
-                }
-            },
             open(name) {
                 window.open(name)
+            },
+            toggleResource() {
+                if (this.input.resource.length === this.consts.resourceList.length) {
+                    this.input.resource = []
+                } else {
+                    this.input.resource = this.consts.resourceList
+                }
             },
             submit() {
                 this.loading = true
@@ -263,9 +275,10 @@
 
                 let data = Object.assign({}, this.inputBasic, {
                     language: getNames(this.input.languageOption, this.input.language, "modules/"),
-                    resource: getNames(this.input.resourceOption, this.input.resource, "modules/"),
+                    resource: this.input.resource.map(v => v.slice("modules/".length)),
                     mod: getNames(this.input.modOption, this.input.mod, "mods/"),
-                    hash: true
+                    hash: true,
+                    sfw: this.input.language.includes("modules/sfw")
                 })
                 console.log(data)
                 axios({url: '/ajax', method: 'POST', data}).then(function (res) {
@@ -306,8 +319,6 @@
             loading: false,
             inputBasic: {
                 type: "normal",
-                sfw: false,
-                legacy: false,
                 debug: false
             },
             logs: [],
@@ -321,6 +332,15 @@
             }
         }),
         computed: {
+            resourceIcon() {
+                if (this.input.resource.length === 0) {
+                    return 'mdi-checkbox-blank-outline'
+                } else if (this.input.resource.length === this.consts.resourceList.length) {
+                    return 'mdi-close-box'
+                } else {
+                    return 'mdi-minus-box'
+                }
+            },
             consts: () => ({
                 type: [{text: "1.13以上", value: "normal"}, {text: "1.12.2", value: "compat"}],
                 resourceOption: [{text: "所有", value: "all"}, {text: "无", value: "none"}, {

@@ -3,6 +3,7 @@
     "enchantment.arrowFire": "enchantment.minecraft.flame",
     "enchantment.arrowInfinite": "enchantment.minecraft.infinity",
     "enchantment.arrowKnockback": "enchantment.minecraft.punch",
+    "enchantment.binding_curse": "enchantment.minecraft.binding_curse",
     "enchantment.damage.all": "enchantment.minecraft.binding_curse",
     "enchantment.damage.arthropods": "enchantment.minecraft.bane_of_arthropods",
     "enchantment.damage.undead": "enchantment.minecraft.smite",
