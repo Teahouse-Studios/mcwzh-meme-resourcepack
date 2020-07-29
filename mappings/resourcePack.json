@@ -1,5 +1,6 @@
 {
     "resourcePack.available.title": "resourcePack.available.title",
+    "resourcepack.downloading": "resourcepack.downloading",
     "resourcePack.folderInfo": "resourcePack.folderInfo",
     "resourcePack.incompatible": "resourcePack.incompatible",
     "resourcePack.incompatible.confirm.new": "resourcePack.incompatible.confirm.new",
@@ -8,6 +9,8 @@
     "resourcePack.incompatible.new": "resourcePack.incompatible.new",
     "resourcePack.incompatible.old": "resourcePack.incompatible.old",
     "resourcePack.openFolder": "resourcePack.openFolder",
+    "resourcepack.progress": "resourcepack.progress",
+    "resourcepack.requesting": "resourcepack.requesting",
     "resourcePack.selected.title": "resourcePack.selected.title",
     "resourcePack.title": "resourcePack.title"
 }
