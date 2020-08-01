@@ -6,7 +6,7 @@
 
 注：此资源包适用于Java版。有关到基岩版的移植，参见[基岩版移植](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock)。
 
-**注：若发现自身可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。**
+**注：若发现可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。**
 
 ## 作用
 
@@ -28,7 +28,7 @@
 
 ### 1.12.2及以下版本支持
 
-1.13对可翻译字符串进行了一次破坏性更改，这意味着1.12.2及以下无法直接正常使用本资源包。同时，1.12.2及以下版本并不支持读取ASCII格式的Unicode码。通过建立映射表，我们初步实现了1.12.2及以下版本对大部分字符串的支持（也就是除去命令），详见Issue [#34](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/issues/34)。1.12.2及以下版本请使用带有 `_legacy` 后缀的自动构建。
+1.13对可翻译字符串进行了一次破坏性更改，这意味着1.12.2及以下无法直接正常使用本资源包。同时，1.12.2及以下版本并不支持读取ASCII格式的Unicode码。通过建立映射表，我们初步实现了1.12.2及以下版本对大部分字符串的支持（也就是除去命令），详见Issue [#34](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/issues/34)。1.12.2及以下版本请使用带有 `_legacy` 的预设包。
 
 ### 唱片替换
 
@@ -42,7 +42,7 @@
 
 ### 可选的文件替换
 
-关于愚人节快照20w14infinite，请在自己构建时加上 `-l 20w14inf` 来得到有限的梗体中文支持。
+关于愚人节快照20w14infinite，请在构建时加入参数 `-l 20w14inf` 来得到有限的梗体中文支持。
 
 20w06a重命名了下界生物群系。请加入参数 `-l nether_biome` 来获取对以前版本的支持。
 
@@ -134,7 +134,7 @@ python build.py -h
 
 ## 贡献
 
-我们欢迎你为这个资源包贡献自己的想法。请参阅 `CONTRIBUTING.md` 以获取一些建议。
+我们欢迎你为这个资源包贡献自己的想法。请参阅 [`CONTRIBUTING.md`](/CONTRIBUTING.md) 以获取一些建议。
 
 积累一定贡献后我们会邀请你成为Collaborator。优先考虑中文Minecraft Wiki的编辑者。
 
@@ -142,7 +142,7 @@ python build.py -h
 
 * 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
 * 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
-  * 关于正确的译名，请参见[中文Minecraft Wiki的译名标准化](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。
+  * 关于正确的译名，请参见[中文Minecraft Wiki上的标准译名列表](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。
 * 本资源包的资源包部分（即除去自动构建脚本和Mod内容字符串未经过梗体中文更改的部分）以 ***CC BY-NC-SA 4.0*** 协议授权。
   * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   * 这不是法律建议。
