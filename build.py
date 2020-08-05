@@ -309,7 +309,7 @@ class module_checker(object):
         return self.__info
 
     def check_module(self):
-        base_folder = os.path.dirname(__file__) + '/modules'
+        base_folder = os.path.join(os.path.dirname(__file__), 'modules')
         lang_list = []
         res_list = []
         for module in os.listdir(base_folder):
