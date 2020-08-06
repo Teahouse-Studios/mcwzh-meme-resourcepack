@@ -14,7 +14,7 @@ def main():
     if args['type'] == 'clean':
         for i in os.listdir('builds/'):
             os.remove('builds/' + i)
-        print("\n[INFO] Deleted all packs built.")
+        print("\nDeleted all packs built.")
     else:
         pack_builder = builder()
         pack_builder.set_args(args)
@@ -42,13 +42,13 @@ class builder(object):
 
     def get_filename(self):
         if self.__filename == "":
-            return "Did not build any packs."
+            return "Did not build any pack."
         else:
             return self.__filename
 
     def get_logs(self):
         if self.__logs == "":
-            return "Did not build any packs."
+            return "Did not build any pack."
         else:
             return self.__logs
 
@@ -315,7 +315,7 @@ class module_checker(object):
         for module in os.listdir(base_folder):
             manifest = os.path.join(base_folder, module, "manifest.json")
             if os.path.exists(manifest) and os.path.isfile(manifest):
-                with open(os.path.join(base_folder, module, "manifest.json"), 'r', encoding='utf8') as f:
+                with open(manifest, 'r', encoding='utf8') as f:
                     data = json.load(f)
                 name = data['name']
                 module_type = data['type']
