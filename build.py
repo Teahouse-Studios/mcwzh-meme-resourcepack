@@ -80,7 +80,7 @@ class builder(object):
             # TODO: split mod strings into namespaces
             main_lang_data = self.__merge_language(lang_supp, mod_supp)
             # get realms strings
-            with open("assets/realms/lang/zh_meme.json", 'r', encoding='utf8') as f:
+            with open(os.path.join(os.path.dirname(__file__), "assets/realms/lang/zh_meme.json"), 'r', encoding='utf8') as f:
                 realms_lang_data = json.load(f)
             # process pack name
             if args['hash']:
@@ -112,8 +112,8 @@ class builder(object):
             # create pack
             pack = zipfile.ZipFile(
                 pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
-            pack.write("pack.png")
-            pack.write("LICENSE")
+            pack.write(os.path.join(os.path.dirname(__file__), "pack.png"), arcname="pack.png")
+            pack.write(os.path.join(os.path.dirname(__file__), "LICENSE"), arcname="LICENSE")
             pack.writestr("pack.mcmeta", json.dumps(
                 mcmeta, indent=4, ensure_ascii=False))
             # dump lang file into pack
@@ -131,7 +131,7 @@ class builder(object):
                     f"assets/minecraft/lang/{lang_file_name}", legacy_content)
             # dump resources
             for item in res_supp:
-                base_folder = os.path.join("modules", item)
+                base_folder = os.path.join(os.path.dirname(__file__), "modules", item)
                 for root, dirs, files in os.walk(base_folder):
                     for file in files:
                         if file != "manifest.json":
@@ -160,7 +160,7 @@ class builder(object):
                 "\033[1;31mTerminate building because an error occurred.\033[0m")
 
     def __process_meta(self, type: str) -> dict:
-        with open('pack.mcmeta', 'r', encoding='utf8') as f:
+        with open(os.path.join(os.path.dirname(__file__),'pack.mcmeta'), 'r', encoding='utf8') as f:
             data = json.load(f)
         if type == 'compat':
             data.pop('language')
@@ -204,7 +204,7 @@ class builder(object):
         return name
 
     def __parse_mods(self, mods: list) -> list:
-        existing_mods = os.listdir("mods")
+        existing_mods = os.listdir(os.path.join(os.path.dirname(__file__), 'mods'))
         if 'none' in mods:
             return []
         elif 'all' in mods:
@@ -225,7 +225,7 @@ class builder(object):
 
     def __merge_language(self, language_supp: list, mod_supp: list) -> dict:
         # load basic strings
-        with open("assets/minecraft/lang/zh_meme.json", 'r', encoding='utf8') as f:
+        with open(os.path.dirname(__file__) + "/assets/minecraft/lang/zh_meme.json", 'r', encoding='utf8') as f:
             lang_data = json.load(f)
         for item in language_supp:
             add_file = os.path.join("modules", item, "add.json")
@@ -252,10 +252,10 @@ class builder(object):
         mods = {}
         for file in mod_list:
             if file.endswith(".json"):
-                with open(os.path.join("mods", file), 'r', encoding='utf8') as f:
+                with open(os.path.join(os.path.dirname(__file__), "mods", file), 'r', encoding='utf8') as f:
                     mods.update(json.load(f))
             elif file.endswith(".lang"):
-                with open(os.path.join("mods", file), 'r', encoding='utf8') as f:
+                with open(os.path.join(os.path.dirname(__file__), "mods", file), 'r', encoding='utf8') as f:
                     items = (i for i in f.read().splitlines() if
                              i != '' and not i.startswith('#'))
                 mods.update(i.split("=", 1) for i in items)
