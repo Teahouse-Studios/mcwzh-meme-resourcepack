@@ -13,7 +13,7 @@ def main():
     args = vars(parser.parse_args())
     if args['type'] == 'clean':
         for i in os.listdir('builds/'):
-            os.remove('builds/' + i)
+            os.remove(os.path.join('builds', i))
         print("\nDeleted all packs built.")
     else:
         pack_builder = builder()
@@ -86,7 +86,7 @@ class builder(object):
             if args['hash']:
                 sha256 = hashlib.sha256(json.dumps(
                     args).encode('utf8')).hexdigest()
-                pack_name = "mcwzh-meme." + sha256[:7] + ".zip"
+                pack_name = f"mcwzh-meme.{sha256[:7]}.zip"
             else:
                 pack_name = "mcwzh-meme.zip"
             self.__filename = pack_name
@@ -119,16 +119,16 @@ class builder(object):
             # dump lang file into pack
             if args['type'] != 'legacy':
                 # normal/compat
-                pack.writestr("assets/minecraft/lang/" + lang_file_name,
+                pack.writestr(f"assets/minecraft/lang/{lang_file_name}",
                               json.dumps(main_lang_data, indent=4, ensure_ascii=True))
-                pack.writestr("assets/realms/lang/" + lang_file_name,
+                pack.writestr(f"assets/realms/lang/{lang_file_name}",
                               json.dumps(realms_lang_data, indent=4, ensure_ascii=True))
             else:
                 # legacy
                 main_lang_data.update(realms_lang_data)
                 legacy_content = self.__generate_legacy_content(main_lang_data)
-                pack.writestr("assets/minecraft/lang/" +
-                              lang_file_name, legacy_content)
+                pack.writestr(
+                    f"assets/minecraft/lang/{lang_file_name}", legacy_content)
             # dump resources
             for item in res_supp:
                 base_folder = os.path.join("modules", item)
