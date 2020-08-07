@@ -136,8 +136,6 @@ python build.py -h
 
 我们欢迎你为这个资源包贡献自己的想法。请参阅 [`CONTRIBUTING.md`](/CONTRIBUTING.md) 以获取一些建议。
 
-积累一定贡献后我们会邀请你成为Collaborator。优先考虑中文Minecraft Wiki的编辑者。
-
 ## 声明
 
 * 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
