@@ -337,6 +337,7 @@ class module_checker(object):
                 name = data['name']
                 module_type = data['type']
                 if name in lang_list or name in res_list:
+                    self.__checked = True
                     self.__status = False
                     self.__info = f"Conflict name '{name}'."
                     return False
@@ -347,6 +348,7 @@ class module_checker(object):
                     elif module_type == 'resource':
                         res_list.append(name)
             else:
+                self.__checked = True
                 self.__status = False
                 self.__info = f"Bad module '{module}', no manifest file."
                 return False
