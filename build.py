@@ -232,7 +232,7 @@ class builder(object):
 
     def __merge_language(self, language_supp: list, mod_supp: list) -> dict:
         # load basic strings
-        with open(os.path.dirname(__file__) + "/assets/minecraft/lang/zh_meme.json", 'r', encoding='utf8') as f:
+        with open(os.path.join(os.path.dirname(__file__), "assets/minecraft/lang/zh_meme.json"), 'r', encoding='utf8') as f:
             lang_data = json.load(f)
         for item in language_supp:
             add_file = os.path.join("modules", item, "add.json")
@@ -263,9 +263,8 @@ class builder(object):
                     mods.update(json.load(f))
             elif file.endswith(".lang"):
                 with open(os.path.join(os.path.dirname(__file__), "mods", file), 'r', encoding='utf8') as f:
-                    items = (i for i in f.read().splitlines() if
-                             i != '' and not i.startswith('#'))
-                mods.update(i.split("=", 1) for i in items)
+                    mods.update(line.strip().split(
+                        "=", 1) for line in f if line.strip() != '' and not line.startswith('#'))
             else:
                 warning = f'Warning: File type "{file[file.rfind(".") + 1:]}" is not supported, skipping.'
                 print(
