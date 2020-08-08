@@ -112,8 +112,10 @@ class builder(object):
             # create pack
             pack = zipfile.ZipFile(
                 pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
-            pack.write(os.path.join(os.path.dirname(__file__), "pack.png"), arcname="pack.png")
-            pack.write(os.path.join(os.path.dirname(__file__), "LICENSE"), arcname="LICENSE")
+            pack.write(os.path.join(os.path.dirname(
+                __file__), "pack.png"), arcname="pack.png")
+            pack.write(os.path.join(os.path.dirname(
+                __file__), "LICENSE"), arcname="LICENSE")
             pack.writestr("pack.mcmeta", json.dumps(
                 mcmeta, indent=4, ensure_ascii=False))
             # dump lang file into pack
@@ -130,25 +132,7 @@ class builder(object):
                 pack.writestr(
                     f"assets/minecraft/lang/{lang_file_name}", legacy_content)
             # dump resources
-            for item in res_supp:
-                base_folder = os.path.join(os.path.dirname(__file__), "modules", item)
-                for root, dirs, files in os.walk(base_folder):
-                    for file in files:
-                        if file != "manifest.json":
-                            path = os.path.join(root, file)
-                            arcpath = path[path.find(
-                                base_folder) + len(base_folder) + 1:]
-                            testpath = arcpath.replace(os.sep, "/")
-                            # prevent duplicates
-                            if testpath not in pack.namelist():
-                                pack.write(os.path.join(
-                                    root, file), arcname=arcpath)
-                            else:
-                                warning = f"Warning: Duplicated '{testpath}', skipping."
-                                print(
-                                    f"\033[33m{warning}\033[0m", file=sys.stderr)
-                                self.__logs += f"{warning}\n"
-                                self.__warning += 1
+            self.__dump_resources(res_supp, pack)
             pack.close()
             print("Build successful.")
         else:
@@ -159,8 +143,30 @@ class builder(object):
             print(
                 "\033[1;31mTerminate building because an error occurred.\033[0m")
 
+    def __dump_resources(self, modules: list, pack: zipfile.ZipFile):
+        for item in modules:
+            base_folder = os.path.join(
+                os.path.dirname(__file__), "modules", item)
+            for root, dirs, files in os.walk(base_folder):
+                for file in files:
+                    if file != "manifest.json":
+                        path = os.path.join(root, file)
+                        arcpath = path[path.find(
+                            base_folder) + len(base_folder) + 1:]
+                        testpath = arcpath.replace(os.sep, "/")
+                        # prevent duplicates
+                        if testpath not in pack.namelist():
+                            pack.write(os.path.join(
+                                root, file), arcname=arcpath)
+                        else:
+                            warning = f"Warning: Duplicated '{testpath}', skipping."
+                            print(
+                                f"\033[33m{warning}\033[0m", file=sys.stderr)
+                            self.__logs += f"{warning}\n"
+                            self.__warning += 1
+
     def __process_meta(self, type: str) -> dict:
-        with open(os.path.join(os.path.dirname(__file__),'pack.mcmeta'), 'r', encoding='utf8') as f:
+        with open(os.path.join(os.path.dirname(__file__), 'pack.mcmeta'), 'r', encoding='utf8') as f:
             data = json.load(f)
         if type == 'compat':
             data.pop('language')
@@ -204,7 +210,8 @@ class builder(object):
         return name
 
     def __parse_mods(self, mods: list) -> list:
-        existing_mods = os.listdir(os.path.join(os.path.dirname(__file__), 'mods'))
+        existing_mods = os.listdir(os.path.join(
+            os.path.dirname(__file__), 'mods'))
         if 'none' in mods:
             return []
         elif 'all' in mods:
