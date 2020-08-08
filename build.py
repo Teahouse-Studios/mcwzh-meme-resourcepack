@@ -307,6 +307,7 @@ class builder(object):
 class module_checker(object):
     def __init__(self):
         self.__status = True
+        self.__checked = False
         self.__lang_list = []
         self.__res_list = []
         self.__manifests = {}
@@ -315,7 +316,16 @@ class module_checker(object):
     def get_info(self):
         return self.__info
 
+    def clean_status(self):
+        self.__status = True
+        self.__checked = False
+        self.__lang_list = []
+        self.__res_list = []
+        self.__manifests = {}
+        self.__info = ''
+
     def check_module(self):
+        self.clean_status()
         base_folder = os.path.join(os.path.dirname(__file__), 'modules')
         lang_list = []
         res_list = []
@@ -341,12 +351,14 @@ class module_checker(object):
                 self.__info = f"Bad module '{module}', no manifest file."
                 return False
         self.__status = True
+        self.__checked = True
         self.__lang_list = lang_list
         self.__res_list = res_list
         return True
 
     def get_module_list(self, type):
-        self.check_module()
+        if not self.__checked:
+            self.check_module()
         if not self.__status:
             return []
         else:
@@ -358,7 +370,8 @@ class module_checker(object):
                 return []
 
     def get_manifests(self):
-        self.check_module()
+        if not self.__checked:
+            self.check_module()
         if not self.__status:
             return {}
         else:
