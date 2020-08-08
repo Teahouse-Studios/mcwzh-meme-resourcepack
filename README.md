@@ -126,12 +126,6 @@ python build.py -h
 
 如果你是Crowdin上Minecraft项目的翻译者，你也可以随时查看通知来获取新字符串。
 
-### 网页部署
-
-如果你需要在网页Material标题栏下方或者网页脚部自定义内容，请在 `views/custom/` 目录下创建 `header.html` 或 `footer.html` 。
-
-目前来说，有 `Vuetify` 框架可用。
-
 ## 贡献
 
 我们欢迎你为这个资源包贡献自己的想法。请参阅 [`CONTRIBUTING.md`](/CONTRIBUTING.md) 以获取一些建议。
