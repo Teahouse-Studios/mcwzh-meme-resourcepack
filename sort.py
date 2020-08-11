@@ -25,6 +25,6 @@ if __name__ == '__main__':
     before = json.load(open(args.json, "r", encoding="utf-8"))
     after = sort(before)
     if args.outfile:
-        json.dump(fp=open(args.outfile, "w", encoding="utf-8"), obj=after, ensure_ascii=False, indent=2)
+        json.dump(fp=open(args.outfile, "w", encoding="utf-8"), obj=after, ensure_ascii=False, indent=4)
     else:
         json.dump(after, sys.stdout, ensure_ascii=False)
