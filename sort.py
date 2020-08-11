@@ -8,7 +8,7 @@ def sort(origin: dict) -> dict:
     keylist = [i for i in origin.keys()]
     keylist.sort()
     for k in keylist:
-        out.update({k: origin[k]})
+        out[k] = origin[k]
     return out
 
 
@@ -21,14 +21,10 @@ def generate_parser() -> argparse.ArgumentParser:
 
 
 if __name__ == '__main__':
-    parser = generate_parser()
-    args = vars(parser.parse_args())
-    with open(args['json'], 'r', encoding='utf8') as d:
-        indata = dict(json.load(d))
-    out = sort(indata)
-    if args['outfile']:
-        filename = args['outfile']
-        with open(filename, 'w', encoding='utf8') as f:
-            json.dump(out, f, ensure_ascii=False, indent=4)
+    args = generate_parser().parse_args()
+    before = json.load(open(args.json, "r", encoding="utf-8"))
+    after = sort(before)
+    if args.outfile:
+        json.dump(fp=open(args.outfile, "w", encoding="utf-8"), obj=after, ensure_ascii=False, indent=2)
     else:
-        json.dump(out, sys.stdout, ensure_ascii=False)
+        json.dump(after, sys.stdout, ensure_ascii=False)
