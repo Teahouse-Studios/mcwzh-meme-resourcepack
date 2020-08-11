@@ -17,7 +17,7 @@ def main():
         print("\nDeleted all packs built.")
     else:
         pack_builder = builder()
-        pack_builder.set_args(args)
+        pack_builder.args = args
         pack_builder.build()
 
 
@@ -31,22 +31,31 @@ class builder(object):
         self.__logs = ""
         self.__filename = ""
 
-    def set_args(self, new_args: dict):
-        self.__args = new_args
+    @property
+    def args(self):
+        return self.__args
 
-    def get_warning_count(self):
+    @args.setter
+    def args(self, value: dict):
+        self.__args = value
+
+    @property
+    def warning_count(self):
         return self.__warning
 
-    def get_error_count(self):
+    @property
+    def error_count(self):
         return self.__error
 
-    def get_filename(self):
+    @property
+    def filename(self):
         if self.__filename == "":
             return "Did not build any pack."
         else:
             return self.__filename
 
-    def get_logs(self):
+    @property
+    def logs(self):
         if self.__logs == "":
             return "Did not build any pack."
         else:
@@ -60,20 +69,20 @@ class builder(object):
 
     def build(self):
         self.clean_status()
-        args = self.__args
+        args = self.args
         # checking module names first, preventing name conflict
         checker = module_checker()
         if checker.check_module():
             # process args
             # get language supplement
             lang_supp = self.__parse_includes(
-                args['language'], checker.get_module_list('language'))
+                args['language'], checker.language_module_list)
             # merge sfw into lang_supp
             if args['sfw'] and 'sfw' not in lang_supp:
                 lang_supp.append('sfw')
             # get resource supplement
             res_supp = self.__parse_includes(
-                args['resource'], checker.get_module_list('resource'))
+                args['resource'], checker.resource_module_list)
             # get mods strings
             mod_supp = self.__parse_mods(args['mod'])
             # merge language supplement
@@ -136,7 +145,7 @@ class builder(object):
             pack.close()
             print("Build successful.")
         else:
-            error = "Error: " + checker.get_info()
+            error = "Error: " + checker.info
             print(f"\033[1;31m{error}\033[0m", file=sys.stderr)
             self.__logs += f"{error}\n"
             self.__error += 1
@@ -204,10 +213,7 @@ class builder(object):
             return include_list
 
     def __convert_path_to_module(self, path: str) -> str:
-        with open(os.path.join(path, "manifest.json"), 'r', encoding='utf8') as f:
-            manifest = json.load(f)
-        name = manifest['name']
-        return name
+        return json.load(open(os.path.join(path, "manifest.json"), 'r', encoding='utf8'))['name']
 
     def __parse_mods(self, mods: list) -> list:
         existing_mods = os.listdir(os.path.join(
@@ -312,8 +318,36 @@ class module_checker(object):
         self.__manifests = {}
         self.__info = ''
 
-    def get_info(self):
+    @property
+    def info(self):
         return self.__info
+
+    @property
+    def language_module_list(self):
+        if not self.__checked:
+            self.check_module()
+        if not self.__status:
+            return []
+        else:
+            return self.__lang_list
+
+    @property
+    def resource_module_list(self):
+        if not self.__checked:
+            self.check_module()
+        if not self.__status:
+            return []
+        else:
+            return self.__res_list
+
+    @property
+    def manifests(self):
+        if not self.__checked:
+            self.check_module()
+        if not self.__status:
+            return {}
+        else:
+            return self.__manifests
 
     def clean_status(self):
         self.__status = True
@@ -356,27 +390,6 @@ class module_checker(object):
         self.__lang_list = lang_list
         self.__res_list = res_list
         return True
-
-    def get_module_list(self, type):
-        if not self.__checked:
-            self.check_module()
-        if not self.__status:
-            return []
-        else:
-            if type == 'language':
-                return self.__lang_list
-            elif type == 'resource':
-                return self.__res_list
-            else:
-                return []
-
-    def get_manifests(self):
-        if not self.__checked:
-            self.check_module()
-        if not self.__status:
-            return {}
-        else:
-            return self.__manifests
 
 
 def generate_parser() -> argparse.ArgumentParser:

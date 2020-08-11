@@ -18,13 +18,13 @@ def generate_website():
     mods = ["mods/" + file for file in os.listdir('mods')]
     enmods = ["en-mods/" + file for file in os.listdir('en-mods')]
     language_modules = [
-        "modules/" + module for module in build.module_checker().get_module_list('language')]
+        "modules/" + module for module in build.module_checker().language_module_list]
     resource_modules = [
-        "modules/" + module for module in build.module_checker().get_module_list('resource')]
+        "modules/" + module for module in build.module_checker().resource_module_list]
     header_existence = os.path.exists("./views/custom/header.html")
     notice_existence = os.path.exists("./views/custom/notice.html")
     footer_existence = os.path.exists("./views/custom/footer.html")
-    manifests = build.module_checker().get_manifests()
+    manifests = build.module_checker().manifests
     return render_template("index.html", mods=mods, enmods=enmods, language=language_modules, resource=resource_modules,
                            header_existence=header_existence, notice_existence=notice_existence, footer_existence=footer_existence, manifests=manifests)
 
@@ -45,11 +45,11 @@ def ajax():
         else:
             logs += 'Skipping the repository update because there\'s an available cache within 60 seconds.\n'
         builder = build.builder()
-        builder.set_args(recv_data)
+        builder.args = recv_data
         builder.build()
-        logs += builder.get_logs()
+        logs += builder.logs
         message = {"code": 200, "argument": recv_data,
-                   "logs": logs, "filename": builder.get_filename()}
+                   "logs": logs, "filename": builder.filename}
         print(recv_data)
     finally:
         lock.release()
