@@ -5,9 +5,7 @@ import sys
 
 def sort(origin: dict) -> dict:
     out = {}
-    keylist = [i for i in origin.keys()]
-    keylist.sort()
-    for k in keylist:
+    for k in sorted(list(origin)):
         out[k] = origin[k]
     return out
 
