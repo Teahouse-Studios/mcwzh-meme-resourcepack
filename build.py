@@ -171,7 +171,7 @@ class builder(object):
         if type == 'compat':
             data.pop('language')
         elif type == 'legacy':
-            data['pack'].update({"pack_format": 3})
+            data['pack']['pack_format'] = 3
         return data
 
     def __get_lang_file_name(self, type: str):
@@ -245,7 +245,7 @@ class builder(object):
                 with open(remove_file, 'r', encoding='utf8') as remove:
                     remove_list = json.load(remove)
                 for key in remove_list:
-                    if key in lang_data.keys():
+                    if key in lang_data:
                         lang_data.pop(key)
                     else:
                         warning = f"Warning: Key '{key}' does not exist, skipping."
@@ -289,14 +289,14 @@ class builder(object):
                 with open(os.path.join("mappings", mapping_file), 'r', encoding='utf8') as f:
                     mapping = json.load(f)
                 for k, v in mapping.items():
-                    if v not in content.keys():
+                    if v not in content:
                         warning = f"Warning: Corrupted key-value pair in file {mapping_file}: {{'{k}': '{v}'}}, skipping."
                         print(
                             f"\033[33m{warning}\033[0m", file=sys.stderr)
                         self.__logs += f"{warning}\n"
                         self.__warning += 1
                     else:
-                        legacy_lang_data.update({k: content[v]})
+                        legacy_lang_data[k] = content[v]
         out_content = ""
         for k, v in legacy_lang_data.items():
             out_content += f"{k}={v}\n"
