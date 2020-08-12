@@ -4,10 +4,7 @@ import sys
 
 
 def sort(origin: dict) -> dict:
-    out = {}
-    for k in sorted(list(origin)):
-        out[k] = origin[k]
-    return out
+    return {k: origin[k] for k in sorted(list(origin))}
 
 
 def generate_parser() -> argparse.ArgumentParser:
