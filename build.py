@@ -9,8 +9,7 @@ import hashlib
 
 
 def main():
-    parser = generate_parser()
-    args = vars(parser.parse_args())
+    args = vars(generate_parser().parse_args())
     if args['type'] == 'clean':
         for i in os.listdir('builds/'):
             os.remove(os.path.join('builds', i))
@@ -49,17 +48,11 @@ class builder(object):
 
     @property
     def filename(self):
-        if self.__filename == "":
-            return "Did not build any pack."
-        else:
-            return self.__filename
+        return self.__filename != "" and self.__filename or "Did not build any pack."
 
     @property
     def logs(self):
-        if self.__logs == "":
-            return "Did not build any pack."
-        else:
-            return self.__logs
+        return self.__logs != "" and self.__logs or "Did not build any pack."
 
     def clean_status(self):
         self.__warning = 0
@@ -92,12 +85,7 @@ class builder(object):
             with open(os.path.join(os.path.dirname(__file__), "assets/realms/lang/zh_meme.json"), 'r', encoding='utf8') as f:
                 realms_lang_data = json.load(f)
             # process pack name
-            if args['hash']:
-                sha256 = hashlib.sha256(json.dumps(
-                    args).encode('utf8')).hexdigest()
-                pack_name = f"mcwzh-meme.{sha256[:7]}.zip"
-            else:
-                pack_name = "mcwzh-meme.zip"
+            pack_name = args['hash'] and f"mcwzh-meme.{hashlib.sha256(json.dumps(args).encode('utf8')).hexdigest()[:7]}.zip" or "mcwzh-meme.zip"
             self.__filename = pack_name
             # process mcmeta
             mcmeta = self.__process_meta(args['type'])
@@ -108,10 +96,7 @@ class builder(object):
             print(info)
             self.__logs += f"{info}\n"
             # set output dir
-            if 'output' in args and args['output']:
-                output_dir = args['output']
-            else:
-                output_dir = "builds"
+            output_dir = 'output' in args and args['output'] or 'builds'
             pack_name = os.path.join(output_dir, pack_name)
             # mkdir
             if os.path.exists(output_dir) and not os.path.isdir(output_dir):
@@ -326,28 +311,19 @@ class module_checker(object):
     def language_module_list(self):
         if not self.__checked:
             self.check_module()
-        if not self.__status:
-            return []
-        else:
-            return self.__lang_list
+        return self.__status and self.__lang_list or []
 
     @property
     def resource_module_list(self):
         if not self.__checked:
             self.check_module()
-        if not self.__status:
-            return []
-        else:
-            return self.__res_list
+        return self.__status and self.__res_list or []
 
     @property
     def manifests(self):
         if not self.__checked:
             self.check_module()
-        if not self.__status:
-            return {}
-        else:
-            return self.__manifests
+        return self.__status and self.__manifests or {}
 
     def clean_status(self):
         self.__status = True
