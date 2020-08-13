@@ -3,8 +3,7 @@ import json
 import sys
 
 
-def sort(origin: dict) -> dict:
-    return {k: origin[k] for k in sorted(list(origin))}
+sort = lambda origin: {k: origin[k] for k in sorted(list(origin))}
 
 
 def generate_parser() -> argparse.ArgumentParser:
@@ -17,9 +16,8 @@ def generate_parser() -> argparse.ArgumentParser:
 
 if __name__ == '__main__':
     args = generate_parser().parse_args()
-    before = json.load(open(args.json, "r", encoding="utf-8"))
-    after = sort(before)
+    after = sort(json.load(open(args.json, "r", encoding="utf-8")))
     if args.outfile:
-        json.dump(fp=open(args.outfile, "w", encoding="utf-8"), obj=after, ensure_ascii=False, indent=4)
+        json.dump(after, open(args.outfile, "w", encoding="utf-8"), ensure_ascii=False, indent=4)
     else:
         json.dump(after, sys.stdout, ensure_ascii=False)
