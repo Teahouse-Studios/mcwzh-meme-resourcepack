@@ -14,8 +14,8 @@ def main():
         json.dump(out, sys.stdout, ensure_ascii=False)
 
 
-def convert(identifier: str, json1: dict, json2: dict):
-    if json2[identifier]:
+def convert(identifier: str, json1: dict, json2: dict) -> (str, str):
+    if identifier in json2:
         return json1[identifier], json2[identifier]
     else:
         print(
@@ -39,7 +39,7 @@ def generate_parser() -> argparse.ArgumentParser:
 def generate_conversion(args) -> dict:
     json1 = json.load(open(args.json1, 'r', encoding='utf8'))
     json2 = json.load(open(args.json2, 'r', encoding='utf8'))
-    return dict(convert(k, json1, json2) for k in json1 if re.match(args['regex'], k))
+    return dict(convert(k, json1, json2) for k in json1 if re.match(args.regex, k))
 
 
 if __name__ == '__main__':
