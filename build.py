@@ -82,10 +82,12 @@ class builder(object):
             # TODO: split mod strings into namespaces
             main_lang_data = self.__merge_language(lang_supp, mod_supp)
             # get realms strings
-            with open(os.path.join(os.path.dirname(__file__), "assets/realms/lang/zh_meme.json"), 'r', encoding='utf8') as f:
-                realms_lang_data = json.load(f)
+            realms_lang_data = json.load(open(os.path.join(os.path.dirname(
+                __file__), "assets/realms/lang/zh_meme.json"), 'r', encoding='utf8'))
             # process pack name
-            pack_name = args['hash'] and f"mcwzh-meme.{hashlib.sha256(json.dumps(args).encode('utf8')).hexdigest()[:7]}.zip" or "mcwzh-meme.zip"
+            digest = hashlib.sha256(json.dumps(
+                args).encode('utf8')).hexdigest()
+            pack_name = args['hash'] and f"mcwzh-meme.{digest[:7]}.zip" or "mcwzh-meme.zip"
             self.__filename = pack_name
             # process mcmeta
             mcmeta = self.__process_meta(args['type'])
@@ -160,8 +162,8 @@ class builder(object):
                             self.__warning += 1
 
     def __process_meta(self, type: str) -> dict:
-        with open(os.path.join(os.path.dirname(__file__), 'pack.mcmeta'), 'r', encoding='utf8') as f:
-            data = json.load(f)
+        data = json.load(open(os.path.join(os.path.dirname(
+            __file__), 'pack.mcmeta'), 'r', encoding='utf8'))
         if type == 'compat':
             data.pop('language')
         elif type == 'legacy':
@@ -169,12 +171,7 @@ class builder(object):
         return data
 
     def __get_lang_file_name(self, type: str):
-        if type == 'normal':
-            return 'zh_meme.json'
-        elif type == 'compat':
-            return 'zh_cn.json'
-        else:
-            return 'zh_cn.lang'
+        return type == 'normal' and 'zh_meme.json' or (type == 'compat' and 'zh_cn.json' or 'zh_cn.lang')
 
     def __parse_includes(self, includes: list, fulllist: list) -> list:
         if 'none' in includes:
@@ -186,7 +183,7 @@ class builder(object):
             for item in includes:
                 if item in fulllist:
                     include_list.append(item)
-                elif self.__convert_path_to_module(
+                elif os.path.exists(os.path.normpath(item)) and self.__convert_path_to_module(
                         os.path.normpath(item)) in fulllist:
                     include_list.append(self.__convert_path_to_module(
                         os.path.normpath(item)))
@@ -223,19 +220,16 @@ class builder(object):
 
     def __merge_language(self, language_supp: list, mod_supp: list) -> dict:
         # load basic strings
-        with open(os.path.join(os.path.dirname(__file__), "assets/minecraft/lang/zh_meme.json"), 'r', encoding='utf8') as f:
-            lang_data = json.load(f)
+        lang_data = json.load(open(os.path.join(os.path.dirname(
+            __file__), "assets/minecraft/lang/zh_meme.json"), 'r', encoding='utf8'))
         for item in language_supp:
             add_file = os.path.join("modules", item, "add.json")
             remove_file = os.path.join("modules", item, "remove.json")
             if os.path.exists(add_file):
-                with open(add_file, 'r', encoding='utf8') as add:
-                    supp_data = json.load(add)
-                lang_data.update(supp_data)
+                lang_data.update(
+                    json.load(open(add_file, 'r', encoding='utf8')))
             if os.path.exists(remove_file):
-                with open(remove_file, 'r', encoding='utf8') as remove:
-                    remove_list = json.load(remove)
-                for key in remove_list:
+                for key in json.load(open(remove_file, 'r', encoding='utf8')):
                     if key in lang_data:
                         lang_data.pop(key)
                     else:
@@ -250,8 +244,8 @@ class builder(object):
         mods = {}
         for file in mod_list:
             if file.endswith(".json"):
-                with open(os.path.join(os.path.dirname(__file__), "mods", file), 'r', encoding='utf8') as f:
-                    mods.update(json.load(f))
+                mods.update(json.load(open(os.path.join(os.path.dirname(
+                    __file__), "mods", file), 'r', encoding='utf8')))
             elif file.endswith(".lang"):
                 with open(os.path.join(os.path.dirname(__file__), "mods", file), 'r', encoding='utf8') as f:
                     mods.update(line.strip().split(
@@ -266,8 +260,8 @@ class builder(object):
 
     def __generate_legacy_content(self, content: dict) -> str:
         # get mappings list
-        with open(os.path.join("mappings", "all_mappings"), 'r', encoding='utf8') as f:
-            mappings = json.load(f)['mappings']
+        mappings = json.load(open(os.path.join(
+            "mappings", "all_mappings"), 'r', encoding='utf8'))['mappings']
         legacy_lang_data = {}
         for item in mappings:
             mapping_file = item + ".json"
@@ -277,8 +271,8 @@ class builder(object):
                 self.__logs += f"{warning}\n"
                 self.__warning += 1
             else:
-                with open(os.path.join("mappings", mapping_file), 'r', encoding='utf8') as f:
-                    mapping = json.load(f)
+                mapping = json.load(
+                    open(os.path.join("mappings", mapping_file), 'r', encoding='utf8'))
                 for k, v in mapping.items():
                     if v not in content:
                         warning = f"Warning: Corrupted key-value pair in file {mapping_file}: {{'{k}': '{v}'}}, skipping."
@@ -341,8 +335,7 @@ class module_checker(object):
         for module in os.listdir(base_folder):
             manifest = os.path.join(base_folder, module, "manifest.json")
             if os.path.exists(manifest) and os.path.isfile(manifest):
-                with open(manifest, 'r', encoding='utf8') as f:
-                    data = json.load(f)
+                data = json.load(open(manifest, 'r', encoding='utf8'))
                 name = data['name']
                 module_type = data['type']
                 if name in lang_list or name in res_list:

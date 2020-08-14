@@ -2,29 +2,18 @@ import os
 import json
 import sys
 
-legacy_lang_data = {}
-
 with open("1.12.lang", 'r', encoding='utf8') as f:
-    items = [i for i in f.read().splitlines() if (i != '' and not i.startswith('#'))]
-
-legacy_lang_data.update((i.split("=", 1) for i in items))
-
-with open(os.path.join("mappings", "all_mappings"), 'r', encoding='utf8') as f:
-        mappings = json.load(f)['mappings']
-
-mapping_data = {}
-
+    legacy_lang_data = dict(line.strip().split(
+        "=", 1) for line in f if line.strip() != '' and not line.startswith('#'))
+mappings = json.load(open(os.path.join(
+    "mappings", "all_mappings"), 'r', encoding='utf8'))['mappings']
 for item in mappings:
     mapping_file = item + ".json"
     if mapping_file not in os.listdir("mappings"):
-        warning = f"Warning: Missing mapping '{mapping_file}', skipping."
-        print(f"\033[33m{warning}\033[0m", file=sys.stderr)
+        print(
+            f"\033[33mWarning: Missing mapping '{mapping_file}', skipping.\033[0m", file=sys.stderr)
     else:
-        with open(os.path.join("mappings", mapping_file), 'r', encoding='utf8') as f:
-            mapping = json.load(f)
-        for k, v in mapping.items():
-            mapping_data.update({k: v})
-
-for k in legacy_lang_data.keys():
-    if k not in mapping_data.keys():
-        print(k) 
+        mapping = json.load(
+            open(os.path.join("mappings", mapping_file), 'r', encoding='utf8'))
+        mapping_data = {k: v for k, v in mapping.items()}
+print(*[k for k in legacy_lang_data if k not in mapping_data], sep='\n')
