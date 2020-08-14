@@ -2,14 +2,5 @@ import json
 
 # WIP
 
-lang = {}
-
-i = 11
-
-while i <= 2147483647:
-    lang['enchantment.level.' + str(i)] = str(i)
-    print(i)
-    i += 1
-
-with open("enchlevelfix.json", 'w', encoding='utf8') as lang_file:
-    lang_file.write(json.dumps(lang, indent=4, ensure_ascii=False))
+json.dump({f'enchantment.level.{i}': f'{i}' for i in range(11, 2147483648)}, open("enchlevelfixS.json", 'w', encoding='utf8'),
+          indent=4, ensure_ascii=False)
