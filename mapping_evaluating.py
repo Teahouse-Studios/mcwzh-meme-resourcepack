@@ -7,6 +7,7 @@ with open("1.12.lang", 'r', encoding='utf8') as f:
         "=", 1) for line in f if line.strip() != '' and not line.startswith('#'))
 mappings = json.load(open(os.path.join(
     "mappings", "all_mappings"), 'r', encoding='utf8'))['mappings']
+mapping = {}
 for item in mappings:
     mapping_file = item + ".json"
     if mapping_file not in os.listdir("mappings"):
@@ -15,5 +16,5 @@ for item in mappings:
     else:
         mapping = json.load(
             open(os.path.join("mappings", mapping_file), 'r', encoding='utf8'))
-        mapping_data = {k: v for k, v in mapping.items()}
+        mapping_data.update(mapping)
 print(*[k for k in legacy_lang_data if k not in mapping_data], sep='\n')
