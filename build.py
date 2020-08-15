@@ -5,7 +5,7 @@ import os
 import sys
 import hashlib
 
-# Lincese: Apache-2.0
+# License: Apache-2.0
 
 
 def main():
