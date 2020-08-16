@@ -2,7 +2,7 @@ import build
 import os
 
 
-def main():
+if __name__ == '__main__':
     preset_args = [
         {'type': 'normal', 'language': [], 'resource': [
             'all'], 'mod': ['all'], 'sfw': True, 'hash': False, 'output': None},
@@ -56,7 +56,3 @@ def main():
             print(f"Failed to build pack {name}.")
     print(
         f"Built {pack_counter} packs with {perfect_pack_counter} pack(s) no warning.")
-
-
-if __name__ == "__main__":
-    main()
