@@ -52,7 +52,7 @@ class builder(object):
 
     @property
     def logs(self):
-        return self.__log_list and ''.join(self.__log_list) or "Did not build any pack."
+        return self.__log_list and '\n'.join(self.__log_list) or "Did not build any pack."
 
     def clean_status(self):
         self.__warning = 0
@@ -97,7 +97,7 @@ class builder(object):
             # create pack
             info = f"Building pack {pack_name}"
             print(info)
-            self.__log_list.append(f"{info}\n")
+            self.__log_list.append(info)
             # set output dir
             output_dir = 'output' in args and args['output'] or 'builds'
             pack_name = os.path.join(output_dir, pack_name)
@@ -133,12 +133,7 @@ class builder(object):
             pack.close()
             print("Build successful.")
         else:
-            error = f"Error: {checker.info}"
-            print(f"\033[1;31m{error}\033[0m", file=sys.stderr)
-            self.__log_list.append(f"{error}\n")
-            self.__error += 1
-            print(
-                "\033[1;31mTerminate building because an error occurred.\033[0m")
+            self.__raise_error(checker.info)
 
     def __dump_resources(self, modules: list, pack: zipfile.ZipFile):
         for item in modules:
@@ -156,11 +151,20 @@ class builder(object):
                             pack.write(os.path.join(
                                 root, file), arcname=arcpath)
                         else:
-                            warning = f"Warning: Duplicated '{testpath}', skipping."
-                            print(
-                                f"\033[33m{warning}\033[0m", file=sys.stderr)
-                            self.__log_list.append(f"{warning}\n")
-                            self.__warning += 1
+                            self.__raise_warning(
+                                f"Duplicated '{testpath}', skipping.")
+
+    def __raise_warning(self, warning: str):
+        print(f'\033[33mWarning: {warning}\033[0m', file=sys.stderr)
+        self.__log_list.append(f'Warning: {warning}')
+        self.__warning += 1
+
+    def __raise_error(self, error: str):
+        print(f'\033[1;31mError: {error}\033[0m', file=sys.stderr)
+        print("\033[1;31mTerminate building because an error occurred.\033[0m")
+        self.__log_list.append(f'Error: {error}')
+        self.__log_list.append("Terminate building because an error occurred.")
+        self.__error += 1
 
     def __process_meta(self, type: str) -> dict:
         data = json.load(open(os.path.join(os.path.dirname(
@@ -186,10 +190,8 @@ class builder(object):
                     include_list.append(self.__convert_path_to_module(
                         os.path.normpath(item)))
                 else:
-                    warning = f"Warning: '{item}' does not exist, skipping."
-                    print(f"\033[33m{warning}\033[0m", file=sys.stderr)
-                    self.__log_list.append("{warning}\n")
-                    self.__warning += 1
+                    self.__raise_warning(
+                        f"'{item}' does not exist, skipping.")
             return include_list
 
     def __convert_path_to_module(self, path: str) -> str:
@@ -210,10 +212,8 @@ class builder(object):
                 elif os.path.basename(os.path.normpath(item)) in existing_mods:
                     mods_list.append(os.path.basename(os.path.normpath(item)))
                 else:
-                    warning = f"Warning: '{item}' does not exist, skipping."
-                    print(f"\033[33m{warning}\033[0m", file=sys.stderr)
-                    self.__log_list.append(f"{warning}\n")
-                    self.__warning += 1
+                    self.__raise_warning(
+                        f"'{item}' does not exist, skipping.")
             return mods_list
 
     def __merge_language(self, language_supp: list, mod_supp: list) -> dict:
@@ -231,10 +231,8 @@ class builder(object):
                     if key in lang_data:
                         lang_data.pop(key)
                     else:
-                        warning = f"Warning: Key '{key}' does not exist, skipping."
-                        print(f"\033[33m{warning}\033[0m", file=sys.stderr)
-                        self.__log_list.append(f"{warning}\n")
-                        self.__warning += 1
+                        self.__raise_warning(
+                            f"Key '{key}' does not exist, skipping.")
         lang_data.update(self.__get_mod_content(mod_supp))
         return lang_data
 
@@ -249,11 +247,8 @@ class builder(object):
                     mods.update(line.strip().split(
                         "=", 1) for line in f if line.strip() != '' and not line.startswith('#'))
             else:
-                warning = f'Warning: File type "{file[file.rfind(".") + 1:]}" is not supported, skipping.'
-                print(
-                    f'\033[33m{warning}\033[0m', file=sys.stderr)
-                self.__warning += 1
-                self.__log_list.append(f"{warning}\n")
+                self.__raise_warning(
+                    f'File type "{file[file.rfind(".") + 1:]}" is not supported, skipping.')
         return mods
 
     def __generate_legacy_content(self, content: dict) -> str:
@@ -264,20 +259,15 @@ class builder(object):
         for item in mappings:
             mapping_file = f"{item}.json"
             if mapping_file not in os.listdir("mappings"):
-                warning = f"Warning: Missing mapping '{mapping_file}', skipping."
-                print(f"\033[33m{warning}\033[0m", file=sys.stderr)
-                self.__log_list.append(f"{warning}\n")
-                self.__warning += 1
+                self.__raise_warning(
+                    f"Missing mapping '{mapping_file}', skipping.")
             else:
                 mapping = json.load(
                     open(os.path.join("mappings", mapping_file), 'r', encoding='utf8'))
                 for k, v in mapping.items():
                     if v not in content:
-                        warning = f"Warning: Corrupted key-value pair in file {mapping_file}: {{'{k}': '{v}'}}, skipping."
-                        print(
-                            f"\033[33m{warning}\033[0m", file=sys.stderr)
-                        self.__log_list.append(f"{warning}\n")
-                        self.__warning += 1
+                        self.__raise_warning(
+                            f"Corrupted key-value pair in file {mapping_file}: {{'{k}': '{v}'}}, skipping.")
                     else:
                         legacy_lang_data[k] = content[v]
         return ''.join(f'{k}={v}\n' for k, v in legacy_lang_data.items())
