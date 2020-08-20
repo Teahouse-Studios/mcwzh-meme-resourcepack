@@ -20,8 +20,8 @@ def generate_parser() -> argparse.ArgumentParser:
 def generate_conversion(args) -> dict:
     json1 = json.load(open(args.json1, 'r', encoding='utf8'))
     json2 = json.load(open(args.json2, 'r', encoding='utf8'))
-    print(*[f'\033[33mWarning: "{k}" does not exist in the second json, skipping.\033[0m' for k in json1 if re.match(
-        args.regex, k) and k not in json2], sep='\n')
+    print(*(f'\033[33mWarning: "{k}" does not exist in the second json, skipping.\033[0m' for k in json1 if re.match(
+        args.regex, k) and k not in json2), sep='\n')
     return dict((json1[k], json2[k]) for k in json1 if re.match(args.regex, k) and k in json2)
 
 

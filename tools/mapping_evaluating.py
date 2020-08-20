@@ -17,4 +17,4 @@ for item in mappings:
         mapping = json.load(
             open(os.path.join("mappings", mapping_file), 'r', encoding='utf8'))
         mapping_data.update(mapping)
-print(*[k for k in legacy_lang_data if k not in mapping_data], sep='\n')
+print(*(k for k in legacy_lang_data if k not in mapping_data), sep='\n')
