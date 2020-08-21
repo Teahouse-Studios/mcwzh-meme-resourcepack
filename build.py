@@ -94,7 +94,6 @@ class builder(object):
             # decide language file name & ext
             lang_file_name = args['type'] == 'normal' and 'zh_meme.json' or (
                 args['type'] == 'compat' and 'zh_cn.json' or 'zh_cn.lang')
-            print(lang_file_name)
             # create pack
             info = f"Building pack {pack_name}"
             print(info)
