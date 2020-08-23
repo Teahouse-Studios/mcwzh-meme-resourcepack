@@ -1,23 +1,11 @@
-import zipfile
-import json
-import argparse
 import os
-import sys
-import hashlib
+from argparse import ArgumentParser
+from hashlib import sha256
+from json import load, dump, dumps
+from sys import stderr
+from zipfile import ZipFile, ZIP_DEFLATED
 
 # License: Apache-2.0
-
-
-def main():
-    args = vars(generate_parser().parse_args())
-    if args['type'] == 'clean':
-        for i in os.listdir('builds/'):
-            os.remove(os.path.join('builds', i))
-        print("\nDeleted all packs built.")
-    else:
-        pack_builder = builder()
-        pack_builder.args = args
-        pack_builder.build()
 
 
 class builder(object):
@@ -82,11 +70,10 @@ class builder(object):
             # TODO: split mod strings into namespaces
             main_lang_data = self.__merge_language(lang_supp, mod_supp)
             # get realms strings
-            realms_lang_data = json.load(open(os.path.join(os.path.dirname(
+            realms_lang_data = load(open(os.path.join(os.path.dirname(
                 __file__), "assets/realms/lang/zh_meme.json"), 'r', encoding='utf8'))
             # process pack name
-            digest = hashlib.sha256(json.dumps(
-                args).encode('utf8')).hexdigest()
+            digest = sha256(dumps(args).encode('utf8')).hexdigest()
             pack_name = args['hash'] and f"mcwzh-meme.{digest[:7]}.zip" or "mcwzh-meme.zip"
             self.__filename = pack_name
             # process mcmeta
@@ -107,21 +94,21 @@ class builder(object):
             if not os.path.exists(output_dir):
                 os.mkdir(output_dir)
             # create pack
-            pack = zipfile.ZipFile(
-                pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
+            pack = ZipFile(
+                pack_name, 'w', compression=ZIP_DEFLATED, compresslevel=5)
             pack.write(os.path.join(os.path.dirname(
                 __file__), "pack.png"), arcname="pack.png")
             pack.write(os.path.join(os.path.dirname(
                 __file__), "LICENSE"), arcname="LICENSE")
-            pack.writestr("pack.mcmeta", json.dumps(
+            pack.writestr("pack.mcmeta", dumps(
                 mcmeta, indent=4, ensure_ascii=False))
             # dump lang file into pack
             if args['type'] != 'legacy':
                 # normal/compat
                 pack.writestr(f"assets/minecraft/lang/{lang_file_name}",
-                              json.dumps(main_lang_data, indent=4, ensure_ascii=True))
+                              dumps(main_lang_data, indent=4, ensure_ascii=True))
                 pack.writestr(f"assets/realms/lang/{lang_file_name}",
-                              json.dumps(realms_lang_data, indent=4, ensure_ascii=True))
+                              dumps(realms_lang_data, indent=4, ensure_ascii=True))
             else:
                 # legacy
                 main_lang_data.update(realms_lang_data)
@@ -155,19 +142,19 @@ class builder(object):
                                 f"Duplicated '{testpath}', skipping.")
 
     def __raise_warning(self, warning: str):
-        print(f'\033[33mWarning: {warning}\033[0m', file=sys.stderr)
+        print(f'\033[33mWarning: {warning}\033[0m', file=stderr)
         self.__log_list.append(f'Warning: {warning}')
         self.__warning += 1
 
     def __raise_error(self, error: str):
-        print(f'\033[1;31mError: {error}\033[0m', file=sys.stderr)
+        print(f'\033[1;31mError: {error}\033[0m', file=stderr)
         print("\033[1;31mTerminate building because an error occurred.\033[0m")
         self.__log_list.append(f'Error: {error}')
         self.__log_list.append("Terminate building because an error occurred.")
         self.__error += 1
 
     def __process_meta(self, type: str) -> dict:
-        data = json.load(open(os.path.join(os.path.dirname(
+        data = load(open(os.path.join(os.path.dirname(
             __file__), 'pack.mcmeta'), 'r', encoding='utf8'))
         if type == 'compat':
             data.pop('language')
@@ -195,7 +182,7 @@ class builder(object):
             return include_list
 
     def __convert_path_to_module(self, path: str) -> str:
-        return json.load(open(os.path.join(path, "manifest.json"), 'r', encoding='utf8'))['name']
+        return load(open(os.path.join(path, "manifest.json"), 'r', encoding='utf8'))['name']
 
     def __parse_mods(self, mods: list) -> list:
         existing_mods = os.listdir(os.path.join(
@@ -218,16 +205,16 @@ class builder(object):
 
     def __merge_language(self, language_supp: list, mod_supp: list) -> dict:
         # load basic strings
-        lang_data = json.load(open(os.path.join(os.path.dirname(
+        lang_data = load(open(os.path.join(os.path.dirname(
             __file__), "assets/minecraft/lang/zh_meme.json"), 'r', encoding='utf8'))
         for item in language_supp:
             add_file = os.path.join("modules", item, "add.json")
             remove_file = os.path.join("modules", item, "remove.json")
             if os.path.exists(add_file):
                 lang_data.update(
-                    json.load(open(add_file, 'r', encoding='utf8')))
+                    load(open(add_file, 'r', encoding='utf8')))
             if os.path.exists(remove_file):
-                for key in json.load(open(remove_file, 'r', encoding='utf8')):
+                for key in load(open(remove_file, 'r', encoding='utf8')):
                     if key in lang_data:
                         lang_data.pop(key)
                     else:
@@ -240,7 +227,7 @@ class builder(object):
         mods = {}
         for file in mod_list:
             if file.endswith(".json"):
-                mods.update(json.load(open(os.path.join(os.path.dirname(
+                mods.update(load(open(os.path.join(os.path.dirname(
                     __file__), "mods", file), 'r', encoding='utf8')))
             elif file.endswith(".lang"):
                 with open(os.path.join(os.path.dirname(__file__), "mods", file), 'r', encoding='utf8') as f:
@@ -253,7 +240,7 @@ class builder(object):
 
     def __generate_legacy_content(self, content: dict) -> str:
         # get mappings list
-        mappings = json.load(open(os.path.join(
+        mappings = load(open(os.path.join(
             "mappings", "all_mappings"), 'r', encoding='utf8'))['mappings']
         legacy_lang_data = {}
         for item in mappings:
@@ -262,7 +249,7 @@ class builder(object):
                 self.__raise_warning(
                     f"Missing mapping '{mapping_file}', skipping.")
             else:
-                mapping = json.load(
+                mapping = load(
                     open(os.path.join("mappings", mapping_file), 'r', encoding='utf8'))
                 for k, v in mapping.items():
                     if v not in content:
@@ -320,7 +307,7 @@ class module_checker(object):
         for module in os.listdir(base_folder):
             manifest = os.path.join(base_folder, module, "manifest.json")
             if os.path.exists(manifest) and os.path.isfile(manifest):
-                data = json.load(open(manifest, 'r', encoding='utf8'))
+                data = load(open(manifest, 'r', encoding='utf8'))
                 name = data['name']
                 module_type = data['type']
                 if name in lang_list or name in res_list:
@@ -346,8 +333,8 @@ class module_checker(object):
         return True
 
 
-def generate_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(
+def generate_parser() -> ArgumentParser:
+    parser = ArgumentParser(
         description="Automatically build resourcepacks")
     parser.add_argument('type', default='normal', choices=[
                         'normal', 'compat', 'legacy', 'clean'], help="Build type. Should be 'normal', 'compat', 'legacy' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted.")
@@ -367,4 +354,12 @@ def generate_parser() -> argparse.ArgumentParser:
 
 
 if __name__ == "__main__":
-    main()
+    args = vars(generate_parser().parse_args())
+    if args['type'] == 'clean':
+        for i in os.listdir('builds/'):
+            os.remove(os.path.join('builds', i))
+        print("\nDeleted all packs built.")
+    else:
+        pack_builder = builder()
+        pack_builder.args = args
+        pack_builder.build()
