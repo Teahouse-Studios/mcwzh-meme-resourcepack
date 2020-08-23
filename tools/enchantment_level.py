@@ -1,5 +1,5 @@
 import json
-import argparse
+from argparse import ArgumentParser
 
 # WIP
 
@@ -10,7 +10,7 @@ def dump(max: int):
 
 
 def generate_parser():
-    parser = argparse.ArgumentParser(
+    parser = ArgumentParser(
         description="Generate enchantment level fix json.")
     parser.add_argument('max', help='wanted max level.')
     return parser
