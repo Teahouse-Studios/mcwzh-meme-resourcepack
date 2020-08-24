@@ -8,4 +8,4 @@ with open("zh_cn.json", 'r', encoding='utf8') as f:
 with open("assets/minecraft/lang/zh_meme.json", 'r', encoding='utf8') as f:
     meme_lang_data = load(f)
 
-print(*(set(official_lang_data) ^ set(meme_lang_data)), sep='\n')
+print(*(k for k in official_lang_data if k in meme_lang_data), sep='\n')

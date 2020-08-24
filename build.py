@@ -106,9 +106,9 @@ class builder(object):
             if args['type'] != 'legacy':
                 # normal/compat
                 pack.writestr(f"assets/minecraft/lang/{lang_file_name}",
-                              dumps(main_lang_data, indent=4, ensure_ascii=True))
+                              dumps(main_lang_data, indent=4, ensure_ascii=True, sort_keys=True))
                 pack.writestr(f"assets/realms/lang/{lang_file_name}",
-                              dumps(realms_lang_data, indent=4, ensure_ascii=True))
+                              dumps(realms_lang_data, indent=4, ensure_ascii=True, sort_keys=True))
             else:
                 # legacy
                 main_lang_data.update(realms_lang_data)

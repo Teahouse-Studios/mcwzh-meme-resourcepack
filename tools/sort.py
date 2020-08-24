@@ -16,9 +16,9 @@ def generate_parser() -> ArgumentParser:
 
 if __name__ == '__main__':
     args = generate_parser().parse_args()
-    after = sort(load(open(args.json, "r", encoding="utf-8")))
+    file = load(open(args.json, "r", encoding="utf-8"))
     if args.outfile:
-        dump(after, open(args.outfile, "w", encoding="utf-8"),
-             ensure_ascii=False, indent=4)
+        dump(file, open(args.outfile, "w", encoding="utf-8"),
+             ensure_ascii=False, indent=4, sort_keys=True)
     else:
-        dump(after, stdout, ensure_ascii=False)
+        dump(file, stdout, ensure_ascii=False, sort_keys=True)

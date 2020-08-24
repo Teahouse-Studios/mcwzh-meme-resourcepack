@@ -14,7 +14,6 @@ for item in mappings:
         print(
             f"\033[33mWarning: Missing mapping '{mapping_file}', skipping.\033[0m", file=stderr)
     else:
-        mapping = load(
-            open(os.path.join("mappings", mapping_file), 'r', encoding='utf8'))
-        mapping_data.update(mapping)
+        mapping_data.update(
+            load(open(os.path.join("mappings", mapping_file), 'r', encoding='utf8')))
 print(*(k for k in legacy_lang_data if k not in mapping_data), sep='\n')

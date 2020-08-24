@@ -30,6 +30,6 @@ if __name__ == '__main__':
     out = generate_conversion(args)
     if args.outfile:
         dump(out, open(args.outfile, 'w', encoding='utf8'),
-             ensure_ascii=False, indent=4)
+             ensure_ascii=False, indent=4, sort_keys=True)
     else:
-        dump(out, stdout, ensure_ascii=False)
+        dump(out, stdout, ensure_ascii=False, sort_keys=True)
