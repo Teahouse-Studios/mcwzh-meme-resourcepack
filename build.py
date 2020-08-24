@@ -81,10 +81,6 @@ class builder(object):
             # decide language file name & ext
             lang_file_name = args['type'] == 'normal' and 'zh_meme.json' or (
                 args['type'] == 'compat' and 'zh_cn.json' or 'zh_cn.lang')
-            # create pack
-            info = f"Building pack {pack_name}"
-            print(info)
-            self.__log_list.append(info)
             # set output dir
             output_dir = 'output' in args and args['output'] or 'builds'
             pack_name = os.path.join(output_dir, pack_name)
@@ -94,6 +90,9 @@ class builder(object):
             if not os.path.exists(output_dir):
                 os.mkdir(output_dir)
             # create pack
+            info = f"Building pack {pack_name}"
+            print(info)
+            self.__log_list.append(info)
             pack = ZipFile(
                 pack_name, 'w', compression=ZIP_DEFLATED, compresslevel=5)
             pack.write(os.path.join(os.path.dirname(
@@ -126,7 +125,7 @@ class builder(object):
         for item in modules:
             base_folder = os.path.join(
                 os.path.dirname(__file__), "modules", item)
-            for root, dirs, files in os.walk(base_folder):
+            for root, _, files in os.walk(base_folder):
                 for file in files:
                     if file != "manifest.json":
                         path = os.path.join(root, file)
