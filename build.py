@@ -1,4 +1,5 @@
 import os
+import zipfile
 from argparse import ArgumentParser
 from hashlib import sha256
 from json import load, dump, dumps
