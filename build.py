@@ -1,5 +1,4 @@
 import os
-import zipfile
 from argparse import ArgumentParser
 from hashlib import sha256
 from json import load, dump, dumps
@@ -122,7 +121,7 @@ class builder(object):
         else:
             self.__raise_error(checker.info)
 
-    def __dump_resources(self, modules: list, pack: zipfile.ZipFile):
+    def __dump_resources(self, modules: list, pack: ZipFile):
         for item in modules:
             base_folder = os.path.join(
                 os.path.dirname(__file__), "modules", item)
