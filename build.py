@@ -1,7 +1,7 @@
 import os
 from argparse import ArgumentParser
 from hashlib import sha256
-from json import load, dump, dumps
+from json import load, dumps
 from sys import stderr
 from zipfile import ZipFile, ZIP_DEFLATED
 
