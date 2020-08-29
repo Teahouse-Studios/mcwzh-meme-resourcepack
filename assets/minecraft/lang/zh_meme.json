@@ -2845,7 +2845,7 @@
     "gamerule.doMobLoot.description": "控制暴徒死亡后是否掉落资源，包括经验球",
     "gamerule.doMobSpawning": "生成暴徒",
     "gamerule.doMobSpawning.description": "一些实体可能有独立的规则",
-    "gamerule.doPatrolSpawning": "生成灾厄巡逻队",
+    "gamerule.doPatrolSpawning": "鬼子扫荡",
     "gamerule.doTileDrops": "方块掉落",
     "gamerule.doTileDrops.description": "控制破坏方块后是否掉落资源，包括经验球",
     "gamerule.doTraderSpawning": "生成流浪奸商",
