@@ -6,6 +6,9 @@ import json
 from threading import Lock
 import subprocess
 
+# This file is deprecated and will be removed some time.
+# NO MORE MAINTENANCE.
+
 app = Flask(__name__, template_folder='./views/',
             static_folder="static", static_url_path="/static")
 app.config['TEMPLATES_AUTO_RELOAD'] = True
