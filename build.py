@@ -348,7 +348,7 @@ def generate_parser() -> ArgumentParser:
                         help="Use 'suitable for work' strings, equals to '--language sfw'.")
     parser.add_argument('-m', '--mod', nargs='*', default='none',
                         help="(Experimental) Include mod string files. Should be file names in 'mods/' folder, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only files in 'mods/' work.")
-    parser.add_argument('-f', '--format', default=6, type=int,
+    parser.add_argument('-f', '--format', type=int,
                         help='Specify "pack_format". Note some options may override the value specified here.')
     parser.add_argument('-o', '--output', nargs='?', default='builds',
                         help="Specify the location to output packs. Default location is 'builds/' folder.")
