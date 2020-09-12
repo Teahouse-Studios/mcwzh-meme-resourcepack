@@ -1832,7 +1832,7 @@
     "chat.type.team.sent": "-> %s <%s> %s",
     "chat.type.team.text": "%s <%s> %s",
     "chat.type.text": "<%s> %s",
-    "chat.type.text.narrate": "%s说：%s",
+    "chat.type.text.narrate": "%s说%s",
     "clear.failed.multiple": "%s名玩家一无所有",
     "clear.failed.single": "%s一无所有",
     "color.minecraft.black": "黑色",
