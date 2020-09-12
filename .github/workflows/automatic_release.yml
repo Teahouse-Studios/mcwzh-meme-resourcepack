@@ -18,7 +18,7 @@ jobs:
           architecture: 'x64'
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: "Build"
+      - name: Build
         run: |
           python preset_build.py
       - name: Upload release assets
