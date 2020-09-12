@@ -339,7 +339,7 @@ def generate_parser() -> ArgumentParser:
     parser = ArgumentParser(
         description="Automatically build resourcepacks")
     parser.add_argument('type', default='normal', choices=[
-                        'normal', 'compat', 'legacy', 'clean'], help="Build type. Should be 'normal', 'compat', 'legacy' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted. Implies '--version 3' when it's 'legacy'.")
+                        'normal', 'compat', 'legacy', 'clean'], help="Build type. Should be 'normal', 'compat', 'legacy' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted. Implies '--format 3' when it's 'legacy'.")
     parser.add_argument('-r', '--resource', nargs='*', default='all',
                         help="(Experimental) Include resource modules. Should be module names, 'all' or 'none'. Defaults to 'all'. Pseudoly accepts a path, but only module paths in 'modules' work.")
     parser.add_argument('-l', '--language', nargs='*', default='none',
