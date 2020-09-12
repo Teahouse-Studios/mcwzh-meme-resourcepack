@@ -5,21 +5,21 @@ import os
 if __name__ == '__main__':
     preset_args = [
         {'type': 'normal', 'language': [], 'resource': [
-            'all'], 'mod': ['all'], 'sfw': True, 'hash': False, 'output': None},
+            'all'], 'mod': ['all'], 'sfw': True, 'hash': False, 'output': 'builds'},
         {'type': 'normal', 'language': [], 'resource': [
-            'all'], 'mod': [], 'sfw': True, 'hash': False, 'output': None},
+            'all'], 'mod': [], 'sfw': True, 'hash': False, 'output': 'builds'},
         {'type': 'normal', 'language': [], 'resource': [
-        ], 'mod': [], 'sfw': True, 'hash': False, 'output': None},
+        ], 'mod': [], 'sfw': True, 'hash': False, 'output': 'builds'},
         {'type': 'compat', 'language': [], 'resource': [
-            'all'], 'mod': ['all'], 'sfw': True, 'hash': False, 'output': None},
+            'all'], 'mod': ['all'], 'sfw': True, 'hash': False, 'output': 'builds'},
         {'type': 'compat', 'language': [], 'resource': [
-            'all'], 'mod': [], 'sfw': True, 'hash': False, 'output': None},
+            'all'], 'mod': [], 'sfw': True, 'hash': False, 'output': 'builds'},
         {'type': 'compat', 'language': [], 'resource': [
-        ], 'mod': [], 'sfw': True, 'hash': False, 'output': None},
+        ], 'mod': [], 'sfw': True, 'hash': False, 'output': 'builds'},
         {'type': 'legacy', 'language': ['attributes', 'old_strings', 'diamond_hoe'], 'resource': [
-        ], 'mod': [], 'sfw': True, 'hash': False, 'output': None},
+        ], 'mod': [], 'sfw': True, 'hash': False, 'output': 'builds'},
         {'type': 'normal', 'language': [], 'resource': [
-            'all'], 'mod': ['all'], 'sfw': False, 'hash': False, 'output': None},
+            'all'], 'mod': ['all'], 'sfw': False, 'hash': False, 'output': 'builds'},
     ]
     preset_name = [
         "mcwzh-meme_sfw.zip",

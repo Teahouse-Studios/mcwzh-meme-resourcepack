@@ -77,18 +77,16 @@ class builder(object):
             pack_name = args['hash'] and f"mcwzh-meme.{digest[:7]}.zip" or "mcwzh-meme.zip"
             self.__filename = pack_name
             # process mcmeta
-            mcmeta = self.__process_meta(args['type'])
+            mcmeta = self.__process_meta(args)
             # decide language file name & ext
-            lang_file_name = args['type'] == 'normal' and 'zh_meme.json' or (
-                args['type'] == 'compat' and 'zh_cn.json' or 'zh_cn.lang')
+            lang_file_name = self.__get_lang_filename(args['type'])
             # set output dir
-            output_dir = 'output' in args and args['output'] or 'builds'
-            pack_name = os.path.join(output_dir, pack_name)
+            pack_name = os.path.join(args['output'], pack_name)
             # mkdir
-            if os.path.exists(output_dir) and not os.path.isdir(output_dir):
-                os.remove(output_dir)
-            if not os.path.exists(output_dir):
-                os.mkdir(output_dir)
+            if os.path.exists(args['output']) and not os.path.isdir(args['output']):
+                os.remove(args['output'])
+            if not os.path.exists(args['output']):
+                os.mkdir(args['output'])
             # create pack
             info = f"Building pack {pack_name}"
             print(info)
@@ -152,14 +150,19 @@ class builder(object):
         self.__log_list.append("Terminate building because an error occurred.")
         self.__error += 1
 
-    def __process_meta(self, type: str) -> dict:
+    def __process_meta(self, args: dict) -> dict:
         data = load(open(os.path.join(os.path.dirname(
             __file__), 'pack.mcmeta'), 'r', encoding='utf8'))
-        if type == 'compat':
+        pack_format = args['type'] == 'legacy' and 3 or (
+            'format' in args and args['format'] or None)
+        data['pack']['pack_format'] = pack_format or data['pack']['pack_format']
+        if args['type'] == 'compat':
             data.pop('language')
-        elif type == 'legacy':
-            data['pack']['pack_format'] = 3
         return data
+
+    def __get_lang_filename(self, type: str) -> str:
+        return type == 'normal' and 'zh_meme.json' or (
+            type == 'compat' and 'zh_cn.json' or 'zh_cn.lang')
 
     def __parse_includes(self, includes: list, full_list: list) -> list:
         if 'none' in includes:
@@ -336,7 +339,7 @@ def generate_parser() -> ArgumentParser:
     parser = ArgumentParser(
         description="Automatically build resourcepacks")
     parser.add_argument('type', default='normal', choices=[
-                        'normal', 'compat', 'legacy', 'clean'], help="Build type. Should be 'normal', 'compat', 'legacy' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted.")
+                        'normal', 'compat', 'legacy', 'clean'], help="Build type. Should be 'normal', 'compat', 'legacy' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted. Implies '--version 3' when it's 'legacy'.")
     parser.add_argument('-r', '--resource', nargs='*', default='all',
                         help="(Experimental) Include resource modules. Should be module names, 'all' or 'none'. Defaults to 'all'. Pseudoly accepts a path, but only module paths in 'modules' work.")
     parser.add_argument('-l', '--language', nargs='*', default='none',
@@ -345,8 +348,10 @@ def generate_parser() -> ArgumentParser:
                         help="Use 'suitable for work' strings, equals to '--language sfw'.")
     parser.add_argument('-m', '--mod', nargs='*', default='none',
                         help="(Experimental) Include mod string files. Should be file names in 'mods/' folder, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only files in 'mods/' work.")
-    parser.add_argument(
-        '-o', '--output', help="Specify the location to output packs. Default location is 'builds/' folder.")
+    parser.add_argument('-f', '--format', default=6, type=int,
+                        help='Specify "pack_format". Note some options may override the value specified here.')
+    parser.add_argument('-o', '--output', nargs='?', default='builds',
+                        help="Specify the location to output packs. Default location is 'builds/' folder.")
     parser.add_argument('--hash', action='store_true',
                         help="Add a hash into file name.")
     return parser
