@@ -11,7 +11,8 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
-      - uses: actions/setup-python@v1
+      - name: Setup python
+        uses: actions/setup-python@v2
         with:
           python-version: '3.x'
           architecture: 'x64'
@@ -20,16 +21,8 @@ jobs:
       - name: "Build"
         run: |
           python preset_build.py
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: true
-          draft: false
-          files: |
-            builds/mcwzh-meme.zip
-            builds/mcwzh-meme_nomod_sfw.zip
-            builds/mcwzh-meme_momod_noresource_sfw.zip
-            builds/mcwzh-meme_compatible_sfw.zip
-            builds/mcwzh-meme_compatible_nomod_sfw.zip
-            builds/mcwzh-meme_compatible_nomod_noresource_sfw.zip
-            builds/mcwzh-meme_legacy_noresource_sfw.zip
+      - name: Upload release assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          hub release create $(find ./builds -type f -name "*.zip" -printf "-a %p ") -m "${GITHUB_REF##*/}" "${GITHUB_REF##*/}"
