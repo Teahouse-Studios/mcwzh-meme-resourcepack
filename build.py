@@ -95,8 +95,7 @@ class builder(object):
                 pack_name, 'w', compression=ZIP_DEFLATED, compresslevel=5)
             pack.write(os.path.join(os.path.dirname(
                 __file__), "pack.png"), arcname="pack.png")
-            pack.write(os.path.join(os.path.dirname(
-                __file__), "LICENSE"), arcname="LICENSE")
+            pack.writestr("LICENSE", self.__handle_license())
             pack.writestr("pack.mcmeta", dumps(
                 mcmeta, indent=4, ensure_ascii=False))
             # dump lang file into pack
@@ -260,6 +259,11 @@ class builder(object):
                     else:
                         legacy_lang_data[k] = content[v]
         return ''.join(f'{k}={v}\n' for k, v in legacy_lang_data.items())
+
+    def __handle_license(self):
+        return ''.join(map(lambda item: item[1],
+                           filter(lambda item: 12 < item[0] < 394,
+                                  enumerate(open(os.path.join(os.path.dirname(__file__), "LICENSE"), 'r', encoding='utf8')))))
 
 
 class module_checker(object):
