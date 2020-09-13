@@ -3765,7 +3765,7 @@
     "options.graphics.warning.vendor": "检测到厂商：[%s]",
     "options.graphics.warning.version": "检测到OpenGL版本：[%s]",
     "options.guiScale": "界面尺寸",
-    "options.guiScale.auto": "要你教我做事？",
+    "options.guiScale.auto": "我自己来",
     "options.hidden": "隐藏",
     "options.invertMouse": "鼠标反转",
     "options.key.hold": "按住",
