@@ -30,6 +30,10 @@
 
 1.13对可翻译字符串进行了一次破坏性更改，这意味着1.12.2及以下无法直接正常使用本资源包。同时，1.12.2及以下版本并不支持读取ASCII格式的Unicode码。通过建立映射表，我们初步实现了1.12.2及以下版本对大部分字符串的支持（也就是除去命令），详见Issue [#34](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/issues/34)。1.12.2及以下版本请使用带有 `_legacy` 的预设包。
 
+### 对旧版本的兼容
+
+本仓库中的语言文件和最新的Java版的语言文件保持同步。对旧版本，我们采用了“模块”的方式保持兼容。构建时请加入参数 `-l <语言模块名称>` 来将其加入到主语言文件中。[这里](/list_of_language_modules.md)列出了目前所有的语言模块。
+
 ### 唱片替换
 
 该资源包将唱片信息修改成了非Minecraft歌曲。由于版权原因，您需要自行制作一个唱片替换资源包（可以参考[这篇文章](https://www.planetminecraft.com/blog/how-to-change-music-discs-to-any-song---easy/)）。一份不受支持的预制版唱片替换包（不允许二次分发）可以在[这里](https://files.lakejason0.ml/images/3/34/%E5%94%B1%E7%89%87%E6%9B%BF%E6%8D%A2.zip)获得。
@@ -39,10 +43,6 @@
 该资源包将不死图腾替换成了自定义模型。自定义模型范围为 `10800000~10800006` 。如果这不适用于你（例如模型出错，游玩自定义地图或装载其他3D资源包），你可以尝试调整载入顺序，或者下载不带自定义模型的自动构建（以 `_nofigure` 结尾）。如果不想重新下载，你也可以直接删除有自定义模型版本的对应的文件夹。
 
 关于可以直接获取自定义模型的数据包，可以在[这里](https://files.lakejason0.ml/images/e/e5/Figure.zip)，或是在本repo中的`datapack`目录找到。
-
-### 对旧版本的兼容
-
-本仓库中的语言文件和最新的Java版的语言文件保持同步。对旧版本，我们采用了“模块”的方式保持兼容。构建时请加入参数 `-l <语言模块名称>` 来将其加入到主语言文件中。[这里](/list_of_language_modules.md)列出了目前所有的语言模块。
 
 ### “Suitable for work”替换
 
@@ -75,10 +75,10 @@ cd mcwzh-meme-resourcepack
 3. 运行Python命令：
 
 ``` bash
-python preset_build.py all
+python preset_build.py
 ```
 
-在 `builds` 文件夹中会出现 `mcwzh-meme.zip` 、 `mcwzh-meme_compatible_sfw.zip` 、 `mcwzh-meme_compatible_nofigure_legacy_sfw.zip` 等预设的资源包，名称和作用如上所述。
+在 `builds` 文件夹中会生成 `mcwzh-meme.zip` 、 `mcwzh-meme_compatible_sfw.zip` 、 `mcwzh-meme_compatible_nofigure_legacy_sfw.zip` 等预设的资源包，名称和作用如上所述。
 
 如果只需要常规的资源包，运行：
 
@@ -124,4 +124,3 @@ python build.py -h
 * 本项目的自动构建脚本以 ***Apache 2.0*** 协议发布。
 
 ![GitHub forks](https://img.shields.io/github/forks/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)    ![GitHub stars](https://img.shields.io/github/stars/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)
-
