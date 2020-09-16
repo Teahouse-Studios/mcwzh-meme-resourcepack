@@ -261,9 +261,8 @@ class builder(object):
         return ''.join(f'{k}={v}\n' for k, v in legacy_lang_data.items())
 
     def __handle_license(self):
-        return ''.join(map(lambda item: item[1],
-                           filter(lambda item: 12 < item[0] < 394,
-                                  enumerate(open(os.path.join(os.path.dirname(__file__), "LICENSE"), 'r', encoding='utf8')))))
+        return ''.join(item[1] for item in enumerate(
+            open(os.path.join(os.path.dirname(__file__), "LICENSE"), 'r', encoding='utf8')) if 12 < item[0] < 394)
 
 
 class module_checker(object):
