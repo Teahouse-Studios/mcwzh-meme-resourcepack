@@ -6,26 +6,18 @@
 
 ## 语言模块一览
 
-以下语言模块按名称排序。
+以下模块按名称排序。
 
-* `20w14f`：提供对愚人节快照20w14inf的有限支持。
-
-* `attributes`：20w14a以前的部分属性名称。
-
-* `combat_test`：提供对Combat Test 6的有限支持。
-
-* `diamond_hoe`：20w20a以前的“终极奉献”进度名称与描述。
-
-* `nether_biome`：20w06a以前的下界生物群系名称。
-
-* `old_strings`：20w06a以前旧版本的各种字符串。
-
-* `select_world_gui_old`：20w28a以前的生成世界字符串.
-
-* `sfw`：适用于工作场合的文本替换。
-
-* `spawnpoint_before_20w12a`：对20w12a以前版本的重生信息的替换。
-
-* `spawnpoint_before_20w29a`：对20w29a以前版本的重生信息的替换。
-
-* `trapdoor`：20w14a以前版本的活板门字幕更正。
+| 名称 | 说明 |
+| ---- | ---- |
+| `20w14f` | 提供对愚人节快照20w14inf的有限支持。 |
+| `attributes` | 20w14a以前的部分属性名称。 |
+|`combat_test` | 提供对Combat Test 6的有限支持。 |
+| `diamond_hoe` | 20w20a以前的“终极奉献”进度名称与描述。|
+| `nether_biome` | 20w06a以前的下界生物群系名称。 |
+| `old_strings` | 20w06a以前旧版本的各种字符串。 |
+| `select_world_gui_old` | 20w28a以前的生成世界字符串。 |
+| `sfw` | 适用于工作场合的文本替换。 |
+| `spawnpoint_before_20w12a` | 对20w12a以前版本的重生信息的替换。 |
+| `spawnpoint_before_20w29a` | 对20w29a以前版本的重生信息的替换。 |
+| `trapdoor` | 20w14a以前版本的活板门字幕更正。 |
