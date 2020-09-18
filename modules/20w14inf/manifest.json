@@ -1,5 +1,6 @@
 {
     "name": "20w14inf",
     "type": "language",
-    "description": "提供对20w14inf快照的梗体中文有限支持"
+    "description": "提供对20w14inf快照的梗体中文有限支持",
+    "author": "梗体中文内容组"
 }
