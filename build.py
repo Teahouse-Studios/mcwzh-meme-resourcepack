@@ -51,9 +51,11 @@ class builder(object):
     def build(self):
         self.clean_status()
         args = self.args
+        # args validation
+        status, info = self.__check_args()
         # checking module names first, preventing name conflict
         checker = module_checker()
-        if checker.check_module():
+        if status and checker.check_module():
             # process args
             # get language supplement
             lang_supp = self.__parse_includes(
@@ -116,7 +118,10 @@ class builder(object):
             pack.close()
             print("Build successful.")
         else:
-            self.__raise_error(checker.info)
+            if not status:
+                self.__raise_error(info)
+            else:
+                self.__raise_error(checker.info)
 
     def __dump_resources(self, modules: list, pack: ZipFile):
         for item in modules:
@@ -148,6 +153,15 @@ class builder(object):
         self.__log_list.append(f'Error: {error}')
         self.__log_list.append("Terminate building because an error occurred.")
         self.__error += 1
+
+    def __check_args(self):
+        args = self.args
+        for key in ('type', 'output', 'language', 'resource', 'mod', 'sfw', 'hash'):
+            if key not in args:
+                return False, f'Missing required argument "{key}"'
+        if args['type'] == 'legacy' and 'format' in args and args['format'] > 3:
+            return False, f'Type "{args["type"]}" does not match pack_format {args["format"]}'
+        return True, None
 
     def __process_meta(self, args: dict) -> dict:
         data = load(open(os.path.join(os.path.dirname(
@@ -352,7 +366,7 @@ def generate_parser() -> ArgumentParser:
     parser.add_argument('-m', '--mod', nargs='*', default='none',
                         help="(Experimental) Include mod string files. Should be file names in 'mods/' folder, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only files in 'mods/' work.")
     parser.add_argument('-f', '--format', type=int,
-                        help='Specify "pack_format". Note some options may override the value specified here.')
+                        help='Specify "pack_format". when omitted, will default to 3 if build type is "legacy" and 6 if build type is "normal" or "compat". A wrong value will cause the build to fail.')
     parser.add_argument('-o', '--output', nargs='?', default='builds',
                         help="Specify the location to output packs. Default location is 'builds/' folder.")
     parser.add_argument('--hash', action='store_true',
