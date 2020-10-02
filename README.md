@@ -14,7 +14,7 @@
 
 ## 用法
 
-在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases)中下载此资源包，或在[网页构建](https://download.powerdia.nl)中选择自定义选项下载。
+在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases)中下载此资源包，或在[网页构建](https://dl.meme.teahou.se/)中选择自定义选项下载。
 
 ### 常规
 
@@ -52,11 +52,11 @@
 
 ### 体验最新内容
 
-想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作，或者不会命令行可以前往[网页打包](https://download.powerdia.nl)：
+想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作，或者不会命令行可以前往[网页打包](http://dl.meme.teahou.se/)：
 
 #### 先决条件
 
-请确保已经安装了Python 3.6+和Git。如果没有，请到[Python官网](https://www.python.org)和[Git官网](https://www.git-scm.com)下载。
+请确保已经安装了Python 3.8+和Git。如果没有，请到[Python官网](https://www.python.org)和[Git官网](https://www.git-scm.com)下载。
 
 #### 步骤
 
