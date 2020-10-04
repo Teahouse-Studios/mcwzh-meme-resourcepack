@@ -5,7 +5,7 @@ import os
 if __name__ == '__main__':
     preset_args = [
         {'type': 'normal', 'language': [], 'resource': [
-            'all'], 'mod': ['all'], 'mixed': ['none'], 'sfw': True, 'hash': False, 'output': 'builds', 'format': 6},
+            'all'], 'mod': ['all'], 'mixed': [], 'sfw': True, 'hash': False, 'output': 'builds', 'format': 6},
         {'type': 'normal', 'language': [], 'resource': [
             'all'], 'mod': [], 'mixed': [], 'sfw': True, 'hash': False, 'output': 'builds', 'format': 6},
         {'type': 'normal', 'language': [], 'resource': [
