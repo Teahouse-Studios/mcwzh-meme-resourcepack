@@ -1,5 +1,6 @@
 import os
 from json import load
+from os.path import exists, isfile, join, split
 
 
 class module_checker(object):
@@ -7,32 +8,18 @@ class module_checker(object):
         self.__status = True
         self.__checked = False
         self.__module_path = ''
-        self.__lang_list = []
-        self.__res_list = []
-        self.__manifests = {}
-        self.__info = ''
+        self.__parsed_modules = {}
+        self.__info = []
 
     @property
     def info(self):
-        return self.__info
+        return '\n'.join(self.__info)
 
     @property
-    def language_module_list(self):
+    def module_list(self):
         if not self.__checked:
             self.check_module()
-        return self.__status and self.__lang_list or []
-
-    @property
-    def resource_module_list(self):
-        if not self.__checked:
-            self.check_module()
-        return self.__status and self.__res_list or []
-
-    @property
-    def manifests(self):
-        if not self.__checked:
-            self.check_module()
-        return self.__status and self.__manifests or {}
+        return self.__status and self.__parsed_modules or {}
 
     @property
     def module_path(self):
@@ -45,39 +32,49 @@ class module_checker(object):
     def clean_status(self):
         self.__status = True
         self.__checked = False
-        self.__lang_list = []
-        self.__res_list = []
-        self.__manifests = {}
-        self.__info = ''
+        self.__parsed_modules = {}
+        self.__info = []
 
     def check_module(self):
         self.clean_status()
-        lang_list = []
-        res_list = []
+        modules = {
+            'language': [],
+            'resource': [],
+            'mixed': []
+        }
         for module in os.listdir(self.module_path):
-            manifest = os.path.join(self.module_path, module, "manifest.json")
-            if os.path.exists(manifest) and os.path.isfile(manifest):
-                data = load(open(manifest, 'r', encoding='utf8'))
-                name = data['name']
-                module_type = data['type']
-                if name in lang_list or name in res_list:
-                    self.__checked = True
-                    self.__status = False
-                    self.__info = f"Conflict name '{name}'."
-                    return False
-                else:
-                    self.__manifests[name] = data['description']
-                    if module_type == 'language':
-                        lang_list.append(name)
-                    elif module_type == 'resource':
-                        res_list.append(name)
+            status, info, data = self.__analyze_module(
+                join(self.module_path, module))
+            if status:
+                modules[data.pop('type')].append(data)
             else:
-                self.__checked = True
+                self.__info.append(info)
                 self.__status = False
-                self.__info = f"Bad module '{module}', no manifest file."
-                return False
-        self.__status = True
+        if modules['language'] or modules['resource'] or modules['mixed']:
+            self.__parsed_modules = modules
         self.__checked = True
-        self.__lang_list = lang_list
-        self.__res_list = res_list
-        return True
+
+    def __analyze_module(self, path: str):
+        manifest = join(path, "manifest.json")
+        dir_name = split(path)[1]
+        if exists(manifest) and isfile(manifest):
+            data = load(open(manifest, 'r', encoding='utf8'))
+            for key in ('name', 'type', 'description'):
+                if key not in data:
+                    return False, f"In path '{dir_name}': Incomplete manifest.json", None
+            if dir_name != data['name']:
+                return False, f"In path '{dir_name}': Does not match module name '{data['name']}'", None
+            if data['type'] == 'language':
+                if not (exists(join(path, "add.json")) or exists(join(path, "remove.json"))):
+                    return False, f"In path '{dir_name}': Expected a language module, but couldn't find 'add.json' or 'remove.json'", None
+            elif data['type'] == 'resource':
+                if not exists(join(path, "assets")):
+                    return False, f"In path '{dir_name}': Expected a resource module, but couldn't find 'assets' directory", None
+            elif data['type'] == 'mixed':
+                if not (exists(join(path, "assets")) and (exists(join(path, "add.json")) or exists(join(path, "remove.json")))):
+                    return False, f"In path '{dir_name}': Expected a mixed module, but couldn't find 'assets' directory and either 'add.json' or 'remove.json'", None
+            else:
+                return False, f"In path '{dir_name}': Unknown module type '{data['type']}'", None
+            return True, None, data
+        else:
+            return False, f"In module '{dir_name}': No manifest.json", None

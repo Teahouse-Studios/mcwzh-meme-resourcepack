@@ -8,7 +8,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 class pack_builder(object):
     '''Build packs.'''
 
-    def __init__(self, main_res_path: str, module_path: str, lang_modules: list, res_modules: list, mods_path: str):
+    def __init__(self, main_res_path: str, module_path: str, modules: list, mods_path: str):
         self.__args = {}
         self.__warning = 0
         self.__error = 0
@@ -16,8 +16,7 @@ class pack_builder(object):
         self.__filename = ""
         self.__main_res_path = main_res_path
         self.__module_path = module_path
-        self.__lang_modules = lang_modules
-        self.__res_modules = res_modules
+        self.__modules = modules
         self.__mods_path = mods_path
 
     @property
@@ -57,12 +56,8 @@ class pack_builder(object):
         return self.__log_list and '\n'.join(self.__log_list) or "Did not build any pack."
 
     @property
-    def language_module_list(self):
-        return self.__lang_modules
-
-    @property
-    def resource_module_list(self):
-        return self.__res_modules
+    def module_list(self):
+        return self.__modules
 
     def clean_status(self):
         self.__warning = 0
@@ -77,20 +72,24 @@ class pack_builder(object):
         status, info = self.__check_args()
         if status:
             # process args
-            # get language supplement
+            # get language modules
             lang_supp = self.__parse_includes(
                 args['language'], "language")
             # merge sfw into lang_supp
             if args['sfw'] and 'sfw' not in lang_supp:
                 lang_supp.append('sfw')
-            # get resource supplement
+            # get resource modules
             res_supp = self.__parse_includes(
                 args['resource'], "resource")
+            # get mixed modules
+            mixed_supp = self.__parse_includes(
+                args['mixed'], "mixed")
             # get mods strings
             mod_supp = self.__parse_mods(args['mod'])
             # merge language supplement
             # TODO: split mod strings into namespaces
-            main_lang_data = self.__merge_language(lang_supp, mod_supp)
+            main_lang_data = self.__merge_language(
+                lang_supp + mixed_supp, mod_supp)
             # get realms strings
             realms_lang_data = load(open(os.path.join(
                 self.main_resource_path, "assets/realms/lang/zh_meme.json"), 'r', encoding='utf8'))
@@ -134,19 +133,19 @@ class pack_builder(object):
                 pack.writestr(
                     f"assets/minecraft/lang/{lang_file_name}", legacy_content)
             # dump resources
-            self.__dump_resources(res_supp, pack)
+            self.__dump_resources(res_supp + mixed_supp, pack)
             pack.close()
             print("Build successful.")
         else:
             self.__raise_error(info)
 
     def __dump_resources(self, modules: list, pack: ZipFile):
+        excluding = ('manifest.json', 'add.json', 'remove.json')
         for item in modules:
-            base_folder = os.path.join(
-                self.module_path, item)
+            base_folder = os.path.join(self.module_path, item)
             for root, _, files in os.walk(base_folder):
                 for file in files:
-                    if file != "manifest.json":
+                    if file not in excluding:
                         path = os.path.join(root, file)
                         arcpath = path[path.find(
                             base_folder) + len(base_folder) + 1:]
@@ -204,8 +203,8 @@ class pack_builder(object):
             type == 'compat' and 'zh_cn.json' or 'zh_cn.lang')
 
     def __parse_includes(self, includes: list, type: str) -> list:
-        full_list = type == 'resource' and self.resource_module_list or (
-            type == 'language' and self.language_module_list or [])
+        full_list = list(
+            map(lambda item: item['name'], self.module_list[type]))
         if 'none' in includes:
             return []
         elif 'all' in includes:
@@ -215,17 +214,10 @@ class pack_builder(object):
             for item in includes:
                 if item in full_list:
                     include_list.append(item)
-                elif os.path.exists(os.path.normpath(item)) and self.__convert_path_to_module(
-                        os.path.normpath(item)) in full_list:
-                    include_list.append(self.__convert_path_to_module(
-                        os.path.normpath(item)))
                 else:
                     self.__raise_warning(
-                        f"'{item}' does not exist, skipping.")
+                        f"Module '{item}' does not exist, skipping.")
             return include_list
-
-    def __convert_path_to_module(self, path: str) -> str:
-        return load(open(os.path.join(path, "manifest.json"), 'r', encoding='utf8'))['name']
 
     def __parse_mods(self, mods: list) -> list:
         existing_mods = os.listdir(self.mods_path)
@@ -250,8 +242,10 @@ class pack_builder(object):
         lang_data = load(open(os.path.join(self.main_resource_path,
                                            "assets/minecraft/lang/zh_meme.json"), 'r', encoding='utf8'))
         for item in language_supp:
-            add_file = os.path.join("modules", item, "add.json")
-            remove_file = os.path.join("modules", item, "remove.json")
+            add_file = os.path.join(
+                self.module_path, item, "add.json")
+            remove_file = os.path.join(
+                self.module_path, item, "remove.json")
             if os.path.exists(add_file):
                 lang_data |= load(open(add_file, 'r', encoding='utf8'))
             if os.path.exists(remove_file):

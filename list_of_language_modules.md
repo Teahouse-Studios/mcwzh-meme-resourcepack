@@ -12,7 +12,7 @@
 | ---- | ---- |
 | `20w14f` | 提供对愚人节快照20w14inf的有限支持。 |
 | `attributes` | 20w14a以前的部分属性名称。 |
-|`combat_test` | 提供对Combat Test 6的有限支持。 |
+| `combat_test` | 提供对Combat Test 6的有限支持。 |
 | `diamond_hoe` | 20w20a以前的“终极奉献”进度名称与描述。|
 | `nether_biome` | 20w06a以前的下界生物群系名称。 |
 | `old_strings` | 20w06a以前旧版本的各种字符串。 |
