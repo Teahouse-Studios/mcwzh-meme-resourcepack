@@ -1,5 +1,5 @@
 from argparse import ArgumentParser
-from os import remove, listdir
+from os import remove, listdir, curdir
 from os.path import join, exists, isdir, dirname
 from .packaging.pack_builder import pack_builder
 from .packaging.module_checker import module_checker
@@ -9,14 +9,14 @@ def build(args: dict):
     build_info = []
     # init module_checker
     checker = module_checker()
-    curdir = dirname(__file__)
-    print(curdir)
-    checker.module_path = join(curdir, "modules")
+    current_dir = dirname(__file__)
+    print(current_dir)
+    checker.module_path = join(current_dir, "modules")
     # checking module integrity
     checker.check_module()
     build_info.extend(checker.info_list)
-    builder = pack_builder(curdir, join(
-        curdir, "modules"), checker.module_list, join(curdir, "mods"))
+    builder = pack_builder(current_dir, join(
+        current_dir, "modules"), checker.module_list, join(current_dir, "mods"))
     builder.args = args
     builder.build()
     build_info.extend(builder.log_list)
