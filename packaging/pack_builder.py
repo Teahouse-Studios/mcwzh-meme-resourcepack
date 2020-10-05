@@ -73,19 +73,13 @@ class pack_builder(object):
         if status:
             # process args
             # get language modules
-            lang_supp = self.__parse_includes(
-                args['language'], "language")
-            # merge sfw into lang_supp
-            if args['sfw'] and 'sfw' not in lang_supp:
-                lang_supp.append('sfw')
+            lang_supp = self.__parse_includes("language")
             # get resource modules
-            res_supp = self.__parse_includes(
-                args['resource'], "resource")
+            res_supp = self.__parse_includes("resource")
             # get mixed modules
-            mixed_supp = self.__parse_includes(
-                args['mixed'], "mixed")
+            mixed_supp = self.__parse_includes("mixed")
             # get mods strings
-            mod_supp = self.__parse_mods(args['mod'])
+            mod_supp = self.__parse_mods()
             # merge language supplement
             # TODO: split mod strings into namespaces
             main_lang_data = self.__merge_language(
@@ -183,7 +177,7 @@ class pack_builder(object):
             if (args['type'] == 'legacy' and args['format'] > 3) or (args['type'] in ('normal', 'compat') and args['format'] <= 3):
                 return False, f'Type "{args["type"]}" does not match pack_format {args["format"]}'
         # check essential arguments
-        for key in ('type', 'output', 'language', 'resource', 'mod', 'sfw', 'hash'):
+        for key in ('type', 'output', 'modules', 'mod', 'hash'):
             if key not in args:
                 return False, f'Missing required argument "{key}"'
         return True, None
@@ -202,7 +196,8 @@ class pack_builder(object):
         return type == 'normal' and 'zh_meme.json' or (
             type == 'compat' and 'zh_cn.json' or 'zh_cn.lang')
 
-    def __parse_includes(self, includes: list, type: str) -> list:
+    def __parse_includes(self, type: str) -> list:
+        includes = self.args['modules'][type]
         full_list = list(
             map(lambda item: item['name'], self.module_list[type]))
         if 'none' in includes:
@@ -219,7 +214,8 @@ class pack_builder(object):
                         f'Module "{item}" does not exist, skipping')
             return include_list
 
-    def __parse_mods(self, mods: list) -> list:
+    def __parse_mods(self) -> list:
+        mods = self.args['mod']
         existing_mods = os.listdir(self.mods_path)
         if 'none' in mods:
             return []

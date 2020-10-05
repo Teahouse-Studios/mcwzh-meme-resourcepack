@@ -4,22 +4,24 @@ import os
 
 if __name__ == '__main__':
     preset_args = [
-        {'type': 'normal', 'language': [], 'resource': [
-            'all'], 'mod': ['all'], 'mixed': [], 'sfw': True, 'hash': False, 'output': 'builds', 'format': 6},
-        {'type': 'normal', 'language': [], 'resource': [
-            'all'], 'mod': [], 'mixed': [], 'sfw': True, 'hash': False, 'output': 'builds', 'format': 6},
-        {'type': 'normal', 'language': [], 'resource': [
-        ], 'mod': [], 'mixed': [], 'sfw': True, 'hash': False, 'output': 'builds', 'format': 6},
-        {'type': 'compat', 'language': [], 'resource': [
-            'all'], 'mod': ['all'], 'mixed': [], 'sfw': True, 'hash': False, 'output': 'builds', 'format': 6},
-        {'type': 'compat', 'language': [], 'resource': [
-            'all'], 'mod': [], 'mixed': [], 'sfw': True, 'hash': False, 'output': 'builds', 'format': 6},
-        {'type': 'compat', 'language': [], 'resource': [
-        ], 'mod': [], 'mixed': [], 'sfw': True, 'hash': False, 'output': 'builds', 'format': 6},
-        {'type': 'legacy', 'language': ['attributes', 'old_strings', 'diamond_hoe'], 'resource': [
-        ], 'mod': [], 'mixed': [], 'sfw': True, 'hash': False, 'output': 'builds', 'format': 3},
-        {'type': 'normal', 'language': [], 'resource': [
-            'all'], 'mod': ['all'], 'mixed': [], 'sfw': False, 'hash': False, 'output': 'builds', 'format': 6},
+        {'type': 'normal', 'modules': {'language': ['all'], 'resource': [
+            'all'], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+        {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': [
+            'all'], 'mixed': []}, 'mod': ['all'],  'hash': False, 'output': 'builds', 'format': 6},
+        {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': [
+            'all'], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+        {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': [
+        ], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+        {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': [
+            'all'], 'mixed': []}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
+        {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': [
+            'all'], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+        {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': [
+        ], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+        {'type': 'legacy', 'modules': {'language': ['sfw', 'attributes', 'old_strings', 'diamond_hoe'], 'resource': [
+        ], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 3},
+        {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
+        ]}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
     ]
     preset_name = [
         "mcwzh-meme_sfw.zip",
