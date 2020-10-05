@@ -59,9 +59,9 @@ class module_checker(object):
             data = load(open(manifest, 'r', encoding='utf8'))
             for key in ('name', 'type', 'description'):
                 if key not in data:
-                    return False, f'In path "{dir_name}": Incomplete manifest.json, missing {key} field', None
+                    return False, f'In path "{dir_name}": Incomplete manifest.json, missing "{key}" field', None
             if dir_name != data['name']:
-                return False, f'In path "{dir_name}": Does not match module name "{data["name"]}', None
+                return False, f'In path "{dir_name}": Does not match module name "{data["name"]}"', None
             if data['type'] == 'language':
                 if not (exists(join(path, "add.json")) or exists(join(path, "remove.json"))):
                     return False, f'In path "{dir_name}": Expected a language module, but couldn\'t find "add.json" or "remove.json"', None
