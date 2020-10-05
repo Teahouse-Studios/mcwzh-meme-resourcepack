@@ -49,8 +49,7 @@ class module_checker(object):
             else:
                 self.__info.append(f"Warning: {info}")
                 print(f"\033[33mWarning: {info}\033[0m", file=stderr)
-        if modules['language'] or modules['resource'] or modules['mixed']:
-            self.__parsed_modules = modules
+        self.__parsed_modules = modules
         self.__checked = True
 
     def __analyze_module(self, path: str):
