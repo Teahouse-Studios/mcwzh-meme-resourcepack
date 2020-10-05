@@ -79,4 +79,4 @@ class module_checker(object):
                 return False, f"In path '{dir_name}': Unknown module type '{data['type']}'", None
             return True, None, data
         else:
-            return False, f"In module '{dir_name}': No manifest.json", None
+            return False, f"In path '{dir_name}': No manifest.json", None
