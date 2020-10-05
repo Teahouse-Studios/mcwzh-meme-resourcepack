@@ -1,6 +1,7 @@
 import os
 from json import load
 from os.path import exists, isfile, join, split
+from sys import stderr
 
 
 class module_checker(object):
@@ -12,8 +13,8 @@ class module_checker(object):
         self.__info = []
 
     @property
-    def info(self):
-        return '\n'.join(self.__info)
+    def info_list(self):
+        return self.__info
 
     @property
     def module_list(self):
@@ -48,7 +49,8 @@ class module_checker(object):
             if status:
                 modules[data.pop('type')].append(data)
             else:
-                self.__info.append(info)
+                self.__info.append(f"Warning: {info}")
+                print(f"\033[33mWarning: {info}\033[0m", file=stderr)
                 self.__status = False
         if modules['language'] or modules['resource'] or modules['mixed']:
             self.__parsed_modules = modules

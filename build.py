@@ -8,22 +8,17 @@ from packaging.module_checker import module_checker
 def build(args: dict):
     build_info = []
     current_path = os.getcwd()
-
-    def raise_warning(warn: str):
-        build_info.append(f'Warning: {warn}')
-        print(f'\033[33mWarning: {warn}\033[0m', file=stderr)
     # init module_checker
     checker = module_checker()
     checker.module_path = os.path.join(current_path, "modules")
     # checking module integrity
     checker.check_module()
-    if checker.info != "":
-        raise_warning(checker.info)
+    build_info.extend(checker.info_list)
     builder = pack_builder(current_path, os.path.join(
         current_path, "modules"), checker.module_list, os.path.join(current_path, "mods"))
     builder.args = args
     builder.build()
-    build_info.append(builder.logs)
+    build_info.extend(builder.log_list)
     return build_info, builder.warning_count, builder.error_count
 
 

@@ -37,7 +37,7 @@ class pack_builder(object):
 
     @property
     def filename(self):
-        return self.__filename != "" and self.__filename or "Did not build any pack."
+        return self.__filename
 
     @property
     def main_resource_path(self):
@@ -52,8 +52,8 @@ class pack_builder(object):
         return self.__mods_path
 
     @property
-    def logs(self):
-        return self.__log_list and '\n'.join(self.__log_list) or "Did not build any pack."
+    def log_list(self):
+        return self.__log_list
 
     @property
     def module_list(self):

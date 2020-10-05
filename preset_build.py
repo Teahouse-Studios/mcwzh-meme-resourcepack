@@ -41,7 +41,7 @@ if __name__ == '__main__':
     for file in os.listdir(base_folder):
         os.remove(os.path.join(base_folder, file))
     for args, name in zip(preset_args, preset_name):
-        info, warning_count, error_count = build.build(args)
+        _, warning_count, error_count = build.build(args)
         if error_count == 0:
             pack_counter += 1
             if warning_count == 0:
