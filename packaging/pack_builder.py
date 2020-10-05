@@ -129,7 +129,8 @@ class pack_builder(object):
             # dump resources
             self.__dump_resources(res_supp + mixed_supp, pack)
             pack.close()
-            print("Build successful.")
+            self.__log_list.append(f"Successfully built {pack_name}.")
+            print(f"Successfully built {pack_name}.")
         else:
             self.__raise_error(info)
 
