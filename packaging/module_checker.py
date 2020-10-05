@@ -70,7 +70,7 @@ class module_checker(object):
                     return False, f'In path "{dir_name}": Expected a resource module, but couldn\'t find "assets" directory', None
             elif data['type'] == 'mixed':
                 if not (exists(join(path, "assets")) and (exists(join(path, "add.json")) or exists(join(path, "remove.json")))):
-                    return False, f'In path "{dir_name}"": Expected a mixed module, but couldn\'t find "assets" directory and either "add.json" or "remove.json"', None
+                    return False, f'In path "{dir_name}": Expected a mixed module, but couldn\'t find "assets" directory and either "add.json" or "remove.json"', None
             else:
                 return False, f'In path "{dir_name}": Unknown module type "{data["type"]}"', None
             return True, None, data

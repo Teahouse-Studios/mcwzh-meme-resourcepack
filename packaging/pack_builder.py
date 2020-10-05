@@ -6,7 +6,10 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 
 class pack_builder(object):
-    '''Build packs.'''
+    '''
+    Build packs.
+    The builder accepts the building args, then build the packs on demand.
+    '''
 
     def __init__(self, main_res_path: str, module_path: str, modules: list, mods_path: str):
         self.__args = {}
