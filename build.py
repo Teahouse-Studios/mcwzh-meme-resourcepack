@@ -1,6 +1,6 @@
 import os
 from argparse import ArgumentParser
-from sys import stderr
+from os.path import join
 from packaging.pack_builder import pack_builder
 from packaging.module_checker import module_checker
 
@@ -10,16 +10,16 @@ def build(args: dict):
     current_path = os.getcwd()
     # init module_checker
     checker = module_checker()
-    checker.module_path = os.path.join(current_path, "modules")
+    checker.module_path = join(current_path, "modules")
     # checking module integrity
     checker.check_module()
     build_info.extend(checker.info_list)
-    builder = pack_builder(current_path, os.path.join(
-        current_path, "modules"), checker.module_list, os.path.join(current_path, "mods"))
+    builder = pack_builder(current_path, join(
+        current_path, "modules"), checker.module_list, join(current_path, "mods"))
     builder.args = args
     builder.build()
     build_info.extend(builder.log_list)
-    return build_info, builder.warning_count, builder.error_count
+    return build_info, builder.warning_count, builder.error_count, builder.filename
 
 
 if __name__ == "__main__":
@@ -48,7 +48,7 @@ if __name__ == "__main__":
     args = vars(generate_parser().parse_args())
     if args['type'] == 'clean':
         for i in os.listdir('builds/'):
-            os.remove(os.path.join('builds', i))
+            os.remove(join('builds', i))
         print("\nDeleted all packs built.")
     else:
         build(args)

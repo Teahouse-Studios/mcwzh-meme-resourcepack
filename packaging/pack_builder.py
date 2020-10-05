@@ -156,7 +156,7 @@ class pack_builder(object):
                                 root, file), arcname=arcpath)
                         else:
                             self.__raise_warning(
-                                f"Duplicated '{testpath}', skipping.")
+                                f'Duplicated file "{testpath}", skipping')
 
     def __raise_warning(self, warning: str):
         print(f'\033[33mWarning: {warning}\033[0m', file=stderr)
@@ -177,7 +177,7 @@ class pack_builder(object):
             # did not specify "format", assume a value
             format = args['type'] == 'legacy' and 3 or 6
             self.__raise_warning(
-                f'Did not specify "pack_format". Assuming value is "{format}".')
+                f'Did not specify "pack_format". Assuming value is "{format}"')
             args['format'] = format
         else:
             if (args['type'] == 'legacy' and args['format'] > 3) or (args['type'] in ('normal', 'compat') and args['format'] <= 3):
@@ -216,7 +216,7 @@ class pack_builder(object):
                     include_list.append(item)
                 else:
                     self.__raise_warning(
-                        f"Module '{item}' does not exist, skipping.")
+                        f'Module "{item}" does not exist, skipping')
             return include_list
 
     def __parse_mods(self, mods: list) -> list:
@@ -234,7 +234,7 @@ class pack_builder(object):
                     mods_list.append(os.path.basename(os.path.normpath(item)))
                 else:
                     self.__raise_warning(
-                        f"'{item}' does not exist, skipping.")
+                        f'Mod file "{item}" does not exist, skipping')
             return mods_list
 
     def __merge_language(self, language_supp: list, mod_supp: list) -> dict:
@@ -254,7 +254,7 @@ class pack_builder(object):
                         lang_data.pop(key)
                     else:
                         self.__raise_warning(
-                            f"Key '{key}' does not exist, skipping.")
+                            f'Key "{key}" does not exist, skipping')
         lang_data |= self.__get_mod_content(mod_supp)
         return lang_data
 
@@ -270,7 +270,7 @@ class pack_builder(object):
                         "=", 1) for line in f if line.strip() != '' and not line.startswith('#'))
             else:
                 self.__raise_warning(
-                    f'File type "{file[file.rfind(".") + 1:]}" is not supported, skipping.')
+                    f'File type "{file[file.rfind(".") + 1:]}" is not supported, skipping')
         return mods
 
     def __generate_legacy_content(self, content: dict) -> str:
@@ -282,14 +282,14 @@ class pack_builder(object):
             mapping_file = f"{item}.json"
             if mapping_file not in os.listdir("mappings"):
                 self.__raise_warning(
-                    f"Missing mapping '{mapping_file}', skipping.")
+                    f'Missing mapping "{mapping_file}", skipping')
             else:
                 mapping = load(
                     open(os.path.join("mappings", mapping_file), 'r', encoding='utf8'))
                 for k, v in mapping.items():
                     if v not in content:
                         self.__raise_warning(
-                            f"Corrupted key-value pair in file {mapping_file}: {{'{k}': '{v}'}}, skipping.")
+                            f'In file "{mapping_file}": Corrupted key-value pair {{"{k}": "{v}"}}')
                     else:
                         legacy_lang_data[k] = content[v]
         return ''.join(f'{k}={v}\n' for k, v in legacy_lang_data.items())
