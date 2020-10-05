@@ -167,7 +167,7 @@ class builder(object):
         data = load(open(os.path.join(os.path.dirname(
             __file__), 'pack.mcmeta'), 'r', encoding='utf8'))
         pack_format = args['type'] == 'legacy' and 3 or (
-            'format' in args and args['format'] or None)
+                'format' in args and args['format'] or None)
         data['pack']['pack_format'] = pack_format or data['pack']['pack_format']
         if args['type'] == 'compat':
             data.pop('language')
@@ -175,7 +175,7 @@ class builder(object):
 
     def __get_lang_filename(self, type: str) -> str:
         return type == 'normal' and 'zh_meme.json' or (
-            type == 'compat' and 'zh_cn.json' or 'zh_cn.lang')
+                type == 'compat' and 'zh_cn.json' or 'zh_cn.lang')
 
     def __parse_includes(self, includes: list, full_list: list) -> list:
         if 'none' in includes:
@@ -223,8 +223,10 @@ class builder(object):
         lang_data = load(open(os.path.join(os.path.dirname(
             __file__), "assets/minecraft/lang/zh_meme.json"), 'r', encoding='utf8'))
         for item in language_supp:
-            add_file = os.path.join("modules", item, "add.json")
-            remove_file = os.path.join("modules", item, "remove.json")
+            add_file = os.path.join(os.path.dirname(
+                __file__), "modules", item, "add.json")
+            remove_file = os.path.join(os.path.dirname(
+                __file__), "modules", item, "remove.json")
             if os.path.exists(add_file):
                 lang_data.update(
                     load(open(add_file, 'r', encoding='utf8')))
@@ -255,17 +257,19 @@ class builder(object):
 
     def __generate_legacy_content(self, content: dict) -> str:
         # get mappings list
-        mappings = load(open(os.path.join(
-            "mappings", "all_mappings"), 'r', encoding='utf8'))['mappings']
+        mappings = load(open(os.path.join(os.path.dirname(
+            __file__), "mappings", "all_mappings"), 'r', encoding='utf8'))['mappings']
         legacy_lang_data = {}
         for item in mappings:
             mapping_file = f"{item}.json"
-            if mapping_file not in os.listdir("mappings"):
+            if mapping_file not in os.listdir(os.path.join(os.path.dirname(
+                    __file__), "mappings")):
                 self.__raise_warning(
                     f"Missing mapping '{mapping_file}', skipping.")
             else:
                 mapping = load(
-                    open(os.path.join("mappings", mapping_file), 'r', encoding='utf8'))
+                    open(os.path.join(os.path.dirname(
+                        __file__), "mappings", mapping_file), 'r', encoding='utf8'))
                 for k, v in mapping.items():
                     if v not in content:
                         self.__raise_warning(
@@ -356,7 +360,8 @@ def generate_parser() -> ArgumentParser:
     parser = ArgumentParser(
         description="Automatically build resourcepacks")
     parser.add_argument('type', default='normal', choices=[
-                        'normal', 'compat', 'legacy', 'clean'], help="Build type. Should be 'normal', 'compat', 'legacy' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted. Implies '--format 3' when it's 'legacy'.")
+        'normal', 'compat', 'legacy', 'clean'],
+                        help="Build type. Should be 'normal', 'compat', 'legacy' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted. Implies '--format 3' when it's 'legacy'.")
     parser.add_argument('-r', '--resource', nargs='*', default='all',
                         help="(Experimental) Include resource modules. Should be module names, 'all' or 'none'. Defaults to 'all'. Pseudoly accepts a path, but only module paths in 'modules' work.")
     parser.add_argument('-l', '--language', nargs='*', default='none',
