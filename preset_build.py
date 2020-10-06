@@ -43,13 +43,13 @@ if __name__ == '__main__':
     for file in os.listdir(base_folder):
         os.remove(os.path.join(base_folder, file))
     for args, name in zip(preset_args, preset_name):
-        _, warning_count, error_count, _ = build.build(args)
-        if error_count == 0:
+        pack_name, warning_count, error, _ = build.build(args)
+        if not error:
             pack_counter += 1
             if warning_count == 0:
                 perfect_pack_counter += 1
-            if name != "mcwzh-meme.zip":
-                os.rename("builds/mcwzh-meme.zip",
+            if name != pack_name:
+                os.rename(os.path.join(base_folder, pack_name),
                           os.path.join(base_folder, name))
                 print(f"Renamed pack to {name}.")
         else:

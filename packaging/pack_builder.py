@@ -11,10 +11,10 @@ class pack_builder(object):
     The builder accepts the building args, then build the packs on demand.
     '''
 
-    def __init__(self, main_res_path: str, module_path: str, modules: list, mods_path: str):
+    def __init__(self, main_res_path: str, module_path: str, modules: dict, mods_path: str):
         self.__args = {}
         self.__warning = 0
-        self.__error = 0
+        self.__error = False
         self.__log_list = []
         self.__filename = ""
         self.__main_res_path = main_res_path
@@ -35,7 +35,7 @@ class pack_builder(object):
         return self.__warning
 
     @property
-    def error_count(self):
+    def error(self):
         return self.__error
 
     @property
@@ -64,7 +64,7 @@ class pack_builder(object):
 
     def clean_status(self):
         self.__warning = 0
-        self.__error = 0
+        self.__error = False
         self.__log_list = []
         self.__filename = ""
 
@@ -166,10 +166,14 @@ class pack_builder(object):
         print("\033[1;31mTerminate building because an error occurred.\033[0m")
         self.__log_list.append(f'Error: {error}')
         self.__log_list.append("Terminate building because an error occurred.")
-        self.__error += 1
+        self.__error = True
 
     def __check_args(self):
         args = self.args
+        # check essential arguments
+        for key in ('type', 'modules', 'mod', 'output', 'hash'):
+            if key not in args:
+                return False, f'Missing required argument "{key}"'
         # check "format"
         if 'format' not in args or args['format'] is None:
             # did not specify "format", assume a value
@@ -180,10 +184,6 @@ class pack_builder(object):
         else:
             if (args['type'] == 'legacy' and args['format'] > 3) or (args['type'] in ('normal', 'compat') and args['format'] <= 3):
                 return False, f'Type "{args["type"]}" does not match pack_format {args["format"]}'
-        # check essential arguments
-        for key in ('type', 'output', 'modules', 'mod', 'hash'):
-            if key not in args:
-                return False, f'Missing required argument "{key}"'
         return True, None
 
     def __process_meta(self, args: dict) -> dict:

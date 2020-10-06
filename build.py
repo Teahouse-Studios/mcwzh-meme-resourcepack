@@ -1,8 +1,13 @@
 from argparse import ArgumentParser
 from os import remove, listdir, curdir
 from os.path import join, exists, isdir, dirname
-from .packaging.pack_builder import pack_builder
-from .packaging.module_checker import module_checker
+
+if __name__ == 'mcwzh-meme-resourcepack.build':
+    from .packaging.pack_builder import pack_builder
+    from .packaging.module_checker import module_checker
+else:
+    from packaging.pack_builder import pack_builder
+    from packaging.module_checker import module_checker
 
 
 def build(args: dict):
@@ -10,7 +15,6 @@ def build(args: dict):
     # init module_checker
     checker = module_checker()
     current_dir = dirname(__file__)
-    print(current_dir)
     checker.module_path = join(current_dir, "modules")
     # checking module integrity
     checker.check_module()
@@ -20,7 +24,7 @@ def build(args: dict):
     builder.args = args
     builder.build()
     build_info.extend(builder.log_list)
-    return build_info, builder.warning_count, builder.error_count, builder.filename
+    return builder.filename, builder.warning_count, builder.error, builder.log_list
 
 
 if __name__ == "__main__":
