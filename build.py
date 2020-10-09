@@ -19,8 +19,7 @@ def build(args: dict):
     # checking module integrity
     checker.check_module()
     build_info.extend(checker.info_list)
-    builder = pack_builder(current_dir, join(
-        current_dir, "modules"), checker.module_list, join(current_dir, "mods"))
+    builder = pack_builder(current_dir, checker.module_info, join(current_dir, "mods"))
     builder.args = args
     builder.build()
     build_info.extend(builder.log_list)

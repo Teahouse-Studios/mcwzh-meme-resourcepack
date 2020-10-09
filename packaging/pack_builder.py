@@ -11,15 +11,14 @@ class pack_builder(object):
     The builder accepts the building args, then build the packs on demand.
     '''
 
-    def __init__(self, main_res_path: str, module_path: str, modules: dict, mods_path: str):
+    def __init__(self, main_res_path: str, module_info: dict, mods_path: str):
         self.__args = {}
         self.__warning = 0
         self.__error = False
         self.__log_list = []
         self.__filename = ""
         self.__main_res_path = main_res_path
-        self.__module_path = module_path
-        self.__modules = modules
+        self.__module_info = module_info
         self.__mods_path = mods_path
 
     @property
@@ -47,8 +46,8 @@ class pack_builder(object):
         return self.__main_res_path
 
     @property
-    def module_path(self):
-        return self.__module_path
+    def module_info(self):
+        return self.__module_info
 
     @property
     def mods_path(self):
@@ -57,10 +56,6 @@ class pack_builder(object):
     @property
     def log_list(self):
         return self.__log_list
-
-    @property
-    def module_list(self):
-        return self.__modules
 
     def clean_status(self):
         self.__warning = 0
@@ -139,8 +134,9 @@ class pack_builder(object):
 
     def __dump_resources(self, modules: list, pack: ZipFile):
         excluding = ('manifest.json', 'add.json', 'remove.json')
+        module_path = self.module_info['path']
         for item in modules:
-            base_folder = os.path.join(self.module_path, item)
+            base_folder = os.path.join(module_path, item)
             for root, _, files in os.walk(base_folder):
                 for file in files:
                     if file not in excluding:
@@ -203,7 +199,7 @@ class pack_builder(object):
     def __parse_includes(self, type: str) -> list:
         includes = self.args['modules'][type]
         full_list = list(
-            map(lambda item: item['name'], self.module_list[type]))
+            map(lambda item: item['name'], self.module_info['modules'][type]))
         if 'none' in includes:
             return []
         elif 'all' in includes:
@@ -241,11 +237,10 @@ class pack_builder(object):
         # load basic strings
         lang_data = load(open(os.path.join(self.main_resource_path,
                                            "assets/minecraft/lang/zh_meme.json"), 'r', encoding='utf8'))
+        module_path = self.module_info['path']
         for item in language_supp:
-            add_file = os.path.join(
-                self.module_path, item, "add.json")
-            remove_file = os.path.join(
-                self.module_path, item, "remove.json")
+            add_file = os.path.join(module_path, item, "add.json")
+            remove_file = os.path.join(module_path, item, "remove.json")
             if os.path.exists(add_file):
                 lang_data |= load(open(add_file, 'r', encoding='utf8'))
             if os.path.exists(remove_file):
