@@ -1,13 +1,13 @@
-All files except build.py, build_online.py, conversion.py, 
-enchantment_level.py, mapping_evaluating.py, preset_build.py, sort.py
-or views/index.html in this repository, are licensed under Creative 
-Commons Attribution-NonCommercial-ShareAlike 4.0 International
-(CC BY-NC-SA 4.0) Public License (license file below).
+All files except those in "packaging" and "tools" folder, build.py and
+preset_build.py in the root folder and otherwise claimed, are licensed
+under Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International (CC BY-NC-SA 4.0) Public License (license file below).
 
-File build.py, build_online.py, conversion.py, enchantment_level.py,
-mapping_evaluating.py, preset_build.py, sort.py and views/index.html
-in this repository are licensed under Apache License Version 2.0
+Files in "packaging" and "tools" folder, build.py and preset_build.py
+in the root folder are licensed under Apache License Version 2.0
 (Apache-2.0) (license file below).
+
+Files otherwise claimed are licensed under the claimed license.
 
 -----------------------------------------------------------------------
 
