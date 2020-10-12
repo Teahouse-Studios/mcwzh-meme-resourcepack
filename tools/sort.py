@@ -1,12 +1,12 @@
-from argparse import ArgumentParser, FileType
-from json import load, dump
-from sys import stdout
-
-
-def sort(origin): return {k: origin[k] for k in sorted(origin)}
+def sort(origin):
+    return {k: origin[k] for k in sorted(origin)}
 
 
 if __name__ == '__main__':
+    from argparse import ArgumentParser, FileType
+    from json import load, dump
+    from sys import stdout
+
     def generate_parser() -> ArgumentParser:
         parser = ArgumentParser(description="Sort a json by key.")
         parser.add_argument("json", type=FileType(

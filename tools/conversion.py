@@ -1,7 +1,5 @@
-from argparse import ArgumentParser, FileType
 from json import load, dump
 from re import match
-from sys import stdout
 
 
 def generate_conversion(json1, json2, regex) -> dict:
@@ -11,6 +9,9 @@ def generate_conversion(json1, json2, regex) -> dict:
 
 
 if __name__ == '__main__':
+    from argparse import ArgumentParser, FileType
+    from sys import stdout
+
     def generate_parser() -> ArgumentParser:
         parser = ArgumentParser(
             description="Do S/T conversion by reading from two language files.")

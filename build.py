@@ -1,6 +1,4 @@
-from argparse import ArgumentParser
-from os import remove, listdir, curdir
-from os.path import join, exists, isdir, dirname
+from os.path import join, dirname
 
 if __name__ == 'mcwzh-meme-resourcepack.build':
     from .packaging.pack_builder import pack_builder
@@ -19,7 +17,8 @@ def build(args: dict):
     # checking module integrity
     checker.check_module()
     build_info.extend(checker.info_list)
-    builder = pack_builder(current_dir, checker.module_info, join(current_dir, "mods"))
+    builder = pack_builder(
+        current_dir, checker.module_info, join(current_dir, "mods"))
     builder.args = args
     builder.build()
     build_info.extend(builder.log_list)
@@ -27,6 +26,10 @@ def build(args: dict):
 
 
 if __name__ == "__main__":
+    from argparse import ArgumentParser
+    from os import remove, listdir
+    from os.path import exists, isdir, curdir
+
     def generate_parser() -> ArgumentParser:
         parser = ArgumentParser(
             description="Automatically build resourcepacks")
