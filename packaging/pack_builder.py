@@ -150,9 +150,8 @@ class pack_builder(object):
                         path = join(root, file)
                         arcpath = path[path.find(
                             base_folder) + len(base_folder) + 1:]
-                        testpath = arcpath.replace(sep, "/")
                         # prevent duplicates
-                        if testpath not in pack.namelist():
+                        if (testpath := arcpath.replace(sep, "/")) not in pack.namelist():
                             pack.write(join(
                                 root, file), arcname=arcpath)
                         else:
@@ -281,8 +280,7 @@ class pack_builder(object):
                                   "all_mappings"), 'r', encoding='utf8'))
         legacy_lang_data = {}
         for item in mappings:
-            mapping_file = f"{item}.json"
-            if mapping_file not in listdir(self.legacy_mapping_path):
+            if (mapping_file := f"{item}.json") not in listdir(self.legacy_mapping_path):
                 self.__raise_warning(
                     f'Missing mapping "{mapping_file}", skipping')
             else:
