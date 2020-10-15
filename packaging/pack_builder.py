@@ -233,7 +233,7 @@ class pack_builder(object):
             for item in mods:
                 if item in existing_mods:
                     mods_list.append(item)
-                elif normed_path := basename(normpath(item)) in existing_mods:
+                elif (normed_path := basename(normpath(item))) in existing_mods:
                     mods_list.append(normed_path)
                 else:
                     self.__raise_warning(
