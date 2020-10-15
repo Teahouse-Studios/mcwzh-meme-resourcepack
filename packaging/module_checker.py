@@ -5,9 +5,9 @@ from sys import stderr
 
 
 class module_checker(object):
-    def __init__(self):
+    def __init__(self, module_path: str):
         self.__checked = False
-        self.__module_path = ''
+        self.__module_path = module_path
         self.__module_info = {}
         self.__info = []
 

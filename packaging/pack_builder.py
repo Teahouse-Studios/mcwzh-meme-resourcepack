@@ -1,6 +1,7 @@
-import os
 from hashlib import sha256
 from json import load, dumps
+from os import listdir, remove, walk, sep, mkdir
+from os.path import join, basename, normpath, exists, isdir
 from sys import stderr
 from zipfile import ZipFile, ZIP_DEFLATED
 
@@ -11,7 +12,7 @@ class pack_builder(object):
     The builder accepts the building args, then build the packs on demand.
     '''
 
-    def __init__(self, main_res_path: str, module_info: dict, mods_path: str):
+    def __init__(self, main_res_path: str, module_info: dict, mods_path: str, legacy_mapping_path: str):
         self.__args = {}
         self.__warning = 0
         self.__error = False
@@ -20,6 +21,7 @@ class pack_builder(object):
         self.__main_res_path = main_res_path
         self.__module_info = module_info
         self.__mods_path = mods_path
+        self.__legacy_mapping_path = legacy_mapping_path
 
     @property
     def args(self):
@@ -54,6 +56,10 @@ class pack_builder(object):
         return self.__mods_path
 
     @property
+    def legacy_mapping_path(self):
+        return self.__legacy_mapping_path
+
+    @property
     def log_list(self):
         return self.__log_list
 
@@ -83,7 +89,7 @@ class pack_builder(object):
             main_lang_data = self.__merge_language(
                 lang_supp + mixed_supp, mod_supp)
             # get realms strings
-            realms_lang_data = load(open(os.path.join(
+            realms_lang_data = load(open(join(
                 self.main_resource_path, "assets/realms/lang/zh_meme.json"), 'r', encoding='utf8'))
             # process pack name
             digest = sha256(dumps(args).encode('utf8')).hexdigest()
@@ -94,21 +100,22 @@ class pack_builder(object):
             # decide language file name & ext
             lang_file_name = self.__get_lang_filename(args['type'])
             # set output dir
-            pack_name = os.path.join(args['output'], pack_name)
+            pack_name = join(args['output'], pack_name)
             # mkdir
-            if os.path.exists(args['output']) and not os.path.isdir(args['output']):
-                os.remove(args['output'])
-            if not os.path.exists(args['output']):
-                os.mkdir(args['output'])
+            if exists(args['output']) and not isdir(args['output']):
+                remove(args['output'])
+            if not exists(args['output']):
+                mkdir(args['output'])
             # create pack
             info = f"Building pack {pack_name}"
             print(info)
             self.__log_list.append(info)
             pack = ZipFile(
                 pack_name, 'w', compression=ZIP_DEFLATED, compresslevel=5)
-            pack.write(os.path.join(self.main_resource_path,
-                                    "pack.png"), arcname="pack.png")
-            pack.writestr("LICENSE", self.__handle_license())
+            pack.write(join(self.main_resource_path,
+                            "pack.png"), arcname="pack.png")
+            pack.write(join(self.main_resource_path,
+                            "LICENSE"), arcname="LICENSE")
             pack.writestr("pack.mcmeta", dumps(
                 mcmeta, indent=4, ensure_ascii=False))
             # dump lang file into pack
@@ -136,17 +143,17 @@ class pack_builder(object):
         excluding = ('manifest.json', 'add.json', 'remove.json')
         module_path = self.module_info['path']
         for item in modules:
-            base_folder = os.path.join(module_path, item)
-            for root, _, files in os.walk(base_folder):
+            base_folder = join(module_path, item)
+            for root, _, files in walk(base_folder):
                 for file in files:
                     if file not in excluding:
-                        path = os.path.join(root, file)
+                        path = join(root, file)
                         arcpath = path[path.find(
                             base_folder) + len(base_folder) + 1:]
-                        testpath = arcpath.replace(os.sep, "/")
+                        testpath = arcpath.replace(sep, "/")
                         # prevent duplicates
                         if testpath not in pack.namelist():
-                            pack.write(os.path.join(
+                            pack.write(join(
                                 root, file), arcname=arcpath)
                         else:
                             self.__raise_warning(
@@ -183,8 +190,8 @@ class pack_builder(object):
         return True, None
 
     def __process_meta(self, args: dict) -> dict:
-        data = load(open(os.path.join(self.main_resource_path,
-                                      'pack.mcmeta'), 'r', encoding='utf8'))
+        data = load(open(join(self.main_resource_path,
+                              'pack.mcmeta'), 'r', encoding='utf8'))
         pack_format = args['type'] == 'legacy' and 3 or (
             'format' in args and args['format'] or None)
         data['pack']['pack_format'] = pack_format or data['pack']['pack_format']
@@ -216,7 +223,7 @@ class pack_builder(object):
 
     def __parse_mods(self) -> list:
         mods = self.args['mod']
-        existing_mods = os.listdir(self.mods_path)
+        existing_mods = listdir(self.mods_path)
         if 'none' in mods:
             return []
         elif 'all' in mods:
@@ -226,8 +233,8 @@ class pack_builder(object):
             for item in mods:
                 if item in existing_mods:
                     mods_list.append(item)
-                elif os.path.basename(os.path.normpath(item)) in existing_mods:
-                    mods_list.append(os.path.basename(os.path.normpath(item)))
+                elif normed_path := basename(normpath(item)) in existing_mods:
+                    mods_list.append(normed_path)
                 else:
                     self.__raise_warning(
                         f'Mod file "{item}" does not exist, skipping')
@@ -235,15 +242,15 @@ class pack_builder(object):
 
     def __merge_language(self, language_supp: list, mod_supp: list) -> dict:
         # load basic strings
-        lang_data = load(open(os.path.join(self.main_resource_path,
-                                           "assets/minecraft/lang/zh_meme.json"), 'r', encoding='utf8'))
+        lang_data = load(open(join(self.main_resource_path,
+                                   "assets/minecraft/lang/zh_meme.json"), 'r', encoding='utf8'))
         module_path = self.module_info['path']
         for item in language_supp:
-            add_file = os.path.join(module_path, item, "add.json")
-            remove_file = os.path.join(module_path, item, "remove.json")
-            if os.path.exists(add_file):
+            add_file = join(module_path, item, "add.json")
+            remove_file = join(module_path, item, "remove.json")
+            if exists(add_file):
                 lang_data |= load(open(add_file, 'r', encoding='utf8'))
-            if os.path.exists(remove_file):
+            if exists(remove_file):
                 for key in load(open(remove_file, 'r', encoding='utf8')):
                     if key in lang_data:
                         lang_data.pop(key)
@@ -258,9 +265,9 @@ class pack_builder(object):
         for file in mod_list:
             if file.endswith(".json"):
                 mods |= load(
-                    open(os.path.join(self.mods_path, file), 'r', encoding='utf8'))
+                    open(join(self.mods_path, file), 'r', encoding='utf8'))
             elif file.endswith(".lang"):
-                with open(os.path.join(self.mods_path, file), 'r', encoding='utf8') as f:
+                with open(join(self.mods_path, file), 'r', encoding='utf8') as f:
                     mods |= (line.strip().split(
                         "=", 1) for line in f if line.strip() != '' and not line.startswith('#'))
             else:
@@ -270,17 +277,17 @@ class pack_builder(object):
 
     def __generate_legacy_content(self, content: dict) -> str:
         # get mappings list
-        mappings = load(open(os.path.join(self.main_resource_path,
-                                          "mappings", "all_mappings"), 'r', encoding='utf8'))['mappings']
+        mappings = load(open(join(self.legacy_mapping_path,
+                                  "all_mappings"), 'r', encoding='utf8'))
         legacy_lang_data = {}
         for item in mappings:
             mapping_file = f"{item}.json"
-            if mapping_file not in os.listdir("mappings"):
+            if mapping_file not in listdir(self.legacy_mapping_path):
                 self.__raise_warning(
                     f'Missing mapping "{mapping_file}", skipping')
             else:
                 mapping = load(
-                    open(os.path.join("mappings", mapping_file), 'r', encoding='utf8'))
+                    open(join(self.legacy_mapping_path, mapping_file), 'r', encoding='utf8'))
                 for k, v in mapping.items():
                     if v not in content:
                         self.__raise_warning(
@@ -288,7 +295,3 @@ class pack_builder(object):
                     else:
                         legacy_lang_data[k] = content[v]
         return ''.join(f'{k}={v}\n' for k, v in legacy_lang_data.items())
-
-    def __handle_license(self):
-        return ''.join(item[1] for item in enumerate(
-            open(os.path.join(self.__main_res_path, "LICENSE"), 'r', encoding='utf8')) if 12 < item[0] < 394)
