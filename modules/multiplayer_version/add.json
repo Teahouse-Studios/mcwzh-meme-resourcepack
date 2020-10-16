@@ -1,0 +1,6 @@
+{
+    "multiplayer.disconnect.outdated_client": "客户端已过期！请使用%s",
+    "multiplayer.disconnect.outdated_server": "服务器已发霉！我仍在运行%s",
+    "multiplayer.status.client_out_of_date": "客户端已过期！新版本不香吗？！",
+    "multiplayer.status.server_out_of_date": "服务器版本太老了！快催更啊！"
+}
