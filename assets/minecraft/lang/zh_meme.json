@@ -2885,7 +2885,7 @@
     "gui.down": "向下",
     "gui.entity_tooltip.type": "类型：%s",
     "gui.narrate.button": "%s，抱枕",
-    "gui.narrate.editBox": "%s，编辑框：%s",
+    "gui.narrate.editBox": "%s，编辑框，%s",
     "gui.narrate.slider": "%s，滑块",
     "gui.no": "呐呐呐！",
     "gui.none": "无",
