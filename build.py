@@ -1,6 +1,6 @@
-from os.path import join, dirname
+from os.path import join, dirname, split
 
-if __name__ == f'{dirname(__file__)}.build':
+if __name__ == f'{split(dirname(__file__))[1]}.build':
     from .packaging.pack_builder import pack_builder
     from .packaging.module_checker import module_checker
 else:
