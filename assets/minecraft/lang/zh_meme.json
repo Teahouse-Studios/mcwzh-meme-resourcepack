@@ -2905,7 +2905,7 @@
     "gui.socialInteractions.server_label": "%s - %s个玩家",
     "gui.socialInteractions.show": "在聊天中展示%s",
     "gui.socialInteractions.shown_in_chat": "%s的聊天信息将会展示",
-    "gui.socialInteractions.tab_all": "全选",
+    "gui.socialInteractions.tab_all": "全部",
     "gui.socialInteractions.tab_hidden": "隐藏",
     "gui.socialInteractions.title": "选择性失聪",
     "gui.socialInteractions.tooltip.hide": "隐藏%s的聊天信息",
