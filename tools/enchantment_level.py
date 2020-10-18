@@ -9,12 +9,11 @@ def dump(max: int):
               open("enchlevelfixS.json", 'w', encoding='utf8'), indent=4, ensure_ascii=False)
 
 
-def generate_parser():
-    parser = ArgumentParser(description="Generate enchantment level fix json.")
-    parser.add_argument('max', type=int, help='wanted max level.')
-    return parser
-
-
 if __name__ == '__main__':
+    def generate_parser():
+        parser = ArgumentParser(
+            description="Generate enchantment level fix json.")
+        parser.add_argument('max', type=int, help='wanted max level.')
+        return parser
     args = generate_parser().parse_args()
     dump(args.max)
