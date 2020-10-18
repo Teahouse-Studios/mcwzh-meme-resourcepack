@@ -16,7 +16,7 @@ if __name__ == '__main__':
             'all'], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
         {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
         ]}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
-        {'type': 'legacy', 'modules': {'language': ['sfw', 'attributes', 'old_strings', 'diamond_hoe'], 'resource': [
+        {'type': 'legacy', 'modules': {'language': ['sfw', 'attributes', 'old_strings', 'diamond_hoe', 'extra_strings', 'multiplayer_version'], 'resource': [
         ], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 3},
         {'type': 'normal', 'modules': {'language': ['all'], 'resource': [
             'all'], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
