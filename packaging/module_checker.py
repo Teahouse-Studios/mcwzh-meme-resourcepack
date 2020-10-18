@@ -12,7 +12,7 @@ class module_checker(object):
         self.__info = []
 
     @property
-    def info_list(self):
+    def check_info_list(self):
         return self.__info
 
     @property
