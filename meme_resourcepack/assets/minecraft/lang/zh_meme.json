@@ -3785,6 +3785,8 @@
     "options.guiScale": "界面尺寸",
     "options.guiScale.auto": "我自己来",
     "options.hidden": "隐藏",
+    "options.hideMatchedNames": "隐藏匹配名字",
+    "options.hideMatchedNames.tooltip": "第三方服务器也许会发送非标准格式的聊天信息。\n此设置打开后：被隐藏的玩家将会被根据发言者的名字匹配。",
     "options.invertMouse": "鼠标反转",
     "options.key.hold": "按住",
     "options.key.toggle": "切换",
