@@ -1,5 +1,6 @@
+梗体中文，茶馆工作室荣誉出品
 MojangSB! ! !
-Bugjang
+MINECRAFT 2077
 Bugjump
 跳票之王！！！
 :)
@@ -55,3 +56,4 @@ Jason——————————
 Windows Update已可用
 培训班上完了？
 D R O P
+While True: print('人类的本质是？')
