@@ -10,6 +10,6 @@
 
 * 更多的合成（Crafting++）：ruhuasiyu等，[网址](https://ruhuasiyu.github.io/CraftingPlusPlus/)
 
-* 烤地瓜（Sweet Potato）：teddyxlandlee等，[网址](https://github.com/teddyxlandlee/sweet_potato-source)
+* 烤地瓜（Sweet Potato）：Peter Yang、Peter Zheng、Dennis等，[网址](https://github.com/teddyxlandlee/sweet_potato-source)
 
 以下内容由于<*吃掉了*>的原因而无法显示，敬请谅jon'fslA;/[E-2L}sgr=
