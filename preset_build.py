@@ -15,22 +15,22 @@ if __name__ == '__main__':
 
     if check_version_consistency():
         preset_args = [
-            {'type': 'normal', 'modules': {'language': ['all'], 'resource': [
-                'all'], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+            {'type': 'normal', 'modules': {'language': ['all'], 'resource': ['all'], 'mixed': [
+            ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
             {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
-            ]}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': [
-                'all'], 'mixed': []}, 'mod': [],  'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': [
-            ], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': [
-                'all'], 'mixed': []}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': [
-                'all'], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+            ], 'collection': []}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
+            {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
+            ], 'collection': []}, 'mod': [],  'hash': False, 'output': 'builds', 'format': 6},
+            {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
+            ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+            {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
+            ], 'collection': []}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
+            {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
+            ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
             {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
-            ]}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'legacy', 'modules': {'language': ['sfw', 'attributes', 'old_strings', 'diamond_hoe', 'extra_strings', 'multiplayer_version'], 'resource': [
-            ], 'mixed': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 3}
+            ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+            {'type': 'legacy', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
+            ], 'collection': ['version_before_1.16']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 3}
         ]
         preset_name = [
             f"mcwzh-meme_v{pack_version}.zip",

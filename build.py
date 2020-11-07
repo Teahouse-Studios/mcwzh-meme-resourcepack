@@ -46,6 +46,8 @@ if __name__ == "__main__":
                             help="(Experimental) Include mixed modules. Should be module names, 'all' or 'none'. Defaults to 'none'.")
         parser.add_argument('-s', '--sfw', action='store_true',
                             help="Use 'suitable for work' strings, equals to '--language sfw'.")
+        parser.add_argument('-c', '--collection', nargs='*', default='none',
+                            help="(Experimental) Include module collections. Should be module names, 'all' or 'none'. Defaults to 'none'.")
         parser.add_argument('-m', '--mod', nargs='*', default='none',
                             help="(Experimental) Include mod string files. Should be file names in 'mods/' folder, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only files in 'mods/' work.")
         parser.add_argument('-f', '--format', type=int,
@@ -57,7 +59,7 @@ if __name__ == "__main__":
         return parser
 
     def handle_args(args: dict):
-        module_types = ('resource', 'language', 'mixed')
+        module_types = 'resource', 'language', 'mixed', 'collection'
         args['modules'] = {key: args.pop(key) for key in module_types}
         if args['sfw'] and 'sfw' not in args['modules']['language']:
             args['modules']['language'].append('sfw')
