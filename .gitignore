@@ -1,12 +1,6 @@
 .vscode
 *.zip
 __pycache__
-/zh_meme.json
-/zh_cn.json
-/zh_meme.lang
-/zh_cn.lang
-views/custom/*.html
+/*.json
 builds*
-/en_us.json
-/conversion.json
 .idea
