@@ -4,6 +4,8 @@
     "description": "适用于1.16版本的模块集合",
     "author": "梗体中文内容组",
     "contains": {
-        "language": []
+        "language": [
+            "grass_path_before_20w45a"
+        ]
     }
 }
