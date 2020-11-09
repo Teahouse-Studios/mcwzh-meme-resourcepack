@@ -10,7 +10,7 @@
 
 | 名称 | 说明 |
 | ---- | ---- |
-| `20w14f` | 提供对愚人节快照20w14inf的有限支持 |
+| `20w14inf` | 提供对愚人节快照20w14inf的有限支持 |
 | `attributes_before_20w14a` | 20w14a以前的部分属性名称 |
 | `combat_test` | 提供对Combat Test 6的有限支持 |
 | `extra_strings`| 提供额外字符串支持 |
