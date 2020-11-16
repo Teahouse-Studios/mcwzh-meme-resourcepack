@@ -52,7 +52,7 @@ if __name__ == '__main__':
         for file in listdir(base_folder):
             remove(join(base_folder, file))
         for args, name in zip(preset_args, preset_name):
-            pack_name, warning_count, error, _ = build.build(args)
+            pack_name, warning_count, error = build.build(args)
             if not error:
                 pack_counter += 1
                 if warning_count == 0:

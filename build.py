@@ -1,6 +1,6 @@
-from os.path import join, dirname, split
+from os.path import join, dirname, basename
 
-if __name__ == f'{split(dirname(__file__))[1]}.build':
+if __name__ == f'{basename(dirname(__file__))}.build':
     from .packaging.pack_builder import pack_builder
     from .packaging.module_checker import module_checker
 else:
@@ -16,16 +16,13 @@ def check_module(module_path=None):
 
 
 def build(args: dict):
-    build_info = []
     current_dir = dirname(__file__)
-    module_info, module_check_info = check_module()
-    build_info.extend(module_check_info)
+    module_info, _ = check_module()
     builder = pack_builder(
         join(current_dir, "meme_resourcepack"), module_info, join(current_dir, "mods"), join(current_dir, "mappings"))
     builder.args = args
     builder.build()
-    build_info.extend(builder.log_list)
-    return builder.filename, builder.warning_count, builder.error, builder.log_list
+    return builder.filename, builder.warning_count, builder.error
 
 
 if __name__ == "__main__":
