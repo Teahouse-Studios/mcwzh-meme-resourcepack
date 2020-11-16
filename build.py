@@ -8,18 +8,12 @@ else:
     from packaging.module_checker import module_checker
 
 
-def check_module(module_path=None):
-    module_path = module_path or join(dirname(__file__), "modules")
-    checker = module_checker(module_path)
-    checker.check_module()
-    return checker.module_info, checker.check_info_list
-
-
 def build(args: dict):
     current_dir = dirname(__file__)
-    module_info, _ = check_module()
+    checker = module_checker(join(current_dir, "modules"))
+    checker.check_module()
     builder = pack_builder(
-        join(current_dir, "meme_resourcepack"), module_info, join(current_dir, "mods"), join(current_dir, "mappings"))
+        join(current_dir, "meme_resourcepack"), checker.module_info, join(current_dir, "mods"), join(current_dir, "mappings"))
     builder.args = args
     builder.build()
     return builder.filename, builder.warning_count, builder.error
