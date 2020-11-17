@@ -2,5 +2,8 @@
     "name": "reAL_GrAsS",
     "type": "resource",
     "description": "大草（与grass_enchanted不兼容）",
-    "author": "Zh9c418"
+    "author": "Zh9c418",
+    "incompatible_with": [
+        "grass_enchanted"
+    ]
 }
