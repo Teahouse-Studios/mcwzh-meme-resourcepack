@@ -1,7 +1,7 @@
 {
     "name": "questioning_totem",
     "type": "resource",
-    "description": "在？您怎么又死了？（与totem_model不兼容）",
+    "description": "在？您怎么又死了？",
     "author": "DoroWolf",
     "incompatible_with": [
         "totem_model"
