@@ -1,6 +1,6 @@
 # 中文Minecraft Wiki梗体中文资源包 · Unofficial
 
-[![GitHub issues](https://img.shields.io/github/issues/Teahouse-Studios/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/Teahouse-Studios/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/pulls)    [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY-NC-SA%204.0&color=db2331&style=flat-square&logo=creative%20commons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)    [![License](https://img.shields.io/static/v1?label=License+for+script&message=Apache-2.0&color=db2331&style=flat-square&logo=apache)](https://www.apache.org/licenses/LICENSE-2.0)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Teahouse-Studios/mcwzh-meme-resourcepack?label=latest%20version&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.12.2%2B&color=db2331&style=flat-square&logo=)](https://minecraft.net)
+[![GitHub issues](https://img.shields.io/github/issues/Teahouse-Studios/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/Teahouse-Studios/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/pulls)    [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY-SA%204.0&color=db2331&style=flat-square&logo=creative%20commons)](https://creativecommons.org/licenses/by-sa/4.0/)    [![License](https://img.shields.io/static/v1?label=License+for+script&message=Apache-2.0&color=db2331&style=flat-square&logo=apache)](https://www.apache.org/licenses/LICENSE-2.0)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Teahouse-Studios/mcwzh-meme-resourcepack?label=latest%20version&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.12.2%2B&color=db2331&style=flat-square&logo=)](https://minecraft.net)
 
 [![Banner](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/blob/master/materials/zh_meme_banner.png?raw=true)](https://www.mcbbs.net/thread-1004643-1-1.html)
 
@@ -117,7 +117,7 @@ python build.py -h
 * 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
 * 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
   * 关于正确的译名，请参见[中文Minecraft Wiki上的标准译名列表](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。
-* 本资源包的资源包部分（即除去自动构建脚本和Mod内容字符串未经过梗体中文更改的部分）以 ***CC BY-NC-SA 4.0*** 协议授权。
+* 本资源包的资源包部分（即除去自动构建脚本和Mod内容字符串未经过梗体中文更改的部分）以 ***CC BY-SA 4.0*** 协议授权。
   * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   * 这不是法律建议。
 * 本项目附带的Mod内容字符串，未经梗体中文修改过的部分，按照 ***原作品的协议*** 发布。
