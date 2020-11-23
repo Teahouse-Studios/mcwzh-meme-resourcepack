@@ -3,4 +3,7 @@
     "type": "resource",
     "description": "lttstore.com",
     "author": "Zh9c418"
+    "incompatible_with": [
+        "famous_scene"
+    ]
 }
