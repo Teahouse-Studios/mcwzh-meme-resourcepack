@@ -5,7 +5,7 @@ if __name__ == '__main__':
     from os.path import exists, isdir, join
     from sys import exit
 
-    pack_version = '1.0.5'
+    pack_version = '1.1.0'
     build_unsuccessful = 0
 
     def check_version_consistency():
