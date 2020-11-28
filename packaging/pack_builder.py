@@ -145,7 +145,7 @@ class pack_builder(object):
             self.__raise_error(info)
 
     def __dump_resources(self, modules: list, pack: ZipFile):
-        excluding = ('manifest.json', 'add.json', 'remove.json')
+        excluding = ('module_manifest.json', 'add.json', 'remove.json')
         module_path = self.module_info['path']
         for item in modules:
             base_folder = join(module_path, item)
