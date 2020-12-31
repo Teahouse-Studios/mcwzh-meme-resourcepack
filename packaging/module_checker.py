@@ -41,7 +41,8 @@ class module_checker(object):
             'modules': {
                 'language': [],
                 'resource': [],
-                'mixed': []
+                'mixed': [],
+                'collection': []
             }
         }
         for module in listdir(self.module_path):
@@ -56,13 +57,13 @@ class module_checker(object):
         self.__checked = True
 
     def __analyze_module(self, path: str):
-        manifest = join(path, "manifest.json")
+        manifest = join(path, "module_manifest.json")
         dir_name = split(path)[1]
         if exists(manifest) and isfile(manifest):
             data = load(open(manifest, 'r', encoding='utf8'))
             for key in ('name', 'type', 'description'):
                 if key not in data:
-                    return False, f'In path "{dir_name}": Incomplete manifest.json, missing "{key}" field', None
+                    return False, f'In path "{dir_name}": Incomplete module_manifest.json, missing "{key}" field', None
             if data['type'] == 'language':
                 if not (exists(join(path, "add.json")) or exists(join(path, "remove.json"))):
                     return False, f'In path "{dir_name}": Expected a language module, but couldn\'t find "add.json" or "remove.json"', None
@@ -72,9 +73,15 @@ class module_checker(object):
             elif data['type'] == 'mixed':
                 if not (exists(join(path, "assets")) and (exists(join(path, "add.json")) or exists(join(path, "remove.json")))):
                     return False, f'In path "{dir_name}": Expected a mixed module, but couldn\'t find "assets" directory and either "add.json" or "remove.json"', None
+            elif data['type'] == 'collection':
+                if 'contains' not in data:
+                    return False, f'In path "{dir_name}": Expected a module collection, but "contains" key is missing in module_manifest.json'
+                else:
+                    if 'collection' in data['contains']:
+                        return False, f'In path "{dir_name}": Try to contain another collection in a collection'
             else:
                 return False, f'In path "{dir_name}": Unknown module type "{data["type"]}"', None
             data['dirname'] = dir_name
             return True, None, data
         else:
-            return False, f'In path "{dir_name}": No manifest.json', None
+            return False, f'In path "{dir_name}": No module_manifest.json', None

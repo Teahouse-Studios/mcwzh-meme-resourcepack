@@ -1,6 +1,6 @@
-from os.path import join, dirname, split
+from os.path import join, dirname, basename
 
-if __name__ == f'{split(dirname(__file__))[1]}.build':
+if __name__ == f'{basename(dirname(__file__))}.build':
     from .packaging.pack_builder import pack_builder
     from .packaging.module_checker import module_checker
 else:
@@ -8,24 +8,15 @@ else:
     from packaging.module_checker import module_checker
 
 
-def check_module(module_path=None):
-    module_path = module_path or join(dirname(__file__), "modules")
-    checker = module_checker(module_path)
-    checker.check_module()
-    return checker.module_info, checker.check_info_list
-
-
 def build(args: dict):
-    build_info = []
     current_dir = dirname(__file__)
-    module_info, module_check_info = check_module()
-    build_info.extend(module_check_info)
+    checker = module_checker(join(current_dir, "modules"))
+    checker.check_module()
     builder = pack_builder(
-        join(current_dir, "meme_resourcepack"), module_info, join(current_dir, "mods"), join(current_dir, "mappings"))
+        join(current_dir, "meme_resourcepack"), checker.module_info, join(current_dir, "mods"), join(current_dir, "mappings"))
     builder.args = args
     builder.build()
-    build_info.extend(builder.log_list)
-    return builder.filename, builder.warning_count, builder.error, builder.log_list
+    return builder.filename, builder.warning_count, builder.error
 
 
 if __name__ == "__main__":
@@ -46,6 +37,8 @@ if __name__ == "__main__":
                             help="(Experimental) Include mixed modules. Should be module names, 'all' or 'none'. Defaults to 'none'.")
         parser.add_argument('-s', '--sfw', action='store_true',
                             help="Use 'suitable for work' strings, equals to '--language sfw'.")
+        parser.add_argument('-c', '--collection', nargs='*', default='none',
+                            help="(Experimental) Include module collections. Should be module names, 'all' or 'none'. Defaults to 'none'.")
         parser.add_argument('-m', '--mod', nargs='*', default='none',
                             help="(Experimental) Include mod string files. Should be file names in 'mods/' folder, 'all' or 'none'. Defaults to 'none'. Pseudoly accepts a path, but only files in 'mods/' work.")
         parser.add_argument('-f', '--format', type=int,
@@ -57,7 +50,7 @@ if __name__ == "__main__":
         return parser
 
     def handle_args(args: dict):
-        module_types = ('resource', 'language', 'mixed')
+        module_types = 'resource', 'language', 'mixed', 'collection'
         args['modules'] = {key: args.pop(key) for key in module_types}
         if args['sfw'] and 'sfw' not in args['modules']['language']:
             args['modules']['language'].append('sfw')

@@ -82,12 +82,17 @@ class pack_builder(object):
             res_supp = self.__parse_includes("resource")
             # get mixed modules
             mixed_supp = self.__parse_includes("mixed")
+            # get module collections
+            module_collection = self.__parse_includes("collection")
+            # add modules to respective list
+            self.__handle_modules(res_supp, lang_supp,
+                                  mixed_supp, module_collection)
             # get mods strings
             mod_supp = self.__parse_mods()
             # merge language supplement
             # TODO: split mod strings into namespaces
             main_lang_data = self.__merge_language(
-                lang_supp + mixed_supp, mod_supp)
+                lang_supp, mod_supp)
             # get realms strings
             realms_lang_data = load(open(join(
                 self.main_resource_path, "assets/realms/lang/zh_meme.json"), 'r', encoding='utf8'))
@@ -132,7 +137,7 @@ class pack_builder(object):
                 pack.writestr(
                     f"assets/minecraft/lang/{lang_file_name}", legacy_content)
             # dump resources
-            self.__dump_resources(res_supp + mixed_supp, pack)
+            self.__dump_resources(res_supp, pack)
             pack.close()
             self.__log_list.append(f"Successfully built {pack_name}.")
             print(f"Successfully built {pack_name}.")
@@ -140,7 +145,7 @@ class pack_builder(object):
             self.__raise_error(info)
 
     def __dump_resources(self, modules: list, pack: ZipFile):
-        excluding = ('manifest.json', 'add.json', 'remove.json')
+        excluding = ('module_manifest.json', 'add.json', 'remove.json')
         module_path = self.module_info['path']
         for item in modules:
             base_folder = join(module_path, item)
@@ -187,6 +192,19 @@ class pack_builder(object):
             if (args['type'] == 'legacy' and args['format'] > 3) or (args['type'] in ('normal', 'compat') and args['format'] <= 3):
                 return False, f'Type "{args["type"]}" does not match pack_format {args["format"]}'
         return True, None
+
+    def __handle_modules(self, resource_list: list, language_list: list, mixed_list: list, collection_list: list):
+        # get all resource, language and mixed modules supplied by collection
+        collection_info = {
+            k.pop('name'): k for k in self.module_info['modules']['collection']}
+        for collection in collection_list:
+            for module_type, module_list in (('language', language_list), ('resource', resource_list), ('mixed', mixed_list)):
+                if module_type in collection_info[collection]['contains']:
+                    module_list.extend(
+                        collection_info[collection]['contains'][module_type])
+        # mixed_modules go to resource and language, respectively
+        resource_list.extend(mixed_list)
+        language_list.extend(mixed_list)
 
     def __process_meta(self, args: dict) -> dict:
         data = load(open(join(self.main_resource_path,

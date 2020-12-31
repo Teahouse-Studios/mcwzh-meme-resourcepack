@@ -1,7 +1,8 @@
 {
-    "block.minecraft.ladder": "七根法棍",
-    "death.fell.accident.ladder": "%1$s摔下了七根法棍",
+    "block.minecraft.ladder": "七个林昆",
+    "death.fell.accident.ladder": "%1$s从七个林昆上摔了下来",
     "advancements.story.deflect_arrow.title": "木大！",
     "advancements.story.enter_the_nether.title": "下地狱吧",
+    "menu.shareToLan": "对橘域网开放",
     "subtitles.entity.bat.death": "野味：AWSL"
 }

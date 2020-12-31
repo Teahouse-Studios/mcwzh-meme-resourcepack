@@ -1,0 +1,8 @@
+{
+    "commands.replaceitem.block.failed": "目标方块不是容器",
+    "commands.replaceitem.block.success": "已用%4$s替换了位于%1$s, %2$s, %3$s的物品格",
+    "commands.replaceitem.entity.failed": "无法在%2$s栏位中放入%1$s",
+    "commands.replaceitem.entity.success.multiple": "已用%2$s替换了%1$s个实体的物品格",
+    "commands.replaceitem.entity.success.single": "已用%2$s替换了%1$s的物品格",
+    "commands.replaceitem.slot.inapplicable": "目标没有%s栏位"
+}
