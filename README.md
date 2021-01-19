@@ -24,7 +24,7 @@
 
 普通版本的资源包**无法**覆盖所有的Mod字符串，会导致大部分Mod的内容**全部变为英文**。请下载 `mcwzh-meme_compatible.zip` ，以保证体验。安装流程几乎相同，只是选择的语言应该是**普通的“简体中文”**。
 
-关于支持梗体中文的Mod，请见[支持的Mod](/list_of_supported_mods.md)页面。
+关于支持梗体中文的Mod，请见[支持的Mod](./list_of_supported_mods.md)页面。
 
 ### 1.12.2及以下版本支持
 
@@ -32,7 +32,7 @@
 
 ### 对旧版本的兼容
 
-本仓库中的语言文件和最新的Java版的语言文件保持同步。对旧版本，我们采用了“模块”的方式保持兼容。构建时请加入参数 `-l <语言模块名称>` 来将其加入到主语言文件中。[这里](/list_of_language_modules.md)列出了目前所有的语言模块。
+本仓库中的语言文件和最新的Java版的语言文件保持同步。对旧版本，我们采用了“模块”的方式保持兼容。构建时请加入参数 `-l <语言模块名称>` 来将其加入到主语言文件中。[这里](./list_of_language_modules.md)列出了目前所有的语言模块。
 
 ### 唱片替换
 
@@ -72,7 +72,13 @@ git clone https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack.git
 cd mcwzh-meme-resourcepack
 ```
 
-3. 运行Python命令：
+3. 安装相关pip依赖：
+
+``` bash
+pip install memepack-builder
+```
+
+4. 运行Python命令：
 
 ``` bash
 python preset_build.py
@@ -80,25 +86,13 @@ python preset_build.py
 
 在 `builds` 文件夹中会生成 `mcwzh-meme.zip` 、 `mcwzh-meme_compatible_sfw.zip` 、 `mcwzh-meme_compatible_nofigure_legacy_sfw.zip` 等预设的资源包，名称和作用如上所述。
 
-如果只需要常规的资源包，运行：
+如果需要预设以外的资源包，可输入需要的参数：
 
 ``` bash
-python build.py normal
+python -m memepack_builder ...
 ```
 
-如果只需要加载Mod版的资源包，运行：
-
-``` bash
-python build.py compat
-```
-
-如果需要1.12.2及以下的格式，使用 `legacy` 选项。
-
-更详细的用法请运行以下命令来获取：
-
-``` bash
-python build.py -h
-```
+具体用法可见[此处](https://github.com/Teahouse-Studios/memepack-builder/blob/main/doc/CLI_Manual.zh-hans.md)。
 
 ### 自助跟进游戏版本
 
@@ -110,7 +104,7 @@ python build.py -h
 
 ## 贡献
 
-我们欢迎你为这个资源包贡献自己的想法。请参阅 [`CONTRIBUTING.md`](/CONTRIBUTING.md) 以获取一些建议。
+我们欢迎你为这个资源包贡献自己的想法。请参阅 [`CONTRIBUTING.md`](./CONTRIBUTING.md) 以获取一些建议。
 
 ## 声明
 
