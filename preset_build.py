@@ -1,9 +1,9 @@
 if __name__ == '__main__':
-    import build
     from json import load
     from os import listdir, mkdir, remove, rename
     from os.path import exists, isdir, join
     from sys import exit
+    from memepack_builder.wrapper import main
 
     pack_version = '1.1.0'
     build_unsuccessful = 0
@@ -15,21 +15,21 @@ if __name__ == '__main__':
 
     if check_version_consistency():
         preset_args = [
-            {'type': 'normal', 'modules': {'language': ['all'], 'resource': ['all'], 'mixed': [
+            {'platform': 'je', 'type': 'normal', 'modules': {'language': ['all'], 'resource': ['all'], 'mixed': [
             ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
+            {'platform': 'je', 'type': 'normal', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
             ], 'collection': []}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
+            {'platform': 'je', 'type': 'normal', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
             ], 'collection': []}, 'mod': [],  'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'normal', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
+            {'platform': 'je', 'type': 'normal', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
             ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
+            {'platform': 'je', 'type': 'compat', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
             ], 'collection': []}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
+            {'platform': 'je', 'type': 'compat', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
             ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'compat', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
+            {'platform': 'je', 'type': 'compat', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
             ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
-            {'type': 'legacy', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
+            {'platform': 'je', 'type': 'legacy', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
             ], 'collection': ['version_before_1.16']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 3}
         ]
         preset_name = [
@@ -52,13 +52,13 @@ if __name__ == '__main__':
         for file in listdir(base_folder):
             remove(join(base_folder, file))
         for args, name in zip(preset_args, preset_name):
-            pack_name, warning_count, error = build.build(args)
-            if not error:
+            result = main(args, True)
+            if result['error_code'] == 0:
                 pack_counter += 1
-                if warning_count == 0:
+                if result['warning_count'] == 0:
                     perfect_pack_counter += 1
-                if name != pack_name:
-                    rename(join(base_folder, pack_name),
+                if name != result['file_name']:
+                    rename(join(base_folder, result['file_name']),
                            join(base_folder, name))
                     print(f"Renamed pack to {name}.")
             else:

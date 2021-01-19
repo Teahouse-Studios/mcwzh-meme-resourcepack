@@ -5,3 +5,7 @@ __pycache__
 /zh_cn.lang
 builds*
 .idea
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
