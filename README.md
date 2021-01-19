@@ -117,10 +117,10 @@ python build.py -h
 * 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
 * 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
   * 关于正确的译名，请参见[中文Minecraft Wiki上的标准译名列表](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。
-* 本资源包的资源包部分（即除去自动构建脚本和Mod内容字符串未经过梗体中文更改的部分）以 ***CC BY-SA 4.0*** 协议授权。
+* 本项目文件除另有声明外，均以 ***CC BY-SA 4.0*** 协议授权。
   * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   * 这不是法律建议。
-* 本项目附带的Mod内容字符串，未经梗体中文修改过的部分，按照 ***原作品的协议*** 发布。
-* 本项目的自动构建脚本以 ***Apache 2.0*** 协议发布。
+* 本项目附带的Mod内容字符串、未经梗体中文修改过的部分，按照 ***原作品的协议*** 发布。
+* 本项目 `tools` 目录下的脚本和根目录下的 `preset_build.py` 文件，可选择 ***CC BY-SA 4.0*** 或 ***Apache License 2.0*** 协议之一授权。
 
 ![GitHub forks](https://img.shields.io/github/forks/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)    ![GitHub stars](https://img.shields.io/github/stars/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)
