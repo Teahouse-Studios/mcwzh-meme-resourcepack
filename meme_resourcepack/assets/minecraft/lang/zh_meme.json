@@ -4972,9 +4972,9 @@
     "subtitles.entity.glow_squid.squirt": "荧光鱿鱼：吐墨",
     "item.minecraft.glow_squid_spawn_egg": "荧光鱿鱼刷怪蛋",
     "item.minecraft.glow_ink_sac": "荧光墨囊",
-    "item.minecraft.glow_item_frame": "发光的木板做的物品展示栏",
+    "item.minecraft.glow_item_frame": "发光的木板做的物品炫耀框",
     "selectWorld.backupQuestion.downgrade": "不支持降低存档的游戏版本",
     "subtitles.item.glow_ink_sac.use": "荧光墨囊：瞎涂",
-    "selectWorld.backupWarning.downgrade": "这个世界上次是在%s版本中游玩的；您当前的版本为%s。降级世界的游戏版本可能会导致损坏——我们无法保证它可以被加载和运行。如果您仍要继续，请备份该存档！",
+    "selectWorld.backupWarning.downgrade": "这个世界上次是在%s版本中游玩的；您当前的版本为%s。降级世界的游戏版本可能不会导致损坏——但是我们也无法保证它可以被加载和运行。如果您怂，您就选备份；要是您勇，您就继续。",
     "entity.minecraft.glow_squid": "荧光鱿鱼"
 }
