@@ -1,6 +1,6 @@
 {
     "name": "minecart_helmet",
-    "type": "resource",
+    "type": "mixed",
     "description": "？你怎么把矿车倒过来了",
     "author": "Light Beacon"
 }
