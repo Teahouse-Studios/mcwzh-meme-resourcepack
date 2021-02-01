@@ -1,0 +1,4 @@
+{
+    "selectWorld.backupQuestion": "你真的真的真的想加载此世界吗？",
+    "selectWorld.backupWarning": "这个世界上次是在%s版本中游玩的，而你却在游玩%s这个版本？请备份你的世界，以免世界崩溃！"
+}
