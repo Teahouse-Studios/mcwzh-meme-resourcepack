@@ -5,7 +5,7 @@ if __name__ == '__main__':
     from sys import exit
     from memepack_builder.wrapper import main
 
-    pack_version = '1.1.0'
+    pack_version = '1.2.0'
     build_unsuccessful = 0
 
     def check_version_consistency():
