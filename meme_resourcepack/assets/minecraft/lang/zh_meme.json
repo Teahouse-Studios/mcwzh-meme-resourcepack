@@ -4140,6 +4140,7 @@
     "selectWorld.mapType.normal": "普通",
     "selectWorld.moreWorldOptions": "更多世界的选项…",
     "selectWorld.newWorld": "新的世界，新的开始",
+    "selectWorld.pre_worldheight": "暂时无法载入建造范围不同的世界。",
     "selectWorld.recreate": "吃后悔药",
     "selectWorld.recreate.customized.text": "时代变了，自定义世界在这个版本的Minecraft中已不受支持。我们可以尝试用同样的种子与选项重建它，但任何自定义的地形都会拜拜了您嘞。默哀一秒钟。",
     "selectWorld.recreate.customized.title": "自定义世界已不受支持",
