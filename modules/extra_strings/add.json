@@ -1,0 +1,11 @@
+{
+    "filled_map.bastion_remnant": "堡垒遗迹探索者地图",
+    "filled_map.nether_fossil": "尼德兰化石探索者地图",
+    "filled_map.pillager_outpost": "掠夺者前哨站地图",
+    "filled_map.ruined_portal": "废弃传送门探索者地图",
+    "filled_map.village": "奸商聚集地探索者地图",
+    "generator.buffet": "自助餐",
+    "options.entityDistancePercent": "%s%%",
+    "selectWorld.hardcoreMode": "硬核：",
+    "selectWorld.hardcoreMode.info": "世界将在死亡后拜拜了您嘞，删得连你自己是谁都不知道！"
+}

@@ -1,6 +1,6 @@
 # 中文Minecraft Wiki梗体中文资源包 · Unofficial
 
-[![GitHub issues](https://img.shields.io/github/issues/Teahouse-Studios/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/Teahouse-Studios/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/pulls)    [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY-NC-SA%204.0&color=db2331&style=flat-square&logo=creative%20commons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)    [![License](https://img.shields.io/static/v1?label=License+for+script&message=Apache-2.0&color=db2331&style=flat-square&logo=apache)](https://www.apache.org/licenses/LICENSE-2.0)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Teahouse-Studios/mcwzh-meme-resourcepack?label=latest%20version&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.12.2%2B&color=db2331&style=flat-square&logo=)](https://minecraft.net)
+[![GitHub issues](https://img.shields.io/github/issues/Teahouse-Studios/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/Teahouse-Studios/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/pulls)    [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY-SA%204.0&color=db2331&style=flat-square&logo=creative%20commons)](https://creativecommons.org/licenses/by-sa/4.0/)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Teahouse-Studios/mcwzh-meme-resourcepack?label=latest%20version&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.12.2%2B&color=db2331&style=flat-square&logo=)](https://minecraft.net)
 
 [![Banner](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/blob/master/materials/zh_meme_banner.png?raw=true)](https://www.mcbbs.net/thread-1004643-1-1.html)
 
@@ -14,7 +14,7 @@
 
 ## 用法
 
-在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases)中下载此资源包，或在[网页构建](https://download.powerdia.nl)中选择自定义选项下载。
+在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases)中下载此资源包，或在[网页构建](https://dl.meme.teahou.se/)中选择自定义选项下载。
 
 ### 常规
 
@@ -24,11 +24,15 @@
 
 普通版本的资源包**无法**覆盖所有的Mod字符串，会导致大部分Mod的内容**全部变为英文**。请下载 `mcwzh-meme_compatible.zip` ，以保证体验。安装流程几乎相同，只是选择的语言应该是**普通的“简体中文”**。
 
-关于支持梗体中文的Mod，请见[支持的Mod](/list_of_supported_mods.md)页面。
+关于支持梗体中文的Mod，请见[支持的Mod](./list_of_supported_mods.md)页面。
 
 ### 1.12.2及以下版本支持
 
 1.13对可翻译字符串进行了一次破坏性更改，这意味着1.12.2及以下无法直接正常使用本资源包。同时，1.12.2及以下版本并不支持读取ASCII格式的Unicode码。通过建立映射表，我们初步实现了1.12.2及以下版本对大部分字符串的支持（也就是除去命令），详见Issue [#34](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/issues/34)。1.12.2及以下版本请使用带有 `_legacy` 的预设包。
+
+### 对旧版本的兼容
+
+本仓库中的语言文件和最新的Java版的语言文件保持同步。对旧版本，我们采用了“模块”的方式保持兼容。构建时请加入参数 `-l <语言模块名称>` 来将其加入到主语言文件中。[这里](./list_of_language_modules.md)列出了目前所有的语言模块。
 
 ### 唱片替换
 
@@ -36,31 +40,9 @@
 
 ### 不死图腾替换
 
-该资源包将不死图腾替换成了自定义模型。自定义模型范围为 `10800000~10800006` 。如果这不适用于你（例如模型出错，游玩自定义地图或装载其他3D资源包），你可以尝试调整载入顺序，或者下载不带自定义模型的自动构建（以 `_nofigure` 结尾）。如果不想重新下载，你也可以直接删除有自定义模型版本的对应的文件夹。
+该资源包将不死图腾替换成了自定义模型。自定义模型范围为 `10800000~10800006` 。如果这不适用于你（例如模型出错，游玩自定义地图或装载其他3D资源包），你可以尝试调整载入顺序，或者下载不带自定义模型的预设构建（以 `_nofigure` 结尾）。如果不想重新下载，你也可以直接删除有自定义模型版本的对应的文件夹。
 
 关于可以直接获取自定义模型的数据包，可以在[这里](https://files.lakejason0.ml/images/e/e5/Figure.zip)，或是在本repo中的`datapack`目录找到。
-
-### 可选的文件替换
-
-关于愚人节快照20w14infinite，请在构建时加入参数 `-l 20w14inf` 来得到有限的梗体中文支持。
-
-20w06a重命名了下界生物群系。请加入参数 `-l nether_biome` 来获取对以前版本的支持。
-
-20w12a新加入了重生锚， `/spawnpoint` 现在支持设置重生点到指定维度。请加入参数 `-l spawnpoint_before_20w12a` 来获取对以前版本的支持。
-
-20w29a向 `/spawnpoint` 添加了角度参数，现在支持设置玩家重生时面朝的方向。请加入参数 `-l spawnpoint_before_20w29a` 来获取对以前版本的支持。
-
-20w14a对字幕进行了一次修正和增补，铁活板门的字幕互换的问题已经被修复。请加入参数 `-l trapdoor` 来获取对以前版本的支持。
-
-20w14a对属性名称进行了修改。请加入参数 `-l attribute` 来获取对以前版本的支持。
-
-20w17a重命名了灵魂火把和灵魂灯笼的ID。请加入参数 `-l soul_fire_items` 来获取对以前版本的支持。
-
-20w20a更改了进度“终极奉献”的条件和字符串。请加入参数 `-l diamond_hoe` 来获取对以前版本的支持。
-
-20w28a调整了生成世界界面的字符串。请加入参数 `-l selectworld_gui_old` 来获取对以前版本的支持。
-
-为保持主语言文件和最新版本的语言文件结构一致，所有旧版本的其他字符串放置在单独的模块中。请加入参数 `-l old_strings` 来获取对以前版本的支持。
 
 ### “Suitable for work”替换
 
@@ -70,11 +52,11 @@
 
 ### 体验最新内容
 
-想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作，或者不会命令行可以前往[网页打包](https://download.powerdia.nl)：
+想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作，或者不会命令行可以前往[网页打包](https://dl.meme.teahou.se/)：
 
 #### 先决条件
 
-请确保已经安装了Python 3.6+和Git。如果没有，请到[Python官网](https://www.python.org)和[Git官网](https://www.git-scm.com)下载。
+请确保已经安装了Python 3.9+和Git。如果没有，请到[Python官网](https://www.python.org)和[Git官网](https://www.git-scm.com)下载。
 
 #### 步骤
 
@@ -90,33 +72,27 @@ git clone https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack.git
 cd mcwzh-meme-resourcepack
 ```
 
-3. 运行Python命令：
+3. 安装相关pip依赖：
 
 ``` bash
-python preset_build.py all
+pip install memepack-builder
 ```
 
-在 `builds` 文件夹中会出现 `mcwzh-meme.zip` 、 `mcwzh-meme_compatible_sfw.zip` 、 `mcwzh-meme_compatible_nofigure_legacy_sfw.zip` 等预设的资源包，名称和作用如上所述。
-
-如果只需要常规的资源包，运行：
+4. 运行Python命令：
 
 ``` bash
-python build.py normal
+python preset_build.py
 ```
 
-如果只需要加载Mod版的资源包，运行：
+在 `builds` 文件夹中会生成 `mcwzh-meme.zip` 、 `mcwzh-meme_compatible_sfw.zip` 、 `mcwzh-meme_compatible_nofigure_legacy_sfw.zip` 等预设的资源包，名称和作用如上所述。
+
+如果需要预设以外的资源包，可输入需要的参数：
 
 ``` bash
-python build.py compat
+python -m memepack_builder ...
 ```
 
-如果需要1.12.2及以下的格式，使用 `legacy` 选项。
-
-更详细的用法请运行以下命令来获取：
-
-``` bash
-python build.py -h
-```
+具体用法可见[此处](https://github.com/Teahouse-Studios/memepack-builder/blob/main/doc/CLI_Manual.zh-hans.md)。
 
 ### 自助跟进游戏版本
 
@@ -128,17 +104,17 @@ python build.py -h
 
 ## 贡献
 
-我们欢迎你为这个资源包贡献自己的想法。请参阅 [`CONTRIBUTING.md`](/CONTRIBUTING.md) 以获取一些建议。
+我们欢迎你为这个资源包贡献自己的想法。请参阅 [`CONTRIBUTING.md`](./CONTRIBUTING.md) 以获取一些建议。
 
 ## 声明
 
 * 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
 * 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
   * 关于正确的译名，请参见[中文Minecraft Wiki上的标准译名列表](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。
-* 本资源包的资源包部分（即除去自动构建脚本和Mod内容字符串未经过梗体中文更改的部分）以 ***CC BY-NC-SA 4.0*** 协议授权。
+* 本项目文件除另有声明外，均以 ***CC BY-SA 4.0*** 协议授权。
   * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   * 这不是法律建议。
-* 本项目附带的Mod内容字符串，未经梗体中文修改过的部分，按照 ***原作品的协议*** 发布。
-* 本项目的自动构建脚本以 ***Apache 2.0*** 协议发布。
+* 本项目附带的Mod内容字符串、未经梗体中文修改过的部分，按照 ***原作品的协议*** 发布。
+* 本项目 `tools` 目录下的脚本和根目录下的 `preset_build.py` 文件，可选择 ***CC BY-SA 4.0*** 或 ***Apache License 2.0*** 协议之一授权。
 
 ![GitHub forks](https://img.shields.io/github/forks/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)    ![GitHub stars](https://img.shields.io/github/stars/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)

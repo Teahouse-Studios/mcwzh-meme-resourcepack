@@ -1,12 +1,11 @@
 .vscode
 *.zip
 __pycache__
-/zh_meme.json
-/zh_cn.json
-/zh_meme.lang
+/*.json
 /zh_cn.lang
-views/custom/*.html
 builds*
-/en_us.json
-/conversion.json
 .idea
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
