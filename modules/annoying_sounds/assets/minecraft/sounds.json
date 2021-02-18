@@ -4,7 +4,7 @@
             {
                 "name": "whaaaaat",
                 "stream": true,
-                "weight": 100
+                "weight": 1000
             },
             {
                 "name": "peach",
@@ -14,23 +14,23 @@
             {
                 "name": "yeet",
                 "stream": true,
-                "weight": 100
+                "weight": 1000
             },
             {
                 "name": "ding",
-                "weight": 100
+                "weight": 1000
             },
             {
                 "name": "random/anvil_land",
-                "weight": 100
+                "weight": 1000
             },
             {
                 "name": "random/explode1",
-                "weight": 100
+                "weight": 1000
             },
             {
                 "name": "random/fuse",
-                "weight": 100,
+                "weight": 1000,
                 "volume": 1
             }
         ]
