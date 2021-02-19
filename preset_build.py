@@ -15,20 +15,20 @@ if __name__ == '__main__':
 
     if check_version_consistency():
         preset_args = [
-            {'platform': 'je', 'type': 'normal', 'modules': {'language': ['all'], 'resource': ['all'], 'mixed': [
-            ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+            {'platform': 'je', 'type': 'normal', 'modules': {'language': [], 'resource': ['all'], 'mixed': [
+            ], 'collection': ['version_1.16']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
             {'platform': 'je', 'type': 'normal', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
-            ], 'collection': []}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
+            ], 'collection': ['version_1.16']}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
             {'platform': 'je', 'type': 'normal', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
-            ], 'collection': []}, 'mod': [],  'hash': False, 'output': 'builds', 'format': 6},
+            ], 'collection': ['version_1.16']}, 'mod': [],  'hash': False, 'output': 'builds', 'format': 6},
             {'platform': 'je', 'type': 'normal', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
-            ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+            ], 'collection': ['version_1.16']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
             {'platform': 'je', 'type': 'compat', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
-            ], 'collection': []}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
+            ], 'collection': ['version_1.16']}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
             {'platform': 'je', 'type': 'compat', 'modules': {'language': ['sfw'], 'resource': ['all'], 'mixed': [
-            ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+            ], 'collection': ['version_1.16']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
             {'platform': 'je', 'type': 'compat', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
-            ], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+            ], 'collection': ['version_1.16']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
             {'platform': 'je', 'type': 'legacy', 'modules': {'language': ['sfw'], 'resource': [], 'mixed': [
             ], 'collection': ['version_before_1.16']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 3}
         ]
