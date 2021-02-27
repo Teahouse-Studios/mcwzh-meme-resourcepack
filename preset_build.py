@@ -1,18 +1,20 @@
-if __name__ == '__main__':
-    from json import load
-    from os import listdir, mkdir, remove, rename
-    from os.path import exists, isdir, join
-    from sys import exit
-    from memepack_builder.wrapper import main
+from json import load
+from os import listdir, mkdir, remove, rename
+from os.path import exists, isdir, join
+from sys import exit
+from memepack_builder.wrapper import main
 
-    pack_version = '1.3.0'
-    build_unsuccessful = 0
+pack_version = '1.3.0'
+build_unsuccessful = 0
 
-    def check_version_consistency():
+
+def check_version_consistency():
         mcmeta_desc = (load(open("meme_resourcepack/pack.mcmeta",
                                  'r', encoding='utf8')))['pack']['description']
         return pack_version in mcmeta_desc
-
+    
+    
+def run():
     if check_version_consistency():
         preset_args = [
             {'platform': 'je', 'type': 'normal', 'modules': {'language': [], 'resource': ['all'], 'mixed': [
@@ -70,3 +72,6 @@ if __name__ == '__main__':
     else:
         exit(
             f'\033[1;31mError: Pack version "{pack_version}" does not match the number in pack.mcmeta.\033[0m')
+
+if __name__ == "__main__":
+    run()
