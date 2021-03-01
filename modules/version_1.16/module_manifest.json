@@ -3,11 +3,10 @@
     "type": "collection",
     "description": "适用于1.16版本的模块集合",
     "author": "梗体中文内容组",
-    "contains": {
-        "language": [
-            "grass_path_before_20w45a",
-            "old_strings",
-            "replaceitem_before_20w46a"
-        ]
-    }
+    "contains": [
+        "grass_path_before_20w45a",
+        "old_strings",
+        "replaceitem_before_20w46a",
+        "sleep_impossible_before_21w03a"
+    ]
 }
