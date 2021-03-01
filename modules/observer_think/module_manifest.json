@@ -2,5 +2,8 @@
     "name": "observer_think",
     "type": "resource",
     "description": "思辩者.jpg",
-    "author": "ZCYF、Lakejason0"
+    "author": "ZCYF、Lakejason0",
+    "classifier": [
+        "modified_resource"
+    ]
 }

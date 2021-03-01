@@ -1,7 +1,7 @@
 {
-    "name": "weathered_copper_before_21w06a",
+    "name": "lang_old_strings",
     "type": "resource",
-    "description": "21w06a以前的铜块相关字符串",
+    "description": "旧版本的各种字符串",
     "author": "梗体中文内容组",
     "classifier": [
         "modified_language"

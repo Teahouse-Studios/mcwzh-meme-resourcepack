@@ -2,5 +2,8 @@
     "name": "a_letter",
     "type": "resource",
     "description": "一封信，也许打完龙会出现",
-    "author": "梗体中文内容组"
+    "author": "梗体中文内容组",
+    "classifier": [
+        "modified_resource"
+    ]
 }

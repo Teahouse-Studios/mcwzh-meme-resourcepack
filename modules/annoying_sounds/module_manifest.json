@@ -2,5 +2,8 @@
     "name": "annoying_sounds",
     "type": "resource",
     "description": "烦人的音效",
-    "author": "Lakejason0、Neubulae"
+    "author": "Lakejason0、Neubulae",
+    "classifier": [
+        "modified_resource"
+    ]
 }

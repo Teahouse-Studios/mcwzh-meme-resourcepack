@@ -2,5 +2,8 @@
     "name": "red_leaf_valley",
     "type": "resource",
     "description": "红叶谷，让白桦变为红枫（需要OptiFine)",
-    "author": "Gu_ZT"
+    "author": "Gu_ZT",
+    "classifier": [
+        "modified_resource"
+    ]
 }

@@ -1,7 +1,7 @@
 {
-    "name": "weathered_copper_before_21w06a",
+    "name": "lang_spawnpoint_1.16-1.16.1",
     "type": "resource",
-    "description": "21w06a以前的铜块相关字符串",
+    "description": "20w29a以前版本的重生信息的替换",
     "author": "梗体中文内容组",
     "classifier": [
         "modified_language"

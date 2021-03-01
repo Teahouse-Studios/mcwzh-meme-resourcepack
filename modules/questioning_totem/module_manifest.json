@@ -5,5 +5,8 @@
     "author": "DoroWolf",
     "incompatible_with": [
         "totem_model"
+    ],
+    "classifier": [
+        "modified_resource"
     ]
 }

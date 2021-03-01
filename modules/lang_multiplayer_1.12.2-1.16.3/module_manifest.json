@@ -1,0 +1,9 @@
+{
+    "name": "lang_multiplayer_1.12.2-1.16.3",
+    "type": "resource",
+    "description": "1.16.4-pre1以前不兼容的客户端与服务端信息",
+    "author": "梗体中文内容组",
+    "classifier": [
+        "modified_language"
+    ]
+}

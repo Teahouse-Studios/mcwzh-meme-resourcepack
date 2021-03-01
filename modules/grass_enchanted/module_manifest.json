@@ -5,5 +5,8 @@
     "author": "MiemieMethod",
     "incompatible_with": [
         "reAL_GrAsS"
+    ],
+    "classifier": [
+        "modified_resource"
     ]
 }

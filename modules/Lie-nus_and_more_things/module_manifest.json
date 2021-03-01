@@ -5,5 +5,8 @@
     "author": "Zh9c418",
     "incompatible_with": [
         "famous_scene"
+    ],
+    "classifier": [
+        "modified_resource"
     ]
 }

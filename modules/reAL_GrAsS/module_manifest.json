@@ -5,5 +5,8 @@
     "author": "Zh9c418",
     "incompatible_with": [
         "grass_enchanted"
+    ],
+    "classifier": [
+        "modified_resource"
     ]
 }

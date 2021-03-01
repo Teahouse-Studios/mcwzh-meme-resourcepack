@@ -1,6 +1,9 @@
 {
     "name": "20w14inf",
-    "type": "language",
+    "type": "resource",
     "description": "提供对20w14inf快照的梗体中文有限支持",
-    "author": "梗体中文内容组"
+    "author": "梗体中文内容组",
+    "classifier": [
+        "modified_language"
+    ]
 }

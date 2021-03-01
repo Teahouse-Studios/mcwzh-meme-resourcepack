@@ -2,5 +2,8 @@
     "name": "brewing_stand_model",
     "type": "resource",
     "description": "将炼药台变成手办",
-    "author": "Lakejason0、Gu_ZT"
+    "author": "Lakejason0、Gu_ZT",
+    "classifier": [
+        "modified_resource"
+    ]
 }

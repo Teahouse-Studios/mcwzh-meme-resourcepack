@@ -2,5 +2,8 @@
     "name": "disco_ball",
     "type": "resource",
     "description": "红石灯球，有动态材质的那种",
-    "author": "Gu_ZT、Zh9c418"
+    "author": "Gu_ZT、Zh9c418",
+    "classifier": [
+        "modified_resource"
+    ]
 }

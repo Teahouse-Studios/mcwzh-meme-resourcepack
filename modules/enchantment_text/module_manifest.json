@@ -2,5 +2,8 @@
     "name": "enchantment_text",
     "type": "resource",
     "description": "求、别，我、菜、您、发，我、痛、泪、流。",
-    "author": "DoroWolf"
+    "author": "DoroWolf",
+    "classifier": [
+        "modified_resource"
+    ]
 }

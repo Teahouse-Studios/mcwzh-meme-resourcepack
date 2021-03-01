@@ -1,7 +1,7 @@
 {
-    "name": "weathered_copper_before_21w06a",
+    "name": "lang_backupworld_1.12.2-1.16.5",
     "type": "resource",
-    "description": "21w06a以前的铜块相关字符串",
+    "description": "1.12.2至1.16.5间的备份世界提醒",
     "author": "梗体中文内容组",
     "classifier": [
         "modified_language"

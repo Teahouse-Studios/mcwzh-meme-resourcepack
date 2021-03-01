@@ -2,5 +2,8 @@
     "name": "mopemope",
     "type": "resource",
     "description": "宝 宝 金 曲，妈 妈 放 心",
-    "author": "Zh9c418"
+    "author": "Zh9c418",
+    "classifier": [
+        "modified_resource"
+    ]
 }

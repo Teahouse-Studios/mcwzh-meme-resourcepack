@@ -2,5 +2,8 @@
     "name": "bee_pickaxe",
     "type": "resource",
     "description": "镐蜂了！",
-    "author": "SkyEye_FAST"
+    "author": "SkyEye_FAST",
+    "classifier": [
+        "modified_resource"
+    ]
 }

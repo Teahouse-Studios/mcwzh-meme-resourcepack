@@ -2,5 +2,8 @@
     "name": "dorowolf_texture",
     "type": "resource",
     "description": "超可爱的多洛洛狼！",
-    "author": "DoroWolf、Lxazl5770"
+    "author": "DoroWolf、Lxazl5770",
+    "classifier": [
+        "modified_resource"
+    ]
 }

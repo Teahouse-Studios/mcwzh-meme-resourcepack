@@ -1,0 +1,12 @@
+{
+    "name": "version_1.16.5",
+    "type": "collection",
+    "description": "适用于1.16.5版本的模块集合",
+    "author": "梗体中文内容组",
+    "contains": [
+        "lang_grass_path_1.12.2-1.16.5",
+        "lang_old_strings",
+        "lang_replaceitem_1.12.2-1.16.5",
+        "lang_sleep_impossible_1.12.2-1.16.5"
+    ]
+}

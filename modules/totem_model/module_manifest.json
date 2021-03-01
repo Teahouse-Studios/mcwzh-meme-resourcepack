@@ -5,5 +5,8 @@
     "author": "Lakejason0、Gu_ZT",
     "incompatible_with": [
         "questioning_totem"
+    ],
+    "classifier": [
+        "modified_resource"
     ]
 }
