@@ -54,7 +54,7 @@ Windows Update已可用
 D R O P
 While True: print('人类的本质是？')
 你说是，那就是，不狡辩
-小 心 兽 人 控
+认真你就输了
 WDNMD
 建议改成：阴 间 翻 译
 O-oooooooooo AAAAE-A-A-I-A-U- JO-oooooooooooo
@@ -193,4 +193,3 @@ Duang~
 下次一定
 毫无PS痕迹
 你不对劲
-?
