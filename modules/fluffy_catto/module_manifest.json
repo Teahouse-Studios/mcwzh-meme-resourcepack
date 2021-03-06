@@ -1,0 +1,9 @@
+{
+    "name": "fluffy_catto",
+    "type": "resource",
+    "description": "瑞狩是只猫！",
+    "author": "ZH9c418",
+    "classifier": [
+        "modified_resource"
+    ]
+}
