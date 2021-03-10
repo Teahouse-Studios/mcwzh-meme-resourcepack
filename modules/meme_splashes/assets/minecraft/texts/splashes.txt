@@ -3,7 +3,6 @@ BugJump出品
 MINECRAFT 2077
 Mojang SB
 啊？你在干嘛？
-:)
 Java™ Platform SE binary未响应
 This is Terraria!
 DRRRRRRRRROP
@@ -76,8 +75,8 @@ Creeper?
 开始你的炸弹秀
 窝窝头，一块钱四个，嘿嘿！
 java.lang.NullPointerException
+:)
 :(
-噔 噔 咚
 ↓↑
 §c危
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
@@ -131,6 +130,7 @@ MD，绝了
 猪灵是妹子
 大声密谋
 你再骂！
+噔 噔 咚
 99+
 我没有挂机
 一杯加Honeycomb的Netherite
