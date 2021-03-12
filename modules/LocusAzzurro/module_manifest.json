@@ -7,6 +7,7 @@
         "LocusAzzurro"
     ],
     "classifier": [
+        "modified_language",
         "modified_resource"
     ]
 }
