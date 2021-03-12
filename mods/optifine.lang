@@ -668,7 +668,7 @@ of.options.POTION_PARTICLES=药水粒子
 of.options.DRIPPING_WATER_LAVA=水滴/岩浆滴
 of.options.ANIMATED_TERRAIN=地形动画
 of.options.ANIMATED_TEXTURES=动态材质
-of.options.FIREWORK_PARTICLES=烟花粒子
+of.options.FIREWORK_PARTICLES=窜天猴粒子
 
 # Other
 
