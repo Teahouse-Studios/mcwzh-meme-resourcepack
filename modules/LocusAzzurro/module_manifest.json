@@ -1,0 +1,13 @@
+{
+    "name": "LocusAzzurro",
+    "type": "resource",
+    "description": "鸡，蓝色，聪明，会建筑",
+    "author": [
+        "Dianliang233",
+        "LocusAzzurro"
+    ],
+    "classifier": [
+        "modified_language",
+        "modified_resource"
+    ]
+}
