@@ -62,25 +62,25 @@
 
 1. 下载源码：
 
-``` bash
+``` sh
 git clone https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack.git
 ```
 
 2. 进入文件夹：
 
-``` bash
+``` sh
 cd mcwzh-meme-resourcepack
 ```
 
 3. 安装相关pip依赖：
 
-``` bash
-pip install memepack-builder
+``` sh
+pip install -r requirements.txt
 ```
 
 4. 运行Python命令：
 
-``` bash
+``` sh
 python preset_build.py
 ```
 
@@ -88,7 +88,7 @@ python preset_build.py
 
 如果需要预设以外的资源包，可输入需要的参数：
 
-``` bash
+``` sh
 python -m memepack_builder ...
 ```
 
