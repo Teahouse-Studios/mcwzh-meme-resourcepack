@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/poster/poster_father",
+  "textures": {
+    "poster": "minecraft:block/poster/microjang"
+  }
+}

@@ -1,0 +1,19 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "#poster"
+	},
+	"elements": [
+		{
+			"from": [-4, -4, 15.5],
+			"to": [20, 20, 15.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 4, 23]},
+			"color": 3,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#particle"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#particle"}
+			}
+		}
+	]
+}
