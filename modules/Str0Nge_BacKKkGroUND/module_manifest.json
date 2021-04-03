@@ -1,0 +1,12 @@
+{
+    "name": "Str0Nge_BacKKkGroUND",
+    "type": "resource",
+    "description": "这菜单背景真的怪",
+    "author": "ZH9c418",
+    "incompatible_with": [
+        "famous_scene"
+    ],
+    "classifier": [
+        "modified_resource"
+    ]
+}
