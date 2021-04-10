@@ -7,7 +7,9 @@
       {"model": "minecraft:block/poster/poster_3","y": 90},
       {"model": "minecraft:block/poster/poster_4","y": 90},
       {"model": "minecraft:block/poster/poster_5","y": 90},
-      {"model": "minecraft:block/poster/poster_6","y": 90}
+      {"model": "minecraft:block/poster/poster_6","y": 90},
+      {"model": "minecraft:block/poster/poster_7","y": 90},
+      {"model": "minecraft:block/poster/poster_8","y": 90}
     ],
     "facing=north": [
       {"model": "minecraft:block/poster/poster_0"},
@@ -16,7 +18,9 @@
       {"model": "minecraft:block/poster/poster_3"},
       {"model": "minecraft:block/poster/poster_4"},
       {"model": "minecraft:block/poster/poster_5"},
-      {"model": "minecraft:block/poster/poster_6"}
+      {"model": "minecraft:block/poster/poster_6"},
+      {"model": "minecraft:block/poster/poster_7"},
+      {"model": "minecraft:block/poster/poster_8"}
     ],
     "facing=south": [
       {"model": "minecraft:block/poster/poster_0","y": 180},
@@ -25,7 +29,9 @@
       {"model": "minecraft:block/poster/poster_3","y": 180},
       {"model": "minecraft:block/poster/poster_4","y": 180},
       {"model": "minecraft:block/poster/poster_5","y": 180},
-      {"model": "minecraft:block/poster/poster_6","y": 180}
+      {"model": "minecraft:block/poster/poster_6","y": 180},
+      {"model": "minecraft:block/poster/poster_7","y": 180},
+      {"model": "minecraft:block/poster/poster_8","y": 180}
     ],
     "facing=west": [
       {"model": "minecraft:block/poster/poster_0","y": 270},
@@ -34,7 +40,9 @@
       {"model": "minecraft:block/poster/poster_3","y": 270},
       {"model": "minecraft:block/poster/poster_4","y": 270},
       {"model": "minecraft:block/poster/poster_5","y": 270},
-      {"model": "minecraft:block/poster/poster_6","y": 270}
+      {"model": "minecraft:block/poster/poster_6","y": 270},
+      {"model": "minecraft:block/poster/poster_7","y": 270},
+      {"model": "minecraft:block/poster/poster_8","y": 270}
     ]
   }
 }
