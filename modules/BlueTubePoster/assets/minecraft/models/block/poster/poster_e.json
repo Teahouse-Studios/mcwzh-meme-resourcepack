@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/poster/poster_father",
+  "textures": {
+    "poster": "minecraft:block/poster/here_we_go_again"
+  }
+}
