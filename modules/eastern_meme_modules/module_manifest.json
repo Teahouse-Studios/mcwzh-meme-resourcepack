@@ -1,0 +1,20 @@
+{
+    "name": "eastern_meme_modules",
+    "type": "collection",
+    "description": "东方迷因模块集合",
+    "author": "DoroWolf",
+    "incompatible_with": [
+        "western_meme_modules"
+    ],
+    "contains": [
+        "open_close_sound",
+        "famous_scene",
+        "enchantment_text",
+        "bell_sound",
+        "mopemope",
+        "jinkela",
+        "blue_tube_poster",
+        "real_grass",
+        "spicy_strips"
+   ]
+}

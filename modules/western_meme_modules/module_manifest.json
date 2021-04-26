@@ -3,8 +3,12 @@
     "type": "collection",
     "description": "欧美迷因模块集合",
     "author": "DoroWolf",
+    "incompatible_with": [
+        "eastern_meme_modules"
+    ],
     "contains": [
         "Lie-nus_and_more_things",
-        "strange_meme_background"
+        "strange_meme_background",
+        "baguette"
    ]
 }
