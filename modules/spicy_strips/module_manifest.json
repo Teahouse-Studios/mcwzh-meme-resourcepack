@@ -2,7 +2,9 @@
     "name": "spicy_strips",
     "type": "resource",
     "description": "一起恰辣条",
-    "author": "DoroWolf",
+    "author": [
+        "DoroWolf"
+    ],
     "classifier": [
         "modified_resource",
         "modified_language"

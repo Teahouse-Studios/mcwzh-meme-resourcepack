@@ -2,7 +2,9 @@
     "name": "eastern_meme_modules",
     "type": "collection",
     "description": "东方迷因模块集合",
-    "author": "DoroWolf",
+    "author": [
+        "DoroWolf"
+    ],
     "incompatible_with": [
         "western_meme_modules"
     ],
@@ -15,5 +17,5 @@
         "jinkela",
         "real_grass",
         "spicy_strips"
-   ]
+    ]
 }

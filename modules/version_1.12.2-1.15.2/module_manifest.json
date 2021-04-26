@@ -2,7 +2,9 @@
     "name": "version_1.12.2-1.15.2",
     "type": "collection",
     "description": "适用于1.12至1.15.2版本的模块集合",
-    "author": "梗体中文内容组",
+    "author": [
+        "梗体中文内容组"
+    ],
     "contains": [
         "lang_attributes_1.12.2-1.15.2",
         "lang_extra_strings",
