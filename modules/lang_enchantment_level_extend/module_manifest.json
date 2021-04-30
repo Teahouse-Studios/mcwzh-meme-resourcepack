@@ -2,7 +2,9 @@
     "name": "lang_enchantment_level_extend",
     "type": "resource",
     "description": "附魔等级扩展",
-    "author": "DoroWolf",
+    "author": [
+        "DoroWolf"
+    ],
     "classifier": [
         "modified_language"
     ]

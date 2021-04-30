@@ -1,8 +1,13 @@
 {
     "name": "strange_meme_background",
     "type": "resource",
-    "description": "奇怪的菜单背景",
-    "author": "ZH9c418",
+    "description": "这菜单背景真的怪",
+    "author": [
+        "ZH9c418"
+    ],
+    "incompatible_with": [
+        "famous_scene"
+    ],
     "classifier": [
         "modified_resource"
     ]

@@ -2,7 +2,10 @@
     "name": "mopemope",
     "type": "resource",
     "description": "儿 童 金 曲",
-    "author": "DoroWolf",
+    "author": [
+        "DoroWolf",
+        "Zh9c418"
+    ],
     "classifier": [
         "modified_resource"
     ]
