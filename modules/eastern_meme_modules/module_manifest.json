@@ -6,16 +6,16 @@
         "DoroWolf"
     ],
     "incompatible_with": [
-        "western_meme_modules"
+        "western_meme_modules",
+	"Lie-nus_and_more_things",
+	"grass_enchanted"
     ],
     "contains": [
         "open_close_sound",
         "famous_scene",
         "enchantment_text",
         "bell_sound",
-        "latiao",
         "mopemope",
-        "jinkela",
         "real_grass"
     ]
 }

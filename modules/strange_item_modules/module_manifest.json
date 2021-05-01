@@ -1,0 +1,19 @@
+{
+    "name": "strange_item_modules",
+    "type": "collection",
+    "description": "奇怪物品模块集合",
+    "author": [
+        "DoroWolf"
+    ],
+    "incompatible_with": [
+        "first_anniversary",
+        "totem_model"
+    ],
+    "contains": [
+        "latiao",
+        "jinkela",
+	"questiong_totem",
+	"baguette",
+        "ekac"
+    ]
+}
