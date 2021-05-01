@@ -5,6 +5,9 @@
     "author": [
         "Lakejason0"
     ],
+    "incompatible_with": [
+        "ekac"
+    ],
     "classifier": [
         "modified_resource",
         "modified_language"
