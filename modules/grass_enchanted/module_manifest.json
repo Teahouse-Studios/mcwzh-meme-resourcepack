@@ -6,8 +6,7 @@
         "MiemieMethod"
     ],
     "incompatible_with": [
-        "real_grass",
-	"eastern_meme_modules"
+        "real_grass"
     ],
     "classifier": [
         "modified_resource"

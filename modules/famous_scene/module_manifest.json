@@ -6,8 +6,7 @@
         "DoroWolf"
     ],
     "incompatible_with": [
-        "Lie-nus_and_more_things",
-	"western_meme_modules"
+        "Lie-nus_and_more_things"
     ],
     "classifier": [
         "modified_resource"
