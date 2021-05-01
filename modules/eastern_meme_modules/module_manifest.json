@@ -6,9 +6,7 @@
         "DoroWolf"
     ],
     "incompatible_with": [
-        "western_meme_modules",
-	"Lie-nus_and_more_things",
-	"grass_enchanted"
+        "western_meme_modules"
     ],
     "contains": [
         "open_close_sound",
