@@ -6,7 +6,8 @@
         "DoroWolf"
     ],
     "incompatible_with": [
-        "eastern_meme_modules"
+        "eastern_meme_modules",
+	"famous_scene"
     ],
     "contains": [
         "Lie-nus_and_more_things",
