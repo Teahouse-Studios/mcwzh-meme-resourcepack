@@ -5,6 +5,10 @@
     "author": [
         "Lakejason0"
     ],
+    "incompatible_with": [
+	"strange_item_modules",
+        "ekac"
+    ],
     "classifier": [
         "modified_resource",
         "modified_language"
