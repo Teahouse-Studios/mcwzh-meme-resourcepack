@@ -1,7 +1,7 @@
 {
     "pack": {
         "pack_format": 6,
-        "description": "§e梗体中文亮瞎眼包！！！\n§3§11st Anniversary§r§3 · Release v1.3.0"
+        "description": "§e梗体中文亮瞎眼包！！！\n§3Release v1.3.1"
     },
     "language": {
         "zh_meme": {
@@ -34,7 +34,7 @@
         "CR-019",
         "coldstarxuan",
         "MiemieMethod",
-        "Other Minecraft Wiki(ZH) editors"
+        "Other Minecraft Wiki (ZH) editors"
     ],
     "special_thanks": {
         "Addonscommandresource": [

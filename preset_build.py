@@ -4,7 +4,7 @@ from os.path import exists, isdir, join
 from sys import exit
 from memepack_builder.wrapper import main as _main
 
-PACK_VERSION = '1.3.0'
+PACK_VERSION = '1.3.1'
 
 
 def check_version_consistency():
