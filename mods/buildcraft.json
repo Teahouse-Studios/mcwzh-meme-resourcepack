@@ -1,4 +1,17 @@
 {
+  "__metadata": [
+    {
+      "buildcraft": {
+          "licensing": {
+          "SPDX-License-Identifier": "custom",
+          "SPDX-URL": null,
+          "custom-URL": "https://github.com/BuildCraft/BuildCraft/blob/8.0.x-1.12.2/LICENSE",
+          "origin": "https://github.com/BuildCraft/BuildCraft-Localization/blob/master/assets/buildcraft/lang/zh_CN.lang",
+          "author": "The BuildCraft Team"
+        }
+      }
+    }
+  ],
   "buildcraft.boardRobotClean": "清洁工具人",
   "buildcraft.boardRobotPicker": "拾取工具人",
   "buildcraft.boardRobotLumberjack": "伐木工具人",

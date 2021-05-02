@@ -1,4 +1,17 @@
 {
+  "__metadata": [
+    {
+      "adorn": {
+        "licensing": {
+          "SPDX-License-Identifier": "MIT",
+          "SPDX-URL": "https://spdx.org/licenses/MIT.html",
+          "custom-URL": null,
+          "origin": "https://github.com/Juuxel/Adorn/blob/1.16.5/src/main/resources/assets/adorn/lang/zh_cn.json",
+          "author": "Juuz"
+        }
+      }
+    }
+  ],
   "block.adorn.white_sofa": "白色沙发",
   "block.adorn.light_gray_sofa": "浅灰色沙发",
   "block.adorn.gray_sofa": "灰色沙发",

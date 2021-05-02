@@ -1,4 +1,17 @@
 {
+  "__metadata": [
+    {
+      "cloth-config2": {
+        "licensing": {
+          "SPDX-License-Identifier": "LGPL-3.0-only",
+          "SPDX-URL": "https://spdx.org/licenses/LGPL-3.0-only.html",
+          "custom-URL": null,
+          "origin": "https://github.com/shedaniel/cloth-config/blob/v4/common/src/main/resources/assets/cloth-config2/lang/zh_cn.json",
+          "author": "The BuildCraft Team"
+        }
+      }
+    }
+  ],
   "text.cloth-config.save_and_done": "完成",
   "text.cloth-config.apply": "应用更改",
   "text.cloth-config.quit_config": "更改尚未保存",
