@@ -1,0 +1,25 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"bottom": "block/cake_bottom",
+		"top": "block/cake_top",
+		"particle": "block/cake_side",
+		"side": "block/cake_side",
+		"inside": "block/cake_inner"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [7, 8, 15],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 4, 8]},
+			"faces": {
+				"north": {"uv": [1, 8, 7, 16], "rotation": 180, "texture": "#side"},
+				"east": {"uv": [1, 8, 15, 16], "rotation": 180, "texture": "#inside"},
+				"south": {"uv": [9, 8, 15, 16], "rotation": 180, "texture": "#side"},
+				"west": {"uv": [1, 8, 15, 16], "rotation": 180, "texture": "#side"},
+				"up": {"uv": [9, 1, 15, 15], "rotation": 180, "texture": "#bottom", "cullface": "down"},
+				"down": {"uv": [9, 1, 15, 15], "rotation": 180, "texture": "#top"}
+			}
+		}
+	]
+}
