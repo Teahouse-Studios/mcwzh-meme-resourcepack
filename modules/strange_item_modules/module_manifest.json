@@ -6,14 +6,13 @@
         "DoroWolf"
     ],
     "contains": [
-	"baguette",
-	"bee_pickaxe",
+        "baguette",
+	    "bee_pickaxe",
         "ekac",
         "jinkela",
         "latiao",
-	"minecart_helmet",
-	"mopemope",
-	"questiong_totem"
-
+        "minecart_helmet",
+        "mopemope",
+        "questiong_totem"
     ]
 }
