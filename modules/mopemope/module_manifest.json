@@ -1,6 +1,12 @@
 {
     "name": "mopemope",
     "type": "resource",
-    "description": "宝 宝 金 曲，妈 妈 放 心",
-    "author": "Zh9c418"
+    "description": "儿 童 金 曲",
+    "author": [
+        "DoroWolf",
+        "Zh9c418"
+    ],
+    "classifier": [
+        "modified_resource"
+    ]
 }

@@ -1,0 +1,11 @@
+{
+    "name": "lang_selectworld_gui_1.16.2-1.16.5",
+    "type": "resource",
+    "description": "21w03a以前的生成世界字符串",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

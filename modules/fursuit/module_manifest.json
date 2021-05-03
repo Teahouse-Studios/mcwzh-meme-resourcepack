@@ -1,0 +1,11 @@
+{
+    "name": "fursuit",
+    "type": "resource",
+    "description": "众所周知兽装视野很差来着？",
+    "author": [
+        "ZH9c418"
+    ],
+    "classifier": [
+        "modified_resource"
+    ]
+}

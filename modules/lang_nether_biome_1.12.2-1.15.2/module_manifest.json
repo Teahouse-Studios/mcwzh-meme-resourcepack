@@ -1,0 +1,11 @@
+{
+    "name": "lang_nether_biome_1.12.2-1.15.2",
+    "type": "resource",
+    "description": "20w06a以前的下界生物群系",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

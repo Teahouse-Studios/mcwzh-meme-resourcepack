@@ -1,0 +1,11 @@
+{
+    "name": "lang_trapdoor_1.12.2-1.15.2",
+    "type": "resource",
+    "description": "对20w14a以前版本的活板门字幕更正",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

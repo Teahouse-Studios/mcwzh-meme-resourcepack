@@ -1,0 +1,15 @@
+{
+    "name": "ekac",
+    "type": "resource",
+    "description": "糕蛋",
+    "author": [
+        "DoroWolf"
+    ],
+    "incompatible_with": [
+        "first_anniversary"
+    ],
+    "classifier": [
+        "modified_resource",
+        "modified_language"
+    ]
+}

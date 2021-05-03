@@ -1,0 +1,11 @@
+{
+    "name": "blue_tube_poster",
+    "type": "resource",
+    "description": "蓝管海报(替换了墙上的死亡管珊瑚)",
+    "author": [
+        "Iron_noob_73"
+    ],
+    "classifier": [
+        "modified_resource"
+    ]
+}

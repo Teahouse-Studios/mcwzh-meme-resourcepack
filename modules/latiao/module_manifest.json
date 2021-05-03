@@ -1,0 +1,12 @@
+{
+    "name": "latiao",
+    "type": "resource",
+    "description": "一起恰辣条",
+    "author": [
+        "DoroWolf"
+    ],
+    "classifier": [
+        "modified_resource",
+        "modified_language"
+    ]
+}

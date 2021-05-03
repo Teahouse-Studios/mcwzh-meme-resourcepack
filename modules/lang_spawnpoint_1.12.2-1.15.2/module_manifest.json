@@ -1,0 +1,11 @@
+{
+    "name": "lang_spawnpoint_1.12.2-1.15.2",
+    "type": "resource",
+    "description": "20w12a以前版本的重生信息的替换",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

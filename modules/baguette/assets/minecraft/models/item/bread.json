@@ -1,0 +1,17 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/bread"
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "translation": [2.5, 13.0, 0.0],
+            "rotation": [0.0, 0.0, 45.0],
+            "scale": [2.0, 2.0, 2.0]
+        },
+        "thirdperson_lefthand": {
+            "translation": [0.0, 0.0, 0.0],
+            "scale": [2.0, 2.0, 2.0]
+        }
+    }
+}

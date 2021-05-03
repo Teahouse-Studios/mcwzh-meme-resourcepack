@@ -2,8 +2,13 @@
     "name": "famous_scene",
     "type": "resource",
     "description": "世 界 名 画",
-    "author": "DoroWolf",
+    "author": [
+        "DoroWolf"
+    ],
     "incompatible_with": [
         "Lie-nus_and_more_things"
+    ],
+    "classifier": [
+        "modified_resource"
     ]
 }

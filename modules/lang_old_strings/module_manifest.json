@@ -1,0 +1,11 @@
+{
+    "name": "lang_old_strings",
+    "type": "resource",
+    "description": "旧版本的各种字符串",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

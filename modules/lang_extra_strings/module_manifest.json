@@ -1,0 +1,11 @@
+{
+    "name": "lang_extra_strings",
+    "type": "resource",
+    "description": "提供额外字符串支持",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

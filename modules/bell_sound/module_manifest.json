@@ -1,0 +1,11 @@
+{
+    "name": "bell_sound",
+    "type": "resource",
+    "description": "噔 噔 咚（钟声）",
+    "author": [
+        "DoroWolf"
+    ],
+    "classifier": [
+        "modified_resource"
+    ]
+}

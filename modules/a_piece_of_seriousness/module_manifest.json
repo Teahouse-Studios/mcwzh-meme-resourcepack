@@ -1,0 +1,14 @@
+{
+    "name": "a_piece_of_seriousness",
+    "type": "resource",
+    "description": "一份取代终末之诗的文章。",
+    "author": [
+        "siiftun1857"
+    ],
+    "incompatible_with": [
+        "a_letter"
+    ],
+    "classifier": [
+        "modified_resource"
+    ]
+}

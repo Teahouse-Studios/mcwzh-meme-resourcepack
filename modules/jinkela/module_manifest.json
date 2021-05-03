@@ -1,0 +1,12 @@
+{
+    "name": "jinkela",
+    "type": "resource",
+    "description": "阿妹你看，上帝压狗",
+    "author": [
+        "DoroWolf"
+    ],
+    "classifier": [
+        "modified_resource",
+        "modified_language"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "achievements",
+    "type": "resource",
+    "description": "17w13a之前的成就字符串",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

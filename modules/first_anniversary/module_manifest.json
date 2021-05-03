@@ -1,0 +1,15 @@
+{
+    "name": "first_anniversary",
+    "type": "resource",
+    "description": "我们一周年啦！",
+    "author": [
+        "Lakejason0"
+    ],
+    "incompatible_with": [
+        "ekac"
+    ],
+    "classifier": [
+        "modified_resource",
+        "modified_language"
+    ]
+}

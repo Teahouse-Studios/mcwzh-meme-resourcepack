@@ -1,0 +1,11 @@
+{
+    "name": "lang_attributes_1.12.2-1.15.2",
+    "type": "resource",
+    "description": "1.12.2至1.15.2间的属性名称",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

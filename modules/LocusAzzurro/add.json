@@ -1,0 +1,11 @@
+{
+    "entity.minecraft.chicken": "蓝鸡",
+    "item.minecraft.chicken": "生蓝鸡肉",
+    "item.minecraft.chicken_spawn_egg": "小蓝鸡",
+    "item.minecraft.cooked_chicken": "熟蓝鸡肉",
+    "item.minecraft.wooden_axe": "蓝鸡的1/64",
+    "subtitles.entity.chicken.ambient": "蓝鸡：咯咯咯",
+    "subtitles.entity.chicken.death": "蓝鸡：啊我死了",
+    "subtitles.entity.chicken.egg": "蓝鸡：下蛋",
+    "subtitles.entity.chicken.hurt": "蓝鸡：哎哟！"
+}

@@ -2,8 +2,14 @@
     "name": "totem_model",
     "type": "resource",
     "description": "把不死图腾变成手办",
-    "author": "Lakejason0、Gu_ZT",
+    "author": [
+        "Lakejason0",
+        "Gu_ZT"
+    ],
     "incompatible_with": [
         "questioning_totem"
+    ],
+    "classifier": [
+        "modified_resource"
     ]
 }

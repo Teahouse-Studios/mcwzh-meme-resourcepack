@@ -1,0 +1,11 @@
+{
+    "name": "lang_grass_path_1.12.2-1.16.5",
+    "type": "resource",
+    "description": "20w45a以前的草径方块",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "lang_sleep_impossible_1.12.2-1.16.5",
+    "type": "resource",
+    "description": "21w03a以前的无法入睡字符串",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}
