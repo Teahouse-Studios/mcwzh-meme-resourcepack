@@ -3,8 +3,7 @@
     "type": "resource",
     "description": "糕蛋",
     "author": [
-        "DoroWolf",
-        "LakeJason"
+        "DoroWolf"
     ],
     "incompatible_with": [
         "first_anniversary"
