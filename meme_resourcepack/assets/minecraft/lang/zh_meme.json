@@ -3051,7 +3051,7 @@
     "gamerule.spectatorsGenerateChunks": "允许游魂生成地形",
     "gamerule.universalAnger": "无 能 狂 怒",
     "gamerule.universalAnger.description": "愤怒的中立型暴徒将攻击附近的所有玩家，而不限于激怒它们的玩家。推荐禁用“原谅死者”以达到最佳buff。",
-    "generator.amplified": "放 大 化",
+    "generator.amplified": "膨化世界",
     "generator.amplified.info": "注意：推荐的配置是i9 10900K加RTX 3090",
     "generator.custom": "自定义",
     "generator.customized": "自定义",
