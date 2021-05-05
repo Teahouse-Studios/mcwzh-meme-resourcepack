@@ -19,7 +19,7 @@
    "block.minecraft.deepslate_copper_ore": "深铜矿石",
     "block.minecraft.deepslate_diamond_ore": "深祖安矿石",
     "block.minecraft.deepslate_gold_ore": "深黄油矿石",
-    "block.minecraft.deepslate_iron_ore": "深铁憨憨矿石",
+    "block.minecraft.deepslate_iron_ore": "深老铁矿石",
     "block.minecraft.deepslate_lapis_ore": "深蓝宝石矿石",
     "block.minecraft.deepslate_redstone_ore": "深雷石东矿石",
     "block.minecraft.deepslate_tiles": "深砖石瓦",
@@ -38,6 +38,7 @@
     "container.enchant.level.one": "+ 1级经验",
     "item.minecraft.bone_meal": "骨灰",
     "menu.shareToLan": "对橘域网开放",
+    "stat.minecraft.interact_with_blast_furnace": "炼金次数",
     "subtitles.entity.bat.death": "野味：AWSL",
     "subtitles.entity.experience_orb.pickup": "获得经验"
 }
