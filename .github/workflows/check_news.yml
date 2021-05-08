@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - 'news.json'
+  pull_request:
+    paths:
+      - 'news.json'
 
 jobs:
   check-news:
@@ -12,3 +15,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
       - run: node check_news.js
+      - name: Create comment
+        uses: peter-evans/commit-comment@v1
+        if: ${{ failure() }}
+        with:
+          body: |
+            您的 `news.json` 格式出了些问题, 请及时修正
