@@ -1,0 +1,14 @@
+name: Check News
+
+on:
+  push:
+    paths:
+      - 'news.json'
+
+jobs:
+  check-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: node check_news.js
