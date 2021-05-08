@@ -21,3 +21,6 @@ jobs:
         with:
           body: |
             您的 `news.json` 格式出了些问题, 请及时修正
+      - name: Push to global
+        if: ${{ github.repository_owner == 'Teahouse-Studios' && github.ref == 'refs/heads/master' && success()}}
+        run: curl -L purge.jsdelivr.net/gh/Teahouse-Studios/mcwzh-meme-resourcepack@master/news.json
