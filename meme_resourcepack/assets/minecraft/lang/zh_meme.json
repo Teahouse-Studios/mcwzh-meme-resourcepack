@@ -3915,7 +3915,7 @@
     "narrator.joining": "加入中",
     "narrator.loading": "加载中：%s",
     "narrator.loading.done": "完成",
-    "narrator.position.list": "已选中列表选择项中的第%s项，共%s项",
+    "narrator.position.list": "已选中列表选项中的第%s项，共%s项",
     "narrator.position.object_list": "已选中列表元素中的第%s项，共%s项",
     "narrator.position.screen": "第%s个屏幕控件，共%s个",
     "narrator.screen.title": "标题画面",
