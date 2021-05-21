@@ -6,7 +6,7 @@
 
 注：此资源包适用于Java版。有关到基岩版的移植，参见[基岩版移植](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock)。
 
-**注：若发现可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。**
+**注：若发现可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:译名标准化)。**
 
 ## 作用
 
@@ -99,8 +99,8 @@ python -m memepack_builder ...
 ## 声明
 
 * 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
-* 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
-  * 关于正确的译名，请参见[中文Minecraft Wiki上的标准译名列表](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。
+* 本资源包与Mojang、Minecraft Wiki、Gamepedia和FANDOM无关，原中文翻译版权为Mojang和翻译者所有。
+  * 关于正确的译名，请参见[中文Minecraft Wiki上的标准译名列表](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:译名标准化)。
 * 本项目文件除另有声明外，均以 ***CC BY-SA 4.0*** 协议授权。
   * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   * 这不是法律建议。
