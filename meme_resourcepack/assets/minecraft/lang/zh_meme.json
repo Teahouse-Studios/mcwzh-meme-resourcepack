@@ -4371,7 +4371,7 @@
     "stat.minecraft.open_shulker_box": "傻瓜盒子打开次数",
     "stat.minecraft.pig_one_cm": "骑猪移动距离",
     "stat.minecraft.play_noteblock": "笔记方块游玩次数",
-    "stat.minecraft.play_one_minute": "游戏时间",
+    "stat.minecraft.play_time": "游戏时间",
     "stat.minecraft.play_record": "播放 劲 歌 金 曲 数",
     "stat.minecraft.player_kills": "玩家击杀数",
     "stat.minecraft.pot_flower": "盆栽种植数",
