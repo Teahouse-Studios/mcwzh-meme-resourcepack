@@ -9,7 +9,7 @@
 ## Mod列表
 
 * 更多的合成（Crafting++）：ruhuasiyu等，[网址](https://ruhuasiyu.github.io/CraftingPlusPlus/)
-* 烤地瓜（Sweet Potato）：Pigeonia Featurehouse，[网址](https://github.com/teddyxlandlee/sweet_potato-source)
+* 烤地瓜（Sweet Potato）：Pigeonia Featurehouse，[网址](https://github.com/Featurehouse/sweet_potato-source)
 * MCBBS Wiki 模组（MCBBS Wiki Mod）：QWERTY_52_38（Github账号QWERTY770），[网址](https://github.com/QWERTY770/MCBBS-Wiki-Mod)
 
 以下内容由于<*吃掉了*>的原因而无法显示，敬请谅jon'fslA;/[E-2L}sgr=
