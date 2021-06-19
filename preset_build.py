@@ -4,7 +4,7 @@ from os.path import exists, isdir, join
 from sys import exit
 from memepack_builder.wrapper import main as _main
 
-PACK_VERSION = '1.3.1'
+PACK_VERSION = '1.4.0'
 
 
 def check_version_consistency():
@@ -17,19 +17,16 @@ def main():
     if check_version_consistency():
         preset_args = [
             {'platform': 'je', 'type': 'normal', 'modules': {'resource': [], 'collection': [
-                'version_1.16.5', 'choice_modules_1', 'ekac']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+                'choice_modules_1', 'ekac']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
             {'platform': 'je', 'type': 'normal', 'modules': {'resource': ['lang_sfw'], 'collection': [
-                'version_1.16.5', 'choice_modules_1']}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
-            {'platform': 'je', 'type': 'normal', 'modules': {'resource': ['lang_sfw'], 'collection': [
-                'version_1.16.5']}, 'mod': [],  'hash': False, 'output': 'builds', 'format': 6},
-            {'platform': 'je', 'type': 'normal', 'modules': {'resource': ['lang_sfw'], 'collection': [
-                'version_1.16.5']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+                'choice_modules_1']}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 7},
+            {'platform': 'je', 'type': 'normal', 'modules': {'resource': ['lang_sfw'], 'collection': []}, 'mod': [],  'hash': False, 'output': 'builds', 'format': 7},
+            {'platform': 'je', 'type': 'normal', 'modules': {'resource': ['lang_sfw'], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
             {'platform': 'je', 'type': 'compat', 'modules': {'resource': ['lang_sfw'], 'collection': [
-                'version_1.16.5', 'choice_modules_1']}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 6},
+                'choice_modules_1']}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 7},
             {'platform': 'je', 'type': 'compat', 'modules': {'resource': ['lang_sfw'], 'collection': [
-                'version_1.16.5', 'choice_modules_1']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
-            {'platform': 'je', 'type': 'compat', 'modules': {'resource': ['lang_sfw'], 'collection': [
-                'version_1.16.5']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 6},
+                'choice_modules_1']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
+            {'platform': 'je', 'type': 'compat', 'modules': {'resource': ['lang_sfw'], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
             {'platform': 'je', 'type': 'legacy', 'modules': {'resource': ['lang_sfw'], 'collection': [
                 'version_1.12.2-1.15.2']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 3}
         ]
