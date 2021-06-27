@@ -2758,7 +2758,7 @@
     "disconnect.kicked": "您已被踢出游戏",
     "disconnect.loginFailed": "登入失败",
     "disconnect.loginFailedInfo": "登入失败：%s",
-    "disconnect.loginFailedInfo.insufficientPrivileges": "多人游戏已被禁用，请检查你的Microsoft账户设置。",
+    "disconnect.loginFailedInfo.insufficientPrivileges": "多人游戏已被禁用，请检查你的Macrohard账户设置。",
     "disconnect.loginFailedInfo.invalidSession": "登录失效了！给老子退出游戏！（要是坚信你家窄带没问题，找腐竹，“He will fix it.”）",
     "disconnect.loginFailedInfo.serversUnavailable": "你还没有实名制，不能进入游戏。",
     "disconnect.lost": "你把连接丢掉了！",
