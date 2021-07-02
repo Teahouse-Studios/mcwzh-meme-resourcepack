@@ -177,7 +177,7 @@
     "tile.glazedTerracottaYellow.name": "block.minecraft.yellow_glazed_terracotta",
     "tile.goldenRail.name": "block.minecraft.powered_rail",
     "tile.grass.name": "block.minecraft.grass_block",
-    "tile.grassPath.name": "block.minecraft.dirt_path",
+    "tile.grassPath.name": "block.minecraft.grass_path",
     "tile.gravel.name": "block.minecraft.gravel",
     "tile.hayBlock.name": "block.minecraft.hay_block",
     "tile.hellrock.name": "block.minecraft.netherrack",
