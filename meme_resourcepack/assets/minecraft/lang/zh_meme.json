@@ -2608,6 +2608,8 @@
     "death.attack.dragonBreath.player": "%1$s被%2$s的龙（nóng）痰所烤焦",
     "death.attack.drown": "%1$s与水融为了一体",
     "death.attack.drown.player": "%1$s在试图逃离%2$s时与水融为了一体",
+    "death.attack.dryout": "%1$s变成了咸鱼",
+    "death.attack.dryout.player": "%1$s在试图逃离%2$s时突然变成了咸鱼",
     "death.attack.even_more_magic": "%1$s被不为人知的魔法弄死了",
     "death.attack.explosion": "%1$s：我裂开来",
     "death.attack.explosion.player": "%1$s被%2$s炸死了",
