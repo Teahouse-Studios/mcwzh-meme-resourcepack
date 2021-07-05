@@ -2696,7 +2696,7 @@
     "debug.chunk_boundaries.help": "F3 + G = 显示大块边界",
     "debug.chunk_boundaries.off": "大块边界：隐藏",
     "debug.chunk_boundaries.on": "大块边界：显示",
-    "debug.clear_chat.help": "F3 + D = 清空历史记录",
+    "debug.clear_chat.help": "F3 + D = 清空聊天记录",
     "debug.copy_location.help": "F3 + C = 用/tp命令的形式复制你的位置，按住F3 + C使游戏原地爆炸",
     "debug.copy_location.message": "坐标已复制到剪贴板",
     "debug.crash.message": "F3 + C已被按下。除非释放按键否则这将让游戏原地爆炸。",
