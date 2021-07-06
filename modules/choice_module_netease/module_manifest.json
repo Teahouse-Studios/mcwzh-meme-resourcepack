@@ -1,0 +1,30 @@
+{
+    "name": "choice_modules_netease",
+    "type": "collection",
+    "description": "中国版的预设打包。",
+    "author": [
+        "电量量"
+    ],
+    "contains": [
+        "open_close_sound",
+        "famous_scene",
+        "questioning_totem",
+        "disco_ball",
+        "annoying_sounds",
+        "bell_sound",
+        "ekac",
+        "baguette",
+        "mopemope",
+        "BUGJUMP",
+        "LocusAzzurro",
+        "meme_splashes",
+        "bee_pickaxe",
+        "minecart_helmet",
+        "a_letter",
+        "brewing_stand_model",
+        "author_zombies",
+        "dorowolf_texture",
+        "map_override",
+        "observer_think"
+    ]
+}
