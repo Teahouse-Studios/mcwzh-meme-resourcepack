@@ -1,0 +1,11 @@
+{
+    "name": "mcbbs",
+    "type": "resource",
+    "description": "修改了物品名和生物名，还有一些其他的。",
+    "author": [
+        "ZX夏夜之风"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}
