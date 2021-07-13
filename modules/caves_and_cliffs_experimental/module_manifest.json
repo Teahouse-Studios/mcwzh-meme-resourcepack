@@ -1,0 +1,11 @@
+{
+    "name": "caves_and_cliffs_experimental",
+    "type": "resource",
+    "description": "提供对洞穴与山崖更新实验性快照的梗体中文有限支持",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}
