@@ -10,3 +10,4 @@ Lib/
 Scripts/
 pyvenv.cfg
 !/news.json
+!/alerts.json
