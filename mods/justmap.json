@@ -74,13 +74,13 @@
   "justmap.dim.the_end": "末地",
 
   "justmap.gui.save": "保存",
-  "justmap.gui.cancel": "取消",
+  "justmap.gui.cancel": "算了",
   "justmap.gui.edit": "编辑",
-  "justmap.gui.delete": "删除",
+  "justmap.gui.delete": "怒删",
   "justmap.gui.close": "关闭",
   "justmap.gui.create": "创建",
   "justmap.gui.name": "名字",
-  "justmap.gui.chat": "聊天",
+  "justmap.gui.chat": "唠嗑",
   "justmap.gui.wp_hidden": "隐藏",
   "justmap.gui.wp_tracking": "屏幕边缘",
   "justmap.gui.wp_render": "在游戏里"
