@@ -5,5 +5,7 @@
     "commands.jfr.stopped": "JFR分析结束，数据已转存到%s",
     "commands.jfr.dump.failed": "无法转存JFR记录：%s",
     "commands.jfr.notRunning": "JFR分析尚未开始",
-    "commands.jfr.dumped": "JFR分析已转存到：%s"
+    "commands.jfr.dumped": "JFR分析已转存到：%s",
+    "biome.minecraft.extreme_hills": "峭壁",
+    "biome.minecraft.gravelly_hills": "沙砾峭壁"
 }
