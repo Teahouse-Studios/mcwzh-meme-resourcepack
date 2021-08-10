@@ -1,8 +1,10 @@
 {
     "block.minecraft.ladder": "七个林昆",
     "death.fell.accident.ladder": "%1$s从七个林昆上摔了下来",
+    "advancements.adventure.ol_betsy.title": "扣下悬刀",
     "advancements.story.deflect_arrow.title": "下次一定",
     "advancements.story.enter_the_nether.title": "下地狱吧",
+    "block.minecraft.bed.occupied": "友好相处，你不可以抢走人家的床！",
     "block.minecraft.bedrock": "砍手岩",
     "block.minecraft.blast_furnace": "炼金机",
     "block.minecraft.chiseled_deepslate": "使用了大师级雕刻技艺的深石",
@@ -12,6 +14,7 @@
     "block.minecraft.cobbled_deepslate_wall": "深圆石墙",
     "block.minecraft.cracked_deepslate_bricks": "裂开来的深砖石",
     "block.minecraft.cracked_deepslate_tiles": "裂开来的深砖石瓦",
+    "block.minecraft.chest": "箱子",
     "block.minecraft.deepslate_bricks": "深砖石",
     "block.minecraft.deepslate_brick_slab": "深砖石半砖",
     "block.minecraft.deepslate_brick_stairs": "深砖石楼梯",
