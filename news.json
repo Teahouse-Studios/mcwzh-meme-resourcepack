@@ -1,7 +1,8 @@
 {
-    "id": 7,
-    "title": "梗体中文基岩版 v1.3.2、v1.3.3 发布 / Java 版 v1.4.1 发布",
-    "image": "https://cdn.jsdelivr.net/gh/Teahouse-Studios/mcwzh-meme-resourcepack/materials/banner_new.png",
-    "content": "<body><p>全新梗中版本！两连发！</p><p>基岩版 v1.3.2 更新内容：</p><ul><li>不目害的温和蓝色UI！</li><li>更新了我们地图上的Slogan！</li><li>闪烁标语不再捆绑了！</li><li>从 Java 版带来了奇怪的背景和MCBBS的各位！</li></ul><p>基岩版 v1.3.3 更新内容：</p><ul><li>没什么，只是更新了版本号。上个版本忘了更新。</li></ul><p>Java 版更新内容：</p><ul><li>新 Mod 支持：矿物高亮！</li><li>新增了 <code>caves_and_cliffs_experimental</code> 模块！提供对洞穴与山崖更新实验性快照的梗体中文有限支持！</li><li>提供了全角标点周围没有空隙的问题的修复！</li><li>为我们的低龄用户提供了用于严格审查的文本替换！（<code>lang_sfc</code>）</li><li>添加了来自 MCBBS 的名人和梗！（<code>mcbbs</code>）</li><li>更多内容更新！</li></ul><p>还在等什么？快快点击网页构建的构建按钮！</body>",
-    "detail": "https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/releases/tag/v1.3.2"
+    "id": 8,
+    "title": "梗体中文是如何炼成的第一期！",
+    "image": null,
+    "video": "BV1U3411z7Ji",
+    "content": "<p>万恶之源之源！简体中文梗语？雷石东直放站？镐蜂了！</p><p>本期《梗中是如何炼成的》中，让我们与湖远星一起潜入万恶之源之源！</p>",
+    "detail": "https://www.bilibili.com/video/BV1U3411z7Ji"
 }
