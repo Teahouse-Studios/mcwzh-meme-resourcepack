@@ -40,7 +40,7 @@
     "createWorld.customize.flat.editLayer": "编辑层面",
     "death.attack.netherBed.link": "MC经典特性",
     "death.attack.netherBed.message": "%1$s被%2$s弄死了",
-    "death.fell.accident.water": "%1$s从水中掉了下来",
+    "death.fell.accident.water": "%1$试图落地水未遂当场逝世，丢人！",
     "deathScreen.deleteWorld": "删除世界",
     "deathScreen.leaveServer": "退出服务器",
     "entity.minecraft.generic": "某物",
