@@ -1,0 +1,11 @@
+{
+    "name": "achievements",
+    "type": "resource",
+    "description": "在水中摔落的死亡提示",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}
