@@ -1,0 +1,15 @@
+{
+    "name": "HarmonyOS_Sans_SC_Bold",
+    "type": "resource",
+    "description": "HomoOS操作系统字体",
+    "author": [
+        "HUAWEI",
+        "8Mi_Yile"
+    ],
+    "incompatible_with": [
+        ""
+    ],
+    "classifier": [
+        ""
+    ]
+}
