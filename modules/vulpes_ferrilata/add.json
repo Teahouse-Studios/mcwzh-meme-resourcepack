@@ -1,0 +1,15 @@
+{
+	"entity.minecraft.fox": "藏狐",
+	"item.minecraft.fox_spawn_egg": "小藏狐",
+	"subtitles.entity.fox.aggro": "藏狐：我要打人了",
+	"subtitles.entity.fox.ambient": "藏狐：鉴定一下网络热门生物视频",
+	"subtitles.entity.fox.bite": "藏狐：耍双截棍",
+	"subtitles.entity.fox.death": "藏狐都没脾气了。",
+	"subtitles.entity.fox.eat": "藏狐：吃饭",
+	"subtitles.entity.fox.hurt": "藏狐：嚯！",
+	"subtitles.entity.fox.screech": "藏狐：尖声叫",
+	"subtitles.entity.fox.sleep": "藏狐：打鼾",
+	"subtitles.entity.fox.sniff": "藏狐：鉴定",
+	"subtitles.entity.fox.spit": "藏狐：呸！",
+	"subtitles.entity.fox.teleport": "藏狐：传送"
+}
