@@ -1,6 +1,6 @@
 # 提请合并
 
-**请注意：如果你的Pull Request被通过了，请记得同步至基岩版梗体中文。**
+**请注意：如果你的拉取请求被通过了，请记得同步至[基岩版梗体中文](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock)。不能同步的另说。**
 
 ## 新增或更改的翻译
 
