@@ -4,7 +4,7 @@
 
 [![Banner](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/blob/master/materials/zh_meme_banner.png?raw=true)](https://www.mcbbs.net/thread-1004643-1-1.html)
 
-注：此资源包适用于Java版。有关到基岩版的移植，参见[基岩版移植](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock)。
+此资源包仅适用于**Minecraft Java版**。**关于适用于Minecraft基岩版的资源包，参见[基岩版梗体中文](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock)。**
 
 **注：若发现可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:译名标准化)。**
 
