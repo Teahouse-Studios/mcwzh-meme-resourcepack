@@ -107,6 +107,7 @@
     "mco.configure.world.subscription.start": "开始日期",
     "mco.configure.world.subscription.timeleft": "剩余时间",
     "mco.configure.world.subscription.title": "订购信息",
+    "mco.configure.world.subscription.unknown": "未知",
     "mco.configure.world.switch.slot": "创建世界",
     "mco.configure.world.switch.slot.subtitle": "这个世界是空的，请选择行动",
     "mco.configure.world.title": "配置Realm：",
