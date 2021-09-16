@@ -4213,6 +4213,7 @@
     "selectWorld.bonusItems": "新手体恤包",
     "selectWorld.cheats": "可滥权",
     "selectWorld.conversion": "必须进行转换！",
+    "selectWorld.conversion.tooltip": "请先穿越回过去（比如1.6.4）再穿越过来",
     "selectWorld.create": "开天辟地",
     "selectWorld.createDemo": "开天辟地，但是白嫖",
     "selectWorld.customizeType": "自定义",
