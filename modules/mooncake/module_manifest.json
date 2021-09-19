@@ -1,0 +1,12 @@
+{
+    "name": "mooncake",
+    "type": "resource",
+    "description": "恰月饼！",
+    "author": [
+        "电量量"
+    ],
+    "classifier": [
+        "modified_resource",
+        "modified_language"
+    ]
+}

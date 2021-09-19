@@ -1,0 +1,22 @@
+{
+    "block.minecraft.black_candle_cake": "插上黑色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.blue_candle_cake": "插上蓝色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.brown_candle_cake": "插上棕色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.cake": "§m蛋糕§r月饼",
+    "block.minecraft.candle_cake": "鞭炮§m蛋糕§r月饼（消歧义）",
+    "block.minecraft.cyan_candle_cake": "插上青色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.gray_candle_cake": "插上灰色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.green_candle_cake": "插上原谅色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.light_blue_candle_cake": "插上亮蓝色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.light_gray_candle_cake": "插上亮灰色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.lime_candle_cake": "插上黄绿色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.magenta_candle_cake": "插上品红色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.orange_candle_cake": "插上橙色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.pink_candle_cake": "插上粉红色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.purple_candle_cake": "插上紫色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.red_candle_cake": "插上红色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.white_candle_cake": "插上白色鞭炮的§m蛋糕§r月饼",
+    "block.minecraft.yellow_candle_cake": "插上黄色鞭炮的§m蛋糕§r月饼",
+    "stat.minecraft.eat_cake_slice": "吃掉的§m蛋糕§r月饼片数",
+    "subtitles.block.cake.add_candle": "§m蛋糕§r月饼：疼死了！"
+}
