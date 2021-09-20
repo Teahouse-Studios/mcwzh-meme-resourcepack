@@ -4107,7 +4107,7 @@
     "options.percent_value": "%s：%s%%",
     "options.pixel_value": "%s：%spx",
     "options.prioritizeChunkUpdates": "渲染更新优先级",
-    "options.prioritizeChunkUpdates.by_player": "玩家附近",
+    "options.prioritizeChunkUpdates.byPlayer": "玩家附近",
     "options.prioritizeChunkUpdates.nearby": "邻近",
     "options.prioritizeChunkUpdates.none": "无",
     "options.rawMouseInput": "原始输入（去除加速度）",
