@@ -1,5 +1,5 @@
 {
-    "name": "Linus_Minecraft_Craps",
+    "name": "linus_minecraft_craps",
     "type": "resource",
     "description": "加拿大某位张口闭眼科技产品免费拿的男人向您诚意推荐：lttstore.com以及其他的西方迷惑meme",
     "author": [
@@ -9,6 +9,7 @@
         "famous_scene"
     ],
     "classifier": [
-        "modified_resource"
+        "modified_resource",
+        "modified_language"
     ]
 }
