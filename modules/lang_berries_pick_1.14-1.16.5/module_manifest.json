@@ -1,0 +1,11 @@
+{
+    "name": "lang_berries_pick_1.14-1.16.5",
+    "type": "resource",
+    "description": "1.14至1.16.5间的甜浆果字幕",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

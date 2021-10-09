@@ -1,0 +1,11 @@
+{
+    "name": "lang_debug_report_1.14-1.16.5",
+    "type": "resource",
+    "description": "1.14至1.16.5间的/debug report",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

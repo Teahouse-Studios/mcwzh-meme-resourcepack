@@ -1,0 +1,11 @@
+{
+    "name": "lang_play_time_1.12.2-1.16.5",
+    "type": "resource",
+    "description": "1.12.2至1.16.5间的游戏时间统计",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "lang_amplified_1.12.2-1.17.1",
+    "type": "resource",
+    "description": "1.12.2至1.17.1间的放大化世界",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}
