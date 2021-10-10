@@ -6,6 +6,7 @@
         "梗体中文内容组"
     ],
     "contains": [
-        "lang_old_strings"
+        "lang_old_strings",
+        "lang_old_biomes_1.12.2-1.17.1"
     ]
 }

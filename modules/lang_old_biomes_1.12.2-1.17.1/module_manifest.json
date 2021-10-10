@@ -1,0 +1,11 @@
+{
+  "name": "lang_old_biomes_1.12.2-1.17.1",
+  "type": "resource",
+  "description": "1.18前的生物群系",
+  "author": [
+      "梗体中文内容组"
+  ],
+  "classifier": [
+      "modified_language"
+  ]
+}
