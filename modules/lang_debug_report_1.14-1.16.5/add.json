@@ -1,4 +1,0 @@
-{
-    "commands.debug.reportFailed": "生成调试报告失败",
-    "commands.debug.reportSaved": "已在%s生成调试报告"
-}
