@@ -7,8 +7,5 @@
     ],
     "incompatible_with": [
         "a_letter"
-    ],
-    "classifier": [
-        "modified_resource"
     ]
 }

@@ -7,8 +7,5 @@
     ],
     "incompatible_with": [
         "linus_minecraft_craps"
-    ],
-    "classifier": [
-        "modified_resource"
     ]
 }

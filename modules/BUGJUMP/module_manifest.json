@@ -4,8 +4,5 @@
     "description": "啥？这个公司不是叫Bugjump吗？（需要OptiFine）",
     "author": [
         "CR-019"
-    ],
-    "classifier": [
-        "modified_resource"
     ]
 }

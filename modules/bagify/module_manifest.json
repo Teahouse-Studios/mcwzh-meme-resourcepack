@@ -4,8 +4,5 @@
     "description": "帮你把所有粉末装到袋子里",
     "author": [
         "SkyEye_FAST"
-    ],
-    "classifier": [
-        "modified_resource"
     ]
 }

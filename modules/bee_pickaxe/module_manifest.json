@@ -7,8 +7,5 @@
     ],
     "incompatible_with": [
         "fake_multitool"
-    ],
-    "classifier": [
-        "modified_resource"
     ]
 }

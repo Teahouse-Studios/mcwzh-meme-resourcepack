@@ -8,8 +8,10 @@
     "incompatible_with": [
         "famous_scene"
     ],
-    "classifier": [
-        "modified_resource",
-        "modified_language"
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
     ]
 }

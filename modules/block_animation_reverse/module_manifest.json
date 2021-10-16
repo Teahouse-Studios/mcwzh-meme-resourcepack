@@ -4,9 +4,5 @@
     "description": "倒序播放方块纹理动画。",
     "author": [
         "siiftun1857"
-    ],
-    "incompatible_with": [],
-    "classifier": [
-        "modified_resource"
     ]
 }
