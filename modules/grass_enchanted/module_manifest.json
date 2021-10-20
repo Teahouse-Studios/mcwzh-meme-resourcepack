@@ -7,8 +7,5 @@
     ],
     "incompatible_with": [
         "real_grass"
-    ],
-    "classifier": [
-        "modified_resource"
     ]
 }

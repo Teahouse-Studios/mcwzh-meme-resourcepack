@@ -5,7 +5,11 @@
     "author": [
         "梗体中文内容组"
     ],
-    "classifier": [
-        "modified_language"
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json",
+            "remove": "remove.json"
+        }
     ]
 }

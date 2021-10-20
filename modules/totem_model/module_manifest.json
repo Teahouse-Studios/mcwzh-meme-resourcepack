@@ -8,8 +8,5 @@
     ],
     "incompatible_with": [
         "questioning_totem"
-    ],
-    "classifier": [
-        "modified_resource"
     ]
 }

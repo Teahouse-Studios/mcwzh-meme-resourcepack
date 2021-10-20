@@ -4,8 +4,5 @@
     "description": "修复全角标点周围没有空隙的问题",
     "author": [
         "Lakejason0"
-    ],
-    "classifier": [
-        "modified_resource"
     ]
 }

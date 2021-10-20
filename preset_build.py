@@ -17,7 +17,7 @@ def main():
     if check_version_consistency():
         preset_args = [
             {'platform': 'je', 'type': 'normal', 'modules': {'resource': [], 'collection': [
-                'choice_modules_1', 'ekac']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
+                'choice_modules_1']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
             {'platform': 'je', 'type': 'normal', 'modules': {'resource': ['lang_sfw'], 'collection': [
                 'choice_modules_1']}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 7},
             {'platform': 'je', 'type': 'normal', 'modules': {'resource': ['lang_sfw'], 'collection': []}, 'mod': [],  'hash': False, 'output': 'builds', 'format': 7},

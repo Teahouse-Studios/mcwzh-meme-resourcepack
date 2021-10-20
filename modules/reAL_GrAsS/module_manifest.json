@@ -7,8 +7,5 @@
     ],
     "incompatible_with": [
         "grass_enchanted"
-    ],
-    "classifier": [
-        "modified_resource"
     ]
 }

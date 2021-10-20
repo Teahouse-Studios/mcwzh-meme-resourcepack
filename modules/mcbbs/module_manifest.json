@@ -5,7 +5,10 @@
     "author": [
         "ZX夏夜之风"
     ],
-    "classifier": [
-        "modified_language"
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
     ]
 }
