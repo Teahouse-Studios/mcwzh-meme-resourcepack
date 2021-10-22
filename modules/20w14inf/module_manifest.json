@@ -8,8 +8,7 @@
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
-            "add": "add.json",
-            "remove": "remove.json"
+            "add": "add.json"
         }
     ]
 }
