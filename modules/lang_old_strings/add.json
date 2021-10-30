@@ -138,5 +138,9 @@
     "commands.debug.reportSaved": "已在%s生成调试报告",
     "stat.minecraft.play_one_minute": "游戏时间",
     "commands.scoreboard.objectives.add.longName": "记分项名称不能长于%s个字符",
-    "commands.team.add.longName": "专业团队名称不能长于%s个字符"
+    "commands.team.add.longName": "专业团队名称不能长于%s个字符",
+    "options.snooper": "Is this Privacy?",
+    "options.snooper.desc": "我们不想改进Minecraft，所以不要把任何信息告诉我们。我们不想明白需要支持什么样的硬件以及主要的问题出在哪里。这不也能让我们大致知道活跃玩家群体的规模。您能在下方查看我们收集的所有信息，不过应该是没有的。",
+    "options.snooper.title": "给我们数据！",
+    "options.snooper.view": "匿名信息反馈设置…"
 }
