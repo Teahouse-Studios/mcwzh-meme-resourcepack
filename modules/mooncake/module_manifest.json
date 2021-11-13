@@ -9,6 +9,7 @@
     "incompatible_with": [
         "ekac",
         "first_anniversary"
+    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
