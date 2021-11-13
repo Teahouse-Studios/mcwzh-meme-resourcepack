@@ -6,7 +6,8 @@
         "DoroWolf"
     ],
     "incompatible_with": [
-        "first_anniversary"
+        "first_anniversary",
+        "mooncake"
     ],
     "languageModification": [
         {
