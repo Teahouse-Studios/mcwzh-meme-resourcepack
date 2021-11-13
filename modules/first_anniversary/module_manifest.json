@@ -5,10 +5,6 @@
     "author": [
         "Lakejason0"
     ],
-    "incompatible_with": [
-        "ekac",
-        "mooncake"
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
