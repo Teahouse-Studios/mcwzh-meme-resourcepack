@@ -6,7 +6,8 @@
         "Lakejason0"
     ],
     "incompatible_with": [
-        "ekac"
+        "ekac",
+        "mooncake"
     ],
     "languageModification": [
         {
