@@ -132,7 +132,6 @@
     "subtitles.entity.zombie_pigman.angry": "僵尸猪人：愤怒",
     "subtitles.entity.zombie_pigman.death": "僵尸猪人：啊我死了",
     "subtitles.entity.zombie_pigman.hurt": "僵尸猪人：哎哟！",
-    "generator.amplified.info": "注意：推荐的配置是i9 10900K加RTX 3090",
     "subtitles.item.berries.pick": "浆果：弹出",
     "commands.debug.reportFailed": "生成调试报告失败",
     "commands.debug.reportSaved": "已在%s生成调试报告",
