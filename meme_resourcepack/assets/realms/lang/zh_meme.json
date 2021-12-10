@@ -140,6 +140,7 @@
     "mco.errorMessage.6003": "超过下载限制",
     "mco.errorMessage.6004": "超过上传限制",
     "mco.errorMessage.connectionFailure": "出错了，请稍候再试。",
+    "mco.errorMessage.serviceBusy": "Realms土豆复炸中。\n请在几分钟后再次尝试连接至你的Realm。",
     "mco.gui.button": "按钮",
     "mco.gui.ok": "好的",
     "mco.invites.button.accept": "接受",
