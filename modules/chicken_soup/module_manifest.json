@@ -1,0 +1,17 @@
+{
+    "name": "chicken_soup",
+    "type": "resource",
+    "description": "喝！为什么不喝？",
+    "author": [
+        "Zh9c418"
+    ],
+    "incompatible_with": [
+        "famous_scene"
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
