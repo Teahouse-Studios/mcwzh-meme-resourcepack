@@ -8,6 +8,7 @@
     "contains": [
         "annoying_sounds",
         "bell_sound",
+        "firework_sound",
         "open_close_sound"
     ]
 }
