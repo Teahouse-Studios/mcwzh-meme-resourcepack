@@ -1,9 +1,10 @@
 {
-    "name": "first_anniversary",
+    "name": "anniversary",
     "type": "resource",
-    "description": "我们一周年啦！",
+    "description": "我们两周年啦！",
     "author": [
-        "Lakejason0"
+        "Lakejason0",
+        "Dianliang233"
     ],
     "languageModification": [
         {
