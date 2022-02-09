@@ -53,12 +53,12 @@
     "anc.item.dumpling_raw.name": "水饺（生）",
     "anc.item.shengjian_raw.name": "生煎（生）",
     "anc.item.meatballs_raw.name": "肉丸（生）",
-    "anc.item.beef_mushroom_stew_raw.name": "牛肉炖蘑菇（生）",
+    "anc.item.beef_mushroom_stew_raw.name": "叉剋汤（生）",
     "anc.item.meat_stuffing.name": "肉馅",
-    "anc.item.creamy_bread_roll.name": "法国洗洁精面包卷",
+    "anc.item.creamy_bread_roll.name": "狐狸尾巴",
     "anc.item.chocolate.name": "朱古力",
     "anc.item.shengjian.name": "生煎",
     "anc.item.meatballs.name": "炸肉丸",
-    "anc.item.beef_mushroom_stew.name": "牛肉炖蘑菇",
+    "anc.item.beef_mushroom_stew.name": "叉剋汤",
     "anc.item.dumpling.name": "水饺"
 }
