@@ -60,5 +60,12 @@
     "anc.item.shengjian.name": "生煎",
     "anc.item.meatballs.name": "炸肉丸",
     "anc.item.beef_mushroom_stew.name": "叉剋汤",
-    "anc.item.dumpling.name": "水饺"
+    "anc.item.dumpling.name": "水饺",
+    "anc.item.cocoa_butter.name": "奥利脂",
+    "anc.item.cocoa_powder.name": "奥利粉",
+    "anc.item.cocoa_liquor.name": "奥利液块",
+    "anc.item.black_chocolate.name": "黑朱古力",
+    "anc.item.white_chocolate.name": "白朱古力",
+    "anc.item.utusan_raw.name": "五毒散（生）",
+    "anc.item.utusan.name": "五毒散"
 }
