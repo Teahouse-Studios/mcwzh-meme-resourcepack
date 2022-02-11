@@ -25,6 +25,7 @@
         "author_zombies",
         "dorowolf_texture",
         "map_override",
-        "observer_think"
+        "observer_think",
+        "netease"
     ]
 }

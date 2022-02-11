@@ -1,0 +1,13 @@
+{
+    "advancements.husbandry.ride_a_boat_with_a_goat.description": "和山羊一起坐在方舟上",
+    "entity.minecraft.boat": "方舟",
+    "stat.minecraft.boat_one_cm": "坐方舟移动距离",
+    "entity.minecraft.cod": "生鲜雪鱼",
+    "item.minecraft.cod": "雪鱼",
+    "item.minecraft.cod_bucket": "雪鱼铁桶",
+    "item.minecraft.cod_spawn_egg": "雪鱼幼体",
+    "item.minecraft.cooked_cod": "沸腾雪鱼",
+    "subtitles.entity.cod.death": "雪鱼：啊我死了",
+    "subtitles.entity.cod.flop": "雪鱼：扑腾",
+    "subtitles.entity.cod.hurt": "雪鱼：哎哟！"
+}
