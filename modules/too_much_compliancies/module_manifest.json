@@ -4,5 +4,14 @@
     "description": "超级防沉迷。",
     "author": [
         "Dianliang233"
+    ],
+    "incompatible_with": [
+        "enable_compliancies"
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
     ]
 }
