@@ -1,5 +1,5 @@
 {
-	  "compliance.playtime.greaterThan24Hours": "你都玩了超过24小时了",
+    "compliance.playtime.greaterThan24Hours": "你都玩了超过24小时了",
     "compliance.playtime.message": "MC虽好，可不要贪玩哦",
     "compliance.playtime.hours": "你都玩了%s小时了",
     "compliance.playtime.minutes": "你都玩了%s分钟了"
