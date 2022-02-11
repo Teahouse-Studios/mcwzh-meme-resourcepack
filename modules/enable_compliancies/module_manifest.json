@@ -1,0 +1,8 @@
+{
+    "name": "enable_compliancies",
+    "type": "resource",
+    "description": "为一些地区（包括两岸三地）启用防沉迷警告。",
+    "author": [
+        "Dianliang233"
+    ]
+}

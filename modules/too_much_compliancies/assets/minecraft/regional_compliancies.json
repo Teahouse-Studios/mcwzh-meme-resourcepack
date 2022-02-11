@@ -1,0 +1,106 @@
+{
+  "CHN": [
+    {
+      "delay": 1440,
+      "period": 1,
+      "title": "compliance.playtime.greaterThan24Hours",
+      "message": "compliance.playtime.message"
+    },
+    {
+      "period": 1,
+      "title": "compliance.playtime.hours",
+      "message": "compliance.playtime.message"
+    }
+  ],
+  "USA": [
+    {
+      "delay": 1440,
+      "period": 1,
+      "title": "compliance.playtime.greaterThan24Hours",
+      "message": "compliance.playtime.message"
+    },
+    {
+      "period": 1,
+      "title": "compliance.playtime.hours",
+      "message": "compliance.playtime.message"
+    }
+  ],
+  "KOR": [
+    {
+      "delay": 1440,
+      "period": 1,
+      "title": "compliance.playtime.greaterThan24Hours",
+      "message": "compliance.playtime.message"
+    },
+    {
+      "period": 1,
+      "title": "compliance.playtime.hours",
+      "message": "compliance.playtime.message"
+    }
+  ],
+  "HKG": [
+    {
+      "delay": 1440,
+      "period": 1,
+      "title": "compliance.playtime.greaterThan24Hours",
+      "message": "compliance.playtime.message"
+    },
+    {
+      "period": 1,
+      "title": "compliance.playtime.hours",
+      "message": "compliance.playtime.message"
+    }
+  ],
+  "TWN": [
+    {
+      "delay": 1440,
+      "period": 1,
+      "title": "compliance.playtime.greaterThan24Hours",
+      "message": "compliance.playtime.message"
+    },
+    {
+      "period": 1,
+      "title": "compliance.playtime.hours",
+      "message": "compliance.playtime.message"
+    }
+  ],
+  "JPN": [
+    {
+      "delay": 1440,
+      "period": 1,
+      "title": "compliance.playtime.greaterThan24Hours",
+      "message": "compliance.playtime.message"
+    },
+    {
+      "period": 1,
+      "title": "compliance.playtime.hours",
+      "message": "compliance.playtime.message"
+    }
+  ],
+  "MAC": [
+    {
+      "delay": 1440,
+      "period": 1,
+      "title": "compliance.playtime.greaterThan24Hours",
+      "message": "compliance.playtime.message"
+    },
+    {
+      "period": 1,
+      "title": "compliance.playtime.hours",
+      "message": "compliance.playtime.message"
+    }
+  ],
+  "GBR": [
+    {
+      "delay": 1440,
+      "period": 1,
+      "title": "compliance.playtime.greaterThan24Hours",
+      "message": "compliance.playtime.message"
+    },
+    {
+      "period": 1,
+      "title": "compliance.playtime.hours",
+      "message": "compliance.playtime.message"
+    }
+  ]
+}
