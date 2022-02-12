@@ -12,5 +12,6 @@
 * 烤地瓜（Sweet Potato）：Pigeonia Featurehouse，[网址](https://github.com/Featurehouse/sweet_potato-source)
 * 矿物高亮（Bright ore）：Pigeonia Featurehouse，[网址](https://github.com/Featurehouse/bright-ore)
 * MCBBS Wiki 模组（MCBBS Wiki Mod）：QWERTY_52_38（Github账号QWERTY770），[网址](https://github.com/QWERTY770/MCBBS-Wiki-Mod)
+* 乡野与魔法（Countryside And Magic）：LAY Studio，[网址](https://github.com/CR-019/CAM_beta)
 
 以下内容由于<*吃掉了*>的原因而无法显示，敬请谅jon'fslA;/[E-2L}sgr=
