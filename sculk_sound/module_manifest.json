@@ -1,0 +1,8 @@
+{
+    "name": "sculk_sound",
+    "type": "resource",
+    "description": "自带BGM的Sculk Shrieker",
+    "author": [
+        "DoroWolf"
+    ]
+}
