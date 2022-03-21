@@ -31,7 +31,7 @@
     "block.minecraft.frogspawn": "青蛙卵",
     "block.minecraft.infested_deepslate": "被虫蚀的裂开来的深石",
     "block.minecraft.ladder": "七个林昆",
-    "block.minecraft.locked_chest": "锁上的箱子"
+    "block.minecraft.locked_chest": "锁上的箱子",
     "block.minecraft.polished_deepslate": "使用了打磨工艺进行加工的深石",
     "block.minecraft.polished_deepslate_slab": "使用了打磨工艺进行加工的深石半砖",
     "block.minecraft.polished_deepslate_stairs": "使用了打磨工艺进行加工的深石楼梯",
@@ -47,5 +47,5 @@
     "menu.shareToLan": "对橘域网开放",
     "stat.minecraft.interact_with_blast_furnace": "炼金次数",
     "subtitles.entity.experience_orb.pickup": "获得经验",
-    "title.multiplayer.lan": "多人游戏（橘域网） (末响应)",
+    "title.multiplayer.lan": "多人游戏（橘域网） (末响应)"
 }
