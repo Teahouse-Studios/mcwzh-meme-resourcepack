@@ -5,9 +5,6 @@
     "author": [
         "Zh9c418"
     ],
-    "incompatible_with": [
-        "famous_scene"
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
