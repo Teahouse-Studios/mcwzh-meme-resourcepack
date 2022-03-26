@@ -21,6 +21,16 @@
                 "weight": 1000
             },
             {
+                "name": "ghost",
+                "weight": 1000,
+                "volume": 1
+            },
+            {
+                "name": "yee",
+                "weight": 750,
+                "volume": 1
+            },
+            {
                 "name": "random/anvil_land",
                 "weight": 1000
             },
