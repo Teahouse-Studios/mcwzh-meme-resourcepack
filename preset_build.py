@@ -4,7 +4,7 @@ from os.path import exists, isdir, join
 from sys import exit
 from memepack_builder.wrapper import main as _main
 
-PACK_VERSION = '1.5.0'
+PACK_VERSION = '1.6.0'
 
 
 def check_version_consistency():
@@ -20,13 +20,16 @@ def main():
                 'choice_modules_1']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
             {'platform': 'je', 'type': 'normal', 'modules': {'resource': ['lang_sfw'], 'collection': [
                 'choice_modules_1']}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 7},
-            {'platform': 'je', 'type': 'normal', 'modules': {'resource': ['lang_sfw'], 'collection': []}, 'mod': [],  'hash': False, 'output': 'builds', 'format': 7},
-            {'platform': 'je', 'type': 'normal', 'modules': {'resource': ['lang_sfw'], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
+            {'platform': 'je', 'type': 'normal', 'modules': {'resource': [
+                'lang_sfw'], 'collection': []}, 'mod': [],  'hash': False, 'output': 'builds', 'format': 7},
+            {'platform': 'je', 'type': 'normal', 'modules': {'resource': [
+                'lang_sfw'], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
             {'platform': 'je', 'type': 'compat', 'modules': {'resource': ['lang_sfw'], 'collection': [
                 'choice_modules_1']}, 'mod': ['all'], 'hash': False, 'output': 'builds', 'format': 7},
             {'platform': 'je', 'type': 'compat', 'modules': {'resource': ['lang_sfw'], 'collection': [
                 'choice_modules_1']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
-            {'platform': 'je', 'type': 'compat', 'modules': {'resource': ['lang_sfw'], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
+            {'platform': 'je', 'type': 'compat', 'modules': {'resource': [
+                'lang_sfw'], 'collection': []}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 7},
             {'platform': 'je', 'type': 'legacy', 'modules': {'resource': ['lang_sfw'], 'collection': [
                 'version_1.12.2-1.15.2']}, 'mod': [], 'hash': False, 'output': 'builds', 'format': 3}
         ]
