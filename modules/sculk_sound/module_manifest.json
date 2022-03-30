@@ -1,7 +1,7 @@
 {
     "name": "sculk_sound",
     "type": "resource",
-    "description": "自带BGM的Sculk Shrieker",
+    "description": "带有奇怪音效的幽匿系列方块",
     "author": [
         "DoroWolf"
     ]
