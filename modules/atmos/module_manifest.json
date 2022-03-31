@@ -1,0 +1,7 @@
+{
+  "name": "atmos",
+  "type": "resource",
+  "description": "船新音效",
+  "author": ["Dianliang233"],
+  "incompatible_with": ["annoying_sounds"]
+}
