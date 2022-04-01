@@ -1,7 +1,7 @@
 {
-    "id": 12,
-    "title": "⚠紧急⚠",
-    "image": "",
-    "content": "因Mod内容相关问题，导致打包出的资源包加载后变成英文的选项。目前正在修复中。<p>暂时解决办法：在打包模块时将“Mod内容选择”更改为“无”。",
-    "detail": ""
+    "id": 13,
+    "title": "更上一层楼：梗体中文视听升级",
+    "image": "https://s1.ax1x.com/2022/04/01/q4ViTK.jpg",
+    "content": "<p>在团队经过九九八十一天的研究攻关后，我们以梗体中文现有流量为基础，升级了 Minecraft 的视觉和听觉效果，真正将 Minecraft 推至极限。下面，让我们隆重推出：梗中 Vision™ 和梗中 Atmos™！<p>在在线构建即可现在下载！",
+    "detail": "https://www.bilibili.com/read/cv15933444"
 }
