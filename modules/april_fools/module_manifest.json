@@ -1,0 +1,9 @@
+{
+    "name": "april_fools",
+    "type": "collection",
+    "description": "这是什么？能吃吗？",
+    "contains": [
+        "april_fools_atmos",
+        "april_fools_vision"
+    ]
+}
