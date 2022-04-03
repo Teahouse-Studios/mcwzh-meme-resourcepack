@@ -1,0 +1,8 @@
+{
+    "name": "Mine3d",
+    "type": "resource",
+    "description": "提供对Minecraft 3D Shareware v1.34快照的纹理支持",
+    "author": [
+        "DoroWolf"
+    ]
+}
