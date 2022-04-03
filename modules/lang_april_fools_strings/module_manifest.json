@@ -1,0 +1,18 @@
+{
+<<<<<<< HEAD:modules/lang_april_fools_string/module_manifest.json
+    "name": "lang_april_fools_strings",
+=======
+    "name": "lang_20w14inf",
+>>>>>>> 88b8d925108c3cc9628b70f69585799c38a34547:modules/lang_20w14inf/module_manifest.json
+    "type": "resource",
+    "description": "愚人节快照的各种字符串",
+    "author": [
+        "梗体中文内容组"
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
