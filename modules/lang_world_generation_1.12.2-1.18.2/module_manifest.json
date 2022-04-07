@@ -1,0 +1,13 @@
+{
+  "name": "lang_world_generation_1.12.2-1.18.2",
+  "type": "resource",
+  "description": "1.19前的世界生成",
+  "author": ["梗体中文内容组"],
+  "languageModification": [
+    {
+        "file": "assets/minecraft/lang/zh_meme.json",
+        "add": "add.json",
+        "remove": "remove.json"
+    }
+  ]
+}
