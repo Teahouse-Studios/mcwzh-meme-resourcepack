@@ -25,11 +25,10 @@ assignees: ''
 可以的话，加上截图可以帮助解释你的问题。
 
 **版本**
-
 * 操作系统：[例：Windows]
-* Minecraft 版本：[例：1.15.2]
-* 资源包版本：[例：0.1.0]
-* 环境 [例：加载了Fabric/Forge，安装了CustomSkinLoader]
+* Minecraft 版本：[例：1.18.2]
+* 资源包版本：[例：1.6.1]
+* 环境：[例：加载了Fabric/Forge，安装了CustomSkinLoader]
 
 **其他内容**
 添加更多关于漏洞的来龙去脉。
