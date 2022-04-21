@@ -1,8 +1,6 @@
-[
-    {
+[{
         "section": "Memified Chinese Resource",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Initiator",
                 "names": [
                     "Lxazl5770 (斯乌)"
@@ -39,7 +37,7 @@
                 ]
             },
             {
-                "title": "Modoules Auchor",
+                "title": "Modules Author",
                 "names": [
                     "Lakejason0",
                     "Light Beacon",
@@ -114,8 +112,7 @@
     },
     {
         "section": "Minecraft",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Head of Minecraft",
                 "names": [
                     "Helen Chiang"
@@ -131,8 +128,7 @@
     },
     {
         "section": "Design",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Chief Creative Officers",
                 "names": [
                     "Jens Bergensten",
@@ -193,8 +189,7 @@
     },
     {
         "section": "Programming",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Chief Technology Officer",
                 "names": [
                     "Michael W Weilbacher"
@@ -479,8 +474,7 @@
     },
     {
         "section": "Audio",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Lead Sound Designer",
                 "names": [
                     "Samuel Åberg"
@@ -505,8 +499,7 @@
     },
     {
         "section": "Visual Arts",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Art Director",
                 "names": [
                     "Andy Zibits"
@@ -592,8 +585,7 @@
     },
     {
         "section": "Production",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Head of Creator",
                 "names": [
                     "Deanna Hearns"
@@ -755,8 +747,7 @@
     },
     {
         "section": "Brand Creative",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Head of Creative Production",
                 "names": [
                     "Katharina Hautz"
@@ -951,8 +942,7 @@
     },
     {
         "section": "User Experience",
-        "titles": [
-            {
+        "titles": [{
                 "title": "User Experience Design Director",
                 "names": [
                     "Anna Wendelin"
@@ -979,8 +969,7 @@
     },
     {
         "section": "Operations",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Franchise Chief Operations Officer",
                 "names": [
                     "Annie Chenn"
@@ -1090,8 +1079,7 @@
     },
     {
         "section": "Data and Analytics",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Head of Data Science and Analytics",
                 "names": [
                     "Francisco Rius"
@@ -1141,8 +1129,7 @@
     },
     {
         "section": "User Research",
-        "titles": [
-            {
+        "titles": [{
                 "title": "User Research Studio Lead",
                 "names": [
                     "Jerome Hagen"
@@ -1160,8 +1147,7 @@
     },
     {
         "section": "Business & Licensing",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Head of Franchise Business Management",
                 "names": [
                     "Scott Dell'Osso"
@@ -1312,8 +1298,7 @@
     },
     {
         "section": "Player Operations",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Director of Player Support",
                 "names": [
                     "Anne Quaranta"
@@ -1359,8 +1344,7 @@
     },
     {
         "section": "Marketing",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Head of Marketing",
                 "names": [
                     "Jessica Freeman"
@@ -1395,8 +1379,7 @@
     },
     {
         "section": "Legal",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Head of Legal",
                 "names": [
                     "Nick Morgan"
@@ -1415,8 +1398,7 @@
     },
     {
         "section": "Communications",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Chief Storyteller",
                 "names": [
                     "Lydia Winters"
@@ -1481,8 +1463,7 @@
     },
     {
         "section": "Finance",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Director of Finance",
                 "names": [
                     "Marina Kostesic"
@@ -1506,8 +1487,7 @@
     },
     {
         "section": "Studios Quality Team - Microsoft",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Director of Quality",
                 "names": [
                     "Jimmy Bischoff"
@@ -1585,8 +1565,7 @@
     },
     {
         "section": "Studios Quality Team - US Teams",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Test Manager",
                 "names": [
                     "Tom Dieterich (Experis) - Test Manager, Tempe"
@@ -1660,30 +1639,27 @@
     },
     {
         "section": "Special Thanks",
-        "titles": [
-            {
-                "title": "Albert Pastore - Director of Business Development, Music and Talent",
-                "names": [
-                    "4J Studios",
-                    "Andrew Pritchard - Release Management",
-                    "Dan Roque – Creature Developer",
-                    "Daniel Brynolf",
-                    "John Olarte (DrZhark) - Creature Developer",
-                    "Julian Gough - Writer",
-                    "Kent Christian Jensen – Creature Developer",
-                    "Pontus Hammarberg",
-                    "Reza Elghazi - Developer Account Manager",
-                    "Stephanie Golden (Insight Global, Inc) – Account Manager",
-                    "The PlayFab Team",
-                    "The Xbox Live Team"
-                ]
-            }
-        ]
+        "titles": [{
+            "title": "Albert Pastore - Director of Business Development, Music and Talent",
+            "names": [
+                "4J Studios",
+                "Andrew Pritchard - Release Management",
+                "Dan Roque – Creature Developer",
+                "Daniel Brynolf",
+                "John Olarte (DrZhark) - Creature Developer",
+                "Julian Gough - Writer",
+                "Kent Christian Jensen – Creature Developer",
+                "Pontus Hammarberg",
+                "Reza Elghazi - Developer Account Manager",
+                "Stephanie Golden (Insight Global, Inc) – Account Manager",
+                "The PlayFab Team",
+                "The Xbox Live Team"
+            ]
+        }]
     },
     {
         "section": "Development Partner: Lionbridge Quality - Poland Team",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Test Director",
                 "names": [
                     "Michał Błoński (Lionbridge)"
@@ -1933,8 +1909,7 @@
     },
     {
         "section": "Quality - UK Team",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Test Manager",
                 "names": [
                     "Richard H. Jones (Lionbridge)"
@@ -1957,8 +1932,7 @@
     },
     {
         "section": "Development Partner: BBI",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Programmer",
                 "names": [
                     "Curtis Hodgins",
@@ -1996,86 +1970,81 @@
     },
     {
         "section": "Development Partner: Disbelief",
-        "titles": [
-            {
-                "title": "",
-                "names": [
-                    "Eric Nguyen",
-                    "Grue Robinson",
-                    "Tim Hagberg"
-                ]
-            }
-        ]
+        "titles": [{
+            "title": "",
+            "names": [
+                "Eric Nguyen",
+                "Grue Robinson",
+                "Tim Hagberg"
+            ]
+        }]
     },
     {
         "section": "Development Partner: Skybox",
-        "titles": [
-            {
-                "title": "",
-                "names": [
-                    "Alex MacKay",
-                    "Alexandra Kabak",
-                    "Alfonso Muñoz",
-                    "Amandeep Malhi",
-                    "Amy Zhao",
-                    "Anthony Wong",
-                    "Arta Seify",
-                    "Benny Wang",
-                    "Casey White",
-                    "Chander Siddarth",
-                    "Colin Basnett",
-                    "David Getley",
-                    "Derek MacNeil",
-                    "Dylan Rueter",
-                    "Eser Kokturk",
-                    "Evgeny Kuznetsov",
-                    "Faith Chow",
-                    "Gustav Louw",
-                    "Hayden Hur",
-                    "Ilya Solnyshkin",
-                    "Jaegar Sarauer",
-                    "Jai Kristjan",
-                    "Jason Allen",
-                    "Jeffrey Chou",
-                    "Jeffrey Yamasaki",
-                    "Jennifer Barron",
-                    "Jiazhi Chang",
-                    "John Ferguson",
-                    "Jon Head",
-                    "Josue Pacheco",
-                    "Jun Luo",
-                    "Justin Tim",
-                    "Leo Hewitt",
-                    "Leonardo Stark",
-                    "Madeeha Ahmed",
-                    "Michel Morin",
-                    "Mingzhuo Zhang",
-                    "Nathan Lacey",
-                    "Oliver Cannon",
-                    "Orhun Erkilic",
-                    "Rick Huang",
-                    "Sam Martens",
-                    "Shiva Gupta",
-                    "Shyang Kong",
-                    "Sim Sahin",
-                    "Steve Silverster",
-                    "Steven Wong",
-                    "Tina Dhaliwal",
-                    "Todd Saharchuk",
-                    "Vassil Anguelov",
-                    "Vicky Huang",
-                    "Vivian Ortenzi",
-                    "Yaw Obiri-Yeboah",
-                    "Younggi Kim",
-                    "Zike Wu"
-                ]
-            }
-        ]
+        "titles": [{
+            "title": "",
+            "names": [
+                "Alex MacKay",
+                "Alexandra Kabak",
+                "Alfonso Muñoz",
+                "Amandeep Malhi",
+                "Amy Zhao",
+                "Anthony Wong",
+                "Arta Seify",
+                "Benny Wang",
+                "Casey White",
+                "Chander Siddarth",
+                "Colin Basnett",
+                "David Getley",
+                "Derek MacNeil",
+                "Dylan Rueter",
+                "Eser Kokturk",
+                "Evgeny Kuznetsov",
+                "Faith Chow",
+                "Gustav Louw",
+                "Hayden Hur",
+                "Ilya Solnyshkin",
+                "Jaegar Sarauer",
+                "Jai Kristjan",
+                "Jason Allen",
+                "Jeffrey Chou",
+                "Jeffrey Yamasaki",
+                "Jennifer Barron",
+                "Jiazhi Chang",
+                "John Ferguson",
+                "Jon Head",
+                "Josue Pacheco",
+                "Jun Luo",
+                "Justin Tim",
+                "Leo Hewitt",
+                "Leonardo Stark",
+                "Madeeha Ahmed",
+                "Michel Morin",
+                "Mingzhuo Zhang",
+                "Nathan Lacey",
+                "Oliver Cannon",
+                "Orhun Erkilic",
+                "Rick Huang",
+                "Sam Martens",
+                "Shiva Gupta",
+                "Shyang Kong",
+                "Sim Sahin",
+                "Steve Silverster",
+                "Steven Wong",
+                "Tina Dhaliwal",
+                "Todd Saharchuk",
+                "Vassil Anguelov",
+                "Vicky Huang",
+                "Vivian Ortenzi",
+                "Yaw Obiri-Yeboah",
+                "Younggi Kim",
+                "Zike Wu"
+            ]
+        }]
     },
     {
         "section": "Development Partner: Red Lens Games",
-        "titles": [
-            {
+        "titles": [{
                 "title": "President",
                 "names": [
                     "Jared Noftle"
@@ -2112,8 +2081,7 @@
     },
     {
         "section": "Development Partner: Virtuosity",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Game Developers",
                 "names": [
                     "Aishwarya Jayabal (Virtuosity)",
@@ -2145,8 +2113,7 @@
     },
     {
         "section": "Mojang Alumni",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Original Creator of Minecraft",
                 "names": [
                     "Markus Persson"
@@ -2842,8 +2809,7 @@
     },
     {
         "section": "Studios Quality Alumni",
-        "titles": [
-            {
+        "titles": [{
                 "title": "Quality Leads",
                 "names": [
                     "Tony Harlich"
