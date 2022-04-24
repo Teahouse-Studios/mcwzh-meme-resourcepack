@@ -5,6 +5,9 @@
     "author": [
         "ZH9c418"
     ],
+    "incompatible_with": [
+        "bagify"
+    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
