@@ -9,7 +9,7 @@
   "tooltip.waila.state": "状态: %s",
   "tooltip.waila.state_on": "开",
   "tooltip.waila.state_off": "关",
-  "tooltip.waila.power": "红石强度: %d",
+  "tooltip.waila.power": "雷石东强度: %d",
   "tooltip.waila.health": "%s/%s 血量",
   "tooltip.waila.sneak_for_details":  "潜行获取详细信息",
 
@@ -67,7 +67,7 @@
   "config.waila.plugin_minecraft.lever": "杠杆状态",
   "config.waila.plugin_minecraft.repeater": "中继器延迟",
   "config.waila.plugin_minecraft.comparator": "比较器模式",
-  "config.waila.plugin_minecraft.redstone": "红石能量等级",
+  "config.waila.plugin_minecraft.redstone": "雷石东能量等级",
   "config.waila.plugin_minecraft.jukebox": "活动记录",
 
   "config.waila.plugin_waila": "Waila",
