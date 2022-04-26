@@ -2,13 +2,5 @@
   {
     "name": "打钱",
     "message": "若您有经济实力，欢迎给孩子们<a href='https://afdian.net/@teahouse' target='_blank' rel='noopener noreferrer'>在爱发电上打钱</a>。"
-  },
-  {
-    "name": "全选取消",
-    "message": "由于模块兼容性问题，“全选”功能现已被取消，请手动选择模块打包。"
-  },
-  {
-    "name": "Bilibili",
-    "message": "欢迎关注<a href='https://space.bilibili.com/406275313' target='_blank' rel='noopener noreferrer'>官方Bilibili账号</a>，以随时获取最新资讯。"
   }
 ]
