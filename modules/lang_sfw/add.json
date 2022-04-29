@@ -38,6 +38,7 @@
     "block.minecraft.polished_deepslate_stairs": "使用了打磨工艺进行加工的深石楼梯",
     "block.minecraft.polished_deepslate_wall": "使用了打磨工艺进行加工的深石墙",
     "block.minecraft.polished_deepslate": "使用了打磨工艺进行加工的深石",
+    "block.minecraft.reinforced_deepslate": "强化深石",
     "block.minecraft.smoker": "吸尘器",
     "commands.experience.add.levels.success.multiple": "已给予%2$s名玩家%1$s级经验",
     "commands.experience.add.levels.success.single": "已给予%2$s %1$s级经验",
