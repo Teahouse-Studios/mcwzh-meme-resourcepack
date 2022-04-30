@@ -53,14 +53,14 @@
     "death.fell.accident.ladder": "%1$s从七个林昆上摔了下来",
     "item.minecraft.bone_meal": "骨灰",
     "item.minecraft.melon_slice": "劈开的瓜",
-    "lanServer.start": "创造一个橘域网世界",
-    "lanServer.title": "橘域网世界",
-    "menu.shareToLan": "对橘域网开放",
+    "lanServer.start": "创造一个局域网世界",
+    "lanServer.title": "局域网世界",
+    "menu.shareToLan": "对局域网开放",
     "stat.minecraft.interact_with_blast_furnace": "炼金次数",
     "subtitles.block.composter.empty": "堆肥桶：清空",
     "subtitles.block.composter.fill": "堆肥桶：填充",
     "subtitles.block.composter.ready": "堆肥桶：堆肥",
     "subtitles.entity.experience_orb.pickup": "获得经验",
     "subtitles.entity.frog.lay_spawn": "蛙：产卵",
-    "title.multiplayer.lan": "多人游戏（橘域网） (末响应)"
+    "title.multiplayer.lan": "多人游戏（局域网） (末响应)"
 }
