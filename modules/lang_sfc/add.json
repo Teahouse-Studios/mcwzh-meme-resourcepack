@@ -248,7 +248,7 @@
     "death.attack.sweetBerryBush.player": "%1$s在试图逃离%2$s时被甜莓丛刺失败了",
     "death.attack.sweetBerryBush": "%1$s被甜莓丛刺失败了",
     "death.attack.thorns.item": "%1$s在试图伤害%2$s时被%3$s被反失败",
-    "death.attack.thorns": "%1$s在试图伤害%2$s时反失败",
+    "death.attack.thorns": "%1$s在试图伤害%2$s时被反失败",
     "death.attack.thrown.item": "%1$s被%2$s用%3$s给砸失败了",
     "death.attack.wither.player": "%1$s在与%2$s战斗时遇上了失败神",
     "death.attack.wither": "%1$s遇上了失败神",
