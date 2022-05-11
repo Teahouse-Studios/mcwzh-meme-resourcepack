@@ -7,8 +7,10 @@
         "LocusAzzurro",
         "最亮的信标"
     ],
-    "classifier": [
-        "modified_language",
-        "modified_resource"
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
     ]
 }
