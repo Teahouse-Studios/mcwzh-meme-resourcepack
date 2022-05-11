@@ -3,12 +3,14 @@
     "type": "collection",
     "description": "中国版的预设打包。",
     "author": [
-        "电量量"
+        "电量量",
+        "ff98sha"
     ],
     "contains": [
         "a_piece_of_seriousness",
         "annoying_sounds",
         "author_zombies",
+        "bagify",
         "baguette",
         "bee_pickaxe",
         "bell_sound",
@@ -26,6 +28,7 @@
         "observer_think",
         "open_close_sound",
         "questioning_totem",
-        "sculk_sound"
+        "sculk_sound",
+        "vulpes_ferrilata"
     ]
 }
