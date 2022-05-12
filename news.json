@@ -1,5 +1,7 @@
 {
-    "id": 15,
-    "title": "关于模块功能的小更新",
-    "content": "<p>由于模块冲突问题，原本的“全选”功能正逐渐失去原来的效果。<p>为此，在线构建的“全选”现在已被移除，取而代之的是“清空”功能。<p>这意味着各位玩家可能需要花点时间手动配置模块。"
+    "id": 16,
+    "title": "梗体中文网易版已更新至 1.18 版本",
+    "image": "https://cdn.jsdelivr.net/gh/Teahouse-Studios/mcwzh-meme-resourcepack/materials/banner_new.png",
+    "content": "<p>梗体中文现已支持网易我的世界 1.18 版本，本次更新仅针对Java版，基岩版尚无改动。<p>这些内容可前往在线构建中选择“choice_modules_netease”模块集合进行构建，以达到与网易版相同的效果！",
+    "detail": "https://t.bilibili.com/659348407053189176"
 }
