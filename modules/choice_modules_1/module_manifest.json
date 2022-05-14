@@ -4,7 +4,6 @@
   "description": "精选模块集合·一",
   "author": ["梗体中文内容组"],
   "incompatible_with": [
-    "too_much_compliancies",
     "gameplay_confuser"
 ],
   "contains": [

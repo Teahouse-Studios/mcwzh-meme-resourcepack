@@ -12,5 +12,9 @@
             "file": "assets/minecraft/lang/zh_meme.json",
             "add": "add.json"
         }
+    ],
+    "incompatible_with": [
+        "fake_multitool",
+        "gameplay_confuser"
     ]
 }
