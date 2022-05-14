@@ -6,10 +6,8 @@
         "siiftun1857"
     ],
     "incompatible_with": [
-        "bee_pickaxe",
-        "locusazzurro",
-        "choice_module_1",
-        "choice_module_netease",
+        "choice_modules_1",
+        "choice_modules_netease",
         "strange_item_modules"
     ],
     "contains": [

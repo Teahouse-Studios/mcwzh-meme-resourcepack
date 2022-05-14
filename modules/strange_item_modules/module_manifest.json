@@ -6,8 +6,6 @@
         "DoroWolf"
     ],
     "incompatible_with": [
-        "anniversary",
-        "mooncake",
         "gameplay_confuser"
     ],
     "contains": [
