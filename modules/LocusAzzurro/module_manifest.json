@@ -7,13 +7,13 @@
         "LocusAzzurro",
         "最亮的信标"
     ],
+    "incompatible_with": [
+        "fake_multitool"
+    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
             "add": "add.json"
         }
-    ],
-    "incompatible_with": [
-        "fake_multitool"
     ]
 }
