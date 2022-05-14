@@ -5,8 +5,15 @@
     "author": [
         "DoroWolf"
     ],
+    "incompatible_with": [
+        "anniversary",
+        "mooncake",
+        "gameplay_confuser"
+    ],
     "contains": [
         "baguette",
+        "bee_pickaxe",
+        "disco_ball",
         "ekac",
         "jinkela",
         "latiao",

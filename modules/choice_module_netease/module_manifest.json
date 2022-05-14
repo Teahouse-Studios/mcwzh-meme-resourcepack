@@ -6,6 +6,15 @@
         "电量量",
         "ff98sha"
     ],
+    "incompatible_with": [
+        "a_letter",
+        "fake_multitool",
+        "fursuit",
+        "Linus_Minecraft_Craps",
+        "mooncake",
+        "totem_model",
+        "gameplay_confuser"
+    ],
     "contains": [
         "a_piece_of_seriousness",
         "anniversary",

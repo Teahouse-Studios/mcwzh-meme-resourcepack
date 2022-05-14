@@ -5,6 +5,13 @@
     "author": [
         "siiftun1857"
     ],
+    "incompatible_with": [
+        "bee_pickaxe",
+        "locusazzurro",
+        "choice_module_1",
+        "choice_module_netease",
+        "strange_item_modules"
+    ],
     "contains": [
         "block_animation_reverse",
         "fake_multitool"
