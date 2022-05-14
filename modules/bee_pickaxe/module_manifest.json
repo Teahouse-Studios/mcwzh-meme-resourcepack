@@ -6,6 +6,7 @@
         "SkyEye_FAST"
     ],
     "incompatible_with": [
-        "fake_multitool"
+        "fake_multitool",
+        "gameplay_confuser"
     ]
 }
