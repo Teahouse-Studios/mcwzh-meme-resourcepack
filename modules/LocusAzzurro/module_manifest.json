@@ -14,7 +14,6 @@
         }
     ],
     "incompatible_with": [
-        "fake_multitool",
-        "gameplay_confuser"
+        "fake_multitool"
     ]
 }

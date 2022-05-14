@@ -7,10 +7,7 @@
     ],
     "incompatible_with": [
         "bee_pickaxe",
-        "LocusAzzurro",
-        "choice_modules_1",
-        "choice_modules_netease",
-        "strange_item_modules"
+        "LocusAzzurro"
     ],
     "languageModification": [
         {
