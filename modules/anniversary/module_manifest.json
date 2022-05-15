@@ -5,11 +5,5 @@
     "author": [
         "Lakejason0",
         "Dianliang233"
-    ],
-    "languageModification": [
-        {
-            "file": "assets/minecraft/lang/zh_meme.json",
-            "add": "add.json"
-        }
     ]
 }
