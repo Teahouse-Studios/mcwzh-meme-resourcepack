@@ -4380,7 +4380,7 @@
     "selectWorld.mapFeatures.info": "奸商聚集地、地下城等等",
     "selectWorld.mapFeatures": "生成顶级建筑",
     "selectWorld.mapType.normal": "普通",
-    "selectWorld.mapType": "世界类型：",
+    "selectWorld.mapType": "世界类型",
     "selectWorld.moreWorldOptions": "更多世界的选项…",
     "selectWorld.newWorld": "新的世界，新的开始",
     "selectWorld.recreate.customized.text": "时代变了，自定义世界在这个版本的Minecraft中已不受支持。我们可以尝试用同样的种子与选项重建它，但任何自定义的地形都会拜拜了你嘞。默哀一秒钟。",
