@@ -71,6 +71,8 @@ async function start() {
     const je = new JavaPackBuilder(await jeModules.moduleInfo(), resolve(__dirname, './meme_resourcepack'), {
         modFiles: glob.sync('./mods/*.json')
     })
+    
+    process.exit(1) // test
     for (const [i, arg] of preset_args.entries()) {
         try {
             let r = await je.build(arg)
