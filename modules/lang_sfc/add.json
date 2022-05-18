@@ -24,9 +24,8 @@
     "advancements.adventure.two_birds_one_arrow.description": "用一支穿透箭射失败两只IcyPhantom",
     "advancements.adventure.very_very_frightening.description": "雷击一名大鼻子",
     "advancements.adventure.voluntary_exile.description": "失败一名袭击队长。\n并且尽快进入大鼻子聚集地。",
-    "advancements.end.dragon_breath.title": "你需要来点口香糖",
+    "advancements.end.dragon_breath.title": "你需要来点薄荷糖",
     "advancements.husbandry.froglights.description": "集齐所有蛙明灯",
-    "advancements.husbandry.leash_all_frog_variants.title": "蛙蛙队出动",
     "advancements.husbandry.ride_a_boat_with_a_goat.description": "和山羊一起坐在方舟上",
     "advancements.nether.all_effects.description": "同时拥有所有buff，并且失败一名白学家",
     "advancements.nether.loot_bastion.description": "掠夺猪刚鬣之家里的箱子",
@@ -679,6 +678,7 @@
     "subtitles.item.bone_meal.use": "金坷垃：被扬",
     "subtitles.item.bucket.fill_axolotl": "六角恐龙：我谢谢你！",
     "subtitles.item.bucket.fill_fish": "鱼：我谢谢你！",
+    "subtitles.item.bucket.fill_tadpole": "蝌蚪：我谢谢你！",
     "subtitles.item.spyglass.stop_using": "望远镜：看完了",
     "subtitles.item.spyglass.use": "望远镜：看",
     "title.multiplayer.lan": "多人游戏（局域网） (末响应)"
