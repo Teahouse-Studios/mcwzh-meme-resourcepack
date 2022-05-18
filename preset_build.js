@@ -1,5 +1,5 @@
 const { JavaPackBuilder, ModuleParser, Logger } = require('memepack-builder')
-const { readFileSync, fstat, writeFileSync } = require('fs')
+const { writeFileSync, existsSync, mkdirSync } = require('fs')
 const { resolve } = require('path')
 const glob = require('glob')
 const PACK_VERSION = '1.6.1'
@@ -71,7 +71,11 @@ async function start() {
     const je = new JavaPackBuilder(await jeModules.moduleInfo(), resolve(__dirname, './meme_resourcepack'), {
         modFiles: glob.sync('./mods/*.json')
     })
-    
+
+    if (!existsSync('./builds')) {
+        mkdirSync('./builds')
+    }
+
     for (const [i, arg] of preset_args.entries()) {
         try {
             let r = await je.build(arg)

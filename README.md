@@ -58,31 +58,23 @@
 
 #### 先决条件
 
-请确保已经安装了Python 3.9+和Git。如果没有，请到[Python官网](https://www.python.org)和[Git官网](https://www.git-scm.com)下载。
+请确保已经安装了NodeJS主流版本和Git。如果没有，请到[NodeJS官网](https://nodejs.org/zh-cn/)和[Git官网](https://www.git-scm.com)下载。
 
 #### 步骤
 
 1. 下载源码；
 2. 进入文件夹；
-3. 安装相关pip依赖；
+3. 安装相关依赖；
 4. 运行预设打包命令。
 
 ``` sh
 git clone https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack.git
 cd mcwzh-meme-resourcepack
-pip install -r requirements.txt
-python preset_build.py
+npm install
+node preset_build.js
 ```
 
 在 `builds` 文件夹中会生成 `mcwzh-meme.zip` 、 `mcwzh-meme_compatible_sfw.zip` 、 `mcwzh-meme_compatible_nofigure_legacy_sfw.zip` 等预设的资源包，名称和作用如上所述。
-
-如果需要预设以外的资源包，可输入需要的参数：
-
-``` sh
-python -m memepack_builder ...
-```
-
-具体用法可见[此处](https://github.com/Teahouse-Studios/memepack-builder/blob/main/doc/CLI_Manual.zh-hans.md)。
 
 ### 自助跟进游戏版本
 
@@ -105,6 +97,6 @@ python -m memepack_builder ...
   * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   * 这不是法律建议。
 * 本项目附带的Mod内容字符串、未经梗体中文修改过的部分，按照 ***原作品的协议*** 发布。
-* 本项目 `tools` 目录下的脚本和根目录下的 `preset_build.py` 文件，可选择 ***CC BY-SA 4.0*** 或 ***Apache License 2.0*** 协议之一授权。
+* 本项目 `tools` 目录下的脚本和根目录下的 `preset_build.js` 文件，可选择 ***CC BY-SA 4.0*** 或 ***Apache License 2.0*** 协议之一授权。
 
 ![GitHub forks](https://img.shields.io/github/forks/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)    ![GitHub stars](https://img.shields.io/github/stars/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/Teahouse-Studios/mcwzh-meme-resourcepack?style=social)
