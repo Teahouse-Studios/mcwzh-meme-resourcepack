@@ -11,3 +11,5 @@ Scripts/
 pyvenv.cfg
 !/news.json
 !/alerts.json
+node_modules
+!package.json
