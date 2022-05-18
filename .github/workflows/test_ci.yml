@@ -27,7 +27,7 @@ jobs:
         name: files-built
         path: |
           builds
-   deploy:
+  deploy:
     if: ${{ github.event_name == 'push' && github.ref_name == 'master' }}
     needs:
       - test
