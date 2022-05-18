@@ -72,7 +72,6 @@ async function start() {
         modFiles: glob.sync('./mods/*.json')
     })
     
-    process.exit(1) // test
     for (const [i, arg] of preset_args.entries()) {
         try {
             let r = await je.build(arg)
