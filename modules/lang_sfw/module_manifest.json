@@ -2,9 +2,7 @@
     "name": "lang_sfw",
     "type": "resource",
     "description": "适用于工作场合的文本替换",
-    "author": [
-        "梗体中文内容组"
-    ],
+    "author": ["梗体中文内容组"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

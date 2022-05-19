@@ -2,9 +2,7 @@
     "name": "minecart_helmet",
     "type": "resource",
     "description": "？你怎么把矿车倒过来了",
-    "author": [
-        "最亮的信标"
-    ],
+    "author": ["最亮的信标"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

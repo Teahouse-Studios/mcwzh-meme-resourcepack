@@ -2,9 +2,7 @@
     "name": "netease",
     "type": "resource",
     "description": "网易版专用模块",
-    "author": [
-        "Dianliang233"
-    ],
+    "author": ["Dianliang233"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

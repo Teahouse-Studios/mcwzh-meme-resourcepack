@@ -1,12 +1,12 @@
 {
-  "itemGroup.corail_woodcutter.main": "Corail锯木机",
-  "block.corail_woodcutter.oak_woodcutter": "橡木锯木机",
-  "block.corail_woodcutter.spruce_woodcutter": "云杉木锯木机",
-  "block.corail_woodcutter.birch_woodcutter": "白桦木锯木机",
-  "block.corail_woodcutter.jungle_woodcutter": "丛林木锯木机",
-  "block.corail_woodcutter.acacia_woodcutter": "相思木锯木机",
-  "block.corail_woodcutter.dark_oak_woodcutter": "巧克力锯木机",
-  "block.corail_woodcutter.crimson_woodcutter": "绯红木锯木机",
-  "block.corail_woodcutter.warped_woodcutter": "幽蓝木锯木机",
-  "container.corail_woodcutter.woodcutter": "锯木机"
+    "itemGroup.corail_woodcutter.main": "Corail锯木机",
+    "block.corail_woodcutter.oak_woodcutter": "橡木锯木机",
+    "block.corail_woodcutter.spruce_woodcutter": "云杉木锯木机",
+    "block.corail_woodcutter.birch_woodcutter": "白桦木锯木机",
+    "block.corail_woodcutter.jungle_woodcutter": "丛林木锯木机",
+    "block.corail_woodcutter.acacia_woodcutter": "相思木锯木机",
+    "block.corail_woodcutter.dark_oak_woodcutter": "巧克力锯木机",
+    "block.corail_woodcutter.crimson_woodcutter": "绯红木锯木机",
+    "block.corail_woodcutter.warped_woodcutter": "幽蓝木锯木机",
+    "container.corail_woodcutter.woodcutter": "锯木机"
 }

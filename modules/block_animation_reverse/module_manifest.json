@@ -2,7 +2,5 @@
     "name": "block_animation_reverse",
     "type": "resource",
     "description": "倒序播放方块纹理动画。",
-    "author": [
-        "siiftun1857"
-    ]
+    "author": ["siiftun1857"]
 }

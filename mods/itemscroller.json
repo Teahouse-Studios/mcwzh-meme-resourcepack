@@ -1,5 +1,4 @@
 {
-
     "itemscroller.gui.button.config_gui.generic": "通用设置",
     "itemscroller.gui.button.config_gui.hotkeys": "快捷键",
     "itemscroller.gui.button.config_gui.toggles": "切换",
@@ -9,7 +8,6 @@
     "itemscroller.gui.label.trade_uses": "功能用途: %d / %d",
 
     "itemscroller.gui.title.configs": "快捷滑鼠设置",
-
 
     "enableCraftingFeatures": "enableCrafting启用制作特性",
     "Enables scrolling items to and from crafting grids,\nwith a built-in 18 recipe memory.\nHold down the Recipe key to see the stored recipes and\nto change the selection. While holding the Recipe key,\nyou can either scroll or press a number key to change the selection.\nA recipe is stored to the currently selected \"recipe slot\"\n by clicking pick block over a configured crafting output slot.\nThe supported crafting grids must be added to the scrollableCraftingGrids list.": "开启内置共8页每页18种配方的存储，使得物品可以放置到合成表\n按住Recipe（配方）的快捷键查看配方列表，您可以滑动滚轮或使用数字键选择配方\n点击配方可以在工作台完成合成，在放置配方达到待命状态时（不取出合成产物）\n按下设定的storeRecipe（储存配方）快捷键就可以在选定的列表格内进行配方储存（自动覆写）。",

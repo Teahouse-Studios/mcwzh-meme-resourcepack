@@ -1,7 +1,6 @@
 {
-
     "inventoryprofiles.gui.config.title": "Inventory Profiles 配置菜单",
-    
+
     "inventoryprofiles.common.gui.config.reset": "重置",
     "inventoryprofiles.common.gui.config.true": "§2开",
     "inventoryprofiles.common.gui.config.false": "§4关",
@@ -22,8 +21,6 @@
     "inventoryprofiles.common.enum.context.gui": "介面",
     "inventoryprofiles.common.enum.context.any": "游戏内 / 介面",
 
-
-
     "inventoryprofiles.gui.config.ModSettings": "Mod 设置",
     "inventoryprofiles.gui.config.GuiSettings": "介面设置",
     "inventoryprofiles.gui.config.EditProfiles": "编辑设定档",
@@ -37,68 +34,61 @@
     "inventoryprofiles.config.category.client_side_tweaks": "客户端",
     "inventoryprofiles.config.category.coming_soon": "即将到来!",
 
+    "inventoryprofiles.config.name.sort_order": "排序方式",
+    "inventoryprofiles.config.name.add_interval_between_clicks": "增加点击的时间间隔",
+    "inventoryprofiles.config.name.interval_between_clicks_ms": "时间间隔 (毫秒)",
+    "inventoryprofiles.config.name.restock_hotbar": "快捷栏补货",
+    "inventoryprofiles.config.name.sort_at_cursor": "整理鼠标指向的区域",
+    "inventoryprofiles.config.name.stop_at_screen_close": "背包关闭时停止整理",
+    "inventoryprofiles.config.name.debug_logs": "除错输出",
 
-
-    "inventoryprofiles.config.name.sort_order":                     "排序方式",
-    "inventoryprofiles.config.name.add_interval_between_clicks":    "增加点击的时间间隔",
-    "inventoryprofiles.config.name.interval_between_clicks_ms":     "时间间隔 (毫秒)",
-    "inventoryprofiles.config.name.restock_hotbar":                 "快捷栏补货",
-    "inventoryprofiles.config.name.sort_at_cursor":                 "整理鼠标指向的区域",
-    "inventoryprofiles.config.name.stop_at_screen_close":           "背包关闭时停止整理",
-    "inventoryprofiles.config.name.debug_logs":                     "除错输出",
-
-    "inventoryprofiles.config.description.sort_order":                  "背包整理的排序方式",
+    "inventoryprofiles.config.description.sort_order": "背包整理的排序方式",
     "inventoryprofiles.config.description.add_interval_between_clicks": "整理背包时加入点击之间的时间，模拟手动点击。用\"时间间隔 (毫秒)\"设置时间。可能在延迟较高的服务器或禁用了inventory.fastclick的服务器上有用。(要在无法快速点击背包的服务器上使用的话，推荐用67毫秒)",
-    "inventoryprofiles.config.description.interval_between_clicks_ms":  "点击之间的时间 (单位毫秒) (要在无法快速点击背包的服务器上使用的话，推荐用67毫秒)",
-    "inventoryprofiles.config.description.restock_hotbar":              "整理背包时顺便把快捷栏上物品的数量填满",
-    "inventoryprofiles.config.description.sort_at_cursor":              "用热键会整理鼠标指向的格子的区域，否则永远优先整理箱子。",
-    "inventoryprofiles.config.description.stop_at_screen_close":        "背包画面关闭时停止整理 (例如在\"增加点击的时间间隔\"启用时)",
-    "inventoryprofiles.config.description.debug_logs":                  "输出除错讯息",
+    "inventoryprofiles.config.description.interval_between_clicks_ms": "点击之间的时间 (单位毫秒) (要在无法快速点击背包的服务器上使用的话，推荐用67毫秒)",
+    "inventoryprofiles.config.description.restock_hotbar": "整理背包时顺便把快捷栏上物品的数量填满",
+    "inventoryprofiles.config.description.sort_at_cursor": "用热键会整理鼠标指向的格子的区域，否则永远优先整理箱子。",
+    "inventoryprofiles.config.description.stop_at_screen_close": "背包画面关闭时停止整理 (例如在\"增加点击的时间间隔\"启用时)",
+    "inventoryprofiles.config.description.debug_logs": "输出除错讯息",
 
+    "inventoryprofiles.config.name.show_sort_button": "显示普通整理按钮",
+    "inventoryprofiles.config.name.show_sort_in_columns_button": "显示垂直方向分类按钮",
+    "inventoryprofiles.config.name.show_sort_in_rows_button": "显示水平方向分类按钮",
+    "inventoryprofiles.config.name.show_move_all_button": "显示移动匹配物品按钮",
+    "inventoryprofiles.config.name.show_button_tooltips": "显示按钮提示",
 
-    "inventoryprofiles.config.name.show_sort_button":               "显示普通整理按钮",
-    "inventoryprofiles.config.name.show_sort_in_columns_button":    "显示垂直方向分类按钮",
-    "inventoryprofiles.config.name.show_sort_in_rows_button":       "显示水平方向分类按钮",
-    "inventoryprofiles.config.name.show_move_all_button":           "显示移动匹配物品按钮",
-    "inventoryprofiles.config.name.show_button_tooltips":           "显示按钮提示",
-
-    "inventoryprofiles.config.description.show_sort_button":            "背包画面上显示普通整理按钮",
+    "inventoryprofiles.config.description.show_sort_button": "背包画面上显示普通整理按钮",
     "inventoryprofiles.config.description.show_sort_in_columns_button": "背包画面上显示垂直方向分类按钮",
-    "inventoryprofiles.config.description.show_sort_in_rows_button":    "背包画面上显示水平方向分类按钮",
-    "inventoryprofiles.config.description.show_move_all_button":        "背包画面上显示移动匹配物品按钮",
-    "inventoryprofiles.config.description.show_button_tooltips":        "鼠标悬浮在按钮上时显示提示",
+    "inventoryprofiles.config.description.show_sort_in_rows_button": "背包画面上显示水平方向分类按钮",
+    "inventoryprofiles.config.description.show_move_all_button": "背包画面上显示移动匹配物品按钮",
+    "inventoryprofiles.config.description.show_button_tooltips": "鼠标悬浮在按钮上时显示提示",
 
+    "inventoryprofiles.config.name.open_config_menu": "打开配置菜单",
+    "inventoryprofiles.config.name.sort_inventory": "背包整理",
+    "inventoryprofiles.config.name.sort_inventory_in_columns": "垂直方向分类",
+    "inventoryprofiles.config.name.sort_inventory_in_rows": "水平方向分类",
+    "inventoryprofiles.config.name.move_all_items": "移动匹配物品",
+    "inventoryprofiles.config.name.debug_screen": "Debug Screen",
 
-    "inventoryprofiles.config.name.open_config_menu":               "打开配置菜单",
-    "inventoryprofiles.config.name.sort_inventory":                 "背包整理",
-    "inventoryprofiles.config.name.sort_inventory_in_columns":      "垂直方向分类",
-    "inventoryprofiles.config.name.sort_inventory_in_rows":         "水平方向分类",
-    "inventoryprofiles.config.name.move_all_items":                 "移动匹配物品",
-    "inventoryprofiles.config.name.debug_screen":                   "Debug Screen",
+    "inventoryprofiles.config.description.open_config_menu": "打开此菜单的按键",
+    "inventoryprofiles.config.description.sort_inventory": "一键背包整理的按键",
+    "inventoryprofiles.config.description.sort_inventory_in_columns": "一键垂直方向分类的按键",
+    "inventoryprofiles.config.description.sort_inventory_in_rows": "一键水平方向分类的按键",
+    "inventoryprofiles.config.description.move_all_items": "一键移动所有箱子里有同类的物品的按键",
+    "inventoryprofiles.config.description.debug_screen": "Open debug screen",
 
-    "inventoryprofiles.config.description.open_config_menu":            "打开此菜单的按键",
-    "inventoryprofiles.config.description.sort_inventory":              "一键背包整理的按键",
-    "inventoryprofiles.config.description.sort_inventory_in_columns":   "一键垂直方向分类的按键",
-    "inventoryprofiles.config.description.sort_inventory_in_rows":      "一键水平方向分类的按键",
-    "inventoryprofiles.config.description.move_all_items":              "一键移动所有箱子里有同类的物品的按键",
-    "inventoryprofiles.config.description.debug_screen":                "Open debug screen",
+    "inventoryprofiles.config.name.instant_mining_cooldown": "瞬间破坏的挖掘延迟",
+    "inventoryprofiles.config.name.disable_block_breaking_cooldown": "移除挖掘延迟",
+    "inventoryprofiles.config.name.disable_item_use_cooldown": "移除右键使用冷却时间",
+    "inventoryprofiles.config.name.prevent_close_gui_drop_item": "防止关闭介面掉落物品",
+    "inventoryprofiles.config.name.disable_screen_shaking_on_damage": "禁止受到伤害摇晃画面",
+    "inventoryprofiles.config.name.disable_lava_fog": "禁用熔岩迷雾",
 
-
-    "inventoryprofiles.config.name.instant_mining_cooldown":            "瞬间破坏的挖掘延迟",
-    "inventoryprofiles.config.name.disable_block_breaking_cooldown":    "移除挖掘延迟",
-    "inventoryprofiles.config.name.disable_item_use_cooldown":          "移除右键使用冷却时间",
-    "inventoryprofiles.config.name.prevent_close_gui_drop_item":        "防止关闭介面掉落物品",
-    "inventoryprofiles.config.name.disable_screen_shaking_on_damage":   "禁止受到伤害摇晃画面",
-    "inventoryprofiles.config.name.disable_lava_fog":                   "禁用熔岩迷雾",
-
-    "inventoryprofiles.config.description.instant_mining_cooldown":             "让瞬间破坏方块后挖掘下一个方块也有挖掘延迟。优先度较 \"移除挖掘延迟\" 低。",
-    "inventoryprofiles.config.description.disable_block_breaking_cooldown":     "移除挖掘下一个方块的延迟",
-    "inventoryprofiles.config.description.disable_item_use_cooldown":           "移除按住右键使用物品时的每一个物品之间冷却时间。相当于每游戏刻都按一次右键。(一秒为二十游戏刻)",
-    "inventoryprofiles.config.description.prevent_close_gui_drop_item":         "关闭物品栏时自动把鼠标的物品放回背包",
-    "inventoryprofiles.config.description.disable_screen_shaking_on_damage":    "受到伤害时画面不再摇晃",
-    "inventoryprofiles.config.description.disable_lava_fog":                    "熔岩下看得更清晰",
-
-
+    "inventoryprofiles.config.description.instant_mining_cooldown": "让瞬间破坏方块后挖掘下一个方块也有挖掘延迟。优先度较 \"移除挖掘延迟\" 低。",
+    "inventoryprofiles.config.description.disable_block_breaking_cooldown": "移除挖掘下一个方块的延迟",
+    "inventoryprofiles.config.description.disable_item_use_cooldown": "移除按住右键使用物品时的每一个物品之间冷却时间。相当于每游戏刻都按一次右键。(一秒为二十游戏刻)",
+    "inventoryprofiles.config.description.prevent_close_gui_drop_item": "关闭物品栏时自动把鼠标的物品放回背包",
+    "inventoryprofiles.config.description.disable_screen_shaking_on_damage": "受到伤害时画面不再摇晃",
+    "inventoryprofiles.config.description.disable_lava_fog": "熔岩下看得更清晰",
 
     "inventoryprofiles.enum.sorting_method.default": "预设（创造模式菜单）",
     "inventoryprofiles.enum.sorting_method.item_name": "物品名称",
@@ -109,5 +99,4 @@
     "inventoryprofiles.tooltip.sort_columns_button": "垂直方向分类",
     "inventoryprofiles.tooltip.sort_rows_button": "水平方向分类",
     "inventoryprofiles.tooltip.move_all_button": "移动匹配物品\n§6(按住 §oSHIFT§r\n§6包括快捷栏)§r"
-
 }

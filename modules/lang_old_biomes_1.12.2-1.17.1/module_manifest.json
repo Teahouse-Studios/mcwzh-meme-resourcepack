@@ -1,13 +1,13 @@
 {
-  "name": "lang_old_biomes_1.12.2-1.17.1",
-  "type": "resource",
-  "description": "1.18前的生物群系",
-  "author": ["梗体中文内容组"],
-  "languageModification": [
-    {
-        "file": "assets/minecraft/lang/zh_meme.json",
-        "add": "add.json",
-        "remove": "remove.json"
-    }
-  ]
+    "name": "lang_old_biomes_1.12.2-1.17.1",
+    "type": "resource",
+    "description": "1.18前的生物群系",
+    "author": ["梗体中文内容组"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json",
+            "remove": "remove.json"
+        }
+    ]
 }

@@ -2,13 +2,8 @@
     "name": "mooncake",
     "type": "resource",
     "description": "恰月饼！",
-    "author": [
-        "IcyPhantom",
-        "电量量"
-    ],
-    "incompatible_with": [
-        "ekac"
-    ],
+    "author": ["IcyPhantom", "电量量"],
+    "incompatible_with": ["ekac"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

@@ -10,7 +10,7 @@
     "minimap.ui.welcome8": "隐藏此信息",
     "minimap.ui.zoomlevel": "缩放级别:",
     "minimap.ui.otheroptions": "其他选项",
-  
+
     "options.minimap.title": "小映射选项",
     "options.minimap.showcoordinates": "坐标显示",
     "options.minimap.hideminimap": "隐藏小映射",
@@ -18,7 +18,7 @@
     "options.minimap.dynamiclighting": "动态光照",
     "options.minimap.terraindepth": "地形深度",
     "options.minimap.squaremap": "方形映射",
-    "options.minimap.rotation": "方向旋转", 
+    "options.minimap.rotation": "方向旋转",
     "options.minimap.oldnorth": "日落北方",
     "options.minimap.ingamewaypoints": "导航点显示类型",
     "options.minimap.ingamewaypoints.beacons": "仅显示光柱",
@@ -82,7 +82,7 @@
     "options.minimap.mobs.disable": "隐藏生物图标",
     "options.minimap.mobs.enabled": "生物显示已启用.",
     "options.minimap.mobs.disabled": "生物显示已禁用.",
-  
+
     "controls.minimap.title": "小映射按键选项",
     "controls.minimap.unbind1": "要解除一个按键的绑定，先选择它然后按下 'Esc'.",
     "controls.minimap.unbind2": "(除了菜单键 - 它要解除绑定可就用不了了)",
@@ -94,8 +94,7 @@
     "key.minimap.waypointhotkey": "导航点快捷键",
     "key.minimap.togglemobs": "切换显示生物",
     "key.minimap.toggleingamewaypoints": "切换显示导航点",
-    
-  
+
     "minimap.waypoints.title": "导航点",
     "minimap.waypoints.teleportto": "传送到该导航点",
     "minimap.waypoints.highlight": "高亮",
@@ -119,7 +118,7 @@
     "minimap.waypoints.sortbycreated": "创建",
     "minimap.waypoints.sortbycolor": "颜色",
     "minimap.waypoints.sortbyicon": "图标",
-  
+
     "minimap.waypointshare.title": "分享导航点",
     "minimap.waypointshare.titlecoordinate": "分享坐标",
     "minimap.waypointshare.sharemessage": "添加信息 (可选)",
@@ -130,7 +129,7 @@
     "minimap.waypointshare.all": "所有人",
     "minimap.waypointshare.tooltip1": "单击以高亮显示坐标,",
     "minimap.waypointshare.tooltip2": "或者单击 添加/编辑 导航点.",
-  
+
     "options.minimap.worldmap": "世界映射...",
     "worldmap.title": "VoxelMap",
     "options.worldmap.title": "世界映射选项",
@@ -142,7 +141,7 @@
     "options.worldmap.maxzoom": "最大缩放等级",
     "options.worldmap.cachesize": "区域缓存大小",
     "options.worldmap.multiworld": "多世界...",
-  
+
     "worldmap.multiworld.title": "VoxelMap - 多世界选择",
     "worldmap.multiworld.select": "请选择你所在的世界?",
     "worldmap.multiworld.newname": "新名称",

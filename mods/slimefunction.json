@@ -1,63 +1,60 @@
 {
-    "sf.Slimefunction":"§6§l黏糊糊科技",
+    "sf.Slimefunction": "§6§l黏糊糊科技",
 
+    "sf.weapon.grandmas_walking_stick.name": "奶奶的拐杖",
 
-    "sf.weapon.grandmas_walking_stick.name":"奶奶的拐杖",
-    
-    "sf.weapon.grandpas_walking_stick.name":"爷爷的拐杖",
+    "sf.weapon.grandpas_walking_stick.name": "爷爷的拐杖",
 
-    "sf.weapon.icy_bow.name":"冰封之弓",
-    "sf.weapon.icy_bow.lore1":"被此弓射出的箭击中",
-    "sf.weapon.icy_bow.lore2":"将会因寒冷而无法移动（2秒内）",
+    "sf.weapon.icy_bow.name": "冰封之弓",
+    "sf.weapon.icy_bow.lore1": "被此弓射出的箭击中",
+    "sf.weapon.icy_bow.lore2": "将会因寒冷而无法移动（2秒内）",
 
-    "sf.weapon.soulbound_bow.name":"灵魂绑定弓",
+    "sf.weapon.soulbound_bow.name": "灵魂绑定弓",
 
-    "sf.weapon.soulbound_sword.name":"灵魂绑定剑",
+    "sf.weapon.soulbound_sword.name": "灵魂绑定剑",
 
-    "sf.weapon.soulbound_trident.name":"灵魂绑定鱼叉",
+    "sf.weapon.soulbound_trident.name": "灵魂绑定鱼叉",
 
-    "sf.weapon.sword_of_beheading.name":"处决之剑",
-    "sf.weapon.sword_of_beheading.lore.1":"斩首处决 %s",
-    "sf.weapon.sword_of_beheading.lore.2":"有几率砍下生物的头",
-    "sf.weapon.sword_of_beheading.lore.3":"（提高掉落凋灵骷髅头的几率）",
+    "sf.weapon.sword_of_beheading.name": "处决之剑",
+    "sf.weapon.sword_of_beheading.lore.1": "斩首处决 %s",
+    "sf.weapon.sword_of_beheading.lore.2": "有几率砍下生物的头",
+    "sf.weapon.sword_of_beheading.lore.3": "（提高掉落凋灵骷髅头的几率）",
 
-    "sf.weapon.blade_of_vampires.name":"吸血鬼之刀",
-    "sf.weapon.blade_of_vampires.lore.1":"生命窃取 %s",
-    "sf.weapon.blade_of_vampires.lore.2":"在攻击时有 45% 的几率",
-    "sf.weapon.blade_of_vampires.lore.3":"使自己恢复 2 点血量",
+    "sf.weapon.blade_of_vampires.name": "吸血鬼之刀",
+    "sf.weapon.blade_of_vampires.lore.1": "生命窃取 %s",
+    "sf.weapon.blade_of_vampires.lore.2": "在攻击时有 45% 的几率",
+    "sf.weapon.blade_of_vampires.lore.3": "使自己恢复 2 点血量",
 
-    "sf.weapon.explosive_bow.name":"爆裂之弓",
-    "sf.weapon.explosive_bow.lore":"被爆裂之弓射出的箭击中将会飞上天",
+    "sf.weapon.explosive_bow.name": "爆裂之弓",
+    "sf.weapon.explosive_bow.lore": "被爆裂之弓射出的箭击中将会飞上天",
 
-    "sf.tool.smelter_pickaxe.name":"熔炉giao子",
-    "sf.tool.smelter_pickaxe.lore1":"自动熔炼",
-    "sf.tool.smelter_pickaxe.lore2":"兼容时运附魔",
+    "sf.tool.smelter_pickaxe.name": "熔炉giao子",
+    "sf.tool.smelter_pickaxe.lore1": "自动熔炼",
+    "sf.tool.smelter_pickaxe.lore2": "兼容时运附魔",
 
-    "sf.tools.explosive_pickaxe.name":"爆炸giao子",
-    "sf.tools.explosive_pickaxe.lore.1":"允许你在一瞬间挖掘矿物",
-    "sf.tools.explosive_pickaxe.lore.2":"兼容时运和精准附魔",
+    "sf.tools.explosive_pickaxe.name": "爆炸giao子",
+    "sf.tools.explosive_pickaxe.lore.1": "允许你在一瞬间挖掘矿物",
+    "sf.tools.explosive_pickaxe.lore.2": "兼容时运和精准附魔",
 
-    "sf.tools.explosive_shovel.name":"爆炸铲",
-    "sf.tools.explosive_shovel.lore.1":"让你一下子就能挖掉很多方块",
-    "sf.tools.explosive_shovel.lore.2":"兼容时运和精准附魔",
+    "sf.tools.explosive_shovel.name": "爆炸铲",
+    "sf.tools.explosive_shovel.lore.1": "让你一下子就能挖掉很多方块",
+    "sf.tools.explosive_shovel.lore.2": "兼容时运和精准附魔",
 
-    "sf.tools.soulbound_hoe.name":"灵魂绑定锄",
+    "sf.tools.soulbound_hoe.name": "灵魂绑定锄",
 
-    "sf.tools.soulbound_shovel.name":"灵魂绑定锹",
+    "sf.tools.soulbound_shovel.name": "灵魂绑定锹",
 
-    "sf.tools.soulbound_axe.name":"灵魂绑定斧",
+    "sf.tools.soulbound_axe.name": "灵魂绑定斧",
 
-    "sf.tools.soulbound_pickaxe.name":"灵魂绑定giao子",
+    "sf.tools.soulbound_pickaxe.name": "灵魂绑定giao子",
 
+    "sf.magical_armors.soulbound_helmet.name": "灵魂绑定头盔",
 
-    "sf.magical_armors.soulbound_helmet.name":"灵魂绑定头盔",
+    "sf.magical_armors.soulbound_chestplate.name": "灵魂绑定胸甲",
 
-    "sf.magical_armors.soulbound_chestplate.name":"灵魂绑定胸甲",
+    "sf.magical_armors.soulbound_leggings.name": "灵魂绑定护腿",
 
-    "sf.magical_armors.soulbound_leggings.name":"灵魂绑定护腿",
+    "sf.magical_armors.soulbound_boots.name": "灵魂绑定靴子",
 
-    "sf.magical_armors.soulbound_boots.name":"灵魂绑定靴子",
-
-
-    "sf.magical_items.soulbound_elytra.name":"灵魂绑定鞘翅"
+    "sf.magical_items.soulbound_elytra.name": "灵魂绑定鞘翅"
 }

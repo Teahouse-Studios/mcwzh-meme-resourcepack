@@ -1,20 +1,18 @@
 {
-  "name": "choice_modules_1",
-  "type": "collection",
-  "description": "精选模块集合·一",
-  "author": ["梗体中文内容组"],
-  "incompatible_with": [
-    "gameplay_confuser"
-],
-  "contains": [
-    "a_piece_of_seriousness",
-    "anniversary",
-    "bagify",
-    "enable_compliancies",
-    "glyph_sizes_fix",
-    "locusazzurro",
-    "map_override",
-    "meme_splashes",
-    "observer_think"
-  ]
+    "name": "choice_modules_1",
+    "type": "collection",
+    "description": "精选模块集合·一",
+    "author": ["梗体中文内容组"],
+    "incompatible_with": ["gameplay_confuser"],
+    "contains": [
+        "a_piece_of_seriousness",
+        "anniversary",
+        "bagify",
+        "enable_compliancies",
+        "glyph_sizes_fix",
+        "locusazzurro",
+        "map_override",
+        "meme_splashes",
+        "observer_think"
+    ]
 }

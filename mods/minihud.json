@@ -491,5 +491,4 @@
     "Main toggle for all structure bounding boxes": "切换是否显示所有的结构的边框",
     "shapeRenderer": "shapeRenderer图形渲染器",
     "The main toggle for the shape renderer": "切换是否显示图形渲染器渲染的图形"
-
 }

@@ -2,9 +2,7 @@
     "name": "version_1.17.1",
     "type": "collection",
     "description": "适用于1.17.1版本的模块集合",
-    "author": [
-        "梗体中文内容组"
-    ],
+    "author": ["梗体中文内容组"],
     "contains": [
         "lang_old_strings",
         "lang_old_biomes_1.12.2-1.17.1",

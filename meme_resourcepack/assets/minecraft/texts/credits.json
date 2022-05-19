@@ -1,13 +1,13 @@
-[{
-        "section": "Memified Chinese Resource",
-        "titles": [{
+[
+    {
+        "section": "Memified Chinese Resource Pack",
+        "titles": [
+            {
                 "title": "Initiator",
-                "names": [
-                    "Lxazl5770 (斯乌)"
-                ]
+                "names": ["Lxazl5770 (斯乌)"]
             },
             {
-                "title": "Text Editor",
+                "title": "Translations by",
                 "names": [
                     "Lakejason0",
                     "斯乌",
@@ -33,11 +33,16 @@
                     "Neubulae",
                     "CR-019",
                     "最亮的信标",
-                    "冷星轩"
+                    "冷星轩",
+                    "TripleCamera",
+                    "低耐久的铁砧",
+                    "Minecraftku_hei",
+                    "pkstDev",
+                    "theflysong"
                 ]
             },
             {
-                "title": "Modules Author",
+                "title": "Resource Modules by",
                 "names": [
                     "Lakejason0",
                     "Light Beacon",
@@ -51,45 +56,47 @@
                     "最亮的信标",
                     "电量量",
                     "Iron_noob_73",
-                    "ZX夏夜之风"
+                    "ZX夏夜之风",
+                    "低耐久的铁砧",
+                    "teddyxlandlee"
                 ]
             },
             {
-                "title": "Honorary Author/MCLangCN",
-                "names": [
-                    "ff98sha"
-                ]
+                "title": "Honorary Author",
+                "names": ["ff98sha"]
             },
             {
-                "title": "Web Builder",
+                "title": "MCLangCN Contributor",
+                "names": ["ff98sha", "Jingji132", "电量量"]
+            },
+            {
+                "title": "Memepack Builder Developer",
                 "names": [
+                    "Lakejason0",
                     "MysticNebula",
                     "wyapx",
-                    "_LittleC_"
+                    "_LittleC_",
+                    "电量量"
                 ]
             },
             {
-                "title": "Proofreader",
-                "names": [
-                    "梗体中文内容组",
-                    "茶馆工作室"
-                ]
+                "title": "Proofread by",
+                "names": ["梗体中文内容组", "茶馆工作室"]
             },
             {
-                "title": "Model",
-                "names": [
-                    "古镇天Gu_ZT",
-                    "Lakejason0"
-                ]
+                "title": "Models by",
+                "names": ["古镇天Gu_ZT", "Lakejason0"]
             },
             {
-                "title": "Bedrock Edition Transplant",
-                "names": [
-                    "SkyEye_FAST"
-                ]
+                "title": "Bedrock Edition Port Lead",
+                "names": ["SkyEye_FAST"]
             },
             {
-                "title": "Special Thanks",
+                "title": "Other Contributor",
+                "names": ["Snow_dash"]
+            },
+            {
+                "title": "Special Thanks to",
                 "names": [
                     "Blockbench",
                     "Addonscommandresource",
@@ -99,7 +106,7 @@
                 ]
             },
             {
-                "title": "Sponsor",
+                "title": "Sponsored by",
                 "names": [
                     "SPGoding",
                     "是秋夕啊mua",
@@ -107,59 +114,52 @@
                     "WDLJT",
                     "苏打baka"
                 ]
+            },
+            {
+                "title": "Teahouse Studios Member",
+                "names": ["timi137137", "zyjking"]
+            },
+            {
+                "title": "Publisher",
+                "names": ["茶馆工作室 (Teahouse Studios)"]
             }
         ]
     },
     {
         "section": "Minecraft",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Head of Minecraft",
-                "names": [
-                    "Helen Chiang"
-                ]
+                "names": ["Helen Chiang"]
             },
             {
                 "title": "Chief Executive Officer",
-                "names": [
-                    "Jonas Mårtensson"
-                ]
+                "names": ["Jonas Mårtensson"]
             }
         ]
     },
     {
         "section": "Design",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Chief Creative Officers",
-                "names": [
-                    "Jens Bergensten",
-                    "Saxs Persson"
-                ]
+                "names": ["Jens Bergensten", "Saxs Persson"]
             },
             {
                 "title": "Game Director",
-                "names": [
-                    "Agnes Larsson"
-                ]
+                "names": ["Agnes Larsson"]
             },
             {
                 "title": "Creative Director",
-                "names": [
-                    "Jesse Merriam",
-                    "Torfi Frans Olafsson"
-                ]
+                "names": ["Jesse Merriam", "Torfi Frans Olafsson"]
             },
             {
                 "title": "Principal Design Director",
-                "names": [
-                    "Craig Leigh"
-                ]
+                "names": ["Craig Leigh"]
             },
             {
                 "title": "Lead Game Designers",
-                "names": [
-                    "Rob Poerschke",
-                    "Robin V Vincent"
-                ]
+                "names": ["Rob Poerschke", "Robin V Vincent"]
             },
             {
                 "title": "Game Designers",
@@ -181,37 +181,28 @@
             },
             {
                 "title": "Narrative Designers",
-                "names": [
-                    "Max Herngren"
-                ]
+                "names": ["Max Herngren"]
             }
         ]
     },
     {
         "section": "Programming",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Chief Technology Officer",
-                "names": [
-                    "Michael W Weilbacher"
-                ]
+                "names": ["Michael W Weilbacher"]
             },
             {
                 "title": "Head of Services and Ops Engineering",
-                "names": [
-                    "Vince Curley"
-                ]
+                "names": ["Vince Curley"]
             },
             {
                 "title": "Head of Stockholm Engineering",
-                "names": [
-                    "Mike Carlson"
-                ]
+                "names": ["Mike Carlson"]
             },
             {
                 "title": "Director of Franchise Quality",
-                "names": [
-                    "Matthew Ng"
-                ]
+                "names": ["Matthew Ng"]
             },
             {
                 "title": "Technical Director",
@@ -273,10 +264,7 @@
             },
             {
                 "title": "Lead UI Developers",
-                "names": [
-                    "Oleg Kozitsyn",
-                    "Paulo Ragonha"
-                ]
+                "names": ["Oleg Kozitsyn", "Paulo Ragonha"]
             },
             {
                 "title": "UI Developers",
@@ -308,11 +296,7 @@
             },
             {
                 "title": "Lead Architects",
-                "names": [
-                    "Greg Snook",
-                    "Henry Golding",
-                    "Peter M. Wiest"
-                ]
+                "names": ["Greg Snook", "Henry Golding", "Peter M. Wiest"]
             },
             {
                 "title": "Architects",
@@ -422,10 +406,7 @@
             },
             {
                 "title": "Lead Web Developers",
-                "names": [
-                    "Joel Bergman",
-                    "Mark Jawad"
-                ]
+                "names": ["Joel Bergman", "Mark Jawad"]
             },
             {
                 "title": "Realms Software Engineers",
@@ -436,11 +417,7 @@
             },
             {
                 "title": "Lead System Engineers",
-                "names": [
-                    "Jifeng Zhang",
-                    "Robert Sjödahl",
-                    "Torbjörn Allard"
-                ]
+                "names": ["Jifeng Zhang", "Robert Sjödahl", "Torbjörn Allard"]
             },
             {
                 "title": "Service Software Engineers",
@@ -474,11 +451,10 @@
     },
     {
         "section": "Audio",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Lead Sound Designer",
-                "names": [
-                    "Samuel Åberg"
-                ]
+                "names": ["Samuel Åberg"]
             },
             {
                 "title": "Sound Designers",
@@ -490,20 +466,16 @@
             },
             {
                 "title": "Music composed by",
-                "names": [
-                    "Daniel Rosenfeld",
-                    "Lena Raine"
-                ]
+                "names": ["Daniel Rosenfeld", "Lena Raine"]
             }
         ]
     },
     {
         "section": "Visual Arts",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Art Director",
-                "names": [
-                    "Andy Zibits"
-                ]
+                "names": ["Andy Zibits"]
             },
             {
                 "title": "Art Leads",
@@ -537,28 +509,19 @@
             },
             {
                 "title": "Lead Technical Artist",
-                "names": [
-                    "Lisa Hazen"
-                ]
+                "names": ["Lisa Hazen"]
             },
             {
                 "title": "Technical Artist",
-                "names": [
-                    "Dylan Piepenbrok"
-                ]
+                "names": ["Dylan Piepenbrok"]
             },
             {
                 "title": "Graphic Artists",
-                "names": [
-                    "Jasper Boerstra",
-                    "Mattis Grahm"
-                ]
+                "names": ["Jasper Boerstra", "Mattis Grahm"]
             },
             {
                 "title": "Lead Graphic Designers",
-                "names": [
-                    "Christine Gutierrez"
-                ]
+                "names": ["Christine Gutierrez"]
             },
             {
                 "title": "Graphic Designers",
@@ -577,55 +540,40 @@
             },
             {
                 "title": "Animator",
-                "names": [
-                    "Patrick Rodes (Randstad)"
-                ]
+                "names": ["Patrick Rodes (Randstad)"]
             }
         ]
     },
     {
         "section": "Production",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Head of Creator",
-                "names": [
-                    "Deanna Hearns"
-                ]
+                "names": ["Deanna Hearns"]
             },
             {
                 "title": "Head of Platform Engineering",
-                "names": [
-                    "John Thornton"
-                ]
+                "names": ["John Thornton"]
             },
             {
                 "title": "Head of Minecraft China",
-                "names": [
-                    "Travis Howland"
-                ]
+                "names": ["Travis Howland"]
             },
             {
                 "title": "Head of Business Engineering",
-                "names": [
-                    "Ryan B Cooper"
-                ]
+                "names": ["Ryan B Cooper"]
             },
             {
                 "title": "Head of Creator Marketplace",
-                "names": [
-                    "Aaron J Buckley"
-                ]
+                "names": ["Aaron J Buckley"]
             },
             {
                 "title": "Head of Games",
-                "names": [
-                    "Patrick Liu"
-                ]
+                "names": ["Patrick Liu"]
             },
             {
                 "title": "Director of Minecraft.net",
-                "names": [
-                    "Saher M Hirji"
-                ]
+                "names": ["Saher M Hirji"]
             },
             {
                 "title": "Executive Producers",
@@ -697,23 +645,15 @@
             },
             {
                 "title": "Engineering Managers",
-                "names": [
-                    "Erika Renlund",
-                    "Mac Maistrelli"
-                ]
+                "names": ["Erika Renlund", "Mac Maistrelli"]
             },
             {
                 "title": "Organizational Coaches",
-                "names": [
-                    "Marie Stålkrantz",
-                    "Yassal Sundman"
-                ]
+                "names": ["Marie Stålkrantz", "Yassal Sundman"]
             },
             {
                 "title": "Release Management Lead",
-                "names": [
-                    "David Fries"
-                ]
+                "names": ["David Fries"]
             },
             {
                 "title": "Release Managers",
@@ -725,16 +665,11 @@
             },
             {
                 "title": "Quality Assurance",
-                "names": [
-                    "Matthew Dryden",
-                    "Thommy Siverman"
-                ]
+                "names": ["Matthew Dryden", "Thommy Siverman"]
             },
             {
                 "title": "Quality Engineers",
-                "names": [
-                    "Zackarias Gustavsson"
-                ]
+                "names": ["Zackarias Gustavsson"]
             },
             {
                 "title": "Technical Writers",
@@ -747,37 +682,26 @@
     },
     {
         "section": "Brand Creative",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Head of Creative Production",
-                "names": [
-                    "Katharina Hautz"
-                ]
+                "names": ["Katharina Hautz"]
             },
             {
                 "title": "Creative Director",
-                "names": [
-                    "Markus Toivonen"
-                ]
+                "names": ["Markus Toivonen"]
             },
             {
                 "title": "Lead Brand Producer",
-                "names": [
-                    "Åsa Skogström"
-                ]
+                "names": ["Åsa Skogström"]
             },
             {
                 "title": "Brand Art Director",
-                "names": [
-                    "Martin Johansson"
-                ]
+                "names": ["Martin Johansson"]
             },
             {
                 "title": "Brand Producers",
-                "names": [
-                    "Hampus Nilsson",
-                    "Jenny Ahnell",
-                    "Lisa Kempe"
-                ]
+                "names": ["Hampus Nilsson", "Jenny Ahnell", "Lisa Kempe"]
             },
             {
                 "title": "Brand Assurance Manager",
@@ -788,68 +712,43 @@
             },
             {
                 "title": "Lead Consumer Products Producer",
-                "names": [
-                    "Milo Bengtsson"
-                ]
+                "names": ["Milo Bengtsson"]
             },
             {
                 "title": "Consumer Products Creative Lead",
-                "names": [
-                    "Antti Meriluoto"
-                ]
+                "names": ["Antti Meriluoto"]
             },
             {
                 "title": "Consumer Products Producer",
-                "names": [
-                    "Josefin Olsson"
-                ]
+                "names": ["Josefin Olsson"]
             },
             {
                 "title": "Consumer Products Product Designers",
-                "names": [
-                    "Débora Martins",
-                    "Filip Thoms",
-                    "Sherin Kwan"
-                ]
+                "names": ["Débora Martins", "Filip Thoms", "Sherin Kwan"]
             },
             {
                 "title": "Lead Media & Events Producer",
-                "names": [
-                    "Sarah Carton"
-                ]
+                "names": ["Sarah Carton"]
             },
             {
                 "title": "Media Producers",
-                "names": [
-                    "Adele Major",
-                    "Johan Kvarnermo"
-                ]
+                "names": ["Adele Major", "Johan Kvarnermo"]
             },
             {
                 "title": "Events Producer",
-                "names": [
-                    "Charlotte Hallberg Angantyr"
-                ]
+                "names": ["Charlotte Hallberg Angantyr"]
             },
             {
                 "title": "Games Experience Producers",
-                "names": [
-                    "Nicolette Suraga",
-                    "Renee Wikander",
-                    "Tim Mardell"
-                ]
+                "names": ["Nicolette Suraga", "Renee Wikander", "Tim Mardell"]
             },
             {
                 "title": "Director of Creative Communications",
-                "names": [
-                    "Owen Jones"
-                ]
+                "names": ["Owen Jones"]
             },
             {
                 "title": "Head of Creative Communications",
-                "names": [
-                    "Thomas Wiborgh"
-                ]
+                "names": ["Thomas Wiborgh"]
             },
             {
                 "title": "Creative Writers",
@@ -862,21 +761,15 @@
             },
             {
                 "title": "Publishing Editor",
-                "names": [
-                    "Alex Wiltshire"
-                ]
+                "names": ["Alex Wiltshire"]
             },
             {
                 "title": "Head of Social Media",
-                "names": [
-                    "Alice Löfgren"
-                ]
+                "names": ["Alice Löfgren"]
             },
             {
                 "title": "Social & Comms Producer",
-                "names": [
-                    "Isabella Balk"
-                ]
+                "names": ["Isabella Balk"]
             },
             {
                 "title": "Social Media Managers",
@@ -898,61 +791,44 @@
             },
             {
                 "title": "Art Lead Events",
-                "names": [
-                    "Amanda Ström"
-                ]
+                "names": ["Amanda Ström"]
             },
             {
                 "title": "Art Lead Social",
-                "names": [
-                    "Seung Sung"
-                ]
+                "names": ["Seung Sung"]
             },
             {
                 "title": "Graphic Designer",
-                "names": [
-                    "Markus Karlsson Frost"
-                ]
+                "names": ["Markus Karlsson Frost"]
             },
             {
                 "title": "3D Artist / Motion Graphic Designer",
-                "names": [
-                    "Jesper Hallin"
-                ]
+                "names": ["Jesper Hallin"]
             },
             {
                 "title": "GFX Designer",
-                "names": [
-                    "Afshin “Affe” Piran"
-                ]
+                "names": ["Afshin “Affe” Piran"]
             },
             {
                 "title": "Artist",
-                "names": [
-                    "Morten Rasmussen"
-                ]
+                "names": ["Morten Rasmussen"]
             },
             {
                 "title": "Gameplay Capture Artist",
-                "names": [
-                    "Husein Kurbegovic"
-                ]
+                "names": ["Husein Kurbegovic"]
             }
         ]
     },
     {
         "section": "User Experience",
-        "titles": [{
+        "titles": [
+            {
                 "title": "User Experience Design Director",
-                "names": [
-                    "Anna Wendelin"
-                ]
+                "names": ["Anna Wendelin"]
             },
             {
                 "title": "User Experience Design Lead",
-                "names": [
-                    "Jonathan Paton Gallina"
-                ]
+                "names": ["Jonathan Paton Gallina"]
             },
             {
                 "title": "User Experience Designers",
@@ -969,29 +845,22 @@
     },
     {
         "section": "Operations",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Franchise Chief Operations Officer",
-                "names": [
-                    "Annie Chenn"
-                ]
+                "names": ["Annie Chenn"]
             },
             {
                 "title": "Head of Stockholm Operations",
-                "names": [
-                    "Ulrika Höjgård"
-                ]
+                "names": ["Ulrika Höjgård"]
             },
             {
                 "title": "Head of Franchise Operations",
-                "names": [
-                    "Josh Bligenstorffer"
-                ]
+                "names": ["Josh Bligenstorffer"]
             },
             {
                 "title": "Chief of Staff",
-                "names": [
-                    "Amy Stillion"
-                ]
+                "names": ["Amy Stillion"]
             },
             {
                 "title": "Human Resources",
@@ -1007,15 +876,11 @@
             },
             {
                 "title": "Office Manager",
-                "names": [
-                    "Siri Hoel Andersson"
-                ]
+                "names": ["Siri Hoel Andersson"]
             },
             {
                 "title": "Office Coordinators",
-                "names": [
-                    "Joël Älveroth"
-                ]
+                "names": ["Joël Älveroth"]
             },
             {
                 "title": "Executive Business Administrators",
@@ -1028,16 +893,11 @@
             },
             {
                 "title": "Front of House",
-                "names": [
-                    "Adam Blänning"
-                ]
+                "names": ["Adam Blänning"]
             },
             {
                 "title": "IT Manager",
-                "names": [
-                    "Cesar Sima Falck",
-                    "Jason Perry Minard"
-                ]
+                "names": ["Cesar Sima Falck", "Jason Perry Minard"]
             },
             {
                 "title": "IT",
@@ -1054,15 +914,11 @@
             },
             {
                 "title": "Operations Manager",
-                "names": [
-                    "Sheila Ho"
-                ]
+                "names": ["Sheila Ho"]
             },
             {
                 "title": "Lead Automation Support",
-                "names": [
-                    "Matthew C. Moreno"
-                ]
+                "names": ["Matthew C. Moreno"]
             },
             {
                 "title": "Automation Support",
@@ -1079,23 +935,18 @@
     },
     {
         "section": "Data and Analytics",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Head of Data Science and Analytics",
-                "names": [
-                    "Francisco Rius"
-                ]
+                "names": ["Francisco Rius"]
             },
             {
                 "title": "Data Science Lead",
-                "names": [
-                    "Abby Gaddis"
-                ]
+                "names": ["Abby Gaddis"]
             },
             {
                 "title": "Data Engineering Lead",
-                "names": [
-                    "Bill Chism"
-                ]
+                "names": ["Bill Chism"]
             },
             {
                 "title": "Data Science",
@@ -1129,41 +980,31 @@
     },
     {
         "section": "User Research",
-        "titles": [{
+        "titles": [
+            {
                 "title": "User Research Studio Lead",
-                "names": [
-                    "Jerome Hagen"
-                ]
+                "names": ["Jerome Hagen"]
             },
             {
                 "title": "User Researcher",
-                "names": [
-                    "Melissa Boone",
-                    "Olga Zielinska",
-                    "Pablo Morales"
-                ]
+                "names": ["Melissa Boone", "Olga Zielinska", "Pablo Morales"]
             }
         ]
     },
     {
         "section": "Business & Licensing",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Head of Franchise Business Management",
-                "names": [
-                    "Scott Dell'Osso"
-                ]
+                "names": ["Scott Dell'Osso"]
             },
             {
                 "title": "Head of Partnerships & Licensing",
-                "names": [
-                    "Kayleen Walters"
-                ]
+                "names": ["Kayleen Walters"]
             },
             {
                 "title": "Chief Media Officer",
-                "names": [
-                    "Vu Bui"
-                ]
+                "names": ["Vu Bui"]
             },
             {
                 "title": "Directors of Business Development",
@@ -1176,11 +1017,7 @@
             },
             {
                 "title": "Directors of Business Management",
-                "names": [
-                    "Amy Zou",
-                    "Michelle Hua",
-                    "Stephen McHugh"
-                ]
+                "names": ["Amy Zou", "Michelle Hua", "Stephen McHugh"]
             },
             {
                 "title": "Business Managers",
@@ -1211,9 +1048,7 @@
             },
             {
                 "title": "Business Development Managers",
-                "names": [
-                    "Inga Chamberlain"
-                ]
+                "names": ["Inga Chamberlain"]
             },
             {
                 "title": "Business Analyst",
@@ -1225,27 +1060,19 @@
             },
             {
                 "title": "Japan Country Manager",
-                "names": [
-                    "Yutaka Noma"
-                ]
+                "names": ["Yutaka Noma"]
             },
             {
                 "title": "Director of Partner Management",
-                "names": [
-                    "Todd Stevens"
-                ]
+                "names": ["Todd Stevens"]
             },
             {
                 "title": "Partner Program Manager",
-                "names": [
-                    "Quinn Richter"
-                ]
+                "names": ["Quinn Richter"]
             },
             {
                 "title": "Content Coordinators",
-                "names": [
-                    "Oskar Thysell"
-                ]
+                "names": ["Oskar Thysell"]
             },
             {
                 "title": "Program Managers",
@@ -1268,21 +1095,15 @@
             },
             {
                 "title": "Studio Compliance Lead",
-                "names": [
-                    "Eric Odell-Hein"
-                ]
+                "names": ["Eric Odell-Hein"]
             },
             {
                 "title": "Studio Compliance Analyst",
-                "names": [
-                    "Justin Ray (Design Laboratory Inc)"
-                ]
+                "names": ["Justin Ray (Design Laboratory Inc)"]
             },
             {
                 "title": "Intellectual Property Enforcement Lead",
-                "names": [
-                    "Gaylon Blank"
-                ]
+                "names": ["Gaylon Blank"]
             },
             {
                 "title": "Category Managers",
@@ -1298,17 +1119,14 @@
     },
     {
         "section": "Player Operations",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Director of Player Support",
-                "names": [
-                    "Anne Quaranta"
-                ]
+                "names": ["Anne Quaranta"]
             },
             {
                 "title": "Director of Community",
-                "names": [
-                    "Nea Aime Rollan"
-                ]
+                "names": ["Nea Aime Rollan"]
             },
             {
                 "title": "Community Managers",
@@ -1324,38 +1142,28 @@
             },
             {
                 "title": "Customer Support Program Manager",
-                "names": [
-                    "Jon-Eric L. Swigart (Collabera)"
-                ]
+                "names": ["Jon-Eric L. Swigart (Collabera)"]
             },
             {
                 "title": "Customer Support Lead",
-                "names": [
-                    "Jen Pedersen"
-                ]
+                "names": ["Jen Pedersen"]
             },
             {
                 "title": "Customer Support",
-                "names": [
-                    "Kyle McMurtry (TEKsystems, Inc)"
-                ]
+                "names": ["Kyle McMurtry (TEKsystems, Inc)"]
             }
         ]
     },
     {
         "section": "Marketing",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Head of Marketing",
-                "names": [
-                    "Jessica Freeman"
-                ]
+                "names": ["Jessica Freeman"]
             },
             {
                 "title": "Marketing Directors",
-                "names": [
-                    "Fergus Lynch",
-                    "Jeanie DuMont"
-                ]
+                "names": ["Fergus Lynch", "Jeanie DuMont"]
             },
             {
                 "title": "Marketing Managers",
@@ -1379,11 +1187,10 @@
     },
     {
         "section": "Legal",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Head of Legal",
-                "names": [
-                    "Nick Morgan"
-                ]
+                "names": ["Nick Morgan"]
             },
             {
                 "title": "Legal Counsel",
@@ -1398,36 +1205,26 @@
     },
     {
         "section": "Communications",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Chief Storyteller",
-                "names": [
-                    "Lydia Winters"
-                ]
+                "names": ["Lydia Winters"]
             },
             {
                 "title": "Senior Media Producers",
-                "names": [
-                    "Carina Petersson"
-                ]
+                "names": ["Carina Petersson"]
             },
             {
                 "title": "Producers",
-                "names": [
-                    "Sofia Orrheim"
-                ]
+                "names": ["Sofia Orrheim"]
             },
             {
                 "title": "Directors of Global Public Relations",
-                "names": [
-                    "Regan O’Leary"
-                ]
+                "names": ["Regan O’Leary"]
             },
             {
                 "title": "Global Public Relations Managers",
-                "names": [
-                    "John Schork",
-                    "Rebecca Gordius"
-                ]
+                "names": ["John Schork", "Rebecca Gordius"]
             },
             {
                 "title": "Assembly Media, Inc",
@@ -1442,9 +1239,7 @@
             },
             {
                 "title": "Lead Producer - Brand Experience",
-                "names": [
-                    "Karim Walldén"
-                ]
+                "names": ["Karim Walldén"]
             },
             {
                 "title": "Web Design",
@@ -1455,25 +1250,20 @@
             },
             {
                 "title": "Web Content Manager",
-                "names": [
-                    "Joe Corrigan (Ten Gun Design, Inc)"
-                ]
+                "names": ["Joe Corrigan (Ten Gun Design, Inc)"]
             }
         ]
     },
     {
         "section": "Finance",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Director of Finance",
-                "names": [
-                    "Marina Kostesic"
-                ]
+                "names": ["Marina Kostesic"]
             },
             {
                 "title": "Senior Finance Manager",
-                "names": [
-                    "Evan Dowdell"
-                ]
+                "names": ["Evan Dowdell"]
             },
             {
                 "title": "Financial Accountants",
@@ -1487,17 +1277,14 @@
     },
     {
         "section": "Studios Quality Team - Microsoft",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Director of Quality",
-                "names": [
-                    "Jimmy Bischoff"
-                ]
+                "names": ["Jimmy Bischoff"]
             },
             {
                 "title": "Quality Manager",
-                "names": [
-                    "Rob Straavaldson"
-                ]
+                "names": ["Rob Straavaldson"]
             },
             {
                 "title": "Quality Leads",
@@ -1512,24 +1299,15 @@
             },
             {
                 "title": "Quality Engineers",
-                "names": [
-                    "Fiona Belmont",
-                    "Joe Whitman",
-                    "Ryan Mayes"
-                ]
+                "names": ["Fiona Belmont", "Joe Whitman", "Ryan Mayes"]
             },
             {
                 "title": "Quality Data Analysis & Engineering",
-                "names": [
-                    "Chelsi Hohnbaum",
-                    "Lisa Porter"
-                ]
+                "names": ["Chelsi Hohnbaum", "Lisa Porter"]
             },
             {
                 "title": "Software Engineers",
-                "names": [
-                    "Jay Baxter"
-                ]
+                "names": ["Jay Baxter"]
             },
             {
                 "title": "Quality Analysts",
@@ -1565,11 +1343,10 @@
     },
     {
         "section": "Studios Quality Team - US Teams",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Test Manager",
-                "names": [
-                    "Tom Dieterich (Experis) - Test Manager, Tempe"
-                ]
+                "names": ["Tom Dieterich (Experis) - Test Manager, Tempe"]
             },
             {
                 "title": "Software Test Engineering Leads",
@@ -1639,49 +1416,44 @@
     },
     {
         "section": "Special Thanks",
-        "titles": [{
-            "title": "Albert Pastore - Director of Business Development, Music and Talent",
-            "names": [
-                "4J Studios",
-                "Andrew Pritchard - Release Management",
-                "Dan Roque – Creature Developer",
-                "Daniel Brynolf",
-                "John Olarte (DrZhark) - Creature Developer",
-                "Julian Gough - Writer",
-                "Kent Christian Jensen – Creature Developer",
-                "Pontus Hammarberg",
-                "Reza Elghazi - Developer Account Manager",
-                "Stephanie Golden (Insight Global, Inc) – Account Manager",
-                "The PlayFab Team",
-                "The Xbox Live Team"
-            ]
-        }]
+        "titles": [
+            {
+                "title": "Albert Pastore - Director of Business Development, Music and Talent",
+                "names": [
+                    "4J Studios",
+                    "Andrew Pritchard - Release Management",
+                    "Dan Roque – Creature Developer",
+                    "Daniel Brynolf",
+                    "John Olarte (DrZhark) - Creature Developer",
+                    "Julian Gough - Writer",
+                    "Kent Christian Jensen – Creature Developer",
+                    "Pontus Hammarberg",
+                    "Reza Elghazi - Developer Account Manager",
+                    "Stephanie Golden (Insight Global, Inc) – Account Manager",
+                    "The PlayFab Team",
+                    "The Xbox Live Team"
+                ]
+            }
+        ]
     },
     {
         "section": "Development Partner: Lionbridge Quality - Poland Team",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Test Director",
-                "names": [
-                    "Michał Błoński (Lionbridge)"
-                ]
+                "names": ["Michał Błoński (Lionbridge)"]
             },
             {
                 "title": "Senior Global Test Manager",
-                "names": [
-                    "Grzegorz Kohorewicz (Lionbridge)"
-                ]
+                "names": ["Grzegorz Kohorewicz (Lionbridge)"]
             },
             {
                 "title": "Senior Test Manager",
-                "names": [
-                    "Mateusz Kałuża (Lionbridge)"
-                ]
+                "names": ["Mateusz Kałuża (Lionbridge)"]
             },
             {
                 "title": "Test Leads",
-                "names": [
-                    "Beata Jastrzębska (Lionbridge)"
-                ]
+                "names": ["Beata Jastrzębska (Lionbridge)"]
             },
             {
                 "title": "Team Leads",
@@ -1694,9 +1466,7 @@
             },
             {
                 "title": "Compliance Leads",
-                "names": [
-                    "Łukasz Mikusek (Lionbridge)"
-                ]
+                "names": ["Łukasz Mikusek (Lionbridge)"]
             },
             {
                 "title": "Software Test Engineers",
@@ -1723,9 +1493,7 @@
             },
             {
                 "title": "Compliance Test Engineers",
-                "names": [
-                    "Witold Januszewski-Skup (Lionbridge)"
-                ]
+                "names": ["Witold Januszewski-Skup (Lionbridge)"]
             },
             {
                 "title": "Test Associates",
@@ -1838,7 +1606,7 @@
                     "Mikołaj Gruźliński (Lionbridge)",
                     "Natalia Niedziela (Lionbridge)",
                     "Olgierd Ruszkiewicz (Lionbridge)",
-                    "Pamela Frąckowiak  (Lionbridge)",
+                    "Pamela Frąckowiak        (Lionbridge)",
                     "Patrycja Kopiś (Lionbridge)",
                     "Patryk Kowalczyk (Lionbridge)",
                     "Patryk Rukść (Lionbridge)",
@@ -1909,11 +1677,10 @@
     },
     {
         "section": "Quality - UK Team",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Test Manager",
-                "names": [
-                    "Richard H. Jones (Lionbridge)"
-                ]
+                "names": ["Richard H. Jones (Lionbridge)"]
             },
             {
                 "title": "Compliance Test Engineer",
@@ -1924,15 +1691,14 @@
             },
             {
                 "title": "Data Engineering",
-                "names": [
-                    "Patrick Fraioli"
-                ]
+                "names": ["Patrick Fraioli"]
             }
         ]
     },
     {
         "section": "Development Partner: BBI",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Programmer",
                 "names": [
                     "Curtis Hodgins",
@@ -1943,125 +1709,110 @@
             },
             {
                 "title": "Associate Programmer",
-                "names": [
-                    "Jacky Cai"
-                ]
+                "names": ["Jacky Cai"]
             },
             {
                 "title": "UI Artist",
-                "names": [
-                    "Richelle Brunt"
-                ]
+                "names": ["Richelle Brunt"]
             },
             {
                 "title": "UX Designer",
-                "names": [
-                    "Sam Flores"
-                ]
+                "names": ["Sam Flores"]
             },
             {
                 "title": "QA Analyst",
-                "names": [
-                    "Jamie Cheung",
-                    "Paul Pera"
-                ]
+                "names": ["Jamie Cheung", "Paul Pera"]
             }
         ]
     },
     {
         "section": "Development Partner: Disbelief",
-        "titles": [{
-            "title": "",
-            "names": [
-                "Eric Nguyen",
-                "Grue Robinson",
-                "Tim Hagberg"
-            ]
-        }]
+        "titles": [
+            {
+                "title": "",
+                "names": ["Eric Nguyen", "Grue Robinson", "Tim Hagberg"]
+            }
+        ]
     },
     {
         "section": "Development Partner: Skybox",
-        "titles": [{
-            "title": "",
-            "names": [
-                "Alex MacKay",
-                "Alexandra Kabak",
-                "Alfonso Muñoz",
-                "Amandeep Malhi",
-                "Amy Zhao",
-                "Anthony Wong",
-                "Arta Seify",
-                "Benny Wang",
-                "Casey White",
-                "Chander Siddarth",
-                "Colin Basnett",
-                "David Getley",
-                "Derek MacNeil",
-                "Dylan Rueter",
-                "Eser Kokturk",
-                "Evgeny Kuznetsov",
-                "Faith Chow",
-                "Gustav Louw",
-                "Hayden Hur",
-                "Ilya Solnyshkin",
-                "Jaegar Sarauer",
-                "Jai Kristjan",
-                "Jason Allen",
-                "Jeffrey Chou",
-                "Jeffrey Yamasaki",
-                "Jennifer Barron",
-                "Jiazhi Chang",
-                "John Ferguson",
-                "Jon Head",
-                "Josue Pacheco",
-                "Jun Luo",
-                "Justin Tim",
-                "Leo Hewitt",
-                "Leonardo Stark",
-                "Madeeha Ahmed",
-                "Michel Morin",
-                "Mingzhuo Zhang",
-                "Nathan Lacey",
-                "Oliver Cannon",
-                "Orhun Erkilic",
-                "Rick Huang",
-                "Sam Martens",
-                "Shiva Gupta",
-                "Shyang Kong",
-                "Sim Sahin",
-                "Steve Silverster",
-                "Steven Wong",
-                "Tina Dhaliwal",
-                "Todd Saharchuk",
-                "Vassil Anguelov",
-                "Vicky Huang",
-                "Vivian Ortenzi",
-                "Yaw Obiri-Yeboah",
-                "Younggi Kim",
-                "Zike Wu"
-            ]
-        }]
+        "titles": [
+            {
+                "title": "",
+                "names": [
+                    "Alex MacKay",
+                    "Alexandra Kabak",
+                    "Alfonso Muñoz",
+                    "Amandeep Malhi",
+                    "Amy Zhao",
+                    "Anthony Wong",
+                    "Arta Seify",
+                    "Benny Wang",
+                    "Casey White",
+                    "Chander Siddarth",
+                    "Colin Basnett",
+                    "David Getley",
+                    "Derek MacNeil",
+                    "Dylan Rueter",
+                    "Eser Kokturk",
+                    "Evgeny Kuznetsov",
+                    "Faith Chow",
+                    "Gustav Louw",
+                    "Hayden Hur",
+                    "Ilya Solnyshkin",
+                    "Jaegar Sarauer",
+                    "Jai Kristjan",
+                    "Jason Allen",
+                    "Jeffrey Chou",
+                    "Jeffrey Yamasaki",
+                    "Jennifer Barron",
+                    "Jiazhi Chang",
+                    "John Ferguson",
+                    "Jon Head",
+                    "Josue Pacheco",
+                    "Jun Luo",
+                    "Justin Tim",
+                    "Leo Hewitt",
+                    "Leonardo Stark",
+                    "Madeeha Ahmed",
+                    "Michel Morin",
+                    "Mingzhuo Zhang",
+                    "Nathan Lacey",
+                    "Oliver Cannon",
+                    "Orhun Erkilic",
+                    "Rick Huang",
+                    "Sam Martens",
+                    "Shiva Gupta",
+                    "Shyang Kong",
+                    "Sim Sahin",
+                    "Steve Silverster",
+                    "Steven Wong",
+                    "Tina Dhaliwal",
+                    "Todd Saharchuk",
+                    "Vassil Anguelov",
+                    "Vicky Huang",
+                    "Vivian Ortenzi",
+                    "Yaw Obiri-Yeboah",
+                    "Younggi Kim",
+                    "Zike Wu"
+                ]
+            }
+        ]
     },
     {
         "section": "Development Partner: Red Lens Games",
-        "titles": [{
+        "titles": [
+            {
                 "title": "President",
-                "names": [
-                    "Jared Noftle"
-                ]
+                "names": ["Jared Noftle"]
             },
             {
                 "title": "Producer",
-                "names": [
-                    "Allie Murdock"
-                ]
+                "names": ["Allie Murdock"]
             },
             {
                 "title": "Lead Software Engineers",
-                "names": [
-                    "Kyle Walsh",
-                    "Nathan Carlson"
-                ]
+                "names": ["Kyle Walsh", "Nathan Carlson"]
             },
             {
                 "title": "Software Engineers",
@@ -2081,7 +1832,8 @@
     },
     {
         "section": "Development Partner: Virtuosity",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Game Developers",
                 "names": [
                     "Aishwarya Jayabal (Virtuosity)",
@@ -2113,59 +1865,42 @@
     },
     {
         "section": "Mojang Alumni",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Original Creator of Minecraft",
-                "names": [
-                    "Markus Persson"
-                ]
+                "names": ["Markus Persson"]
             },
             {
                 "title": "Head of Minecraft",
-                "names": [
-                    "Matt Booty"
-                ]
+                "names": ["Matt Booty"]
             },
             {
                 "title": "Head of Minecraft Atlas",
-                "names": [
-                    "Deirdre Quarnstrom"
-                ]
+                "names": ["Deirdre Quarnstrom"]
             },
             {
                 "title": "Chief Executive Officer",
-                "names": [
-                    "Carl Manneh"
-                ]
+                "names": ["Carl Manneh"]
             },
             {
                 "title": "Chief Finance Officer",
-                "names": [
-                    "Karin Severinson"
-                ]
+                "names": ["Karin Severinson"]
             },
             {
                 "title": "Chief Product Officer",
-                "names": [
-                    "Olof Carlson Sandvik"
-                ]
+                "names": ["Olof Carlson Sandvik"]
             },
             {
                 "title": "Project Director",
-                "names": [
-                    "Jakob Porsér"
-                ]
+                "names": ["Jakob Porsér"]
             },
             {
                 "title": "Production Director",
-                "names": [
-                    "Daniel Kaplan"
-                ]
+                "names": ["Daniel Kaplan"]
             },
             {
                 "title": "Game Director",
-                "names": [
-                    "Henrik Pettersson"
-                ]
+                "names": ["Henrik Pettersson"]
             },
             {
                 "title": "Game Designers",
@@ -2178,9 +1913,7 @@
             },
             {
                 "title": "Chief Technology Officer",
-                "names": [
-                    "Rikard Herlitz"
-                ]
+                "names": ["Rikard Herlitz"]
             },
             {
                 "title": "Game Developers",
@@ -2232,9 +1965,7 @@
             },
             {
                 "title": "Lead UI Developers",
-                "names": [
-                    "Sebasian Hindefeldt"
-                ]
+                "names": ["Sebasian Hindefeldt"]
             },
             {
                 "title": "UI Developers",
@@ -2255,17 +1986,11 @@
             },
             {
                 "title": "Launcher",
-                "names": [
-                    "Anders Rosén",
-                    "Carl Westin",
-                    "David Zevallos"
-                ]
+                "names": ["Anders Rosén", "Carl Westin", "David Zevallos"]
             },
             {
                 "title": "Architects",
-                "names": [
-                    "Tommaso Checchi"
-                ]
+                "names": ["Tommaso Checchi"]
             },
             {
                 "title": "Lead Bedrock Software Developers",
@@ -2316,10 +2041,7 @@
             },
             {
                 "title": "Lead System Engineers",
-                "names": [
-                    "Tom Miles",
-                    "Tomas Sommar"
-                ]
+                "names": ["Tom Miles", "Tomas Sommar"]
             },
             {
                 "title": "System Engineers",
@@ -2351,9 +2073,7 @@
             },
             {
                 "title": "System Engineers",
-                "names": [
-                    "Robert Thresher (Collabera)"
-                ]
+                "names": ["Robert Thresher (Collabera)"]
             },
             {
                 "title": "System Developers",
@@ -2366,21 +2086,15 @@
             },
             {
                 "title": "Art Director",
-                "names": [
-                    "Brad Shuber"
-                ]
+                "names": ["Brad Shuber"]
             },
             {
                 "title": "Art Lead",
-                "names": [
-                    "Sarah Kisor"
-                ]
+                "names": ["Sarah Kisor"]
             },
             {
                 "title": "3D/VFX",
-                "names": [
-                    "Elin Ölund Forsling"
-                ]
+                "names": ["Elin Ölund Forsling"]
             },
             {
                 "title": "Artists",
@@ -2406,29 +2120,19 @@
             },
             {
                 "title": "Additional Graphics",
-                "names": [
-                    "Jonatan Pöljö",
-                    "Mariana Graham Ramirez"
-                ]
+                "names": ["Jonatan Pöljö", "Mariana Graham Ramirez"]
             },
             {
                 "title": "Motion Graphics Designer",
-                "names": [
-                    "Gabe Philbin (Randstad)"
-                ]
+                "names": ["Gabe Philbin (Randstad)"]
             },
             {
                 "title": "Sound Designer",
-                "names": [
-                    "Peter Hont",
-                    "Shauny Jang (Insight Global, Inc)"
-                ]
+                "names": ["Peter Hont", "Shauny Jang (Insight Global, Inc)"]
             },
             {
                 "title": "Executive Producer",
-                "names": [
-                    "Erin Krell"
-                ]
+                "names": ["Erin Krell"]
             },
             {
                 "title": "Producers",
@@ -2461,9 +2165,7 @@
             },
             {
                 "title": "Assistant Producer",
-                "names": [
-                    "Warren Loo"
-                ]
+                "names": ["Warren Loo"]
             },
             {
                 "title": "Release Manager",
@@ -2474,22 +2176,15 @@
             },
             {
                 "title": "Merchandise Art Director",
-                "names": [
-                    "Alexis Holmqvist"
-                ]
+                "names": ["Alexis Holmqvist"]
             },
             {
                 "title": "Product Designer",
-                "names": [
-                    "Jennifer Hammervald"
-                ]
+                "names": ["Jennifer Hammervald"]
             },
             {
                 "title": "User Experience Design Director",
-                "names": [
-                    "Stephen Whetstine",
-                    "Tobias Ahlin"
-                ]
+                "names": ["Stephen Whetstine", "Tobias Ahlin"]
             },
             {
                 "title": "User Experience Designer",
@@ -2501,22 +2196,15 @@
             },
             {
                 "title": "Chief of Staff",
-                "names": [
-                    "Andrew J. Adamyk"
-                ]
+                "names": ["Andrew J. Adamyk"]
             },
             {
                 "title": "Executive Business Administrators",
-                "names": [
-                    "Cathy Wickersham",
-                    "Darla J Barrett"
-                ]
+                "names": ["Cathy Wickersham", "Darla J Barrett"]
             },
             {
                 "title": "Business Administrators",
-                "names": [
-                    "Shae M. Flanigan (C2S Technologies Inc)"
-                ]
+                "names": ["Shae M. Flanigan (C2S Technologies Inc)"]
             },
             {
                 "title": "Office Managers",
@@ -2530,15 +2218,11 @@
             },
             {
                 "title": "Reception",
-                "names": [
-                    "Chaimae Truving"
-                ]
+                "names": ["Chaimae Truving"]
             },
             {
                 "title": "Data Science & Analytics Lead",
-                "names": [
-                    "Warren Durrett"
-                ]
+                "names": ["Warren Durrett"]
             },
             {
                 "title": "Data Science & Analytics",
@@ -2560,15 +2244,11 @@
             },
             {
                 "title": "Directors of Business Development",
-                "names": [
-                    "Cherie D Lutz"
-                ]
+                "names": ["Cherie D Lutz"]
             },
             {
                 "title": "Directors of Business Planning",
-                "names": [
-                    "Adam Tratt"
-                ]
+                "names": ["Adam Tratt"]
             },
             {
                 "title": "Business Managers",
@@ -2581,16 +2261,11 @@
             },
             {
                 "title": "Business Analysts",
-                "names": [
-                    "Alvin M Chin (Populus Group, LLC)"
-                ]
+                "names": ["Alvin M Chin (Populus Group, LLC)"]
             },
             {
                 "title": "Minecraft Content Coordinators",
-                "names": [
-                    "Adam Martinsson",
-                    "Sara Lempiäinen"
-                ]
+                "names": ["Adam Martinsson", "Sara Lempiäinen"]
             },
             {
                 "title": "Program Manager",
@@ -2603,27 +2278,19 @@
             },
             {
                 "title": "Creative Director",
-                "names": [
-                    "John Hendricks"
-                ]
+                "names": ["John Hendricks"]
             },
             {
                 "title": "Creative Communications Assistant",
-                "names": [
-                    "Emily Richardson"
-                ]
+                "names": ["Emily Richardson"]
             },
             {
                 "title": "Head of Social Media",
-                "names": [
-                    "Amelia Dale"
-                ]
+                "names": ["Amelia Dale"]
             },
             {
                 "title": "Head of Player Operations",
-                "names": [
-                    "Aubrey Norris"
-                ]
+                "names": ["Aubrey Norris"]
             },
             {
                 "title": "Community Manager",
@@ -2677,29 +2344,19 @@
             },
             {
                 "title": "Legal",
-                "names": [
-                    "Christi Davisson"
-                ]
+                "names": ["Christi Davisson"]
             },
             {
                 "title": "Intellectual Property Enforcement Lead",
-                "names": [
-                    "Mathias Andersson",
-                    "Teresa Lee Rodewald"
-                ]
+                "names": ["Mathias Andersson", "Teresa Lee Rodewald"]
             },
             {
                 "title": "Intellectual Property Enforcement Agents",
-                "names": [
-                    "Marcus Forss",
-                    "Matilda Åkerman"
-                ]
+                "names": ["Marcus Forss", "Matilda Åkerman"]
             },
             {
                 "title": "Lead Project Manager",
-                "names": [
-                    "Vera Mirchev"
-                ]
+                "names": ["Vera Mirchev"]
             },
             {
                 "title": "Development Partner: Skybox",
@@ -2781,7 +2438,7 @@
                     "Duarte Maia - Programmer",
                     "Elizabeth Pieters - Co-Op Programmer",
                     "Eric Dahl - Co-Op Programmer",
-                    "Erick Tavares  - Programmer",
+                    "Erick Tavares        - Programmer",
                     "Gupta Bhavesh",
                     "Hugo Burd - Co-Op Programmer",
                     "James Fairweather",
@@ -2809,29 +2466,22 @@
     },
     {
         "section": "Studios Quality Alumni",
-        "titles": [{
+        "titles": [
+            {
                 "title": "Quality Leads",
-                "names": [
-                    "Tony Harlich"
-                ]
+                "names": ["Tony Harlich"]
             },
             {
                 "title": "Quality Engineers",
-                "names": [
-                    "Akshata Trivedi"
-                ]
+                "names": ["Akshata Trivedi"]
             },
             {
                 "title": "Quality Data Analysis & Engineering",
-                "names": [
-                    "Jeff MacDermot"
-                ]
+                "names": ["Jeff MacDermot"]
             },
             {
                 "title": "Quality Analysts",
-                "names": [
-                    "Yi Zhao (Kforce)"
-                ]
+                "names": ["Yi Zhao (Kforce)"]
             },
             {
                 "title": "Poland - Team Leads",
@@ -2843,9 +2493,7 @@
             },
             {
                 "title": "US Team - Software Test Engineering Leads",
-                "names": [
-                    "Chris James (Insight Global, Inc)"
-                ]
+                "names": ["Chris James (Insight Global, Inc)"]
             },
             {
                 "title": "US Team - Software Test Engineers",
@@ -2860,9 +2508,7 @@
             },
             {
                 "title": "US Team - Test Associates",
-                "names": [
-                    "Brian Sears (Experis)"
-                ]
+                "names": ["Brian Sears (Experis)"]
             },
             {
                 "title": "Lionbridge",

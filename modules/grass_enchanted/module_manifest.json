@@ -2,10 +2,6 @@
     "name": "grass_enchanted",
     "type": "resource",
     "description": "草（附魔）",
-    "author": [
-        "MiemieMethod"
-    ],
-    "incompatible_with": [
-        "real_grass"
-    ]
+    "author": ["MiemieMethod"],
+    "incompatible_with": ["real_grass"]
 }

@@ -2,12 +2,8 @@
     "name": "fursuit",
     "type": "resource",
     "description": "奇怪的南瓜？",
-    "author": [
-        "ZH9c418"
-    ],
-    "incompatible_with": [
-        "bagify"
-    ],
+    "author": ["ZH9c418"],
+    "incompatible_with": ["bagify"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

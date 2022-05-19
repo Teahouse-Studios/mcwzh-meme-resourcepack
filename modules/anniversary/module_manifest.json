@@ -2,8 +2,5 @@
     "name": "anniversary",
     "type": "resource",
     "description": "我们两周年啦！",
-    "author": [
-        "Lakejason0",
-        "Dianliang233"
-    ]
+    "author": ["Lakejason0", "Dianliang233"]
 }

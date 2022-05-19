@@ -422,7 +422,6 @@
     "litematica.tool_mode.name.replace_block": "替换方块",
     "litematica.tool_mode.name.schematic_placement": "原理图放置",
 
-
     "addSelectionBox": "addSelectionBox添加选区",
     "Add a new selection box (position 1) here": "在当前位置添加一个新的选区（位置1）",
     "cloneSelection": "cloneSelection克隆选区",

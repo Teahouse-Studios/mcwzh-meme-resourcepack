@@ -1,5 +1,5 @@
 {
-    "Please install the correct resource pack":"§f§l============================§r\n§b§l欢迎使用哐当工艺，数据包版本：§r%s§b§l，亮目害眼包版本：§6§l0.5.4-pre2§r\n§b§l数据包作者：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§l亮目害眼包作者：§r§6§lXe_Kr§r\n§f§l============================§r",
+    "Please install the correct resource pack": "§f§l============================§r\n§b§l欢迎使用哐当工艺，数据包版本：§r%s§b§l，亮目害眼包版本：§6§l0.5.4-pre2§r\n§b§l数据包作者：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§l亮目害眼包作者：§r§6§lXe_Kr§r\n§f§l============================§r",
     "anc.block.magnet_block.name": "钕铁硼",
     "anc.block.magnet_block.lore": "被雷石东激活时可以吸起其正下方（4个方块内）的哐当",
     "anc.block.crafting_machine.name": "合成器",
