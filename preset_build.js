@@ -2,7 +2,7 @@ const { JavaPackBuilder, ModuleParser, Logger } = require('memepack-builder')
 const { writeFileSync, existsSync, mkdirSync } = require('fs')
 const { resolve } = require('path')
 const glob = require('glob')
-const PACK_VERSION = '1.6.1'
+const PACK_VERSION = '1.7.0'
 
 const preset_args = [
   {
