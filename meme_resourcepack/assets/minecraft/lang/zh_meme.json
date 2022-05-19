@@ -4201,7 +4201,7 @@
     "options.on": "打开",
     "options.online.title": "在线选项",
     "options.online": "在线…",
-    "options.onlyShowSecureChat.tooltip": "Only display messages from other players that can be verified to have been sent by that player, and have not been modified.",
+    "options.onlyShowSecureChat.tooltip": "仅显示来自其他玩家并经由验证为该玩家发送且未被修改的唠嗑。",
     "options.onlyShowSecureChat": "仅展示安全的唠嗑",
     "options.particles.all": "我全都要",
     "options.particles.decreased": "少一点",
