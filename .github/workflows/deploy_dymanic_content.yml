@@ -3,12 +3,10 @@ name: Deploy Web Builder Dymanic Content
 on:
   push:
     paths:
-      - 'news.json'
-      - 'alerts.json'
+      - 'dymanic/'
   pull_request:
     paths:
-      - 'news.json'
-      - 'alerts.json'
+      - 'dymanic/'
   workflow_dispatch:
 
 jobs:
@@ -37,5 +35,5 @@ jobs:
           KEY_ID: ${{ secrets.KEY_ID }}
           KEY_SECRET: ${{ secrets.KEY_SECRET }}
           BUCKET: frontend-wdljt
-          LOCAL_PATH: ./dist/
+          LOCAL_PATH: ./dymanic/
           REMOTE_PREFIX: meme/dymanic/
