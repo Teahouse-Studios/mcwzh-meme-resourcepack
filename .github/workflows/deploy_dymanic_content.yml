@@ -26,7 +26,7 @@ jobs:
     environment: production
     if: ${{ github.ref_name == 'master' && !failure() }}
     needs:
-      - tests
+      - check-news
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
