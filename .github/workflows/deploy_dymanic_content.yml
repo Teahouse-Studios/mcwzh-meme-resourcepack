@@ -34,8 +34,8 @@ jobs:
         - uses: actions/checkout@master
         - uses: Teahouse-Studios/aliyun-oss-action@0.7
             with:
-            KEY_ID: ${{ secrets.KEY_ID }}
-            KEY_SECRET: ${{ secrets.KEY_SECRET }}
-            BUCKET: frontend-wdljt
-            LOCAL_PATH: ./dist/
-            REMOTE_PREFIX: meme/dymanic/
+                KEY_ID: ${{ secrets.KEY_ID }}
+                KEY_SECRET: ${{ secrets.KEY_SECRET }}
+                BUCKET: frontend-wdljt
+                LOCAL_PATH: ./dist/
+                REMOTE_PREFIX: meme/dymanic/
