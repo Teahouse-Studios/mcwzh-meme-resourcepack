@@ -24,18 +24,18 @@ jobs:
         with:
           body: |
             您的 `news.json` 或 `alerts.json` 格式出了些问题, 请及时修正
-    deploy:
-      environment: production
-      if: ${{ github.ref_name == 'master' && !failure() }}
-      needs:
-        - test
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@master
-        - uses: Teahouse-Studios/aliyun-oss-action@0.7
-          with:
-            KEY_ID: ${{ secrets.KEY_ID }}
-            KEY_SECRET: ${{ secrets.KEY_SECRET }}
-            BUCKET: frontend-wdljt
-            LOCAL_PATH: ./dist/
-            REMOTE_PREFIX: meme/dymanic/
+  deploy:
+    environment: production
+    if: ${{ github.ref_name == 'master' && !failure() }}
+    needs:
+      - tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: Teahouse-Studios/aliyun-oss-action@0.7
+        with:
+          KEY_ID: ${{ secrets.KEY_ID }}
+          KEY_SECRET: ${{ secrets.KEY_SECRET }}
+          BUCKET: frontend-wdljt
+          LOCAL_PATH: ./dist/
+          REMOTE_PREFIX: meme/dymanic/
