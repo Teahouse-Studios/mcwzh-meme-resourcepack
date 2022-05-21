@@ -1,0 +1,41 @@
+name: Deploy Web Builder Dymanic Content
+
+on:
+  push:
+    paths:
+      - 'news.json'
+      - 'alerts.json'
+  pull_request:
+    paths:
+      - 'news.json'
+      - 'alerts.json'
+  workflow_dispatch:
+
+jobs:
+  check-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: node check_news.js
+      - name: Create comment
+        uses: peter-evans/commit-comment@v1
+        if: ${{ failure() }}
+        with:
+          body: |
+            您的 `news.json` 或 `alerts.json` 格式出了些问题, 请及时修正
+    deploy:
+      environment: production
+      if: ${{ github.ref_name == 'master' }}
+      needs:
+        - test
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@master
+        - uses: Teahouse-Studios/aliyun-oss-action@0.7
+            with:
+            KEY_ID: ${{ secrets.KEY_ID }}
+            KEY_SECRET: ${{ secrets.KEY_SECRET }}
+            BUCKET: frontend-wdljt
+            LOCAL_PATH: ./dist/
+            REMOTE_PREFIX: meme/dymanic/
