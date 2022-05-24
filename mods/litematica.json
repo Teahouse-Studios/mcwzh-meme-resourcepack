@@ -712,7 +712,7 @@
     "pasteCommandNameSetblock": "pasteCommand粘贴命令块名",
     "The setblock command name to use for the\nPaste schematic feature on servers, when\nusing the command-based paste mode": "在使用基于命令的粘贴模式时，用于服务器上粘贴原理图特性的setblock命令名",
     "pasteIgnoreInventories": "pasteIgnore忽略粘贴库存",
-    "Don't paste inventory contents when pasting a schematic": "粘贴示意图时不要粘贴库存内容\n（大概指箱子内物品）",
+    "Don't paste inventory contents when pasting a schematic": "粘贴示意图时不要粘贴库存内容\n（大概指切斯特内物品）",
     "pasteReplaceBehavior": "pasteReplace粘贴替换模式",
     "The behavior of replacing existing blocks\nin the Paste schematic tool mode": "在粘贴原理图工具模式中替换现有块的方式",
     "pickBlockEnabled": "pickBlock方块抓取启用",
