@@ -2718,7 +2718,7 @@
     "death.attack.stalagmite": "%1$s被石笋橄榄了",
     "death.attack.starve.player": "%1$s在与%2$s战斗时饿死了，丢人！",
     "death.attack.starve": "%1$s饿死了，丢人！",
-    "death.attack.sting.item": "%被%2$s用%3$s弄蜂了",
+    "death.attack.sting.item": "%1$s被%2$s用%3$s弄蜂了",
     "death.attack.sting.player": "%1$s被%2$s弄蜂了",
     "death.attack.sting": "%1$s蜂了",
     "death.attack.sweetBerryBush.player": "%1$s在试图逃离%2$s时被甜莓丛刺死了",
