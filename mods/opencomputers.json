@@ -183,7 +183,7 @@
     "oc:gui.Drive.Managed": "受管理",
     "oc:gui.Drive.Unmanaged": "不受管理",
     "oc:gui.Drive.ReadOnlyLock": "只读锁定",
-    "oc:gui.Drive.ReadOnlyLockWarning": "§l只读§r锁定.除非抹掉该磁盘,否则无法关闭.",
+    "oc:gui.Drive.ReadOnlyLockWarning": "§l只读§r锁定.除非抹掉该磁盘,否则无法关掉.",
     "oc:gui.Drive.Warning": "§l警告§r：切换模式将会导致当前磁盘上所有数据丢失!",
     "oc:gui.Error.ComponentOverflow": "过多的组件插♂入了计算机。",
     "oc:gui.Error.InternalError": "外币错误，请不要检查日志文件。这可能不是个Bug。",
