@@ -231,5 +231,5 @@
     "mco.upload.size.failure.line1": "\"%s\"太大了！",
     "mco.upload.size.failure.line2": "你想上传%s的地图，超过了%s的限制。",
     "mco.upload.uploading": "正在上传 '%s'",
-    "mco.upload.verifying": "正在验证你的地图",
+    "mco.upload.verifying": "正在验证你的地图"
 }
