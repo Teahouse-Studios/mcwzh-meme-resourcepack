@@ -1549,7 +1549,7 @@
     "item.create.sand_paper.tooltip.behaviour1": "打磨_副手_上或者_准心所指_的物品。",
 
     "item.create.builders_tea.tooltip": "建造工茶饮",
-    "item.create.builders_tea.tooltip.summary": "饮下这杯完美茶饮，开启神清气爽的一天。可以恢复_饥饿值_并获得_急迫_效果。",
+    "item.create.builders_tea.tooltip.summary": "饮下这杯完美茶饮，打开神清气爽的一天。可以恢复_饥饿值_并获得_急迫_效果。",
 
     "item.create.refined_radiance.tooltip": "光辉石",
     "item.create.refined_radiance.tooltip.summary": "一种用_光辉_锻造的化合物材料。",
@@ -1935,7 +1935,7 @@
     "create.ponder.fluid_tank_sizes.text_1": "流体储罐可以多格连接，提供更大的存储量",
     "create.ponder.fluid_tank_sizes.text_2": "流体储罐最大横截面为 3x3...",
     "create.ponder.fluid_tank_sizes.text_3": "...并且可以超过 30 格高",
-    "create.ponder.fluid_tank_sizes.text_4": "使用扳手可以打开或关闭观察窗",
+    "create.ponder.fluid_tank_sizes.text_4": "使用扳手可以打开或关掉观察窗",
 
     "create.ponder.fluid_tank_storage.header": "使用流体储罐存储流体",
     "create.ponder.fluid_tank_storage.text_1": "流体储罐可以存储大量的流体",
@@ -2121,7 +2121,7 @@
     "create.ponder.mechanical_crafter.text_5": "动力合成器的运转需要旋转力的供应",
     "create.ponder.mechanical_crafter.text_6": "右击合成器正面，可以手动放入物品",
     "create.ponder.mechanical_crafter.text_7": "一旦合成通路上的所有合成槽位都有了物品，合成就会开始",
-    "create.ponder.mechanical_crafter.text_8": "而对于那些没有完全占满所有合成器槽位的配方，你可以通入雷石东信号强制开启合成",
+    "create.ponder.mechanical_crafter.text_8": "而对于那些没有完全占满所有合成器槽位的配方，你可以通入雷石东信号强制打开合成",
 
     "create.ponder.mechanical_crafter_connect.header": "为合成器连接物品栏",
     "create.ponder.mechanical_crafter_connect.text_1": "合成器可以自动接受向其输入的物品",
@@ -2249,14 +2249,14 @@
 
     "create.ponder.powered_latch.header": "使用锁存器控制信号",
     "create.ponder.powered_latch.text_1": "锁存器是一种可以用雷石东信号控制的控制杆",
-    "create.ponder.powered_latch.text_2": "后方输入的信号会将其设为开启状态",
-    "create.ponder.powered_latch.text_3": "侧边输入的信号会将其设为关闭状态",
+    "create.ponder.powered_latch.text_2": "后方输入的信号会将其设为打开状态",
+    "create.ponder.powered_latch.text_3": "侧边输入的信号会将其设为关掉状态",
     "create.ponder.powered_latch.text_4": "你也可以手动切换其状态",
 
     "create.ponder.powered_toggle_latch.header": "使用转换锁存器控制信号",
     "create.ponder.powered_toggle_latch.text_1": "转换锁存器是一种可以用雷石东信号控制的控制杆",
     "create.ponder.powered_toggle_latch.text_2": "后方信号输入可以改变它的状态",
-    "create.ponder.powered_toggle_latch.text_3": "...开启或者是关闭",
+    "create.ponder.powered_toggle_latch.text_3": "...打开或者是关掉",
     "create.ponder.powered_toggle_latch.text_4": "你也可以手动切换其状态",
 
     "create.ponder.pulse_extender.header": "使用脉冲延长器控制信号",
@@ -2394,7 +2394,7 @@
     "create.ponder.valve_pipe.text_1": "阀门管道可以控制管道网络中流体的蔓延",
     "create.ponder.valve_pipe.text_2": "通过其上的传动杆输入动力可以控制它的开关",
     "create.ponder.valve_pipe.text_3": "提供向“打开”方向的旋转力会打开阀门，使得流体可以通过",
-    "create.ponder.valve_pipe.text_4": "提供另一方向的旋转力可以关闭阀门，阻止流体通过",
+    "create.ponder.valve_pipe.text_4": "提供另一方向的旋转力可以关掉阀门，阻止流体通过",
 
     "create.ponder.water_wheel.header": "使用水车产生旋转力",
     "create.ponder.water_wheel.text_1": "水车利用临近的水流来进行应力发生",

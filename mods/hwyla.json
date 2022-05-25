@@ -31,7 +31,7 @@
     "config.waila.sneaky_details": "潜行详细信息",
     "config.waila.sneaky_details_desc": "潜行显示详细信息",
     "config.waila.display_mode": "显示模式",
-    "config.waila.display_mode_desc": "工具提示显示\n绑定快捷键切换显示\n必须保证开启热键",
+    "config.waila.display_mode_desc": "工具提示显示\n绑定快捷键切换显示\n必须保证打开热键",
     "config.waila.display_mode_toggle": "切换",
     "config.waila.display_mode_hold_key": "保持",
     "config.waila.hide_from_players": "从玩家列表中隐藏",

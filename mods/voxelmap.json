@@ -151,5 +151,5 @@
     "worldmap.multiworld.foundworld1": "检测到新世界",
     "worldmap.multiworld.foundworld2": "如果检测不正确,请在多世界选项中重新选择.",
     "worldmap.multiworld.unknownsubworld": "不认得这个世界! 请在多世界选项中重新选择.",
-    "options.worldmap.multiworld.auto": "自动开启"
+    "options.worldmap.multiworld.auto": "自动打开"
 }
