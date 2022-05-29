@@ -1,0 +1,16 @@
+{
+    "name": "reverse_cake_texture",
+    "type": "resource",
+    "description": "上面放三个小麦，下面放三个牛奶...（模型适配版）",
+    "author": ["DoroWolf"],
+    "incompatible_with": [
+        "anniversary",
+        "reverse_cake_texture"
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
