@@ -3,7 +3,7 @@
     "type": "resource",
     "description": "恰月饼！",
     "author": ["IcyPhantom", "电量量"],
-    "incompatible_with": ["ekac"],
+    "incompatible_with": ["reverse_cake_texture"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

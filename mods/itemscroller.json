@@ -10,7 +10,7 @@
     "itemscroller.gui.title.configs": "快捷滑鼠设置",
 
     "enableCraftingFeatures": "enableCrafting启用制作特性",
-    "Enables scrolling items to and from crafting grids,\nwith a built-in 18 recipe memory.\nHold down the Recipe key to see the stored recipes and\nto change the selection. While holding the Recipe key,\nyou can either scroll or press a number key to change the selection.\nA recipe is stored to the currently selected \"recipe slot\"\n by clicking pick block over a configured crafting output slot.\nThe supported crafting grids must be added to the scrollableCraftingGrids list.": "开启内置共8页每页18种配方的存储，使得物品可以放置到合成表\n按住Recipe（配方）的快捷键查看配方列表，您可以滑动滚轮或使用数字键选择配方\n点击配方可以在工作台完成合成，在放置配方达到待命状态时（不取出合成产物）\n按下设定的storeRecipe（储存配方）快捷键就可以在选定的列表格内进行配方储存（自动覆写）。",
+    "Enables scrolling items to and from crafting grids,\nwith a built-in 18 recipe memory.\nHold down the Recipe key to see the stored recipes and\nto change the selection. While holding the Recipe key,\nyou can either scroll or press a number key to change the selection.\nA recipe is stored to the currently selected \"recipe slot\"\n by clicking pick block over a configured crafting output slot.\nThe supported crafting grids must be added to the scrollableCraftingGrids list.": "打开内置共8页每页18种配方的存储，使得物品可以放置到合成表\n按住Recipe（配方）的快捷键查看配方列表，您可以滑动滚轮或使用数字键选择配方\n点击配方可以在工作台完成合成，在放置配方达到待命状态时（不取出合成产物）\n按下设定的storeRecipe（储存配方）快捷键就可以在选定的列表格内进行配方储存（自动覆写）。",
     "enableDropkeyDropMatching": "enableDropkey批量丢弃",
     "Enables dropping all matching items from the same\ninventory with the hotkey": "使用快捷键从同一库存内丢弃所有匹配物品",
     "enableRightClickCraftingOneStack": "enableRightClick右键制作",
@@ -35,7 +35,7 @@
     "Render a 1.14-style trade list in villager GUIs": "在村民gui中呈现一个1.14风格的交易列表\n（这不是1.16吗？？？？？？）",
 
     "carpetCtrlQCraftingEnabledOnServer": "carpetCtrlQCrafting地毯端CtrlQ启用",
-    "Set to true if the server is running the Carpet mod,\nand has the ctrlQCrafting option enabled.\nThis just changes which method Item Scroller uses\nfor the Drop key + Shift + Right click crafting.": "如果服务器正在运行地毯端则设置为开启，\n这将改变物品滚轮整组丢弃的使用方式\n变为丢弃+Shift+右击丢弃整组",
+    "Set to true if the server is running the Carpet mod,\nand has the ctrlQCrafting option enabled.\nThis just changes which method Item Scroller uses\nfor the Drop key + Shift + Right click crafting.": "如果服务器正在运行地毯端则设置为打开，\n这将改变物品滚轮整组丢弃的使用方式\n变为丢弃+Shift+右击丢弃整组",
     "clientCraftingFixOn1.12": "clientCrafting1.12客户端修复",
     "Enable updating the crafting recipe output directly on the client side.\nThis fixes the quick/mass crafting and right-click-to-craft-a-stack\nfeatures othrwise being broken in 1.12.": "在客户端直接更新制作配方输出\n这修正了在1.12中快速/批量制造和右键点击制造所产生的不可使用的问题。",
     "craftingRenderRecipeItems": "craftingRenderRecipeItems配方显示",
@@ -60,7 +60,7 @@
     "dropAllMatching": "dropAll全部丢弃",
     "Drop all stacks identical to the hovered stack": "丢弃所有鼠标指针指向的物品",
     "mainToggle": "mainToggle主开关",
-    "Toggle all functionality ON/OFF": "开启/关闭所有功能，\n§4似乎是个摆设——ZMDF§r",
+    "Toggle all functionality ON/OFF": "打开/关掉所有功能，\n§4似乎是个摆设——ZMDF§r",
     "massCraft": "massCraft全部合成抛出",
     "Mass craft and throw out the results with the\ncurrently selected recipe as long as this\nkeybind is held down": "批量制作当前选择的配方物品并将它们丢出，\n只要你按住快捷键\n（§6做一个快乐的人体喷泉——ZMDF§r）",
     "moveCraftResults": "moveCraft工作台放置",

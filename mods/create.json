@@ -1,18 +1,4 @@
 {
-    "__metadata": [
-        {
-            "create": {
-                "licensing": {
-                    "SPDX-License-Identifier": "MIT",
-                    "SPDX-URL": "https://spdx.org/licenses/MIT.html",
-                    "custom-URL": null,
-                    "origin": "https://github.com/Creators-of-Create/Create/blob/mc1.18/dev/src/generated/resources/assets/create/lang/unfinished/zh_cn.json",
-                    "author": "simibubi"
-                }
-            }
-        }
-    ],
-
     "block.create.acacia_window": "相思木窗户",
     "block.create.acacia_window_pane": "相思木窗户板",
     "block.create.adjustable_chain_gearshift": "可调节链式传动箱",
@@ -147,14 +133,14 @@
     "block.create.cut_granite_slab": "使用了切割工艺进行加工的花岗岩台阶",
     "block.create.cut_granite_stairs": "使用了切割工艺进行加工的花岗岩楼梯",
     "block.create.cut_granite_wall": "使用了切割工艺进行加工的花岗岩墙",
-    "block.create.cut_limestone": "使用了切割工艺进行加工的酸橙岩",
-    "block.create.cut_limestone_brick_slab": "使用了切割工艺进行加工的酸橙岩砖块台阶",
-    "block.create.cut_limestone_brick_stairs": "使用了切割工艺进行加工的酸橙岩砖块楼梯",
-    "block.create.cut_limestone_brick_wall": "使用了切割工艺进行加工的酸橙岩砖块墙",
-    "block.create.cut_limestone_bricks": "使用了切割工艺进行加工的酸橙岩砖块",
-    "block.create.cut_limestone_slab": "使用了切割工艺进行加工的酸橙岩台阶",
-    "block.create.cut_limestone_stairs": "使用了切割工艺进行加工的酸橙岩楼梯",
-    "block.create.cut_limestone_wall": "使用了切割工艺进行加工的酸橙岩墙",
+    "block.create.cut_limestone": "使用了切割工艺进行加工的石灰岩",
+    "block.create.cut_limestone_brick_slab": "使用了切割工艺进行加工的石灰岩砖块台阶",
+    "block.create.cut_limestone_brick_stairs": "使用了切割工艺进行加工的石灰岩砖块楼梯",
+    "block.create.cut_limestone_brick_wall": "使用了切割工艺进行加工的石灰岩砖块墙",
+    "block.create.cut_limestone_bricks": "使用了切割工艺进行加工的石灰岩砖块",
+    "block.create.cut_limestone_slab": "使用了切割工艺进行加工的石灰岩台阶",
+    "block.create.cut_limestone_stairs": "使用了切割工艺进行加工的石灰岩楼梯",
+    "block.create.cut_limestone_wall": "使用了切割工艺进行加工的石灰岩墙",
     "block.create.cut_ochrum": "使用了切割工艺进行加工的赭金砂",
     "block.create.cut_ochrum_brick_slab": "使用了切割工艺进行加工的赭金砂砖块台阶",
     "block.create.cut_ochrum_brick_stairs": "使用了切割工艺进行加工的赭金砂砖块楼梯",
@@ -200,10 +186,10 @@
     "block.create.cyan_seat": "青色坐垫",
     "block.create.cyan_toolbox": "青色工具箱",
     "block.create.cyan_valve_handle": "青色阀门手轮",
-    "block.create.dark_oak_window": "深色橡木窗户",
-    "block.create.dark_oak_window_pane": "深色橡木窗户板",
+    "block.create.dark_oak_window": "巧克力窗户",
+    "block.create.dark_oak_window_pane": "巧克力窗户板",
     "block.create.deepslate_pillar": "深♂石柱",
-    "block.create.deepslate_zinc_ore": "深层锌矿石",
+    "block.create.deepslate_zinc_ore": "深♂锌矿石",
     "block.create.deployer": "机械手",
     "block.create.depot": "置物台",
     "block.create.diorite_pillar": "DIO岩柱",
@@ -259,7 +245,7 @@
     "block.create.layered_diorite": "层叠DIO岩",
     "block.create.layered_dripstone": "层叠滴水石",
     "block.create.layered_granite": "层叠花岗岩",
-    "block.create.layered_limestone": "层叠酸橙岩",
+    "block.create.layered_limestone": "层叠石灰岩",
     "block.create.layered_ochrum": "层叠赭金砂",
     "block.create.layered_scorchia": "层叠焦黑熔渣",
     "block.create.layered_scoria": "层叠熔渣",
@@ -281,8 +267,8 @@
     "block.create.lime_seat": "酸橙色坐垫",
     "block.create.lime_toolbox": "酸橙色工具箱",
     "block.create.lime_valve_handle": "酸橙色阀门手轮",
-    "block.create.limestone": "酸橙岩",
-    "block.create.limestone_pillar": "酸橙岩柱",
+    "block.create.limestone": "石灰岩",
+    "block.create.limestone_pillar": "石灰岩柱",
     "block.create.linear_chassis": "机壳底盘",
     "block.create.lit_blaze_burner": "棒子人燃烧室（已点燃）",
     "block.create.magenta_nixie_tube": "品红色辉光管",
@@ -363,10 +349,10 @@
     "block.create.polished_cut_granite_slab": "使用了打磨工艺进行加工的使用了切割工艺进行加工的花岗岩台阶",
     "block.create.polished_cut_granite_stairs": "使用了打磨工艺进行加工的使用了切割工艺进行加工的花岗岩楼梯",
     "block.create.polished_cut_granite_wall": "使用了打磨工艺进行加工的使用了切割工艺进行加工的花岗岩墙",
-    "block.create.polished_cut_limestone": "使用了打磨工艺进行加工的使用了切割工艺进行加工的酸橙岩",
-    "block.create.polished_cut_limestone_slab": "使用了打磨工艺进行加工的使用了切割工艺进行加工的酸橙岩台阶",
-    "block.create.polished_cut_limestone_stairs": "使用了打磨工艺进行加工的使用了切割工艺进行加工的酸橙岩楼梯",
-    "block.create.polished_cut_limestone_wall": "使用了打磨工艺进行加工的使用了切割工艺进行加工的酸橙岩墙",
+    "block.create.polished_cut_limestone": "使用了打磨工艺进行加工的使用了切割工艺进行加工的石灰岩",
+    "block.create.polished_cut_limestone_slab": "使用了打磨工艺进行加工的使用了切割工艺进行加工的石灰岩台阶",
+    "block.create.polished_cut_limestone_stairs": "使用了打磨工艺进行加工的使用了切割工艺进行加工的石灰岩楼梯",
+    "block.create.polished_cut_limestone_wall": "使用了打磨工艺进行加工的使用了切割工艺进行加工的石灰岩墙",
     "block.create.polished_cut_ochrum": "使用了打磨工艺进行加工的使用了切割工艺进行加工的赭金砂",
     "block.create.polished_cut_ochrum_slab": "使用了打磨工艺进行加工的使用了切割工艺进行加工的赭金砂台阶",
     "block.create.polished_cut_ochrum_stairs": "使用了打磨工艺进行加工的使用了切割工艺进行加工的赭金砂楼梯",
@@ -455,10 +441,10 @@
     "block.create.small_granite_brick_stairs": "花岗岩小砖块楼梯",
     "block.create.small_granite_brick_wall": "花岗岩小砖块墙",
     "block.create.small_granite_bricks": "花岗岩小砖块",
-    "block.create.small_limestone_brick_slab": "酸橙岩小砖块台阶",
-    "block.create.small_limestone_brick_stairs": "酸橙岩小砖块楼梯",
-    "block.create.small_limestone_brick_wall": "酸橙岩小砖块墙",
-    "block.create.small_limestone_bricks": "酸橙岩小砖块",
+    "block.create.small_limestone_brick_slab": "石灰岩小砖块台阶",
+    "block.create.small_limestone_brick_stairs": "石灰岩小砖块楼梯",
+    "block.create.small_limestone_brick_wall": "石灰岩小砖块墙",
+    "block.create.small_limestone_bricks": "石灰岩小砖块",
     "block.create.small_ochrum_brick_slab": "赭金砂小砖块台阶",
     "block.create.small_ochrum_brick_stairs": "赭金砂小砖块楼梯",
     "block.create.small_ochrum_brick_wall": "赭金砂小砖块墙",
@@ -638,7 +624,7 @@
     "item.create.wheat_flour": "小麦粉",
     "item.create.whisk": "搅拌器",
     "item.create.wrench": "扳手",
-    "item.create.zinc_ingot": "锌锭",
+    "item.create.zinc_ingot": "锌元宝",
     "item.create.zinc_nugget": "锌粒",
 
     "advancement.create.root": "欢迎来到机械动力",
@@ -1093,7 +1079,7 @@
     "create.gui.schematicTable.finished": "上传完成！",
     "create.gui.schematicannon.title": "蓝图加农炮",
     "create.gui.schematicannon.listPrinter": "物品清单打印机",
-    "create.gui.schematicannon.gunpowderLevel": "火药%1$s%%",
+    "create.gui.schematicannon.gunpowderLevel": "炮灰%1$s%%",
     "create.gui.schematicannon.shotsRemaining": "燃料余量：%1$s",
     "create.gui.schematicannon.shotsRemainingWithBackup": "燃料储备：%1$s",
     "create.gui.schematicannon.optionEnabled": "当前启用",
@@ -1105,11 +1091,11 @@
     "create.gui.schematicannon.option.replaceWithEmpty": "用空气替换工作区域内的方块",
     "create.gui.schematicannon.option.skipMissing": "跳过缺少的方块",
     "create.gui.schematicannon.option.skipTileEntities": "保护存储方块",
-    "create.gui.schematicannon.slot.gunpowder": "向蓝图加农炮添加火药以提供动力",
+    "create.gui.schematicannon.slot.gunpowder": "向蓝图加农炮添加炮灰以提供动力",
     "create.gui.schematicannon.slot.listPrinter": "在此处放置书以打印蓝图所需的材料清单",
     "create.gui.schematicannon.slot.schematic": "在此处添加你的蓝图，务必确保其已经被部署在了特定位置",
     "create.gui.schematicannon.option.skipMissing.description": "如果缺失材料，蓝图加农炮将忽略当前缺失材料并且使用其他已有材料继续工作",
-    "create.gui.schematicannon.option.skipTileEntities.description": "蓝图将避免更换存储方块，如箱子。",
+    "create.gui.schematicannon.option.skipTileEntities.description": "蓝图将避免更换存储方块，如胸部。",
     "create.gui.schematicannon.option.dontReplaceSolid.description": "蓝图加农炮将不会替换工作范围内的任何固体方块。",
     "create.gui.schematicannon.option.replaceWithSolid.description": "蓝图加农炮会使用所提供的固体方块来替换工作区域内的其他固体方块",
     "create.gui.schematicannon.option.replaceWithAny.description": "蓝图加农炮会使用任何所提供的方块来替换工作区域内的固体方块",
@@ -1121,7 +1107,7 @@
     "create.schematicannon.status.finished": "已完成",
     "create.schematicannon.status.paused": "已暂停",
     "create.schematicannon.status.stopped": "已停止",
-    "create.schematicannon.status.noGunpowder": "火药已耗尽",
+    "create.schematicannon.status.noGunpowder": "炮灰已耗尽",
     "create.schematicannon.status.targetNotLoaded": "目标未被加载",
     "create.schematicannon.status.targetOutsideRange": "目标太远",
     "create.schematicannon.status.searching": "正在搜索",
@@ -1471,7 +1457,7 @@
     "item.create.schematic_and_quill.tooltip.action3": "_重置_并删除选区。",
 
     "block.create.schematicannon.tooltip": "蓝图加农炮",
-    "block.create.schematicannon.tooltip.summary": "发射方块，重新构建已在世界中部署的_蓝图_，会使用相邻箱子中的物品进行填充，_火药_作为燃料。",
+    "block.create.schematicannon.tooltip.summary": "发射方块，重新构建已在世界中部署的_蓝图_，会使用相邻胸部中的物品进行填充，_炮灰_作为燃料。",
     "block.create.schematicannon.tooltip.condition1": "当右击时",
     "block.create.schematicannon.tooltip.behaviour1": "打开_界面_",
 
@@ -1549,7 +1535,7 @@
     "item.create.sand_paper.tooltip.behaviour1": "打磨_副手_上或者_准心所指_的物品。",
 
     "item.create.builders_tea.tooltip": "建造工茶饮",
-    "item.create.builders_tea.tooltip.summary": "饮下这杯完美茶饮，开启神清气爽的一天。可以恢复_饥饿值_并获得_急迫_效果。",
+    "item.create.builders_tea.tooltip.summary": "饮下这杯完美茶饮，打开神清气爽的一天。可以恢复_饥饿值_并获得_急迫_效果。",
 
     "item.create.refined_radiance.tooltip": "光辉石",
     "item.create.refined_radiance.tooltip.summary": "一种用_光辉_锻造的化合物材料。",
@@ -1935,7 +1921,7 @@
     "create.ponder.fluid_tank_sizes.text_1": "流体储罐可以多格连接，提供更大的存储量",
     "create.ponder.fluid_tank_sizes.text_2": "流体储罐最大横截面为 3x3...",
     "create.ponder.fluid_tank_sizes.text_3": "...并且可以超过 30 格高",
-    "create.ponder.fluid_tank_sizes.text_4": "使用扳手可以打开或关闭观察窗",
+    "create.ponder.fluid_tank_sizes.text_4": "使用扳手可以打开或关掉观察窗",
 
     "create.ponder.fluid_tank_storage.header": "使用流体储罐存储流体",
     "create.ponder.fluid_tank_storage.text_1": "流体储罐可以存储大量的流体",
@@ -2121,7 +2107,7 @@
     "create.ponder.mechanical_crafter.text_5": "动力合成器的运转需要旋转力的供应",
     "create.ponder.mechanical_crafter.text_6": "右击合成器正面，可以手动放入物品",
     "create.ponder.mechanical_crafter.text_7": "一旦合成通路上的所有合成槽位都有了物品，合成就会开始",
-    "create.ponder.mechanical_crafter.text_8": "而对于那些没有完全占满所有合成器槽位的配方，你可以通入雷石东信号强制开启合成",
+    "create.ponder.mechanical_crafter.text_8": "而对于那些没有完全占满所有合成器槽位的配方，你可以通入雷石东信号强制打开合成",
 
     "create.ponder.mechanical_crafter_connect.header": "为合成器连接物品栏",
     "create.ponder.mechanical_crafter_connect.text_1": "合成器可以自动接受向其输入的物品",
@@ -2249,14 +2235,14 @@
 
     "create.ponder.powered_latch.header": "使用锁存器控制信号",
     "create.ponder.powered_latch.text_1": "锁存器是一种可以用雷石东信号控制的控制杆",
-    "create.ponder.powered_latch.text_2": "后方输入的信号会将其设为开启状态",
-    "create.ponder.powered_latch.text_3": "侧边输入的信号会将其设为关闭状态",
+    "create.ponder.powered_latch.text_2": "后方输入的信号会将其设为打开状态",
+    "create.ponder.powered_latch.text_3": "侧边输入的信号会将其设为关掉状态",
     "create.ponder.powered_latch.text_4": "你也可以手动切换其状态",
 
     "create.ponder.powered_toggle_latch.header": "使用转换锁存器控制信号",
     "create.ponder.powered_toggle_latch.text_1": "转换锁存器是一种可以用雷石东信号控制的控制杆",
     "create.ponder.powered_toggle_latch.text_2": "后方信号输入可以改变它的状态",
-    "create.ponder.powered_toggle_latch.text_3": "...开启或者是关闭",
+    "create.ponder.powered_toggle_latch.text_3": "...打开或者是关掉",
     "create.ponder.powered_toggle_latch.text_4": "你也可以手动切换其状态",
 
     "create.ponder.pulse_extender.header": "使用脉冲延长器控制信号",
@@ -2394,7 +2380,7 @@
     "create.ponder.valve_pipe.text_1": "阀门管道可以控制管道网络中流体的蔓延",
     "create.ponder.valve_pipe.text_2": "通过其上的传动杆输入动力可以控制它的开关",
     "create.ponder.valve_pipe.text_3": "提供向“打开”方向的旋转力会打开阀门，使得流体可以通过",
-    "create.ponder.valve_pipe.text_4": "提供另一方向的旋转力可以关闭阀门，阻止流体通过",
+    "create.ponder.valve_pipe.text_4": "提供另一方向的旋转力可以关掉阀门，阻止流体通过",
 
     "create.ponder.water_wheel.header": "使用水车产生旋转力",
     "create.ponder.water_wheel.text_1": "水车利用临近的水流来进行应力发生",
@@ -2435,7 +2421,5 @@
     "create.ponder.windmill_source.text_6": "任何时候右击轴承，都可以将其停止，这样方便于你修改风车的结构",
 
     "create.ponder.windmill_structure.header": "风车装置",
-    "create.ponder.windmill_structure.text_1": "任何有至少 8 个风帆方块的结构，都被视为一个有效的风车",
-
-    "_": "Thank you for translating Create!"
+    "create.ponder.windmill_structure.text_1": "任何有至少 8 个风帆方块的结构，都被视为一个有效的风车"
 }
