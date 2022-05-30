@@ -1,12 +1,12 @@
-name: Deploy Web Builder Dymanic Content
+name: Deploy Web Builder dynamic Content
 
 on:
   push:
     paths:
-      - 'dymanic/'
+      - 'dynamic/'
   pull_request:
     paths:
-      - 'dymanic/'
+      - 'dynamic/'
   workflow_dispatch:
 
 jobs:
@@ -35,5 +35,5 @@ jobs:
           KEY_ID: ${{ secrets.KEY_ID }}
           KEY_SECRET: ${{ secrets.KEY_SECRET }}
           BUCKET: frontend-wdljt
-          LOCAL_PATH: ./dymanic/
-          REMOTE_PREFIX: meme/dymanic/
+          LOCAL_PATH: ./dynamic/
+          REMOTE_PREFIX: meme/dynamic/
