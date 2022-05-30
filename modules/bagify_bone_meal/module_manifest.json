@@ -3,5 +3,5 @@
     "type": "resource",
     "description": "从原模块分离以处理骨粉冲突问题",
     "author": ["DoroWolf"],
-    "incompatible_with": ["jinkela"],
+    "incompatible_with": ["jinkela"]
 }
