@@ -1,7 +1,7 @@
 {
-    "id": 16,
-    "title": "梗体中文网易版已更新至 1.18 版本",
+    "id": 17,
+    "title": "梗体中文 1.7.1 发布",
     "image": "https://fastly.jsdelivr.net/gh/Teahouse-Studios/mcwzh-meme-resourcepack/materials/banner_new.png",
-    "content": "<p>梗体中文现已支持网易我的世界 1.18 版本，本次更新仅针对Java版，基岩版尚无改动。<p>这些内容可前往在线构建中选择“choice_modules_netease”模块集合进行构建，以达到与网易版相同的效果！",
-    "detail": "https://t.bilibili.com/659348407053189176"
+    "content": "<p>全新梗中版本！<p>梗体中文现已正式支持1.19！<p>Java版与基岩版同时更新！<p>还在等什么？快快点击网页构建的构建按钮！ ",
+    "detail": "https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases/tag/v1.7.1"
 }
