@@ -2,11 +2,18 @@
 
 [![GitHub issues](https://img.shields.io/github/issues/Teahouse-Studios/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/Teahouse-Studios/mcwzh-meme-resourcepack?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/pulls)    [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY-SA%204.0&color=db2331&style=flat-square&logo=creative%20commons)](https://creativecommons.org/licenses/by-sa/4.0/)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Teahouse-Studios/mcwzh-meme-resourcepack?label=latest%20version&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.12.2%2B&color=db2331&style=flat-square&logo=)](https://minecraft.net)
 
-[![Banner](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/blob/master/materials/zh_meme_banner.png?raw=true)](https://www.mcbbs.net/thread-1004643-1-1.html)
-
 此资源包仅适用于**Minecraft Java版**。**关于适用于Minecraft基岩版的资源包，参见[基岩版梗体中文](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock)。**
 
 **注：若发现可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:译名标准化)。**
+
+[![Banner](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/blob/master/materials/zh_meme_banner.png?raw=true)](https://www.mcbbs.net/thread-1004643-1-1.html)
+
+## 赞助者
+<p align="center">
+  <a href="https://afdian.net/@teahouse">
+    <img src='https://fe.wd-ljt.com/m3me/sP0ns0r5/sP0ns0r5.svg'>
+  </a>
+</p>
 
 ## 作用
 
