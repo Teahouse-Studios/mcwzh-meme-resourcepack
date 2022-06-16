@@ -4722,6 +4722,8 @@
     "subtitles.block.sculk_sensor.clicking_stop": "幽（yóu）匿分贝仪:停止察觉",
     "subtitles.block.sculk_sensor.clicking": "幽（yóu）匿分贝仪：察觉",
     "subtitles.block.sculk_shrieker.shriek": "幽（yóu）匿尖叫体：危",
+    "subtitles.block.sculk.charge": "幽（yóu）匿：冒泡",
+    "subtitles.block.sculk.spread": "幽（yóu）匿：蔓延",
     "subtitles.block.shulker_box.close": "傻瓜盒子：关掉",
     "subtitles.block.shulker_box.open": "傻瓜盒子：打开",
     "subtitles.block.smithing_table.use": "锤子台：使用",
