@@ -17,7 +17,6 @@
 	"chicken_soup",
         "disco_ball",
         "dorowolf_texture",
-        "reverse_cake_texture",
         "famous_scene",
         "firework_sound",
         "glyph_sizes_fix",
@@ -30,6 +29,7 @@
         "observer_think",
         "open_close_sound",
         "questioning_totem",
+        "reverse_cake_texture",
         "sculk_sound",
         "vulpes_ferrilata"
     ]
