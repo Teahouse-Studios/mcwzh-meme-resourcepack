@@ -24,6 +24,7 @@ fursuit  # soft conflict with bagify, jinkela
 bee_pickaxe  # soft conflict with bee_pickaxe, fake_multitool
 locusazzurro  # soft conflict with fake_multitool, locusazzurro
 fake_multitool  # soft conflict with bee_pickaxe, locusazzurro
+
 april_fools_snapshots
 baguette
 block_animation_reverse
@@ -39,20 +40,22 @@ mopemope
 observer_think
 rainbow_enchanting
 strange_meme_background
-trident_model
 vulpes_ferrilata
+
 author_zombies
-BUGJUMP
+bugjump
 red_leaf_valley
+
 annoying_sounds
 bell_sound
 firework_sound
 goat_horn_sound
 open_close_sound
 sculk_sound
+
 mcbbs
 meme_splashes
-technical_fix
+
 lang_combat_test_6
 lang_enchantment_level_extend
 lang_extra_strings
@@ -71,12 +74,14 @@ lang_multiplayer_1.12.2-1.16.3
 lang_backupworld_1.12.2-1.16.5
 lang_grass_path_1.12.2-1.16.5
 lang_replaceitem_1.12.2-1.16.5
-lang_selectworld_gui_1.16.2-1.16.5
 lang_sleep_impossible_1.12.2-1.16.5
 lang_worldborder_1.12.2-1.16.5
+lang_selectworld_gui_1.16.2-1.16.5
 lang_old_biomes_1.12.2-1.17.1
 lang_world_generation_1.12.2-1.18.2
+
 lang_sfw
 lang_sfc
+
 latiao
 jinkela  # soft conflict with bagify, fursuit
