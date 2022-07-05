@@ -1,3 +1,10 @@
+# READ THIS BEFORE MAKING CHANGES!
+# Hash (#) marks a comment which will be ignored.
+# Empty lines are ignored.
+# Spaces are trimmed from the start and end of the line.
+# The list applies from top to bottom.
+# Modules not specified in this list will be applied last.
+
 a_letter  # hard conflict with a_piece_of_seriousness
 a_piece_of_seriousness  # hard conflict with a_letter
 grass_enchanted  # hard conflict with real_grass
