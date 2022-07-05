@@ -5,25 +5,26 @@
 # The list applies from top to bottom.
 # Modules not specified in this list will be applied last.
 
-a_letter  # hard conflict with a_piece_of_seriousness
-a_piece_of_seriousness  # hard conflict with a_letter
-grass_enchanted  # hard conflict with real_grass
-real_grass  # hard conflict with grass_enchanted
-anniversary  # hard conflict with reverse_cake_model
-reverse_cake_model  # hard conflict with anniversary, reverse_cake_texture
-mooncake  # hard conflict with reverse_cake_texture
-reverse_cake_texture  # hard conflict with mooncake, reverse_cake_model
-famous_scene  # hard conflict with linus_minecraft_craps
-linus_minecraft_craps  # hard conflict with famous_scene
-questioning_totem  # hard conflict with totem_model
-totem_model  # hard conflict with questioning_totem
-enable_compliancies  # hard conflict with too_much_compliancies
-too_much_compliancies  # hard conflict with enable_compliancies
-bagify  # soft conflict with fursuit, jinkela
-fursuit  # soft conflict with bagify, jinkela
-bee_pickaxe  # soft conflict with bee_pickaxe, fake_multitool
-locusazzurro  # soft conflict with fake_multitool, locusazzurro
-fake_multitool  # soft conflict with bee_pickaxe, locusazzurro
+a_letter  # conflict with a_piece_of_seriousness
+a_piece_of_seriousness  # conflict with a_letter
+grass_enchanted  # conflict with real_grass
+real_grass  # conflict with grass_enchanted
+anniversary  # conflict with reverse_cake_model
+reverse_cake_model  # conflict with anniversary, reverse_cake_texture
+mooncake  # conflict with reverse_cake_texture
+reverse_cake_texture  # conflict with mooncake, reverse_cake_model
+famous_scene  # conflict with linus_minecraft_craps
+linus_minecraft_craps  # conflict with famous_scene
+enable_compliancies  # conflict with too_much_compliancies
+too_much_compliancies  # conflict with enable_compliancies
+
+bagify  # incompatible with fursuit, jinkela
+fursuit  # incompatible with bagify, jinkela
+bee_pickaxe  # incompatible with bee_pickaxe, fake_multitool
+locusazzurro  # incompatible with fake_multitool, locusazzurro
+fake_multitool  # incompatible with bee_pickaxe, locusazzurro
+questioning_totem  # incompatible with totem_model
+totem_model  # incompatible with questioning_totem
 
 april_fools_snapshots
 baguette
@@ -84,4 +85,4 @@ lang_sfw
 lang_sfc
 
 latiao
-jinkela  # soft conflict with bagify, fursuit
+jinkela  # incompatible with bagify, fursuit
