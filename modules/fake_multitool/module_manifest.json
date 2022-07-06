@@ -3,7 +3,6 @@
     "type": "resource",
     "description": "工具的用途被模糊。",
     "author": ["siiftun1857"],
-    "incompatible_with": ["bee_pickaxe", "locusazzurro"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

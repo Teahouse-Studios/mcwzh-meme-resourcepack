@@ -1,7 +1,0 @@
-{
-    "name": "bagify_incompatible",
-    "type": "resource",
-    "description": "从原bagify分离以解决兼容性问题",
-    "author": ["DoroWolf"],
-    "incompatible_with": ["jinkela", "fursuit"]
-}

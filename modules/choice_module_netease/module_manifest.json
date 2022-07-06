@@ -3,7 +3,6 @@
     "type": "collection",
     "description": "中国版的预设打包。",
     "author": ["电量量", "ff98sha"],
-    "incompatible_with": ["gameplay_confuser"],
     "contains": [
         "a_piece_of_seriousness",
         "anniversary",

@@ -2,8 +2,7 @@
     "name": "strange_item_modules",
     "type": "collection",
     "description": "奇怪物品模块集合",
-    "author": ["DoroWolf"],
-    "incompatible_with": ["gameplay_confuser"],
+    "author": ["DoroWolf"]
     "contains": [
         "baguette",
         "bee_pickaxe",
