@@ -77,7 +77,7 @@
     "gui.chatSelection.title": "选择要举办的聊天消息",
     "gui.socialInteractions.report": "举办",
     "gui.socialInteractions.tooltip.report.disabled": "无法举办：举办服务不可用",
-    "gui.socialInteractions.tooltip.report": "举办%s",
+    "gui.socialInteractions.tooltip.report": "举办玩家",
     "item.minecraft.bone_meal": "骨灰",
     "lanServer.start": "创造一个局域网世界",
     "lanServer.title": "局域网世界",
