@@ -112,7 +112,7 @@ async function start() {
     resolve(__dirname, './meme_resourcepack'),
     {
       modFiles: glob.sync('./mods/*.json'),
-    }
+    },
   )
 
   if (!existsSync('./builds')) {

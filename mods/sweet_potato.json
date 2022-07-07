@@ -47,7 +47,7 @@
 
     "subtitles.block.sweet_potato.agroforestry_table.finish": "农林台：造福于民",
     "subtitles.block.sweet_potato.grinder.grind": "打粉机：打粉",
-    "subtitles.block.sweet_potato.magic_cube.activate": "米 奇 妙 妙 锅：激活",
+    "subtitles.block.sweet_potato.magic_cube.activate": "米 奇 妙 妙 锅：AWHL",
     "subtitles.block.sweet_potato.magic_cube.deactivate": "米 奇 妙 妙 锅：不行了",
 
     "advancement.husbandry.sweet_potato.get_sweet_potato.title": "艾玛，真香！",
@@ -56,8 +56,8 @@
     "advancement.nether.sweet_potato.get_magic_cube.description": "获得米 奇 妙 妙 锅",
 
     "container.sweet_potato.magic_cube": "米 奇 妙 妙 锅",
-    "container.sweet_potato.seed_updating": "集 日 月 之 精 华",
-    "container.sweet_potato.grinding": "鲜 榨 甜 土 豆",
+    "container.sweet_potato.seed_updating": "集日月之精华",
+    "container.sweet_potato.grinding": "鲜榨甜土豆",
     "container.grinding.ingredientData": "%f 份甜土豆待榨",
 
     "stat.sweet_potato.interact_with_grinder": "调戏打粉机次数",
