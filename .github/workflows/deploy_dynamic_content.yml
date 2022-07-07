@@ -3,10 +3,10 @@ name: Deploy Web Builder dynamic Content
 on:
   push:
     paths:
-      - 'dynamic/'
+      - 'dynamic/**'
   pull_request:
     paths:
-      - 'dynamic/'
+      - 'dynamic/**'
   workflow_dispatch:
 
 jobs:
