@@ -3195,7 +3195,7 @@
     "gui.abuseReport.reason.defamation_impersonation_false_information.description": "有人以利用或误导他人为目的，损害他人名誉、冒充他人或散布虚假信息。",
     "gui.abuseReport.reason.defamation_impersonation_false_information": "诽谤、冒充他人或散布虚假信息",
     "gui.abuseReport.reason.description": "描述：",
-    "gui.abuseReport.reason.harassment_or_bullying.description": "有人羞辱、攻击、霸凌你或其他人。这包括在未经允许的情况下不断尝试联系你或其他人，或发布你或其他人的隐私信息（“开盒”）。",
+    "gui.abuseReport.reason.harassment_or_bullying.description": "有人羞辱、攻击、霸凌你或其他人。这包括在未经允许的情况下不断尝试联系你或其他人，或发布你或其他人的隐私信息。",
     "gui.abuseReport.reason.harassment_or_bullying": "开盒",
     "gui.abuseReport.reason.hate_speech.description": "有人因身份认同（宗教信仰、种族或性取向）攻击你或其他玩家。",
     "gui.abuseReport.reason.hate_speech": "政治不正确",
