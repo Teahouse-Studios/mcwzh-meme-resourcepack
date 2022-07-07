@@ -2,9 +2,7 @@
     "name": "goat_horn_sound",
     "type": "resource",
     "description": "山羊角的音效（音量注意）",
-    "author": [
-        "DoroWolf"
-    ],
+    "author": ["DoroWolf"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

@@ -3,10 +3,7 @@
     "type": "resource",
     "description": "上面放三个小麦，下面放三个牛奶...（纹理适配版）",
     "author": ["DoroWolf"],
-    "incompatible_with": [
-        "mooncake",
-        "reverse_cake_model"
-    ],
+    "incompatible_with": ["mooncake", "reverse_cake_model"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
