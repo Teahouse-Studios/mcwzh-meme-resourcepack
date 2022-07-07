@@ -2,6 +2,5 @@
     "name": "questioning_totem",
     "type": "resource",
     "description": "在？您怎么又死了？",
-    "author": ["DoroWolf"],
-    "incompatible_with": ["totem_model"]
+    "author": ["DoroWolf"]
 }

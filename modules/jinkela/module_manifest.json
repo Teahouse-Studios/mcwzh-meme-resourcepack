@@ -3,7 +3,6 @@
     "type": "resource",
     "description": "阿妹你看，上帝压狗",
     "author": ["DoroWolf"],
-    "incompatible_with": ["bagify_incompatible"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

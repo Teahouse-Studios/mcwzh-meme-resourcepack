@@ -3,7 +3,6 @@
     "type": "resource",
     "description": "鸡，蓝色，聪明，会建筑",
     "author": ["Dianliang233", "LocusAzzurro", "最亮的信标"],
-    "incompatible_with": ["fake_multitool"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
