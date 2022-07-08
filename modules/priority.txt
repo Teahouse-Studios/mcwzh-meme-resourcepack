@@ -60,7 +60,6 @@ meme_splashes
 lang_combat_test_6
 lang_enchantment_level_extend
 lang_extra_strings
-lang_netease
 lang_old_realms_strings
 lang_old_strings
 lang_achievements_1.11-1.11.2
@@ -83,6 +82,7 @@ lang_world_generation_1.12.2-1.18.2
 
 lang_sfw
 lang_sfc
+lang_netease
 
 jinkela  # incompatible with bagify, fursuit
 latiao
