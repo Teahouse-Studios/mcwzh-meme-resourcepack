@@ -5,6 +5,7 @@
     "author": ["梗体中文内容组"],
     "contains": [
         "lang_attributes_1.12.2-1.15.2",
+	"lang_backupworld_1.12.2-1.15.2",
         "lang_extra_strings",
         "lang_grass_path_1.12.2-1.16.5",
         "lang_multiplayer_1.12.2-1.16.3",
