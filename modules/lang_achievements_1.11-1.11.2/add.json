@@ -70,5 +70,6 @@
     "achievement.theEnd.desc": "找到终端",
     "achievement.theEnd2": "结束了。",
     "achievement.theEnd2.desc": "弄死昆图库塔卡提考特苏瓦西拉松",
-    "achievement.unknown": "???"
+    "achievement.unknown": "???",
+    "gui.achievements": "成果"
 }
