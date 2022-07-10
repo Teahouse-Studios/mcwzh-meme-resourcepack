@@ -6,7 +6,8 @@
     "contains": [
         "lang_achievements_1.11-1.11.2",
         "lang_attributes_1.12.2-1.15.2",
-	"lang_backupworld_1.12.2-1.16.5",
+        "lang_backupworld_1.12.2-1.16.5",
+        "lang_commands_1.11-1.12.2",
         "lang_extra_strings",
         "lang_grass_path_1.12.2-1.16.5",
         "lang_multiplayer_1.12.2-1.16.3",

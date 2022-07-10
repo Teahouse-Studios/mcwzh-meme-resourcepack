@@ -1,0 +1,12 @@
+{
+    "name": "lang_commands_1.11-1.12.2",
+    "type": "resource",
+    "description": "1.13之前的成就字符串",
+    "author": ["梗体中文内容组"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
