@@ -36,7 +36,7 @@
     "block.minecraft.polished_deepslate_wall": "使用了打磨工艺进行加工的深石墙",
     "block.minecraft.polished_deepslate": "使用了打磨工艺进行加工的深石",
     "block.minecraft.reinforced_deepslate": "强化深石",
-    "block.minecraft.smoker": "吸尘器",
+    "block.minecraft.smoker": "吸烟者",
     "commands.experience.add.levels.success.multiple": "已给予%2$s名玩家%1$s级经验",
     "commands.experience.add.levels.success.single": "已给予%2$s %1$s级经验",
     "commands.experience.add.points.success.multiple": "已给予%2$s名玩家%1$s点经验",
@@ -47,7 +47,6 @@
     "container.enchant.level.many": "+ %s级经验",
     "container.enchant.level.one": "+ 1级经验",
     "container.enchant.level.requirement": "经验要求：%s",
-    "container.smoker": "吸尘器",
     "death.attack.flyIntoWall.player": "%1$s在试图逃离%2$s时头感受到了牛顿和科里奥利的祝福",
     "death.attack.flyIntoWall": "%1$s的头感受到了牛顿和科里奥利的祝福",
     "death.fell.accident.ladder": "%1$s从七个林昆上摔了下来",
@@ -90,7 +89,6 @@
     "subtitles.block.composter.empty": "堆肥桶：清空",
     "subtitles.block.composter.fill": "堆肥桶：填充",
     "subtitles.block.composter.ready": "堆肥桶：堆肥",
-    "subtitles.block.smoker.smoke": "吸尘器：冒烟",
     "subtitles.entity.experience_orb.pickup": "获得经验",
     "title.multiplayer.lan": "多人游戏（局域网） (末响应)"
 }
