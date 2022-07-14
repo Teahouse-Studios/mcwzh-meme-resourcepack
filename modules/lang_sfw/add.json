@@ -47,6 +47,7 @@
     "container.enchant.level.many": "+ %s级经验",
     "container.enchant.level.one": "+ 1级经验",
     "container.enchant.level.requirement": "经验要求：%s",
+    "container.smoker": "吸尘器",
     "death.attack.flyIntoWall.player": "%1$s在试图逃离%2$s时头感受到了牛顿和科里奥利的祝福",
     "death.attack.flyIntoWall": "%1$s的头感受到了牛顿和科里奥利的祝福",
     "death.fell.accident.ladder": "%1$s从七个林昆上摔了下来",
