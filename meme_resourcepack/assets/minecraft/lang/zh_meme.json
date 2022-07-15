@@ -4210,7 +4210,9 @@
     "options.chat.visibility.system": "仅限命令",
     "options.chat.visibility": "唠嗑",
     "options.chat.width": "宽度",
-    "options.chatPreview.tooltip": "唠嗑预览可以让服务器查看你正在输入的消息并使它们的样式可以被改变。在关掉此选项后你仍然可以使用唠嗑能。",
+    "options.chatPreview.confirm": "发送时",
+    "options.chatPreview.live": "乱改时",
+    "options.chatPreview.tooltip.off": "服务器对你的唠嗑消息进行的所有乱改将不会被预览，且会被标记为不安全。",
     "options.chatPreview": "唠嗑预览",
     "options.chunks": "%s个大块",
     "options.clouds.fancy": "高品质",
@@ -5416,5 +5418,8 @@
     "tutorial.punch_tree.description": "按住%s",
     "tutorial.punch_tree.title": "想致富，先撸树",
     "tutorial.socialInteractions.description": "按%s打开",
-    "tutorial.socialInteractions.title": "选择性失聪"
+    "tutorial.socialInteractions.title": "选择性失聪",
+    
+    "options.chatPreview.tooltip.live": "If a server uses Chat Previews: Any modifications applied to your chat messages by a server will be dynamically sent for previewing as the chat message is typed.",
+    "options.chatPreview.tooltip.confirm": "If a server uses Chat Previews: A chat preview is only generated when attempting to send a message that does not have a preview or is waiting for a preview.\nSending the message requires confirmation."
 }
