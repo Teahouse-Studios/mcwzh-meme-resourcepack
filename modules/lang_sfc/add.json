@@ -521,6 +521,7 @@
     "stat.minecraft.boat_one_cm": "坐方舟移动距离",
     "stat.minecraft.clean_shulker_box": "聪明盒子清洗次数",
     "stat.minecraft.fill_cauldron": "坩锅装水次数",
+    "stat.minecraft.interact_with_blast_furnace": "炼金次数",
     "stat.minecraft.interact_with_smoker": "冒烟次数",
     "stat.minecraft.leave_game": "退游次数",
     "stat.minecraft.mob_kills": "生物击失败数",
