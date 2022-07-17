@@ -5420,6 +5420,6 @@
     "tutorial.socialInteractions.description": "按%s打开",
     "tutorial.socialInteractions.title": "选择性失聪",
     
-    "options.chatPreview.tooltip.live": "If a server uses Chat Previews: Any modifications applied to your chat messages by a server will be dynamically sent for previewing as the chat message is typed.",
-    "options.chatPreview.tooltip.confirm": "If a server uses Chat Previews: A chat preview is only generated when attempting to send a message that does not have a preview or is waiting for a preview.\nSending the message requires confirmation."
+    "options.chatPreview.tooltip.live": "使用聊天预览的服务器会在聊天消息输入的同时，将对你的聊天消息进行的所有修改动态发送至客户端以便预览。",
+    "options.chatPreview.tooltip.confirm": "若服务器使用聊天预览，相应的聊天预览仅会在尝试发送没有预览或等待预览的消息时生成。\n发送消息需要额外确认。"
 }
