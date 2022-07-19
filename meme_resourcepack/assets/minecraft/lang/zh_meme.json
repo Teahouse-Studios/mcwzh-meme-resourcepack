@@ -4212,6 +4212,8 @@
     "options.chat.width": "宽度",
     "options.chatPreview.confirm": "发送时",
     "options.chatPreview.live": "乱改时",
+    "options.chatPreview.tooltip.confirm": "若服务器使用聊天预览，相应的聊天预览仅会在尝试发送没有预览或等待预览的消息时生成。\n发送消息需要额外确认。",
+    "options.chatPreview.tooltip.live": "若服务器使用聊天预览，在聊天消息输入的同时，服务器对聊天消息所做的任何修改都会被动态回传，以便预览。",
     "options.chatPreview.tooltip.off": "服务器对你的唠嗑消息进行的所有乱改将不会被预览，且会被标记为不安全。",
     "options.chatPreview": "唠嗑预览",
     "options.chunks": "%s个大块",
@@ -5418,8 +5420,5 @@
     "tutorial.punch_tree.description": "按住%s",
     "tutorial.punch_tree.title": "想致富，先撸树",
     "tutorial.socialInteractions.description": "按%s打开",
-    "tutorial.socialInteractions.title": "选择性失聪",
-    
-    "options.chatPreview.tooltip.live": "使用聊天预览的服务器会在聊天消息输入的同时，将对你的聊天消息进行的所有修改动态发送至客户端以便预览。",
-    "options.chatPreview.tooltip.confirm": "若服务器使用聊天预览，相应的聊天预览仅会在尝试发送没有预览或等待预览的消息时生成。\n发送消息需要额外确认。"
+    "tutorial.socialInteractions.title": "选择性失聪"
 }
