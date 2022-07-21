@@ -3188,7 +3188,7 @@
     "generator.single_biome_caves": "洞穴",
     "generator.single_biome_floating_islands": "浮岛",
     "gui.abuseReport.error.title": "发送菊♂爆时出现问题",
-    "gui.abuseReport.reason.alcohol_tobacco_drugs.description": "有人教唆他人涉毒或教唆未成年人饮酒。",
+    "gui.abuseReport.reason.alcohol_tobacco_drugs.description": "有人教唆他人涉毒或教唆未成年人吸烟饮酒。",
     "gui.abuseReport.reason.alcohol_tobacco_drugs": "吸毒或饮酒",
     "gui.abuseReport.reason.child_sexual_exploitation_or_abuse.description": "有人谈论或以其他方式宣扬涉及儿童的不当行为。",
     "gui.abuseReport.reason.child_sexual_exploitation_or_abuse": "炼铜",
@@ -3198,7 +3198,7 @@
     "gui.abuseReport.reason.harassment_or_bullying.description": "有人羞辱、攻击、霸凌你或其他人。这包括在未经允许的情况下不断尝试联系你或其他人，或发布你或其他人的隐私信息。",
     "gui.abuseReport.reason.harassment_or_bullying": "开盒",
     "gui.abuseReport.reason.hate_speech.description": "有人因身份认同（宗教信仰、种族或性取向）攻击你或其他玩家。",
-    "gui.abuseReport.reason.hate_speech": "政治不正确",
+    "gui.abuseReport.reason.hate_speech": "仇恨言论",
     "gui.abuseReport.reason.imminent_harm.description": "有人威胁要在现实生活中伤害你或其他人。",
     "gui.abuseReport.reason.imminent_harm": "即将发生的伤害行为 — 真人快打",
     "gui.abuseReport.reason.narration": "%s：%s",
@@ -4211,7 +4211,7 @@
     "options.chat.visibility": "唠嗑",
     "options.chat.width": "宽度",
     "options.chatPreview.confirm": "发送时",
-    "options.chatPreview.live": "乱改时",
+    "options.chatPreview.live": "输入时",
     "options.chatPreview.tooltip.confirm": "若服务器使用聊天预览，相应的聊天预览仅会在尝试发送没有预览或等待预览的消息时生成。\n发送消息需要额外确认。",
     "options.chatPreview.tooltip.live": "若服务器使用聊天预览，在聊天消息输入的同时，服务器对聊天消息所做的任何修改都会被动态回传，以便预览。",
     "options.chatPreview.tooltip.off": "服务器对你的唠嗑消息进行的所有乱改将不会被预览，且会被标记为不安全。",
@@ -5420,5 +5420,11 @@
     "tutorial.punch_tree.description": "按住%s",
     "tutorial.punch_tree.title": "想致富，先撸树",
     "tutorial.socialInteractions.description": "按%s打开",
-    "tutorial.socialInteractions.title": "选择性失聪"
+    "tutorial.socialInteractions.title": "选择性失聪",
+
+    "gui.abuseReport.reason.false_reporting": "虚假菊♂爆",
+    "gui.chatReport.send.comments_too_long": "小作文字数太多了",
+    "gui.chatReport.send.too_many_messages": "菊♂爆的消息太多了",
+    "multiplayer.unsecureserver.toast.title": "无法验证唠嗑消息",
+    "multiplayer.unsecureserver.toast": "该服务器上发送的消息可能会被乱改，无法反映原始内容"
 }

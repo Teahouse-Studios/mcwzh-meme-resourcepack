@@ -90,5 +90,8 @@
     "subtitles.block.composter.fill": "堆肥桶：填充",
     "subtitles.block.composter.ready": "堆肥桶：堆肥",
     "subtitles.entity.experience_orb.pickup": "获得经验",
-    "title.multiplayer.lan": "多人游戏（局域网） (末响应)"
+    "title.multiplayer.lan": "多人游戏（局域网） (末响应)",
+
+    "gui.abuseReport.reason.false_reporting": "虚假举办",
+    "gui.chatReport.send.too_many_messages": "举办的消息太多了"
 }

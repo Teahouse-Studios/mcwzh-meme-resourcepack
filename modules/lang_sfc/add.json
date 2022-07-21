@@ -362,6 +362,7 @@
     "gamerule.mobGriefing": "允许生物搞破坏",
     "gamerule.spawnRadius": "失败去活来点半径",
     "gamerule.universalAnger.description": "愤怒的中立型生物将攻击附近的所有玩家，而不限于激怒它们的玩家。推荐禁用“原谅 失败者”以达到最佳buff。",
+    "gui.abuseReport.reason.harassment_or_bullying": "骚扰或霸凌",
     "gui.abuseReport.reason.imminent_harm": "即将发生的伤害行为 — 威胁伤害他人",
     "gui.abuseReport.reason.self_harm_or_suicide.description": "有人威胁要自伤或谈论现实生活中的自伤行为。",
     "gui.abuseReport.reason.self_harm_or_suicide": "即将发生的伤害行为 — 自伤或自失败",
