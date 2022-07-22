@@ -51,6 +51,7 @@
     "death.attack.flyIntoWall": "%1$s的头感受到了牛顿和科里奥利的祝福",
     "death.fell.accident.ladder": "%1$s从七个林昆上摔了下来",
     "gui.abuseReport.error.title": "发送举办时出现问题",
+    "gui.abuseReport.reason.false_reporting": "不实举办",
     "gui.abuseReport.reason.title": "选择举办类型",
     "gui.abuseReport.send.error_message": "发送举办时返回了错误：“%s”",
     "gui.abuseReport.send.generic_error": "发送举办时遇到意外错误。",
@@ -72,6 +73,7 @@
     "gui.chatReport.selected_chat": "已选择%s条要举办的唠嗑消息",
     "gui.chatReport.send.no_reason": "请选择举办类型",
     "gui.chatReport.send.no_reported_messages": "请选择至少一条要举办的唠嗑消息",
+    "gui.chatReport.send.too_many_messages": "举办的消息太多了",
     "gui.chatReport.send": "发送举办",
     "gui.chatReport.title": "举办唠嗑",
     "gui.chatSelection.title": "选择要举办的聊天消息",
@@ -90,8 +92,5 @@
     "subtitles.block.composter.fill": "堆肥桶：填充",
     "subtitles.block.composter.ready": "堆肥桶：堆肥",
     "subtitles.entity.experience_orb.pickup": "获得经验",
-    "title.multiplayer.lan": "多人游戏（局域网） (末响应)",
-
-    "gui.abuseReport.reason.false_reporting": "虚假举办",
-    "gui.chatReport.send.too_many_messages": "举办的消息太多了"
+    "title.multiplayer.lan": "多人游戏（局域网） (末响应)"
 }

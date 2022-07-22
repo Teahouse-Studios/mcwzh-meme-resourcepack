@@ -3195,6 +3195,7 @@
     "gui.abuseReport.reason.defamation_impersonation_false_information.description": "有人以利用或误导他人为目的，损害他人名誉、冒充他人或散布虚假信息。",
     "gui.abuseReport.reason.defamation_impersonation_false_information": "诽谤、冒充他人或散布虚假信息",
     "gui.abuseReport.reason.description": "描述：",
+    "gui.abuseReport.reason.false_reporting": "不实菊♂爆",
     "gui.abuseReport.reason.harassment_or_bullying.description": "有人羞辱、攻击、霸凌你或其他人。这包括在未经允许的情况下不断尝试联系你或其他人，或发布你或其他人的隐私信息。",
     "gui.abuseReport.reason.harassment_or_bullying": "开盒",
     "gui.abuseReport.reason.hate_speech.description": "有人因身份认同（宗教信仰、种族或性取向）攻击你或其他玩家。",
@@ -3244,8 +3245,10 @@
     "gui.chatReport.select_chat": "选择要菊♂爆的唠嗑消息",
     "gui.chatReport.select_reason": "选择菊♂爆类型",
     "gui.chatReport.selected_chat": "已选择%s条要菊♂爆的唠嗑消息",
+    "gui.chatReport.send.comments_too_long": "小作文字数太多了",
     "gui.chatReport.send.no_reason": "请选择菊♂爆类型",
     "gui.chatReport.send.no_reported_messages": "请选择至少一条要菊♂爆的唠嗑消息",
+    "gui.chatReport.send.too_many_messages": "菊♂爆的消息太多了",
     "gui.chatReport.send": "发送菊♂爆",
     "gui.chatReport.title": "菊♂爆唠嗑",
     "gui.chatSelection.context": "所选唠嗑前后的部分消息将会用于提供额外的辅助信息",
@@ -4114,6 +4117,8 @@
     "multiplayer.texturePrompt.line2": "你想要自动下载和安装它吗？",
     "multiplayer.texturePrompt.serverPrompt": "%s\n\n来自服务器的温馨提示：\n%s",
     "multiplayer.title": "多人游戏",
+    "multiplayer.unsecureserver.toast.title": "无法验证唠嗑消息",
+    "multiplayer.unsecureserver.toast": "该服务器上发送的消息可能会被乱改，无法反映原始内容",
     "multiplayerWarning.check": "别管我！",
     "multiplayerWarning.header": "警告：你可能正在接触在线放毒",
     "multiplayerWarning.message": "在线游戏由第三π对服务器提供，它们不由Bugjump Studios或Macrohard拥有、运营和监督。在线游戏的过程中，你可能会接受到不受【数据删除】的唠嗑消息或者其他类型的UGC，甚至会被 动 长 大（意味深）（但是你莫得选择）。It's up to you.",
@@ -5420,11 +5425,5 @@
     "tutorial.punch_tree.description": "按住%s",
     "tutorial.punch_tree.title": "想致富，先撸树",
     "tutorial.socialInteractions.description": "按%s打开",
-    "tutorial.socialInteractions.title": "选择性失聪",
-
-    "gui.abuseReport.reason.false_reporting": "虚假菊♂爆",
-    "gui.chatReport.send.comments_too_long": "小作文字数太多了",
-    "gui.chatReport.send.too_many_messages": "菊♂爆的消息太多了",
-    "multiplayer.unsecureserver.toast.title": "无法验证唠嗑消息",
-    "multiplayer.unsecureserver.toast": "该服务器上发送的消息可能会被乱改，无法反映原始内容"
+    "tutorial.socialInteractions.title": "选择性失聪"
 }
