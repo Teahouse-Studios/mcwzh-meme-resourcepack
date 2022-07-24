@@ -1,0 +1,7 @@
+{
+    "name": "real_grass",
+    "type": "resource",
+    "description": "大草",
+    "author": ["Zh9c418"],
+    "incompatible_with": ["grass_enchanted"]
+}
