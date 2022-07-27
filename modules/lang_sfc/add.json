@@ -296,6 +296,7 @@
     "demo.help.title": "Minecraft白干好事模式",
     "demo.remainingTime": "剩余白干好事时间：%s",
     "demo.reminder": "白干好事时间已经结束，请剁手来继续或开始一个新的世界！",
+    "disconnect.loginFailedInfo.insufficientPrivileges": "多人游戏已被禁用，请检查你的Microsoft账户设置。",
     "effect.minecraft.health_boost": "生命提升",
     "effect.minecraft.instant_health": "瞬间恢复",
     "effect.minecraft.regeneration": "持续恢复",
@@ -368,6 +369,7 @@
     "gui.abuseReport.reason.self_harm_or_suicide": "即将发生的伤害行为 — 自伤或自失败",
     "gui.done": "好了",
     "gui.recipebook.search_hint": "搜索一下……",
+    "gui.socialInteractions.blocking_hint": "使用Microsoft账号管理",
     "item.minecraft.acacia_chest_boat": "带切斯特的相思方舟",
     "item.minecraft.baked_potato": "烤熟的服务器",
     "item.minecraft.beetroot_soup": "甜菜煲",
@@ -495,7 +497,7 @@
     "merchant.deprecated": "大鼻子每天最多补货两次。",
     "merchant.next_level": "大鼻子的下一等级",
     "merchant.trades": "交易",
-    "multiplayerWarning.message": "在线游戏由第三π对服务器提供，它们不由Mojang Studios或MMicrosoft拥有、运营和监督。在线游戏的过程中，你可能会接受到不受【数据删除】的唠嗑消息或者其他类型的UGC，甚至会被登 dua 郎（但是你莫得选择）。It's up to you.",
+    "multiplayerWarning.message": "在线游戏由第三π对服务器提供，它们不由Mojang Studios或Microsoft拥有、运营和监督。在线游戏的过程中，你可能会接受到不受【数据删除】的唠嗑消息或者其他类型的UGC，甚至会被登 dua 郎（但是你莫得选择）。It's up to you.",
     "options.darknessEffectScale.tooltip": "控制大聪明或幽（yóu）匿尖叫体给予的黑暗脉动效果程度。",
     "options.inverouse": "鼠标反转",
     "options.sensitivity.max": "晕失败你！！！",
@@ -727,5 +729,6 @@
     "subtitles.item.lodestone_compass.lock": "吸铁石NullPointerException：绑定吸铁石",
     "subtitles.item.spyglass.stop_using": "望远镜：看完了",
     "subtitles.item.spyglass.use": "望远镜：看完了",
+    "title.multiplayer.disabled": "多人游戏已被禁用，请检查你的启动器或Microsoft账号设置。",
     "subtitles.particle.soul_escape": "灵魂：飞了"
 }
