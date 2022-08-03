@@ -3121,7 +3121,7 @@
     "gameMode.changed": "你的游戏模式已被更新为%s",
     "gameMode.creative": "上帝模式",
     "gameMode.hardcore": "硬核模式！",
-    "gameMode.spectator": "孤魂野鬼模式",
+    "gameMode.spectator": "游魂模式",
     "gameMode.survival": "生存模式",
     "gamerule.announceAdvancements": "向全世界大声宣布你的进步",
     "gamerule.category.chat": "唠嗑",
