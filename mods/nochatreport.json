@@ -1,10 +1,10 @@
 {
 	"gui.nochatreport.secureChat": "此选项无法与No Chat Reports一起使用，因为没有可用于验证的签名。",
-	"gui.nochatreport.noReporting": "阿伟你又在菊♂爆哦，休息一下吧。由 No Chat Reports 提供。",
+	"gui.nochatreport.noReporting": "阿伟你又在菊♂爆哦，休息一下吧。由No Chat Reports提供。",
 	"disconnect.nochatreports.client": "此服务器没有装No Chat Reports，但你已将其配置为要求在服务器上安装。",
 	"gui.nochatreports.status_secure": "此服务器装上了No Chat Reports或其他已知的方法避免消息被菊♂爆。这也会避免 \"仅显示安全的唠嗑\" 挡你的消息。你可以安全地唠嗑。",
-	"gui.nochatreports.status_unintrusive": "此服务器不能防止菊♂爆，但允许发送未签名的消息。这意味着你发的消息不能被菊♂爆给 Bugjump，但其他人还可以用 \"仅显示安全的唠嗑\" 挡你的消息",
-	"gui.nochatreports.status_insecure": "此服务器要求所有玩家的消息签名，你也同意在这设置下继续游戏。你所发送的任何消息都可能成为你被菊♂时的呈堂证供。你可以在 NoChatReports.json 中手动移除此服务器，以再次获得相同的警告。",
+	"gui.nochatreports.status_unintrusive": "此服务器不能防止菊♂爆，但允许发送未签名的消息。这意味着你发的消息不能被菊♂爆给Bugjump，但其他人还可以用 \"仅显示安全的唠嗑\" 挡你的消息",
+	"gui.nochatreports.status_insecure": "此服务器要求所有玩家的消息签名，你也同意在这设置下继续游戏。你所发送的任何消息都可能成为你被菊♂爆时的呈堂证供。你可以在 NoChatReports.json 中手动移除此服务器，以再次获得相同的警告。",
 	"gui.nochatreports.status_unknown": "No Chat Reports无法检测此服务器的安全性。为什么会变成这样呢？请将此错误反馈给模组作者。",
 	"gui.nochatreports.unsafe_server.header": "警告：不安全的服务器",
 	"gui.nochatreports.unsafe_server.contents": "此服务器要求所有消息签名，这意味着它们可以被菊♂爆给 Bugjump。可能是服务器默认开启了 'enforce-secure-profile' 选项。你可以选择继续游玩，但No Chat Reports没法提供任何保护。",
