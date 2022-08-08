@@ -1,0 +1,20 @@
+{
+    "name": "nochatreport",
+    "type": "mod",
+    "description": "禁用聊天举报",
+    "version": "v1.9.0",
+    "author": ["DoroWolf"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/no-chat-reports",
+            "github": "https://github.com/Aizistral-Studios/No-Chat-Reports",
+            "mcmod": "https://www.mcmod.cn/class/6756.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

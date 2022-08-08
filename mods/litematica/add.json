@@ -1,3 +1,4 @@
+
 {
     "litematica.error.area_selection.copy_failed": "无法复制选区",
     "litematica.error.area_selection.create_failed": "无法创建一个名为“%s”的新选区文件，因为文件已存在",

@@ -1,0 +1,20 @@
+{
+    "name": "torcherino",
+    "type": "mod",
+    "description": "加速火把",
+    "version": "15.0.0",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/torcherino",
+            "github": "https://github.com/Ellemes/Torcherino",
+            "mcmod": "https://www.mcmod.cn/class/587.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

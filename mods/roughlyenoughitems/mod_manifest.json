@@ -1,0 +1,20 @@
+{
+    "name": "roughlyenoughitems",
+    "type": "mod",
+    "description": "[REI]REI物品管理器",
+    "modVersion": "v6.5.433",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items",
+            "github": "https://github.com/shedaniel/RoughlyEnoughItems",
+            "mcmod": "https://www.mcmod.cn/class/1674.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

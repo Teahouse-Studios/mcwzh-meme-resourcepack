@@ -1,0 +1,20 @@
+{
+    "name": "simplevoidworld",
+    "type": "mod",
+    "description": "[SVW]简单虚空世界",
+    "version": "5.0.0",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simple-void-world",
+            "github": "https://github.com/modmuss50/SimpleVoidWorld",
+            "mcmod": "https://www.mcmod.cn/class/788.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

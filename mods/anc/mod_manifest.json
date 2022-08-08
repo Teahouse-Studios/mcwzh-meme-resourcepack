@@ -1,0 +1,21 @@
+{
+    "name": "anc",
+    "type": "mod",
+    "description": "铁砧工艺",
+    "modVersion": "0.6.5",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/inverted-enchantments",
+            "github": "https://github.com/Gu-ZT/AnvilCraft",
+            "mcmod": "https://www.mcmod.cn/class/5136.html",
+            "official": "https://anc.dubhe.dev"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

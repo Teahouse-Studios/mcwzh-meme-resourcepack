@@ -1,0 +1,20 @@
+{
+    "name": "illuminations",
+    "type": "mod",
+    "description": "Illuminations🔥",
+    "modVersion": "1.10.1",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/illuminations",
+            "github": "https://github.com/Ladysnake/Illuminations",
+            "mcmod": "https://www.mcmod.cn/class/1677.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "lightoverlay",
+    "type": "mod",
+    "description": "亮度覆盖",
+    "version": "v5.6.0",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/light-overlay",
+            "GitHub": "https://github.com/shedaniel/LightOverlay",
+            "mcmod": "https://www.mcmod.cn/class/3049.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

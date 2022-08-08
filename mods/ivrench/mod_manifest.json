@@ -1,0 +1,20 @@
+{
+    "name": "ivrench",
+    "type": "mod",
+    "description": "负魔书",
+    "modVersion": "1.1.1",
+    "author": ["DoroWolf"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/inverted-enchantments",
+            "github": "https://github.com/misterplus/InvertedEnchantments",
+            "mcmod": "https://www.mcmod.cn/class/2430.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

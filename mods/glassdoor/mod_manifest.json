@@ -1,0 +1,20 @@
+{
+    "name": "glassdoor",
+    "type": "mod",
+    "description": "时尚玻璃门",
+    "modVersion": "1.5.0",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/modern-glass-doors",
+            "github": "https://github.com/kyrptonaught/Glass-Doors",
+            "mcmod": "https://www.mcmod.cn/class/1890.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

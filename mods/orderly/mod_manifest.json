@@ -1,0 +1,20 @@
+{
+    "name": "orderly",
+    "type": "mod",
+    "description": "Orderly",
+    "version": "2.0.0-alpha.10",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/orderly",
+            "github": "https://github.com/UpcraftLP/Orderly",
+            "mcmod": "https://www.mcmod.cn/class/3366.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

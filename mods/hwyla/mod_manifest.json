@@ -1,0 +1,20 @@
+{
+    "name": "hwyla",
+    "type": "mod",
+    "description": "Here's What You're Looking At",
+    "version": "1.9.23-79",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/hwyla",
+            "github": "https://github.com/TehNut-Mods/HWYLA",
+            "mcmod": "https://www.mcmod.cn/class/668.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

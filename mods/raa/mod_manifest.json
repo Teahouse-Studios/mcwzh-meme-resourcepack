@@ -1,0 +1,19 @@
+{
+    "name": "raa",
+    "type": "mod",
+    "description": "Randomly Adding Anything",
+    "version": "0.1.9",
+    "author": ["lakejason0"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/randomly-adding-anything",
+            "github": "https://github.com/vampire-studios/Randomly-Adding-Anything",
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

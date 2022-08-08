@@ -1,0 +1,20 @@
+{
+    "name": "blockus",
+    "type": "mod",
+    "description": "Blockus",
+    "modVersion": "2.4.7",
+    "author": ["DoroWolf"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/blockus",
+            "github": "https://github.com/Brandcraf06/Blockus",
+            "mcmod": "https://www.mcmod.cn/class/2936.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

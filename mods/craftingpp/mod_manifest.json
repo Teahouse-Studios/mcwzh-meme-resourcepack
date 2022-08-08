@@ -1,0 +1,18 @@
+{
+    "name": "craftingpp",
+    "type": "mod",
+    "description": "[CPP]更多的合成",
+    "author": ["Lakejason0"],
+    "modLink": [
+        {
+            "github": "https://github.com/ruhuasiyu/CraftingPlusPlus",
+            "mcmod": "https://www.mcmod.cn/class/1297.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

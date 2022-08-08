@@ -1,0 +1,20 @@
+{
+    "name": "vanilla-hammers",
+    "type": "mod",
+    "description": "原版材质锤",
+    "version": "3.0.3",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/vanilla-hammers",
+            "github": "https://github.com/Draylar/vanilla-hammers",
+            "mcmod": "https://www.mcmod.cn/class/3357.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

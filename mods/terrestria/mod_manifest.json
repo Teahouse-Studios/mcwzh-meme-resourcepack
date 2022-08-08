@@ -1,0 +1,20 @@
+{
+    "name": "terrestria",
+    "type": "mod",
+    "description": "Terrestria",
+    "version": "2.1.2",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/terrestria",
+            "github": "https://github.com/TerraformersMC/Terrestria",
+            "mcmod": "https://www.mcmod.cn/class/4952.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

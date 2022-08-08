@@ -1,0 +1,20 @@
+{
+    "name": "durabilityviewer",
+    "type": "mod",
+    "description": "耐久信息显示",
+    "version": "1.10.1",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/giselbaers-durability-viewer",
+            "github": "https://github.com/gbl/DurabilityViewer",
+            "mcmod": "https://www.mcmod.cn/class/2653.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

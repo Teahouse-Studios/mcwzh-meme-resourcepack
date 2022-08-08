@@ -1,0 +1,20 @@
+{
+    "name": "mycommands",
+    "type": "mod",
+    "description": "沉浸工程",
+    "version": "1.16.1-17",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mycommands",
+            "github": "https://github.com/Markus23/mycommands",
+            "mcmod": "https://www.mcmod.cn/class/1964.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

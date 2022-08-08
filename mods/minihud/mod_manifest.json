@@ -1,0 +1,21 @@
+{
+    "name": "minihud",
+    "type": "mod",
+    "description": "[MH]迷你HUD",
+    "version": "0.20.0",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/minihud",
+            "github": "https://github.com/maruohon/minihud",
+            "mcmod": "https://www.mcmod.cn/class/2311.html",
+            "official": "https://masa.dy.fi/mcmods/client_mods/?mod=minihud"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

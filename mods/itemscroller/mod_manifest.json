@@ -1,0 +1,21 @@
+{
+    "name": "itemscroller",
+    "type": "mod",
+    "description": "Item Scroller",
+    "version": "0.15.0",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/item-scroller",
+            "github": "https://github.com/maruohon/itemscroller",
+            "mcmod": "https://www.mcmod.cn/class/1529.html",
+            "official": "https://masa.dy.fi/tmp/minecraft/mods/client_mods"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

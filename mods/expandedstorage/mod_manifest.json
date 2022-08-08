@@ -1,0 +1,20 @@
+{
+    "name": "expandedstorage",
+    "type": "mod",
+    "description": "扩展存储",
+    "modVersion": "7.2.2",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/expanded-storage",
+            "github": "https://github.com/Ellemes/ExpandedStorage",
+            "mcmod": "https://www.mcmod.cn/class/3583.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

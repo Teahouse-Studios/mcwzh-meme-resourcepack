@@ -1,0 +1,21 @@
+{
+    "name": "buildcraft",
+    "type": "mod",
+    "description": "[BC]建筑",
+    "version": "7.99.24.8",
+    "author": ["DoroWolf"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/buildcraft",
+            "github": "https://github.com/BuildCraft/BuildCraft",
+            "mcmod": "https://www.mcmod.cn/class/4.html",
+            "official": "https://mod-buildcraft.com"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

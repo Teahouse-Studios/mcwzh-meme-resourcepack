@@ -1,0 +1,20 @@
+{
+    "name": "inventoryprofiles",
+    "type": "mod",
+    "description": "一键背包整理",
+    "modVersion": "v0.4.2",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/inventory-profiles",
+            "github": "https://github.com/jsnimda/Inventory-Profiles",
+            "mcmod": "https://www.mcmod.cn/class/2888.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

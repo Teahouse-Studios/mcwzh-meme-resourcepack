@@ -1,0 +1,21 @@
+{
+    "name": "tweakeroo",
+    "type": "mod",
+    "description": "Tweakeroo",
+    "version": "0.11.0",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/tweakeroo",
+            "github": "https://github.com/maruohon/tweakeroo",
+            "mcmod": "https://www.mcmod.cn/class/2230.html",
+            "official": "https://masa.dy.fi/tmp/minecraft/mods/client_mods/?mod=tweakeroo"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

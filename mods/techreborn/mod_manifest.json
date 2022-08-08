@@ -1,0 +1,21 @@
+{
+    "name": "techreborn",
+    "type": "mod",
+    "description": "科技复兴",
+    "version": "5.0.11",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/techreborn",
+            "github": "https://github.com/TechReborn/TechReborn",
+            "mcmod": "https://www.mcmod.cn/class/558.html",
+            "official": "https://techreborn.ovh"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

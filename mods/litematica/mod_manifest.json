@@ -1,0 +1,21 @@
+{
+    "name": "litematica",
+    "type": "mod",
+    "description": "投影",
+    "version": "0.0.0",
+    "author": ["lakejason0"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/litematica",
+            "github": "https://github.com/maruohon/litematica",
+            "mcmod": "https://www.mcmod.cn/class/2261.html",
+            "official": "https://masa.dy.fi/tmp/minecraft/mods/client_mods/?mcver=1.12.2&mod=litematica"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

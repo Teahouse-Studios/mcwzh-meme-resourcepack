@@ -1,0 +1,19 @@
+{
+    "name": "voxelmap",
+    "type": "mod",
+    "description": "体素地图",
+    "version": "1.17",
+    "author": ["lakejason0"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/voxelmap",
+            "mcmod": "https://www.mcmod.cn/class/981.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

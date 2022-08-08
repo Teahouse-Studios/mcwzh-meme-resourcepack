@@ -1,0 +1,20 @@
+{
+    "name": "immersive_portals",
+    "type": "mod",
+    "description": "沉浸式传送门",
+    "modVersion": "1.4.9",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/immersive-portals-mod",
+            "github": "https://github.com/iPortalTeam/ImmersivePortalsMod",
+            "mcmod": "https://www.mcmod.cn/class/2410.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

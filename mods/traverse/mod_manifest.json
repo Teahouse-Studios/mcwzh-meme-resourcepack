@@ -1,0 +1,20 @@
+{
+    "name": "traverse",
+    "type": "mod",
+    "description": "遍历",
+    "version": "4.0.0",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/traverse",
+            "github": "https://github.com/MysticMods/Traverse",
+            "mcmod": "https://www.mcmod.cn/class/1416.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

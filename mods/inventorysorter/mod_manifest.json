@@ -1,0 +1,20 @@
+{
+    "name": "inventorysorter",
+    "type": "mod",
+    "description": "物品分拣",
+    "modVersion": "1.18.1.0",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/inventory-sorter",
+            "github": "https://github.com/cpw/inventorysorter",
+            "mcmod": "https://www.mcmod.cn/class/2026.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

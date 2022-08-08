@@ -1,0 +1,20 @@
+{
+    "name": "simplexterrain",
+    "type": "mod",
+    "description": "Simplex地形生成器",
+    "version": "0.6.0",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simplex-terrain-generation",
+            "github": "https://github.com/SuperCoder7979/simplexterrain",
+            "mcmod": "https://www.mcmod.cn/class/4953.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
