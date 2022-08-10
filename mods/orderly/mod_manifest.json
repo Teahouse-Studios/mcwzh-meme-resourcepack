@@ -2,15 +2,31 @@
     "name": "orderly",
     "type": "mod",
     "description": "Orderly",
-    "version": "2.0.0-alpha.10",
+    "mod": {
+        "version": "2.0.0-alpha.10",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/orderly"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/UpcraftLP/Orderly"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/3366.html"
+            }
+        ],
+        "license": "CC BY-NC-SA 3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "UpcraftLP"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/orderly",
-            "github": "https://github.com/UpcraftLP/Orderly",
-            "mcmod": "https://www.mcmod.cn/class/3366.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

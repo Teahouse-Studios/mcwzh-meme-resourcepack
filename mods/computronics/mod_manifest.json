@@ -1,14 +1,30 @@
 {
     "name": "computronics",
     "type": "mod",
-    "description": "计算机电子学",
+    "description": "Computronics",
+    "mod": {
+        "links": [
+            {
+                "type": "source",
+                "url": "https://github.com/Vexatos/Computronics"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/5083.html"
+            }
+        ],
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Vexatos"
+            },
+            {
+                "type": "developer",
+                "name": "asiekierka"
+            }
+        ]
+    },
     "author": ["mckuhei"],
-    "modLink": [
-        {
-            "github": "https://github.com/Vexatos/Computronics",
-            "mcmod": "https://www.mcmod.cn/class/5083.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

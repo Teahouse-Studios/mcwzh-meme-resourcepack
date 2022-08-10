@@ -1,16 +1,32 @@
 {
     "name": "diggusmaximus",
     "type": "mod",
-    "description": "连锁挖掘",
-    "version": "1.15.1",
+    "description": "连锁挖掘（Diggus Maximus）",
+    "mod": {
+        "version": "1.15.1",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/diggus-maximus"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/kyrptonaught/DiggusMaximus"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/3080.html"
+            }
+        ],
+        "license": "MIT",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Kyrptonaught"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/diggus-maximus",
-            "GitHub": "https://github.com/kyrptonaught/DiggusMaximus",
-            "mcmod": "https://www.mcmod.cn/class/3080.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

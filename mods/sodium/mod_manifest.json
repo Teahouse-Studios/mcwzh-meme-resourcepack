@@ -1,16 +1,32 @@
 {
     "name": "sodium",
     "type": "mod",
-    "version": "0.1.0",
-    "description": "钠",
+    "description": "钠（Sodium）",
+    "mod": {
+        "version": "0.1.0",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/sodium"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/CaffeineMC/sodium-fabric"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/2785.html"
+            }
+        ],
+        "license": "GPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "CaffeineMC"
+            }
+        ]
+    },
     "author": ["Lakejason0"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/sodium",
-            "github": "https://github.com/CaffeineMC/sodium-fabric",
-            "mcmod": "https://www.mcmod.cn/class/2785.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

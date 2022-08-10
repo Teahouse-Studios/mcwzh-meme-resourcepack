@@ -1,17 +1,36 @@
 {
     "name": "techreborn",
     "type": "mod",
-    "description": "科技复兴",
-    "version": "5.0.11",
+    "description": "科技复兴（Tech Reborn）",
+    "mod": {
+        "version": "5.0.11",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/techreborn"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/TechReborn/TechReborn"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/558.html"
+            },
+            {
+                "type": "website",
+                "url": "https://techreborn.ovh"
+            }
+        ],
+        "license": "MIT",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "modmuss50"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/techreborn",
-            "github": "https://github.com/TechReborn/TechReborn",
-            "mcmod": "https://www.mcmod.cn/class/558.html",
-            "official": "https://techreborn.ovh"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

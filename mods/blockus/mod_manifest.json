@@ -2,15 +2,31 @@
     "name": "blockus",
     "type": "mod",
     "description": "Blockus",
-    "modVersion": "2.4.7",
+    "mod": {
+        "version": "2.4.7",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/blockus"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/Brandcraf06/Blockus"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/2936.html"
+            }
+        ],
+        "license": "GPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Brandcraft_"
+            }
+        ]
+    },
     "author": ["DoroWolf"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/blockus",
-            "github": "https://github.com/Brandcraf06/Blockus",
-            "mcmod": "https://www.mcmod.cn/class/2936.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

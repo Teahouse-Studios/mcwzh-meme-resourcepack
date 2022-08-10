@@ -1,16 +1,32 @@
 {
     "name": "mousewheelie",
     "type": "mod",
-    "description": "急速滚轮",
-    "modVersion": "1.10.2",
+    "description": "急速滚轮（Mouse Wheelie）",
+    "mod": {
+        "version": "1.10.2",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/mouse-wheelie"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/Siphalor/mouse-wheelie"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/1679.html"
+            }
+        ],
+        "license": "Apache-2.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Siphalor"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mouse-wheelie",
-            "github": "https://github.com/Siphalor/mouse-wheelie",
-            "mcmod": "https://www.mcmod.cn/class/1679.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

@@ -1,16 +1,32 @@
 {
     "name": "durabilityviewer",
     "type": "mod",
-    "description": "耐久信息显示",
-    "version": "1.10.1",
+    "description": "耐久信息显示（Durability Viewer）",
+    "mod": {
+        "version": "1.10.1",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/giselbaers-durability-viewer"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/gbl/DurabilityViewer"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/2653.html"
+            }
+        ],
+        "license": "MIT",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Giselbaer"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/giselbaers-durability-viewer",
-            "github": "https://github.com/gbl/DurabilityViewer",
-            "mcmod": "https://www.mcmod.cn/class/2653.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

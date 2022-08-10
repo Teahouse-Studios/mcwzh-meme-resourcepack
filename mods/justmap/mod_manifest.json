@@ -2,15 +2,31 @@
     "name": "justmap",
     "type": "mod",
     "description": "Just Map",
-    "modVersion": "1.2.16",
+    "mod": {
+        "version": "1.2.16",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/just-map"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/Bulldog83/JustMap"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/2347.html"
+            }
+        ],
+        "license": "GPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Bulldoq83"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/just-map",
-            "github": "https://github.com/Bulldog83/JustMap/",
-            "mcmod": "https://www.mcmod.cn/class/2347.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

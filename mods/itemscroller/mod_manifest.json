@@ -2,16 +2,35 @@
     "name": "itemscroller",
     "type": "mod",
     "description": "Item Scroller",
-    "version": "0.15.0",
+    "mod": {
+        "version": "0.15.0",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/item-scroller"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/maruohon/itemscroller"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/1529.html"
+            },
+            {
+                "type": "website",
+                "url": "https://masa.dy.fi/tmp/minecraft/mods/client_mods"
+            }
+        ],
+        "license": "LGPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Matti Ruohonen"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/item-scroller",
-            "github": "https://github.com/maruohon/itemscroller",
-            "mcmod": "https://www.mcmod.cn/class/1529.html",
-            "official": "https://masa.dy.fi/tmp/minecraft/mods/client_mods"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

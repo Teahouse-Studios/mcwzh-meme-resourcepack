@@ -1,16 +1,36 @@
 {
     "name": "simplevoidworld",
     "type": "mod",
-    "description": "[SVW]简单虚空世界",
-    "version": "5.0.0",
+    "description": "简单虚空世界（Simple Void World）",
+    "mod": {
+        "version": "5.0.0",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/simple-void-world"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/modmuss50/SimpleVoidWorld"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/788.html"
+            }
+        ],
+        "license": "MIT",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "modmuss50"
+            },
+            {
+                "type": "developer",
+                "name": "ProfessorProspector"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simple-void-world",
-            "github": "https://github.com/modmuss50/SimpleVoidWorld",
-            "mcmod": "https://www.mcmod.cn/class/788.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

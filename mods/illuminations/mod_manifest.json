@@ -2,15 +2,31 @@
     "name": "illuminations",
     "type": "mod",
     "description": "Illuminations🔥",
-    "modVersion": "1.10.1",
+    "mod": {
+        "version": "1.10.1",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/illuminations"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/Ladysnake/Illuminations"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/1677.html"
+            }
+        ],
+        "license": "GPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "doctor4t"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/illuminations",
-            "github": "https://github.com/Ladysnake/Illuminations",
-            "mcmod": "https://www.mcmod.cn/class/1677.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

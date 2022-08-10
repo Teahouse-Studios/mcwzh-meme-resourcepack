@@ -1,16 +1,32 @@
 {
     "name": "immersiveengineering",
     "type": "mod",
-    "description": "沉浸工程",
-    "version": "8.0.2-150",
+    "description": "沉浸工程（Immersive Engineering）",
+    "mod": {
+        "version": "8.0.2-150",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/BluSunrize/ImmersiveEngineering"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/463.html"
+            }
+        ],
+        "license": "",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "BluSunrize"
+            }
+        ]
+    },
     "author": ["HornCopper"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering",
-            "github": "https://github.com/BluSunrize/ImmersiveEngineering",
-            "mcmod": "https://www.mcmod.cn/class/463.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

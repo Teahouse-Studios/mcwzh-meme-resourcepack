@@ -1,20 +1,36 @@
 {
     "name": "optifine",
     "type": "mod",
-    "description": "高清修复",
-    "version": "20.02.2021",
+    "description": "高清修复（Optifine）",
+    "mod": {
+        "version": "20.02.2021",
+        "links": [
+            {
+                "type": "source",
+                "url": "https://github.com/sp614x/optifine"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/36.html"
+            },
+            {
+                "type": "website",
+                "url": "https://www.optifine.net"
+            }
+        ],
+        "license": "https://optifine.net/copyright",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "sp614x"
+            }
+        ]
+    },
     "author": ["lakejason0"],
-    "modLink": [
-        {
-            "github": "https://github.com/sp614x/optifine",
-            "mcmod": "https://www.mcmod.cn/class/36.html"
-            "official": "https://www.optifine.net/home",
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
-            "add": "add.json"
+            "add": "add.lang"
         }
     ]
 }

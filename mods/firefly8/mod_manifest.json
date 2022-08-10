@@ -1,15 +1,32 @@
 {
     "name": "firefly8",
     "type": "mod",
-    "description": "灯纟火",
-    "version": "1.0.0",
+    "description": "灯纟火（Xdi8Aho Mod）",
+    "mod": {
+        "version": "1.0.0",
+        "links": [
+            {
+                "type": "source",
+                "url": "https://github.com/Xdi8Mod/Xdi8aho-Mod"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/7199.html"
+            }
+        ],
+        "license": "GPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "QWERTY_52_38"
+            },
+            {
+                "type": "developer",
+                "name": "teddyxlandlee"
+            }
+        ]
+    },
     "author": ["DoroWolf"],
-    "modLink": [
-        {
-            "github": "https://github.com/Xdi8Mod/Xdi8aho-Mod",
-            "mcmod": "https://www.mcmod.cn/class/7199.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

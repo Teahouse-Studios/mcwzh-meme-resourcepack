@@ -1,16 +1,32 @@
 {
     "name": "traverse",
     "type": "mod",
-    "description": "遍历",
-    "version": "4.0.0",
+    "description": "遍历（Traverse）",
+    "mod": {
+        "version": "4.0.0",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/traverse"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/MysticMods/Traverse"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/1416.html"
+            }
+        ],
+        "license": "LGPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Prospector"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/traverse",
-            "github": "https://github.com/MysticMods/Traverse",
-            "mcmod": "https://www.mcmod.cn/class/1416.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

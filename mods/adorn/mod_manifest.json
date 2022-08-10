@@ -2,15 +2,31 @@
     "name": "adorn",
     "type": "mod",
     "description": "Adorn",
-    "modVersion": "3.5.0",
+    "mod": {
+        "version": "3.5.0",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/adorn"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/Juuxel/Adorn"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/1848.html"
+            }
+        ],
+        "license": "MIT",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Juuxel"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/adorn",
-            "github": "https://github.com/Juuxel/Adorn",
-            "mcmod": "https://www.mcmod.cn/class/1848.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

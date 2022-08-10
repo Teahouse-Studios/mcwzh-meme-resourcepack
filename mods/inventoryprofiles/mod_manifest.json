@@ -1,16 +1,32 @@
 {
     "name": "inventoryprofiles",
     "type": "mod",
-    "description": "一键背包整理",
-    "modVersion": "v0.4.2",
+    "description": "一键背包整理（Inventory Profiles）",
+    "mod": {
+        "version": "v0.4.2",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/inventory-profiles"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/jsnimda/Inventory-Profiles"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/2888.html"
+            }
+        ],
+        "license": "Unknown",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "jsnimda"
+            }
+        ]
+    },
     "author": ["Gu-ZT"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/inventory-profiles",
-            "github": "https://github.com/jsnimda/Inventory-Profiles",
-            "mcmod": "https://www.mcmod.cn/class/2888.html"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

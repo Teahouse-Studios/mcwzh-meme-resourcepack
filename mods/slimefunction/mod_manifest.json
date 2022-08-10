@@ -1,15 +1,28 @@
 {
     "name": "slimefunction",
     "type": "mod",
-    "description": "黏液科技",
-    "version": "RC-14",
+    "description": "黏液科技（Slimefun）",
+    "mod": {
+        "version": "RC-14",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/bukkit-plugins/slimefun-4-for-aternos"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/Slimefun/Slimefun4"
+            }
+        ],
+        "license": "GPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Slimefun"
+            }
+        ]
+    },
     "author": ["DoroWolf"],
-    "modLink": [
-        {
-            "curseforge": "https://www.curseforge.com/minecraft/bukkit-plugins/slimefun-4-for-aternos",
-            "github": "https://github.com/Slimefun/Slimefun4"
-        }
-    ],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
