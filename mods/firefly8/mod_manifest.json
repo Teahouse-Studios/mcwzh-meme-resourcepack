@@ -1,0 +1,19 @@
+{
+    "name": "firefly8",
+    "type": "mod",
+    "description": "灯纟火",
+    "version": "1.0.0",
+    "author": ["DoroWolf"],
+    "modLink": [
+        {
+            "github": "https://github.com/Xdi8Mod/Xdi8aho-Mod",
+            "mcmod": "https://www.mcmod.cn/class/7199.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
