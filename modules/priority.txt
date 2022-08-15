@@ -19,7 +19,6 @@ enable_compliancies  # conflict with too_much_compliancies
 too_much_compliancies  # conflict with enable_compliancies
 
 bagify  # incompatible with fursuit, jinkela
-fursuit  # incompatible with bagify, jinkela
 bee_pickaxe  # incompatible with bee_pickaxe, fake_multitool
 locusazzurro  # incompatible with fake_multitool, locusazzurro
 fake_multitool  # incompatible with bee_pickaxe, locusazzurro
@@ -84,5 +83,6 @@ lang_sfw
 lang_sfc
 lang_netease
 
+fursuit  # incompatible with bagify, jinkela
 jinkela  # incompatible with bagify, fursuit
 latiao
