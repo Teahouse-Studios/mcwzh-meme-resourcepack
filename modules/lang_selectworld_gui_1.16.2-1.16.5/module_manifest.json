@@ -9,5 +9,6 @@
             "add": "add.json",
             "remove": "remove.json"
         }
-    ]
+    ],
+    "incompatible_with": ["lang_selectworld_gui_1.12.2-1.16.1"]
 }

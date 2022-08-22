@@ -8,5 +8,6 @@
             "file": "assets/minecraft/lang/zh_meme.json",
             "add": "add.json"
         }
-    ]
+    ],
+    "incompatible_with": ["lang_spawnpoint_1.16-1.16.1"]
 }
