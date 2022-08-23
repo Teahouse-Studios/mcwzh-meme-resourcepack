@@ -53,7 +53,6 @@ goat_horn_sound
 open_close_sound
 sculk_sound
 
-mcbbs
 meme_splashes
 
 lang_combat_test_6
@@ -70,6 +69,7 @@ lang_trapdoor_1.12.2-1.15.2
 lang_spawnpoint_1.12.2-1.15.2
 lang_selectworld_gui_1.12.2-1.16.1
 lang_spawnpoint_1.16-1.16.1
+lang_mcbbs
 lang_multiplayer_1.12.2-1.16.3
 lang_backupworld_1.12.2-1.16.5
 lang_grass_path_1.12.2-1.16.5
