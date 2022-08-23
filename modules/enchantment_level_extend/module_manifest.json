@@ -1,8 +1,8 @@
 {
-    "name": "lang_mcbbs",
+    "name": "enchantment_level_extend",
     "type": "resource",
-    "description": "修改了物品名和生物名，还有一些其他的。",
-    "author": ["ZX夏夜之风"],
+    "description": "附魔等级扩展",
+    "author": ["DoroWolf"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
