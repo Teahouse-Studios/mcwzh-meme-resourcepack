@@ -4,6 +4,8 @@
     "advancements.story.deflect_arrow.title": "下次一定",
     "advancements.story.enter_the_nether.title": "下地狱吧",
     "advancements.story.lava_bucket.title": "这东西好热",
+    "chat.tag.system": "服务器消息。无法举办。",
+    "chat.tag.not_secure": "未经验证的消息。无法举办。",
     "block.minecraft.bed.occupied": "友好相处，你不可以抢走人家的床！",
     "block.minecraft.bedrock": "砍手岩",
     "block.minecraft.blast_furnace": "炼金机",
