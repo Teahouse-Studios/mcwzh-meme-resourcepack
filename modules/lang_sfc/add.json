@@ -778,6 +778,6 @@
     "subtitles.item.lodestone_compass.lock": "吸铁石NullPointerException：绑定吸铁石",
     "subtitles.item.spyglass.stop_using": "望远镜：看完了",
     "subtitles.item.spyglass.use": "望远镜：看完了",
-    "subtitles.particle.soul_escape": "灵魂：飞了"
-    "title.multiplayer.disabled": "多人游戏已被禁用，请检查你的启动器或Microsoft账号设置。",
+    "subtitles.particle.soul_escape": "灵魂：飞了",
+    "title.multiplayer.disabled": "多人游戏已被禁用，请检查你的启动器或Microsoft账号设置。"
 }
