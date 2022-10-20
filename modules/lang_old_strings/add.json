@@ -153,5 +153,15 @@
     "title.oldgl.deprecation.line1": "请加钱上DGX A100！由于需要",
     "title.oldgl.deprecation.line2": "OpenGL 3.2，这会在未来阻止你进行游戏。",
     "title.oldgl.eol.line1": "检测到你的显卡不是Quadro RTX 8000！由于需要",
-    "title.oldgl.eol.line2": "OpenGL 2.0，这会阻止你在未来版本进行游戏。"
+    "title.oldgl.eol.line2": "OpenGL 2.0，这会阻止你在未来版本进行游戏。",
+    "attribute.unknown": "未知的属性",
+    "commands.locate.biome.invalid": "没有名为“%s”的生物群系",
+    "commands.locate.poi.invalid": "没有类型为“%s”的兴趣点",
+    "selectWorld.import_worldgen_settings.deprecated.question": "有些功能迟早药丸。你确定要继续吗？",
+    "selectWorld.import_worldgen_settings.deprecated.title": "警告！ 这些设置使用了迟早药丸的功能",
+    "selectWorld.import_worldgen_settings.experimental.question": "有些功能还没做完，介于Bugjump有多少特性，迟早药丸。你确定要继续吗？",
+    "selectWorld.import_worldgen_settings.experimental.title": "警告！ 这些设置使用了还没做完的功能",
+    "enchantment.unknown": "未知的膜法：%s",
+    "effect.effectNotFound": "未知的buff：%s",
+    "entity.notFound": "未知的实体：%s"
 }
