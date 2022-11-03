@@ -5469,7 +5469,7 @@
     "entity.minecraft.camel": "骆驼",
     "subtitles.entity.camel.ambient": "骆驼：呼噜",
     "subtitles.entity.camel.dash": "骆驼：冲刺",
-    "subtitles.entity.camel.dash_ready": "骆驼：冷却CD",
+    "subtitles.entity.camel.dash_ready": "骆驼：冷却中",
     "subtitles.entity.camel.death": "骆驼：啊我死了",
     "subtitles.entity.camel.eat": "骆驼：恰饭",
     "subtitles.entity.camel.hurt": "骆驼：哎呦！",
@@ -5507,8 +5507,5 @@
     "gamerule.lavaSourceConversion": "无限熔岩",
     "gamerule.lavaSourceConversion.description": "When flowing lava is surrounded on two sides by lava sources it converts into a source.",
     "gamerule.globalSoundEvents": "全局声音事件",
-    "gamerule.globalSoundEvents.description": "特定游戏事件（如老板生成）发生时，声音可在所有地方听见。",
-
-
-    "multiplayer.disconnect.missing_public_key": "缺少公钥，这个服务器需要让所有人都能互相菊♂爆",
+    "gamerule.globalSoundEvents.description": "特定游戏事件（如老板生成）发生时，声音可在所有地方听见。"
 }
