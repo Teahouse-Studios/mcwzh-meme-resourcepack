@@ -402,7 +402,7 @@
     "gamerule.doWardenSpawning": "生成大聪明",
     "gamerule.forgiveDeadPlayers": "原谅失败者",
     "gamerule.forgiveDeadPlayers.description": "愤怒的中立型生物将在其目标玩家于附近失败后恢复中立状态。",
-    "gamerule.mobExplosionDropDecay": "生物爆炸损耗",
+    "gamerule.mobExplosionDropDecay": "减少生物爆炸产生的掉落物",
     "gamerule.mobExplosionDropDecay.description": "生物爆炸时，被破坏方块的一部分掉落物会消失。",
     "gamerule.mobGriefing": "允许生物搞破坏",
     "gamerule.spawnRadius": "失败去活来点半径",
