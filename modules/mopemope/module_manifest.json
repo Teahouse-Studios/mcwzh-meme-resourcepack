@@ -2,8 +2,11 @@
     "name": "mopemope",
     "type": "resource",
     "description": "儿 童 金 曲",
-    "author": [
-        "DoroWolf",
-        "Zh9c418"
+    "author": ["DoroWolf", "Zh9c418"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
     ]
 }

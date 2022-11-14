@@ -16,7 +16,7 @@
     "sodium.options.fullscreen.tooltip": "启用后，游戏将全屏显示（若支持）。",
     "sodium.options.v_sync.name": "掉帧的垂直同步",
     "sodium.options.v_sync.tooltip": "启用后，游戏的帧率将与显示器的刷新率同步，从而在牺牲整体输入延迟的情况下获得更流畅的体验。通常来说你的设备配置都过低，所以此设置会降低性能。（其实只是我的电脑垃圾而已）",
-    "sodium.options.fps_limit.tooltip": "限制最大帧率。启用后，游戏渲染速度将受到限制，因此开启此选项有利于延长电池续航或进行多任务处理。启用垂直同步时此选项会被自动忽略，除非该值低于显示器的刷新率。",
+    "sodium.options.fps_limit.tooltip": "限制最大帧率。启用后，游戏渲染速度将受到限制，因此打开此选项有利于延长电池续航或进行多任务处理。启用垂直同步时此选项会被自动忽略，除非该值低于显示器的刷新率。",
     "sodium.options.view_bobbing.tooltip": "呕……呕……\n禁用该选项可能可以缓解脑震荡。",
     "sodium.options.attack_indicator.tooltip": "控制攻击指示器在屏幕上的显示位置。",
     "sodium.options.graphics_quality.tooltip": "默认图像品质控制一些原版选项或旧选项，且对于Mod兼容性是必要的。若下方的选项保留为“默认”，则将会使用此选项的品质。",
@@ -54,5 +54,5 @@
     "sodium.options.performance_impact_string": "性能影响程度：%s",
     "sodium.options.buttons.undo": "撤销",
     "sodium.options.buttons.apply": "应用",
-    "sodium.options.buttons.close": "关闭"
+    "sodium.options.buttons.close": "关掉"
 }

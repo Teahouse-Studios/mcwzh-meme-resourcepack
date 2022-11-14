@@ -1,0 +1,18 @@
+{
+    "chatPreview.warning.check": "别废话，让我一键进服",
+    "chatPreview.warning.content": "聊天预览能让服务器在你输入消息的时候就看到你的消息！但是，这也能让你看到你输入的消息会被服务器处理成什么样。\n\n聊天预览默认启用，但你也可以在设置里关掉它。",
+    "chatPreview.warning.title": "这个服务器会偷看你的聊天消息！",
+    "chatPreview.warning.toast.title": "聊天预览已启用",
+    "chatPreview.warning.toast": "聊天预览能让服务器在你输入消息的时候就看到你的消息。你可以在设置里关掉它。",
+    "chat.previewInput": "按[%s]看看你的消息长啥样",
+    "chat.tag.filtered": "这条消息被服务器和谐了",
+    "chat.tag.modified.original": "原始文本：%s",
+    "chat.tag.modified": "这条消息被服务器乱改了",
+    "chat.tag.not_secure": "这条消息可能被服务器乱改过",
+    "options.chatPreview.confirm": "发送时",
+    "options.chatPreview.live": "输入时",
+    "options.chatPreview.tooltip.confirm": "若服务器使用聊天预览，相应的聊天预览仅会在尝试发送没有预览或等待预览的消息时生成。\n发送消息需要额外确认。",
+    "options.chatPreview.tooltip.live": "若服务器使用聊天预览，在聊天消息输入的同时，服务器对聊天消息所做的任何修改都会被动态回传，以便预览。",
+    "options.chatPreview.tooltip.off": "服务器对你的唠嗑消息进行的所有乱改将不会被预览，且会被标记为不安全。",
+    "options.chatPreview": "唠嗑预览"
+}

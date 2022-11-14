@@ -1,0 +1,14 @@
+{
+    "mco.client.outdated.msg.line1": "你的客户端已过时并与Realms不兼容。",
+    "mco.client.outdated.msg.line2": "请更换至最新版本的Minecraft。",
+    "mco.client.outdated.title": "客户端已过期！",
+    "mco.configure.world.off": "关掉",
+    "mco.configure.world.on": "打开",
+    "mco.create.world.seed": "世界种子（可选）",
+    "mco.errorMessage.6005": "世界处于管理员上锁状态",
+    "mco.selectServer.info": "Realms是什么？",
+    "mco.selectServer.locked": "锁定Realm",
+    "mco.trial.title": "创建一个Realm",
+    "mco.trial.unavailable": "抱歉，目前没有试用期服务！",
+    "narrator.select.list.position": "第%s项/共%s项"
+}

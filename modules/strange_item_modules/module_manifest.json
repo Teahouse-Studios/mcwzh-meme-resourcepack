@@ -2,14 +2,16 @@
     "name": "strange_item_modules",
     "type": "collection",
     "description": "奇怪物品模块集合",
-    "author": [
-        "DoroWolf"
-    ],
+    "author": ["DoroWolf"],
     "contains": [
         "baguette",
-        "ekac",
+        "bee_pickaxe",
+        "chicken_soup",
+        "disco_ball",
+        "reverse_cake_texture",
         "jinkela",
         "latiao",
+        "miku_bucket",
         "minecart_helmet"
     ]
 }

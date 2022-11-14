@@ -2,13 +2,12 @@
     "name": "lang_selectworld_gui_1.12.2-1.16.1",
     "type": "resource",
     "description": "20w28a以前的生成世界字符串",
-    "author": [
-        "梗体中文内容组"
-    ],
+    "author": ["梗体中文内容组"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
             "add": "add.json"
         }
-    ]
+    ],
+    "incompatible_with": ["lang_selectworld_gui_1.16.2-1.16.5"]
 }

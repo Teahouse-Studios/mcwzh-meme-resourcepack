@@ -2,13 +2,7 @@
     "name": "fake_multitool",
     "type": "resource",
     "description": "工具的用途被模糊。",
-    "author": [
-        "siiftun1857"
-    ],
-    "incompatible_with": [
-        "lang_sfc",
-        "bee_pickaxe"
-    ],
+    "author": ["siiftun1857"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

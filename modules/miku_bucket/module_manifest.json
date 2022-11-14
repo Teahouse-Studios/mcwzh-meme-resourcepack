@@ -1,0 +1,12 @@
+{
+    "name": "miku_bucket",
+    "type": "resource",
+    "description": "我去！桶装初音未来！",
+    "author": ["LSoda"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

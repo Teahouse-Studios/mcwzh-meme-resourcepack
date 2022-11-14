@@ -1,0 +1,19 @@
+{
+    "createWorld.customize.preset.bottomless_pit": "无底深渊",
+    "createWorld.customize.preset.classic_flat": "经典平坦",
+    "createWorld.customize.preset.desert": "沙子漠",
+    "createWorld.customize.preset.overworld": "主世界",
+    "createWorld.customize.preset.redstone_ready": "雷石东俱备",
+    "createWorld.customize.preset.snowy_kingdom": "北国风光",
+    "createWorld.customize.preset.the_void": "虚无世界",
+    "createWorld.customize.preset.tunnelers_dream": "挖掘工的梦想",
+    "createWorld.customize.preset.water_world": "贴吧世界",
+    "generator.default": "默认",
+    "generator.flat": "平 淡 的",
+    "generator.large_biomes": "巨型生物群系",
+    "generator.amplified": "膨化世界",
+    "generator.customized": "自定义",
+    "generator.debug_all_block_states": "调试模式",
+    "generator.amplified.info": "注意：仅图一乐，推荐的配置是i9 10900K加RTX 3090。",
+    "generator.single_biome_surface": "单一生物群系"
+}

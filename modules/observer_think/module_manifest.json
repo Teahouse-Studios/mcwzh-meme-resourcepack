@@ -2,8 +2,11 @@
     "name": "observer_think",
     "type": "resource",
     "description": "思辩者.jpg",
-    "author": [
-        "ZCYF",
-        "Lakejason0"
+    "author": ["ZCYF", "Lakejason0"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
     ]
 }

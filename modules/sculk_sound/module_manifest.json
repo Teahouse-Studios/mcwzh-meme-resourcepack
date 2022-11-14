@@ -2,7 +2,5 @@
     "name": "sculk_sound",
     "type": "resource",
     "description": "带有奇怪音效的幽匿系列方块",
-    "author": [
-        "DoroWolf"
-    ]
+    "author": ["DoroWolf"]
 }

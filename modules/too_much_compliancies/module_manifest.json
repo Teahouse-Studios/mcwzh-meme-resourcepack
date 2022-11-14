@@ -2,12 +2,8 @@
     "name": "too_much_compliancies",
     "type": "resource",
     "description": "超级防沉迷。",
-    "author": [
-        "Dianliang233"
-    ],
-    "incompatible_with": [
-        "enable_compliancies"
-    ],
+    "author": ["Dianliang233"],
+    "incompatible_with": ["enable_compliancies"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

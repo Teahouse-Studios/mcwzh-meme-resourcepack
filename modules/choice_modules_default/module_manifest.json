@@ -1,0 +1,25 @@
+{
+    "name": "choice_modules_default",
+    "type": "collection",
+    "description": "模块精选合集",
+    "author": ["梗体中文内容组"],
+    "contains": [
+        "a_piece_of_seriousness",
+        "anniversary",
+        "bagify",
+        "bee_pickaxe",
+        "dorowolf_texture",
+        "enchantment_level_extend",
+        "enable_compliancies",
+        "glyph_sizes_fix",
+        "goat_horn_sound",
+        "locusazzurro",
+        "map_override",
+        "meme_splashes",
+        "mopemope",
+        "observer_think",
+        "questioning_totem",
+        "rainbow_enchanting",
+        "real_grass"
+    ]
+}

@@ -1,7 +1,0 @@
-{
-  "name": "april_fools_vision",
-  "type": "resource",
-  "description": "船新视效（2022年愚人节玩笑）",
-  "author": ["Felix Jones (Mojang)"],
-  "incompatible_with": ["block_animation_reverse","moon_cakes","ekac","disco_ball","grass_enchanted","mopemope","mopemope","real_grass"]
-}

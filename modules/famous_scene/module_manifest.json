@@ -2,10 +2,6 @@
     "name": "famous_scene",
     "type": "resource",
     "description": "世 界 名 画",
-    "author": [
-        "DoroWolf"
-    ],
-    "incompatible_with": [
-        "linus_minecraft_craps"
-    ]
+    "author": ["DoroWolf"],
+    "incompatible_with": ["linus_minecraft_craps"]
 }

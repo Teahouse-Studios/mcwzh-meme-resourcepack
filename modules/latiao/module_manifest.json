@@ -2,9 +2,7 @@
     "name": "latiao",
     "type": "resource",
     "description": "一起恰辣条",
-    "author": [
-        "DoroWolf"
-    ],
+    "author": ["DoroWolf"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",

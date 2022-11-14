@@ -1,0 +1,12 @@
+{
+    "name": "lang_itemgroup_1.12.2-1.19.2",
+    "type": "resource",
+    "description": "22w42a以前的创造模式物品栏",
+    "author": ["梗体中文内容组"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

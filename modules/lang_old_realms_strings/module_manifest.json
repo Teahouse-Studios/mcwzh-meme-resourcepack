@@ -1,0 +1,12 @@
+{
+    "name": "lang_old_realms_strings",
+    "type": "resource",
+    "description": "旧版本领域的各种字符串",
+    "author": ["梗体中文内容组"],
+    "languageModification": [
+        {
+            "file": "assets/realms/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

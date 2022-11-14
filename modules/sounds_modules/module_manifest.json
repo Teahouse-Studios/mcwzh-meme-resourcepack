@@ -2,13 +2,12 @@
     "name": "sounds_modules",
     "type": "collection",
     "description": "奇怪声音模块集合",
-    "author": [
-        "DoroWolf"
-    ],
+    "author": ["DoroWolf"],
     "contains": [
         "annoying_sounds",
         "bell_sound",
         "firework_sound",
+        "goat_horn_sound",
         "open_close_sound",
         "sculk_sound"
     ]

@@ -2,14 +2,6 @@
     "name": "anniversary",
     "type": "resource",
     "description": "我们两周年啦！",
-    "author": [
-        "Lakejason0",
-        "Dianliang233"
-    ],
-    "languageModification": [
-        {
-            "file": "assets/minecraft/lang/zh_meme.json",
-            "add": "add.json"
-        }
-    ]
+    "author": ["Lakejason0", "Dianliang233"],
+    "incompatible_with": ["reverse_cake_model"]
 }
