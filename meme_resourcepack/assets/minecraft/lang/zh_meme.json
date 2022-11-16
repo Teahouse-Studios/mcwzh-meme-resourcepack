@@ -5551,7 +5551,7 @@
     "telemetry.property.server_modded.title": "服务端是否魔改",
     "telemetry.property.server_type.title": "服务器类型",
     "telemetry.property.frame_rate_samples.title": "Frame Rate Samples (FPS)",
-    "telemetry.property.render_time_samples.title": "渲染距离",
+    "telemetry.property.render_time_samples.title": "Render Time Samples",
     "telemetry.property.used_memory_samples.title": "已使用的内存",
     "telemetry.property.number_of_samples.title": "Sample Count",
     "telemetry.property.render_distance.title": "渲染距离",
