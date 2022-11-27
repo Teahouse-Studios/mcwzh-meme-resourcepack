@@ -5507,7 +5507,7 @@
     "gamerule.lavaSourceConversion": "无限熔岩",
     "gamerule.lavaSourceConversion.description": "流动熔岩在两面与熔岩源相邻时转化为熔岩源。",
     "gamerule.globalSoundEvents": "全局声音事件",
-    "gamerule.globalSoundEvents.description": "特定游戏事件（如老板生成）发生时，声音可在所有地方听见。"
+    "gamerule.globalSoundEvents.description": "特定游戏事件（如老板生成）发生时，声音可在所有地方听见。",
     "lanServer.port": "端口号",
     "lanServer.port.unavailable": "端口不可用。\n请将编辑框留空，或输入一个介于1024和65535之间的新数字。",
     "lanServer.port.invalid": "端口无效。\n请将编辑框留空，或输入一个介于1024和65535之间的数字。",
