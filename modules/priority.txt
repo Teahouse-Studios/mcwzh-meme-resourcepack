@@ -46,6 +46,7 @@ bugjump
 red_leaf_valley
 
 annoying_sounds
+beautiful_chicken
 bell_sound
 firework_sound
 goat_horn_sound
