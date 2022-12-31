@@ -4,6 +4,7 @@
 # Spaces are trimmed from the start and end of the line.
 # The list applies from top to bottom.
 # Modules not specified in this list will be applied last.
+meme_resourcepack
 
 a_letter  # conflict with a_piece_of_seriousness
 a_piece_of_seriousness  # conflict with a_letter
