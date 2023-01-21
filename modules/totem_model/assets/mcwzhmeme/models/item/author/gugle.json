@@ -1,8 +1,8 @@
 {
-    "credit": "Made By Gu_ZT",
+    "credit": "Made with Blockbench by Gugle",
     "textures": {
         "0": "block/smooth_stone",
-        "1": "mcwzhmeme:entity/skyeyefast",
+        "1": "mcwzhmeme:item/author/gugle",
         "particle": "block/smooth_stone"
     },
     "elements": [

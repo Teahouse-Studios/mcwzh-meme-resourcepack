@@ -1,28 +1,28 @@
 {
     "variants": {
         "has_bottle_0=true,has_bottle_1=true,has_bottle_2=false": {
-            "model": "mcwzhmeme:author/lake"
+            "model": "mcwzhmeme:block/author/lake"
         },
         "has_bottle_0=true,has_bottle_1=true,has_bottle_2=true": {
-            "model": "mcwzhmeme:author/mysticnebula70"
+            "model": "mcwzhmeme:block/author/mysticnebula70"
         },
         "has_bottle_0=true,has_bottle_1=false,has_bottle_2=true": {
-            "model": "mcwzhmeme:author/dianliang"
+            "model": "mcwzhmeme:block/author/dianliang"
         },
         "has_bottle_0=false,has_bottle_1=false,has_bottle_2=false": {
-            "model": "mcwzhmeme:author/lxazl5770"
+            "model": "mcwzhmeme:block/author/lxazl5770"
         },
         "has_bottle_0=true,has_bottle_1=false,has_bottle_2=false": {
-            "model": "mcwzhmeme:author/gu_zt"
+            "model": "mcwzhmeme:block/author/gugle"
         },
         "has_bottle_0=false,has_bottle_1=true,has_bottle_2=false": {
-            "model": "mcwzhmeme:author/skyeyefast"
+            "model": "mcwzhmeme:block/author/skyeyefast"
         },
         "has_bottle_0=false,has_bottle_1=true,has_bottle_2=true": {
-            "model": "mcwzhmeme:author/littlec"
+            "model": "mcwzhmeme:block/author/littlec"
         },
         "has_bottle_0=false,has_bottle_1=false,has_bottle_2=true": {
-            "model": "mcwzhmeme:author/steve"
+            "model": "mcwzhmeme:block/author/wolf"
         }
     }
 }

@@ -2,7 +2,7 @@
     "credit": "Made with Blockbench by LakeJason",
     "textures": {
         "0": "block/smooth_stone",
-        "1": "mcwzhmeme:entity/littlec",
+        "1": "mcwzhmeme:item/author/littlec",
         "particle": "block/smooth_stone"
     },
     "elements": [

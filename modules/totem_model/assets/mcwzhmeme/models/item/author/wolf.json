@@ -2,7 +2,7 @@
     "credit": "Made with Blockbench by LakeJason",
     "texture_size": [64, 32],
     "textures": {
-        "0": "entity/wolf/wolf",
+        "0": "mcwzhmeme:item/author/wolf",
         "1": "block/smooth_stone",
         "particle": "block/smooth_stone"
     },
