@@ -2,7 +2,7 @@
     "name": "saturn_of_undying",
     "type": "resource",
     "description": "不死图腾？不死土星！",
-    "author": ["QWERTY770", "teddyxlandlee"],,
+    "author": ["QWERTY770", "teddyxlandlee"],
     "languageModification": [
         {
             "file": "assets/minecraft/lang/zh_meme.json",
