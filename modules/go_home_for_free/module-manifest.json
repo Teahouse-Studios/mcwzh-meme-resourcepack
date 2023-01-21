@@ -1,0 +1,13 @@
+ {
+    "name": "go_home_for_free",
+    "type": "resource",
+    "description": "你又双叒免费回家了！",
+    "author": ["QWERTY770", "teddyxlandlee"],,
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ],
+    "incompatible_with": ["totem_model"]
+}
