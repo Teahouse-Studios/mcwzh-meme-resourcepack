@@ -123,6 +123,7 @@
     "selectServer.empty": "空",
     "selectWorld.empty": "空",
     "selectWorld.gameMode.spectator.line2": "就像你死了一样",
+    "selectWorld.mapFeatures.info": "奸商聚集地、地下城等等",
     "selectWorld.newWorld.copyOf": "%s的副本",
     "selectWorld.tooltip.experimental": "这个世界正在使用实验性设置",
     "selectWorld.tooltip.unsupported": "你怕不是穿越来的吧？这个世界只能在%s版本中游玩",
