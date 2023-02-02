@@ -520,6 +520,8 @@
     "item.minecraft.smithing_template.armor_trim.ingredients": "铸锭与矿物",
     "item.minecraft.smithing_template.netherite_upgrade.additions_slot_description": "在此放入下界玄素锭",
     "item.minecraft.smithing_template.netherite_upgrade.base_slot_description": "在此放入钻盔甲、武器或工具",
+    "item.minecraft.smithing_template.netherite_upgrade.ingredients": "下界玄素锭",
+    "item.minecraft.smithing_template.netherite_upgrade.applies_to": "钻装备",
     "item.minecraft.splash_potion.effect.healing": "喷溅型能量饮料",
     "item.minecraft.splash_potion.effect.turtle_master": "喷溅型神龟溶液",
     "item.minecraft.spruce_chest_boat": "带切斯特的云杉方舟",
@@ -555,6 +557,9 @@
     "merchant.trades": "交易",
     "multiplayerWarning.message": "在线游戏由第三π对服务器提供，它们不由Mojang Studios或Microsoft拥有、运营和监督。在线游戏的过程中，你可能会接受到不受【数据删除】的唠嗑消息或者其他类型的UGC，甚至会被登 dua 郎（但是你莫得选择）。It's up to you.",
     "options.darknessEffectScale.tooltip": "控制大聪明或幽（yóu）匿尖叫体给予的黑暗脉动效果程度。",
+    "options.difficulty.easy.info": "敌对实体会生成，但伤害较低。生命值在饥饿值耗尽后最终会降至5颗心。",
+    "options.difficulty.normal.info": "敌对实体会生成，伤害适中。生命值在饥饿值耗尽后最终会降至半颗心。",
+    "options.difficulty.hard.info": "敌对实体会生成，伤害较高。饥饿值耗尽后最终会饿失败。",
     "options.inverouse": "鼠标反转",
     "options.sensitivity.max": "晕失败你！！！",
     "parsing.bool.invalid": "无效的布尔值，需要'true'或'false'却找到了'%s'",
@@ -562,6 +567,7 @@
     "resourcePack.programmer_art.name": "程序猿经典老番",
     "selectWorld.createDemo": "开天辟地，但是白干好事",
     "selectWorld.gameMode.creative": "创造",
+    "selectWorld.gameMode.hardcore.info": "难度锁定为“硬”的生存模式，且失败后无法重生。",
     "selectWorld.gameMode.spectator.line2": "就像你失败了一样",
     "selectWorld.hardcoreMode.info": "世界将在失败后拜拜了您嘞，删得连你自己是谁都不知道！",
     "selectWorld.import_worldgen_settings.experimental.question": "这些设置是实验性的，介于Mojang有多少特性，迟早药丸。你确定要继续吗？",
@@ -792,5 +798,7 @@
     "subtitles.item.spyglass.stop_using": "望远镜：看完了",
     "subtitles.item.spyglass.use": "望远镜：看完了",
     "subtitles.particle.soul_escape": "灵魂：飞了",
-    "title.multiplayer.disabled": "多人游戏已被禁用，请检查你的启动器或Microsoft账号设置。"
+    "title.multiplayer.disabled": "多人游戏已被禁用，请检查你的启动器或Microsoft账号设置。",
+    "trim_material.minecraft.diamond": "钻石质",
+    "trim_pattern.minecraft.ward": "大聪明盔甲纹饰"
 }
