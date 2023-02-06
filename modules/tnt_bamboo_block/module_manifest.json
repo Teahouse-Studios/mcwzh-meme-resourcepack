@@ -1,0 +1,12 @@
+{
+    "name": "tnt_bamboo_block",
+    "type": "resource",
+    "description": "爆竹（字面含义）",
+    "author": ["Sheep-realms"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
