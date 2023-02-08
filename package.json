@@ -1,7 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "format": "prettier --write ./**/*.{js,json}"
+        "format": "prettier --write ./**/*.{js,json}",
+        "test-build": "node preset_build.js"
     },
     "dependencies": {
         "glob": "^8.1.0",

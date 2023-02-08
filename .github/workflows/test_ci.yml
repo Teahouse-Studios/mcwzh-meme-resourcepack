@@ -12,13 +12,20 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - uses: pnpm/action-setup@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node_version: 18
+          cache: pnpm
+
       - name: Install dependencies
         run: |
           pnpm install
 
       - name: Test build
         run: |
-          node preset_build.js
+          pnpm run test-build
 
       - name: Upload files built
         uses: actions/upload-artifact@v2

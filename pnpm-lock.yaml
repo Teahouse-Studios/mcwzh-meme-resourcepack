@@ -1,9 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
-  glob: ^8.0.3
+  glob: ^8.1.0
   memepack-builder: ^0.4.0
-  prettier: ^2.6.2
+  prettier: ^2.8.0
 
 dependencies:
   glob: 8.1.0

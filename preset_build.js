@@ -1,92 +1,92 @@
-const { JavaPackBuilder, ModuleParser, Logger } = require('memepack-builder')
+const { JavaPackBuilder, ModuleParser } = require('memepack-builder')
 const { writeFileSync, existsSync, mkdirSync } = require('fs')
 const { resolve } = require('path')
 const glob = require('glob')
-const PACK_VERSION = '1.7.0'
+const PACK_VERSION = '1.8.1'
 
 const preset_args = [
   {
     platform: 'java',
     type: 'normal',
     modules: {
-      resource: [],
+      resource: ['meme_resource_pack'],
       collection: ['choice_modules_1'],
     },
     mod: [],
-    format: 7,
+    format: 9,
     compatible: false,
   },
   {
     platform: 'java',
     type: 'normal',
     modules: {
-      resource: ['lang_sfw'],
-      collection: ['choice_modules_1'],
-    },
-    mod: ['all'],
-    format: 7,
-    compatible: false,
-  },
-  {
-    platform: 'java',
-    type: 'normal',
-    modules: {
-      resource: ['lang_sfw'],
-      collection: [],
-    },
-    mod: [],
-    format: 7,
-    compatible: false,
-  },
-  {
-    platform: 'java',
-    type: 'normal',
-    modules: {
-      resource: ['lang_sfw'],
-      collection: [],
-    },
-    mod: [],
-    format: 7,
-    compatible: false,
-  },
-  {
-    platform: 'java',
-    type: 'normal',
-    modules: {
-      resource: ['lang_sfw'],
+      resource: ['meme_resource_pack', 'lang_sfw'],
       collection: ['choice_modules_1'],
     },
     mod: ['all'],
-    format: 7,
+    format: 9,
+    compatible: false,
+  },
+  {
+    platform: 'java',
+    type: 'normal',
+    modules: {
+      resource: ['meme_resource_pack', 'lang_sfw'],
+      collection: [],
+    },
+    mod: [],
+    format: 9,
+    compatible: false,
+  },
+  {
+    platform: 'java',
+    type: 'normal',
+    modules: {
+      resource: ['meme_resource_pack', 'lang_sfw'],
+      collection: [],
+    },
+    mod: [],
+    format: 9,
+    compatible: false,
+  },
+  {
+    platform: 'java',
+    type: 'normal',
+    modules: {
+      resource: ['meme_resource_pack', 'lang_sfw'],
+      collection: ['choice_modules_1'],
+    },
+    mod: ['all'],
+    format: 9,
     compatible: true,
   },
   {
     platform: 'java',
     type: 'normal',
     modules: {
-      resource: ['lang_sfw'],
+      resource: ['meme_resource_pack', 'lang_sfw'],
       collection: ['choice_modules_1'],
     },
     mod: [],
-    format: 7,
+    format: 9,
     compatible: true,
   },
   {
     platform: 'java',
     type: 'normal',
     modules: {
-      resource: ['lang_sfw'],
+      resource: ['meme_resource_pack', 'lang_sfw'],
       collection: [],
     },
     mod: [],
-    format: 7,
+    format: 9,
     compatible: true,
   },
   {
     platform: 'java',
     type: 'legacy',
     modules: {
-      resource: ['lang_sfw'],
+      resource: ['meme_resource_pack', 'lang_sfw'],
       collection: ['version_1.12.2-1.15.2'],
     },
     mod: [],
@@ -106,9 +106,10 @@ const preset_name = [
 ]
 
 async function start() {
-  const jeModules = new ModuleParser(resolve(__dirname, './modules'))
+  const jeModules = new ModuleParser()
+  jeModules.addSearchPaths(resolve(__dirname, './modules'))
   const je = new JavaPackBuilder(
-    await jeModules.moduleInfo(),
+    await jeModules.searchModules(),
     resolve(__dirname, './meme_resourcepack'),
     {
       modFiles: glob.sync('./mods/*.json'),
@@ -123,10 +124,9 @@ async function start() {
     try {
       let r = await je.build(arg)
       console.log(arg, preset_name[i])
-      writeFileSync(resolve(__dirname, `./builds/${preset_name[i]}`), r.content)
+      writeFileSync(resolve(__dirname, `./builds/${preset_name[i]}`), r)
     } catch (e) {
-      console.error(Logger.log, e)
-      Logger.clearLog()
+      console.error(e)
       process.exit(1)
     }
   }
