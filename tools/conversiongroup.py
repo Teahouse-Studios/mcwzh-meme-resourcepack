@@ -12,7 +12,7 @@ def generate_conversion(json1, json2, json3, regex) -> list:
 
 if __name__ == '__main__':
     from argparse import ArgumentParser, FileType
-    from sys import stdout
+    import sys
 
     def generate_parser() -> ArgumentParser:
         parser = ArgumentParser(
@@ -24,7 +24,7 @@ if __name__ == '__main__':
         parser.add_argument("json3", type=FileType(mode='r', encoding='utf8'),
                             help="path to the Original json. Would be the original part in the output.")
         parser.add_argument("regex", help="specify the regex.")
-        parser.add_argument("--outfile", "-o", nargs='?', default=stdout, type=FileType(mode='w', encoding='utf8'),
+        parser.add_argument("--outfile", "-o", nargs='?', default=sys.stdout, type=FileType(mode='w', encoding='utf8'),
                             help="specify the name of output json. If omitted, will output the json to stdout.")
         return parser
     args = generate_parser().parse_args()
