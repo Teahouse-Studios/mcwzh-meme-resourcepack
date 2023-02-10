@@ -5890,7 +5890,7 @@
     "createWorld.tab.world.title": "世界",
     "createWorld.tab.more.title": "更多…",
     "options.glintSpeed": "覆膜光效目害速度",
-    "options.glintSpeed.tooltip": "控制覆膜物品的光效目害速度。",
+    "options.glintSpeed.tooltip": "控制覆膜物品的光效的目害速度。",
     "options.glintStrength": "覆膜光效目害力度",
     "options.glintStrength.tooltip": "控制覆膜物品光效的透明程度。",
     "options.difficulty.peaceful.info": "不会生成绝大多数敌对暴徒。饥饿值不会消耗，且生命值会自然恢复。",
