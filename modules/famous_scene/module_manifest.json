@@ -3,5 +3,11 @@
     "type": "resource",
     "description": "世 界 名 画",
     "author": ["DoroWolf"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
     "incompatible_with": ["linus_minecraft_craps"]
 }
