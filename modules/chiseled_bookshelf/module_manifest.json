@@ -1,0 +1,12 @@
+{
+    "name": "chiseled_bookshelf",
+    "type": "resource",
+    "description": "錾制书架",
+    "author": ["Sheep-realms"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
