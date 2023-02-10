@@ -5913,6 +5913,8 @@
     "commands.ride.mount.failure.wrong_dimension": "无法骑乘位于不同维度的实体",
     "gamerule.doVinesSpread": "藤蔓蔓延",
     "gamerule.doVinesSpread.description": "控制藤蔓方块是否会随机向相邻的方块蔓延。不会影响其他藤蔓类方块（例如垂泪藤和通天藤等）。",
+    "painting.dimensions": "%sx%s",
+    "painting.random": "随机变种",
     "painting.minecraft.fire.author": "Mojang",
     "painting.minecraft.fire.title": "Fire",
     "painting.minecraft.graham.author": "Kristoffer Zetterstrand",
