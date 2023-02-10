@@ -5902,7 +5902,7 @@
     "selectWorld.experiments.info": "还没做完的功能，即还没做完的新功能。打开时请小心，因为这些内容可能不稳定或会导致药丸。已开启的还没做完的内容在创建世界后将无法再关掉。",
     "options.damageTiltStrength": "受伤抖动效果",
     "options.damageTiltStrength.tooltip": "受到伤害导致的游戏视角晃动程度。",
-    "controls.keybinds.duplicateKeybinds": "该按键被用掉啦：n\%s",
+    "controls.keybinds.duplicateKeybinds": "该按键被用掉啦：\n%s",
     "dataPack.bundle.name": "套娃用的袋子",
     "dataPack.update_1_20.name": "1.20更新",
     "entity.minecraft.block_display": "方块展示",
