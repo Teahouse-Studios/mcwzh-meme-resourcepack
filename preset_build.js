@@ -1,7 +1,6 @@
 const { JavaPackBuilder, ModuleParser } = require('memepack-builder')
-const { writeFileSync, existsSync, mkdirSync } = require('fs')
+const { writeFileSync, existsSync, mkdirSync, readFileSync } = require('fs')
 const { resolve } = require('path')
-const glob = require('glob')
 const PACK_VERSION = '1.8.1'
 
 const preset_args = [
@@ -108,12 +107,26 @@ const preset_name = [
 async function start() {
   const jeModules = new ModuleParser()
   jeModules.addSearchPaths(resolve(__dirname, './modules'))
+  ;(function () {
+    const allMappings = JSON.parse(
+      readFileSync(resolve(__dirname, './mappings/all_mappings'), 'utf-8'),
+    )
+    let obj = {}
+    for (const mapping of allMappings) {
+      const content = JSON.parse(
+        readFileSync(resolve(__dirname, `./mappings/${mapping}.json`)),
+      )
+      obj = { ...obj, ...content }
+    }
+    writeFileSync(
+      resolve(__dirname, './mappings/mapping.json'),
+      JSON.stringify(obj),
+    )
+  })()
   const je = new JavaPackBuilder(
     await jeModules.searchModules(),
-    resolve(__dirname, './meme_resourcepack'),
-    {
-      modFiles: glob.sync('./mods/*.json'),
-    },
+    resolve(__dirname, './modules/priority.txt'),
+    resolve(__dirname, './mappings/mapping.json'),
   )
 
   if (!existsSync('./builds')) {
