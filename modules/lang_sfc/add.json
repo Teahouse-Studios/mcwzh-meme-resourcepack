@@ -144,7 +144,9 @@
     "block.minecraft.brown_shulker_box": "棕色聪明盒子",
     "block.minecraft.cactus": "拥抱失败",
     "block.minecraft.carved_pumpkin": "要脸的南瓜",
-    "block.minecraft.cauldron": "坩锅",
+    "block.minecraft.cauldron": "坩锅",,
+    "block.minecraft.cherry_hanging_sign": "挂着的撒库拉木搞事牌",
+    "block.minecraft.cherry_wall_hanging_sign": "墙上的挂着的撒库拉木搞事牌",
     "block.minecraft.chest": "切斯特",
     "block.minecraft.chiseled_polished_blackstone": "使用了大师级雕刻技艺并使用了打磨工艺进行加工的黑石头",
     "block.minecraft.coal_block": "无定形碳方块",
@@ -432,6 +434,7 @@
     "item.minecraft.chainmail_chestplate": "铁 索 连 环胸甲",
     "item.minecraft.chainmail_helmet": "铁 索 连 环头盔",
     "item.minecraft.chainmail_leggings": "铁 索 连 环护腿",
+    "item.minecraft.cherry_chest_boat": "带切斯特的撒库拉方舟"
     "item.minecraft.chest_minecart": "带切斯特的《我的世界》",
     "item.minecraft.cod_bucket": "鳕鱼铁桶",
     "item.minecraft.cod_spawn_egg": "鳕鱼幼体",
