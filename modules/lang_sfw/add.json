@@ -71,7 +71,7 @@
     "gui.chatReport.discard.content": "如果离开，该举办及小作文将不会被保留。\n确定要离开吗？",
     "gui.chatReport.discard.discard": "离开并放弃举办",
     "gui.chatReport.discard.title": "放弃举办和小作文？",
-    "gui.chatReport.draft.content": "继续编辑现有举报还是放弃并新建另一份举办？",
+    "gui.chatReport.draft.content": "继续编辑现有举办还是放弃并新建另一份举办？",
     "gui.chatReport.draft.quittotitle.title": "你有一份举办草稿将在退出时丢失",
     "gui.chatReport.draft.title": "编辑举办草稿？",
     "gui.chatReport.observed_what": "你为什么要举办？",
