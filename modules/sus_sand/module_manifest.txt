@@ -1,0 +1,6 @@
+{
+    "name": "sus_sand",
+    "type": "resource",
+    "description": "“可疑的”沙子",
+    "author": ["Don_Trueno"]
+}
