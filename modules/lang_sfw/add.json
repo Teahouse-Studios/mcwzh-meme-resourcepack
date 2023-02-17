@@ -68,6 +68,7 @@
     "gui.abuseReport.sent.title": "已举办",
     "gui.banned.description.reason": "我们最近收到举办称你的账户被用来搞事。我们的监督员已审核你的案件并将其认定为%s，这违反了Minecraft社区准则。",
     "gui.banned.description.unknownreason": "我们最近收到举办称你的账户被用来搞事。我们的监督员已审核你的案件并认定你违反了Minecraft社区准则。",
+    "gui.banned.reason.false_reporting": "过多虚假或不实举办",
     "gui.chatReport.discard.content": "如果离开，该举办及小作文将不会被保留。\n确定要离开吗？",
     "gui.chatReport.discard.discard": "离开并放弃举办",
     "gui.chatReport.discard.title": "放弃举办和小作文？",
