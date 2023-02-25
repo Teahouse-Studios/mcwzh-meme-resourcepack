@@ -6041,12 +6041,12 @@
     "subtitles.entity.sniffer.step": "嗅探兽：脚步声",
     "subtitles.item.brush.brush_sand_completed": "鸡毛掸子：刷完了",
     "subtitles.item.brush.brushing": "鸡毛掸子：在刷了",
-    "mco.notification.dismiss": "Dismiss",
-    "mco.notification.visitUrl.message.default": "Please visit the link below",
-    "mco.notification.visitUrl.buttonText.default": "Open link",
-    "narration.tab_navigation.usage": "Press Ctrl and Tab to switch between tabs",
-    "narrator.position.tab": "Selected tab %s out of %s",
-    "options.accessibility.high_contrast": "High Contrast",
-    "options.accessibility.high_contrast.tooltip": "Enhances the contrast of UI elements",
-    "resourcePack.high_contrast.name": "High Contrast"
+    "mco.notification.dismiss": "关掉",
+    "mco.notification.visitUrl.message.default": "请访问下方的链接",
+    "mco.notification.visitUrl.buttonText.default": "打开链接",
+    "narration.tab_navigation.usage": "按下Ctrl键和Tab键切换标签页",
+    "narrator.position.tab": "已选中第%s个标签页，共%s个",
+    "options.accessibility.high_contrast": "高对比度",
+    "options.accessibility.high_contrast.tooltip": "提高UI控件的对比度",
+    "resourcePack.high_contrast.name": "高对比度"
 }
