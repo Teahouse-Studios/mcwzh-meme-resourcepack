@@ -1,0 +1,6 @@
+{
+    "name": "sus_stuff",
+    "type": "resource",
+    "description": "SUS",
+    "author": ["Don_Trueno"]
+}
