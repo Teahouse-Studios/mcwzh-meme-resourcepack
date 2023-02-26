@@ -1,6 +1,0 @@
-{
-    "name": "brush_to_string_pickaxe",
-    "type": "resource",
-    "description": "让毛刷看起来更符合它的合成表",
-    "author": ["Don_Trueno"]
-}
