@@ -21,15 +21,16 @@ too_much_compliancies  # conflict with enable_compliancies
 
 bagify  # incompatible with fursuit, jinkela
 bee_pickaxe  # incompatible with bee_pickaxe, fake_multitool
+chicken_soup# incompatible with sus_stuff
 locusazzurro  # incompatible with fake_multitool, locusazzurro
 fake_multitool  # incompatible with bee_pickaxe, locusazzurro
+sus_stuff # incompatible with chicken_soup
 questioning_totem  # incompatible with totem_model
 totem_model  # incompatible with questioning_totem
 
 baguette
 block_animation_reverse
 brewing_stand_model
-chicken_soup
 disco_ball
 dorowolf_texture
 glyph_sizes_fix
