@@ -157,6 +157,8 @@
     "subtitles.entity.zombie_pigman.death": "僵尸猪人：啊我死了",
     "subtitles.entity.zombie_pigman.hurt": "僵尸猪人：哎哟！",
     "subtitles.item.berries.pick": "浆果：弹出",
+    "subtitles.item.brush.brush_sand_completed": "鸡毛掸子：刷完了",
+    "subtitles.item.brush.brushing": "鸡毛掸子：在刷了",
     "title.oldgl.deprecation.line1": "请加钱上DGX A100！由于需要",
     "title.oldgl.deprecation.line2": "OpenGL 3.2，这会在未来阻止你进行游戏。",
     "title.oldgl.eol.line1": "检测到你的显卡不是Quadro RTX 8000！由于需要",
