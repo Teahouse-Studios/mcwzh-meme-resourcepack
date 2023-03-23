@@ -53,6 +53,18 @@
             "file": "minecraft:font/character-29dd5.png",
             "ascent": 7,
             "chars": ["\uD867\uDDD5"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2a83d.png",
+            "ascent": 7,
+            "chars": ["\uD86A\uDC3D"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2c58b.png",
+            "ascent": 7,
+            "chars": ["\uD871\uDD8B"]
         }
     ]
 }
