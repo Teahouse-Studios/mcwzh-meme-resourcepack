@@ -20,6 +20,42 @@
         },
         {
             "type": "bitmap",
+            "file": "minecraft:font/character-2c317.png",
+            "ascent": 7,
+            "chars": ["\uD879\uDF17"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-29f7e.png",
+            "ascent": 7,
+            "chars": ["\uD867\uDF7E"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-29f8c.png",
+            "ascent": 7,
+            "chars": ["\uD86C\uDF8C"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-9ff6.png",
+            "ascent": 7,
+            "chars": ["\u9FF6"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2ba98.png",
+            "ascent": 7,
+            "chars": ["\uD86E\uDE98"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-29dd5.png",
+            "ascent": 7,
+            "chars": ["\uD867\uDDD5"]
+        },
+        {
+            "type": "bitmap",
             "file": "minecraft:font/character-2a83d.png",
             "ascent": 7,
             "chars": ["\uD86A\uDC3D"]
