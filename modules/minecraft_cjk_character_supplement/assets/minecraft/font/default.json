@@ -8,6 +8,12 @@
         },
         {
             "type": "bitmap",
+            "file": "minecraft:font/character-30ede.png",
+            "ascent": 7,
+            "chars": ["\uD883\uDEDD"]
+        },
+        {
+            "type": "bitmap",
             "file": "minecraft:font/character-210bf.png",
             "ascent": 7,
             "chars": ["\uD844\uDCBF"]
