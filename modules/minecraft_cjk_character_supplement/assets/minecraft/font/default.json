@@ -1,0 +1,22 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-30ede.png",
+            "ascent": 7,
+            "chars": ["\uD883\uDEDE"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-210bf.png",
+            "ascent": 7,
+            "chars": ["\uD844\uDCBF"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-25e49.png",
+            "ascent": 7,
+            "chars": ["\uD857\uDE49"]
+        }
+    ]
+}
