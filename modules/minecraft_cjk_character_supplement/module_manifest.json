@@ -1,6 +1,6 @@
 {
     "name": "minecraft_cjk_character_supplement",
     "type": "resource",
-    "description": "为Minecraft补充部分中日韩越统一表意文字的字形",
+    "description": "为Minecraft补充部分中日韩越统一表意文字的字形，并调整标点宽度",
     "author": ["Nickid2018", "Lakejason0", "yzy32767"]
 }

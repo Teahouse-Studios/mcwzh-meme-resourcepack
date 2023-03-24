@@ -33,7 +33,6 @@ block_animation_reverse
 brewing_stand_model
 disco_ball
 dorowolf_texture
-glyph_sizes_fix
 map_override
 miku_bucket
 minecart_helmet
