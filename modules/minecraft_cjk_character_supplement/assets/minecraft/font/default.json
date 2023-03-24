@@ -44,12 +44,6 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:font/character-9ff6.png",
-            "ascent": 7,
-            "chars": ["\u9FF6"]
-        },
-        {
-            "type": "bitmap",
             "file": "minecraft:font/character-2ba98.png",
             "ascent": 7,
             "chars": ["\uD86E\uDE98"]
@@ -125,36 +119,6 @@
             "file": "minecraft:font/character-2cb76.png",
             "ascent": 7,
             "chars": ["\uD872\uDF76"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:font/character-9fcf.png",
-            "ascent": 7,
-            "chars": ["\u9FCF"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:font/character-9fd4.png",
-            "ascent": 7,
-            "chars": ["\u9FD4"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:font/character-9feb.png",
-            "ascent": 7,
-            "chars": ["\u9FEB"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:font/character-9fec.png",
-            "ascent": 7,
-            "chars": ["\u9FEC"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:font/character-9fed.png",
-            "ascent": 7,
-            "chars": ["\u9FED"]
         },
         {
             "type": "bitmap",
