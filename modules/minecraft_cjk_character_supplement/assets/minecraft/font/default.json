@@ -607,6 +607,30 @@
             "chars": [
                 "\uD867\uDF83"
             ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2d554.png",
+            "ascent": 7,
+            "chars": ["\uD875\uDD54"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2f884.png",
+            "ascent": 7,
+            "chars": ["\uD87E\uDC84"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2f8b6.png",
+            "ascent": 7,
+            "chars": ["\uD87E\uDCB6"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-3106c.png",
+            "ascent": 7,
+            "chars": ["\uD884\uDC6C"]
         }
     ]
 }
