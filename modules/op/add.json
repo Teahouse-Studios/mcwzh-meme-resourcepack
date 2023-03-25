@@ -1,0 +1,6 @@
+{
+    "commands.deop.failed": "梗体中文提示你：%s本来就不是原批",
+    "commands.deop.success": "%s的原批身份不保",
+    "commands.op.failed": "梗体中文提示你：%s本来就是个原批",
+    "commands.op.success": "我焯，%s变成了原！"
+}
