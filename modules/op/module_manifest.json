@@ -1,11 +1,11 @@
 {
-    "name": "op"，
-    "type": "resource"，
-    "description": "出现了几个原批:o"，
+    "name": "op",
+    "type": "resource",
+    "description": "出现了几个原批:o",
     "author": ["GavinCQTD"],
     "languageModification": [
         {
-            "file": "assets/minecraft/lang/zh_meme.json"，
+            "file": "assets/minecraft/lang/zh_meme.json",
             "add": "add.json"
         }
     ]
