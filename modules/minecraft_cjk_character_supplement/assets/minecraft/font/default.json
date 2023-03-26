@@ -1345,6 +1345,30 @@
             "file": "minecraft:font/character-2cb7c.png",
             "ascent": 7,
             "chars": ["\uD872\uDF7C"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2cbb1.png",
+            "ascent": 7,
+            "chars": ["\uD872\uDFB1"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2cbbf.png",
+            "ascent": 7,
+            "chars": ["\uD872\uDFBF"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2cbc0.png",
+            "ascent": 7,
+            "chars": ["\uD872\uDFC0"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2cbce.png",
+            "ascent": 7,
+            "chars": ["\uD872\uDFCE"]
         }
     ]
 }
