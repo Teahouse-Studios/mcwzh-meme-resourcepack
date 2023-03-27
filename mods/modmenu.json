@@ -1,6 +1,6 @@
 {
     "modmenu.title": "Mod",
-    "modmenu.loaded": "(已载入%s个)",
+    "modmenu.loaded": "(已加载%s个)",
     "modmenu.config": "编辑配置",
     "modmenu.modsFolder": "打开 Mod 文件夹",
     "modmenu.configsFolder": "打开配置文件夹",
