@@ -4887,7 +4887,7 @@
     "painting.minecraft.wind.title": "《风》",
     "painting.minecraft.wither.author": "Bugjump",
     "painting.minecraft.wither.title": "《凋零怪》",
-    "painting.random": "随机变种",
+    "painting.random": "随地大小变",
     "parsing.bool.expected": "需要布尔值",
     "parsing.bool.invalid": "无效的布尔值，需要'true'或'false'却找到了'%s'，爬",
     "parsing.double.expected": "需要双精度浮点数",
@@ -6045,7 +6045,6 @@
     "tutorial.socialInteractions.description": "按%s打开",
     "tutorial.socialInteractions.title": "选择性失聪",
     "upgrade.minecraft.netherite_upgrade": "下界玄素升级",
-
     "item.minecraft.angler_pottery_shard": "沙滩男孩纹样陶片",
     "item.minecraft.archer_pottery_shard": "弓兵纹样陶片",
     "item.minecraft.arms_up_pottery_shard": "法国纹样陶片",
