@@ -6,9 +6,6 @@
 # Modules not specified in this list will be applied last.
 meme_resourcepack
 
-atmos  #AF2022
-vision  #AF2022
-
 a_letter  # conflict with a_piece_of_seriousness
 a_piece_of_seriousness  # conflict with a_letter
 grass_enchanted  # conflict with real_grass
@@ -95,3 +92,6 @@ lang_netease
 fursuit  # incompatible with bagify, jinkela
 jinkela  # incompatible with bagify, fursuit
 latiao
+
+atmos  #af2022
+vision  #af2022

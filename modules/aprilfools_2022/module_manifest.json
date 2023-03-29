@@ -1,0 +1,11 @@
+{
+    "name": "aprilfools_2022",
+    "type": "collection",
+    "description": "2022年的愚人节玩笑",
+    "author": ["梗体中文内容组"],
+    "contains": [
+        "atmos",
+        "version"
+    ],
+    "note": "此愚人节模块仅在4月1日-4月2日可用，若过期请尽快移除"
+}
