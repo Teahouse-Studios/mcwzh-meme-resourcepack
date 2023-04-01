@@ -92,6 +92,3 @@ lang_netease
 fursuit  # incompatible with bagify, jinkela
 jinkela  # incompatible with bagify, fursuit
 latiao
-
-atmos  #af2022
-vision  #af2022

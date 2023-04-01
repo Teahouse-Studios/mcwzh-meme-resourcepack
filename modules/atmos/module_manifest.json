@@ -1,8 +1,0 @@
-{
-    "name": "atmos",
-    "type": "resource",
-    "description": "船新音效",
-    "author": ["Dianliang233"],
-    "incompatible_with": ["annoying_sounds"],
-    "note": "此愚人节模块仅在4月1日-4月2日可用，若过期请尽快移除"
-}
