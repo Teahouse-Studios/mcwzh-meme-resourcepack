@@ -118,7 +118,7 @@
     "commands.entitydata.success": "实体数据已更新：%s",
     "commands.entitydata.tagError": "数据标签解析失败：%s",
     "commands.entitydata.usage": "/entitydata <实体> <数据标签>",
-    "commands.execute.allInvocationsFailed": "全部调用失败：“%s”",
+    "commands.execute.allInvocationsFailed": "全部调用失败：'%s'",
     "commands.execute.failed": "无法使%2$s执行'%1$s'",
     "commands.execute.usage": "/execute <实体> <x> <y> <z> <命令> 或 /execute <实体> <x> <y> <z> detect <x> <y> <z> <方块> <数据值|-1|状态|*> <命令>|",
     "commands.fill.failed": "没有方块被填充",
