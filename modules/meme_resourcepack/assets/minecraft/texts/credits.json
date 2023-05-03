@@ -30,7 +30,7 @@
                         ]
                     },
                     {
-                        "title": "Resource Modules by",
+                        "title": "Resource Module Authors",
                         "names": [
                                 "Lakejason0",
                                 "Light Beacon",
@@ -61,14 +61,14 @@
                         ]
                     },
                     {
-                        "title": "Models",
+                        "title": "Model Authors",
                         "names": [
                             "古镇天Gugle",
                             "Lakejason0"
                         ]
                     },
                     {
-                        "title": "Bedrock Edition Port Lead",
+                        "title": "Bedrock Edition Port Leader",
                         "names": [
                             "SkyEye_FAST"
                         ]
@@ -108,7 +108,7 @@
                         ]
                     },
                     {
-                        "title": "Resource Modules by",
+                        "title": "Resource Module Authors",
                         "names": [
                             "CR-019",
                             "Iron_noob_73",
@@ -119,7 +119,9 @@
                     },
                     {
                         "title": "Other Contributor",
-                        "names": ["Snow_dash"]
+                        "names": [
+                            "Snow_dash"
+                        ]
                     }
                 ]
             },
@@ -127,7 +129,7 @@
                 "discipline": "Special",
                 "titles": [
                     {
-                        "title": "MCLangCN Contributor",
+                        "title": "MCLangCN Contributors",
                         "names": [
                             "ff98sha", 
                             "Jingji132", 
