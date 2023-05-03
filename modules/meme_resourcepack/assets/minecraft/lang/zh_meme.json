@@ -6124,5 +6124,5 @@
     "advancements.husbandry.plant_any_sniffer_seed.title": "Planting the past",
     "item.minecraft.music_disc_relic": "劲 歌 金 曲",
     "item.minecraft.music_disc_relic.desc": "Aaron Cherof - Relic",
-    "multiplayer.disconnect.invalid_public_key_signature.new": "Invalid signature for profile public key.\nTry restarting your game.",
+    "multiplayer.disconnect.invalid_public_key_signature.new": "Invalid signature for profile public key.\nTry restarting your game."
   }
