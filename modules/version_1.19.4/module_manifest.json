@@ -1,7 +1,7 @@
 {
-    "name": "version_1.19.3",
+    "name": "version_1.19.4",
     "type": "collection",
-    "description": "适用于1.19.3版本的模块集合",
+    "description": "适用于1.19.4版本的模块集合",
     "author": ["梗体中文内容组"],
     "contains": [
         "lang_credits_1.17.1-1.19.4",

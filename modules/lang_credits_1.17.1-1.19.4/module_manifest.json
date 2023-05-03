@@ -1,0 +1,12 @@
+{
+    "name": "lang_credits_1.17.1-1.19.4",
+    "type": "resource",
+    "description": "1.20之前的制作人员名单",
+    "author": ["梗体中文内容组"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/text/credits.json",
+            "add": "credits.json"
+        }
+    ]
+}
