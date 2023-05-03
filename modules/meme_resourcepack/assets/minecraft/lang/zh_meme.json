@@ -6124,5 +6124,20 @@
     "advancements.husbandry.plant_any_sniffer_seed.title": "Planting the past",
     "item.minecraft.music_disc_relic": "劲 歌 金 曲",
     "item.minecraft.music_disc_relic.desc": "Aaron Cherof - Relic",
-    "multiplayer.disconnect.invalid_public_key_signature.new": "Invalid signature for profile public key.\nTry restarting your game."
+    "multiplayer.disconnect.invalid_public_key_signature.new": "Invalid signature for profile public key.\nTry restarting your game.",
+    "advancements.adventure.read_power_from_chiseled_bookshelf.description": "Read the power signal of a Chiseled Bookshelf using a Comparator",
+    "advancements.adventure.read_power_from_chiseled_bookshelf.title": "The Power of Books",
+    "telemetry.event.advancement_made.title": "Advancement Made",
+    "telemetry.event.advancement_made.description": "Understanding the context behind receiving an advancement can help us better understand and improve the progression of the game",
+    "telemetry.event.game_load_times.title": "Game Load Times",
+    "telemetry.event.game_load_times.description": "This event can help us figure out where improvements to startup performance are needed by measuring execution times of the startup phases",
+    "telemetry.property.advancement_id.title": "Advancement ID",
+    "telemetry.property.advancement_game_time.title": "Game Time (Ticks)",
+    "telemetry.property.launcher_name.title": "Launcher Name",
+    "telemetry.property.load_time_bootstrap_ms.title": "Bootstrap Time (Milliseconds)",
+    "telemetry.property.load_time_loading_overlay_ms.title": "Time in Loading Screen (Milliseconds)",
+    "telemetry.property.load_time_pre_window_ms.title": "Time Before Window Opens (Milliseconds)",
+    "telemetry.property.load_time_total_time_ms.title": "Total Load Time (Milliseconds)",
+    "telemetry.property.realms_map_content.title": "Realms Map Content (Minigame Name)"
+
   }
