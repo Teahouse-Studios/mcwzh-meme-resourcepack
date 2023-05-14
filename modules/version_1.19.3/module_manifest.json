@@ -4,7 +4,6 @@
     "description": "适用于1.19.3版本的模块集合",
     "author": ["梗体中文内容组"],
     "contains": [
-        "lang_credits_1.17.1-1.19.4",
         "lang_old_realms_strings",
         "lang_old_strings"
     ]
