@@ -75,7 +75,7 @@ lang_selectworld_gui_1.12.2-1.16.1
 lang_spawnpoint_1.16-1.16.1
 lang_multiplayer_1.12.2-1.16.3
 lang_backupworld_1.12.2-1.16.5
-lang_credits_1.12.2-1.16.5
+# lang_credits_1.12.2-1.16.5
 lang_grass_path_1.12.2-1.16.5
 lang_replaceitem_1.12.2-1.16.5
 lang_sleep_impossible_1.12.2-1.16.5
@@ -85,7 +85,7 @@ lang_old_biomes_1.12.2-1.17.1
 lang_world_generation_1.12.2-1.18.2
 lang_itemgroup_1.12.2-1.19.2
 lang_chat_preview_1.19.2
-lang_credits_1.17.1-1.19.4
+# lang_credits_1.17.1-1.19.4
 
 lang_sfw
 lang_sfc
