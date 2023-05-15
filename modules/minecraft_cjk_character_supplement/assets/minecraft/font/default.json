@@ -2,6 +2,78 @@
     "providers": [
         {
             "type": "bitmap",
+            "file": "minecraft:font/character-basic-supp-9fd0.png",
+            "ascent": 7,
+            "chars": [
+                "\u9fd0"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-basic-supp-9fec.png",
+            "ascent": 7,
+            "chars": [
+                "\u9fec"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-basic-supp-9fed.png",
+            "ascent": 7,
+            "chars": [
+                "\u9fed"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-basic-supp-9ff2.png",
+            "ascent": 7,
+            "chars": [
+                "\u9ff2"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-basic-supp-9ff3.png",
+            "ascent": 7,
+            "chars": [
+                "\u9ff3"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-basic-supp-9ff7.png",
+            "ascent": 7,
+            "chars": [
+                "\u9ff7"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-basic-supp-9ff8.png",
+            "ascent": 7,
+            "chars": [
+                "\u9ff8"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-basic-supp-9ffd.png",
+            "ascent": 7,
+            "chars": [
+                "\u9ffd"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-basic-supp-9ffe.png",
+            "ascent": 7,
+            "chars": [
+                "\u9ffe"
+            ]
+        },
+        {
+            "type": "bitmap",
             "file": "minecraft:font/character-30ede.png",
             "ascent": 7,
             "chars": [
