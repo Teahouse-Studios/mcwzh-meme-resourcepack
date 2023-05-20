@@ -6199,5 +6199,12 @@
     "mco.time.hoursAgo": "%1$s时前",
     "mco.time.daysAgo": "%1$s天前",
     "mco.warning": "警告！",
-    "mco.worldSlot.minigame": "小游戏"
+    "mco.worldSlot.minigame": "小游戏",
+    "commands.data.modify.invalid_substring": "无效的子串索引：%s到%s",
+    "death.attack.genericKill.player": "%1$s在与%2$s战斗时死了",
+    "mco.errorMessage.6005": "世界已锁定",
+    "mco.errorMessage.6006": "世界已过期",
+    "mco.errorMessage.6007": "User in too many Realms",
+    "mco.errorMessage.6008": "无效的Realm名称",
+    "mco.errorMessage.6009": "无效的Realm描述"
   }
