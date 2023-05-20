@@ -306,6 +306,7 @@
     "death.attack.fireball.item": "%1$s被%2$s用%3$s发射的火球烧失败了",
     "death.attack.freeze": "%1$s冻成了冰棍",
     "death.attack.freeze.player": "%1$s因%2$s而冻成了冰棍",
+    "death.attack.genericKill.player": "%1$s在与%2$s战斗时失败了",
     "death.attack.indirecagic": "%1$s被%2$s使用的魔法失败了",
     "death.attack.indirecagic.item": "%1$s被%2$s用%3$s失败了",
     "death.attack.indirectMagic": "%1$s被%2$s使用的魔法弄失败了",
