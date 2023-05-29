@@ -724,9 +724,9 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:font/character-2d554.png",
+            "file": "minecraft:font/character-2d544.png",
             "ascent": 7,
-            "chars": ["\uD875\uDD54"]
+            "chars": ["\uD875\uDD44"]
         },
         {
             "type": "bitmap",
