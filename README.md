@@ -103,7 +103,7 @@ node preset_build.js
 * 本项目文件除另有声明外，均以 ***CC BY-SA 4.0*** 协议授权。
   * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   * 这不是法律建议。
-  * `minecraft_cjk_character_supplement` 模块中的各个字形以Unifont兼容的协议（GPLv2+ with the GNU Font Embedding Exception及SIL Open Font License）发布。
+  * `minecraft_cjk_character_supplement` 模块中散有的各个字形以Unifont兼容的协议（GPLv2+ with the GNU Font Embedding Exception及SIL Open Font License）发布；部分压缩文件的协议请参考压缩文件内的协议文件。
 * 本项目附带的Mod内容字符串、未经梗体中文修改过的部分，按照 ***原作品的协议*** 发布。
 * 本项目 `tools` 目录下的脚本和根目录下的 `preset_build.js` 文件，可选择 ***CC BY-SA 4.0*** 或 ***Apache License 2.0*** 协议之一授权。
 
