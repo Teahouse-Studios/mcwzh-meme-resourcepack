@@ -1731,21 +1731,6 @@
             "chars": ["\uD888\uDE17"]
         },
         {
-            "type": "unihex",
-            "hex_file": "minecraft:font/extb-first-32",
-            "size_overrides": [
-                {
-                    "__ranges": [
-                        "CJK Unified Ideographs Extension B, First 32"
-                    ],
-                    "from": "\ud840\udc00",
-                    "to": "\ud840\udc1f",
-                    "left": 0,
-                    "right": 15
-                }
-            ]
-        },
-        {
             "type": "bitmap",
             "file": "minecraft:font/character-22489.png",
             "ascent": 7,
@@ -1840,6 +1825,21 @@
             "file": "minecraft:font/character-31254.png",
             "ascent": 7,
             "chars": ["\uD884\uDE54"]
+        },
+        {
+            "type": "unihex",
+            "hex_file": "minecraft:font/extb-first-32",
+            "size_overrides": [
+                {
+                    "__ranges": [
+                        "CJK Unified Ideographs Extension B, First 32"
+                    ],
+                    "from": "\ud840\udc00",
+                    "to": "\ud840\udc1f",
+                    "left": 0,
+                    "right": 15
+                }
+            ]
         },
         {
             "type": "unihex",
