@@ -1932,6 +1932,71 @@
             "file": "minecraft:font/character-3237f.png",
             "ascent": 7,
             "chars": ["\uD888\uDF7F"]
+        },{
+            "type": "bitmap",
+            "file": "minecraft:font/character-20f90.png",
+            "ascent": 7,
+            "chars": ["\uD843\uDF90"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-26393.png",
+            "ascent": 7,
+            "chars": ["\uD858\uDF93"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2925c.png",
+            "ascent": 7,
+            "chars": ["\uD864\uDE5C"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2b2bb.png",
+            "ascent": 7,
+            "chars": ["\uD86C\uDEBB"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2b6e9.png",
+            "ascent": 7,
+            "chars": ["\uD86D\uDEE9"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2ba5b.png",
+            "ascent": 7,
+            "chars": ["\uD86E\uDE5B"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2c88a.png",
+            "ascent": 7,
+            "chars": ["\uD872\uDC8A"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2c9c0.png",
+            "ascent": 7,
+            "chars": ["\uD872\uDDC0"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2cba4.png",
+            "ascent": 7,
+            "chars": ["\uD872\uDFA4"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2e779.png",
+            "ascent": 7,
+            "chars": ["\uD879\uDF79"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-30d7c.png",
+            "ascent": 7,
+            "chars": ["\uD883\uDD7C"]
         },
         {
             "type": "unihex",
