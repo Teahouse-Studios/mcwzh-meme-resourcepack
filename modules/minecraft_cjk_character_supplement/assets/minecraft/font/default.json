@@ -2328,6 +2328,30 @@
             "chars": ["\uD884\uDDF1"]
         },
         {
+            "type": "bitmap",
+            "file": "minecraft:font/character-25584.png",
+            "ascent": 7,
+            "chars": ["\uD855\uDD84"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2b598.png",
+            "ascent": 7,
+            "chars": ["\uD86D\uDD98"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2eb68.png",
+            "ascent": 7,
+            "chars": ["\uD87A\uDF68"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-30300.png",
+            "ascent": 7,
+            "chars": ["\uD880\uDF00"]
+        },
+        {
             "type": "unihex",
             "hex_file": "minecraft:font/extb-first-32",
             "size_overrides": [
