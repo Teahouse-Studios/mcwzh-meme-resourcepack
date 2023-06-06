@@ -24,7 +24,7 @@ def png_to_hex_mc(png_file):
         row = data[y*width:(y+1)*width]
         byte = ''
         for x in range(width):
-            byte += '0' if row[x] == (255,255,255,0) else '1'
+            byte += '0' if row[x] == (255,255,255,255) else '1'
             if (x+1) % 8 == 0:
                 hex_string += f'{int(byte, 2):02X}'
                 byte = ''
@@ -71,9 +71,9 @@ def split_mc_unicode_page(png_file, cp_start, path):
         new_image.save(path+file_name)
     
 def pngs_to_hex(path, hex_file):
-    with open(hex_file) as hex_file:
+    with open(hex_file,'w',newline='\n') as hex_file:
         for filename in os.listdir(path):
             if filename.endswith(".png"):
                 png_file = os.path.join(path,filename)
                 unicode_value=filename.split('u')[1].split('.')[0]
-                hex_file.write(unicode_value.upper()+":"+png_to_hex(png_file)+"\n")
+                hex_file.write(unicode_value.upper()+":"+png_to_hex_mc(png_file)+"\n")
