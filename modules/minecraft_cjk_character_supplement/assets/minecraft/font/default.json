@@ -2544,6 +2544,12 @@
             "chars": ["\uD883\uDF7D"]
         },
         {
+            "type": "bitmap",
+            "file": "minecraft:font/character-31592.png",
+            "ascent": 7,
+            "chars": ["\uD885\uDD92"]
+        },
+        {
             "type": "unihex",
             "hex_file": "minecraft:font/extb-first-32",
             "size_overrides": [
