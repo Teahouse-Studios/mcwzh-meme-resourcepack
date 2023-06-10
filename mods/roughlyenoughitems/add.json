@@ -164,7 +164,7 @@
     "config.roughlyenoughitems.filteredEntries.selectNone": "劳资不选了！",
     "config.roughlyenoughitems.filteredEntries.hide": "我全都要.....要没了",
     "config.roughlyenoughitems.filteredEntries.show": "显示所选",
-    "config.roughlyenoughitems.filteredEntries.loadWorldFirst": "请先载入世界！",
+    "config.roughlyenoughitems.filteredEntries.loadWorldFirst": "请先加载世界！",
     "config.roughlyenoughitems.accessibility.entrySize": "条目大小：",
     "config.roughlyenoughitems.search.asyncSearch": "异步搜索：",
     "config.roughlyenoughitems.search.asyncSearchPartitionSize": "异步搜索划分大小：",

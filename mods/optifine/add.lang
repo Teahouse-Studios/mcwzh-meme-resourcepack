@@ -607,9 +607,9 @@ of.options.FAST_MATH.tooltip.6=此选项对世界生成有微小影响。
 
 of.options.CHUNK_UPDATES=区块更新
 of.options.CHUNK_UPDATES.tooltip.1=区块更新
-of.options.CHUNK_UPDATES.tooltip.2= 1 - 世界载入速度较慢，FPS 较高（默认）
-of.options.CHUNK_UPDATES.tooltip.3= 3 - 世界载入速度较快，FPS 较低
-of.options.CHUNK_UPDATES.tooltip.4= 5 - 世界载入速度最快，FPS 最低
+of.options.CHUNK_UPDATES.tooltip.2= 1 - 世界加载速度较慢，FPS 较高（默认）
+of.options.CHUNK_UPDATES.tooltip.3= 3 - 世界加载速度较快，FPS 较低
+of.options.CHUNK_UPDATES.tooltip.4= 5 - 世界加载速度最快，FPS 最低
 of.options.CHUNK_UPDATES.tooltip.5=渲染每帧时更新的区块数，
 of.options.CHUNK_UPDATES.tooltip.6=更高的值将会导致帧数不稳定。
 
@@ -622,11 +622,11 @@ of.options.CHUNK_UPDATES_DYNAMIC.tooltip.5=区块更新，使得世界加载更�
 
 of.options.LAZY_CHUNK_LOADING=缓慢区块加载
 of.options.LAZY_CHUNK_LOADING.tooltip.1=缓慢区块加载
-of.options.LAZY_CHUNK_LOADING.tooltip.2= 关掉 - 默认的服务器区块载入
-of.options.LAZY_CHUNK_LOADING.tooltip.3= 打开 - 缓慢的服务器区块载入（更平滑）
+of.options.LAZY_CHUNK_LOADING.tooltip.2= 关掉 - 默认的服务器区块加载
+of.options.LAZY_CHUNK_LOADING.tooltip.3= 打开 - 缓慢的服务器区块加载（更平滑）
 of.options.LAZY_CHUNK_LOADING.tooltip.4=将区块分布在多个“游戏刻”进行加载
 of.options.LAZY_CHUNK_LOADING.tooltip.5=从而平滑服务器整体区块加载。
-of.options.LAZY_CHUNK_LOADING.tooltip.6=如果部分世界不能正确地载入，请把它设置为关。
+of.options.LAZY_CHUNK_LOADING.tooltip.6=如果部分世界不能正确地加载，请把它设置为关。
 of.options.LAZY_CHUNK_LOADING.tooltip.7=仅适用于单人游戏的本地世界。
 
 of.options.RENDER_REGIONS=区域渲染
