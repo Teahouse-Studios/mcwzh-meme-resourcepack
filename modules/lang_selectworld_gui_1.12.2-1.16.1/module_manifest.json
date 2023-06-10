@@ -8,5 +8,6 @@
             "file": "assets/minecraft/lang/zh_meme.json",
             "add": "add.json"
         }
-    ]
+    ],
+    "incompatible_with": ["lang_selectworld_gui_1.16.2-1.16.5"]
 }

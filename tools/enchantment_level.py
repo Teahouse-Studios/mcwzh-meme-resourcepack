@@ -5,8 +5,9 @@ from argparse import ArgumentParser
 
 
 def dump(max: int):
-    json.dump({f'enchantment.level.{i}': f'{i}' for i in range(11, max + 1)},
-              open("enchlevelfixS.json", 'w', encoding='utf8'), indent=4, ensure_ascii=False)
+    with open("enchlevelfixS.json", 'w', encoding='utf8') as e:
+        json.dump({f'enchantment.level.{i}': f'{i}' for i in range(11, max + 1)},
+                  e, indent=4, ensure_ascii=False)
 
 
 if __name__ == '__main__':

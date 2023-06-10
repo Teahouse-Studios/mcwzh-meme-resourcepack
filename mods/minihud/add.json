@@ -96,8 +96,8 @@
     "minihud.message.seed_set": "MiniHUD:设置种子为'%s'",
     "minihud.message.spawn_set": "MiniHUD:设置世界产卵室为%s",
 
-    "beeTooltips": "beeTooltips蜜蜂工具提示",
-    "Adds the number of contained bees to the tooltip of Bee Hive and Bee Nest items": "将包含的蜜蜂数量添加到蜂箱和蜂巢物品的工具提示中",
+    "beeTooltips": "beeTooltips蜂子工具提示",
+    "Adds the number of contained bees to the tooltip of Bee Hive and Bee Nest items": "将包含的蜂子数量添加到蜂人院和我蜂了物品的工具提示中",
     "blockGridOverlayMode": "blockGridOverlayMode方块覆盖模式",
     "The block grid render mode": "方块网格的渲染模式",
     "blockGridOverlayRadius": "blockGridOverlayRadius方块覆盖半径",
@@ -244,8 +244,8 @@
     "textColor": "textColor文本颜色（MiNiHUD）",
     "Info line text color": "MiNiHUD的文本颜色",
 
-    "infoBeeCount": "infoBeeCount蜜蜂信息数",
-    "Show the number of bees in the targeted Hive or Nest.\nNote: This only works in single player without server-side support.": "显示目标蜂房或巢中的蜜蜂数量。\n注意:这只能在没有服务器端支持的单机中工作。",
+    "infoBeeCount": "infoBeeCount蜂子信息数",
+    "Show the number of bees in the targeted Hive or Nest.\nNote: This only works in single player without server-side support.": "显示目标蜂人院或我蜂了中的蜂子数量。\n注意:这只能在没有服务器端支持的单机中工作。",
     "infoBiome": "infoBiome生物群落信息",
     "Show the name of the current biome": "显示当前生物群落的名称",
     "infoBiomeRegistryName": "infoBiome生物群落注册表信息",

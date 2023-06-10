@@ -1,7 +1,7 @@
 {
     "name": "lang_worldborder_1.12.2-1.16.5",
     "type": "resource",
-    "description": "对21w18a以前版本的世界边界过大提示的替换",
+    "description": "21w18a以前版本的世界边界过大提示的替换",
     "author": ["梗体中文内容组"],
     "languageModification": [
         {
