@@ -1,0 +1,40 @@
+{
+    "name": "buildcraft",
+    "type": "mod",
+    "description": "BuildCraft",
+    "mod": {
+        "version": "7.99.24.8",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/buildcraft"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/BuildCraft/BuildCraft"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/4.html"
+            },
+            {
+                "type": "website",
+                "url": "https://mod-buildcraft.com"
+            }
+        ],
+        "license": "MPL-2.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "BuildCraft Team"
+            }
+        ]
+    },
+    "author": ["DoroWolf"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
