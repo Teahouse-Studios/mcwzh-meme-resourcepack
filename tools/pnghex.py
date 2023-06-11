@@ -69,11 +69,37 @@ def split_mc_unicode_page(png_file, cp_start, path):
         unicode_code = i + cp_start
         file_name = f"u{hex(unicode_code)[2:]}.png"
         new_image.save(path+file_name)
-    
+
 def pngs_to_hex(path, hex_file):
     with open(hex_file,'w',newline='\n') as hex_file:
         for filename in os.listdir(path):
             if filename.endswith(".png"):
                 png_file = os.path.join(path,filename)
                 unicode_value=filename.split('u')[1].split('.')[0]
+                hex_file.write(unicode_value.upper()+":"+png_to_hex(png_file)+"\n")
+
+def pngs_to_hex_mc(path, hex_file):
+    with open(hex_file,'w',newline='\n') as hex_file:
+        for filename in os.listdir(path):
+            if filename.endswith(".png"):
+                png_file = os.path.join(path,filename)
+                unicode_value=filename.split('u')[1].split('.')[0]
                 hex_file.write(unicode_value.upper()+":"+png_to_hex_mc(png_file)+"\n")
+
+def read_hex_file_glyphs(hex_file):
+    glyphs={}
+    with open(hex_file) as hex_file:
+        for ln in hex_file:
+            cp=ln.split(":")[0]
+            glyph_data=ln.split(":")[1].rstrip("\n")
+            glyphs[cp]=glyph_data
+    return glyphs
+
+def remove_identical_glyphs(partial_hex_file, unifont_hex_file, final_hex_file):
+    partial_hex_file_glyphs = read_hex_file_glyphs(partial_hex_file)
+    unifont_hex_file_glyphs = read_hex_file_glyphs(unifont_hex_file)
+    with open(final_hex_file, "w", newline="\n") as final_hex_file:
+        for k in partial_hex_file_glyphs:
+            if partial_hex_file_glyphs[k] != unifont_hex_file_glyphs.get(k):
+                final_hex_file.write(k+":"+partial_hex_file_glyphs[k]+"\n")
+
