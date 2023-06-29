@@ -40,6 +40,7 @@ minecraft_cjk_character_supplement
 mopemope
 observer_think
 rainbow_enchanting
+sacabambaspis_dropper
 strange_meme_background
 vulpes_ferrilata
 
