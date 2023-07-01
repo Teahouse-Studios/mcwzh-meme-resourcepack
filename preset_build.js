@@ -1,7 +1,7 @@
 const { JavaPackBuilder, ModuleParser } = require('memepack-builder')
 const { writeFileSync, existsSync, mkdirSync, readFileSync } = require('fs')
 const { resolve } = require('path')
-const PACK_VERSION = '1.8.1'
+const PACK_VERSION = '1.9.0'
 
 const preset_args = [
   {
