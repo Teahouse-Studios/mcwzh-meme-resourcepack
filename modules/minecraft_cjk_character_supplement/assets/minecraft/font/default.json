@@ -2550,6 +2550,48 @@
             "chars": ["\uD885\uDD92"]
         },
         {
+            "type": "bitmap",
+            "file": "minecraft:font/character-22aec.png",
+            "ascent": 7,
+            "chars": ["\uD84A\uDEEC"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-247ef.png",
+            "ascent": 7,
+            "chars": ["\uD851\uDFEF"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2a38a.png",
+            "ascent": 7,
+            "chars": ["\uD868\uDF8A"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2b125.png",
+            "ascent": 7,
+            "chars": ["\uD86C\uDD25"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2ea5d.png",
+            "ascent": 7,
+            "chars": ["\uD87A\uDE5D"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-30d5d.png",
+            "ascent": 7,
+            "chars": ["\uD883\uDD5D"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-31b92.png",
+            "ascent": 7,
+            "chars": ["\uD886\uDF92"]
+        },
+        {
             "type": "unihex",
             "hex_file": "minecraft:font/extb-first-32",
             "size_overrides": [
