@@ -1,0 +1,12 @@
+{
+    "name": "fake_omniore",
+    "type": "resource",
+    "description": "矿石的纹理被模糊。",
+    "author": ["Don_Trueno"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
