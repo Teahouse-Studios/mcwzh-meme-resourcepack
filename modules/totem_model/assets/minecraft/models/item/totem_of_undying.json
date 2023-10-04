@@ -2,7 +2,7 @@
     "credit": "Made with Blockbench",
     "textures": {
         "0": "block/smooth_stone",
-        "1": "mcwzhmeme:item/lxazl5770",
+        "1": "mcwzhmeme:item/author/lxazl5770",
         "particle": "block/smooth_stone"
     },
     "gui_light": "side",

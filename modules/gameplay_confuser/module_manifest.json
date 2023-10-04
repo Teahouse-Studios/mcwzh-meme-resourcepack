@@ -3,5 +3,5 @@
     "type": "collection",
     "description": "一系列改变游戏体验并引发困惑和障碍的无梗模块集合",
     "author": ["siiftun1857"],
-    "contains": ["block_animation_reverse", "fake_multitool"]
+    "contains": ["block_animation_reverse", "fake_multitool", "fake_omniore"]
 }
