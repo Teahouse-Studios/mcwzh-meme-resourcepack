@@ -3048,6 +3048,18 @@
             "chars": ["\uD888\uDC8E"]
         },
         {
+            "type": "bitmap",
+            "file": "minecraft:font/character-2aed0.png",
+            "ascent": 7,
+            "chars": ["\uD86B\uDED0"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/character-3114b.png",
+            "ascent": 7,
+            "chars": ["\uD884\uDD4B"]
+        },
+        {
             "type": "unihex",
             "hex_file": "minecraft:font/extb-first-32",
             "size_overrides": [
@@ -3057,6 +3069,36 @@
                     ],
                     "from": "\ud840\udc00",
                     "to": "\ud840\udc1f",
+                    "left": 0,
+                    "right": 15
+                }
+            ]
+        },
+        {
+            "type": "unihex",
+            "hex_file": "minecraft:font/extb-supp",
+            "size_overrides": [
+                {
+                    "__ranges": [
+                        "CJK Unified Ideographs Extension B, Last 9"
+                    ],
+                    "from": "\ud869\uded7",
+                    "to": "\ud869\udedf",
+                    "left": 0,
+                    "right": 15
+                }
+            ]
+        },
+        {
+            "type": "unihex",
+            "hex_file": "minecraft:font/extc-supp",
+            "size_overrides": [
+                {
+                    "__ranges": [
+                        "CJK Unified Ideographs Extension C, Last 5"
+                    ],
+                    "from": "\ud86d\udf35",
+                    "to": "\ud86d\udc39",
                     "left": 0,
                     "right": 15
                 }
@@ -3084,6 +3126,36 @@
                     ],
                     "from": "\ud869\udf00",
                     "to": "\ud87a\udfef",
+                    "left": 0,
+                    "right": 15
+                }
+            ]
+        },
+        {
+            "type": "unihex",
+            "hex_file": "minecraft:font/extg-first-384",
+            "size_overrides": [
+                {
+                    "__ranges": [
+                        "CJK Unified Ideographs Extension G, First 384"
+                    ],
+                    "from": "\ud880\udc00",
+                    "to": "\ud880\udd7f",
+                    "left": 0,
+                    "right": 15
+                }
+            ]
+        },
+        {
+            "type": "unihex",
+            "hex_file": "minecraft:font/ext-i",
+            "size_overrides": [
+                {
+                    "__ranges": [
+                        "CJK Unified Ideographs Extension I"
+                    ],
+                    "from": "\ud87a\udff0",
+                    "to": "\ud87b\ude5d",
                     "left": 0,
                     "right": 15
                 }
