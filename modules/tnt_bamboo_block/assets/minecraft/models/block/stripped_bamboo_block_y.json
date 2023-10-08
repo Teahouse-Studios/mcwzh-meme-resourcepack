@@ -1,0 +1,23 @@
+{
+  "parent": "block/block",
+  "elements": [
+      {
+          "from": [ 0, 0, 0 ],
+          "to": [ 16, 16, 16 ],
+          "faces": {
+              "down":  { "texture": "#bottom", "cullface": "down" },
+              "up":    { "texture": "#top", "cullface": "up" },
+              "north": { "texture": "#side", "cullface": "north" },
+              "south": { "texture": "#side", "cullface": "south" },
+              "west":  { "texture": "#side", "cullface": "west" },
+              "east":  { "texture": "#side", "cullface": "east" }
+          }
+      }
+  ],
+  "textures": {
+      "particle": "#side",
+      "side": "block/stripped_bamboo_block_tnt_side",
+      "bottom": "block/stripped_bamboo_block_tnt_bottom",
+      "top": "block/stripped_bamboo_block_tnt_top"
+  }
+}
