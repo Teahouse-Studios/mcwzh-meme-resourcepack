@@ -2,5 +2,11 @@
     "name": "neo_decorated_pots",
     "type": "resource",
     "description": "你在尝试一种很新很coooool的饰纹陶罐。",
-    "author": ["Don_Trueno"]
+    "author": ["Don_Trueno"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
 }
