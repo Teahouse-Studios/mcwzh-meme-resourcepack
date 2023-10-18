@@ -1,9 +1,0 @@
-{
-  "variants": {
-    "": [
-      {
-        "model": "minecraft:block/fake_omniore"
-      }
-    ]
-  }
-}
