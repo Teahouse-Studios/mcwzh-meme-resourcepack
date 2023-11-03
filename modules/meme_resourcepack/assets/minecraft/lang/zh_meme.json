@@ -3442,7 +3442,7 @@
   "gamerule.projectilesCanBreakBlocks.description": "控制弹射物是否能破坏可被其破坏的方块。",
   "gamerule.randomTickSpeed": "随机刻速率",
   "gamerule.reducedDebugInfo": "简化调试信息",
-  "gamerule.reducedDebugInfo.description": "限制调试屏幕内容。",
+  "gamerule.reducedDebugInfo.description": "把F3里的玩意简化到除了电脑信息啥也不剩",
   "gamerule.sendCommandFeedback": "发送命令反馈",
   "gamerule.showDeathMessages": "显示白给消息",
   "gamerule.snowAccumulationHeight": "积雪厚度",
