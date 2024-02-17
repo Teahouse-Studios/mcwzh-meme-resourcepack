@@ -3652,7 +3652,7 @@
         },
         {
             "type": "unihex",
-            "hex_file": "minecraft:font/extd",
+            "hex_file": "minecraft:font/ext-d",
             "size_overrides": [
                 {
                     "__ranges": [
