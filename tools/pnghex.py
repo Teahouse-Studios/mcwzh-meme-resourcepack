@@ -24,7 +24,7 @@ def png_to_hex_mc(png_file):
         row = data[y*width:(y+1)*width]
         byte = ''
         for x in range(width):
-            byte += '0' if row[x] == (255,255,255,255) else '1'
+            byte += '1' if row[x] == (255,255,255,255) else '0'
             if (x+1) % 8 == 0:
                 hex_string += f'{int(byte, 2):02X}'
                 byte = ''

@@ -3652,6 +3652,21 @@
         },
         {
             "type": "unihex",
+            "hex_file": "minecraft:font/extd",
+            "size_overrides": [
+                {
+                    "__ranges": [
+                        "CJK Unified Ideographs Extension D"
+                    ],
+                    "from": "\ud86d\udf40",
+                    "to": "\ud86e\udc1f",
+                    "left": 0,
+                    "right": 15
+                }
+            ]
+        },
+        {
+            "type": "unihex",
             "hex_file": "minecraft:font/extb-to-extf",
             "size_overrides": [
                 {
