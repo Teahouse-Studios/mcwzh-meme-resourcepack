@@ -4,7 +4,7 @@
 
 此资源包仅适用于**Minecraft Java版**。**关于适用于Minecraft基岩版的资源包，参见[基岩版梗体中文](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock)。**
 
-**注：若发现可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:译名标准化)。**
+**注：若发现可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://zh.minecraft.wiki/w/Minecraft_Wiki:译名标准化)。**
 
 [![Banner](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/blob/master/materials/zh_meme_banner.png?raw=true)](https://www.mcbbs.net/thread-1004643-1-1.html)
 
@@ -98,8 +98,8 @@ node preset_build.js
 ## 声明
 
 * 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
-* 本资源包与Mojang、Minecraft Wiki、Gamepedia和Fandom无关，原中文翻译版权为Mojang和翻译者所有。
-  * 关于正确的译名，请参见[中文Minecraft Wiki上的标准译名列表](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:译名标准化)。
+* 本资源包与Mojang、Minecraft Wiki和Weird Gloop无关，原中文翻译版权为Mojang和翻译者所有。
+  * 关于正确的译名，请参见[中文Minecraft Wiki上的标准译名列表](https://zh.minecraft.wiki/w/Minecraft_Wiki:译名标准化)。
 * 本项目文件除另有声明外，均以 ***CC BY-SA 4.0*** 协议授权。
   * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   * 这不是法律建议。
