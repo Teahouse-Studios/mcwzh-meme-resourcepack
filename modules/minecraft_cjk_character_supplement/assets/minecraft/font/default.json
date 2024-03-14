@@ -3607,30 +3607,6 @@
         },
         {
             "type": "unihex",
-            "hex_file": "minecraft:font/perfect-dashes",
-            "size_overrides": [
-                {
-                    "__ranges": [
-                        "Two-Em Dash"
-                    ],
-                    "from": "\u2e3a",
-                    "to": "\u2e3a",
-                    "left": 0,
-                    "right": 24
-                },
-                {
-                    "__ranges": [
-                        "Three-Em Dash"
-                    ],
-                    "from": "\u2e3b",
-                    "to": "\u2e3b",
-                    "left": 0,
-                    "right": 32
-                }
-            ]
-        },
-        {
-            "type": "unihex",
             "hex_file": "minecraft:font/extb-first-32",
             "size_overrides": [
                 {
