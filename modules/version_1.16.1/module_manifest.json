@@ -9,11 +9,12 @@
         "lang_old_realms_strings",
         "lang_old_strings",
         "lang_replaceitem_1.12.2-1.16.5",
-	"lang_selectworld_gui_1.16.2-1.16.5",
+    	"lang_selectworld_gui_1.16.2-1.16.5",
         "lang_sleep_impossible_1.12.2-1.16.5",
-	"lang_spawnpoint_1.16-1.16.1",
+    	"lang_spawnpoint_1.16-1.16.1",
         "lang_worldborder_1.12.2-1.16.5",
         "lang_old_biomes_1.12.2-1.17.1",
-        "lang_world_generation_1.12.2-1.18.2"
+        "lang_world_generation_1.12.2-1.18.2",
+        "text_ancient_credits"
     ]
 }
