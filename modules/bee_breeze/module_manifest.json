@@ -1,0 +1,12 @@
+{
+    "name": "bee_breeze",
+    "type": "resource",
+    "description": "旋风人也蜂了。",
+    "author": ["Don_Trueno"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

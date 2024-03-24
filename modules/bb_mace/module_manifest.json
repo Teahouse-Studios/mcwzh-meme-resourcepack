@@ -1,0 +1,12 @@
+{
+    "name": "bb_mace",
+    "type": "resource",
+    "description": "锤蜂机。",
+    "author": ["Don_Trueno"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
