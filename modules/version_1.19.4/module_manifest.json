@@ -5,6 +5,7 @@
     "author": ["梗体中文内容组"],
     "contains": [
         "lang_old_realms_strings",
-        "lang_old_strings"
+        "lang_old_strings",
+        "text_elder_credits"
     ]
 }
