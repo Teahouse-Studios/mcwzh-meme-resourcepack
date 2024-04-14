@@ -25,7 +25,7 @@
 
 ### 常规
 
-请选择 `mcwzh-meme.zip` 下载，像其他资源包一样复制到你对应的 `.minecraft/resourcepacks/` 目录中（[MCBBS上的教程](https://www.mcbbs.net/thread-880869-1-1.html)）（MultiMC或其他分离版本的启动器请自行查找）。资源包新建了一个语言，安装启用后在语言设置中选择“**梗体中文**”即可体验。
+请选择 `mcwzh-meme.zip` 下载，像其他资源包一样复制到你对应的 `.minecraft/resourcepacks/` 目录中（MultiMC或其他分离版本的启动器请自行查找）。资源包新建了一个语言，安装启用后在语言设置中选择“**梗体中文**”即可体验。
 
 ### 加载Mod时
 
