@@ -21,7 +21,7 @@
 
 ## 用法
 
-在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases)中下载此资源包，或在[网页构建](https://dl.meme.teahou.se/)中选择自定义选项下载。
+在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/releases)中下载此资源包，或在[网页构建](https://meme.teahouse.team/)中选择自定义选项下载。
 
 ### 常规
 
@@ -59,7 +59,7 @@
 
 ### 体验最新内容
 
-想要**抢先体验**最前沿~~整活~~版本，我们强烈建议您前往[网页打包](https://dl.meme.teahou.se/)，那里可以更直观地选择您需要的内容。
+想要**抢先体验**最前沿~~整活~~版本，我们强烈建议您前往[网页打包](https://meme.teahouse.team/)，那里可以更直观地选择您需要的内容。
 
 若您仍想自己尝试从命令行打包（并不推荐，比较繁琐），可按以下步骤进行：
 
