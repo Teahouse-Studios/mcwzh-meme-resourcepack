@@ -170,3 +170,37 @@ def unihex_to_unicode_page(hex_file, output_image_file, cp_start=0x4E00, img_siz
     # 保存为PNG文件
     img.save(output_image_file)
 
+"""js
+// 在 shs-cid 工具内输入所有所需文字并加载后执行
+// 获取所有 .cid 元素
+const cidElements = document.querySelectorAll('.cid');
+
+// 存储符合条件的 .cid-char 文本
+const charTexts = [];
+
+// 遍历每个 .cid 元素
+cidElements.forEach(cid => {
+    // 获取 .cid-locale 的内容
+    const localeElement = cid.querySelector('.cid-locale');
+    const langElement = localeElement.querySelector('.cid-lang');
+    const equivElement = localeElement.querySelector('.cid-equiv');
+    
+    // 检查是否符合条件
+    if ( (langElement && langElement.innerText === 'HK' && 
+        equivElement && equivElement.innerText === '=TW#' ) || 
+        (langElement && langElement.innerText === 'TW' && 
+        equivElement && equivElement.innerText === '=HK#' ) ) {
+        
+        // 获取 .cid-char 的内容
+        const charElement = cid.querySelector('.cid-char');
+        
+        if (charElement) {
+            // 提取 innerText 并添加到数组
+            charTexts.push(charElement.innerText);
+        }
+    }
+});
+
+// 输出结果
+console.log(charTexts.toString().replaceAll(',',''));
+"""
