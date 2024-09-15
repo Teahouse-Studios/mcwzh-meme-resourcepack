@@ -128,6 +128,11 @@ def create_hk_patch_from_tw_hex(path, unifont_hex_file, hk_ref_tw_list, tw_hex_f
         for k in glyphs:
             final_hex_file.write(k+':'+glyphs[k]+'\n')
 
+def print_256_chr_in_batch(cp_start=0x4E00):
+    for i in range(256):
+        print(chr(cp_start + i),end='')
+    print()
+
 def unihex_to_unicode_page(hex_file, output_image_file, cp_start=0x4E00, img_size=256, sub_img_size=16, glyph_size=(16, 16)):
     # 创建256x256的图像，背景为白色
     img = Image.new('1', (img_size, img_size), color=1)
