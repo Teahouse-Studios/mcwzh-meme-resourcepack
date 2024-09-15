@@ -104,7 +104,7 @@ def remove_identical_glyphs(partial_hex_file, unifont_hex_file, final_hex_file):
             if partial_hex_file_glyphs[k] != unifont_hex_file_glyphs.get(k):
                 final_hex_file.write(k+":"+partial_hex_file_glyphs[k]+"\n")
 
-# create_hk_patch_from_tw_hex(r'D:\farstar\\',r'C:\Users\Lakeus\Downloads\unifont-16.0.01\unifont-16.0.01\font\precompiled\unifont_all-16.0.01.hex',r'D:\farstar\hk=#tw.txt',r'D:\farstar\glyph_82_tw.hex',r'D:\farstar\glyph_82_hk.hex',0x8200)
+# create_hk_patch_from_tw_hex(r'D:\farstar\glyph_82',r'C:\Users\Lakeus\Downloads\unifont-16.0.01\unifont-16.0.01\font\precompiled\unifont_all-16.0.01.hex',r'D:\farstar\glyph_82\hk=#tw.txt',r'D:\farstar\glyph_82_tw.hex',r'D:\farstar\glyph_82_hk.hex',0x8200)
 def create_hk_patch_from_tw_hex(path, unifont_hex_file, hk_ref_tw_list, tw_hex_file, final_hex_file, cp_start=0x4E00):
     unifont_glyphs = read_hex_file_glyphs(unifont_hex_file)
     tw_glyphs = read_hex_file_glyphs(tw_hex_file)
@@ -133,6 +133,7 @@ def print_256_chr_in_batch(cp_start=0x4E00):
         print(chr(cp_start + i),end='')
     print()
 
+# unihex_to_unicode_page(r'C:\Users\Lakeus\Downloads\unifont-16.0.01\unifont-16.0.01\font\precompiled\unifont_all-16.0.01.hex',r'D:\farstar\glyph_82.png',cp_start=0x8200)
 def unihex_to_unicode_page(hex_file, output_image_file, cp_start=0x4E00, img_size=256, sub_img_size=16, glyph_size=(16, 16)):
     # 创建256x256的图像，背景为白色
     img = Image.new('1', (img_size, img_size), color=1)
