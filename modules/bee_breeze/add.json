@@ -1,0 +1,20 @@
+{
+    "entity.minecraft.breeze": "蜂人",
+    "entity.minecraft.wind_charge": "蜂弹",
+    "entity.minecraft.breeze_wind_charge": "蜂弹",
+    "item.minecraft.wind_charge": "蜂弹",
+    "item.minecraft.breeze_spawn_egg": "蜂人刷怪蛋",
+    "subtitles.entity.breeze.charge": "蜂人：蓄力",
+    "subtitles.entity.breeze.death": "蜂人：啊我死了",
+    "subtitles.entity.breeze.deflect": "蜂人：反弹",
+    "subtitles.entity.breeze.hurt": "蜂人：哎呦",
+    "subtitles.entity.breeze.idle_air": "蜂人：飞行",
+    "subtitles.entity.breeze.idle_ground": "旋蜂人：呼啸",
+    "subtitles.entity.breeze.inhale": "蜂人：吸气",
+    "subtitles.entity.breeze.jump": "蜂人：跳跃",
+    "subtitles.entity.breeze.land": "蜂人：着陆",
+    "subtitles.entity.breeze.shoot": "蜂人：射击",
+    "subtitles.entity.breeze.slide": "蜂人：滑行",
+    "subtitles.entity.breeze.whirl": "蜂人：旋转"
+}
+

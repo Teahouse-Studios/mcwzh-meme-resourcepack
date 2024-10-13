@@ -3,15 +3,15 @@ def sort(origin):
 
 
 if __name__ == '__main__':
+    import sys
     from argparse import ArgumentParser, FileType
     from json import load, dump
-    from sys import stdout
 
     def generate_parser() -> ArgumentParser:
         parser = ArgumentParser(description="Sort a json by key.")
         parser.add_argument("json", type=FileType(
             mode='r', encoding='utf8'), help="path to the json.")
-        parser.add_argument("--outfile", "-o", nargs='?', default=stdout, type=FileType(mode='w', encoding='utf8'),
+        parser.add_argument("--outfile", "-o", nargs='?', default=sys.stdout, type=FileType(mode='w', encoding='utf8'),
                             help="specify the name of sorted json. If omitted, will output the json to stdout.")
         return parser
     args = generate_parser().parse_args()

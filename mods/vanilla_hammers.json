@@ -19,7 +19,7 @@
     "item.vanilla-hammers.nether_hammer": "尼德兰锤",
 
     "text.autoconfig.vanilla-hammers.option.fullBlockHitbox": "完整方块碰撞箱",
-    "text.autoconfig.vanilla-hammers.option.enableExtraMaterials": "额外的原版材质锤子",
+    "text.autoconfig.vanilla-hammers.option.enableExtraMaterials": "额外的原版纹理锤子",
     "text.autoconfig.vanilla-hammers.option.enableTaterHammer": "马铃薯锤",
     "text.autoconfig.vanilla-hammers.option.enableFull3x3": "完整 3x3 碰撞箱",
     "text.autoconfig.vanilla-hammers.option.alwaysShowSingleBlockHitbox": "始终显示单个碰撞箱",

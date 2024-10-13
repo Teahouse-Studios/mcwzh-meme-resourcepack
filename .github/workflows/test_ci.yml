@@ -10,34 +10,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-    - name: Install dependencies
-      run: |
-        yarn
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
 
-    - name: Test build
-      run: |
-        node preset_build.js
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
 
-    - name: Upload files built
-      uses: actions/upload-artifact@v2
-      with:
-        name: files-built
-        path: |
-          builds
+      - name: Install dependencies
+        run: |
+          pnpm install --frozen-lockfile
+
+      - name: Test build
+        run: |
+          pnpm run test-build
+
+      - name: Upload files built
+        uses: actions/upload-artifact@v3
+        with:
+          name: files-built
+          path: |
+            builds
   deploy:
     if: ${{ github.event_name == 'push' && github.ref_name == 'master' }}
     needs:
       - test
     runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@master
-     - name: Update Deployment Status
-       run: |
-         curl \
-         -X POST \
-         -H "Authorization: token ${{secrets.GITHUB_TOKEN}}" \
-         -H "Accept: application/vnd.github.v3+json" \
-         https://api.github.com/repos/${{github.repository}}/deployments \
-         -d '{"ref":"${{ github.sha }}", "required_contexts": []}'
+      - uses: actions/checkout@master
+      - name: Update Deployment Status
+        run: |
+          curl \
+          -X POST \
+          -H "Authorization: token ${{secrets.GITHUB_TOKEN}}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/${{github.repository}}/deployments \
+          -d '{"ref":"${{ github.sha }}", "required_contexts": []}'

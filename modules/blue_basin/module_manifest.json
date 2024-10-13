@@ -1,0 +1,12 @@
+{
+    "name": "blue_basin",
+    "type": "resource",
+    "description": "蓝的盆，，，",
+    "author": ["Don_Trueno"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

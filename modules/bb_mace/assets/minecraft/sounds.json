@@ -1,0 +1,16 @@
+{
+  "item.mace.smash_air": {
+    "replace":true,
+    "sounds": [
+      "item/mace/smash_air"
+    ],
+    "subtitle": "subtitles.item.mace.smash_air"
+  },
+  "item.mace.smash_ground": {
+    "replace":true,
+    "sounds": [
+      "item/mace/smash_ground"
+    ],
+    "subtitle": "subtitles.item.mace.smash_ground"
+  }
+}

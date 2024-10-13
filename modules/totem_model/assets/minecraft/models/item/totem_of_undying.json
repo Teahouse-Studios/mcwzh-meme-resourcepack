@@ -2,7 +2,7 @@
     "credit": "Made with Blockbench",
     "textures": {
         "0": "block/smooth_stone",
-        "1": "mcwzhmeme:entity/lxazl5770",
+        "1": "mcwzhmeme:item/author/lxazl5770",
         "particle": "block/smooth_stone"
     },
     "gui_light": "side",
@@ -260,35 +260,35 @@
     "overrides": [
         {
             "predicate": { "custom_model_data": 10800000 },
-            "model": "mcwzhmeme:author/lxazl5770"
+            "model": "mcwzhmeme:item/author/lxazl5770"
         },
         {
             "predicate": { "custom_model_data": 10800001 },
-            "model": "mcwzhmeme:author/lake"
+            "model": "mcwzhmeme:item/author/lake"
         },
         {
             "predicate": { "custom_model_data": 10800002 },
-            "model": "mcwzhmeme:author/dianliang"
+            "model": "mcwzhmeme:item/author/dianliang"
         },
         {
             "predicate": { "custom_model_data": 10800003 },
-            "model": "mcwzhmeme:author/mysticnebula70"
+            "model": "mcwzhmeme:item/author/mysticnebula70"
         },
         {
             "predicate": { "custom_model_data": 10800004 },
-            "model": "mcwzhmeme:author/skyeyefast"
+            "model": "mcwzhmeme:item/author/skyeyefast"
         },
         {
             "predicate": { "custom_model_data": 10800005 },
-            "model": "mcwzhmeme:author/gu_zt"
+            "model": "mcwzhmeme:item/author/gugle"
         },
         {
             "predicate": { "custom_model_data": 10800006 },
-            "model": "mcwzhmeme:author/littlec"
+            "model": "mcwzhmeme:item/author/littlec"
         },
         {
             "predicate": { "custom_model_data": 10800007 },
-            "model": "mcwzhmeme:author/wolf"
+            "model": "mcwzhmeme:item/author/wolf"
         }
     ]
 }

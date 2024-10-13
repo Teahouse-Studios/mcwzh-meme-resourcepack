@@ -1,0 +1,11 @@
+{
+    "name": "version_1.19.4",
+    "type": "collection",
+    "description": "适用于1.19.4版本的模块集合",
+    "author": ["梗体中文内容组"],
+    "contains": [
+        "lang_old_realms_strings",
+        "lang_old_strings",
+        "text_elder_credits"
+    ]
+}

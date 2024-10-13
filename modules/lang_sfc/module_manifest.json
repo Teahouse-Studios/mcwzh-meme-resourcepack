@@ -1,7 +1,7 @@
 {
     "name": "lang_sfc",
     "type": "resource",
-    "description": "适用于严格审查的文本替换。注：看破别说破。",
+    "description": "适用于严格审查的文本替换。嘘，看破别说破。",
     "author": ["梗体中文内容组"],
     "languageModification": [
         {
