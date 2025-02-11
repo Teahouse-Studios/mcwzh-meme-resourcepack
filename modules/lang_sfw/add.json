@@ -181,5 +181,7 @@
     "subtitles.entity.villager.hurt": "奸商：有内鬼，终止交易！",
     "subtitles.entity.villager.trade": "奸商：交易",
     "subtitles.entity.wandering_trader.trade": "流浪奸商：交易",
-    "title.multiplayer.lan": "多人游戏（局域网） (末响应)"
+    "title.multiplayer.lan": "多人游戏（局域网） (末响应)",
+    "gamerule.entitiesWithPassengersCanUsePortals": "被骑的实体能否访问门户",
+    "gamerule.entitiesWithPassengersCanUsePortals.description": "允许被骑的实体通过尼德兰门户、终端门户和终端网关传送。"
 }
