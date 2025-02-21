@@ -1,0 +1,12 @@
+{
+    "name": "manhole_trapdoor",
+    "type": "resource",
+    "description": "替换活板门的纹理为井盖，中",
+    "author": ["zh9c418","Don_Trueno"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
