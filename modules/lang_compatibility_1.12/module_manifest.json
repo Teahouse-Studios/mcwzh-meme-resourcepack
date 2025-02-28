@@ -1,0 +1,12 @@
+{
+    "name": "lang_compatibility_1.12",
+    "type": "resource",
+    "description": "仅在1.12版本中移除更高版本才出现的字符串",
+    "author": ["梗体中文内容组"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "remove": "remove.json"
+        }
+    ]
+}
