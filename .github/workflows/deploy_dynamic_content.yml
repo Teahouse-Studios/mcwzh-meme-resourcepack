@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-node@v4
       - run: node check_news.js
       - name: Create comment
-        uses: peter-evans/commit-comment@v1
+        uses: peter-evans/commit-comment@v3
         if: ${{ failure() }}
         with:
           body: |
