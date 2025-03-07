@@ -5,11 +5,11 @@
         "test-build": "node preset_build.js"
     },
     "dependencies": {
-        "glob": "^8.1.0",
-        "memepack-builder": "^0.4.0"
+        "glob": "^11.0.1",
+        "memepack-builder": "^0.5.0"
     },
     "devDependencies": {
-        "prettier": "^2.8.0"
+        "prettier": "^3.5.3"
     },
     "packageManager": "pnpm@10.6.1+sha512.40ee09af407fa9fbb5fbfb8e1cb40fbb74c0af0c3e10e9224d7b53c7658528615b2c92450e74cfad91e3a2dcafe3ce4050d80bda71d757756d2ce2b66213e9a3"
 }

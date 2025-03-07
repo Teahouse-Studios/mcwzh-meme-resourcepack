@@ -9,7 +9,7 @@ const preset_args = [
     type: 'normal',
     modules: {
       resource: ['meme_resource_pack'],
-      collection: ['choice_modules_1'],
+      collection: ['choice_modules_default'],
     },
     mod: [],
     format: 9,
@@ -20,7 +20,7 @@ const preset_args = [
     type: 'normal',
     modules: {
       resource: ['meme_resource_pack', 'lang_sfw'],
-      collection: ['choice_modules_1'],
+      collection: ['choice_modules_default'],
     },
     mod: ['all'],
     format: 9,
@@ -53,7 +53,7 @@ const preset_args = [
     type: 'normal',
     modules: {
       resource: ['meme_resource_pack', 'lang_sfw'],
-      collection: ['choice_modules_1'],
+      collection: ['choice_modules_default'],
     },
     mod: ['all'],
     format: 9,
@@ -64,7 +64,7 @@ const preset_args = [
     type: 'normal',
     modules: {
       resource: ['meme_resource_pack', 'lang_sfw'],
-      collection: ['choice_modules_1'],
+      collection: ['choice_modules_default'],
     },
     mod: [],
     format: 9,
