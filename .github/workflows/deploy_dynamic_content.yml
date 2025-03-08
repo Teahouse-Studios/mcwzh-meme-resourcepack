@@ -14,8 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
+
       - run: node check_news.js
+
       - name: Create comment
         uses: peter-evans/commit-comment@v3
         if: ${{ failure() }}
@@ -29,7 +32,8 @@ jobs:
       - check-news
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
+
       - uses: Teahouse-Studios/aliyun-oss-action@0.7
         with:
           KEY_ID: ${{ secrets.KEY_ID }}

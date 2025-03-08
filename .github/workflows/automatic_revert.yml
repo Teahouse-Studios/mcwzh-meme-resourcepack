@@ -6,13 +6,13 @@ on:
 
 jobs:
   revert-commit:
-
     runs-on: ubuntu-latest
 
     if: contains(github.event.comment.body, '/revert')
 
     steps:
       - uses: actions/checkout@v4
+
       - name: Automatic Revert
         uses: srt32/revert@v0.0.1
         env:
