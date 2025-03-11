@@ -1,14 +1,13 @@
 {
-    "name": "version_1.12.2",
+    "name": "version_1.13-1.15.2",
     "type": "collection",
-    "description": "适用于1.12.2版本的模块集合",
+    "description": "适用于1.13至1.15.2版本的模块集合",
     "author": ["梗体中文内容组"],
     "contains": [
         "lang_achievements_1.11-1.11.2",
         "lang_attributes_1.12.2-1.15.2",
         "lang_backupworld_1.12.2-1.16.5",
         "lang_commands_1.11-1.12.2",
-        "lang_compatibility_1.12",
         "lang_extra_strings",
         "lang_grass_path_1.12.2-1.16.5",
         "lang_itemgroup_1.12.2-1.19.2",
