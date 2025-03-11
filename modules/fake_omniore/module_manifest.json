@@ -1,0 +1,12 @@
+{
+    "name": "fake_omniore",
+    "type": "resource",
+    "description": "你挖的是这个金矿石呢，还是这个钻石矿石呢？",
+    "author": ["Don_Trueno"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

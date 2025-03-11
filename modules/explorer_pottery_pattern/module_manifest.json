@@ -1,0 +1,12 @@
+{
+    "name": "explorer_pottery_pattern",
+    "type": "resource",
+    "description": "Internet Explorer™",
+    "author": ["Don_Trueno"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

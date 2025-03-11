@@ -1,0 +1,6 @@
+{
+    "name": "point_and_pixelate",
+    "type": "resource",
+    "description": "鼠标选中的物品栏槽位会被打码（23w31a/1.20.2后可用）。",
+    "author": ["Don_Trueno"]
+}
