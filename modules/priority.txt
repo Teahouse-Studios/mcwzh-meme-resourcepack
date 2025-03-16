@@ -20,28 +20,38 @@ enable_compliancies  # conflict with too_much_compliancies
 too_much_compliancies  # conflict with enable_compliancies
 
 bagify  # incompatible with fursuit, jinkela
-bee_pickaxe  # incompatible with bee_pickaxe, fake_multitool
+bee_pickaxe_ii #incompatible with bee_pickaxe, fake_multitool
+bee_pickaxe  # incompatible with bee_pickaxe_ii, fake_multitool
 chicken_soup  # incompatible with sus_stuff
-locusazzurro  # incompatible with fake_multitool, locusazzurro
-fake_multitool  # incompatible with bee_pickaxe, locusazzurro
+locusazzurro  # incompatible with fake_multitool
+fake_multitool  # incompatible with bee_pickaxe, bee_pickaxe_ii, locusazzurro
 sus_stuff  # incompatible with chicken_soup
 questioning_totem  # incompatible with totem_model
 totem_model  # incompatible with questioning_totem
 
+air_pods
 baguette
+bb_mace
+bee_breeze
 block_animation_reverse
 brewing_stand_model
 disco_ball
 dorowolf_texture
+explorer_pottery_pattern
 map_override
+manhole_trapdoor
 miku_bucket
+blue_basin
 minecart_helmet
 minecraft_cjk_character_supplement
 mopemope
+muilla
 observer_think
+point_and_pixelate
 rainbow_enchanting
+real_meme_resourcepack
 sacabambaspis_dropper
-strange_meme_background
+super_spicy_seaweed
 vulpes_ferrilata
 
 author_zombies
@@ -52,6 +62,7 @@ annoying_sounds
 beautiful_chicken
 bell_sound
 firework_sound
+ga_zhi
 goat_horn_sound
 open_close_sound
 sculk_sound
@@ -63,6 +74,7 @@ meme_splashes
 lang_april_fools_snapshots
 lang_combat_test_6
 lang_extra_strings
+lang_compatibility_1.12
 lang_old_realms_strings
 lang_old_strings
 lang_achievements_1.11-1.11.2
@@ -85,6 +97,9 @@ lang_old_biomes_1.12.2-1.17.1
 lang_world_generation_1.12.2-1.18.2
 lang_itemgroup_1.12.2-1.19.2
 lang_chat_preview_1.19.2
+
+text_credits_1.12-1.16.5
+text_credits_1.17-1.19.4
 
 lang_sfw
 lang_sfc

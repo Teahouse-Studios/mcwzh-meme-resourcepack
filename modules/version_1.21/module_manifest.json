@@ -1,0 +1,10 @@
+{
+    "name": "version_1.21",
+    "type": "collection",
+    "description": "适用于1.21版本的模块集合",
+    "author": ["梗体中文内容组"],
+    "contains": [
+        "lang_old_realms_strings",
+        "lang_old_strings"
+    ]
+}
