@@ -10,7 +10,7 @@
 
 ## 赞助者
 <p align="center">
-  <a href="https://afdian.net/@teahouse">
+  <a href="https://afdian.com/a/teahouse">
     <img src='https://fe.wd-ljt.com/m3me/sP0ns0r5/sP0ns0r5.svg'>
   </a>
 </p>
