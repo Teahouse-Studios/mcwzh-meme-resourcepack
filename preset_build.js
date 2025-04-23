@@ -8,7 +8,7 @@ const preset_args = [
     platform: 'java',
     type: 'normal',
     modules: {
-      resource: ['meme_resource_pack'],
+      resource: ['meme_resourcepack'],
       collection: ['choice_modules_default'],
     },
     mod: [],
@@ -19,7 +19,7 @@ const preset_args = [
     platform: 'java',
     type: 'normal',
     modules: {
-      resource: ['meme_resource_pack', 'lang_sfw'],
+      resource: ['meme_resourcepack', 'lang_sfw'],
       collection: ['choice_modules_default'],
     },
     mod: ['all'],
@@ -30,7 +30,7 @@ const preset_args = [
     platform: 'java',
     type: 'normal',
     modules: {
-      resource: ['meme_resource_pack', 'lang_sfw'],
+      resource: ['meme_resourcepack', 'lang_sfw'],
       collection: [],
     },
     mod: [],
@@ -41,7 +41,7 @@ const preset_args = [
     platform: 'java',
     type: 'normal',
     modules: {
-      resource: ['meme_resource_pack', 'lang_sfw'],
+      resource: ['meme_resourcepack', 'lang_sfw'],
       collection: [],
     },
     mod: [],
@@ -52,7 +52,7 @@ const preset_args = [
     platform: 'java',
     type: 'normal',
     modules: {
-      resource: ['meme_resource_pack', 'lang_sfw'],
+      resource: ['meme_resourcepack', 'lang_sfw'],
       collection: ['choice_modules_default'],
     },
     mod: ['all'],
@@ -63,7 +63,7 @@ const preset_args = [
     platform: 'java',
     type: 'normal',
     modules: {
-      resource: ['meme_resource_pack', 'lang_sfw'],
+      resource: ['meme_resourcepack', 'lang_sfw'],
       collection: ['choice_modules_default'],
     },
     mod: [],
@@ -74,7 +74,7 @@ const preset_args = [
     platform: 'java',
     type: 'normal',
     modules: {
-      resource: ['meme_resource_pack', 'lang_sfw'],
+      resource: ['meme_resourcepack', 'lang_sfw'],
       collection: [],
     },
     mod: [],
@@ -85,7 +85,7 @@ const preset_args = [
     platform: 'java',
     type: 'legacy',
     modules: {
-      resource: ['meme_resource_pack', 'lang_sfw'],
+      resource: ['meme_resourcepack', 'lang_sfw'],
       collection: ['version_1.12.2-1.15.2'],
     },
     mod: [],
