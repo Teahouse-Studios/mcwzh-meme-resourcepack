@@ -6546,7 +6546,7 @@
     "subtitles.block.vault.deactivate": "个人保管库：挂起",
     "subtitles.block.vault.eject_item": "个人保管库：201 Created",
     "subtitles.block.vault.insert_item": "个人保管库：202 Accepted",
-    "subtitles.block.vault.insert_item_fail": "个人保管库：502 Bad Gateway",
+    "subtitles.block.vault.insert_item_fail": "个人保管库：400 Bad Request",
     "subtitles.block.vault.open_shutter": "个人保管库：200 OK",
     "subtitles.block.vault.reject_rewarded_player": "个人保管库：429 Too Many Requests",
     "subtitles.block.water.ambient": "川流不息",
