@@ -6,7 +6,7 @@
     },
     "dependencies": {
         "glob": "^11.0.1",
-        "memepack-builder": "^0.5.0"
+        "memepack-builder": "^0.6.0"
     },
     "devDependencies": {
         "prettier": "^3.5.3"
