@@ -20,7 +20,7 @@ jobs:
       - run: node check_news.js
 
       - name: Create comment
-        uses: peter-evans/commit-comment@v3
+        uses: peter-evans/commit-comment@v4
         if: ${{ failure() }}
         with:
           body: |
