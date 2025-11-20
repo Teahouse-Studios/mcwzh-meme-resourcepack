@@ -11,7 +11,7 @@ jobs:
     if: contains(github.event.comment.body, '/revert')
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Automatic Revert
         uses: srt32/revert@v0.0.1
