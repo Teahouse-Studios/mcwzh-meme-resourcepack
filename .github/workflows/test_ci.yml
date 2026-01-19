@@ -26,7 +26,7 @@ jobs:
         run: pnpm run test-build
 
       - name: Upload files built
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: files-built
           path: builds
