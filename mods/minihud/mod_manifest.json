@@ -1,0 +1,40 @@
+{
+    "name": "minihud",
+    "type": "mod",
+    "description": "迷你HUD（MiniHUD）",
+    "mod": {
+        "version": "0.20.0",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/minihud"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/maruohon/minihud"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/2311.html"
+            },
+            {
+                "type": "website",
+                "url": "https://masa.dy.fi/tmp/minecraft/mods/client_mods"
+            }
+        ],
+        "license": "LGPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Matti Ruohonen"
+            }
+        ]
+    },
+    "author": ["Gu-ZT"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

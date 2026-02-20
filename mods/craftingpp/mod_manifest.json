@@ -1,0 +1,31 @@
+{
+    "name": "craftingpp",
+    "type": "mod",
+    "description": "更多的合成（Crafting++）",
+    "mod": {
+        "links": [
+            {
+                "type": "source",
+                "url": "https://github.com/ruhuasiyu/CraftingPlusPlus"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/1297.html"
+            }
+        ],
+        "license": "GPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "ruhuasiyu"
+            }
+        ]
+    },
+    "author": ["Lakejason0"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
