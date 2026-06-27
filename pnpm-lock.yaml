@@ -17,7 +17,7 @@ importers:
     devDependencies:
       prettier:
         specifier: ^3.5.3
-        version: 3.8.5
+        version: 3.9.0
 
 packages:
 
@@ -135,8 +135,8 @@ packages:
     resolution: {integrity: sha512-oWyT4gICAu+kaA7QWk/jvCHWarMKNs6pXOGWKDTr7cw4IGcUbW+PeTfbaQiLGheFRpjo6O9J0PmyMfQPjH71oA==}
     engines: {node: 20 || >=22}
 
-  prettier@3.8.5:
-    resolution: {integrity: sha512-zxcTTCedNGJM4R8sj/Cq/F0W/c4iE0afWBcBwMTRtw4WHYP9TWkYjdiH3npPRUYsXQCPR0hTU9yjovOu+E6EQA==}
+  prettier@3.9.0:
+    resolution: {integrity: sha512-LjIqSIC5VYLzs9WedVmJ2ljNAGnU+DteIClbahu4L/DBeWjZ6iT/k1lAYyu9JUh+1xINxWadaPw/Pl63y/agAw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -296,7 +296,7 @@ snapshots:
       lru-cache: 11.2.4
       minipass: 7.1.2
 
-  prettier@3.8.5: {}
+  prettier@3.9.0: {}
 
   shebang-command@2.0.0:
     dependencies:
