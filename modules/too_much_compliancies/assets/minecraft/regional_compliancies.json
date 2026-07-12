@@ -10,6 +10,11 @@
             "period": 60,
             "title": "compliance.playtime.hours",
             "message": "compliance.playtime.message"
+        },
+        {
+            "period": 1,
+            "title": "compliance.playtime.minutes",
+            "message": "compliance.playtime.message"
         }
     ],
     "USA": [
@@ -22,6 +27,11 @@
         {
             "period": 60,
             "title": "compliance.playtime.hours",
+            "message": "compliance.playtime.message"
+        },
+        {
+            "period": 1,
+            "title": "compliance.playtime.minutes",
             "message": "compliance.playtime.message"
         }
     ],
@@ -36,6 +46,11 @@
             "period": 60,
             "title": "compliance.playtime.hours",
             "message": "compliance.playtime.message"
+        },
+        {
+            "period": 1,
+            "title": "compliance.playtime.minutes",
+            "message": "compliance.playtime.message"
         }
     ],
     "HKG": [
@@ -48,6 +63,11 @@
         {
             "period": 60,
             "title": "compliance.playtime.hours",
+            "message": "compliance.playtime.message"
+        },
+        {
+            "period": 1,
+            "title": "compliance.playtime.minutes",
             "message": "compliance.playtime.message"
         }
     ],
@@ -62,6 +82,11 @@
             "period": 60,
             "title": "compliance.playtime.hours",
             "message": "compliance.playtime.message"
+        },
+        {
+            "period": 1,
+            "title": "compliance.playtime.minutes",
+            "message": "compliance.playtime.message"
         }
     ],
     "JPN": [
@@ -74,6 +99,11 @@
         {
             "period": 60,
             "title": "compliance.playtime.hours",
+            "message": "compliance.playtime.message"
+        },
+        {
+            "period": 1,
+            "title": "compliance.playtime.minutes",
             "message": "compliance.playtime.message"
         }
     ],
@@ -88,6 +118,11 @@
             "period": 60,
             "title": "compliance.playtime.hours",
             "message": "compliance.playtime.message"
+        },
+        {
+            "period": 1,
+            "title": "compliance.playtime.minutes",
+            "message": "compliance.playtime.message"
         }
     ],
     "GBR": [
@@ -101,15 +136,11 @@
             "period": 60,
             "title": "compliance.playtime.hours",
             "message": "compliance.playtime.message"
+        },
+        {
+            "period": 1,
+            "title": "compliance.playtime.minutes",
+            "message": "compliance.playtime.message"
         }
-    ],
-    "item.spyglass.use": {
-        "sounds": [
-            {
-                "name": "item/spyglass/funny",
-                "volume": 0.5
-            }
-        ],
-        "replace": true
-    }
+    ]
 }
