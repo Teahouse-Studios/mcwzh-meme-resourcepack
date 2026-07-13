@@ -1,0 +1,36 @@
+{
+    "name": "corail_woodcutter",
+    "type": "mod",
+    "description": "Corail Woodcutter",
+    "mod": {
+        "version": "2.3.6",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "ttps://www.curseforge.com/minecraft/mc-mods/corail-woodcutter"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/Corail31/woodcutter"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/6366.html"
+            }
+        ],
+        "license": "GPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Corail_31"
+            }
+        ]
+    },
+    "author": ["Gu-ZT"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
