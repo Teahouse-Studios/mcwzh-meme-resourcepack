@@ -5,7 +5,7 @@
         "test-build": "node preset_build.js"
     },
     "dependencies": {
-        "glob": "^11.0.1",
+        "glob": "^13.0.0",
         "memepack-builder": "^0.6.0"
     },
     "devDependencies": {
