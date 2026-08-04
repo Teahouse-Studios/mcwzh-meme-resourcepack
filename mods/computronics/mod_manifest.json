@@ -1,0 +1,30 @@
+{
+    "name": "computronics",
+    "type": "mod",
+    "description": "Computronics",
+    "mod": {
+        "links": [
+            {
+                "type": "source",
+                "url": "https://github.com/Vexatos/Computronics"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/5083.html"
+            }
+        ],
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Vexatos、asiekierka"
+            }
+        ]
+    },
+    "author": ["mckuhei"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
