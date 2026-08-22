@@ -1,0 +1,36 @@
+{
+    "name": "nochatreport",
+    "type": "mod",
+    "description": "禁用聊天举报（No Chat Reports）",
+    "mod": {
+        "version": "v1.9.0",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/no-chat-reports"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/Aizistral-Studios/No-Chat-Reports"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/6756.html"
+            }
+        ],
+        "license": "WTFPL",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Aizistral"
+            }
+        ]
+    },
+    "author": ["DoroWolf"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

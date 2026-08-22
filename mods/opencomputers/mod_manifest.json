@@ -1,0 +1,40 @@
+{
+    "name": "opencomputers",
+    "type": "mod",
+    "description": "开放式电脑（Open Computers）",
+    "mod": {
+        "version": "1.7.5.192",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/opencomputers"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/MightyPirates/OpenComputers"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/389.html"
+            },
+            {
+                "type": "website",
+                "url": "https://ci.cil.li/job/OpenComputers-MC1.12"
+            }
+        ],
+        "license": "CC0 1.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Sangar"
+            }
+        ]
+    },
+    "author": ["mckuhei"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

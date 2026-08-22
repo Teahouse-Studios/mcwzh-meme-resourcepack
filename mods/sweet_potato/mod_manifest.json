@@ -1,0 +1,36 @@
+{
+    "name": "sweet_potato",
+    "type": "mod",
+    "description": "烤地瓜（Sweet Potato Mod）",
+    "mod": {
+        "version": "1.5.1",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/sweet-potato"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/Featurehouse/sweet_potato-source"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/2941.html"
+            }
+        ],
+        "license": "Apache-2.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "teddyxlandlee"
+            }
+        ]
+    },
+    "author": ["teddyxlandlee"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

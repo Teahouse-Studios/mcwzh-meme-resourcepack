@@ -1,0 +1,40 @@
+{
+    "name": "create",
+    "type": "mod",
+    "description": "机械动力（Create）",
+    "mod": {
+        "version": "v0.5.0c",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/create"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/Creators-of-Create/Create"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/2021.html"
+            },
+            {
+                "type": "website",
+                "url": "https://createmod.net"
+            }
+        ],
+        "license": "MIT",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "simibubi"
+            }
+        ]
+    },
+    "author": ["DrLee-lihr"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
