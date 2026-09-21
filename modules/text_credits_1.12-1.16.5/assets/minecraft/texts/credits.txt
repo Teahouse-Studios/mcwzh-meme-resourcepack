@@ -1,8 +1,6 @@
 [C]§f============
 [C]§eTeahouse Studios
 [C]§f============
-
-
 §7Initiator
 §f          Lxazl5770
 
@@ -58,15 +56,13 @@
 
 
 §7Other Members
-§f          timi137137" 
+§f          timi137137
 §f          zyjking
 
 
 [C]§f============
 [C]§eOutside Contributors
 [C]§f============
-
-
 §7Translators
 §f          Kakagou
 §f          Huerdada
@@ -85,6 +81,7 @@
 §f          Minecraftku_hei
 §f          pkstDev
 §f          theflysong
+§f          teddyxlandlee
 
 
 §7Resource Module Authors
@@ -99,14 +96,13 @@
 §7Other Contributor
 §f          Snow_dash
 
+
 [C]§f============
 [C]§eSpecial
 [C]§f============
-
-
 §7MCLangCN Contributors
-§f          ff98sha" 
-§f          Jingji132" 
+§f          ff98sha
+§f          Jingji132
 §f          电量量
 
 
@@ -125,7 +121,7 @@
 §f          WDLJT
 §f          苏打baka
 
-    
+
 [C]§f============
 [C]§eMinecraft Team
 [C]§f============
