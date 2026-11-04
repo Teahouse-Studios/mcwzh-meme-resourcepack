@@ -1,0 +1,36 @@
+{
+    "name": "modmenu",
+    "type": "mod",
+    "description": "模组菜单（Mod Menu）",
+    "mod": {
+        "version": "v5.6.0",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/modmenu"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/TerraformersMC/ModMenu"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/1675.html"
+            }
+        ],
+        "license": "MIT",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Prospector、NeusFear"
+            }
+        ]
+    },
+    "author": ["lakejason0"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

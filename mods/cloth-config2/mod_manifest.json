@@ -1,0 +1,54 @@
+{
+
+    "version": "v5.3.63",
+    "author": ["Gu-ZT"],
+    "modLink": [
+        {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/cloth-config",
+            "github": "https://github.com/shedaniel/cloth-config",
+            "mcmod": "https://www.mcmod.cn/class/2346.html"
+        }
+    ],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
+{
+    "name": "cloth-config2",
+    "type": "mod",
+    "description": "Cloth Config API",
+    "mod": {
+        "version": "v5.3.63",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/cloth-config"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/shedaniel/cloth-config"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/2346.html"
+            }
+        ],
+        "license": "GPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "shedaniel"
+            }
+        ]
+    },
+    "author": ["Gu-ZT"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

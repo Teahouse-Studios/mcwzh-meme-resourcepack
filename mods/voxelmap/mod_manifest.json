@@ -1,0 +1,32 @@
+{
+    "name": "voxelmap",
+    "type": "mod",
+    "description": "体素地图（VoxelMap）",
+    "mod": {
+        "version": "1.17",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/voxelmap"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/981.html"
+            }
+        ],
+        "license": "Unknown",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "MamiyaOtaru"
+            }
+        ]
+    },
+    "author": ["lakejason0"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
