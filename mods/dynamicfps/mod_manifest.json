@@ -1,0 +1,36 @@
+{
+    "name": "dynamicfps",
+    "type": "mod",
+    "description": "动态FPS（Dynamic FPS）",
+    "mod": {
+        "version": "1.2.0",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/dynamic-fps"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/juliand665/Dynamic-FPS"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/3074.html"
+            }
+        ],
+        "license": "MIT",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "juliand665"
+            }
+        ]
+    },
+    "author": ["Gu-ZT"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

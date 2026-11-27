@@ -1,0 +1,36 @@
+{
+    "name": "vanilla-hammers",
+    "type": "mod",
+    "description": "原版材质锤（Vanilla Hammers）",
+    "mod": {
+        "version": "3.0.3",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/vanilla-hammers"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/Draylar/vanilla-hammers"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/3357.html"
+            }
+        ],
+        "license": "MIT",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "Draylar1"
+            }
+        ]
+    },
+    "author": ["DoroWolf"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}

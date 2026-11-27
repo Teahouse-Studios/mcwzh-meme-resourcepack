@@ -1,0 +1,36 @@
+{
+    "name": "terrestria",
+    "type": "mod",
+    "description": "Terrestria",
+    "mod": {
+        "version": "2.1.2",
+        "links": [
+            {
+                "type": "curseforge",
+                "url": "https://www.curseforge.com/minecraft/mc-mods/terrestria"
+            },
+            {
+                "type": "source",
+                "url": "https://github.com/TerraformersMC/Terrestria"
+            },
+            {
+                "type": "mcmod",
+                "url": "https://www.mcmod.cn/class/4952.html"
+            }
+        ],
+        "license": "LGPL-3.0",
+        "authors": [
+            {
+                "type": "developer",
+                "name": "coderbot、NeusFear"
+            }
+        ]
+    },
+    "author": ["Gu-ZT"],
+    "languageModification": [
+        {
+            "file": "assets/minecraft/lang/zh_meme.json",
+            "add": "add.json"
+        }
+    ]
+}
